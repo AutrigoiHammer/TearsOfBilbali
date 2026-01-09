@@ -7013,7 +7013,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
           </constraints>
           <infoLinks>
             <infoLink name="Base (40x40)" id="5f2a-c4f8-be53-469f" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
-            <infoLink name="Simbagors" id="ed8c-102c-efed-1eae" hidden="false" type="profile" targetId="a6e3-79e2-a48a-0ae5"/>
+            <infoLink name="Simbagor" id="ed8c-102c-efed-1eae" hidden="false" type="profile" targetId="a6e3-79e2-a48a-0ae5"/>
           </infoLinks>
           <infoGroups>
             <infoGroup name="Special Rules" id="d4c8-a043-f8ec-c13c" hidden="false">
@@ -7071,7 +7071,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
     </entryLink>
     <entryLink import="true" name="Savannah Skirmishers" hidden="false" type="selectionEntry" id="10b9-7cf5-0d5a-a40e" targetId="4052-c703-e508-7348">
       <constraints>
-        <constraint type="min" value="2" field="selections" scope="force" shared="true" id="9363-601a-e44a-2627" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="9363-601a-e44a-2627" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="94cb-800c-677d-ffc5" targetId="f0e3-2e32-8866-ea32" primary="true"/>
