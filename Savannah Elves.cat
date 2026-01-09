@@ -6692,6 +6692,9 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
           <modifiers>
             <modifier type="add" value="4cf7-bf85-308d-c29a" field="category"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="c96a-608-5de4-b943" id="7095-aace-5abb-f652" primary="false" name="MOUNT"/>
+          </categoryLinks>
         </entryLink>
         <entryLink import="true" name="Rhino Charioteer" hidden="false" id="1a99-ed0c-bd58-45ea" type="selectionEntry" targetId="ae82-f451-e2f7-3597">
           <constraints>
