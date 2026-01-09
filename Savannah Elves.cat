@@ -6684,7 +6684,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rhino Chariot" hidden="false" id="8448-941c-6e8b-4a80">
       <entryLinks>
-        <entryLink import="true" name="Rhino" hidden="false" id="3def-4f67-adbb-00f5" type="selectionEntry" targetId="cdfd-8de8-f609-2553" collective="true">
+        <entryLink import="true" name="Rhino" hidden="false" id="3def-4f67-adbb-00f5" type="selectionEntry" targetId="cdfd-8de8-f609-2553">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0372-10df-17c3-79b7"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="819b-c7bb-f5dd-62ad"/>
@@ -6745,7 +6745,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <cost name="pts" typeId="points" value="125"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rhino" hidden="false" id="cdfd-8de8-f609-2553">
+    <selectionEntry type="model" import="true" name="Rhino" hidden="false" id="cdfd-8de8-f609-2553" subType="mount" collective="true">
       <entryLinks>
         <entryLink import="true" name="Great horns" hidden="false" id="fb3d-cef0-7cee-2932" type="selectionEntry" targetId="e1f825ae-72da82b8">
           <constraints>
