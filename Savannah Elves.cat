@@ -7058,6 +7058,14 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <profiles>
+        <profile name="Simbagors" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="338b-13bf-19dc-2f15">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstruous Infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
