@@ -7094,6 +7094,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
     <entryLink import="true" name="Redsky Guard" hidden="false" id="4320-066f-8f30-906a" type="selectionEntry" targetId="5dcf-f23f-38a0-229d">
       <categoryLinks>
         <categoryLink targetId="f0e3-2e32-8866-ea32" id="1e72-8f29-6c46-ee28" primary="true" name="Core"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="62dc-5196-b6d4-5536" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Savannah Chieftain" hidden="false" id="aaad-15c9-34b9-67c1" type="selectionEntry" targetId="fe42-b83b-2186-3ec1">
@@ -7104,6 +7105,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
     <entryLink import="true" name="Simbagors" hidden="false" id="f997-0865-d319-81bf" type="selectionEntry" targetId="b234-b8ff-2a04-0819">
       <categoryLinks>
         <categoryLink targetId="633f-f67a-1b6a-d203" id="7554-af07-abd2-86e4" primary="true" name="Special"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="265b-9c21-8a28-4033" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
