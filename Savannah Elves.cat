@@ -1051,6 +1051,32 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
       </characteristics>
     </profile>
+    <profile name="Simbagor" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="a6e3-79e2-a48a-0ae5">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">7</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blackback" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="c0f5-e84a-6483-2fda">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">7</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Wildwood Rangers" hidden="false" id="d37c-a95d-615e-71d9">
@@ -6941,245 +6967,100 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         </infoGroup>
       </infoGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Simbagors" hidden="false" id="b234-b8ff-2a04-0819">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Simbagor" hidden="false" id="2e57-04d0-a5b7-11ea" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Grimfrost weapon" hidden="false" id="9f1f-cb04-6fd2-e56e" type="selectionEntry" targetId="627b-167a-92bb-a761">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4272-0dbc-dde7-30d4"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Special Rules" id="4156-9bf6-0e34-ff6a" hidden="false" flatten="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Scouts" hidden="false" id="4d5b-40be-488a-02f7" sortIndex="1" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="3"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Scouts" id="d0b1-4774-60bb-f125" hidden="false" type="profile" targetId="fe5e-8838-7fbd-a7ec"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="330a-a522-fec6-7d47" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Vanguard" hidden="false" id="1b19-dbc8-fa72-8b35" sortIndex="2" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Vanguard" id="12f1-0546-50e6-f6cb" hidden="false" type="profile" targetId="691e-10ec-4f7c-a2c4"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1f84-ace7-e046-5833" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c757-cf89-b918-8ecb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8190-8612-367c-b90a"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (40x40)" id="5f2a-c4f8-be53-469f" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+            <infoLink name="Simbagors" id="ed8c-102c-efed-1eae" hidden="false" type="profile" targetId="a6e3-79e2-a48a-0ae5"/>
+          </infoLinks>
+          <infoGroups>
+            <infoGroup name="Special Rules" id="d4c8-a043-f8ec-c13c" hidden="false">
+              <infoLinks>
+                <infoLink name="Armoured Hide" id="5025-0391-cce2-8e30" hidden="false" type="profile" targetId="5450-cbf1-3e74-254a">
+                  <modifiers>
+                    <modifier type="append" value="(2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Fear" id="fcf2-f092-08ce-cd35" hidden="false" type="profile" targetId="5ec9-a98-d8c5-e18b"/>
+                <infoLink name="Loner" id="1060-0433-a77c-eea8" hidden="false" type="profile" targetId="2ecd-c6b3-bd8b-864b"/>
+                <infoLink name="Move Through Cover" id="9de6-f936-d535-382b" hidden="false" type="profile" targetId="e83e-f127-1904-3858"/>
+                <infoLink name="Numbing Chill" id="5f55-c740-4ce1-2b05" hidden="false" type="profile" targetId="6f7a-4c85-3bf9-3c81"/>
+                <infoLink name="Open Order" id="476a-879d-c3d9-3714" hidden="false" type="profile" targetId="5b67-8535-146c-7cea"/>
+                <infoLink name="Swiftstride" id="c55d-487e-d07f-5515" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="46"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="ff6d-23be-8044-97ec" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Blackback" hidden="false" id="cbc5-a484-cd04-0099" subType="crew">
+              <infoLinks>
+                <infoLink name="Blackback" id="74cf-f3e9-02cd-f543" hidden="false" type="profile" targetId="c0f5-e84a-6483-2fda"/>
+                <infoLink name="Champion" id="9d40-e83f-37c6-696a" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="7"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2039-bd4b-6774-ab49" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Monstrous Infantry" hidden="false" id="78cb-90ae-8f6f-983f" targetId="5c55-f9d6-b181-92f8" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Dryads" hidden="false" type="selectionEntry" id="475-520e-7960-9410" targetId="1ae5-ebd2-c2f0-74da">
-      <categoryLinks>
-        <categoryLink name="Core" hidden="false" id="95ef-feff-8ce-efc9" targetId="f0e3-2e32-8866-ea32" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="4e42-3d76-23a3-2c98" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Glade Guard" hidden="false" type="selectionEntry" id="4aaa-8b49-81fa-859d" targetId="886b-7a97-d451-3f0c">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b9d9-ec20-75d7-185a" includeChildSelections="true"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink name="Core" hidden="false" id="63e7-b714-92b6-ebd" targetId="f0e3-2e32-8866-ea32" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="6245-1e95-76d9-c2bf" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Glade Lord" hidden="false" type="selectionEntry" id="6cf2-ab8a-edb5-2fe9" targetId="3923-9999-f3e2-9245">
-      <categoryLinks>
-        <categoryLink name="Characters" hidden="false" id="33d0-e837-459c-4b11" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="71a0-34a3-9bbf-e645" id="16bd-82e1-dbfa-69d6" primary="false" name="0-1 Glade Lord or Spellweaver per 1,000 points"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Eternal Guard" hidden="false" type="selectionEntry" id="8538-cdff-3de9-7a4f" targetId="d3d1-dd14-80c2-840e">
-      <categoryLinks>
-        <categoryLink name="Core" hidden="false" id="c46f-567d-2f4a-9d84" targetId="f0e3-2e32-8866-ea32" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="54d0-cbb9-3d1a-ba06" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Treemen" hidden="false" type="selectionEntry" id="8ec7-c8f2-d94f-2eb5" targetId="226a-c7c5-2a68-5f72">
-      <categoryLinks>
-        <categoryLink name="Rare" hidden="false" id="8f6f-28cb-3d0-94cb" targetId="2bfe-5863-46fe-d284" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="2b28-c4e0-7937-1f50" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Wardancers" hidden="false" type="selectionEntry" id="c6c1-4fad-5477-e824" targetId="4a01-6b67-783-6d3a">
-      <categoryLinks>
-        <categoryLink name="Special" hidden="false" id="5d36-9e3a-ec44-2f2" targetId="633f-f67a-1b6a-d203" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="e536-4a9c-76a1-c836" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Tree Kin" hidden="false" type="selectionEntry" id="6d53-f8ec-6498-9f9c" targetId="ff64-94cc-3afd-5333">
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="9eda-3087-db4f-fd58" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="2" field="9eda-3087-db4f-fd58">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="2" field="9eda-3087-db4f-fd58">
-          <repeats>
-            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink name="Special" hidden="false" id="f03c-802c-3760-89f9" targetId="633f-f67a-1b6a-d203" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="14dd-501f-ecd3-a6a2" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Deepwood Scouts" hidden="false" type="selectionEntry" id="fb36-3be-b8a3-1fe3" targetId="9264-289b-db3a-5b8d">
-      <categoryLinks>
-        <categoryLink name="Special" hidden="false" id="4737-63e8-a68f-c7ba" targetId="633f-f67a-1b6a-d203" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="cbbf-7cac-83e6-94e5" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-      <comment>Special</comment>
-    </entryLink>
-    <entryLink import="true" name="Glade Captain" hidden="false" type="selectionEntry" id="cc75-3d13-3683-1c2f" targetId="f957-3ded-9234-666f">
-      <categoryLinks>
-        <categoryLink name="Characters" hidden="false" id="15d6-712-e35b-977f" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Branchwraiths" hidden="false" type="selectionEntry" id="898c-2c5b-4552-5734" targetId="4b26-6fe7-b18f-8392">
-      <categoryLinks>
-        <categoryLink name="Characters" hidden="false" id="b0f6-78d4-4d50-535a" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Spellsinger" hidden="false" type="selectionEntry" id="3260-b29b-a3b4-f5c2" targetId="8192-39b4-a938-caec">
-      <categoryLinks>
-        <categoryLink name="Characters" hidden="false" id="cc05-53a7-fe53-75a9" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Spellweaver" hidden="false" type="selectionEntry" id="1983-72f1-846f-aede" targetId="2fbc-5442-c332-f043">
-      <categoryLinks>
-        <categoryLink name="Characters" hidden="false" id="b912-b11f-1e87-7fd4" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="71a0-34a3-9bbf-e645" id="8125-6456-e6a8-8072" primary="false" name="0-1 Glade Lord or Spellweaver per 1,000 points"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Shadowdancers" hidden="false" type="selectionEntry" id="9548-175a-d19d-4f24" targetId="96d3-d1a9-ff94-84f6">
-      <categoryLinks>
-        <categoryLink name="Characters" hidden="false" id="708d-f0c7-fad6-fa21" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Waystalkers" hidden="false" type="selectionEntry" id="1983-2db2-a1e9-1a36" targetId="4fdd-d23b-8a59-56db">
-      <categoryLinks>
-        <categoryLink name="Characters" hidden="false" id="9a58-d5eb-b70b-bf2e" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Treemen Ancients" hidden="false" type="selectionEntry" id="3722-55f5-d24-2cc2" targetId="2cc9-e0e8-dd72-422a">
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="75cd-c01c-7860-13ba" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="75cd-c01c-7860-13ba">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="75cd-c01c-7860-13ba">
-          <repeats>
-            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink name="Characters" hidden="false" id="5193-3753-91-d7d9" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Glade Riders" hidden="false" type="selectionEntry" id="c80d-57d7-e7cb-3c2e" targetId="b811-3815-bff1-1680">
-      <categoryLinks>
-        <categoryLink name="Core" hidden="false" id="59bc-5be0-8073-9049" targetId="f0e3-2e32-8866-ea32" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="2b5f-a943-2850-8bec" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Warhawk Riders" hidden="false" type="selectionEntry" id="7b51-92f4-72b9-a5c6" targetId="f701-8966-f816-10c8">
-      <categoryLinks>
-        <categoryLink name="Special" hidden="false" id="f79d-fad0-c6f7-21de" targetId="633f-f67a-1b6a-d203" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="6914-7ecb-8027-6e47" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Wildwood Rangers" hidden="false" type="selectionEntry" id="2f11-1136-9c37-7ffa" targetId="d37c-a95d-615e-71d9">
-      <categoryLinks>
-        <categoryLink name="Special" hidden="false" id="6002-1f69-e0d7-bc35" targetId="633f-f67a-1b6a-d203" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="ffe6-2704-7315-b96f" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Wild Riders" hidden="false" type="selectionEntry" id="c8ee-228f-f211-54cf" targetId="3f3d-ccd8-ad95-1750">
-      <categoryLinks>
-        <categoryLink name="Special" hidden="false" id="f29a-12fa-f3c-1212" targetId="633f-f67a-1b6a-d203" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="c4b8-5fdf-a2bd-bb8f" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Waywatchers" hidden="false" type="selectionEntry" id="2aac-1f4-31b8-2c66" targetId="a167-14b-f89a-2f11">
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="9401-3036-b2d8-1bbc" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="9401-3036-b2d8-1bbc">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="1983-2db2-a1e9-1a36" shared="true" roundUp="false" id="9a1b-6889-4f64-a360" includeChildSelections="true"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink name="Rare" hidden="false" id="241b-b767-cff5-f734" targetId="2bfe-5863-46fe-d284" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="b64c-d74b-0451-9bff" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Sisters Of The Thorn" hidden="false" type="selectionEntry" id="ab94-1cf1-ee29-1bd0" targetId="7424-2365-3deb-fb13">
-      <categoryLinks>
-        <categoryLink name="Special" hidden="false" id="63f2-16e5-6ee4-cc57" targetId="633f-f67a-1b6a-d203" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="2615-c1ed-51db-4965" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Great Eagles" hidden="false" type="selectionEntry" id="879a-689f-6804-dce4" targetId="db57-f9aa-42fe-a3bd">
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="1477-5e82-290f-65c8" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="3" field="1477-5e82-290f-65c8">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="3" field="1477-5e82-290f-65c8">
-          <repeats>
-            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink name="Rare" hidden="false" id="da77-93ce-3b97-50ed" targetId="2bfe-5863-46fe-d284" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="9d1c-1daf-d4f4-7232" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Deepwood Scouts" hidden="false" type="selectionEntry" id="b940-5b75-2113-ecc1" targetId="9264-289b-db3a-5b8d">
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="19ee-c390-c555-24db" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="19ee-c390-c555-24db">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="19ee-c390-c555-24db">
-          <repeats>
-            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink name="Core" hidden="false" id="7983-e54b-2004-4a20" targetId="f0e3-2e32-8866-ea32" primary="true"/>
-        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="ed45-ee71-355b-d9c8" primary="false" targetId="fec1-537a-bbeb-7926"/>
-      </categoryLinks>
-      <comment>Core</comment>
-    </entryLink>
-    <entryLink import="true" name="Orion, the King in the Woods" hidden="false" id="003c-ea10-73cd-95da" type="selectionEntry" targetId="9a51-e463-37b2-5381">
-      <categoryLinks>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="fca8-663b-ddee-a741" primary="true" name="Named Characters"/>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="e04e-042d-5556-c44c" primary="false" name="Characters"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Eradar, Warden of Larannia" hidden="false" id="5c6e-620b-55da-c2e9" type="selectionEntry" targetId="22da-2e6a-3ff1-d441">
       <categoryLinks>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="1481-89d3-3a7d-0b4e" primary="true" name="Named Characters"/>
@@ -7187,12 +7068,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <categoryLink targetId="71a0-34a3-9bbf-e645" id="d58a-c889-c15a-f148" primary="false" name="0-1 Glade Lord or Spellweaver per 1,000 points"/>
       </categoryLinks>
       <comment>https://lh3.googleusercontent.com/sitesv/AICyYdYMHEUrGajqJrw7EYL54D1M5ZMkNsj1-MLVxILKsaUOUT1lyMbN-hF7rlvy-c1CDDrjoPmcL0Rs9OxluH3S55o69MhlkAB4OqYP1b6Lqxz42Qb2fp1FZbSDVAL5TsfgSG_FHxsajL_cPQiYsbA_QEOpbc77iuwdsJ4eKu0TCgwzGtOzqUf7XmLZJfoZtrf4R8vOoerD1-fapxvl03WuGta-JFv_DNn39s1udP8=w1280</comment>
-    </entryLink>
-    <entryLink import="true" name="Wood Elf Beast Packs" hidden="false" id="6ab7-c81a-d632-055f" type="selectionEntry" targetId="806b-f97c-3a1c-28e2">
-      <categoryLinks>
-        <categoryLink targetId="fec1-537a-bbeb-7926" id="948e-bd8a-4c23-b25f" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
-        <categoryLink targetId="2bfe-5863-46fe-d284" id="35ad-d60b-31c0-44d4" primary="true" name="Rare"/>
-      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Savannah Skirmishers" hidden="false" type="selectionEntry" id="10b9-7cf5-0d5a-a40e" targetId="4052-c703-e508-7348">
       <constraints>
@@ -7216,6 +7091,11 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
     <entryLink import="true" name="Savannah Chieftain" hidden="false" id="aaad-15c9-34b9-67c1" type="selectionEntry" targetId="fe42-b83b-2186-3ec1">
       <categoryLinks>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="3807-1dc5-73e9-b327" primary="true" name="Characters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Simbagors" hidden="false" id="f997-0865-d319-81bf" type="selectionEntry" targetId="b234-b8ff-2a04-0819">
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="7554-af07-abd2-86e4" primary="true" name="Special"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -7691,6 +7571,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
     <catalogueLink type="catalogue" name="Wood Elf Realms" id="978b-5a2e-3b21-113d" targetId="13b1-ec94-d107-d711"/>
     <catalogueLink type="catalogue" name="Beastmen Brayherds" id="3a30-ac6d-0cb6-d396" targetId="eaaf-1e11-a32d-ab11"/>
     <catalogueLink type="catalogue" name="Lizardmen" id="0f91-106a-3db5-365c" targetId="ab16-38c2-b85a-9197"/>
+    <catalogueLink type="catalogue" name="Ogre Kingdoms" id="8eab-c116-b4f1-c7a6" targetId="13ed-b3e5-e610-615f"/>
   </catalogueLinks>
   <categoryEntries>
     <categoryEntry name="0-1 unit of Glade riders per 1,000 points may have the Ambushers special rule." id="557d-bb31-b44e-f350" hidden="true">
@@ -7812,7 +7693,4 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
   <infoGroups>
     <infoGroup name="New Info Group" id="8b8c-9d1b-b5b4-f519" hidden="false"/>
   </infoGroups>
-  <forceEntries>
-    <forceEntry name="New Force" id="364b-51ee-dd2e-cbb2" hidden="false"/>
-  </forceEntries>
 </catalogue>
