@@ -6684,7 +6684,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rhino Chariot" hidden="false" id="8448-941c-6e8b-4a80">
       <entryLinks>
-        <entryLink import="true" name="Rhino" hidden="false" id="3def-4f67-adbb-00f5" type="selectionEntry" targetId="cdfd-8de8-f609-2553">
+        <entryLink import="true" name="Rhino" hidden="false" id="3def-4f67-adbb-00f5" type="selectionEntry" targetId="cdfd-8de8-f609-2553" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0372-10df-17c3-79b7"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="819b-c7bb-f5dd-62ad"/>
