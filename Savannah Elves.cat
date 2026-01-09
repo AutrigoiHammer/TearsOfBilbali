@@ -6798,7 +6798,11 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
           <selectionEntryGroups>
             <selectionEntryGroup name="Equipment" id="8ee8-07e0-88a7-28c4" hidden="false" collective="false" sortIndex="5">
               <entryLinks>
-                <entryLink import="true" name="Thrusting Spear" hidden="false" id="9e08-9fc8-4f66-e0e7" type="selectionEntry" targetId="99d2-7f59-5c14-3bf7"/>
+                <entryLink import="true" name="Thrusting Spear" hidden="false" id="9e08-9fc8-4f66-e0e7" type="selectionEntry" targetId="99d2-7f59-5c14-3bf7">
+                  <costs>
+                    <cost name="pts" typeId="points" value="1"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
