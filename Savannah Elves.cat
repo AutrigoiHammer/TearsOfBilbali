@@ -6782,7 +6782,11 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f23d-869c-04df-32a2"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="fb8d-2336-71ad-576b" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="4"/>
+            <entryLink import="true" name="Shield" hidden="false" id="f5fc-d9b5-d7f1-8d6f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09b3-97e0-1c4a-14eb"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Redsky Guard" id="0475-4c5e-3409-d28e" hidden="false" type="profile" targetId="71e7-54ff-5605-1041"/>
@@ -6794,11 +6798,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
           <selectionEntryGroups>
             <selectionEntryGroup name="Equipment" id="8ee8-07e0-88a7-28c4" hidden="false" collective="false" sortIndex="5">
               <entryLinks>
-                <entryLink import="true" name="Shield" hidden="false" id="39a4-82eb-0f5c-7df8" type="selectionEntry" targetId="6192-f9f1-5d53-2042">
-                  <costs>
-                    <cost name="pts" typeId="points" value="1"/>
-                  </costs>
-                </entryLink>
+                <entryLink import="true" name="Thrusting Spear" hidden="false" id="9e08-9fc8-4f66-e0e7" type="selectionEntry" targetId="99d2-7f59-5c14-3bf7"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
