@@ -1167,6 +1167,26 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b757-4dad-ae62-e3cf"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="3096-bae5-bc89-2817" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53bb-cb5a-f77d-0120"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3584-6e63-c979-323d"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="682d-a23a-b310-3d75" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="284c-826f-5f70-22f5" sortIndex="55">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7ef-c099-a93a-8141"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba98-b921-8367-f293"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Musician" id="04c0-9e41-733b-4cc5" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
           </selectionEntries>
           <infoLinks>
             <infoLink name="Base (25x25)" id="109b-b5b4-7fd3-e849" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
