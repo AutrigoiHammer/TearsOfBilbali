@@ -1285,8 +1285,16 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="9a1d-47d5-56e6-a72e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="36d4-b197-33d8-994a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="9a1d-47d5-56e6-a72e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1be7-9657-a9fc-8230"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="36d4-b197-33d8-994a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bd4-4505-c91a-6d99"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e00d-f088-e456-e1c9"/>
@@ -1303,7 +1311,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c85f-00d3-d20d-98a4"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="a038-fed8-e487-bc57" type="selectionEntry" targetId="8943-3e16-db2a-b7f3"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="fdea-73b9-87d4-dfe3" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5c6-94d6-c47d-046b"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
