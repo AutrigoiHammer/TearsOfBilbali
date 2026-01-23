@@ -1117,6 +1117,81 @@
         <constraint type="max" value="0" field="selections" scope="force" shared="false" id="598e-22df-1929-bf42" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="125d-3e0e-ef82-6a82">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fernando Pirazzo" hidden="false" id="5e98-f344-895f-fc19" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="3b61-166d-7fbf-6a97" type="selectionEntry" targetId="a5bd-e584-3c96-550f" sortIndex="1"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="a316-e324-d11e-adfe" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="2307-2503-2568-eded" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Fernando Pirazzo" id="6a86-7370-2794-0d0b" hidden="false" type="profile" targetId="daf4-7b1a-8058-4a51"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Pikemen" hidden="false" id="acca-45b2-aebe-915d" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="1c5d-b2b8-ad7a-6664" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="8604-4912-d11d-66ff" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Legion Pike" hidden="false" id="dfaa-0d9e-e308-d33b" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Pike (Pirazzo&apos;s Legion)" id="9cd3-a6fd-944c-9906" hidden="false" type="profile" targetId="c8c7-61c2-1fcd-3e31"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c603-bb75-4e82-ca35"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b757-4dad-ae62-e3cf"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="109b-b5b4-7fd3-e849" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Pirazzo&apos;s Pikemen" id="9d76-3a6c-900d-bd5c" hidden="false" type="profile" targetId="e477-2e76-dd47-b7cb"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Crossbowmen" hidden="false" id="3e35-01f4-3cbc-fcff" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="80fb-9f80-d1a7-0887" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="e622-380c-086e-80d9" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Legion Crossbow" hidden="false" id="cced-719f-07a4-4727" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Crossbow (Pirazzo&apos;s Legion)" id="0708-85d7-7c68-5fb5" hidden="false" type="profile" targetId="0da4-1137-5561-8150"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9808-98b8-4cab-8ed6"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bff-3323-b8c7-41bf"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="5831-8c2e-1c58-7732" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Pirazzo&apos;s Crossbowmen" id="b996-94ab-3d64-179e" hidden="false" type="profile" targetId="00b5-4072-f332-fa4f"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Pirazzo&apos;s Lost Company" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5f3e-edc4-a956-10b0">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="2ec8-e3df-9d5b-401d" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="19b6-e2b9-d052-46c4" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Mercenaries" id="637e-0813-ad42-e963" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Drilled" id="5594-896c-03d5-0146" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
+            <infoLink name="Pikes" id="b6d6-0ba4-9f4c-106f" hidden="false" type="profile" targetId="2e45-16fb-4849-4905"/>
+            <infoLink name="Mixed Formation" id="7146-5569-7e84-d9fa" hidden="false" type="profile" targetId="e6c3-a289-a470-44af"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Ogre" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5ccf-bbe6-f153-88b2">
@@ -1322,6 +1397,80 @@ Bonegrinder Giant Attacks Table
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
       </characteristics>
     </profile>
+    <profile name="Pirazzo&apos;s Pikemen" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="e477-2e76-dd47-b7cb">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+      <comment>Pikemen from Pirazzo&apos;s Lost Legion from 6th Edition</comment>
+    </profile>
+    <profile name="Pirazzo&apos;s Crossbowmen" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="00b5-4072-f332-fa4f">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+      <comment>Crossbowmen from Pirazzo&apos;s Lost Legion from 6th Edition</comment>
+    </profile>
+    <profile name="Crossbow (Pirazzo&apos;s Legion)" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="0da4-1137-5561-8150">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">30</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">4</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Ponderous</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">Crossbows from Pirazzo&apos;s Legion can be used although in Mixed Formation. Remove casualties in such a way that front ranks always remains with Crossbows</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pike (Pirazzo&apos;s Legion)" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="c8c7-61c2-1fcd-3e31">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">F</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Fights in Four Ranks, Strike First*</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">Pikes (Pirazzo&apos;s Legion) fight in four ranks; require two hands. Always strikes first in the initial round of close combat, even striking before enemies that have charged. Note that enemies that are entitled to Strike First because of a special ability or magic, will strike before pike-armed models.
+Models armed with pikes recieve a +1 Strength bonus in the Close Combar phase on turn they are charged by cavalry units, chariots or monsters. Note that this bonus only applies to attacks directed against the above charging units, not against other units.
+All these special rules cannot be used against enemy fighting the Pikemen&apos;s flank or rear.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fernando Pirazzo" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="daf4-7b1a-8058-4a51" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+      <alias>Fernando Pirazzo</alias>
+    </profile>
+    <profile name="Mixed Formation" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="e6c3-a289-a470-44af">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Casualties are always removed from the rear so front rank always remains Pirazzo&apos;s Crossbowmen.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pikes" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="2e45-16fb-4849-4905">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Pikes fight in four ranks; require two hands. Always strikes first in the initial round of close combat, even striking before enemies that have charged. Note that enemies that are entitled to strike first because of a special ability or magic, will strike before pike-armed models.
+Models armed with pikes recieve a +1 Strength bonus in the Close Combar phase on turn they are charged by cavalry units, chariots or monsters. Note that this bonus only applies to attacks directed against the above charging units, not against other units.
+All these special rules cannot be used against enemy fighting the Pikemen&apos;s flank or rear.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Badlands Ogre Bulls" hidden="false" id="44c9-e0c9-75ce-1fce" type="selectionEntry" targetId="a4af-ea3a-49ea-d56e">
@@ -1386,6 +1535,7 @@ Bonegrinder Giant Attacks Table
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fdd3-85e4-a486-cf0d" includeChildSelections="true"/>
       </constraints>
     </entryLink>
+    <entryLink import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="074c-c7a6-550c-f267" type="selectionEntry" targetId="125d-3e0e-ef82-6a82"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
