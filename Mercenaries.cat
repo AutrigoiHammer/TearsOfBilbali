@@ -1121,8 +1121,16 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Fernando Pirazzo" hidden="false" id="5e98-f344-895f-fc19" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="3b61-166d-7fbf-6a97" type="selectionEntry" targetId="a5bd-e584-3c96-550f" sortIndex="1"/>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="a316-e324-d11e-adfe" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2"/>
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="3b61-166d-7fbf-6a97" type="selectionEntry" targetId="a5bd-e584-3c96-550f" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3d7-80bd-aca8-cb9f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="a316-e324-d11e-adfe" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e24-aa55-53af-1511"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (25x25)" id="2307-2503-2568-eded" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
@@ -1132,11 +1140,22 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44e4-f06f-3656-905e"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="950f-d1a3-a523-a17c"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="65"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Pikemen" hidden="false" id="acca-45b2-aebe-915d" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="1c5d-b2b8-ad7a-6664" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="8604-4912-d11d-66ff" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="1c5d-b2b8-ad7a-6664" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fd7-108a-a726-dede"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="8604-4912-d11d-66ff" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16bd-d73e-777e-12fb"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Legion Pike" hidden="false" id="dfaa-0d9e-e308-d33b" sortIndex="1">
@@ -1156,11 +1175,22 @@
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b3fe-c8b4-e332-a371"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Crossbowmen" hidden="false" id="3e35-01f4-3cbc-fcff" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="80fb-9f80-d1a7-0887" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="e622-380c-086e-80d9" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="80fb-9f80-d1a7-0887" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="858d-e523-a77f-896d"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="e622-380c-086e-80d9" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73ba-bf48-cbf0-fc6e"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Legion Crossbow" hidden="false" id="cced-719f-07a4-4727" sortIndex="1">
@@ -1180,6 +1210,9 @@
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="71be-e92f-9bb5-a587"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="9"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <profiles>
