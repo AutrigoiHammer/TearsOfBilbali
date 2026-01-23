@@ -1271,7 +1271,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8619-ac54-035e-e4a3"/>
               </constraints>
               <infoLinks>
-                <infoLink name="The Red Scimitar" id="5377-af4b-ce0b-d6a9" hidden="false" type="profile" targetId="b859-7759-815c-2a8f"/>
+                <infoLink name="The Red Scimitar" id="5377-af4b-ce0b-d6a9" hidden="false" type="profile" targetId="085b-cc4f-6c08-2d10"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Daemon Head Helmet" hidden="false" id="082f-8eb3-4a16-35e4" sortIndex="4">
@@ -1280,7 +1280,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70b2-c337-810a-244e"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Daemon Head Helmet" id="7d59-c5d6-31c9-b300" hidden="false" type="profile" targetId="2552-6203-785a-5b70"/>
+                <infoLink name="Daemon Head Helmet" id="7d59-c5d6-31c9-b300" hidden="false" type="profile" targetId="b298-5cac-c01b-072a"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -1655,6 +1655,20 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
       <characteristics>
         <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944"/>
         <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b"/>
+      </characteristics>
+    </profile>
+    <profile name="The Red Scimitar" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="085b-cc4f-6c08-2d10">
+      <characteristics>
+        <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
+        <characteristic name="S" typeId="4f75-25c9-31bd-7074">F</characteristic>
+        <characteristic name="AP" typeId="15e2-fff4-477f-ea26">-3</characteristic>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c">Multiple Wounds (D3)</characteristic>
+        <characteristic name="Note" typeId="5e5e-34db-1ee0-86"/>
+      </characteristics>
+    </profile>
+    <profile name="Daemon Head Helmet" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="b298-5cac-c01b-072a">
+      <characteristics>
+        <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">After Ghazak Khan receives his first wound in combat, Ghazak Khan gains a Ward Save (4+) for the remainder of the battle. Ghazak Khan has a +4 modifier on his Strength characteristic whenever it fights the model that caused his first wound.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
