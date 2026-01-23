@@ -1337,7 +1337,7 @@ Bonegrinder Giant Attacks Table
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d4e2-b8d6-aee0-09f5" includeChildSelections="true"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Bonegrinder Giant" hidden="true" id="3d62c558-86da0cc2" type="selectionEntry" targetId="514-eadb-6386-ff1a">
+    <entryLink import="true" name="Bonegrinder Giant" hidden="false" id="3d62c558-86da0cc2" type="selectionEntry" targetId="514-eadb-6386-ff1a">
       <categoryLinks>
         <categoryLink name="Mercenaries" hidden="false" id="699e-9d83-25e5-7de7" targetId="5b84-2c3c-869d-3522" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="0a21-4d55-1a8f-c16c" targetId="fec1-537a-bbeb-7926" primary="false"/>
@@ -1347,7 +1347,7 @@ Bonegrinder Giant Attacks Table
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e1ba-6f10-3fd4-447a" includeChildSelections="true"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Doomseeker" hidden="true" id="62d3-adbd-24fb-aedb" type="selectionEntry" targetId="b329-8a1f-d93d-c15c">
+    <entryLink import="true" name="Doomseeker" hidden="false" id="62d3-adbd-24fb-aedb" type="selectionEntry" targetId="b329-8a1f-d93d-c15c">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e1ba-6f10-3fd4-447a" includeChildSelections="true"/>
       </constraints>
@@ -1356,7 +1356,7 @@ Bonegrinder Giant Attacks Table
         <categoryLink targetId="f4fd-aa79-6ff3-1ea9" id="a1dd-29b6-c1c0-a43c" primary="false" name="Faction: Dwarfen Mountain Holds"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Imperial Dwarf Mercenaries" hidden="true" id="7faa-a143-fbe9-8407" type="selectionEntry" targetId="5ab0-0b8b-6b08-ce54">
+    <entryLink import="true" name="Imperial Dwarf Mercenaries" hidden="false" id="7faa-a143-fbe9-8407" type="selectionEntry" targetId="5ab0-0b8b-6b08-ce54">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0eb3-7265-e337-4dc8" includeChildSelections="true"/>
       </constraints>
@@ -1366,23 +1366,7 @@ Bonegrinder Giant Attacks Table
         <categoryLink targetId="f4fd-aa79-6ff3-1ea9" id="8925-af8d-1829-120f" primary="false" name="Faction: Dwarfen Mountain Holds"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Prince Ulther&apos;s Dragon Company" hidden="true" id="cd33-be17-5d94-79dc" type="selectionEntry" targetId="fb6f-f8fa-f2da-c9b2">
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7b8f-602e-29cd-5786" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-26c6-1d88-2b8c" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7bbf-73df-eb6d-d411" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a339-984f-3777-c73f" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7706-6528-7747-65a2" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a6d0-e072-75ec-45d8" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+    <entryLink import="true" name="Prince Ulther&apos;s Dragon Company" hidden="false" id="cd33-be17-5d94-79dc" type="selectionEntry" targetId="fb6f-f8fa-f2da-c9b2">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0d18-babd-b4c8-35de" primary="true" name="Mercenaries"/>
         <categoryLink targetId="f4fd-aa79-6ff3-1ea9" id="fbe8-189c-4570-65ec" primary="false" name="Faction: Dwarfen Mountain Holds"/>
@@ -1392,7 +1376,7 @@ Bonegrinder Giant Attacks Table
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8dab-898b-f546-aa47"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Imperial Ogres" hidden="true" id="b41d-0f2c-5f52-bce7" type="selectionEntry" targetId="35c8-1830-8069-55b7">
+    <entryLink import="true" name="Imperial Ogres" hidden="false" id="b41d-0f2c-5f52-bce7" type="selectionEntry" targetId="35c8-1830-8069-55b7">
       <categoryLinks>
         <categoryLink targetId="e5f1-f9ee-d533-b2dc" id="ddc8-ca27-2f93-a10e" primary="false" name="Faction: The Empire of Man"/>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="ebbb-6e0d-ed55-b549" primary="true" name="Mercenaries"/>
