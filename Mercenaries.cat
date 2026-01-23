@@ -1342,6 +1342,7 @@
                 <modifier type="append" value="(1)" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="The Mighty Khan" id="c39d-9b13-c51a-9226" hidden="false" type="profile" targetId="6901-1582-6337-60bc"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
