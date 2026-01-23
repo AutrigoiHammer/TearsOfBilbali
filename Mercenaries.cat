@@ -1255,6 +1255,85 @@
         </infoGroup>
       </infoGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="5d23-a058-965c-22dc" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+      <costs>
+        <cost name="pts" typeId="points" value="300"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="0c06-a43c-7c4e-b846" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ghazak Khan" hidden="false" id="a589-48a5-4560-947f">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Red Scimitar" hidden="false" id="48f4-2614-f1f1-8f5e" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0881-26c0-e4b7-af26"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8619-ac54-035e-e4a3"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="The Red Scimitar" id="5377-af4b-ce0b-d6a9" hidden="false" type="profile" targetId="b859-7759-815c-2a8f"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Daemon Head Helmet" hidden="false" id="082f-8eb3-4a16-35e4" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="518e-98b6-8a03-dfc8"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70b2-c337-810a-244e"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Daemon Head Helmet" id="7d59-c5d6-31c9-b300" hidden="false" type="profile" targetId="2552-6203-785a-5b70"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="9a1d-47d5-56e6-a72e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="36d4-b197-33d8-994a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e00d-f088-e456-e1c9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e07a-64c1-288e-1119"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warghan" hidden="false" id="4b2e-9326-3f61-8fc7">
+          <infoLinks>
+            <infoLink name="Warghan" id="db25-067f-d4fd-6894" hidden="false" type="profile" targetId="5ef4-7a99-5cb0-ae41"/>
+            <infoLink name="Base (25x50)" id="d542-405e-65ae-45b9" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d42-7f34-00f5-e84d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c85f-00d3-d20d-98a4"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="a038-fed8-e487-bc57" type="selectionEntry" targetId="8943-3e16-db2a-b7f3"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Ghazak Khan" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="888f-b07d-a066-35fb">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="be98-1b66-51b2-0a63" hidden="false">
+          <infoLinks>
+            <infoLink name="Immune To Psychology" id="a926-6bd9-99bf-5149" hidden="false" type="profile" targetId="93d9-c75b-f655-30ac"/>
+            <infoLink name="Impact Hits" id="37e8-1dc9-5f37-e525" hidden="false" type="profile" targetId="5c2-e9dd-2715-a0c0">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Mercenaries" id="2f68-f9fb-ba06-dec1" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Armoured Hide" id="3c1f-5823-0625-98a9" hidden="false" type="profile" targetId="5450-cbf1-3e74-254a">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Ogre" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5ccf-bbe6-f153-88b2">
@@ -1534,6 +1613,38 @@ Models armed with pikes recieve a +1 Strength bonus in the Close Combar phase on
 All these special rules cannot be used against enemy fighting the Pikemen&apos;s flank or rear.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Warghan" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5ef4-7a99-5cb0-ae41" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">8</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">-</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">-</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ghazak Khan" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="4961-db8a-8e6a-4eb6" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">7</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">6</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="New Profile" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="4274-b7a4-4364-7854">
+      <characteristics>
+        <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944"/>
+        <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Badlands Ogre Bulls" hidden="false" id="44c9-e0c9-75ce-1fce" type="selectionEntry" targetId="a4af-ea3a-49ea-d56e">
@@ -1604,6 +1715,14 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="acaf-522a-834f-f8bd"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="1795-df50-abb0-935e" type="selectionEntry" targetId="5d23-a058-965c-22dc">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="1f0d-f444-9e22-dd83" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="28cd-23da-f60b-c453"/>
       </constraints>
     </entryLink>
   </entryLinks>
