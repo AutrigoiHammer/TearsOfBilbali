@@ -1668,7 +1668,12 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
     </profile>
     <profile name="Daemon Head Helmet" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="b298-5cac-c01b-072a">
       <characteristics>
-        <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">After Ghazak Khan receives his first wound in combat, Ghazak Khan gains a Ward Save (4+) for the remainder of the battle. Ghazak Khan has a +4 modifier on his Strength characteristic whenever it fights the model that caused his first wound.</characteristic>
+        <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">After Ghazak Khan receives his first wound in combat, Ghazak Khan gains a Ward Save (4+) for the remainder of the battle.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Mighty Khan" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="6901-1582-6337-60bc">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Ghazak Khan has a +4 modifier on his Strength characteristic whenever it fights the model that caused his first wound.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
