@@ -1535,7 +1535,14 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fdd3-85e4-a486-cf0d" includeChildSelections="true"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="074c-c7a6-550c-f267" type="selectionEntry" targetId="125d-3e0e-ef82-6a82"/>
+    <entryLink import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="074c-c7a6-550c-f267" type="selectionEntry" targetId="125d-3e0e-ef82-6a82">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="5052-b1b4-e56e-6c22" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="acaf-522a-834f-f8bd"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
