@@ -1257,7 +1257,7 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="5d23-a058-965c-22dc" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <costs>
-        <cost name="pts" typeId="points" value="300"/>
+        <cost name="pts" typeId="points" value="205"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0c06-a43c-7c4e-b846" primary="true" name="Mercenaries"/>
