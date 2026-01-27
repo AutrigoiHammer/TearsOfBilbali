@@ -1141,7 +1141,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="950f-d1a3-a523-a17c"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="50"/>
+            <cost name="pts" typeId="points" value="45"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Pikemen" hidden="false" id="acca-45b2-aebe-915d" sortIndex="2">
