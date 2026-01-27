@@ -1628,9 +1628,9 @@
       </infoGroups>
       <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition">
+    <selectionEntry type="upgrade" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition" defaultAmount="1">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="7">
+        <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="7" collective="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b8c-9f91-8ee4-2ea8"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b75-c59a-9067-fc1d"/>
@@ -1639,7 +1639,7 @@
             <infoLink name="Amulet of Dragonheart" id="6aac-e483-304c-f724" hidden="false" type="profile" targetId="5748-7194-a891-e550"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900" subType="mount" sortIndex="5" collective="true" defaultAmount="1">
+        <selectionEntry type="model" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900" subType="mount" sortIndex="5" collective="true" defaultAmount="">
           <entryLinks>
             <entryLink import="true" name="Wicked Claws" hidden="false" id="f194-a118-db59-58dd" type="selectionEntry" targetId="7414-cec3-7cd7-a94b" collective="true" defaultAmount="1">
               <constraints>
@@ -1677,6 +1677,10 @@
               </infoLinks>
             </infoGroup>
           </infoGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8560-fb0c-fda2-ea6c"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c94-874d-510a-cc7a"/>
+          </constraints>
           <categoryLinks>
             <categoryLink name="MOUNT" hidden="false" id="f459-266f-182a-bdb9" targetId="c96a-608-5de4-b943" primary="false"/>
             <categoryLink name="Behemoth" hidden="false" id="dcb2-4422-dde4-e2d7" targetId="3755-6732-99b2-c713" primary="true"/>
