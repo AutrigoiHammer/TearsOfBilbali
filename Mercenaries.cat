@@ -1275,7 +1275,7 @@
           </categoryLinks>
           <infoLinks>
             <infoLink name="Base (25x50)" id="84cc-dca5-0c02-7ade" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-            <infoLink name="Ghazak Khan" id="93cd-2923-7656-3c54" hidden="false" type="profile" targetId="4961-db8a-8e6a-4eb6"/>
+            <infoLink name="Ghazak Khan" id="93cd-2923-7656-3c54" hidden="false" type="profile" targetId="16bc-bdf7-46cc-2ab3"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Command" id="8e6f-accd-e5df-f30e" hidden="false" sortIndex="1">
@@ -1372,7 +1372,7 @@
         <constraint type="max" value="0" field="selections" scope="force" shared="false" id="598e-22df-1929-bf42" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Borgio the Besieger" hidden="false" id="5b0c-3da2-c226-bb34" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="upgrade" import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="5b0c-3da2-c226-bb34" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <costs>
         <cost name="pts" typeId="points" value="200"/>
       </costs>
@@ -1487,6 +1487,128 @@
           </infoLinks>
         </infoGroup>
       </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Cursed Company" hidden="false" id="22dc-5cbb-1a2c-3cab" page="https://wfb6thcharacters.blogspot.com/p/blog-page_85.html">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ritcher Kreugar" hidden="false" id="2a39-3fda-0b2b-eb3e" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="52aa-fc36-eaa1-353c" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5514-23ed-0c75-8731"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="730a-37a5-51d0-23e9" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="9e1a-2aa8-7ccc-5dce" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="3d60-232c-acc7-9970" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Ritcher Kreugar" id="7898-20d2-bea1-8b9b" hidden="false" type="profile" targetId="0999-3bf8-58a4-65f7"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8771-2546-4332-8fe1"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d92-c7da-3301-f9a0"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="45"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blight" hidden="false" id="40cb-064d-726b-9cf2" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6117-aa56-ef39-178c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0789-36c2-b1e5-78c3"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Blight" id="38cb-4940-9676-7832" hidden="false" type="profile" targetId="e396-1ca7-dad5-47ae"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Gem of the Cursed" hidden="false" id="024e-57b2-e8a1-1996" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cead-7827-e615-06af"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06f4-4919-b6c8-c536"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dark Gem of the Cursed" id="9553-9cf3-d2bd-9ff2" hidden="false" type="profile" targetId="3f9a-bea7-4806-31a8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cursed Company Skeletons" hidden="false" id="e958-3cc4-37ac-3403" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="d5da-d9e6-f7f7-389c" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59e5-2db0-d6cd-84d6"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="1e22-5285-9037-e658" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
+            <entryLink import="true" name="Shield" hidden="false" id="d1be-6842-512c-b11d" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="dc57-c03f-16bf-049a" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d46d-019e-f7e8-5e64"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0cd-af28-b7a1-da51"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="1016-7914-4995-796a" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+                <infoLink name="Banner of Malediction" id="0b90-245d-a5cb-24c5" hidden="false" type="profile" targetId="fbb9-0009-356a-89b0"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="7f57-9e77-8a3f-8f58" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2692-6cdf-5f98-9e23"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbfd-db89-9019-ab58"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Musician" id="c2c3-f3d2-a6cb-2830" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="5b3e-dd14-32e4-815f" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Cursed Company Skeletons" id="6282-19c1-aab1-63b9" hidden="false" type="profile" targetId="9218-42d0-d832-58f9"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="e8c2-0618-56df-e8fe"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="The Cursed Company" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f14c-941f-e337-6e3a">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="0116-7414-9d70-1d9d" hidden="false">
+          <infoLinks>
+            <infoLink name="March with Richter" id="7bac-80c7-6061-948f" hidden="false" type="profile" targetId="3cfc-bb57-6c2b-7d95"/>
+            <infoLink name="Mercenaries" id="02ba-322c-041d-92ac" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Join us in damnation" id="f552-eeea-8102-8c9a" hidden="false" type="profile" targetId="6a93-4d8a-5b3b-e657"/>
+            <infoLink name="Independent" id="7034-dc25-13ea-d427" hidden="false" type="profile" targetId="2776-82d3-bfb0-d834"/>
+            <infoLink name="Leader" id="1eb6-ab3a-5ed1-3374" hidden="false" type="profile" targetId="54c0-38f5-37b2-aa28"/>
+            <infoLink name="Close Order" id="54ba-f476-33f3-ec71" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Necromantic Undead" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="0958-0f4f-eaa7-cf98">
+              <characteristics>
+                <characteristic name="Description" typeId="9f84-4221-785a-db50">Models with this special rule are ‘Undead’. Undead models cannot march (unless they have the Fly (X) special rule and choose to move by flying). In addition, all Undead models have the following universal special rules:
+- Fear
+- Immune to Psychology
+- Unbreakable
+- Unstable A character with this special rule cannot join a unit without this special rule, and vice versa.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -1793,12 +1915,6 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
       </characteristics>
     </profile>
-    <profile name="New Profile" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="4274-b7a4-4364-7854">
-      <characteristics>
-        <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944"/>
-        <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b"/>
-      </characteristics>
-    </profile>
     <profile name="The Red Scimitar" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="085b-cc4f-6c08-2d10">
       <characteristics>
         <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
@@ -1871,6 +1987,75 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
     <profile name="Difficult to Slay" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="8622-c224-1a7a-6cae">
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Borgio the Besieger has an almost unnatural ability to withstand pain and injury. If he is reduced to zero wounds, then do not remove the model, but lay it on its side and leave it in place. At the end of the phase, roll a D6. On a 1-3, he is removed as a casualty as normal. On a roll of 4 or more, he stands back up again with a single Wound remaining.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ritcher Kreugar" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="0999-3bf8-58a4-65f7" page="Warhammer Fantasy Battles 6th Edition Characters/Special Rules">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cursed Company Skeletons" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="9218-42d0-d832-58f9" page="Warhammer Fantasy Battles 6th Edition Characters/Special Rules">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">2</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blight" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="e396-1ca7-dad5-47ae">
+      <characteristics>
+        <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
+        <characteristic name="S" typeId="4f75-25c9-31bd-7074">F+1</characteristic>
+        <characteristic name="AP" typeId="15e2-fff4-477f-ea26"/>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c">Killing Blow</characteristic>
+        <characteristic name="Note" typeId="5e5e-34db-1ee0-86">Blight is a darkly powerful blade, centuries old and suffused with unholy magic. Blight confers +1 Strength to all close combat attacks made by Ritcher. In addition, the weapon has the Killing Blow special rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dark Gem of the Cursed" typeId="5c1d-13f3-7dd6-e817" typeName="Talismans" hidden="false" id="3f9a-bea7-4806-31a8">
+      <characteristics>
+        <characteristic name="Description" typeId="3fa5-c856-b00a-c9f4">The Dark Gem of the Cursed glows a blood-red shade that intensifies when a blow is directed towards Richter, protection him from hard. It confers the bearer a 4+ Ward Save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Banner of Malediction" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards" hidden="false" id="fbb9-0009-356a-89b0">
+      <characteristics>
+        <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">The sinister banner of the Cursed Company has been carried for centuries by various enslaved warriors of Richter. It is a dark parody of his original, disgraced mercenary company banner. The Cursed Company suffers one less wound than they normally would when defeated in combat. As an example, if the Cursed Company loses a combat by 3, they should lose three extra models, but because of the Banner of Malediction, they only lose two models.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Join us in damnation" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="6a93-4d8a-5b3b-e657" page="https://wfb6thcharacters.blogspot.com/p/blog-page_85.html">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">As part of Kreugar’s curse, any foe slain by him or his company are withered by dark magic, their flesh aging as if decades had passed in the blink of an eye. The lifeless victims instantly crumble into evil cackling laughter, rising to accompany him in his eternal curse.
+
+
+If any model within the Cursed Company (including Kreugar himself) slays a model with only 1 wound on its starting profile, then one skeleton is created in its place. Models created in this way are added to the Cursed Company, and are armed in the same manner as the Company. The Victory points value of the unit is unaffected. This rule counts only for models that are killed in close combat, and not for models killed in other way (for example, running down fleeing troops).</characteristic>
+      </characteristics>
+      <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
+    </profile>
+    <profile name="Independent" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="2776-82d3-bfb0-d834">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">This unit will never use the Leadership of the General, in if it is better than its own. Additionally, it cannot be joined by any characters.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Leader" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="54c0-38f5-37b2-aa28">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">If the Champion is slain, the unit will quickly begin to crumble to dust. At the end of the phase when Richter is killed, and at the beggining of each of their turns thereafter, it must take a Leadership Test. If it is failed, the unit suffers a number of wounds equal to the number they failed the Leadership Test by. No saves of any kind are allowed against these wounds.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="March with Richter" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="3cfc-bb57-6c2b-7d95">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">The Cursed Company can march as long as Richter is still alive. If Richter dies, the Cursed Company cannot make march moves.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
