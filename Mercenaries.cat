@@ -1683,7 +1683,7 @@
             <infoLink name="Asarnil, The Dragonlord" id="5477-d4c4-e87a-390d" hidden="false" type="profile" targetId="2ebb-3014-2981-e045"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900">
+        <selectionEntry type="model" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900" subType="mount">
           <entryLinks>
             <entryLink import="true" name="Wicked Claws" hidden="false" id="f194-a118-db59-58dd" type="selectionEntry" targetId="7414-cec3-7cd7-a94b"/>
             <entryLink import="true" name="Full Plate Armour" hidden="false" id="39ab-4f0c-d5ce-648b" type="selectionEntry" targetId="2505-873d-1655-3b0b">
@@ -1716,6 +1716,10 @@
               </infoLinks>
             </infoGroup>
           </infoGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="21d1-d382-671f-b548"/>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="07cd-ebb1-e29c-4f92"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <infoGroups>
