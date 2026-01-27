@@ -1630,113 +1630,56 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Asarnil" hidden="false" id="3d7d-6ad7-e6b7-a826" page="http://reddit.com/r/totalwar/comments/1ih5qbt/dlc_prediction_asarnil_the_dragonlord_will_be_a/">
-          <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="0288-001f-ee7f-29a3" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed7f-3db4-6f26-67a7"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Lance" hidden="false" id="240e-7241-e99f-b1c8" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dcf-d7f8-669d-01df"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="5a4b-6d33-0766-add2" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="4">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="033d-c660-073e-49e1"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="e40e-b880-3ed6-7765" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e858-38c5-d9bd-0a45"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Command" id="7a6b-3835-12a3-c45b" hidden="false" sortIndex="1">
-              <entryLinks>
-                <entryLink import="true" name="General" hidden="false" id="1756-6496-9db4-f1ce" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="762a-d2eb-1643-c9d6"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="6">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b8c-9f91-8ee4-2ea8"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b75-c59a-9067-fc1d"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Amulet of Dragonheart" id="6aac-e483-304c-f724" hidden="false" type="profile" targetId="5748-7194-a891-e550"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900" subType="mount" sortIndex="7">
-              <entryLinks>
-                <entryLink import="true" name="Wicked Claws" hidden="false" id="f194-a118-db59-58dd" type="selectionEntry" targetId="7414-cec3-7cd7-a94b">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e648-9e98-104a-b027"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Full Plate Armour" hidden="false" id="39ab-4f0c-d5ce-648b" type="selectionEntry" targetId="2505-873d-1655-3b0b">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9900-6910-ce73-d0ec"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Dragon Fire" hidden="false" id="c9e5-67b7-5e41-d135" type="selectionEntry" targetId="9969-6ea0-4e4a-7f5e"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Base (60x100)" id="783f-8204-dce7-7db2" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
-                <infoLink name="Deathfang" id="68e5-5cc3-f17f-9c06" hidden="false" type="profile" targetId="11d8-193f-5bea-82cf"/>
-              </infoLinks>
-              <infoGroups>
-                <infoGroup name="Special Rules" id="0504-d0a8-b223-a43d" hidden="false">
-                  <infoLinks>
-                    <infoLink name="Close Order" id="33ce-f918-c4a8-2422" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
-                    <infoLink name="Large Target" id="b347-b076-1b61-9058" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
-                    <infoLink name="Fly" id="c181-da33-9775-bfae" hidden="false" type="profile" targetId="c557-6102-9a35-bbcd">
-                      <modifiers>
-                        <modifier type="append" value="(10)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink name="Swiftstride" id="5b3e-8e05-3446-50ac" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
-                    <infoLink name="Stomp Attacks" id="b90e-4535-6361-7d4e" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
-                      <modifiers>
-                        <modifier type="append" value="(D6)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink name="Terror" id="e7c1-ef23-99a5-fbff" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
-                  </infoLinks>
-                </infoGroup>
-              </infoGroups>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="07cd-ebb1-e29c-4f92"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink targetId="c96a-608-5de4-b943" id="f459-266f-182a-bdb9" primary="false" name="MOUNT"/>
-                <categoryLink targetId="3755-6732-99b2-c713" id="dcb2-4422-dde4-e2d7" primary="true" name="Behemoth"/>
-              </categoryLinks>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="7">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f9d6-3647-daef-ba63"/>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="8ac2-085b-95ad-910d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b8c-9f91-8ee4-2ea8"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b75-c59a-9067-fc1d"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Base (60x100)" id="1737-8104-4772-8780" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
+            <infoLink name="Amulet of Dragonheart" id="6aac-e483-304c-f724" hidden="false" type="profile" targetId="5748-7194-a891-e550"/>
           </infoLinks>
-          <profiles>
-            <profile name="Asarnil, The Dragonlord" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f057-f913-aa64-1702">
-              <characteristics>
-                <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monster (Behemoth, Special Character)</characteristic>
-                <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900" subType="mount" sortIndex="5" collective="true" defaultAmount="1">
+          <entryLinks>
+            <entryLink import="true" name="Wicked Claws" hidden="false" id="f194-a118-db59-58dd" type="selectionEntry" targetId="7414-cec3-7cd7-a94b" collective="true" defaultAmount="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e648-9e98-104a-b027"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="39ab-4f0c-d5ce-648b" type="selectionEntry" targetId="2505-873d-1655-3b0b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9900-6910-ce73-d0ec"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dragon Fire" hidden="false" id="c9e5-67b7-5e41-d135" type="selectionEntry" targetId="9969-6ea0-4e4a-7f5e"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (60x100)" id="783f-8204-dce7-7db2" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
+            <infoLink name="Deathfang" id="68e5-5cc3-f17f-9c06" hidden="false" type="profile" targetId="11d8-193f-5bea-82cf"/>
+          </infoLinks>
+          <infoGroups>
+            <infoGroup name="Special Rules" id="0504-d0a8-b223-a43d" hidden="false">
+              <infoLinks>
+                <infoLink name="Close Order" id="33ce-f918-c4a8-2422" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+                <infoLink name="Large Target" id="b347-b076-1b61-9058" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+                <infoLink name="Fly" id="c181-da33-9775-bfae" hidden="false" type="profile" targetId="c557-6102-9a35-bbcd">
+                  <modifiers>
+                    <modifier type="append" value="(10)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Swiftstride" id="5b3e-8e05-3446-50ac" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+                <infoLink name="Stomp Attacks" id="b90e-4535-6361-7d4e" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+                  <modifiers>
+                    <modifier type="append" value="(D6)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Terror" id="e7c1-ef23-99a5-fbff" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
           <categoryLinks>
-            <categoryLink targetId="5b84-2c3c-869d-3522" id="ee92-5637-be63-3d5e" primary="true" name="Mercenaries"/>
+            <categoryLink name="MOUNT" hidden="false" id="f459-266f-182a-bdb9" targetId="c96a-608-5de4-b943" primary="false"/>
+            <categoryLink name="Behemoth" hidden="false" id="dcb2-4422-dde4-e2d7" targetId="3755-6732-99b2-c713" primary="true"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1766,10 +1709,55 @@
       </costs>
       <infoLinks>
         <infoLink name="Asarnil, The Dragonlord" id="5477-d4c4-e87a-390d" hidden="false" type="profile" targetId="2ebb-3014-2981-e045"/>
+        <infoLink name="Base (60x100)" id="1737-8104-4772-8780" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="41d5-e73a-3710-f86c" primary="true" name="Mercenaries"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="7a6b-3835-12a3-c45b" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="false" id="1756-6496-9db4-f1ce" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="762a-d2eb-1643-c9d6"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="0288-001f-ee7f-29a3" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed7f-3db4-6f26-67a7"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lance" hidden="false" id="240e-7241-e99f-b1c8" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dcf-d7f8-669d-01df"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heavy Armour" hidden="false" id="5a4b-6d33-0766-add2" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="033d-c660-073e-49e1"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Shield" hidden="false" id="e40e-b880-3ed6-7765" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e858-38c5-d9bd-0a45"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f9d6-3647-daef-ba63"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="8ac2-085b-95ad-910d"/>
+      </constraints>
+      <profiles>
+        <profile name="Asarnil, The Dragonlord" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f057-f913-aa64-1702">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monster (Behemoth, Special Character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dragon Fire" hidden="false" id="9969-6ea0-4e4a-7f5e" collective="false">
       <constraints>
@@ -2356,7 +2344,7 @@ The dazzling light of the Amulet of Dragonheart makes the shape of Asarnil and h
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="28cd-23da-f60b-c453"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Borgio the Besieger" hidden="false" id="f4f3-8a2c-b679-229e" type="selectionEntry" targetId="5b0c-3da2-c226-bb34">
+    <entryLink import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="f4f3-8a2c-b679-229e" type="selectionEntry" targetId="5b0c-3da2-c226-bb34">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="084c-3453-dbbd-84ad" primary="true" name="Mercenaries"/>
       </categoryLinks>
