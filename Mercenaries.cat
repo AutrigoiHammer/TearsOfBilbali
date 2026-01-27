@@ -1715,6 +1715,9 @@
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="21d1-d382-671f-b548"/>
                 <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="07cd-ebb1-e29c-4f92"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink targetId="c96a-608-5de4-b943" id="f459-266f-182a-bdb9" primary="false" name="MOUNT"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1761,6 +1764,9 @@
       <infoLinks>
         <infoLink name="Asarnil, The Dragonlord" id="5477-d4c4-e87a-390d" hidden="false" type="profile" targetId="2ebb-3014-2981-e045"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="3755-6732-99b2-c713" id="d438-8fa2-7ace-799a" primary="false" name="Behemoth"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dragon Fire" hidden="false" id="9969-6ea0-4e4a-7f5e" collective="false">
       <constraints>
