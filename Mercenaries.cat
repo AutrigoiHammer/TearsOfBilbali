@@ -1300,6 +1300,13 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e00d-f088-e456-e1c9"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e07a-64c1-288e-1119"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="5165-d052-cfc2-5887" id="3896-1d6a-2697-161d" primary="false" name="Heavy Cavalry"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="84cc-dca5-0c02-7ade" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Ghazak Khan" id="93cd-2923-7656-3c54" hidden="false" type="profile" targetId="4961-db8a-8e6a-4eb6"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Warghan" hidden="false" id="4b2e-9326-3f61-8fc7">
           <infoLinks>
@@ -1317,6 +1324,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="5165-d052-cfc2-5887" id="ac37-1bab-475d-a935" primary="false" name="Heavy Cavalry"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <profiles>
