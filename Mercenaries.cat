@@ -1228,67 +1228,7 @@
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0c06-a43c-7c4e-b846" primary="true" name="Mercenaries"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ghazak Khan" hidden="false" id="a589-48a5-4560-947f">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="The Red Scimitar" hidden="false" id="48f4-2614-f1f1-8f5e" sortIndex="4">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0881-26c0-e4b7-af26"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8619-ac54-035e-e4a3"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="The Red Scimitar" id="5377-af4b-ce0b-d6a9" hidden="false" type="profile" targetId="085b-cc4f-6c08-2d10"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Daemon Head Helmet" hidden="false" id="082f-8eb3-4a16-35e4" sortIndex="5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="518e-98b6-8a03-dfc8"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70b2-c337-810a-244e"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Daemon Head Helmet" id="7d59-c5d6-31c9-b300" hidden="false" type="profile" targetId="b298-5cac-c01b-072a"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="9a1d-47d5-56e6-a72e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1be7-9657-a9fc-8230"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="36d4-b197-33d8-994a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bd4-4505-c91a-6d99"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="fdaa-d1d1-6d6c-69b4" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="6">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="086c-c289-f3ee-aaf8"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e00d-f088-e456-e1c9"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e07a-64c1-288e-1119"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink targetId="5165-d052-cfc2-5887" id="3896-1d6a-2697-161d" primary="false" name="Heavy Cavalry"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="Base (25x50)" id="84cc-dca5-0c02-7ade" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-            <infoLink name="Ghazak Khan" id="93cd-2923-7656-3c54" hidden="false" type="profile" targetId="16bc-bdf7-46cc-2ab3"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Command" id="8e6f-accd-e5df-f30e" hidden="false" sortIndex="1">
-              <entryLinks>
-                <entryLink import="true" name="General" hidden="false" id="f6fe-68c0-dc87-b2c8" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dba-6456-6ff2-ec91"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warghan" hidden="false" id="4b2e-9326-3f61-8fc7">
+        <selectionEntry type="model" import="true" name="Warghan" hidden="false" id="4b2e-9326-3f61-8fc7" sortIndex="7" subType="mount">
           <infoLinks>
             <infoLink name="Warghan" id="db25-067f-d4fd-6894" hidden="false" type="profile" targetId="5ef4-7a99-5cb0-ae41"/>
             <infoLink name="Base (25x50)" id="d542-405e-65ae-45b9" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
@@ -1307,6 +1247,24 @@
           <categoryLinks>
             <categoryLink targetId="5165-d052-cfc2-5887" id="ac37-1bab-475d-a935" primary="false" name="Heavy Cavalry"/>
           </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Red Scimitar" hidden="false" id="48f4-2614-f1f1-8f5e" collective="true" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0881-26c0-e4b7-af26"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8619-ac54-035e-e4a3"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="The Red Scimitar" id="5377-af4b-ce0b-d6a9" hidden="false" type="profile" targetId="085b-cc4f-6c08-2d10"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Daemon Head Helmet" hidden="false" id="082f-8eb3-4a16-35e4" collective="true" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="518e-98b6-8a03-dfc8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70b2-c337-810a-244e"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Daemon Head Helmet" id="7d59-c5d6-31c9-b300" hidden="false" type="profile" targetId="b298-5cac-c01b-072a"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -1336,6 +1294,41 @@
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="8e6f-accd-e5df-f30e" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="false" id="f6fe-68c0-dc87-b2c8" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dba-6456-6ff2-ec91"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="9a1d-47d5-56e6-a72e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1be7-9657-a9fc-8230"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heavy Armour" hidden="false" id="36d4-b197-33d8-994a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bd4-4505-c91a-6d99"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Shield" hidden="false" id="fdaa-d1d1-6d6c-69b4" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="086c-c289-f3ee-aaf8"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e00d-f088-e456-e1c9"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e07a-64c1-288e-1119"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (25x50)" id="84cc-dca5-0c02-7ade" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+        <infoLink name="Ghazak Khan" id="93cd-2923-7656-3c54" hidden="false" type="profile" targetId="16bc-bdf7-46cc-2ab3"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Troll Hunter" hidden="true" id="9bd5-e59a-12c3-f6eb" collective="true">
       <infoLinks>
@@ -1380,75 +1373,7 @@
         <categoryLink targetId="5b84-2c3c-869d-3522" id="f35d-da2e-1c81-32aa" primary="true" name="Mercenaries"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Borgio the Besieger" hidden="false" id="182e-47dd-6287-c86c">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="The Mace of Might" hidden="false" id="feac-dde6-089c-e9c5" sortIndex="4">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="366c-c4eb-a04a-90fc"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb18-fc8b-6dc3-62de"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="The Mace of Might" id="173c-5aa5-a4a7-0cdb" hidden="false" type="profile" targetId="dbec-c63e-1789-18dc"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Monstrous Mask Helm" hidden="false" id="539a-c638-db96-1b86" sortIndex="6">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7901-d8f2-4a01-ed80"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c8a-3b0c-8a03-dacf"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Monstrous Mask Helm" id="e576-d4a0-6dbc-1108" hidden="false" type="profile" targetId="eafe-e594-2ab2-fb8d"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Armour of Brazen Bronze" hidden="false" id="298c-9648-da19-52f9" sortIndex="5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12c1-52a2-230d-0033"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2e3-da78-078d-4f00"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Armour of Brazen Bronze" id="5ea5-ca55-c618-9df7" hidden="false" type="profile" targetId="a0ca-2379-269e-4733"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="b3e3-ee96-450d-6e0a" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a6e-0ef9-2074-6b7e"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="4b89-ab2d-a72c-e64f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="7">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2212-0eec-958e-9f8d"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Lance" hidden="false" id="8d74-b27f-2eec-79ef" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5486-1630-6b7f-30bd"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3794-050f-7ae0-9d3a"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink targetId="5165-d052-cfc2-5887" id="33c5-5b87-6a51-ab9d" primary="false" name="Heavy Cavalry"/>
-          </categoryLinks>
-          <infoLinks>
-            <infoLink name="Base (25x50)" id="eed4-2240-45cd-98b3" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-            <infoLink name="Borgio the Besieger" id="c03d-1a3a-15cb-0a88" hidden="false" type="profile" targetId="4961-db8a-8e6a-4eb6"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Command" id="83f7-daab-5b82-c339" hidden="false" sortIndex="1">
-              <entryLinks>
-                <entryLink import="true" name="General" hidden="false" id="2993-7758-2a02-5b22" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cb7-32f2-3cdf-8b93"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Borgio&apos;s Warhorse" hidden="false" id="e1c3-9954-36ad-0487">
+        <selectionEntry type="model" import="true" name="Borgio&apos;s Warhorse" hidden="false" id="e1c3-9954-36ad-0487" sortIndex="8" collective="true" subType="mount">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="4a98-138b-992e-7998" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -1470,6 +1395,33 @@
             <infoLink name="Borgio&apos;s Warhorse" id="dc79-1393-8528-f53f" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Mace of Might" hidden="false" id="feac-dde6-089c-e9c5" sortIndex="5" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="366c-c4eb-a04a-90fc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb18-fc8b-6dc3-62de"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="The Mace of Might" id="173c-5aa5-a4a7-0cdb" hidden="false" type="profile" targetId="dbec-c63e-1789-18dc"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Armour of Brazen Bronze" hidden="false" id="298c-9648-da19-52f9" sortIndex="6" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12c1-52a2-230d-0033"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2e3-da78-078d-4f00"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armour of Brazen Bronze" id="5ea5-ca55-c618-9df7" hidden="false" type="profile" targetId="a0ca-2379-269e-4733"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Monstrous Mask Helm" hidden="false" id="539a-c638-db96-1b86" sortIndex="7" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7901-d8f2-4a01-ed80"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c8a-3b0c-8a03-dacf"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Monstrous Mask Helm" id="e576-d4a0-6dbc-1108" hidden="false" type="profile" targetId="eafe-e594-2ab2-fb8d"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <profiles>
         <profile name="Borgio the Besieger" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="21f7-f839-444b-f4dd">
@@ -1489,6 +1441,37 @@
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="83f7-daab-5b82-c339" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="false" id="2993-7758-2a02-5b22" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cb7-32f2-3cdf-8b93"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="b3e3-ee96-450d-6e0a" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a6e-0ef9-2074-6b7e"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lance" hidden="false" id="8d74-b27f-2eec-79ef" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3"/>
+        <entryLink import="true" name="Shield" hidden="false" id="4b89-ab2d-a72c-e64f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2212-0eec-958e-9f8d"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5486-1630-6b7f-30bd"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3794-050f-7ae0-9d3a"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (25x50)" id="eed4-2240-45cd-98b3" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+        <infoLink name="Borgio the Besieger" id="c03d-1a3a-15cb-0a88" hidden="false" type="profile" targetId="4961-db8a-8e6a-4eb6"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Cursed Company" hidden="false" id="22dc-5cbb-1a2c-3cab" page="https://wfb6thcharacters.blogspot.com/p/blog-page_85.html">
       <selectionEntries>
