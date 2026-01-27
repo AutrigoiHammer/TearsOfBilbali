@@ -1596,7 +1596,7 @@
       <profiles>
         <profile name="The Cursed Company" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f14c-941f-e337-6e3a">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (named character)</characteristic>
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
           </characteristics>
         </profile>
