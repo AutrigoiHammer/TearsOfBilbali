@@ -1736,6 +1736,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink targetId="5b84-2c3c-869d-3522" id="ee92-5637-be63-3d5e" primary="true" name="Mercenaries"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoGroups>
@@ -1766,7 +1769,7 @@
         <infoLink name="Asarnil, The Dragonlord" id="5477-d4c4-e87a-390d" hidden="false" type="profile" targetId="2ebb-3014-2981-e045"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="3755-6732-99b2-c713" id="d438-8fa2-7ace-799a" primary="false" name="Behemoth"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="41d5-e73a-3710-f86c" primary="true" name="Mercenaries"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dragon Fire" hidden="false" id="9969-6ea0-4e4a-7f5e" collective="false">
