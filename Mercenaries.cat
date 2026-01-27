@@ -1497,8 +1497,16 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5514-23ed-0c75-8731"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="730a-37a5-51d0-23e9" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3"/>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="9e1a-2aa8-7ccc-5dce" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
+            <entryLink import="true" name="Shield" hidden="false" id="730a-37a5-51d0-23e9" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fab-0f1a-dda0-1027"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="9e1a-2aa8-7ccc-5dce" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a950-cf06-bbe3-ddb5"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (25x25)" id="3d60-232c-acc7-9970" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
@@ -1539,8 +1547,16 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59e5-2db0-d6cd-84d6"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="1e22-5285-9037-e658" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
-            <entryLink import="true" name="Shield" hidden="false" id="d1be-6842-512c-b11d" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="1e22-5285-9037-e658" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f29-4eb3-0213-158a"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="d1be-6842-512c-b11d" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e7f7-333a-eb45-634f"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="dc57-c03f-16bf-049a" sortIndex="4">
