@@ -1664,7 +1664,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a">
+            <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="6">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b8c-9f91-8ee4-2ea8"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b75-c59a-9067-fc1d"/>
@@ -1673,54 +1673,62 @@
                 <infoLink name="Amulet of Dragonheart" id="6aac-e483-304c-f724" hidden="false" type="profile" targetId="5748-7194-a891-e550"/>
               </infoLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mount" hidden="false" id="2ef5-3278-5426-192e" sortIndex="7">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900" subType="mount">
+                  <entryLinks>
+                    <entryLink import="true" name="Wicked Claws" hidden="false" id="f194-a118-db59-58dd" type="selectionEntry" targetId="7414-cec3-7cd7-a94b">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e648-9e98-104a-b027"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Full Plate Armour" hidden="false" id="39ab-4f0c-d5ce-648b" type="selectionEntry" targetId="2505-873d-1655-3b0b">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9900-6910-ce73-d0ec"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Dragon Fire" hidden="false" id="c9e5-67b7-5e41-d135" type="selectionEntry" targetId="9969-6ea0-4e4a-7f5e"/>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Base (60x100)" id="783f-8204-dce7-7db2" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
+                    <infoLink name="Deathfang" id="68e5-5cc3-f17f-9c06" hidden="false" type="profile" targetId="11d8-193f-5bea-82cf"/>
+                  </infoLinks>
+                  <infoGroups>
+                    <infoGroup name="Special Rules" id="0504-d0a8-b223-a43d" hidden="false">
+                      <infoLinks>
+                        <infoLink name="Close Order" id="33ce-f918-c4a8-2422" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+                        <infoLink name="Large Target" id="b347-b076-1b61-9058" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+                        <infoLink name="Fly" id="c181-da33-9775-bfae" hidden="false" type="profile" targetId="c557-6102-9a35-bbcd">
+                          <modifiers>
+                            <modifier type="append" value="(10)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Swiftstride" id="5b3e-8e05-3446-50ac" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+                        <infoLink name="Stomp Attacks" id="b90e-4535-6361-7d4e" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+                          <modifiers>
+                            <modifier type="append" value="(D6)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Terror" id="e7c1-ef23-99a5-fbff" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+                      </infoLinks>
+                    </infoGroup>
+                  </infoGroups>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="21d1-d382-671f-b548"/>
+                    <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="07cd-ebb1-e29c-4f92"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfb8-70c1-605d-a27c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d45e-104d-3800-cb83"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfb8-70c1-605d-a27c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d45e-104d-3800-cb83"/>
-          </constraints>
           <infoLinks>
             <infoLink name="Base (60x100)" id="1737-8104-4772-8780" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
             <infoLink name="Asarnil, The Dragonlord" id="5477-d4c4-e87a-390d" hidden="false" type="profile" targetId="2ebb-3014-2981-e045"/>
           </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900" subType="mount">
-          <entryLinks>
-            <entryLink import="true" name="Wicked Claws" hidden="false" id="f194-a118-db59-58dd" type="selectionEntry" targetId="7414-cec3-7cd7-a94b"/>
-            <entryLink import="true" name="Full Plate Armour" hidden="false" id="39ab-4f0c-d5ce-648b" type="selectionEntry" targetId="2505-873d-1655-3b0b">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9900-6910-ce73-d0ec"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Dragon Fire" hidden="false" id="c9e5-67b7-5e41-d135" type="selectionEntry" targetId="9969-6ea0-4e4a-7f5e"/>
-          </entryLinks>
-          <infoLinks>
-            <infoLink name="Base (60x100)" id="783f-8204-dce7-7db2" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
-            <infoLink name="Deathfang" id="68e5-5cc3-f17f-9c06" hidden="false" type="profile" targetId="11d8-193f-5bea-82cf"/>
-          </infoLinks>
-          <infoGroups>
-            <infoGroup name="Special Rules" id="0504-d0a8-b223-a43d" hidden="false">
-              <infoLinks>
-                <infoLink name="Close Order" id="33ce-f918-c4a8-2422" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
-                <infoLink name="Large Target" id="b347-b076-1b61-9058" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
-                <infoLink name="Fly" id="c181-da33-9775-bfae" hidden="false" type="profile" targetId="c557-6102-9a35-bbcd">
-                  <modifiers>
-                    <modifier type="append" value="(10)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Swiftstride" id="5b3e-8e05-3446-50ac" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
-                <infoLink name="Stomp Attacks" id="b90e-4535-6361-7d4e" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
-                  <modifiers>
-                    <modifier type="append" value="(D6)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Terror" id="e7c1-ef23-99a5-fbff" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
-              </infoLinks>
-            </infoGroup>
-          </infoGroups>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="21d1-d382-671f-b548"/>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="07cd-ebb1-e29c-4f92"/>
-          </constraints>
         </selectionEntry>
       </selectionEntries>
       <infoGroups>
