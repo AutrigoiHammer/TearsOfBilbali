@@ -1372,7 +1372,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Borgio the Besieger" hidden="false" id="182e-47dd-6287-c86c">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="The Mace of Might" hidden="false" id="feac-dde6-089c-e9c5" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="The Mace of Might" hidden="false" id="feac-dde6-089c-e9c5" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="366c-c4eb-a04a-90fc"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb18-fc8b-6dc3-62de"/>
@@ -1401,12 +1401,12 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="b3e3-ee96-450d-6e0a" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="b3e3-ee96-450d-6e0a" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a6e-0ef9-2074-6b7e"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="4b89-ab2d-a72c-e64f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+            <entryLink import="true" name="Shield" hidden="false" id="4b89-ab2d-a72c-e64f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2212-0eec-958e-9f8d"/>
               </constraints>
@@ -1426,6 +1426,16 @@
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="83f7-daab-5b82-c339" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="General" hidden="false" id="2993-7758-2a02-5b22" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cb7-32f2-3cdf-8b93"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Borgio&apos;s Warhorse" hidden="false" id="e1c3-9954-36ad-0487">
           <entryLinks>
@@ -1930,6 +1940,14 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="28cd-23da-f60b-c453"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Borgio the Besieger" hidden="false" id="f4f3-8a2c-b679-229e" type="selectionEntry" targetId="5b0c-3da2-c226-bb34">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="084c-3453-dbbd-84ad" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="09e9-0170-26dc-5577"/>
       </constraints>
     </entryLink>
   </entryLinks>
