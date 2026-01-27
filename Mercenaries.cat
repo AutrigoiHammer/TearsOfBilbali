@@ -1712,7 +1712,6 @@
                 </infoGroup>
               </infoGroups>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="21d1-d382-671f-b548"/>
                 <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="07cd-ebb1-e29c-4f92"/>
               </constraints>
               <categoryLinks>
