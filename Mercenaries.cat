@@ -1230,7 +1230,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Ghazak Khan" hidden="false" id="a589-48a5-4560-947f">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="The Red Scimitar" hidden="false" id="48f4-2614-f1f1-8f5e" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="The Red Scimitar" hidden="false" id="48f4-2614-f1f1-8f5e" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0881-26c0-e4b7-af26"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8619-ac54-035e-e4a3"/>
@@ -1239,7 +1239,7 @@
                 <infoLink name="The Red Scimitar" id="5377-af4b-ce0b-d6a9" hidden="false" type="profile" targetId="085b-cc4f-6c08-2d10"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Daemon Head Helmet" hidden="false" id="082f-8eb3-4a16-35e4" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Daemon Head Helmet" hidden="false" id="082f-8eb3-4a16-35e4" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="518e-98b6-8a03-dfc8"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70b2-c337-810a-244e"/>
@@ -1250,17 +1250,17 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="9a1d-47d5-56e6-a72e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="9a1d-47d5-56e6-a72e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1be7-9657-a9fc-8230"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="36d4-b197-33d8-994a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="36d4-b197-33d8-994a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bd4-4505-c91a-6d99"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="fdaa-d1d1-6d6c-69b4" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+            <entryLink import="true" name="Shield" hidden="false" id="fdaa-d1d1-6d6c-69b4" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="086c-c289-f3ee-aaf8"/>
               </constraints>
@@ -1277,6 +1277,16 @@
             <infoLink name="Base (25x50)" id="84cc-dca5-0c02-7ade" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
             <infoLink name="Ghazak Khan" id="93cd-2923-7656-3c54" hidden="false" type="profile" targetId="4961-db8a-8e6a-4eb6"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="8e6f-accd-e5df-f30e" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="General" hidden="false" id="f6fe-68c0-dc87-b2c8" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dba-6456-6ff2-ec91"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Warghan" hidden="false" id="4b2e-9326-3f61-8fc7">
           <infoLinks>
