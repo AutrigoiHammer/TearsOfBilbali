@@ -1643,7 +1643,7 @@
           <entryLinks>
             <entryLink import="true" name="Wicked Claws" hidden="false" id="f194-a118-db59-58dd" type="selectionEntry" targetId="7414-cec3-7cd7-a94b" collective="true" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e648-9e98-104a-b027"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e648-9e98-104a-b027"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Full Plate Armour" hidden="false" id="39ab-4f0c-d5ce-648b" type="selectionEntry" targetId="2505-873d-1655-3b0b">
