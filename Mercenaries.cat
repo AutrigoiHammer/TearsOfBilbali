@@ -1509,7 +1509,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d92-c7da-3301-f9a0"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="45"/>
+            <cost name="pts" typeId="points" value="60"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Blight" hidden="false" id="40cb-064d-726b-9cf2" sortIndex="4">
@@ -2144,6 +2144,14 @@ If any model within the Cursed Company (including Kreugar himself) slays a model
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="09e9-0170-26dc-5577"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="The Cursed Company" hidden="false" id="c03b-0f11-9210-e1e2" type="selectionEntry" targetId="22dc-5cbb-1a2c-3cab">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="5b12-e6d1-fc37-95d8" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a64-575c-68be-004c"/>
       </constraints>
     </entryLink>
   </entryLinks>
