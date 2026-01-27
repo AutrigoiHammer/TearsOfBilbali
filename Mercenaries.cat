@@ -1484,6 +1484,8 @@
           <infoLinks>
             <infoLink name="Difficult to Slay" id="df91-5384-fbb0-66a6" hidden="false" type="profile" targetId="8622-c224-1a7a-6cae"/>
             <infoLink name="Beloved General" id="8d31-798c-6b9d-dce4" hidden="false" type="profile" targetId="5e80-5e11-9b26-718a"/>
+            <infoLink name="Close Order" id="6585-d058-aded-7d27" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Mercenaries" id="8a04-aa3d-2896-5279" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1625,6 +1627,138 @@
         </infoGroup>
       </infoGroups>
       <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Asarnil" hidden="false" id="3d7d-6ad7-e6b7-a826" page="http://reddit.com/r/totalwar/comments/1ih5qbt/dlc_prediction_asarnil_the_dragonlord_will_be_a/">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="0288-001f-ee7f-29a3" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed7f-3db4-6f26-67a7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Lance" hidden="false" id="240e-7241-e99f-b1c8" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dcf-d7f8-669d-01df"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="5a4b-6d33-0766-add2" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="033d-c660-073e-49e1"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="e40e-b880-3ed6-7765" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e858-38c5-d9bd-0a45"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="7a6b-3835-12a3-c45b" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="General" hidden="false" id="1756-6496-9db4-f1ce" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="762a-d2eb-1643-c9d6"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b8c-9f91-8ee4-2ea8"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b75-c59a-9067-fc1d"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Amulet of Dragonheart" id="6aac-e483-304c-f724" hidden="false" type="profile" targetId="5748-7194-a891-e550"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfb8-70c1-605d-a27c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d45e-104d-3800-cb83"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (60x100)" id="1737-8104-4772-8780" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
+            <infoLink name="Asarnil, The Dragonlord" id="5477-d4c4-e87a-390d" hidden="false" type="profile" targetId="2ebb-3014-2981-e045"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900">
+          <entryLinks>
+            <entryLink import="true" name="Wicked Claws" hidden="false" id="f194-a118-db59-58dd" type="selectionEntry" targetId="7414-cec3-7cd7-a94b"/>
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="39ab-4f0c-d5ce-648b" type="selectionEntry" targetId="2505-873d-1655-3b0b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9900-6910-ce73-d0ec"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dragon Fire" hidden="false" id="c9e5-67b7-5e41-d135" type="selectionEntry" targetId="9969-6ea0-4e4a-7f5e"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (60x100)" id="783f-8204-dce7-7db2" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
+          </infoLinks>
+          <infoGroups>
+            <infoGroup name="Special Rules" id="0504-d0a8-b223-a43d" hidden="false">
+              <infoLinks>
+                <infoLink name="Close Order" id="33ce-f918-c4a8-2422" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+                <infoLink name="Large Target" id="b347-b076-1b61-9058" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+                <infoLink name="Fly" id="c181-da33-9775-bfae" hidden="false" type="profile" targetId="c557-6102-9a35-bbcd">
+                  <modifiers>
+                    <modifier type="append" value="(10)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Swiftstride" id="5b3e-8e05-3446-50ac" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+                <infoLink name="Stomp Attacks" id="b90e-4535-6361-7d4e" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+                  <modifiers>
+                    <modifier type="append" value="(D6)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Terror" id="e7c1-ef23-99a5-fbff" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="360f-68d5-5ca9-f902" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="7fa5-bd3f-3f78-c968" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Large Target" id="83e0-cd7d-24c3-13ec" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+            <infoLink name="Fly" id="cb09-f12e-e803-c723" hidden="false" type="profile" targetId="c557-6102-9a35-bbcd">
+              <modifiers>
+                <modifier type="append" value="(10)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Swiftstride" id="d37e-ca26-ac91-edbb" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Stomp Attacks" id="5d3d-f799-2ee0-8405" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(D6)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Terror" id="02c5-4535-24a7-14b1" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+            <infoLink name="Dragon Tamer" id="a2de-8f0a-2055-0da7" hidden="false" type="profile" targetId="6a36-a6a9-9aad-92b3"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <profiles>
+        <profile name="Asarnil, The Dragonlord" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f057-f913-aa64-1702">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monster (Behemoth, Special Character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="333"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dragon Fire" hidden="false" id="9969-6ea0-4e4a-7f5e" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38a2-2b9a-d0eb-28b2"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16f5-0779-a88e-020f"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Dragon fire" hidden="false" type="profile" id="a133-62e3-66b9-e7f8" targetId="fbc5-7c01-9014-f854"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -2074,6 +2208,54 @@ If any model within the Cursed Company (including Kreugar himself) slays a model
         <characteristic name="Description" typeId="9f84-4221-785a-db50">The Cursed Company can march as long as Richter is still alive. If Richter dies, the Cursed Company cannot make march moves.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Deathfang" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="11d8-193f-5bea-82cf" page="Regiments of Renown, WHFB 6th Edition (Adapted for ToW:ToB)">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">(+2)</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">(+5)</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">5</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Asarnil, The Dragonlord" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="2ebb-3014-2981-e045" page="Regiments of Renown, WHFB 6th Edition (Adapted for ToW:ToB)">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">7</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">7</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Amulet of Dragonheart" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="5748-7194-a891-e550" page="https://imgur.com/AwFvaWn">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">This amulet was one of the potent artefacts made by Caledor the Dragontamer for the Elven Dragon Princes. It is said that the gleaming gem hanging around Asarnil&apos;s neck is a stone found at the heart of a mountain, blessed by Caledor the Dragontamer himself.
+
+The dazzling light of the Amulet of Dragonheart makes the shape of Asarnil and his Dragon appear blurry and vage, as if glanced through a haze. All missile attacks against Asarnil and his Dragon suffer a -1 to hit penalty.</characteristic>
+      </characteristics>
+      <comment>Red_Dox: &quot;It is very unlikely he will become a official LL. What workshop mods do is a different story. Asarnil was just a &quot;Rare+Hero&quot; choice and not a leading DoW character in TT. Still, as mentioned, he can show up as a RoR for High Elves or DoW at some point. I would also not be upset if he would lead a Rogue Army with more &quot;Dragon Lords&quot; included to doomstack piss everyone off.&quot;</comment>
+    </profile>
+    <profile name="Dragon fire" hidden="false" id="fbc5-7c01-9014-f854" typeId="a378-c633-912d-11ce" typeName="Weapon" page="174" publicationId="8b8d-8fc4-559e-87b1">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">N/A</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">4</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Breath Weapon, Flaming Attacks</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dragon Tamer" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="6a36-a6a9-9aad-92b3" page="https://imgur.com/JZ5zZ4Y">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Enemy Dragons must take a Leadership test at the start of each Combat phase in order to attack Asarnil, the Dragonlord. If the test is failed, the Dragon may not make any attacks against Asarnil that phase. This does not affect Stomp Attacks.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Badlands Ogre Bulls" hidden="false" id="44c9-e0c9-75ce-1fce" type="selectionEntry" targetId="a4af-ea3a-49ea-d56e">
@@ -2168,6 +2350,14 @@ If any model within the Cursed Company (including Kreugar himself) slays a model
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a64-575c-68be-004c"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="13e1-b48e-ad58-0689" type="selectionEntry" targetId="8c4a-26d2-6368-f867">
+      <categoryLinks>
+        <categoryLink name="Mercenaries" hidden="false" id="dc4f-7d07-805e-3ee9" targetId="5b84-2c3c-869d-3522" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d2f1-5fcd-a6de-d06b"/>
       </constraints>
     </entryLink>
   </entryLinks>
