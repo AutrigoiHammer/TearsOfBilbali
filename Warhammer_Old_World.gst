@@ -213,7 +213,7 @@
         </categoryLink>
         <categoryLink name="Mercenaries" hidden="false" id="6032-af52-ae71-e755" targetId="5b84-2c3c-869d-3522">
           <constraints>
-            <constraint type="max" value="20" field="limit::points" scope="force" shared="true" id="4bbb-90a8-3513-cbec" percentValue="true" includeChildSelections="true"/>
+            <constraint type="max" value="25" field="limit::points" scope="force" shared="true" id="4bbb-90a8-3513-cbec" percentValue="true" includeChildSelections="true"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="25" field="4bbb-90a8-3513-cbec">
