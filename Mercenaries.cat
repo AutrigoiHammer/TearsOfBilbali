@@ -1322,8 +1322,7 @@
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e00d-f088-e456-e1c9"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e07a-64c1-288e-1119"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e07a-64c1-288e-1119" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="Base (25x50)" id="84cc-dca5-0c02-7ade" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
@@ -1465,8 +1464,7 @@
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5486-1630-6b7f-30bd"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3794-050f-7ae0-9d3a"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3794-050f-7ae0-9d3a" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="Base (25x50)" id="eed4-2240-45cd-98b3" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
@@ -1735,7 +1733,6 @@
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f9d6-3647-daef-ba63"/>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="8ac2-085b-95ad-910d"/>
       </constraints>
       <profiles>
         <profile name="Asarnil, The Dragonlord" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f057-f913-aa64-1702">
