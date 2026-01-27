@@ -1630,7 +1630,7 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Asarnil" hidden="false" id="3d7d-6ad7-e6b7-a826" page="http://reddit.com/r/totalwar/comments/1ih5qbt/dlc_prediction_asarnil_the_dragonlord_will_be_a/">
+        <selectionEntry type="model" import="true" name="Asarnil" hidden="false" id="3d7d-6ad7-e6b7-a826" page="http://reddit.com/r/totalwar/comments/1ih5qbt/dlc_prediction_asarnil_the_dragonlord_will_be_a/">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="0288-001f-ee7f-29a3" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
