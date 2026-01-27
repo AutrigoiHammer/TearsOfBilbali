@@ -1082,41 +1082,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Troll Hunter" hidden="true" id="9bd5-e59a-12c3-f6eb" collective="true">
-      <infoLinks>
-        <infoLink name="Scouts" id="a004-b4f5-f076-f83b" hidden="false" type="profile" targetId="fe5e-8838-7fbd-a7ec"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="10"/>
-      </costs>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a6d0-e072-75ec-45d8" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="598e-22df-1929-bf42">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="598e-22df-1929-bf42">
-          <repeats>
-            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29cd-7993-715e-09d4"/>
-        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="598e-22df-1929-bf42" includeChildSelections="true"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="125d-3e0e-ef82-6a82">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Fernando Pirazzo" hidden="false" id="5e98-f344-895f-fc19" sortIndex="1">
@@ -1257,7 +1222,7 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="5d23-a058-965c-22dc" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <costs>
-        <cost name="pts" typeId="points" value="205"/>
+        <cost name="pts" typeId="points" value="200"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0c06-a43c-7c4e-b846" primary="true" name="Mercenaries"/>
@@ -1293,6 +1258,11 @@
             <entryLink import="true" name="Heavy Armour" hidden="false" id="36d4-b197-33d8-994a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bd4-4505-c91a-6d99"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="fdaa-d1d1-6d6c-69b4" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="086c-c289-f3ee-aaf8"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1353,6 +1323,146 @@
               </modifiers>
             </infoLink>
             <infoLink name="The Mighty Khan" id="c39d-9b13-c51a-9226" hidden="false" type="profile" targetId="6901-1582-6337-60bc"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Troll Hunter" hidden="true" id="9bd5-e59a-12c3-f6eb" collective="true">
+      <infoLinks>
+        <infoLink name="Scouts" id="a004-b4f5-f076-f83b" hidden="false" type="profile" targetId="fe5e-8838-7fbd-a7ec"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a6d0-e072-75ec-45d8" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="598e-22df-1929-bf42">
+          <repeats>
+            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="598e-22df-1929-bf42">
+          <repeats>
+            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29cd-7993-715e-09d4"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="598e-22df-1929-bf42" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Borgio the Besieger" hidden="false" id="5b0c-3da2-c226-bb34" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+      <costs>
+        <cost name="pts" typeId="points" value="200"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="f35d-da2e-1c81-32aa" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Borgio the Besieger" hidden="false" id="182e-47dd-6287-c86c">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Mace of Might" hidden="false" id="feac-dde6-089c-e9c5" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="366c-c4eb-a04a-90fc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb18-fc8b-6dc3-62de"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="The Mace of Might" id="173c-5aa5-a4a7-0cdb" hidden="false" type="profile" targetId="dbec-c63e-1789-18dc"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Monstrous Mask Helm" hidden="false" id="539a-c638-db96-1b86" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7901-d8f2-4a01-ed80"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c8a-3b0c-8a03-dacf"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Monstrous Mask Helm" id="e576-d4a0-6dbc-1108" hidden="false" type="profile" targetId="eafe-e594-2ab2-fb8d"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Armour of Brazen Bronze" hidden="false" id="298c-9648-da19-52f9" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12c1-52a2-230d-0033"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2e3-da78-078d-4f00"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Armour of Brazen Bronze" id="5ea5-ca55-c618-9df7" hidden="false" type="profile" targetId="a0ca-2379-269e-4733"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="b3e3-ee96-450d-6e0a" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a6e-0ef9-2074-6b7e"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="4b89-ab2d-a72c-e64f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2212-0eec-958e-9f8d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5486-1630-6b7f-30bd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3794-050f-7ae0-9d3a"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="5165-d052-cfc2-5887" id="33c5-5b87-6a51-ab9d" primary="false" name="Heavy Cavalry"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="eed4-2240-45cd-98b3" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Borgio the Besieger" id="c03d-1a3a-15cb-0a88" hidden="false" type="profile" targetId="4961-db8a-8e6a-4eb6"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Borgio&apos;s Warhorse" hidden="false" id="e1c3-9954-36ad-0487">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="4a98-138b-992e-7998" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a00-08a9-526b-4bcc"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Barding" hidden="false" id="b3d0-1bdd-7d0c-b966" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c265-cfa1-6ead-b1a0"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70aa-5af1-50cd-5250"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54e9-ded9-bbdc-ca34"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="3c14-eebe-0c68-e985" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Borgio&apos;s Warhorse" id="dc79-1393-8528-f53f" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Borgio the Besieger" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="21f7-f839-444b-f4dd">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="696c-d3e3-e4c2-0719" hidden="false">
+          <infoLinks>
+            <infoLink name="Difficult to Slay" id="df91-5384-fbb0-66a6" hidden="false" type="profile" targetId="8622-c224-1a7a-6cae"/>
+            <infoLink name="Beloved General" id="8d31-798c-6b9d-dce4" hidden="false" type="profile" targetId="5e80-5e11-9b26-718a"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1649,17 +1759,17 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Ghazak Khan" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="4961-db8a-8e6a-4eb6" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <profile name="Borgio the Besieger" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="4961-db8a-8e6a-4eb6" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">7</characteristic>
-        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
-        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
-        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">10</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
       </characteristics>
     </profile>
     <profile name="New Profile" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="4274-b7a4-4364-7854">
@@ -1685,6 +1795,61 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
     <profile name="The Mighty Khan" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="6901-1582-6337-60bc">
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Ghazak Khan has a +4 modifier on his Strength characteristic whenever it fights the model that caused his first wound.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ghazak Khan" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="16bc-bdf7-46cc-2ab3" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">7</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">6</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Borgio&apos;s Warhorse" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="4b82-45c2-43d3-5985" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">8</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">-</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Mace of Might" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="dbec-c63e-1789-18dc">
+      <characteristics>
+        <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
+        <characteristic name="S" typeId="4f75-25c9-31bd-7074">F</characteristic>
+        <characteristic name="AP" typeId="15e2-fff4-477f-ea26">-</characteristic>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c"/>
+        <characteristic name="Note" typeId="5e5e-34db-1ee0-86">Borgio made this weapon out of a cannon ball that hit him square in the chest, yet did not kill him. From that point on it has become his good luck charm. If Borgio rolls a 6 to hit with this weapon, that hit will be at Strength 10.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Monstrous Mask Helm" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="eafe-e594-2ab2-fb8d">
+      <characteristics>
+        <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">This Helm causes fear.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armour of Brazen Bronze" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="a0ca-2379-269e-4733">
+      <characteristics>
+        <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">This counts as a suit of heavy armour that also conveys a Ward save of 5+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Beloved General" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="5e80-5e11-9b26-718a">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Borgio the Besieger was beloved by his men, and the people of Miragliano. To represent this, any friendly unit within 18&quot; may test on Borgio&apos;s Leadership. This rule replaces the normal rules for Generals found in the Warhammer rulebook</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Difficult to Slay" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="8622-c224-1a7a-6cae">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Borgio the Besieger has an almost unnatural ability to withstand pain and injury. If he is reduced to zero wounds, then do not remove the model, but lay it on its side and leave it in place. At the end of the phase, roll a D6. On a 1-3, he is removed as a casualty as normal. On a roll of 4 or more, he stands back up again with a single Wound remaining.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
