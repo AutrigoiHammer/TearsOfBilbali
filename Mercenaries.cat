@@ -1372,7 +1372,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Borgio the Besieger" hidden="false" id="182e-47dd-6287-c86c">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="The Mace of Might" hidden="false" id="feac-dde6-089c-e9c5" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="The Mace of Might" hidden="false" id="feac-dde6-089c-e9c5" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="366c-c4eb-a04a-90fc"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb18-fc8b-6dc3-62de"/>
@@ -1381,7 +1381,7 @@
                 <infoLink name="The Mace of Might" id="173c-5aa5-a4a7-0cdb" hidden="false" type="profile" targetId="dbec-c63e-1789-18dc"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Monstrous Mask Helm" hidden="false" id="539a-c638-db96-1b86" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Monstrous Mask Helm" hidden="false" id="539a-c638-db96-1b86" sortIndex="6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7901-d8f2-4a01-ed80"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c8a-3b0c-8a03-dacf"/>
@@ -1390,7 +1390,7 @@
                 <infoLink name="Monstrous Mask Helm" id="e576-d4a0-6dbc-1108" hidden="false" type="profile" targetId="eafe-e594-2ab2-fb8d"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Armour of Brazen Bronze" hidden="false" id="298c-9648-da19-52f9" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Armour of Brazen Bronze" hidden="false" id="298c-9648-da19-52f9" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12c1-52a2-230d-0033"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2e3-da78-078d-4f00"/>
@@ -1406,11 +1406,12 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a6e-0ef9-2074-6b7e"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="4b89-ab2d-a72c-e64f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="6">
+            <entryLink import="true" name="Shield" hidden="false" id="4b89-ab2d-a72c-e64f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2212-0eec-958e-9f8d"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Lance" hidden="false" id="8d74-b27f-2eec-79ef" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5486-1630-6b7f-30bd"/>
