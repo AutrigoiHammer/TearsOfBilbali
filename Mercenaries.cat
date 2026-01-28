@@ -1613,7 +1613,7 @@
       </infoGroups>
       <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition" defaultAmount="">
+    <selectionEntry type="upgrade" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition" defaultAmount="" collective="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="6" collective="true">
           <constraints>
@@ -1690,6 +1690,20 @@
             </infoLink>
             <infoLink name="Terror" id="02c5-4535-24a7-14b1" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
             <infoLink name="Dragon Tamer" id="a2de-8f0a-2055-0da7" hidden="false" type="profile" targetId="6a36-a6a9-9aad-92b3"/>
+            <infoLink name="Strike First" id="9ed1-e58c-d142-e3f6" hidden="false" type="profile" targetId="48fd-23c1-c0d5-ae1d">
+              <modifiers>
+                <modifier type="set" value="does not apply to this model&apos;s mount should it have one" field="annotation">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </infoGroup>
       </infoGroups>
