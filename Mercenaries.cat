@@ -1784,12 +1784,12 @@
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Bracchus" hidden="false" id="f18a-8725-3d73-1ef5" subType="mount" sortIndex="8" collective="true">
           <entryLinks>
-            <entryLink import="true" name="Wicked Claws" hidden="false" id="aeaf-a6d4-5d50-8664" type="selectionEntry" targetId="7414-cec3-7cd7-a94b" collective="true" defaultAmount="1">
+            <entryLink import="true" name="Wicked Claws" hidden="false" id="aeaf-a6d4-5d50-8664" type="selectionEntry" targetId="7414-cec3-7cd7-a94b" collective="true" defaultAmount="1" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12a3-c789-4b37-f4be"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Full Plate Armour" hidden="false" id="223c-7c7d-b8cb-2a08" type="selectionEntry" targetId="2505-873d-1655-3b0b">
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="223c-7c7d-b8cb-2a08" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cf1-7024-b948-3226"/>
               </constraints>
@@ -1828,12 +1828,13 @@
             <categoryLink name="Behemoth" hidden="false" id="4792-8d73-a170-a76f" targetId="3755-6732-99b2-c713" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Noxious breath" hidden="false" id="57f2-9ea9-beef-4f53" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Noxious breath" hidden="false" id="57f2-9ea9-beef-4f53" collective="true" sortIndex="1">
               <infoLinks>
                 <infoLink name="Noxious breath" id="af07-63d1-82d0-34c6" hidden="false" type="profile" targetId="8c8b-d7c0-b386-f909"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2d7-2aee-6641-79cb"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ed8-bde5-2f62-cb52"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
@@ -1927,7 +1928,7 @@
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c28c-c41b-e9cb-5795"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c28c-c41b-e9cb-5795" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <profiles>
         <profile name="Rakarth, The Beastlord" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="df50-296b-bca5-0cc9">
@@ -2597,11 +2598,6 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
       <categoryLinks>
         <categoryLink name="Mercenaries" hidden="false" id="dc4f-7d07-805e-3ee9" targetId="5b84-2c3c-869d-3522" primary="true"/>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="318c-d2a4-266f-e9c9" primary="false" name="Named Characters"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="8cf9-f88f-c958-be7c" type="selectionEntry" targetId="8c4a-26d2-6368-f867">
-      <categoryLinks>
-        <categoryLink name="Mercenaries" hidden="false" id="0fa9-4964-9099-65da" targetId="5b84-2c3c-869d-3522" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
