@@ -1848,13 +1848,13 @@
             <infoLink name="Rakarth&apos;s Enchanted Shield" id="ff4d-822f-787e-d394" hidden="false" type="profile" targetId="eaf2-2c17-1f57-a735"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Armour of Fortune" hidden="false" id="499b-a8a6-f6bd-378a" collective="true" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Rakarth&apos;s Armour of Fortune" hidden="false" id="499b-a8a6-f6bd-378a" collective="true" sortIndex="5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="069b-c9fb-cee9-95c0"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5406-580c-1cf0-5318"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Rakarth&apos;s Whip of Agony" id="6789-f815-9d26-1f1a" hidden="false" type="profile" targetId="3695-9573-5b6c-7e19"/>
+            <infoLink name="Armour of Fortune" id="6789-f815-9d26-1f1a" hidden="false" type="profile" targetId="c717-51f5-be17-3566"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1921,7 +1921,7 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95ae-7167-43a0-6669"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Lance" hidden="false" id="c0a0-3b8b-de5c-b31f" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="4">
+        <entryLink import="true" name="Lance" hidden="false" id="c0a0-3b8b-de5c-b31f" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e09-3262-8206-d734"/>
           </constraints>
@@ -2459,7 +2459,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
         <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">It provides an additional +1 armour save to an standard shield. It may never surpass the 3+ armour save limitation for Monsters.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Armour of Fortune" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="c717-51f5-be17-3566">
+    <profile name="Rakarth&apos;s Armour of Fortune" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="c717-51f5-be17-3566">
       <characteristics>
         <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">It counts as heavy armour. Rakarth rolls to save as normal. If he fails his normal armour saving throw, he can immediatelly roll again, this time saving on a roll of 5+ or more, but ignoring saving roll modifiers previously applied (this is, always saving at 5+, except when attacked by weapons, spells or missiles negating armour saves)</characteristic>
       </characteristics>
