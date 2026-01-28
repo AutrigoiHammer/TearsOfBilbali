@@ -1226,6 +1226,8 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0c06-a43c-7c4e-b846" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="3f76-29bf-6d09-0069" primary="false" name="Named Characters"/>
+        <categoryLink targetId="5165-d052-cfc2-5887" id="af28-8e0e-308b-6b6f" primary="false" name="Heavy Cavalry"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Warghan" hidden="false" id="4b2e-9326-3f61-8fc7" sortIndex="7" subType="mount">
@@ -1369,7 +1371,9 @@
         <cost name="pts" typeId="points" value="200"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="5b84-2c3c-869d-3522" id="f35d-da2e-1c81-32aa" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="f35d-da2e-1c81-32aa" primary="false" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="a773-57ba-c79b-e12f" primary="true" name="Named Characters"/>
+        <categoryLink targetId="5165-d052-cfc2-5887" id="1550-d66f-e95f-66f7" primary="false" name="Heavy Cavalry"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Borgio&apos;s Warhorse" hidden="false" id="e1c3-9954-36ad-0487" sortIndex="8" collective="true" subType="mount">
@@ -1697,7 +1701,8 @@
         <infoLink name="Base (60x100)" id="1737-8104-4772-8780" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="5b84-2c3c-869d-3522" id="41d5-e73a-3710-f86c" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="41d5-e73a-3710-f86c" primary="false" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="3276-34cf-6ad0-9eb7" primary="true" name="Named Characters"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command" id="7a6b-3835-12a3-c45b" hidden="false" sortIndex="1">
