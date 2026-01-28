@@ -1371,8 +1371,8 @@
         <cost name="pts" typeId="points" value="200"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="5b84-2c3c-869d-3522" id="f35d-da2e-1c81-32aa" primary="false" name="Mercenaries"/>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="a773-57ba-c79b-e12f" primary="true" name="Named Characters"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="f35d-da2e-1c81-32aa" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="a773-57ba-c79b-e12f" primary="false" name="Named Characters"/>
         <categoryLink targetId="5165-d052-cfc2-5887" id="1550-d66f-e95f-66f7" primary="false" name="Heavy Cavalry"/>
       </categoryLinks>
       <selectionEntries>
@@ -1715,8 +1715,8 @@
         <infoLink name="Base (60x100)" id="1737-8104-4772-8780" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="5b84-2c3c-869d-3522" id="41d5-e73a-3710-f86c" primary="false" name="Mercenaries"/>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="3276-34cf-6ad0-9eb7" primary="true" name="Named Characters"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="41d5-e73a-3710-f86c" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="3276-34cf-6ad0-9eb7" primary="false" name="Named Characters"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command" id="7a6b-3835-12a3-c45b" hidden="false" sortIndex="1">
@@ -2593,9 +2593,15 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a64-575c-68be-004c"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="13e1-b48e-ad58-0689" type="selectionEntry" targetId="8c4a-26d2-6368-f867">
+    <entryLink import="true" name="Rakarth, The Beastlord" hidden="false" id="13e1-b48e-ad58-0689" type="selectionEntry" targetId="9c28-85eb-3544-b0a4">
       <categoryLinks>
         <categoryLink name="Mercenaries" hidden="false" id="dc4f-7d07-805e-3ee9" targetId="5b84-2c3c-869d-3522" primary="true"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="318c-d2a4-266f-e9c9" primary="false" name="Named Characters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="8cf9-f88f-c958-be7c" type="selectionEntry" targetId="8c4a-26d2-6368-f867">
+      <categoryLinks>
+        <categoryLink name="Mercenaries" hidden="false" id="0fa9-4964-9099-65da" targetId="5b84-2c3c-869d-3522" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
