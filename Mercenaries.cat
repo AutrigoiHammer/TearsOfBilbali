@@ -1782,7 +1782,7 @@
             <infoLink name="Rakarth&apos;s Whip of Agony" id="1d8f-de43-9fb0-8159" hidden="false" type="profile" targetId="3695-9573-5b6c-7e19"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Bracchus" hidden="false" id="f18a-8725-3d73-1ef5" subType="mount" sortIndex="8" collective="true">
+        <selectionEntry type="model" import="true" name="Bracchus" hidden="false" id="f18a-8725-3d73-1ef5" subType="mount" sortIndex="7" collective="true">
           <entryLinks>
             <entryLink import="true" name="Wicked Claws" hidden="false" id="aeaf-a6d4-5d50-8664" type="selectionEntry" targetId="7414-cec3-7cd7-a94b" collective="true" defaultAmount="1" sortIndex="3">
               <constraints>
@@ -2600,6 +2600,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="318c-d2a4-266f-e9c9" primary="false" name="Named Characters"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="95c7-5534-8465-8ec2" type="selectionEntry" targetId="8c4a-26d2-6368-f867"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
