@@ -1609,9 +1609,9 @@
       </infoGroups>
       <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition" defaultAmount="1">
+    <selectionEntry type="upgrade" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition" defaultAmount="">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="7" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="6" collective="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b8c-9f91-8ee4-2ea8"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b75-c59a-9067-fc1d"/>
@@ -1620,7 +1620,7 @@
             <infoLink name="Amulet of Dragonheart" id="6aac-e483-304c-f724" hidden="false" type="profile" targetId="5748-7194-a891-e550"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900" subType="mount" sortIndex="5" collective="true" defaultAmount="">
+        <selectionEntry type="model" import="true" name="Deathfang" hidden="false" id="f373-5df0-aafb-7900" subType="mount" sortIndex="7" collective="true">
           <entryLinks>
             <entryLink import="true" name="Wicked Claws" hidden="false" id="f194-a118-db59-58dd" type="selectionEntry" targetId="7414-cec3-7cd7-a94b" collective="true" defaultAmount="1">
               <constraints>
@@ -1725,7 +1725,7 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="033d-c660-073e-49e1"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Shield" hidden="false" id="e40e-b880-3ed6-7765" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="6">
+        <entryLink import="true" name="Shield" hidden="false" id="e40e-b880-3ed6-7765" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e858-38c5-d9bd-0a45"/>
           </constraints>
@@ -2324,17 +2324,11 @@ The dazzling light of the Amulet of Dragonheart makes the shape of Asarnil and h
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="1f0d-f444-9e22-dd83" primary="true" name="Mercenaries"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="28cd-23da-f60b-c453"/>
-      </constraints>
     </entryLink>
     <entryLink import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="f4f3-8a2c-b679-229e" type="selectionEntry" targetId="5b0c-3da2-c226-bb34">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="084c-3453-dbbd-84ad" primary="true" name="Mercenaries"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="09e9-0170-26dc-5577"/>
-      </constraints>
     </entryLink>
     <entryLink import="true" name="The Cursed Company" hidden="false" id="c03b-0f11-9210-e1e2" type="selectionEntry" targetId="22dc-5cbb-1a2c-3cab">
       <categoryLinks>
@@ -2348,9 +2342,6 @@ The dazzling light of the Amulet of Dragonheart makes the shape of Asarnil and h
       <categoryLinks>
         <categoryLink name="Mercenaries" hidden="false" id="dc4f-7d07-805e-3ee9" targetId="5b84-2c3c-869d-3522" primary="true"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d2f1-5fcd-a6de-d06b"/>
-      </constraints>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
