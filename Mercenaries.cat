@@ -1965,9 +1965,21 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Daddallo" hidden="false" id="d9d8-98f2-34f6-8c57" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="184d-ff9c-440f-e669" type="selectionEntry" targetId="721d-36e3-388a-c0d6"/>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="529d-f5ff-ab39-52ef" type="selectionEntry" targetId="8943-3e16-db2a-b7f3"/>
-            <entryLink import="true" name="Crossbow" hidden="false" id="949b-56ce-0342-0c16" type="selectionEntry" targetId="c3af-77b3-b2d5-20db"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="184d-ff9c-440f-e669" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54ec-6200-113a-ac0f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="529d-f5ff-ab39-52ef" type="selectionEntry" targetId="8943-3e16-db2a-b7f3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e4d-d9d4-5b04-5f02"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Crossbow" hidden="false" id="949b-56ce-0342-0c16" type="selectionEntry" targetId="c3af-77b3-b2d5-20db">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e816-e04f-6e4e-80ed"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7cd-f2c1-5178-d436"/>
@@ -1980,9 +1992,21 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Birdmen" hidden="false" id="0511-a96e-e7f0-a917" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="88e3-c022-1f91-83b7" type="selectionEntry" targetId="721d-36e3-388a-c0d6"/>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="b66f-249a-e05b-ccea" type="selectionEntry" targetId="8943-3e16-db2a-b7f3"/>
-            <entryLink import="true" name="Crossbow" hidden="false" id="4367-8c41-8298-92bf" type="selectionEntry" targetId="c3af-77b3-b2d5-20db"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="88e3-c022-1f91-83b7" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="857f-572c-dd88-edb3"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="b66f-249a-e05b-ccea" type="selectionEntry" targetId="8943-3e16-db2a-b7f3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e5f-41f7-4b46-f8c7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Crossbow" hidden="false" id="4367-8c41-8298-92bf" type="selectionEntry" targetId="c3af-77b3-b2d5-20db">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c951-6919-7cec-fd4a"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2e8d-6cf7-d569-061c"/>
@@ -2696,6 +2720,11 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="95c7-5534-8465-8ec2" type="selectionEntry" targetId="8c4a-26d2-6368-f867"/>
+    <entryLink import="true" name="Daddallo and The Birdmen of Catrazza" hidden="false" id="49eb-1e31-0775-1808" targetId="37e4-bdf9-9ddd-38f3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="0414-966f-cb92-31c1" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
