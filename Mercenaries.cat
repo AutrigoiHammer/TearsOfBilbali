@@ -2034,6 +2034,14 @@
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <profiles>
+        <profile name="Daddallo and The Birdmen of Catrazza" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="73b3-e9dd-44c3-0e28">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -2724,6 +2732,9 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0414-966f-cb92-31c1" primary="true" name="Mercenaries"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e2fe-8e65-2baa-f1a0"/>
+      </constraints>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
