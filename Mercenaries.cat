@@ -1989,6 +1989,9 @@
             <infoLink name="Base (25x25)" id="7c33-ef2f-6fa5-8aed" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
             <infoLink name="Daddallo" id="f4c5-73c1-b20a-3ce0" hidden="false" type="profile" targetId="d889-97f2-d73d-cd22"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Birdmen" hidden="false" id="0511-a96e-e7f0-a917" sortIndex="2">
           <entryLinks>
@@ -2016,6 +2019,9 @@
             <infoLink name="Base (25x25)" id="6e87-c74d-10f0-6a2c" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
             <infoLink name="Birdmen" id="6246-3fb5-2bad-5798" hidden="false" type="profile" targetId="b3fc-db99-178b-09d0"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <infoGroups>
