@@ -2628,7 +2628,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
     </profile>
     <profile name="Shoot on the Wing" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="c2ad-dbfa-36fa-ba72">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">The wings of the Birdmen are flapped by means of stirrups on their feet. This means that they have both hands free to load and shoot their crossbows while flying. This in turn means that the Birdmen suffer no penalty for shooting on the move unless they move on foot.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">The wings of the Birdmen are flapped by means of stirrups on their feet. This means that they have both hands free to load and shoot their crossbows while flying. This means that the Birdmen suffer no penalty for shooting if they moved by flying (not on foot) during this turn. Please make a Dangerous Terrain check every time Daddallo or any Birdmen moves by flying.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
