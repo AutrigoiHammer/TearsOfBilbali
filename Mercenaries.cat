@@ -2055,9 +2055,21 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Golgfag Maneater" hidden="false" id="89f6-d29e-137a-4db7" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="ea9a-5629-f701-f061" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="14ed-5dbe-92c2-693c" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="81c6-5bf0-9888-8d23" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="ea9a-5629-f701-f061" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed41-3648-4afd-6fb1"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="14ed-5dbe-92c2-693c" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b631-e384-8bcb-2556"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="81c6-5bf0-9888-8d23" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abb2-dfbb-c641-b384"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (40x40)" id="8c7b-1aef-801e-d68e" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
@@ -2073,9 +2085,21 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Skaff, the Standard Bearer" hidden="false" id="42e3-977b-57df-039c" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="bc45-33d3-404e-c604" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="25b1-776f-0bbb-a038" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="1d0c-6bd3-9f9e-6d04" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="bc45-33d3-404e-c604" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db31-4bca-d430-e0a7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="25b1-776f-0bbb-a038" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f41-1ee9-6967-9a2f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="1d0c-6bd3-9f9e-6d04" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3c5-273c-0f04-b9cc"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (40x40)" id="1d35-4051-503a-aa77" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
@@ -2103,9 +2127,21 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maneater Ogres" hidden="false" id="078d-00ec-9d8d-87fe" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="7f71-2dba-b9fc-a632" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="bd2b-60ce-1d81-7c95" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="a963-1d91-675b-c6f6" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="7f71-2dba-b9fc-a632" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6058-c3a5-7720-83ac"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="bd2b-60ce-1d81-7c95" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41b4-b635-a70d-ef17"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="a963-1d91-675b-c6f6" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb3e-31d8-7f94-1696"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (40x40)" id="fe92-86ba-ba3c-d2bf" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
@@ -2135,7 +2171,7 @@
           </selectionEntries>
           <constraints>
             <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="2a9b-0a1d-e489-7e91"/>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="9fd3-2680-e932-28ba"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fd3-2680-e932-28ba"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="56"/>
