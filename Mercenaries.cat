@@ -2067,6 +2067,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="227b-db69-5192-20d7"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2da4-2b36-f0b0-ceba"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="180"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Skaff, the Standard Bearer" hidden="false" id="42e3-977b-57df-039c" sortIndex="2">
           <entryLinks>
@@ -2079,13 +2082,13 @@
             <infoLink name="Skaff" id="372e-fdce-3eaf-9bc7" hidden="false" type="profile" targetId="cfe1-0236-caab-d19d"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="be8b-278e-1682-f8e5" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Champion" hidden="false" id="be8b-278e-1682-f8e5" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fd8-a2ad-7e8e-c245"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3510-56b5-1cd9-7b24"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Standard Bearer" id="0269-b862-a1cb-8ac6" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+                <infoLink name="Champion" id="0269-b862-a1cb-8ac6" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
               </infoLinks>
               <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
             </selectionEntry>
@@ -2094,6 +2097,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9776-f3a9-2175-888d"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85fb-eb99-3b1b-9716"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="60"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maneater Ogres" hidden="false" id="078d-00ec-9d8d-87fe" sortIndex="3">
           <entryLinks>
@@ -2116,11 +2122,24 @@
               </infoLinks>
               <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="d742-40bc-9abb-6cc6" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5f7-8258-addc-f669"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62e1-fcc5-c0f6-7f4a"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="9f04-e104-29bd-0c54" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="2a9b-0a1d-e489-7e91"/>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="9fd3-2680-e932-28ba"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="56"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <profiles>
