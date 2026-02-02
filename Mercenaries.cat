@@ -2073,7 +2073,7 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (40x40)" id="8c7b-1aef-801e-d68e" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
-            <infoLink name="Golfag" id="c026-7924-7272-d8cf" hidden="false" type="profile" targetId="88c7-98af-15e8-6151"/>
+            <infoLink name="Golgfag" id="c026-7924-7272-d8cf" hidden="false" type="profile" targetId="88c7-98af-15e8-6151"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="227b-db69-5192-20d7"/>
@@ -2212,6 +2212,93 @@
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e010-a3dd-df28-7294" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5">
+      <categoryLinks>
+        <categoryLink name="Mercenaries" hidden="false" id="69ad-4f9e-858c-b56f" targetId="5b84-2c3c-869d-3522" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Luka Braganza" hidden="false" id="a30f-12dd-0ea1-195a" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="c5c9-9718-2f8a-ab11" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b81a-6f0f-9d01-a008"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Crossbow" hidden="false" id="bd96-6eea-dcce-2aea" type="selectionEntry" targetId="c3af-77b3-b2d5-20db">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a85-be0f-0349-24da"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="1592-7c25-efa7-90ad" type="selectionEntry" targetId="62fb-f89d-afc-1cf1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3b0-7ff9-2d05-9ca0"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19e6-bdd7-07b4-1a10"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1a4-095a-e2d5-0b32"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="417b-8ed3-0b76-374c" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Braganza" id="c090-baec-534c-2deb" hidden="false" type="profile" targetId="f9c2-5ee8-cf43-b42c"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Besieger Crossbowmen" hidden="false" id="60b2-e273-5ed6-a69e" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="5d82-3a1a-de7d-5f6d" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ba3-a67c-058b-21e9"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Crossbow" hidden="false" id="de71-9adb-c8db-d22a" type="selectionEntry" targetId="c3af-77b3-b2d5-20db">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ab8-eba9-be15-7b77"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="7a14-d4a7-a806-7f4a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ab8-de38-aa50-6f5f"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1688-be6e-d543-f2b7"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="60c0-dcf8-3f7a-2a51"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="cd57-b47b-a062-a6bf" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Besieger Crossbowmen" id="414f-2ae7-a2a2-a03e" hidden="false" type="profile" targetId="6319-9f6a-4869-efa5"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="0aff-7604-c3b7-1eb0" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="89c9-7f45-c5c2-a0c7" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Mercenaries" id="eec7-320c-79ed-099d" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="The Besieger&apos;s Pavise" id="6fe2-987a-b2c2-27a7" hidden="false" type="profile" targetId="582a-ba75-f257-d391"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <profiles>
+        <profile name="Luka Branganza&apos;s and The Besieger Crossbowmen" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="6fa9-7584-cc01-0745">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e422-3f53-8054-65fb" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2841,6 +2928,37 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
       </characteristics>
     </profile>
+    <profile name="Besieger Crossbowmen" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="6319-9f6a-4869-efa5">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Braganza" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f9c2-5ee8-cf43-b42c">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Besieger&apos;s Pavise" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="582a-ba75-f257-d391">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">This pavise is a large shield which each crossbowman props in front of him. Such pavises save on a roll 3+ against shooting attacks if these are happening through the front of the unit.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Badlands Ogre Bulls" hidden="false" id="44c9-e0c9-75ce-1fce" type="selectionEntry" targetId="a4af-ea3a-49ea-d56e">
@@ -2947,6 +3065,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
       </constraints>
     </entryLink>
     <entryLink import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="eb51-c971-b82c-10c8" targetId="857e-a885-39c5-de87" type="selectionEntry"/>
+    <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="63ce-a131-7d3d-a840" targetId="d529-2376-1520-33a5" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
