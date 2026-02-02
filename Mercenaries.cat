@@ -1473,7 +1473,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a6e-0ef9-2074-6b7e"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Lance" hidden="false" id="8d74-b27f-2eec-79ef" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3"/>
+        <entryLink import="true" name="Lance" hidden="false" id="8d74-b27f-2eec-79ef" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc60-1a0b-046d-14a8"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Shield" hidden="false" id="4b89-ab2d-a72c-e64f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2212-0eec-958e-9f8d"/>
