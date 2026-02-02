@@ -2035,7 +2035,6 @@
               </modifiers>
             </infoLink>
             <infoLink name="Move &amp; Shoot" id="6476-6fd7-a608-410e" hidden="false" type="profile" targetId="6d4e-d525-ad86-4e4a"/>
-            <infoLink name="Quick Shot" id="57d0-2fc1-6753-bb17" hidden="false" type="profile" targetId="f733-b74b-6cb1-c69"/>
             <infoLink name="Shoot on the Wing" id="1068-e952-fbe0-f25a" hidden="false" type="profile" targetId="c2ad-dbfa-36fa-ba72"/>
           </infoLinks>
         </infoGroup>
@@ -2048,6 +2047,95 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="857e-a885-39c5-de87">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Golgfag Maneater" hidden="false" id="89f6-d29e-137a-4db7" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="ea9a-5629-f701-f061" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="14ed-5dbe-92c2-693c" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="81c6-5bf0-9888-8d23" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (40x40)" id="8c7b-1aef-801e-d68e" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+            <infoLink name="Golfag" id="c026-7924-7272-d8cf" hidden="false" type="profile" targetId="88c7-98af-15e8-6151"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Skaff, the Standard Bearer" hidden="false" id="42e3-977b-57df-039c" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="bc45-33d3-404e-c604" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="25b1-776f-0bbb-a038" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="1d0c-6bd3-9f9e-6d04" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (40x40)" id="1d35-4051-503a-aa77" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+            <infoLink name="Skaff" id="372e-fdce-3eaf-9bc7" hidden="false" type="profile" targetId="cfe1-0236-caab-d19d"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="be8b-278e-1682-f8e5" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fd8-a2ad-7e8e-c245"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3510-56b5-1cd9-7b24"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="0269-b862-a1cb-8ac6" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Maneater Ogres" hidden="false" id="078d-00ec-9d8d-87fe" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="7f71-2dba-b9fc-a632" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1"/>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="bd2b-60ce-1d81-7c95" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="a963-1d91-675b-c6f6" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (40x40)" id="fe92-86ba-ba3c-d2bf" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+            <infoLink name="Ogre Maneater" id="d0b9-ced4-d4ec-aac3" hidden="false" type="profile" targetId="5903-e1fb-a44f-34b1"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="0410-a3ce-e173-3624" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f18-75b2-60bd-c6b3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b39d-1f90-2d52-0ef8"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Musician" id="8d87-de2c-f57c-c79a" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Golgfag Maneater and Mercenary Ogres" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="92f8-a059-8d91-e9c3">
+          <characteristics>
+            <characteristic name="Troop Type" id="b658-89e0-79b9-8594" hidden="false" typeId="5d94-6b94-bd89-1944">Monstrous infantry</characteristic>
+            <characteristic name="Unit Size" id="5792-0bfc-1572-fbc9" hidden="false" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="84dd-8a5d-a001-8068" hidden="false">
+          <infoLinks>
+            <infoLink name="Armour Bane" id="7957-1e91-1d31-e513" hidden="false" type="profile" targetId="2af0-975f-bb14-8b8f">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Close Order" id="8ee2-0af8-c212-c30f" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Fear" id="fc8b-3f49-4ce7-dc0b" hidden="false" type="profile" targetId="5ec9-a98-d8c5-e18b"/>
+            <infoLink name="Impact Hits" id="2736-7bfd-8d2c-9fde" hidden="false" type="profile" targetId="5c2-e9dd-2715-a0c0">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Mercenaries" id="c943-94ae-cefc-5188" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Ogre Charge" id="79f5-bde3-ca0a-a4c9" hidden="false" type="profile" targetId="9e92-303-8d40-895c"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -2373,7 +2461,7 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Ghazak Khan has a +4 modifier on his Strength characteristic whenever it fights the model that caused his first wound.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Ghazak Khan" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="16bc-bdf7-46cc-2ab3" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <profile name="Ghazak Khan" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="16bc-bdf7-46cc-2ab3" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf, Adapted for ToW">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">7</characteristic>
@@ -2634,7 +2722,46 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
     </profile>
     <profile name="Shoot on the Wing" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="c2ad-dbfa-36fa-ba72">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">The wings of the Birdmen are flapped by means of stirrups on their feet. This means that they have both hands free to load and shoot their crossbows while flying. This means that the Birdmen suffer no penalty for shooting if they moved by flying (not on foot) during this turn. Please make a Dangerous Terrain check every time Daddallo or any Birdmen moves by flying.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">The wings of the Birdmen are flapped by means of stirrups on their feet. This means that they have both hands free to load and shoot their crossbows while flying. This means that the Birdmen suffer no penalty for shooting if they moved by flying (not on foot) during this turn. If the Birdmen of Catrazza moved by flying, and landed on Difficult Terrain, please treat it as Dangerous Terrain, and immediately make a Dangerous Terrain test with each of the models of the unit that landed on such type of terrain.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Golgfag" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="88c7-98af-15e8-6151" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">2</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">5</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">5</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ogre Maneater" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5903-e1fb-a44f-34b1" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Skaff" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="cfe1-0236-caab-d19d" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">5</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
