@@ -2351,7 +2351,7 @@
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b363-6fb1-de62-b82e"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a48-4036-dedb-73f0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a48-4036-dedb-73f0"/>
           </constraints>
           <infoLinks>
             <infoLink name="Base (25x25)" id="fa15-94ee-2d1c-a89b" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
@@ -2382,7 +2382,7 @@
           </categoryLinks>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ca50-9cc1-82cf-5b6e"/>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="f6ea-6883-f846-2ffc"/>
+            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="f6ea-6883-f846-2ffc"/>
           </constraints>
           <infoLinks>
             <infoLink name="Base (25x25)" id="2e2d-4fa2-1015-32a7" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
