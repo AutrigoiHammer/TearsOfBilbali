@@ -2308,6 +2308,7 @@
     <selectionEntry type="unit" import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="e9c6-8a9f-8f08-b36a">
       <categoryLinks>
         <categoryLink name="Faction: Dwarfen Mountain Holds" hidden="false" id="ef78-415a-0f5c-5400" targetId="f4fd-aa79-6ff3-1ea9" primary="false"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="7daa-6d1b-467b-e2bf" primary="true" name="Mercenaries"/>
       </categoryLinks>
       <infoGroups>
         <infoGroup name="Special Rules" id="e5fa-394c-911d-427c" hidden="false">
@@ -2403,6 +2404,9 @@
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="126f-0cea-2be5-a0cc" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -3208,6 +3212,7 @@ Though the pirates claim not to notice the smell the effect is dire on the enemy
     </entryLink>
     <entryLink import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="eb51-c971-b82c-10c8" targetId="857e-a885-39c5-de87" type="selectionEntry"/>
     <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="63ce-a131-7d3d-a840" targetId="d529-2376-1520-33a5" type="selectionEntry"/>
+    <entryLink import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="be5f-0f9d-783e-1f9f" targetId="e9c6-8a9f-8f08-b36a" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
