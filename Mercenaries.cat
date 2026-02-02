@@ -1159,6 +1159,7 @@
           </infoLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b3fe-c8b4-e332-a371"/>
+            <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="ecd5-63f7-ce8e-b3a3"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="10"/>
@@ -1194,6 +1195,7 @@
           </infoLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="71be-e92f-9bb5-a587"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="acc3-8996-0250-2a9c"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="9"/>
@@ -1585,6 +1587,7 @@
           </infoLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="e8c2-0618-56df-e8fe"/>
+            <constraint type="max" value="39" field="selections" scope="parent" shared="true" id="663e-1f63-8c65-ad4b"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="10"/>
@@ -2012,7 +2015,7 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2e8d-6cf7-d569-061c"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2e8d-6cf7-d569-061c"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6b10-eba4-54ad-f284"/>
           </constraints>
           <infoLinks>
@@ -2060,6 +2063,10 @@
             <infoLink name="Base (40x40)" id="8c7b-1aef-801e-d68e" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
             <infoLink name="Golfag" id="c026-7924-7272-d8cf" hidden="false" type="profile" targetId="88c7-98af-15e8-6151"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="227b-db69-5192-20d7"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2da4-2b36-f0b0-ceba"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Skaff, the Standard Bearer" hidden="false" id="42e3-977b-57df-039c" sortIndex="2">
           <entryLinks>
@@ -2083,6 +2090,10 @@
               <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9776-f3a9-2175-888d"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85fb-eb99-3b1b-9716"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maneater Ogres" hidden="false" id="078d-00ec-9d8d-87fe" sortIndex="3">
           <entryLinks>
@@ -2106,6 +2117,10 @@
               <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="2a9b-0a1d-e489-7e91"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="9fd3-2680-e932-28ba"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -2136,6 +2151,10 @@
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="dc49-b734-6bc1-ea95" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="5c55-f9d6-b181-92f8" id="4d4e-cc29-5042-c823" primary="false" name="Monstrous Infantry"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -2869,6 +2888,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e2fe-8e65-2baa-f1a0"/>
       </constraints>
     </entryLink>
+    <entryLink import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="eb51-c971-b82c-10c8" targetId="857e-a885-39c5-de87" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
