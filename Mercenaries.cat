@@ -2343,7 +2343,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Long Drong" hidden="false" id="2a27-adcd-9095-5b96">
           <costs>
-            <cost name="pts" typeId="points" value="55"/>
+            <cost name="pts" typeId="points" value="60"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="0dd9-9df1-8ccd-b3a6" targetId="ca7e-d004-ccde-caf3" primary="false"/>
@@ -2382,7 +2382,7 @@
           </categoryLinks>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ca50-9cc1-82cf-5b6e"/>
-            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="f6ea-6883-f846-2ffc"/>
+            <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="f6ea-6883-f846-2ffc"/>
           </constraints>
           <infoLinks>
             <infoLink name="Base (25x25)" id="2e2d-4fa2-1015-32a7" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
