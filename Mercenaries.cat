@@ -2155,6 +2155,9 @@
         <categoryLink targetId="5b84-2c3c-869d-3522" id="dc49-b734-6bc1-ea95" primary="true" name="Mercenaries"/>
         <categoryLink targetId="5c55-f9d6-b181-92f8" id="4d4e-cc29-5042-c823" primary="false" name="Monstrous Infantry"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e010-a3dd-df28-7294" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
