@@ -2535,7 +2535,7 @@
             <infoLink name="Base (25x50)" id="6cdb-d530-2565-5113" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd20-8064-efc4-5e87"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="dd20-8064-efc4-5e87"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="edf9-4e3f-7369-389e"/>
           </constraints>
         </selectionEntry>
