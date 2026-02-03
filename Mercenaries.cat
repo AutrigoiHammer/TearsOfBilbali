@@ -2478,6 +2478,10 @@
             <infoLink name="Base (25x50)" id="e7db-5c0f-8fa2-8056" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
             <infoLink name="Voland" id="aa30-1316-ee93-258f" hidden="false" type="profile" targetId="266b-2178-9fe4-2160"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c61-c61b-23a8-1c4e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8c4-9380-f176-c245"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Venators" hidden="false" id="d29b-37a3-2905-c279" sortIndex="2">
           <entryLinks>
@@ -2530,6 +2534,10 @@
             <infoLink name="Venator" id="68e2-6360-6f85-bbe2" hidden="false" type="profile" targetId="56e1-7e6b-d382-5320"/>
             <infoLink name="Base (25x50)" id="6cdb-d530-2565-5113" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd20-8064-efc4-5e87"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="edf9-4e3f-7369-389e"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <profiles>
