@@ -2798,7 +2798,7 @@
       <profiles>
         <profile name="Al Muktar&apos;s Desert Dogs" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="c8a9-58fe-98be-6080">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry (character)</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Light cavalry (character)</characteristic>
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
           </characteristics>
         </profile>
