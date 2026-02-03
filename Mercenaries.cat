@@ -3731,6 +3731,11 @@ Thanks to his impressive weapon, Sheikh Ahmed Shufti adds +1 Strength to blows h
     <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="63ce-a131-7d3d-a840" targetId="d529-2376-1520-33a5" type="selectionEntry"/>
     <entryLink import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="be5f-0f9d-783e-1f9f" targetId="e9c6-8a9f-8f08-b36a" type="selectionEntry"/>
     <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="4678-817c-cb0e-b07e" targetId="f019-bfd6-099a-0d30" type="selectionEntry"/>
+    <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="3d84-2564-7cc2-45d1" targetId="bb37-df3a-2ca1-6d19" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="1ab4-5c57-6df0-cea8" primary="false" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
