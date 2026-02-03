@@ -2566,7 +2566,7 @@
     <selectionEntry type="upgrade" import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="bb37-df3a-2ca1-6d19" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="339a-8f3e-c198-6a59" primary="true" name="Mercenaries"/>
-        <categoryLink targetId="5165-d052-cfc2-5887" id="46cd-3fe7-9779-d28e" primary="false" name="Heavy Cavalry"/>
+        <categoryLink targetId="600c-7d08-5be1-fe0c" id="6998-78ae-5278-042c" primary="false" name="Light Cavalry"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Al Muktar" hidden="false" id="0644-d753-6d87-6d64" sortIndex="1">
