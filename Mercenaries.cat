@@ -1408,7 +1408,7 @@
           </constraints>
           <infoLinks>
             <infoLink name="Base (25x50)" id="3c14-eebe-0c68-e985" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-            <infoLink name="Borgio&apos;s Warhorse" id="dc79-1393-8528-f53f" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+            <infoLink name="Mercenary Warhorse" id="dc79-1393-8528-f53f" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Mace of Might" hidden="false" id="feac-dde6-089c-e9c5" sortIndex="5" collective="true">
@@ -2110,13 +2110,13 @@
             <infoLink name="Skaff" id="372e-fdce-3eaf-9bc7" hidden="false" type="profile" targetId="cfe1-0236-caab-d19d"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Champion" hidden="false" id="be8b-278e-1682-f8e5" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="be8b-278e-1682-f8e5" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fd8-a2ad-7e8e-c245"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3510-56b5-1cd9-7b24"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Champion" id="0269-b862-a1cb-8ac6" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
+                <infoLink name="Standard Bearer" id="0269-b862-a1cb-8ac6" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
               </infoLinks>
               <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
             </selectionEntry>
@@ -2561,6 +2561,252 @@
       </infoGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8818-8beb-d6a3-9236" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="bb37-df3a-2ca1-6d19" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+      <costs>
+        <cost name="pts" typeId="points" value="200"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="339a-8f3e-c198-6a59" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="5165-d052-cfc2-5887" id="46cd-3fe7-9779-d28e" primary="false" name="Heavy Cavalry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Al Muktar" hidden="false" id="0644-d753-6d87-6d64" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="dc34-14d7-e843-97ab" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="General" hidden="false" id="119f-22e6-7d2c-dfda" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ae9-226b-d19b-813a"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="175c-7789-abb0-49a5" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8046-fc84-4bfd-6bc7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="ba07-04a8-3cbb-dd63" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e052-6280-5b80-e943"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="36c8-1cac-1558-7356" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="812b-f409-a26e-9b6f"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mercenary Horse" hidden="false" id="60a9-7400-0692-6ec9" collective="true" subType="mount" sortIndex="6">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="9cf3-9020-7512-d744" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce59-e97a-9299-307d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="352a-cf5d-463d-f0b5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c94c-245c-c4a5-6cff"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (25x50)" id="3a38-86db-45f7-4aee" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Mercenary Horse" id="a2d5-d12d-1114-9a9a" hidden="false" type="profile" targetId="7865-c659-6c3b-7988"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="4b1b-f3a0-3d5f-b04c" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Al Muktar" id="9c18-4587-14e7-13f3" hidden="false" type="profile" targetId="b72f-8462-bde3-47cd"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01e4-e24b-97d5-f05b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9da9-7b2c-1491-d0e6"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Desert Dogs" hidden="false" id="60c6-e4e9-376d-1608" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="2e79-1073-f741-1b30" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ada-99a3-ef0e-abf1"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="a90e-e557-b864-3370" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9741-5962-5f5c-aea8"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="6e90-95bb-4960-071a" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6840-d7cb-cd15-843f"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mercenary Horse" hidden="false" id="85f1-6ddc-ce21-2911" collective="true" subType="mount">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="c11d-0e0a-c6bf-88a0" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99e1-9e55-8338-ae6f"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ddf-3bca-0b73-8328"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43e5-7809-2c12-70e8"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (25x50)" id="df94-d539-7dfa-6c31" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Mercenary Horse" id="d243-84a0-9cd4-6504" hidden="false" type="profile" targetId="7865-c659-6c3b-7988"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Desert Dog Raider" id="8b8c-1ff1-95f5-4127" hidden="false" type="profile" targetId="be35-eabf-807c-27a9"/>
+            <infoLink name="Base (25x50)" id="b64b-6fca-5661-afa7" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="100e-82af-3566-378a"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="c4b8-af3c-1361-b953"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sheik Shufti" hidden="false" id="8bca-a2d1-c199-5d6e" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="fa0e-204c-72b1-741b" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fb1-d664-868a-f46b"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="fd28-069d-3c87-3eaf" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7850-4b37-2f1a-9966"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="1248-d91c-c88e-c931" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="036c-27dd-1d75-65df"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mercenary Horse" hidden="false" id="88d7-6280-df79-d5f8" collective="true" subType="mount" sortIndex="6">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="8c60-f2c2-b766-8ae8" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e3e-a3a2-fe35-91e5"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="333d-1c96-c445-c305"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e04a-e802-8112-f35e"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (25x50)" id="483f-42a3-4324-c8d4" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Mercenary Horse" id="a40c-5bf4-de57-432d" hidden="false" type="profile" targetId="7865-c659-6c3b-7988"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scimitar of Dakisir" hidden="false" id="0e8d-47b1-02b3-8e7d" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2a7-22ce-79c2-b82b"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5afa-d8cc-7587-c6d6"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Scimitar of Dakisir" id="3ee1-7c4a-e396-a7f9" hidden="false" type="profile" targetId="0659-a296-ab33-ef62"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="2891-beb0-ff76-b265" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Sheikh Shufti" id="ea2f-fb2a-3e1c-9727" hidden="false" type="profile" targetId="406b-7c91-4922-b1c3"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da82-c6bb-5e52-c1f2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82af-ce8f-d964-e75e"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ibn" hidden="false" id="abdb-bb8b-4376-cd65" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="36ba-fbd6-b2f7-d26c" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9395-c53a-e6e9-7af7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="9a88-926e-25f9-cb07" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5367-28c9-b471-7a3b"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="1fdf-5f55-ec95-36e6" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3dd-3ae7-bb79-178f"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mercenary Horse" hidden="false" id="d379-9e07-5d08-1c58" collective="true" subType="mount" sortIndex="7">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="ff5d-5240-6b8a-7da1" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a852-c449-cd0f-4a73"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38bd-bbed-2992-4dba"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="155e-ef5b-de8e-ef4a"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (25x50)" id="5f87-17c7-b923-de7f" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Mercenary Horse" id="f2e1-46a2-a09d-d5ea" hidden="false" type="profile" targetId="7865-c659-6c3b-7988"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="8230-c312-a2d0-064d" sortIndex="6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b93-996d-c636-a1b9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95fd-f3de-c99e-eb3b"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Black Banner of the Muktarhin" id="8be8-030d-80ff-c49c" hidden="false" type="profile" targetId="7295-e7e3-00a4-41d8"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="3fbd-c1ac-7c10-5bdc" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Ibn" id="599d-799b-cf8b-c819" hidden="false" type="profile" targetId="1190-d1db-0735-9eba"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa14-b913-65f3-9487"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4abf-f18a-db8a-28c5"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Al Muktar&apos;s Desert Dogs" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="c8a9-58fe-98be-6080">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="c0d5-4bff-7222-7828" hidden="false">
+          <infoLinks>
+            <infoLink name="Open Order" id="89f5-514a-d3e3-e47a" hidden="false" type="profile" targetId="5b67-8535-146c-7cea"/>
+            <infoLink name="Mercenaries" id="d1c7-e6d5-9bdb-9dfd" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Swiftstride" id="bd77-fabe-b2e3-cf4e" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Feigned Flight" id="0679-3cef-dab4-752a" hidden="false" type="profile" targetId="eea7-89d9-a996-403c"/>
+            <infoLink name="Sheik Shufti" id="b83f-1e9f-3fcf-da3c" hidden="false" type="profile" targetId="2ac0-9c8e-aa69-24b4"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c8c8-1a57-f099-82e6" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3284,6 +3530,96 @@ Though the pirates claim not to notice the smell the effect is dire on the enemy
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sheikh Shufti" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="406b-7c91-4922-b1c3">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Al Muktar" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="b72f-8462-bde3-47cd">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Desert Dog Raider" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="be35-eabf-807c-27a9">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ibn" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="1190-d1db-0735-9eba">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mercenary Horse" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="7865-c659-6c3b-7988" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">8</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">-</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Black Banner of the Muktarhin" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards" hidden="false" id="7295-e7e3-00a4-41d8">
+      <characteristics>
+        <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">The Black Banner is carried aloft by blind Ibn the beggar boy, who cannot see the peril he is in and so is always in the forefront of battle. When calculating which side wins the combat, all wounds scored by Al Muktar himself count double.
+
+
+If Al Muktar inflicts two (2) wounds and the remaining Desert Dogs inflict three (3) wounds, their combat score will be seven (7) before adding any additional bonuses as indicated in Rulebook.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sheikh Shufti" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="2ac0-9c8e-aa69-24b4">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">The Desert Dog&apos;s original leader was Sheikh Shufti, and he fights on as Al Muktar&apos;s right hand man and closest friend. This means the Desert Dogs have two (2) characters who can both issue and accept challenges, and both can lead the unit if required.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scimitar of Dakisir" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="0659-a296-ab33-ef62">
+      <characteristics>
+        <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
+        <characteristic name="S" typeId="4f75-25c9-31bd-7074">F+1 (F+2)</characteristic>
+        <characteristic name="AP" typeId="15e2-fff4-477f-ea26">-1</characteristic>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c"/>
+        <characteristic name="Note" typeId="5e5e-34db-1ee0-86">This scimitar is a heirloom of the tribal Sheikhs of the Desert Dogs. It was forged centuries ago in the Kasbah of Dakisir, long ago sacked and ruined by the Undead. The blade is decorated with magical texts inlad in gold.
+
+
+Thanks to his impressive weapon, Sheikh Ahmed Shufti adds +1 Strength to blows he strikes in a turn he has not been charged and +2 Strength against blows struck in a turn he charges.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
