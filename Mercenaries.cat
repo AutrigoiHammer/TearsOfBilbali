@@ -2564,9 +2564,6 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="bb37-df3a-2ca1-6d19" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
-      <costs>
-        <cost name="pts" typeId="points" value="200"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="339a-8f3e-c198-6a59" primary="true" name="Mercenaries"/>
         <categoryLink targetId="5165-d052-cfc2-5887" id="46cd-3fe7-9779-d28e" primary="false" name="Heavy Cavalry"/>
@@ -2627,6 +2624,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01e4-e24b-97d5-f05b"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9da9-7b2c-1491-d0e6"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Desert Dogs" hidden="false" id="60c6-e4e9-376d-1608" sortIndex="4">
           <entryLinks>
@@ -2671,8 +2671,11 @@
           </infoLinks>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="100e-82af-3566-378a"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="c4b8-af3c-1361-b953"/>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="c4b8-af3c-1361-b953"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sheik Shufti" hidden="false" id="8bca-a2d1-c199-5d6e" sortIndex="2">
           <entryLinks>
@@ -2728,6 +2731,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da82-c6bb-5e52-c1f2"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82af-ce8f-d964-e75e"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ibn" hidden="false" id="abdb-bb8b-4376-cd65" sortIndex="3">
           <entryLinks>
@@ -2784,6 +2790,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa14-b913-65f3-9487"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4abf-f18a-db8a-28c5"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <profiles>
