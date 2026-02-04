@@ -3062,13 +3062,12 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eecb-042a-9c06-c57e"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Galloper&apos;s Warhorse" hidden="false" id="f0b2-ffb1-93f7-3a8d" collective="true" subType="mount">
+            <selectionEntry type="model" import="true" name="Galloper Warhorse" hidden="false" id="f0b2-ffb1-93f7-3a8d" collective="true" subType="mount">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ddc-4c4e-17c6-b636"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b656-024a-fae8-9849"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Base (25x50)" id="c1de-adb5-5dd2-095c" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
                 <infoLink name="Galloper&apos;s Warhorse" id="43fe-5c09-7a4f-7e53" hidden="false" type="profile" targetId="7a1b-3ed5-341d-6990"/>
               </infoLinks>
             </selectionEntry>
@@ -3998,7 +3997,7 @@ When you move one of Bronzino&apos;s guns, simply measure the distance and make 
 To represent this extraordinary mobility, galloper guns may move and fire. </characteristic>
       </characteristics>
     </profile>
-    <profile name="Galloper&apos;s Warhorse" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="7a1b-3ed5-341d-6990" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
+    <profile name="Galloper Warhorse" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="7a1b-3ed5-341d-6990" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">8</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
