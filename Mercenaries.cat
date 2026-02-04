@@ -2247,10 +2247,10 @@
           </constraints>
           <infoLinks>
             <infoLink name="Base (25x25)" id="417b-8ed3-0b76-374c" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
-            <infoLink name="Braganza" id="c090-baec-534c-2deb" hidden="false" type="profile" targetId="f9c2-5ee8-cf43-b42c"/>
+            <infoLink name="Braganza" id="c090-baec-534c-2deb" hidden="false" type="profile" targetId="964b-09c1-2ccc-9a66"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="50"/>
+            <cost name="pts" typeId="points" value="45"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Besieger Crossbowmen" hidden="false" id="60b2-e273-5ed6-a69e" sortIndex="2">
@@ -2287,7 +2287,7 @@
       <infoGroups>
         <infoGroup name="Special Rules" id="0aff-7604-c3b7-1eb0" hidden="false">
           <infoLinks>
-            <infoLink name="Skirmishers" id="89c9-7f45-c5c2-a0c7" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Open Order" id="89c9-7f45-c5c2-a0c7" hidden="false" type="profile" targetId="5b67-8535-146c-7cea"/>
             <infoLink name="Mercenaries" id="eec7-320c-79ed-099d" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
             <infoLink name="The Besieger&apos;s Pavise" id="6fe2-987a-b2c2-27a7" hidden="false" type="profile" targetId="582a-ba75-f257-d391"/>
           </infoLinks>
@@ -3120,6 +3120,92 @@
         <categoryLink targetId="9fcf-19ad-fe84-9c61" id="9a2a-e20c-1f93-3765" primary="false" name="War Machine"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Marksmen of Miragliano" hidden="false" id="4f1d-ce45-ac12-a82c">
+      <categoryLinks>
+        <categoryLink name="Mercenaries" hidden="false" id="46ff-b745-a15f-53e6" targetId="5b84-2c3c-869d-3522" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Maximilian Damark" hidden="false" id="6ae1-e028-2388-d15b" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="835e-55fe-6153-063e" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41ed-5c3e-e59f-ada6"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Crossbow" hidden="false" id="5ccd-81ba-907f-2dfe" type="selectionEntry" targetId="c3af-77b3-b2d5-20db">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d458-0f65-881d-b3a7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="30aa-7549-52b5-e5c1" type="selectionEntry" targetId="7cab-40e6-f134-de78">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd88-e716-a7db-e1f7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2d7-0c6b-c25c-25d3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5832-cd70-9441-53a1"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="7a14-b14b-3467-76fa" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Braganza" id="3ebc-975e-c80a-142e" hidden="false" type="profile" targetId="f9c2-5ee8-cf43-b42c"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="45"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Marksmen" hidden="false" id="c1f0-3998-161b-a2f1" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="8714-f1d3-238e-6afa" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ada9-a14c-7c0a-3595"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Crossbow" hidden="false" id="0c56-e755-6ee1-8202" type="selectionEntry" targetId="c3af-77b3-b2d5-20db">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77b3-17cc-9eef-8930"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="4931-c726-4724-46df" type="selectionEntry" targetId="7cab-40e6-f134-de78">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dee-0a35-4b06-7b39"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="cb28-1645-7e25-244a"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="481e-5c24-970d-1c94"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="76bf-4ea1-bc77-b012" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Marksmen" id="602a-923c-0f12-1f79" hidden="false" type="profile" targetId="eb56-3f92-f9b0-48a1"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="9"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="b0cc-617b-7d5d-285a" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="5b73-fa78-ff4f-3c47" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Mercenaries" id="2004-b6c7-acba-c86a" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <profiles>
+        <profile name="Maximilian Darmark and Marksmen of Miragliano" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5609-e001-27b2-07c9">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9c4e-51b8-0cc6-5c68" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Ogre" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5ccf-bbe6-f153-88b2">
@@ -3759,7 +3845,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
       </characteristics>
     </profile>
-    <profile name="Braganza" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f9c2-5ee8-cf43-b42c">
+    <profile name="Maximilian" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f9c2-5ee8-cf43-b42c">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
@@ -4008,6 +4094,32 @@ To represent this extraordinary mobility, galloper guns may move and fire. </ch
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Braganza" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="964b-09c1-2ccc-9a66">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Marksmen" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="eb56-3f92-f9b0-48a1">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
