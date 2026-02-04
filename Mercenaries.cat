@@ -3079,6 +3079,18 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Galloper&apos;s Warhorse" hidden="false" id="7d3a-acfe-12c4-d703" collective="true" subType="mount">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0bc8-7553-5e7a-462c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e3-2b48-fddf-b796"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Base (25x50)" id="ce1d-2fbc-88d3-0fdb" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                    <infoLink name="Galloper&apos;s Warhorse" id="8780-bdc3-d4cc-8774" hidden="false" type="profile" targetId="7a1b-3ed5-341d-6990"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
@@ -3995,6 +4007,19 @@ Bronzino&apos;s Gallopers have (-1) reduced Toughness to normal cannos due to th
 When you move one of Bronzino&apos;s guns, simply measure the distance and make your move. There is no need to turn or wheel as the galloper guns can turn freely to face any direction they wish.
 
 To represent this extraordinary mobility, galloper guns may move and fire. </characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Galloper&apos;s Warhorse" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="7a1b-3ed5-341d-6990" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">8</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">-</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
