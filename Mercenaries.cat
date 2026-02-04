@@ -2941,7 +2941,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="609a-37ee-9489-e6ec" subType="unit-group">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Bronzino" hidden="false" id="97d9-a141-193c-8c33">
+        <selectionEntry type="unit" import="true" name="Bronzino" hidden="false" id="97d9-a141-193c-8c33">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="e77c-0f8b-a184-23e3" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2998,7 +2998,7 @@
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1">
+        <selectionEntry type="unit" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1">
           <entryLinks>
             <entryLink import="true" name="Cannon" hidden="false" id="3f58-8899-bbba-f2f1" type="selectionEntry" targetId="ca63-2c16-928e-1e45" sortIndex="1">
               <constraints>
