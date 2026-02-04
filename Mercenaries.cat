@@ -2941,7 +2941,7 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="609a-37ee-9489-e6ec">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bronzino" hidden="false" id="97d9-a141-193c-8c33">
+        <selectionEntry type="unit" import="true" name="Bronzino" hidden="false" id="97d9-a141-193c-8c33">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="e77c-0f8b-a184-23e3" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2955,7 +2955,7 @@
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Base (25x25)" id="8af7-cbc8-f66a-4519" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Base (30x60)" id="8af7-cbc8-f66a-4519" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
             <infoLink name="Bronzino" id="8547-84f8-b254-a9b2" hidden="false" type="profile" targetId="daf4-7b1a-8058-4a51"/>
           </infoLinks>
           <constraints>
@@ -2973,7 +2973,11 @@
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42cc-449f-38b4-8ca8"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Barding" hidden="false" id="e29d-bcff-b69d-f486" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2"/>
+                <entryLink import="true" name="Barding" hidden="false" id="e29d-bcff-b69d-f486" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6b2-20fd-6aea-5d97"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="076e-08c0-42df-3c31"/>
@@ -2986,7 +2990,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1">
+        <selectionEntry type="unit" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1">
           <entryLinks>
             <entryLink import="true" name="Cannon" hidden="false" id="3f58-8899-bbba-f2f1" type="selectionEntry" targetId="ca63-2c16-928e-1e45" sortIndex="1">
               <constraints>
@@ -2995,7 +2999,7 @@
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Mercenary Crew" hidden="false" id="2117-52b3-860b-997a" sortIndex="2">
+            <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="2117-52b3-860b-997a" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Light Armour" hidden="false" id="7910-bcb7-41da-30c5" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
                   <constraints>
@@ -3009,7 +3013,6 @@
                 </entryLink>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Base (25x25)" id="fd92-62e4-d0c8-3e66" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
                 <infoLink name="Mercenary Crew" id="d7fc-de40-2856-5ed9" hidden="false" type="profile" targetId="e5cd-a243-4ee4-ee7d"/>
               </infoLinks>
               <constraints>
@@ -3017,7 +3020,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="012b-25cf-4714-5497"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mercenary Crew" hidden="false" id="dd26-3024-a51c-dc91" sortIndex="3">
+            <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="dd26-3024-a51c-dc91" sortIndex="3">
               <entryLinks>
                 <entryLink import="true" name="Light Armour" hidden="false" id="f2e3-86c2-286d-34a6" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
                   <constraints>
@@ -3031,7 +3034,6 @@
                 </entryLink>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Base (25x25)" id="a11e-ded3-855f-6117" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
                 <infoLink name="Mercenary Crew" id="28ff-cd20-b2ef-deb2" hidden="false" type="profile" targetId="e5cd-a243-4ee4-ee7d"/>
               </infoLinks>
               <constraints>
@@ -3039,7 +3041,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c60-6a86-eeb3-b27e"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mercenary Crew" hidden="false" id="6c6b-12f6-c81a-dd34" sortIndex="4">
+            <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="6c6b-12f6-c81a-dd34" sortIndex="4">
               <entryLinks>
                 <entryLink import="true" name="Light Armour" hidden="false" id="b1d8-c727-6cf8-c6d3" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
                   <constraints>
@@ -3053,7 +3055,6 @@
                 </entryLink>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Base (25x25)" id="0a94-f29e-4b9b-c13f" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
                 <infoLink name="Mercenary Crew" id="8f8d-a079-0719-ed69" hidden="false" type="profile" targetId="e5cd-a243-4ee4-ee7d"/>
               </infoLinks>
               <constraints>
