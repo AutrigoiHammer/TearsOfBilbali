@@ -2984,7 +2984,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="911b-0418-4b33-2cad"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Base (25x50)" id="ea72-fcbf-978a-31ce" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
                 <infoLink name="Mercenary Warhorse" id="43f3-0150-dda4-6a33" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
               </infoLinks>
             </selectionEntry>
