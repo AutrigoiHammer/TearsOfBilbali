@@ -3000,7 +3000,7 @@
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="2117-52b3-860b-997a" sortIndex="2" collective="true">
+            <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="2117-52b3-860b-997a" sortIndex="2" collective="true" subType="crew">
               <entryLinks>
                 <entryLink import="true" name="Light Armour" hidden="false" id="7910-bcb7-41da-30c5" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
                   <constraints>
@@ -3021,7 +3021,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="012b-25cf-4714-5497"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="dd26-3024-a51c-dc91" sortIndex="3" collective="true">
+            <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="dd26-3024-a51c-dc91" sortIndex="3" collective="true" subType="crew">
               <entryLinks>
                 <entryLink import="true" name="Light Armour" hidden="false" id="f2e3-86c2-286d-34a6" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
                   <constraints>
@@ -3042,7 +3042,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c60-6a86-eeb3-b27e"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="6c6b-12f6-c81a-dd34" sortIndex="4" collective="true">
+            <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="6c6b-12f6-c81a-dd34" sortIndex="4" collective="true" subType="crew">
               <entryLinks>
                 <entryLink import="true" name="Light Armour" hidden="false" id="b1d8-c727-6cf8-c6d3" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
                   <constraints>
