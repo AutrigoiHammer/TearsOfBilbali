@@ -1106,17 +1106,28 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="950f-d1a3-a523-a17c"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="45"/>
+            <cost name="pts" typeId="points" value="55"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Legion Crossbow" hidden="false" id="ccfb-2f9b-3a0c-d6b3" sortIndex="3" collective="true">
+              <infoLinks>
+                <infoLink name="Crossbow (Pirazzo&apos;s Legion)" id="0392-1e7f-a6ba-4e9a" hidden="false" type="profile" targetId="0da4-1137-5561-8150"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab31-b4d8-1edf-fd1a"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c291-d326-2cd5-11d7"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Pikemen" hidden="false" id="acca-45b2-aebe-915d" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Pikemen" hidden="false" id="acca-45b2-aebe-915d" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="1c5d-b2b8-ad7a-6664" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fd7-108a-a726-dede"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="8604-4912-d11d-66ff" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2">
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="8604-4912-d11d-66ff" type="selectionEntry" targetId="a5bd-e584-3c96-550f" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16bd-d73e-777e-12fb"/>
               </constraints>
@@ -1158,28 +1169,28 @@
             <infoLink name="Pirazzo&apos;s Pikemen" id="9d76-3a6c-900d-bd5c" hidden="false" type="profile" targetId="e477-2e76-dd47-b7cb"/>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b3fe-c8b4-e332-a371"/>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="b3fe-c8b4-e332-a371"/>
             <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="ecd5-63f7-ce8e-b3a3"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="10"/>
+            <cost name="pts" typeId="points" value="9"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Crossbowmen" hidden="false" id="3e35-01f4-3cbc-fcff" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Crossbowmen" hidden="false" id="3e35-01f4-3cbc-fcff" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="80fb-9f80-d1a7-0887" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="80fb-9f80-d1a7-0887" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="858d-e523-a77f-896d"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="e622-380c-086e-80d9" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2">
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="e622-380c-086e-80d9" type="selectionEntry" targetId="a5bd-e584-3c96-550f" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73ba-bf48-cbf0-fc6e"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Legion Crossbow" hidden="false" id="cced-719f-07a4-4727" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Legion Crossbow" hidden="false" id="cced-719f-07a4-4727" sortIndex="3" collective="true">
               <infoLinks>
                 <infoLink name="Crossbow (Pirazzo&apos;s Legion)" id="0708-85d7-7c68-5fb5" hidden="false" type="profile" targetId="0da4-1137-5561-8150"/>
               </infoLinks>
@@ -1198,14 +1209,14 @@
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="acc3-8996-0250-2a9c"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="9"/>
+            <cost name="pts" typeId="points" value="11"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Pirazzo&apos;s Lost Company" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5f3e-edc4-a956-10b0">
+        <profile name="Pirazzo&apos;s Lost Legion" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5f3e-edc4-a956-10b0">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (named character)</characteristic>
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
           </characteristics>
         </profile>
@@ -1219,17 +1230,6 @@
             <infoLink name="Pikes" id="b6d6-0ba4-9f4c-106f" hidden="false" type="profile" targetId="2e45-16fb-4849-4905"/>
             <infoLink name="Mixed Formation" id="7146-5569-7e84-d9fa" hidden="false" type="profile" targetId="e6c3-a289-a470-44af"/>
           </infoLinks>
-          <infoGroups>
-            <infoGroup name="Special Rules" id="c25d-d725-b1b5-f125" hidden="false">
-              <infoLinks>
-                <infoLink name="Close Order" id="18e9-2b7e-e977-1a68" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
-                <infoLink name="Mercenaries" id="2763-e4e4-e114-69e7" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
-                <infoLink name="Drilled" id="c242-3da8-a799-969f" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
-                <infoLink name="Pikes" id="9031-414e-f999-9c55" hidden="false" type="profile" targetId="2e45-16fb-4849-4905"/>
-                <infoLink name="Mixed Formation" id="2cb2-43fc-cad0-4ac0" hidden="false" type="profile" targetId="e6c3-a289-a470-44af"/>
-              </infoLinks>
-            </infoGroup>
-          </infoGroups>
         </infoGroup>
       </infoGroups>
     </selectionEntry>
@@ -2049,8 +2049,8 @@
       <profiles>
         <profile name="Daddallo and The Birdmen of Catrazza" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="73b3-e9dd-44c3-0e28">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2185,8 +2185,8 @@
       <profiles>
         <profile name="Golgfag Maneater and Mercenary Ogres" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="92f8-a059-8d91-e9c3">
           <characteristics>
-            <characteristic name="Troop Type" id="b658-89e0-79b9-8594" hidden="false" typeId="5d94-6b94-bd89-1944">Monstrous infantry</characteristic>
-            <characteristic name="Unit Size" id="5792-0bfc-1572-fbc9" hidden="false" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2296,8 +2296,8 @@
       <profiles>
         <profile name="Luka Branganza&apos;s and The Besieger Crossbowmen" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="6fa9-7584-cc01-0745">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2810,13 +2810,296 @@
             <infoLink name="Mercenaries" id="d1c7-e6d5-9bdb-9dfd" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
             <infoLink name="Swiftstride" id="bd77-fabe-b2e3-cf4e" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
             <infoLink name="Feigned Flight" id="0679-3cef-dab4-752a" hidden="false" type="profile" targetId="eea7-89d9-a996-403c"/>
-            <infoLink name="Sheik Shufti" id="b83f-1e9f-3fcf-da3c" hidden="false" type="profile" targetId="2ac0-9c8e-aa69-24b4"/>
+            <infoLink name="Sheikh Shufti" id="b83f-1e9f-3fcf-da3c" hidden="false" type="profile" targetId="2ac0-9c8e-aa69-24b4"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c8c8-1a57-f099-82e6" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="5ed2-be5b-d6a8-a9ae">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Leopoldo di Lucci" hidden="false" id="eef7-4e4b-138d-735b" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="0ee9-199a-a7bd-ac6d" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0326-ac43-67b0-f440"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="f291-10cf-1576-c20d" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6aa6-90ae-9c17-3316"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="4065-384e-a1e0-ecca" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Leopoldo di Lucci" id="3fd0-59bb-8cde-9b44" hidden="false" type="profile" targetId="0155-9b83-8671-8873"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aefc-85a8-4855-fa08"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7abb-3640-e5b9-aef4"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mercenary Pike" hidden="false" id="8539-5ee1-7cd5-7a0b" sortIndex="2" collective="true">
+              <infoLinks>
+                <infoLink name="Pike (Mercenaries)" id="ae4e-2101-e71e-dc45" hidden="false" type="profile" targetId="c8c7-61c2-1fcd-3e31"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a03e-6a22-70c4-555f"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1eae-54ac-7306-586e"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leopold&apos;s Pikemen" hidden="false" id="246e-18fe-c3a5-828d" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="c3b4-0411-b34e-e5dc" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b05-c7be-64f9-011b"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="9e27-c13f-9286-c0d1" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eb5-44ce-de96-61ea"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mercenary Pike" hidden="false" id="9800-3f9e-9b60-9557" sortIndex="2" collective="true">
+              <infoLinks>
+                <infoLink name="Pike (Pirazzo&apos;s Legion)" id="d292-3e1a-679a-3453" hidden="false" type="profile" targetId="c8c7-61c2-1fcd-3e31"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0584-3365-b3d5-f206"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9188-5b66-5522-6549"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="e58c-fd3c-ebf9-7fc5" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5087-9f58-c348-2c75"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07c7-341d-d6fe-5883"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="c7d4-7089-96db-da25" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="a893-d7b0-25be-8a59" sortIndex="55">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b71d-0ffb-2d5c-883c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eed-2b96-e1fa-ca8a"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Musician" id="778b-23f3-9d6c-9b40" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="91ea-e3c2-5ae1-d232" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Pirazzo&apos;s Pikemen" id="f415-8ee2-4aa2-08a8" hidden="false" type="profile" targetId="e477-2e76-dd47-b7cb"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="ccb9-8d9e-7ded-d016"/>
+            <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="0c02-45c5-07d8-b44d"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="8"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Leopold&apos;s Leopard Company" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="dd39-148c-8061-c5a1">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="faba-afd5-5508-8263" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="2ae7-fbcd-6b93-b038" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Mercenaries" id="b701-244a-bc89-7334" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Drilled" id="ea00-4078-19ba-04c7" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
+            <infoLink name="Pikes" id="fcc8-1327-4e27-d83a" hidden="false" type="profile" targetId="2e45-16fb-4849-4905"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="62fa-6108-530b-b4e5" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="0f24-e516-4c00-a9a2" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2f48-c760-1c50-132b" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="609a-37ee-9489-e6ec">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bronzino" hidden="false" id="97d9-a141-193c-8c33">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="e77c-0f8b-a184-23e3" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a21-7f9a-50ab-539f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="1887-d5e8-f0e9-1a43" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d216-f47e-cc48-7f25"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="8af7-cbc8-f66a-4519" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Bronzino" id="8547-84f8-b254-a9b2" hidden="false" type="profile" targetId="daf4-7b1a-8058-4a51"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="725e-6599-0b60-ff17"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e2c-f25d-cccc-f932"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="45"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Bronzino&apos;s Warhorse" hidden="false" id="bf64-5dd5-c30f-e8e8" collective="true" subType="mount" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="bec8-1014-03b6-13cc" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42cc-449f-38b4-8ca8"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Barding" hidden="false" id="e29d-bcff-b69d-f486" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="076e-08c0-42df-3c31"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="911b-0418-4b33-2cad"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (25x50)" id="ea72-fcbf-978a-31ce" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Mercenary Warhorse" id="43f3-0150-dda4-6a33" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1">
+          <entryLinks>
+            <entryLink import="true" name="Cannon" hidden="false" id="3f58-8899-bbba-f2f1" type="selectionEntry" targetId="ca63-2c16-928e-1e45" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b850-16ed-4391-3d87"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mercenary Crew" hidden="false" id="2117-52b3-860b-997a" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Light Armour" hidden="false" id="7910-bcb7-41da-30c5" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e4d-f4b9-3fab-5ba0"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="79cc-e1a0-48e4-d6b7" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2ec-af90-113b-799b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Base (25x25)" id="fd92-62e4-d0c8-3e66" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+                <infoLink name="Mercenary Crew" id="d7fc-de40-2856-5ed9" hidden="false" type="profile" targetId="e5cd-a243-4ee4-ee7d"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0b3-0201-03cf-ed31"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="012b-25cf-4714-5497"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mercenary Crew" hidden="false" id="dd26-3024-a51c-dc91" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Light Armour" hidden="false" id="f2e3-86c2-286d-34a6" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbd3-d37d-c0e4-750e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="f4c2-0cf5-6223-c483" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5529-5317-0df2-ae94"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Base (25x25)" id="a11e-ded3-855f-6117" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+                <infoLink name="Mercenary Crew" id="28ff-cd20-b2ef-deb2" hidden="false" type="profile" targetId="e5cd-a243-4ee4-ee7d"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b100-df32-59f6-22f9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c60-6a86-eeb3-b27e"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mercenary Crew" hidden="false" id="6c6b-12f6-c81a-dd34" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Light Armour" hidden="false" id="b1d8-c727-6cf8-c6d3" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7292-5d83-a6a9-4f2e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="a3db-3640-bd93-96ba" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b4c-4cda-2444-a751"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Base (25x25)" id="0a94-f29e-4b9b-c13f" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+                <infoLink name="Mercenary Crew" id="8f8d-a079-0719-ed69" hidden="false" type="profile" targetId="e5cd-a243-4ee4-ee7d"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77d8-4e15-353a-6b5d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eecb-042a-9c06-c57e"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (50x50)" id="628a-f120-dc53-8ce9" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc5d-7498-df20-4442"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9aef-f57d-503d-e2b9"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="100"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="f0ac-1b8d-7172-11af" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="a348-58e7-0f21-fda4" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Mercenaries" id="061c-d56e-04ac-c056" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Galloper&apos;s Deployment" id="86aa-8e2e-68e2-a560" hidden="false" type="profile" targetId="1fe3-5056-123a-ee2b"/>
+            <infoLink name="Galloper&apos;s Function" id="2ce7-8f87-5f21-b7f1" hidden="false" type="profile" targetId="8e85-a0d6-a610-768e"/>
+            <infoLink name="Galloper&apos;s Rapid Movement" id="dac1-7dbf-e650-69ce" hidden="false" type="profile" targetId="9e16-4bc8-91ba-d71f"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <profiles>
+        <profile name="Bronzino&apos;s Galloper Guns" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="aca2-7442-eab9-59e6">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">War Machine</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cf94-b2a5-5f02-7064" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="b1b6-6694-e20b-5ab9" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="9fcf-19ad-fe84-9c61" id="9a2a-e20c-1f93-3765" primary="false" name="War Machine"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -3023,7 +3306,7 @@ Bonegrinder Giant Attacks Table
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
       </characteristics>
     </profile>
-    <profile name="Pirazzo&apos;s Pikemen" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="e477-2e76-dd47-b7cb">
+    <profile name="Mercenary Pikemen" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="e477-2e76-dd47-b7cb">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
@@ -3037,7 +3320,7 @@ Bonegrinder Giant Attacks Table
       </characteristics>
       <comment>Pikemen from Pirazzo&apos;s Lost Legion from 6th Edition</comment>
     </profile>
-    <profile name="Pirazzo&apos;s Crossbowmen" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="00b5-4072-f332-fa4f">
+    <profile name="Mercenary Crossbowmen" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="00b5-4072-f332-fa4f">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
@@ -3053,25 +3336,25 @@ Bonegrinder Giant Attacks Table
     </profile>
     <profile name="Crossbow (Pirazzo&apos;s Legion)" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="0da4-1137-5561-8150">
       <characteristics>
-        <characteristic name="R" typeId="2360-c777-5e07-ed58">30</characteristic>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">24</characteristic>
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">4</characteristic>
         <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Ponderous</characteristic>
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">Crossbows from Pirazzo&apos;s Legion can be used although in Mixed Formation. Remove casualties in such a way that front ranks always remains with Crossbows</characteristic>
       </characteristics>
     </profile>
-    <profile name="Pike (Pirazzo&apos;s Legion)" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="c8c7-61c2-1fcd-3e31">
+    <profile name="Pike (Mercenaries)" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="c8c7-61c2-1fcd-3e31">
       <characteristics>
         <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">F</characteristic>
         <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Fights in Four Ranks, Strike First*</characteristic>
-        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">Pikes (Pirazzo&apos;s Legion) fight in four ranks; require two hands. Always strikes first in the initial round of close combat, even striking before enemies that have charged. Note that enemies that are entitled to Strike First because of a special ability or magic, will strike before pike-armed models.
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">Pikes (Mercenaries) fight in four ranks; require two hands. Always strikes first in the initial round of close combat, even striking before enemies that have charged. Note that enemies that are entitled to Strike First because of a special ability or magic, will strike before pike-armed models.
 Models armed with pikes recieve a +1 Strength bonus in the Close Combar phase on turn they are charged by cavalry units, chariots or monsters. Note that this bonus only applies to attacks directed against the above charging units, not against other units.
 All these special rules cannot be used against enemy fighting the Pikemen&apos;s flank or rear.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Fernando Pirazzo" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="daf4-7b1a-8058-4a51" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+    <profile name="Bronzino" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="daf4-7b1a-8058-4a51" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
@@ -3083,7 +3366,6 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
       </characteristics>
-      <alias>Fernando Pirazzo</alias>
     </profile>
     <profile name="Mixed Formation" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="e6c3-a289-a470-44af">
       <characteristics>
@@ -3631,6 +3913,71 @@ If Al Muktar inflicts two (2) wounds and the remaining Desert Dogs inflict three
 Thanks to his impressive weapon, Sheikh Ahmed Shufti adds +1 Strength to blows he strikes in a turn he has not been charged and +2 Strength against blows struck in a turn he charges.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Leopoldo di Lucci" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="0155-9b83-8671-8873" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fernando Pirazzo" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="91c8-e586-5501-2162" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+      <alias>Fernando Pirazzo</alias>
+    </profile>
+    <profile name="Mercenary Crew" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="e5cd-a243-4ee4-ee7d">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+      <comment>Pikemen from Pirazzo&apos;s Lost Legion from 6th Edition</comment>
+    </profile>
+    <profile name="Galloper&apos;s Deployment" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="1fe3-5056-123a-ee2b">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Guns may be deployed as single battery, or each of the gun teams might be deployed as separate teams, each gun operating as an independent unit. Bronzino may ride from one team to another, and any team he is with can test against his Leadership while he is in it.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Galloper&apos;s Function" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="8e85-a0d6-a610-768e">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">If the galloper gun is being charged by an enemy unit, the crew may hold or flee. If they flee, the gun is assumed to be attached and carried with the team with no movemet penalty. If the gun and crew are caught, they are destroyed. If they fight, they are considered to be in hand-to-hand combat as any other gun crew, where the mounted gunner is dismounted to fight, without considering the warhorse.
+
+For purposes of representation, please consider a 50 mm x 100 mm base for each gun team, where all gunners (two on foot and one in warhorse) and the gun are included. Additionally Bronzino&apos;s base is 30 mm x 60 mm when he is not attached to a Galloper Gun. When he joins the unit, he is counted as part of it with same base representation.
+
+
+Bronzino&apos;s Gallopers have (-1) reduced Toughness to normal cannos due to their function of mobility over form.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Galloper&apos;s Rapid Movement" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="9e16-4bc8-91ba-d71f">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Each galloper gun team is harnessed to a warhorse ridden by one of the gunners of the team. This enables to move at a rapid pace like cavalry. As the warhorse movement is equivalent to the team marching, the gun may not fire if it counts as the team has marched. Galloper guns cannot march with the warhorse marching movement (16&quot;), so their movement will be always limited to (8&quot;).
+
+When you move one of Bronzino&apos;s guns, simply measure the distance and make your move. There is no need to turn or wheel as the galloper guns can turn freely to face any direction they wish.
+
+To represent this extraordinary mobility, galloper guns may move and fire. </characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Badlands Ogre Bulls" hidden="false" id="44c9-e0c9-75ce-1fce" type="selectionEntry" targetId="a4af-ea3a-49ea-d56e">
@@ -3745,6 +4092,7 @@ Thanks to his impressive weapon, Sheikh Ahmed Shufti adds +1 Strength to blows h
         <categoryLink targetId="5b84-2c3c-869d-3522" id="1ab4-5c57-6df0-cea8" primary="false" name="Mercenaries"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="3441-8148-d978-1323" targetId="5ed2-be5b-d6a8-a9ae" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
