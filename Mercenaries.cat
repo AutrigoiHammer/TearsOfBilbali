@@ -1082,9 +1082,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="125d-3e0e-ef82-6a82">
+    <selectionEntry type="unit" import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="125d-3e0e-ef82-6a82">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Fernando Pirazzo" hidden="false" id="5e98-f344-895f-fc19" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Fernando Pirazzo" hidden="false" id="5e98-f344-895f-fc19" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Two Hand Weapons" hidden="false" id="3b61-166d-7fbf-6a97" type="selectionEntry" targetId="a5bd-e584-3c96-550f" sortIndex="1">
               <constraints>
@@ -1120,7 +1120,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Pikemen" hidden="false" id="acca-45b2-aebe-915d" sortIndex="3">
+        <selectionEntry type="model" import="true" name="Pirazzo&apos;s Pikemen" hidden="false" id="acca-45b2-aebe-915d" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="1c5d-b2b8-ad7a-6664" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
               <constraints>
@@ -1176,7 +1176,7 @@
             <cost name="pts" typeId="points" value="9"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Crossbowmen" hidden="false" id="3e35-01f4-3cbc-fcff" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Pirazzo&apos;s Crossbowmen" hidden="false" id="3e35-01f4-3cbc-fcff" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="80fb-9f80-d1a7-0887" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
               <constraints>
@@ -1233,7 +1233,7 @@
         </infoGroup>
       </infoGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="5d23-a058-965c-22dc" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="5d23-a058-965c-22dc" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <costs>
         <cost name="pts" typeId="points" value="200"/>
       </costs>
@@ -1379,7 +1379,7 @@
         <constraint type="max" value="0" field="selections" scope="force" shared="false" id="598e-22df-1929-bf42" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="5b0c-3da2-c226-bb34" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="5b0c-3da2-c226-bb34" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <costs>
         <cost name="pts" typeId="points" value="200"/>
       </costs>
@@ -1492,9 +1492,9 @@
         <infoLink name="Borgio the Besieger" id="c03d-1a3a-15cb-0a88" hidden="false" type="profile" targetId="4961-db8a-8e6a-4eb6"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="The Cursed Company" hidden="false" id="22dc-5cbb-1a2c-3cab" page="https://wfb6thcharacters.blogspot.com/p/blog-page_85.html">
+    <selectionEntry type="unit" import="true" name="The Cursed Company" hidden="false" id="22dc-5cbb-1a2c-3cab" page="https://wfb6thcharacters.blogspot.com/p/blog-page_85.html">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ritcher Kreugar" hidden="false" id="2a39-3fda-0b2b-eb3e" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Ritcher Kreugar" hidden="false" id="2a39-3fda-0b2b-eb3e" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Full Plate Armour" hidden="false" id="52aa-fc36-eaa1-353c" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="2">
               <constraints>
@@ -1544,7 +1544,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cursed Company Skeletons" hidden="false" id="e958-3cc4-37ac-3403" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Cursed Company Skeletons" hidden="false" id="e958-3cc4-37ac-3403" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="d5da-d9e6-f7f7-389c" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="2">
               <constraints>
@@ -1631,7 +1631,7 @@
       </infoGroups>
       <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition" collective="true">
+    <selectionEntry type="unit" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="6" collective="true">
           <constraints>
@@ -1789,7 +1789,7 @@
         <infoLink name="Dragon fire" hidden="false" type="profile" id="a133-62e3-66b9-e7f8" targetId="fbc5-7c01-9014-f854"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="false" name="Rakarth, The Beastlord" hidden="false" id="9c28-85eb-3544-b0a4" page="Regiments of Renown, Warhammer Fantasy 6th Edition" collective="true">
+    <selectionEntry type="unit" import="false" name="Rakarth, The Beastlord" hidden="false" id="9c28-85eb-3544-b0a4" page="Regiments of Renown, Warhammer Fantasy 6th Edition">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Rakarth&apos;s Whip of Agony" hidden="false" id="5f6e-5985-e6d4-d2dc" sortIndex="4" collective="true">
           <constraints>
@@ -1965,12 +1965,12 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d87c-4fa6-dd98-317f"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Daddallo and The Birdmen of Catrazza" hidden="false" id="37e4-bdf9-9ddd-38f3">
+    <selectionEntry type="unit" import="true" name="Daddallo and The Birdmen of Catrazza" hidden="false" id="37e4-bdf9-9ddd-38f3">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="252e-ef78-543c-c972" primary="true" name="Mercenaries"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Daddallo" hidden="false" id="d9d8-98f2-34f6-8c57" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Daddallo" hidden="false" id="d9d8-98f2-34f6-8c57" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="184d-ff9c-440f-e669" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
@@ -2000,7 +2000,7 @@
             <cost name="pts" typeId="points" value="50"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Birdmen" hidden="false" id="0511-a96e-e7f0-a917" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Birdmen" hidden="false" id="0511-a96e-e7f0-a917" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="88e3-c022-1f91-83b7" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
@@ -2055,9 +2055,9 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="857e-a885-39c5-de87">
+    <selectionEntry type="unit" import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="857e-a885-39c5-de87">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Golgfag Maneater" hidden="false" id="89f6-d29e-137a-4db7" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Golgfag Maneater" hidden="false" id="89f6-d29e-137a-4db7" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="ea9a-5629-f701-f061" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2087,7 +2087,7 @@
             <cost name="pts" typeId="points" value="180"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skaff, the Standard Bearer" hidden="false" id="42e3-977b-57df-039c" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Skaff, the Standard Bearer" hidden="false" id="42e3-977b-57df-039c" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="bc45-33d3-404e-c604" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2129,7 +2129,7 @@
             <cost name="pts" typeId="points" value="60"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Maneater Ogres" hidden="false" id="078d-00ec-9d8d-87fe" sortIndex="3">
+        <selectionEntry type="model" import="true" name="Maneater Ogres" hidden="false" id="078d-00ec-9d8d-87fe" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="7f71-2dba-b9fc-a632" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2218,12 +2218,12 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e010-a3dd-df28-7294" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5">
+    <selectionEntry type="unit" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5">
       <categoryLinks>
         <categoryLink name="Mercenaries" hidden="false" id="69ad-4f9e-858c-b56f" targetId="5b84-2c3c-869d-3522" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Luka Braganza" hidden="false" id="a30f-12dd-0ea1-195a" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Luka Braganza" hidden="false" id="a30f-12dd-0ea1-195a" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="c5c9-9718-2f8a-ab11" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
@@ -2253,7 +2253,7 @@
             <cost name="pts" typeId="points" value="45"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Besieger Crossbowmen" hidden="false" id="60b2-e273-5ed6-a69e" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Besieger Crossbowmen" hidden="false" id="60b2-e273-5ed6-a69e" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="5d82-3a1a-de7d-5f6d" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
@@ -2408,7 +2408,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="126f-0cea-2be5-a0cc" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Voland&apos;s Venators" hidden="false" id="f019-bfd6-099a-0d30" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Voland&apos;s Venators" hidden="false" id="f019-bfd6-099a-0d30" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <costs>
         <cost name="pts" typeId="points" value="200"/>
       </costs>
@@ -2417,7 +2417,7 @@
         <categoryLink targetId="5165-d052-cfc2-5887" id="0a19-4cd7-ff37-a828" primary="false" name="Heavy Cavalry"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Voland" hidden="false" id="01cf-0ed6-50ae-1cd4" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Voland" hidden="false" id="01cf-0ed6-50ae-1cd4" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="Command" id="3fe4-9655-e572-f66e" hidden="false" sortIndex="1">
               <entryLinks>
@@ -2483,7 +2483,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8c4-9380-f176-c245"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Venators" hidden="false" id="d29b-37a3-2905-c279" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Venators" hidden="false" id="d29b-37a3-2905-c279" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="0718-de56-8030-2ced" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -2563,13 +2563,13 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8818-8beb-d6a3-9236" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="bb37-df3a-2ca1-6d19" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="bb37-df3a-2ca1-6d19" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="339a-8f3e-c198-6a59" primary="true" name="Mercenaries"/>
         <categoryLink targetId="600c-7d08-5be1-fe0c" id="6998-78ae-5278-042c" primary="false" name="Light Cavalry"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Al Muktar" hidden="false" id="0644-d753-6d87-6d64" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Al Muktar" hidden="false" id="0644-d753-6d87-6d64" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="Command" id="dc34-14d7-e843-97ab" hidden="false" sortIndex="1">
               <entryLinks>
@@ -2628,7 +2628,7 @@
             <cost name="pts" typeId="points" value="50"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Desert Dogs" hidden="false" id="60c6-e4e9-376d-1608" sortIndex="4">
+        <selectionEntry type="model" import="true" name="Desert Dogs" hidden="false" id="60c6-e4e9-376d-1608" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="2e79-1073-f741-1b30" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -2677,7 +2677,7 @@
             <cost name="pts" typeId="points" value="10"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sheik Shufti" hidden="false" id="8bca-a2d1-c199-5d6e" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Sheik Shufti" hidden="false" id="8bca-a2d1-c199-5d6e" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="fa0e-204c-72b1-741b" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -2735,7 +2735,7 @@
             <cost name="pts" typeId="points" value="50"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Ibn" hidden="false" id="abdb-bb8b-4376-cd65" sortIndex="3">
+        <selectionEntry type="model" import="true" name="Ibn" hidden="false" id="abdb-bb8b-4376-cd65" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="36ba-fbd6-b2f7-d26c" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -2818,9 +2818,9 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c8c8-1a57-f099-82e6" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="5ed2-be5b-d6a8-a9ae">
+    <selectionEntry type="unit" import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="5ed2-be5b-d6a8-a9ae">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Leopoldo di Lucci" hidden="false" id="eef7-4e4b-138d-735b" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Leopoldo di Lucci" hidden="false" id="eef7-4e4b-138d-735b" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="0ee9-199a-a7bd-ac6d" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2856,7 +2856,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Leopold&apos;s Pikemen" hidden="false" id="246e-18fe-c3a5-828d" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Leopold&apos;s Pikemen" hidden="false" id="246e-18fe-c3a5-828d" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="c3b4-0411-b34e-e5dc" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
               <constraints>
@@ -3120,12 +3120,12 @@
         <categoryLink targetId="9fcf-19ad-fe84-9c61" id="9a2a-e20c-1f93-3765" primary="false" name="War Machine"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Marksmen of Miragliano" hidden="false" id="4f1d-ce45-ac12-a82c">
+    <selectionEntry type="unit" import="true" name="Marksmen of Miragliano" hidden="false" id="4f1d-ce45-ac12-a82c">
       <categoryLinks>
         <categoryLink name="Mercenaries" hidden="false" id="46ff-b745-a15f-53e6" targetId="5b84-2c3c-869d-3522" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Maximilian Damark" hidden="false" id="6ae1-e028-2388-d15b" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Maximilian Damark" hidden="false" id="6ae1-e028-2388-d15b" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="835e-55fe-6153-063e" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
@@ -3155,7 +3155,7 @@
             <cost name="pts" typeId="points" value="45"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Marksmen" hidden="false" id="c1f0-3998-161b-a2f1" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Marksmen" hidden="false" id="c1f0-3998-161b-a2f1" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="8714-f1d3-238e-6afa" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
