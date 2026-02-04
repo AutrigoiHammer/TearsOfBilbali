@@ -2939,7 +2939,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2f48-c760-1c50-132b" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="609a-37ee-9489-e6ec">
+    <selectionEntry type="unit" import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="609a-37ee-9489-e6ec" subType="unit-group">
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Bronzino" hidden="false" id="97d9-a141-193c-8c33">
           <entryLinks>
