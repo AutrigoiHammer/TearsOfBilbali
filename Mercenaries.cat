@@ -4202,6 +4202,7 @@ To represent this extraordinary mobility, galloper guns may move and fire. </ch
     <entryLink import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="f4f3-8a2c-b679-229e" type="selectionEntry" targetId="5b0c-3da2-c226-bb34">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="084c-3453-dbbd-84ad" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="1846-263f-2299-6a2b" primary="false" name="Named Characters"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="The Cursed Company" hidden="false" id="c03b-0f11-9210-e1e2" type="selectionEntry" targetId="22dc-5cbb-1a2c-3cab">
@@ -4218,7 +4219,12 @@ To represent this extraordinary mobility, galloper guns may move and fire. </ch
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="318c-d2a4-266f-e9c9" primary="false" name="Named Characters"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="95c7-5534-8465-8ec2" type="selectionEntry" targetId="8c4a-26d2-6368-f867"/>
+    <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="95c7-5534-8465-8ec2" type="selectionEntry" targetId="8c4a-26d2-6368-f867">
+      <categoryLinks>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="96cc-0d12-1671-a85d" primary="false" name="Named Characters"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="7c28-33ad-fa95-2d10" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Daddallo and The Birdmen of Catrazza" hidden="false" id="49eb-1e31-0775-1808" targetId="37e4-bdf9-9ddd-38f3" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0414-966f-cb92-31c1" primary="true" name="Mercenaries"/>
@@ -4227,18 +4233,46 @@ To represent this extraordinary mobility, galloper guns may move and fire. </ch
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e2fe-8e65-2baa-f1a0"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="eb51-c971-b82c-10c8" targetId="857e-a885-39c5-de87" type="selectionEntry"/>
-    <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="63ce-a131-7d3d-a840" targetId="d529-2376-1520-33a5" type="selectionEntry"/>
-    <entryLink import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="be5f-0f9d-783e-1f9f" targetId="e9c6-8a9f-8f08-b36a" type="selectionEntry"/>
-    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="4678-817c-cb0e-b07e" targetId="f019-bfd6-099a-0d30" type="selectionEntry"/>
-    <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="3d84-2564-7cc2-45d1" targetId="bb37-df3a-2ca1-6d19" type="selectionEntry">
+    <entryLink import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="eb51-c971-b82c-10c8" targetId="857e-a885-39c5-de87" type="selectionEntry">
       <categoryLinks>
-        <categoryLink targetId="5b84-2c3c-869d-3522" id="1ab4-5c57-6df0-cea8" primary="false" name="Mercenaries"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="fe2c-474f-613a-8ef8" primary="true" name="Mercenaries"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="3441-8148-d978-1323" targetId="5ed2-be5b-d6a8-a9ae" type="selectionEntry"/>
-    <entryLink import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="7346-3ba5-dcdd-b62c" targetId="609a-37ee-9489-e6ec" type="selectionEntry"/>
-    <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="0d18-9a1b-4845-9ce4" targetId="4f1d-ce45-ac12-a82c" type="selectionEntry"/>
+    <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="63ce-a131-7d3d-a840" targetId="d529-2376-1520-33a5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="098a-a600-10a3-f91a" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="be5f-0f9d-783e-1f9f" targetId="e9c6-8a9f-8f08-b36a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="5187-ee2e-012a-2695" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="4678-817c-cb0e-b07e" targetId="f019-bfd6-099a-0d30" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="1c15-cd58-8b4c-0940" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="3d84-2564-7cc2-45d1" targetId="bb37-df3a-2ca1-6d19" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="1ab4-5c57-6df0-cea8" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="3441-8148-d978-1323" targetId="5ed2-be5b-d6a8-a9ae" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="ac08-9e2c-bc17-1e05" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="7346-3ba5-dcdd-b62c" targetId="609a-37ee-9489-e6ec" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="e4d2-ebcc-0f95-c80e" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="0d18-9a1b-4845-9ce4" targetId="4f1d-ce45-ac12-a82c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="bd24-8af9-4acc-e35d" primary="true" name="Mercenaries"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
