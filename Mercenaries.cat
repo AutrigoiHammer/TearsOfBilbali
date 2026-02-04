@@ -4267,6 +4267,7 @@ To represent this extraordinary mobility, galloper guns may move and fire. </ch
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="cfa3-abf9-2647-6fe2" targetId="4f1d-ce45-ac12-a82c" type="selectionEntry"/>
+    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="b2ca-d946-474b-66e0" targetId="f019-bfd6-099a-0d30" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
