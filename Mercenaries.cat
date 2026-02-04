@@ -4248,11 +4248,6 @@ To represent this extraordinary mobility, galloper guns may move and fire. </ch
         <categoryLink targetId="5b84-2c3c-869d-3522" id="5187-ee2e-012a-2695" primary="true" name="Mercenaries"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="4678-817c-cb0e-b07e" targetId="f019-bfd6-099a-0d30" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink targetId="5b84-2c3c-869d-3522" id="1c15-cd58-8b4c-0940" primary="true" name="Mercenaries"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="3d84-2564-7cc2-45d1" targetId="bb37-df3a-2ca1-6d19" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="1ab4-5c57-6df0-cea8" primary="true" name="Mercenaries"/>
