@@ -4238,6 +4238,7 @@ To represent this extraordinary mobility, galloper guns may move and fire. </ch
     </entryLink>
     <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="3441-8148-d978-1323" targetId="5ed2-be5b-d6a8-a9ae" type="selectionEntry"/>
     <entryLink import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="7346-3ba5-dcdd-b62c" targetId="609a-37ee-9489-e6ec" type="selectionEntry"/>
+    <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="0d18-9a1b-4845-9ce4" targetId="4f1d-ce45-ac12-a82c" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
