@@ -2998,7 +2998,7 @@
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1">
+        <selectionEntry type="unit" import="true" name="Galloper Cannon" hidden="false" id="9aa6-cd3f-5b8e-4fe1">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Mercenary Crew" hidden="false" id="2117-52b3-860b-997a" sortIndex="2" collective="true" subType="crew">
               <entryLinks>
@@ -3063,38 +3063,28 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eecb-042a-9c06-c57e"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Bronzino&apos;s Galloper Cannon" hidden="false" id="6e40-fea5-1e4e-1501" sortIndex="1">
+            <selectionEntry type="model" import="true" name="Galloper&apos;s Warhorse" hidden="false" id="f0b2-ffb1-93f7-3a8d" collective="true" subType="mount">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eedd-9b44-5da5-04cb"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dea3-a692-d57f-ec41"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ddc-4c4e-17c6-b636"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b656-024a-fae8-9849"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Cannon" id="a900-2954-b1cb-a149" hidden="false" type="profile" targetId="8ef5-8512-e1c2-6474">
-                  <modifiers>
-                    <modifier type="set" value="Armour Bane (2), Cannon Fire, Cumbersome, Multiple Wounds (D3)" field="5f83-3633-336b-93b4">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="fac7-648f-252e-8ddf" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Base (25x50)" id="c1de-adb5-5dd2-095c" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Galloper&apos;s Warhorse" id="43fe-5c09-7a4f-7e53" hidden="false" type="profile" targetId="7a1b-3ed5-341d-6990"/>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Galloper&apos;s Warhorse" hidden="false" id="7d3a-acfe-12c4-d703" collective="true" subType="mount">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0bc8-7553-5e7a-462c"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e3-2b48-fddf-b796"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Base (25x50)" id="ce1d-2fbc-88d3-0fdb" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-                    <infoLink name="Galloper&apos;s Warhorse" id="8780-bdc3-d4cc-8774" hidden="false" type="profile" targetId="7a1b-3ed5-341d-6990"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
             <infoLink name="Base (50x50)" id="628a-f120-dc53-8ce9" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
+            <infoLink name="Cannon" id="d7f0-a5ca-49cb-76b0" hidden="false" type="profile" targetId="8ef5-8512-e1c2-6474">
+              <modifiers>
+                <modifier type="set" value="Armour Bane (2), Cannon Fire, Cumbersome, Multiple Wounds (D3)" field="5f83-3633-336b-93b4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="fac7-648f-252e-8ddf" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc5d-7498-df20-4442"/>
