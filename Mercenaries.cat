@@ -1132,17 +1132,9 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16bd-d73e-777e-12fb"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Mercenary Pike" hidden="false" id="a865-5993-525d-6bff" type="selectionEntry" targetId="2666-2162-9696-0500" sortIndex="1"/>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Legion Pike" hidden="false" id="dfaa-0d9e-e308-d33b" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Pike (Mercenaries)" id="9cd3-a6fd-944c-9906" hidden="false" type="profile" targetId="c8c7-61c2-1fcd-3e31"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c603-bb75-4e82-ca35"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b757-4dad-ae62-e3cf"/>
-              </constraints>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="3096-bae5-bc89-2817" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53bb-cb5a-f77d-0120"/>
@@ -1153,7 +1145,7 @@
               </infoLinks>
               <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="284c-826f-5f70-22f5" sortIndex="55">
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="284c-826f-5f70-22f5" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7ef-c099-a93a-8141"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba98-b921-8367-f293"/>
@@ -2823,18 +2815,22 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="5ed2-be5b-d6a8-a9ae">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Beorg Bearstruck" hidden="false" id="eef7-4e4b-138d-735b" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Leopoldo di Lucci" hidden="false" id="eef7-4e4b-138d-735b" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="f291-10cf-1576-c20d" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6aa6-90ae-9c17-3316"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Wicked Claws" hidden="false" id="c94c-1b3c-c415-0d74" type="selectionEntry" targetId="7414-cec3-7cd7-a94b" sortIndex="1"/>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="198b-3ce6-9863-0def" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="412c-f76d-83f1-b4b5"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (25x25)" id="4065-384e-a1e0-ecca" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
-            <infoLink name="Beorg" id="3fd0-59bb-8cde-9b44" hidden="false" type="profile" targetId="3763-86b0-10ac-5f74"/>
+            <infoLink name="Leopoldo di Lucci" id="3fd0-59bb-8cde-9b44" hidden="false" type="profile" targetId="0155-9b83-8671-8873"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aefc-85a8-4855-fa08"/>
@@ -2844,7 +2840,7 @@
             <cost name="pts" typeId="points" value="50"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Bearmen of Urslo" hidden="false" id="246e-18fe-c3a5-828d" sortIndex="3">
+        <selectionEntry type="model" import="true" name="Leopold&apos;s Leopards" hidden="false" id="246e-18fe-c3a5-828d" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="c3b4-0411-b34e-e5dc" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
               <constraints>
@@ -2856,7 +2852,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eb5-44ce-de96-61ea"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="fd30-3b61-7f7e-f156" type="selectionEntry" targetId="6192-f9f1-5d53-2042"/>
+            <entryLink import="true" name="Mercenary Pike" hidden="false" id="f1bc-8f74-a675-f350" type="selectionEntry" targetId="2666-2162-9696-0500" sortIndex="2"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="e58c-fd3c-ebf9-7fc5" sortIndex="4">
@@ -2869,7 +2865,7 @@
               </infoLinks>
               <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="a893-d7b0-25be-8a59" sortIndex="55">
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="a893-d7b0-25be-8a59" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b71d-0ffb-2d5c-883c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eed-2b96-e1fa-ca8a"/>
@@ -3129,7 +3125,7 @@
           </constraints>
           <infoLinks>
             <infoLink name="Base (25x25)" id="7a14-b14b-3467-76fa" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
-            <infoLink name="Maximilian" id="3ebc-975e-c80a-142e" hidden="false" type="profile" targetId="f9c2-5ee8-cf43-b42c"/>
+            <infoLink name="Maximilian" id="3ebc-975e-c80a-142e" hidden="false" type="profile" targetId="2cfa-5359-e484-3993"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45"/>
@@ -3175,7 +3171,7 @@
         </infoGroup>
       </infoGroups>
       <profiles>
-        <profile name="Maximilian Darmark and Marksmen of Miragliano" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5609-e001-27b2-07c9">
+        <profile name="Maximilian Damark and Marksmen of Miragliano" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5609-e001-27b2-07c9">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (character)</characteristic>
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
@@ -3293,7 +3289,7 @@
           </infoLinks>
           <constraints>
             <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="075c-251f-01ad-bc14"/>
-            <constraint type="max" value="28" field="selections" scope="parent" shared="true" id="d8b2-9ac1-a7cd-a032"/>
+            <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="d8b2-9ac1-a7cd-a032"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="points" value="11"/>
@@ -3325,6 +3321,311 @@
       </constraints>
       <infoLinks>
         <infoLink name="Base (25x25)" id="6916-4a54-1c56-90ec" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mercenary Pike" hidden="false" id="2666-2162-9696-0500">
+      <infoLinks>
+        <infoLink name="Pike (Mercenaries)" id="fb45-1622-2b31-8aa3" hidden="false" type="profile" targetId="c8c7-61c2-1fcd-3e31"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32df-5326-f9f8-6bd4"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4da1-0c7e-777d-fa37"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vespero&apos;s Vendetta" hidden="false" id="ff26-8420-f44d-aef7">
+      <categoryLinks>
+        <categoryLink name="Mercenaries" hidden="false" id="024e-e733-6764-ac7e" targetId="5b84-2c3c-869d-3522" primary="true"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="70de-7f34-1dee-1053" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Vespero" hidden="false" id="4bce-344b-eb09-ab87" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="e5ca-5046-1cd1-4985" type="selectionEntry" targetId="a5bd-e584-3c96-550f" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4779-f290-4957-a1c8"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="d549-a6be-cab0-4796" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6c0-a59b-57da-53e0"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f727-10f9-f24e-d60b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfcf-b0f5-c146-d118"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Maximilian" id="8e23-7c1a-aed3-576c" hidden="false" type="profile" targetId="f9c2-5ee8-cf43-b42c"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="45"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Grimacing Mask of Death" hidden="false" id="05a8-fbc6-0f9c-1e29" sortIndex="3" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="758d-d572-ae9e-d62d"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81f5-739c-0a47-a224"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Grimacing Death Mask" id="4364-f60b-f9c3-8e4b" hidden="false" type="profile" targetId="7441-662a-5748-0216"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Duellists" hidden="false" id="aecd-5e5e-ee45-5ac3" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="c749-12a4-1a2b-1b68" type="selectionEntry" targetId="a5bd-e584-3c96-550f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da0c-8dfc-049c-eb63"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="59eb-47b1-302b-4a68" type="selectionEntry" targetId="7cab-40e6-f134-de78">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7a5-4e4b-1eac-347b"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e13b-e360-3715-16ab"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="90c5-a205-b9a1-73e8"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Vespero&apos;s Duellists" id="1419-83ea-1c91-677a" hidden="false" type="profile" targetId="a61a-8be8-14b8-e7b5"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="9"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="5555-e986-e437-548e" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="8f16-4373-6393-217c" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Mercenaries" id="be39-d751-9f52-8ca0" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <profiles>
+        <profile name="Vespero&apos;s Vendetta" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="e4cc-56fb-a067-560e">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ad6d-d428-c2b3-704d" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (25x25)" id="a341-6748-bb53-f9e8" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="The Alcatani Fellowship" hidden="false" id="c1b4-9924-9d11-d847">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Roderigo Delmonte" hidden="false" id="3635-0aff-bf07-81b8" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="ff47-4e7c-ffc4-6c44" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c745-ab2a-d292-1610"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="8840-2343-ae78-a9a9" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d6e-d8d7-2398-240e"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mercenary Pike" hidden="false" id="7e7b-fe74-927d-d0da" type="selectionEntry" targetId="2666-2162-9696-0500" sortIndex="2"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="e660-855c-dc02-6fec" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Roderigo Delmonte" id="0c3f-49eb-eb70-4a29" hidden="false" type="profile" targetId="a626-ce53-15d9-4f4b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="878f-44de-9c2d-16ed"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baeb-1bb1-e2b4-d4e9"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Alcatani Pikemen" hidden="false" id="1973-c16a-d557-bd46" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="3ae0-86cc-a7aa-099c" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0b5-a76f-44ef-c883"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="2304-5b08-665f-45e3" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3174-795d-6b6a-dcb9"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mercenary Pike" hidden="false" id="6a92-b489-5de3-26ab" type="selectionEntry" targetId="2666-2162-9696-0500" sortIndex="2"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="bbc0-1bc4-df42-97f6" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8618-f9af-56cc-db58"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b36-a65b-7296-31fd"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="c4ec-670a-b0e1-f41d" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="646a-1d3c-c854-b5ca" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cddc-939a-026f-9a36"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24eb-8ac5-1e8d-5e3d"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Musician" id="84d1-9da1-73db-938e" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="6820-93f7-d6cf-07f7" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Mercenary Pikemen" id="1250-f007-0a6d-11e9" hidden="false" type="profile" targetId="e477-2e76-dd47-b7cb"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="d32d-4ad9-fb70-05d7"/>
+            <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="d87f-7135-3dd0-09f4"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="7"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Leopold&apos;s Leopard Company" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="19f1-800e-851d-f2cb">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="8e7e-120a-c308-c57b" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="99bb-3f8d-240f-a9af" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Mercenaries" id="ef2d-7726-ce31-a2fd" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Drilled" id="f513-e044-0a53-5b71" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
+            <infoLink name="Pikes" id="6a29-62d2-8116-bb42" hidden="false" type="profile" targetId="2e45-16fb-4849-4905"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Mercenaries" hidden="false" id="a0e4-72c0-d8f7-5a17" targetId="5b84-2c3c-869d-3522" primary="true"/>
+        <categoryLink name="Regular Infantry" hidden="false" id="fcd2-fbf7-36fa-3958" targetId="f3f7-ca43-674e-115f" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8706-0309-5042-a1c9" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="2848-8023-99aa-5222">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ragged Rico" hidden="false" id="b234-3529-7bf6-75c6" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="e208-5687-2c10-446e" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e40e-af4b-3057-cb86"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="d15d-3643-bf42-90b3" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fd2-5187-8e0b-510d"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mercenary Pike" hidden="false" id="165d-1e60-fc24-0dc2" type="selectionEntry" targetId="2666-2162-9696-0500" sortIndex="2" collective="true"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Ragged Ricco" id="3f24-7aec-5989-b783" hidden="false" type="profile" targetId="e8b1-8145-fe1d-3f24"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9abb-7470-33f7-6012"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e91-5602-5741-278b"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ricco&apos;s Pikemen" hidden="false" id="1c94-31d5-f003-12ec" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="fb6a-0c35-912b-5d09" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bbb-f9ee-e4c4-201d"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="db88-4096-3f86-a0d9" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0db4-fd55-de56-b3b5"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mercenary Pike" hidden="false" id="a33f-1dc5-cb28-66af" type="selectionEntry" targetId="2666-2162-9696-0500" sortIndex="2" collective="true"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="fa8a-0116-41cd-6d13" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29e4-9222-a1e2-ad87"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d718-bd07-ad89-b38c"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="5cd2-d23b-1467-8397" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Musician" hidden="false" id="f26e-b449-b50f-efb4" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa97-89c4-e779-1f49"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="268b-8289-c908-0dbc"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Musician" id="edb9-1717-dbc0-0554" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <comment>upgrades: 2a71-99d5-1d4c-880a</comment>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Mercenary Pikemen" id="8031-29fa-de0f-28bd" hidden="false" type="profile" targetId="e477-2e76-dd47-b7cb"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="135a-81cc-1c1e-a43f"/>
+            <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="d4a4-ae94-2b43-5ebf"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Ricco&apos;s Republican Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5323-45e4-c7c7-0d21">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="b020-73eb-e179-541a" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="8c66-462c-83ef-4d69" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Mercenaries" id="bc96-88f8-bb56-f0b9" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Drilled" id="57af-1721-a8a0-e207" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
+            <infoLink name="Pikes" id="34aa-d085-b4e0-148b" hidden="false" type="profile" targetId="2e45-16fb-4849-4905"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Mercenaries" hidden="false" id="ce08-dc6e-8b16-6bb8" targetId="5b84-2c3c-869d-3522" primary="true"/>
+        <categoryLink name="Regular Infantry" hidden="false" id="5bf2-4f76-2fe2-5b1e" targetId="f3f7-ca43-674e-115f" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="aa9a-0188-62bf-68fc" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (25x25)" id="500c-dabb-8053-5f58" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3966,15 +4267,15 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
       </characteristics>
     </profile>
-    <profile name="Maximilian" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f9c2-5ee8-cf43-b42c">
+    <profile name="Vespero" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f9c2-5ee8-cf43-b42c">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
-        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
-        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
       </characteristics>
@@ -4301,6 +4602,66 @@ To represent this extraordinary mobility, galloper guns may move and fire.</char
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
       </characteristics>
     </profile>
+    <profile name="Maximilian" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="2cfa-5359-e484-3993">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vespero&apos;s Duellists" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="a61a-8be8-14b8-e7b5">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Grimacing Death Mask" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="7441-662a-5748-0216">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Vespero likes to hide his identity behind a mask when he prowls the narrow alleys, pursuing the dubious political ambitions of whatever prince he is serving at the time.
+
+
+The mask, which represents the grimacing face of death, is the last thing his duelling opponents see before they meet their sudden end. To represent this scarifying effect of the mask, Vespero&apos;s hand-to-hand opponents (in direct contact or in a challenge) fumble their attacks, and so they always lose their first attack in any round of combat.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Roderigo Delmonte" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="a626-ce53-15d9-4f4b" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ragged Ricco" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="e8b1-8145-fe1d-3f24" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Badlands Ogre Bulls" hidden="false" id="44c9-e0c9-75ce-1fce" type="selectionEntry" targetId="a4af-ea3a-49ea-d56e">
@@ -4445,6 +4806,9 @@ To represent this extraordinary mobility, galloper guns may move and fire.</char
     <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="cfa3-abf9-2647-6fe2" targetId="4f1d-ce45-ac12-a82c" type="selectionEntry"/>
     <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="b2ca-d946-474b-66e0" targetId="f019-bfd6-099a-0d30" type="selectionEntry"/>
     <entryLink import="true" name="Beorg Bearstruck and Bearmen of Urslo" hidden="false" id="9226-e9a4-5c0e-5ba4" targetId="8d29-bc5d-6ab3-5a8c" type="selectionEntry"/>
+    <entryLink import="true" name="The Alcatani Fellowship" hidden="false" id="11c3-cbdd-684f-1f52" targetId="c1b4-9924-9d11-d847" type="selectionEntry"/>
+    <entryLink import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="6894-2d51-f6ff-cc23" targetId="2848-8023-99aa-5222" type="selectionEntry"/>
+    <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="0d9f-3419-cf06-8de5" targetId="ff26-8420-f44d-aef7" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
