@@ -2409,9 +2409,6 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Voland&apos;s Venators" hidden="false" id="f019-bfd6-099a-0d30" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
-      <costs>
-        <cost name="pts" typeId="points" value="200"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="7dbc-4a43-4e09-cafc" primary="true" name="Mercenaries"/>
         <categoryLink targetId="5165-d052-cfc2-5887" id="0a19-4cd7-ff37-a828" primary="false" name="Heavy Cavalry"/>
@@ -2482,6 +2479,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c61-c61b-23a8-1c4e"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8c4-9380-f176-c245"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="80"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Venators" hidden="false" id="d29b-37a3-2905-c279" sortIndex="2">
           <entryLinks>
@@ -2538,6 +2538,9 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="dd20-8064-efc4-5e87"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="edf9-4e3f-7369-389e"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="26"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <profiles>
