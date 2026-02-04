@@ -3073,7 +3073,7 @@
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
-            <infoLink name="Base (50x50)" id="628a-f120-dc53-8ce9" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
+            <infoLink name="Base (50x100)" id="628a-f120-dc53-8ce9" hidden="false" type="profile" targetId="d456-e30e-f85d-14d"/>
             <infoLink name="Cannon" id="d7f0-a5ca-49cb-76b0" hidden="false" type="profile" targetId="8ef5-8512-e1c2-6474">
               <modifiers>
                 <modifier type="set" value="Armour Bane (2), Cannon Fire, Cumbersome, Multiple Wounds (D3)" field="5f83-3633-336b-93b4">
