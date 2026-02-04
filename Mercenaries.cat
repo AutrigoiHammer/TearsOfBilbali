@@ -2989,6 +2989,14 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <profiles>
+            <profile name="Bronzino" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="3485-087d-c964-45ba">
+              <characteristics>
+                <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Light Cavalry</characteristic>
+                <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1" collective="true">
           <entryLinks>
@@ -3073,6 +3081,14 @@
           <costs>
             <cost name="pts" typeId="points" value="100"/>
           </costs>
+          <profiles>
+            <profile name="Bronzino&apos;s Cannon Crew" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="aca2-7442-eab9-59e6">
+              <characteristics>
+                <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">War Machine</characteristic>
+                <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <infoGroups>
@@ -3086,14 +3102,6 @@
           </infoLinks>
         </infoGroup>
       </infoGroups>
-      <profiles>
-        <profile name="Bronzino&apos;s Galloper Guns" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="aca2-7442-eab9-59e6">
-          <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">War Machine</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cf94-b2a5-5f02-7064" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
