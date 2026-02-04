@@ -2990,7 +2990,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1">
+        <selectionEntry type="unit" import="true" name="Bronzino&apos;s Cannon Crew" hidden="false" id="9aa6-cd3f-5b8e-4fe1" collective="true">
           <entryLinks>
             <entryLink import="true" name="Cannon" hidden="false" id="3f58-8899-bbba-f2f1" type="selectionEntry" targetId="ca63-2c16-928e-1e45" sortIndex="1">
               <constraints>
