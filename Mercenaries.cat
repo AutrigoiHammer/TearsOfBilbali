@@ -3356,7 +3356,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfcf-b0f5-c146-d118"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Maximilian" id="8e23-7c1a-aed3-576c" hidden="false" type="profile" targetId="f9c2-5ee8-cf43-b42c"/>
+            <infoLink name="Vespero" id="8e23-7c1a-aed3-576c" hidden="false" type="profile" targetId="f9c2-5ee8-cf43-b42c"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45"/>
@@ -3626,6 +3626,81 @@
       </constraints>
       <infoLinks>
         <infoLink name="Base (25x25)" id="500c-dabb-8053-5f58" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Leonardo da Miragliano" hidden="false" id="cbf5-ed78-8b78-d3c2" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+      <costs>
+        <cost name="pts" typeId="points" value="200"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="d91e-9f0c-d930-a538" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="c95f-ecc7-2369-412e" primary="false" name="Named Characters"/>
+        <categoryLink targetId="5165-d052-cfc2-5887" id="b778-0404-72e9-a2c2" primary="false" name="Heavy Cavalry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Leonardo&apos;s Warhorse" hidden="false" id="63ed-89a2-be54-9460" sortIndex="8" collective="true" subType="mount">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="e962-90ac-8452-270b" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4931-17e7-088a-b8c9"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Barding" hidden="false" id="f1f9-91db-984e-5208" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eeda-1629-fd50-1006"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4af1-829c-97a8-7695"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8570-6dea-1e0f-f768"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="29ec-78a2-1625-3485" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Mercenary Warhorse" id="ae77-07a5-4418-1398" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Leonardo da Miragliano" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="2c32-9034-018e-728f">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="1a40-0bac-26d0-33cd" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="6ce5-8967-622a-b533" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Mercenaries" id="901c-252d-5201-da53" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Genius" id="dc14-3e9b-f9b9-d519" hidden="false" type="profile" targetId="c830-f3f6-916f-4f21"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="a87d-c48a-6722-68d6" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="false" id="87f8-e79b-d77d-2728" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d392-008e-4a8b-67f2"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="3833-b0cb-af40-f031" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f19c-bb23-fe99-dab1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9bd5-07f9-0cd0-a3af" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (30x60)" id="e909-b129-4a1a-53d5" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
+        <infoLink name="Leonardo da Miragliano" id="23ca-b299-5b32-01e0" hidden="false" type="profile" targetId="6dd8-8c10-5fb3-6103"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -4662,6 +4737,106 @@ The mask, which represents the grimacing face of death, is the last thing his du
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
       </characteristics>
     </profile>
+    <profile name="Sphere of Alchemy" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="52e1-4b7c-8364-3a67">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Single Use.
+
+Leonardo dabbles in alchemy and has mixed up a powder which he has enclosed in a bronze orb. 
+When thrown, the orb cracks and the powder explodes on contact with the air, creating a small blast. 
+The orb can be thrown in the shooting phase using Leonardo’s BS. 
+
+
+He can throw it 2+D6 inches, and because this is such a short distance he does not suffer the normal –1 for shooting at targets over half range. 
+If he hits, use the small template to determine the blast area. Each model within this zone suffers D3 Strength 3 hits. 
+
+
+Normal armour saves apply. 
+If Leonardo misses his target, the orb is assumed to have exploded prematurely, fallen in the mud or bounced off someone’s helmet and has no effect.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Compass of Meteoric Silver" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="3ae9-655a-3fd6-fe2c">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Single Use.
+
+
+Leonardo has a special compass with a direction arrow made from meteoric silver. 
+
+
+This will point to the greatest concentration of magic on the battlefield. 
+
+
+To represent this, you may reposition Leonardo in the deployment phase everytime your opponent deploys a unit with a magical item inside of it. 
+
+
+This is a free reposition that has no impact in any other step of the deployment phase of any of the players deploying.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Prism of Power" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="87f9-bd02-85e5-6cc8">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Single Use.
+
+
+Leonardo has a specially shaped glass prism which uses purely physical properties of refraction to diffuse any kind of energy flowing over the battlefield.
+
+
+The effect of this is to steal the winds of magic from the opposing side and dissipate the energy, just as if it were rays of light from the sun. 
+
+
+To represent this, roll a dice after the magic cards are dealt. 
+
+
+On a score of 4+ you can remove one random magic card from your opponent’s hand.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Genius" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="c830-f3f6-916f-4f21">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Leonardo is renowned as a genius. 
+
+He is able to apply his intellect to any problem and come up with a way of improving things. 
+Of course, mercenary generals find his special talents very useful and will consult with him when making their battle plans, constructing field defences or siege works, planning the order of march or just inspecting the artillery before the battle. 
+
+To represent this, before the battle you may set Leonardo’s formidable intellect to one of the following problems. 
+You may only choose one problem from those listed below. 
+Note that Leonardo’s genius will continue to benefit the army even if he is slain in the battle!
+
+Artillery Accuracy: 
+Leonardo inspects one battery of artillery in the army and observes some test shots. 
+
+He then calculates angles and trajectories and makes corrections to the devices or advises on firing technique, quantity of gunpowder, torque tension and so forth. 
+This improves the accuracy of all artillery or war machines in the battery. 
+To represent the effect of this you may re-roll all misfires in the entire game for that battery. 
+However, if you roll a misfire on the second roll the artillery piece really has misfired!
+
+Crossbow Accuracy:
+Leonardo inspects one unit of Crossbowmen as they shoot volleys at targetst. 
+He checks the tension of the bows and considers wind velocity and the weight of the crossbow bolts. 
+He may advise certain subtle reshaping of the flights to improve accuracy, or recommend that the crossbowmen aim slightly to the left or right of their target, or just above their heads. 
+The result of this is that the accuracy of the crossbowmen in that unit is improved for the duration of the battle. 
+To represent this, each time the regiment shoots you may re-roll any shots that miss.
+
+Battle Strategy:
+Leonardo inspects the maps and charts and rides up to high ground to survey the lie of the land with his telescope. 
+Then he discusses the options with the general and his captains in a council of war, explaining his calculations for rates of march and so on. 
+This enables the general to outflank the opposing army. 
+You may therefore allocate one unit to flank march.
+This unit is not deployed at the start of the battle, instead you may bring it on at the start of any of your turns on either your right or left hand table edge. 
+It is deployed on the edge at the start of the movement phase and may take a normal turn, but may not charge as they will have missed the opportunity to declare charges. 
+The troops must be placed on the table before the last turn of the game or it is assumed that they have been ambushed, got lost or deserted and your opponent may claim victory points for them as if they were destroyed!</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Leonardo da Miragliano" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="6dd8-8c10-5fb3-6103" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Badlands Ogre Bulls" hidden="false" id="44c9-e0c9-75ce-1fce" type="selectionEntry" targetId="a4af-ea3a-49ea-d56e">
@@ -4809,6 +4984,7 @@ The mask, which represents the grimacing face of death, is the last thing his du
     <entryLink import="true" name="The Alcatani Fellowship" hidden="false" id="11c3-cbdd-684f-1f52" targetId="c1b4-9924-9d11-d847" type="selectionEntry"/>
     <entryLink import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="6894-2d51-f6ff-cc23" targetId="2848-8023-99aa-5222" type="selectionEntry"/>
     <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="0d9f-3419-cf06-8de5" targetId="ff26-8420-f44d-aef7" type="selectionEntry"/>
+    <entryLink import="true" name="Leonardo da Miragliano" hidden="false" id="28fe-66e3-0331-d0ca" targetId="cbf5-ed78-8b78-d3c2" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
