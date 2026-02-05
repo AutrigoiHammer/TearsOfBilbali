@@ -3638,7 +3638,7 @@
         <categoryLink targetId="5165-d052-cfc2-5887" id="b778-0404-72e9-a2c2" primary="false" name="Heavy Cavalry"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Leonardo&apos;s Warhorse" hidden="false" id="63ed-89a2-be54-9460" sortIndex="8" collective="true" subType="mount">
+        <selectionEntry type="model" import="true" name="Leonardo&apos;s Warhorse" hidden="false" id="63ed-89a2-be54-9460" sortIndex="6" collective="true" subType="mount">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="e962-90ac-8452-270b" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -3658,6 +3658,33 @@
           <infoLinks>
             <infoLink name="Base (25x50)" id="29ec-78a2-1625-3485" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
             <infoLink name="Mercenary Warhorse" id="ae77-07a5-4418-1398" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sphere of Alchemy" hidden="false" id="e0dd-2109-2c0c-dee5" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a1d-f567-bc57-e8ae"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e9a-3b38-ae9e-1b9b"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Sphere of Alchemy" id="153e-2b71-b19e-ec8e" hidden="false" type="profile" targetId="52e1-4b7c-8364-3a67"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Prism of Power" hidden="false" id="3866-b1dd-b57e-57ab" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4da5-4249-d475-e5f1"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2547-d54f-6e92-fb49"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Prism of Power" id="3a6f-175a-cb9c-5824" hidden="false" type="profile" targetId="87f9-bd02-85e5-6cc8"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Compass of Meteoric Silver" hidden="false" id="ce60-f200-17e0-7a79" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbea-e482-95d7-3e6f"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1286-c7ea-49d6-2812"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Compass of Meteoric Silver" id="948a-3b24-fcf9-0a42" hidden="false" type="profile" targetId="3ae9-655a-3fd6-fe2c"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
