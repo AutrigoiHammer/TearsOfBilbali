@@ -1082,7 +1082,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="125d-3e0e-ef82-6a82">
+    <selectionEntry type="unit" import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="125d-3e0e-ef82-6a82" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Fernando Pirazzo" hidden="false" id="5e98-f344-895f-fc19" sortIndex="1">
           <entryLinks>
@@ -1371,7 +1371,7 @@
         <constraint type="max" value="0" field="selections" scope="force" shared="false" id="598e-22df-1929-bf42" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="5b0c-3da2-c226-bb34" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="5b0c-3da2-c226-bb34" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <costs>
         <cost name="pts" typeId="points" value="200"/>
       </costs>
@@ -1484,7 +1484,7 @@
         <infoLink name="Borgio the Besieger" id="c03d-1a3a-15cb-0a88" hidden="false" type="profile" targetId="4961-db8a-8e6a-4eb6"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="The Cursed Company" hidden="false" id="22dc-5cbb-1a2c-3cab" page="https://wfb6thcharacters.blogspot.com/p/blog-page_85.html">
+    <selectionEntry type="unit" import="true" name="The Cursed Company" hidden="false" id="22dc-5cbb-1a2c-3cab" page="Warhammer Fantasy Battle - 2004 - Chronicles">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ritcher Kreugar" hidden="false" id="2a39-3fda-0b2b-eb3e" sortIndex="1">
           <entryLinks>
@@ -1623,7 +1623,7 @@
       </infoGroups>
       <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Regiments of Renown, Warhammer Fantasy 6th Edition">
+    <selectionEntry type="unit" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Amulet of Dragonheart" hidden="false" id="613d-b9fc-c7a9-6d1a" sortIndex="6" collective="true">
           <constraints>
@@ -1957,7 +1957,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d87c-4fa6-dd98-317f"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Daddallo and The Birdmen of Catrazza" hidden="false" id="37e4-bdf9-9ddd-38f3">
+    <selectionEntry type="unit" import="true" name="Daddallo and The Birdmen of Catrazza" hidden="false" id="37e4-bdf9-9ddd-38f3" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="252e-ef78-543c-c972" primary="true" name="Mercenaries"/>
       </categoryLinks>
@@ -2047,7 +2047,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="857e-a885-39c5-de87">
+    <selectionEntry type="unit" import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="857e-a885-39c5-de87" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Golgfag Maneater" hidden="false" id="89f6-d29e-137a-4db7" sortIndex="1">
           <entryLinks>
@@ -2210,7 +2210,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e010-a3dd-df28-7294" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5">
+    <selectionEntry type="unit" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <categoryLinks>
         <categoryLink name="Mercenaries" hidden="false" id="69ad-4f9e-858c-b56f" targetId="5b84-2c3c-869d-3522" primary="true"/>
       </categoryLinks>
@@ -2297,7 +2297,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e422-3f53-8054-65fb" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="e9c6-8a9f-8f08-b36a">
+    <selectionEntry type="unit" import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="e9c6-8a9f-8f08-b36a" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <categoryLinks>
         <categoryLink name="Faction: Dwarfen Mountain Holds" hidden="false" id="ef78-415a-0f5c-5400" targetId="f4fd-aa79-6ff3-1ea9" primary="false"/>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="7daa-6d1b-467b-e2bf" primary="true" name="Mercenaries"/>
@@ -2558,7 +2558,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8818-8beb-d6a3-9236" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="bb37-df3a-2ca1-6d19" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="bb37-df3a-2ca1-6d19" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="339a-8f3e-c198-6a59" primary="true" name="Mercenaries"/>
         <categoryLink targetId="600c-7d08-5be1-fe0c" id="6998-78ae-5278-042c" primary="false" name="Light Cavalry"/>
@@ -2813,7 +2813,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c8c8-1a57-f099-82e6" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="5ed2-be5b-d6a8-a9ae">
+    <selectionEntry type="unit" import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="5ed2-be5b-d6a8-a9ae" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Leopoldo di Lucci" hidden="false" id="eef7-4e4b-138d-735b" sortIndex="1">
           <entryLinks>
@@ -2915,7 +2915,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2f48-c760-1c50-132b" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="609a-37ee-9489-e6ec" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="609a-37ee-9489-e6ec" subType="unit-group" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Bronzino" hidden="false" id="97d9-a141-193c-8c33">
           <entryLinks>
@@ -3182,7 +3182,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9c4e-51b8-0cc6-5c68" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Beorg Bearstruck and Bearmen of Urslo" hidden="false" id="8d29-bc5d-6ab3-5a8c">
+    <selectionEntry type="unit" import="true" name="Beorg Bearstruck and Bearmen of Urslo" hidden="false" id="8d29-bc5d-6ab3-5a8c" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Beorg Bearstruck" hidden="false" id="af50-67dc-7370-3405" sortIndex="1">
           <entryLinks>
@@ -3323,7 +3323,7 @@
         <infoLink name="Base (25x25)" id="6916-4a54-1c56-90ec" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mercenary Pike" hidden="false" id="2666-2162-9696-0500">
+    <selectionEntry type="upgrade" import="true" name="Mercenary Pike" hidden="false" id="2666-2162-9696-0500" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <infoLinks>
         <infoLink name="Pike (Mercenaries)" id="fb45-1622-2b31-8aa3" hidden="false" type="profile" targetId="c8c7-61c2-1fcd-3e31"/>
       </infoLinks>
@@ -3421,7 +3421,7 @@
         <infoLink name="Base (25x25)" id="a341-6748-bb53-f9e8" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="The Alcatani Fellowship" hidden="false" id="c1b4-9924-9d11-d847">
+    <selectionEntry type="unit" import="true" name="The Alcatani Fellowship" hidden="false" id="c1b4-9924-9d11-d847" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Roderigo Delmonte" hidden="false" id="3635-0aff-bf07-81b8" sortIndex="1">
           <entryLinks>
@@ -3524,7 +3524,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8706-0309-5042-a1c9" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="2848-8023-99aa-5222">
+    <selectionEntry type="unit" import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="2848-8023-99aa-5222" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ragged Rico" hidden="false" id="b234-3529-7bf6-75c6" sortIndex="1">
           <entryLinks>
@@ -3628,7 +3628,7 @@
         <infoLink name="Base (25x25)" id="500c-dabb-8053-5f58" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Leonardo da Miragliano" hidden="false" id="cbf5-ed78-8b78-d3c2" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Leonardo da Miragliano" hidden="false" id="cbf5-ed78-8b78-d3c2" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <costs>
         <cost name="pts" typeId="points" value="100"/>
       </costs>
@@ -3730,7 +3730,7 @@
         <infoLink name="Leonardo da Miragliano" id="23ca-b299-5b32-01e0" hidden="false" type="profile" targetId="6dd8-8c10-5fb3-6103"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Lucrezia Belladona" hidden="false" id="4127-0e37-21a9-4569" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Lucrezzia Belladona" hidden="false" id="4127-0e37-21a9-4569" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <costs>
         <cost name="pts" typeId="points" value="100"/>
       </costs>
@@ -5156,6 +5156,13 @@ One amazing effect of Lucrezzia’s stunning beauty is that any friendly fleeing
     <entryLink import="true" name="Leonardo da Miragliano" hidden="false" id="28fe-66e3-0331-d0ca" targetId="cbf5-ed78-8b78-d3c2" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="9511-0488-c5a5-1e43" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="f70a-2106-6f0f-b07b" primary="false" name="Named Characters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lucrezia Belladona" hidden="false" id="3509-4e84-2cb0-e34a" targetId="4127-0e37-21a9-4569" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="e828-46d7-8c83-2646" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="71a9-f175-8580-3306" primary="false" name="Named Characters"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
