@@ -3691,7 +3691,7 @@
       <profiles>
         <profile name="Leonardo da Miragliano" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="2c32-9034-018e-728f">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry (character)</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Light cavalry (character)</characteristic>
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
           </characteristics>
         </profile>
@@ -3699,7 +3699,7 @@
       <infoGroups>
         <infoGroup name="Special Rules" id="1a40-0bac-26d0-33cd" hidden="false">
           <infoLinks>
-            <infoLink name="Close Order" id="6ce5-8967-622a-b533" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Skirmishers" id="6ce5-8967-622a-b533" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
             <infoLink name="Mercenaries" id="901c-252d-5201-da53" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
             <infoLink name="Genius" id="dc14-3e9b-f9b9-d519" hidden="false" type="profile" targetId="c830-f3f6-916f-4f21"/>
           </infoLinks>
@@ -3728,6 +3728,108 @@
       <infoLinks>
         <infoLink name="Base (30x60)" id="e909-b129-4a1a-53d5" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
         <infoLink name="Leonardo da Miragliano" id="23ca-b299-5b32-01e0" hidden="false" type="profile" targetId="6dd8-8c10-5fb3-6103"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lucrezia Belladona" hidden="false" id="4127-0e37-21a9-4569" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+      <costs>
+        <cost name="pts" typeId="points" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="f8e0-b9cb-0c0b-02fa" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="5808-8208-a5ac-5e2a" primary="false" name="Named Characters"/>
+        <categoryLink targetId="5165-d052-cfc2-5887" id="bac8-3083-de26-5fea" primary="false" name="Heavy Cavalry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Lucrezzia&apos;s Warhorse" hidden="false" id="379b-e10e-b1fe-68ed" sortIndex="6" collective="true" subType="mount">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="595a-8809-4d4f-6afb" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4adb-8f6c-e89c-a427"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Barding" hidden="false" id="78bf-54ac-fd86-3eb3" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ed9-3e04-5c68-34aa"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1de3-d90b-40cd-d339"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4e5-eab5-ad15-fede"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="a8d1-07fc-e78a-a1be" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Mercenary Warhorse" id="0707-1738-59f0-6be8" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Phial of Poison" hidden="false" id="5705-f116-9afe-daf2" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d067-1960-8d65-720f"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c13-9281-041f-c019"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Phial of Poison" id="ab9e-231a-caa4-bf68" hidden="false" type="profile" targetId="43ce-93fb-3147-4c5d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Poisoned Stiletto" hidden="false" id="9010-9bbf-b59b-ffbd" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5e8-17ef-45d7-0265"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3957-0f27-1dc5-71f4"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Poisoned Stiletto" id="72a1-e8e2-464d-e2b7" hidden="false" type="profile" targetId="76e1-120f-d592-f2c1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Potion of Pavonna" hidden="false" id="7f08-6cd4-2287-b40f" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f9f-384b-ce67-b01f"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d014-99e7-adef-c9a5"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Potion of Pavonna" id="f663-bb8f-40ea-e434" hidden="false" type="profile" targetId="2645-e7be-be56-38bc"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Lucrezzia Belladona" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="0b78-98cb-369a-2811">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Light cavalry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="8ec9-954a-4bd2-3779" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="7814-4dc8-0476-d800" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Mercenaries" id="1b2f-5ff9-2faf-4af7" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Stunning Beauty" id="8f2b-d468-649e-b9fd" hidden="false" type="profile" targetId="4967-508e-6327-893f"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="11a9-332f-8d91-f9a5" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="false" id="78b7-0c61-ee85-1b26" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5362-30d9-32c2-6ebf"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="bd22-6501-cd75-ac0e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b26-0606-e571-549e"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8fc2-6d22-70c7-c3fa" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (30x60)" id="b4f6-3d03-3ad5-0810" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
+        <infoLink name="Lucrezzia Belladona" id="5292-e316-1ce0-8c27" hidden="false" type="profile" targetId="8b92-8199-027b-39d3"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -4772,10 +4874,8 @@ Leonardo dabbles in alchemy and has mixed up a powder which he has enclosed in a
 When thrown, the orb cracks and the powder explodes on contact with the air, creating a small blast. 
 The orb can be thrown in the shooting phase using Leonardo’s BS. 
 
-
 He can throw it 2+D6 inches, and because this is such a short distance he does not suffer the normal –1 for shooting at targets over half range. 
 If he hits, use the small template to determine the blast area. Each model within this zone suffers D3 Strength 3 hits. 
-
 
 Normal armour saves apply. 
 If Leonardo misses his target, the orb is assumed to have exploded prematurely, fallen in the mud or bounced off someone’s helmet and has no effect.</characteristic>
@@ -4785,15 +4885,11 @@ If Leonardo misses his target, the orb is assumed to have exploded prematurely, 
       <characteristics>
         <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Single Use.
 
-
 Leonardo has a special compass with a direction arrow made from meteoric silver. 
-
 
 This will point to the greatest concentration of magic on the battlefield. 
 
-
 To represent this, you may reposition Leonardo in the deployment phase everytime your opponent deploys a unit with a magical item inside of it. 
-
 
 This is a free reposition that has no impact in any other step of the deployment phase of any of the players deploying.</characteristic>
       </characteristics>
@@ -4802,17 +4898,13 @@ This is a free reposition that has no impact in any other step of the deployment
       <characteristics>
         <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Single Use.
 
-
 Leonardo has a specially shaped glass prism which uses purely physical properties of refraction to diffuse any kind of energy flowing over the battlefield.
-
 
 The effect of this is to steal the winds of magic from the opposing side and dissipate the energy, just as if it were rays of light from the sun. 
 
-
 To represent this, roll a dice after the magic cards are dealt. 
 
-
-On a score of 4+ you can remove one random magic card from your opponent’s hand.</characteristic>
+On a score of 4+ you can remove one random magic card (spell) from your opponent’s hand.</characteristic>
       </characteristics>
     </profile>
     <profile name="Genius" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="c830-f3f6-916f-4f21">
@@ -4862,6 +4954,56 @@ The troops must be placed on the table before the last turn of the game or it is
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Phial of Poison" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="43ce-93fb-3147-4c5d">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Long before the battle, the enemy camp is infiltrated by Lucrezzia’s paid assassin, equipped with a phial of poison specially prepared by his mistress. This will be tipped into the drink or meal of one of the enemy characters during the feasting on the eve of battle. There is no telling which character will be poisoned, the agent will just take his best opportunity and slink away. The poison is slow-acting and will strike the next day as the armies draw up for battle.
+
+To represent the effects of the poison, roll a dice for each character in the opposing army starting with the lowest points value and working upwards. The first character to roll a 1 has been poisoned and suffers 2 wounds immediately, which may slay him outright or debilitate him in the battle. No save is possible against the poison. If no character scores a 1, the poison has failed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Poisoned Stiletto" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="76e1-120f-d592-f2c1">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Lucrezzia always keeps a stiletto dagger secreted in her garter. This is not only for self defence, but because you never know when you might want to do an off-the-cuff assassination and may not have a ready prepared poison to hand! Of course, Lucrezzia’s stiletto has been dipped in the venom of a toad and used to chop poisonous mushrooms!
+
+
+Lucrezzia may use her stiletto instead of her sword in hand-to-hand combat. If so, she will Strike Last, after her opponent, but any successful hit causes an automatic wound. The victim may make an armour save as normal.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Potion of Pavonna" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="2645-e7be-be56-38bc">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">This is a potion which Lucrezzia can give to any character on her own side before the battle, or she can drink it herself. 
+
+
+The effect of the potion enhances D6 characteristics by +1 each (up to a maximum of 10). You can choose which characteristics are enhanced, though each may only be improved once. 
+
+
+Lucrezzia will mix up the potion with these in mind, selecting the right ingredients. However, there is a risk! The potion may prove slightly poisonous. 
+
+
+To represent this, after you have nominated the character, if you roll a 1 when rolling to see how many characteristics are enhanced the unfortunate victim immediately suffers 1 wound instead of any benefit whatsoever.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lucrezzia Belladona" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="8b92-8199-027b-39d3" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stunning Beauty" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="4967-508e-6327-893f">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">It is said that Lucrezzia Belladonna is the most beautiful lady in the Old World. However, Bretonnian Knights consider this honour to rightfully belong to the Fay Enchantress of Bretonnia. When a Tilean noble once praised her beauty at a tournament in Bretonnia, he was immediately challenged to a joust by a rash Bretonnian Knight. The Lady Belladonna, who happened to be present, appointed the Tilean as her champion. When the Tilean, following the local custom, asked Lucrezzia for her favour, she simply kissed his lance. Unfortunately the Tilean was unhorsed in the joust, though he did score a glancing blow on the Bretonnian which resulted in nothing more than a scratch. However, the Bretonnian quickly slumped in the saddle and fell down dead. When the heralds asked whether the lance tip was poisoned, Lucrezzia said; “How could it be poisoned, I have just kissed it and I don’t feel at all unwell!” Since then no one has claimed to be more beautiful than Lucrezzia Belladonna. To cast doubts on her beauty is the kiss of death!
+
+
+One amazing effect of Lucrezzia’s stunning beauty is that any friendly fleeing unit within 6&quot; of her at the beginning of her turn will immediately rally, being ashamed to be seen running away from the enemy before such a beautiful and commanding lady.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
