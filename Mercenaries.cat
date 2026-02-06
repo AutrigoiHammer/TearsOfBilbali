@@ -2399,6 +2399,17 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="126f-0cea-2be5-a0cc" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c997-9d47-72ad-c5f1" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Voland&apos;s Venators" hidden="false" id="f019-bfd6-099a-0d30" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <categoryLinks>
@@ -5159,7 +5170,7 @@ One amazing effect of Lucrezzia’s stunning beauty is that any friendly fleeing
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="f70a-2106-6f0f-b07b" primary="false" name="Named Characters"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Lucrezia Belladona" hidden="false" id="3509-4e84-2cb0-e34a" targetId="4127-0e37-21a9-4569" type="selectionEntry">
+    <entryLink import="true" name="Lucrezzia Belladona" hidden="false" id="3509-4e84-2cb0-e34a" targetId="4127-0e37-21a9-4569" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="e828-46d7-8c83-2646" primary="true" name="Mercenaries"/>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="71a9-f175-8580-3306" primary="false" name="Named Characters"/>
