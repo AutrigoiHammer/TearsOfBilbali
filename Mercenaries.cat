@@ -3969,6 +3969,10 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <categoryLinks>
+                <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="d8d9-bc6b-2b2a-e750" primary="false" name="Named Characters"/>
+                <categoryLink targetId="5b84-2c3c-869d-3522" id="fd00-17c6-b35e-01f1" primary="true" name="Mercenaries"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sheikh Yadosh" hidden="false" id="2b86-6fb9-9949-7541" sortIndex="2" subType="crew">
               <entryLinks>
@@ -3998,6 +4002,10 @@
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="c87a-0181-c4fb-3b35" primary="false" name="Named Characters"/>
+                <categoryLink targetId="5b84-2c3c-869d-3522" id="59d8-eb6b-e3c0-c2a2" primary="true" name="Mercenaries"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
@@ -4032,8 +4040,12 @@
               </infoLinks>
             </infoGroup>
           </infoGroups>
+          <categoryLinks>
+            <categoryLink targetId="5b84-2c3c-869d-3522" id="3275-d889-a16a-c2c4" primary="true" name="Mercenaries"/>
+            <categoryLink targetId="7dce-b0f0-2217-2820" id="d2fc-a992-506a-1466" primary="false" name="Light Chariot"/>
+          </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Bodyguard" hidden="false" id="9486-3bb2-d5b1-bbc2" sortIndex="2">
+        <selectionEntry type="unit" import="true" name="Mydas&apos; Bodyguards" hidden="false" id="9486-3bb2-d5b1-bbc2" sortIndex="2">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="f423-c322-0c16-ebc7"/>
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="f207-76f9-b4dd-cb2f"/>
@@ -4071,6 +4083,10 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="5b84-2c3c-869d-3522" id="2791-038f-661a-d9c7" primary="true" name="Mercenaries"/>
+            <categoryLink targetId="f3f7-ca43-674e-115f" id="6710-abdc-9128-85be" primary="false" name="Regular Infantry"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
