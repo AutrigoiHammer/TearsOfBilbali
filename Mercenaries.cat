@@ -4044,6 +4044,9 @@
             <categoryLink targetId="5b84-2c3c-869d-3522" id="3275-d889-a16a-c2c4" primary="true" name="Mercenaries"/>
             <categoryLink targetId="7dce-b0f0-2217-2820" id="d2fc-a992-506a-1466" primary="false" name="Light Chariot"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Mercenary Warhorse" hidden="false" id="8440-6a7f-3b5d-59ba" type="selectionEntry" targetId="8cdb-5842-f83c-434e" sortIndex="3"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Mydas&apos; Bodyguards" hidden="false" id="9486-3bb2-d5b1-bbc2" sortIndex="2">
           <constraints>
@@ -4097,6 +4100,45 @@
         <categoryLink targetId="9fcf-19ad-fe84-9c61" id="04d1-6c78-4312-b87c" primary="false" name="War Machine"/>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="7b1f-14d3-8030-62b6" primary="false" name="Named Characters"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mercenary Horse" hidden="false" id="6c6d-c47f-b9bf-ab03" collective="true" subType="mount">
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="be50-f6c7-9d22-3710" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73cb-9686-daf8-aa8b"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c96e-53a8-75b4-a308"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b958-7c35-8a03-1d6a"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (25x50)" id="10e9-b7b3-b042-7ecb" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+        <infoLink name="Mercenary Horse" id="ebf5-bcbf-7d18-3eaa" hidden="false" type="profile" targetId="7865-c659-6c3b-7988"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mercenary Warhorse" hidden="false" id="8cdb-5842-f83c-434e" collective="true" subType="mount">
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="741a-6059-7f8d-55a1" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e159-4f19-0c41-875a"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Barding" hidden="false" id="3473-b19d-3e56-b064" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76ef-11da-6f00-1efd"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e62-02c2-854c-b1e6"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0aa-6926-fcfc-aae4"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (25x50)" id="37c9-5cc3-98db-70bc" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+        <infoLink name="Mercenary Warhorse" id="d101-1bc6-d7fc-a143" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
