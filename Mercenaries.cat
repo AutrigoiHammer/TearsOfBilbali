@@ -4001,16 +4001,8 @@
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
-            <infoLink name="Cannon" id="eda3-347a-8e3a-12ee" hidden="false" type="profile" targetId="8ef5-8512-e1c2-6474">
-              <modifiers>
-                <modifier type="set" value="Armour Bane (2), Cannon Fire, Cumbersome, Multiple Wounds (D3)" field="5f83-3633-336b-93b4">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="fac7-648f-252e-8ddf" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
             <infoLink name="Base (50x100)" id="6b3c-93a2-a290-688a" hidden="false" type="profile" targetId="d456-e30e-f85d-14d"/>
+            <infoLink name="The Paychest" id="eb63-3cd4-3eda-1834" hidden="false" type="profile" targetId="0fe2-622c-5b97-d69d"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afb4-b1a9-3ede-0f1c"/>
