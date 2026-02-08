@@ -4911,6 +4911,12 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
     <entryLink import="true" name="Renegades (Square Based)" hidden="false" id="9fd6-2f67-505f-ff4c" type="selectionEntry" targetId="974c-3bf3-af4b-701d">
       <comment>No Warhall</comment>
     </entryLink>
+    <entryLink import="true" name="Zombie Pirates" hidden="false" id="4a61-bf48-f66f-b59f" targetId="0bbf-c8d8-6beb-3425" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="f0e3-2e32-8866-ea32" id="fc17-2728-94e6-2dfc" primary="true" name="Core"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="d98b-4cf5-44c0-bd16" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
