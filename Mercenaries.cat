@@ -4007,6 +4007,29 @@
                 <categoryLink targetId="5b84-2c3c-869d-3522" id="59d8-eb6b-e3c0-c2a2" primary="true" name="Mercenaries"/>
               </categoryLinks>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Paychest Horse" hidden="false" id="bff9-42de-200b-b7c1" sortIndex="3" subType="crew">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="f01f-f76b-2f49-99d9" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="969b-a128-1a3c-c4b8"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Paychest Horse" id="0644-9185-937c-7097" hidden="false" type="profile" targetId="1d98-0e13-fe17-7a6d"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccb4-1fca-cb96-0062"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95ac-4312-00a3-b2de"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="6fa1-ce93-6013-bd81" primary="false" name="Named Characters"/>
+                <categoryLink targetId="5b84-2c3c-869d-3522" id="5b75-39b0-3e7f-91bc" primary="true" name="Mercenaries"/>
+              </categoryLinks>
+            </selectionEntry>
           </selectionEntries>
           <infoLinks>
             <infoLink name="Base (50x100)" id="6b3c-93a2-a290-688a" hidden="false" type="profile" targetId="d456-e30e-f85d-14d"/>
@@ -4044,9 +4067,6 @@
             <categoryLink targetId="5b84-2c3c-869d-3522" id="3275-d889-a16a-c2c4" primary="true" name="Mercenaries"/>
             <categoryLink targetId="7dce-b0f0-2217-2820" id="d2fc-a992-506a-1466" primary="false" name="Light Chariot"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Mercenary Warhorse" hidden="false" id="8440-6a7f-3b5d-59ba" type="selectionEntry" targetId="8cdb-5842-f83c-434e" sortIndex="3"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Mydas&apos; Bodyguards" hidden="false" id="9486-3bb2-d5b1-bbc2" sortIndex="2">
           <constraints>
@@ -5427,6 +5447,19 @@ In reality the scroll is a magical ‘warrant of trust’ carried by Skink inter
 
 
 Some adventurer long ago must have acquired this in Lustria, thinking it was worth something to a wizard, and eventually it found its way into the Dwarf pirate’s chest.</comment>
+    </profile>
+    <profile name="Paychest Horse" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="1d98-0e13-fe17-7a6d" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">-</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
     </profile>
   </sharedProfiles>
   <entryLinks>
