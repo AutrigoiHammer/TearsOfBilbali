@@ -4024,7 +4024,11 @@
               <infoLinks>
                 <infoLink name="Mercenaries" id="6869-b0ea-be7f-75f4" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
                 <infoLink name="Paymaster" id="ed22-8acb-a70e-1d19" hidden="false" type="profile" targetId="064d-1ef7-3991-fe89"/>
-                <infoLink name="Light Chariots" id="25c3-9fd4-4a14-cb07" hidden="false" type="profile" targetId="5a79-fec9-ad02-546d"/>
+                <infoLink name="Impact Hits" id="d672-4951-95cb-30a2" hidden="false" type="profile" targetId="5c2-e9dd-2715-a0c0">
+                  <modifiers>
+                    <modifier type="append" value="(D6)" field="name"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
             </infoGroup>
           </infoGroups>
