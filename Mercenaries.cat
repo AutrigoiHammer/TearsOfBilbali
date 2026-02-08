@@ -4060,6 +4060,7 @@
                     <modifier type="append" value="(D3)" field="name"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="The Paychest Chariot" id="d3ad-7a97-ef29-8ddf" hidden="false" type="profile" targetId="1ed6-4b76-0efb-5bb2"/>
               </infoLinks>
             </infoGroup>
           </infoGroups>
@@ -5459,6 +5460,11 @@ Some adventurer long ago must have acquired this in Lustria, thinking it was wor
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Paychest Chariot" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="1ed6-4b76-0efb-5bb2">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">The Paychest counts as a Light Chariot, but does not have the Swiftstride special rule, as this full of gold and mercenary paycheck chariot must be treated with a lot of caution.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
