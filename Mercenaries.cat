@@ -4161,6 +4161,210 @@
         <infoLink name="Mercenary Warhorse" id="d101-1bc6-d7fc-a143" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lorenzo Lupo" hidden="false" id="c1e2-e68e-0339-48c4" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
+      <costs>
+        <cost name="pts" typeId="points" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="15c4-fe64-d41e-0f51" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="40c2-3109-a7ad-0515" primary="false" name="Named Characters"/>
+        <categoryLink targetId="5165-d052-cfc2-5887" id="5955-dba1-61a2-9ac0" primary="false" name="Heavy Cavalry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sword of Lucan" hidden="false" id="a6df-dd9e-8836-0bfd" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d5c-9f80-f136-2c0c"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c69-95c0-884d-5b44"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Sword of Lucan" id="84b7-a5c4-a447-aac2" hidden="false" type="profile" targetId="aaa7-7ae1-df62-3d38"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ring of Luccina" hidden="false" id="7550-28c3-720c-111f" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f11-63f6-0a87-63dd"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06a2-5546-7078-27a0"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ring of Luccina" id="6688-418f-c18b-a38b" hidden="false" type="profile" targetId="cf13-d869-fe6f-87c6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shield of Myrmidia" hidden="false" id="3ccf-56d8-4811-dd3a" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4ef-4d7a-7ce7-3768"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b5d-e9e9-ec32-e755"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield of Myrmidia" id="0761-f36a-3ee2-ef21" hidden="false" type="profile" targetId="5019-ee5a-f373-641b"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Lorenzo Lupo" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="6551-06ad-cbeb-bda4">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="cb60-becc-3432-cf11" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="c31e-ae6b-767c-d694" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Mercenaries" id="0946-3014-66d6-eb9d" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Mighty Athlete" id="8317-4283-5412-fbd2" hidden="false" type="profile" targetId="631d-da07-9cb6-b96e"/>
+            <infoLink name="Lorenzo Lupo" id="b3b0-85ad-1b32-80fd" hidden="false" type="profile" targetId="e73c-1eb8-87bf-bf88"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="6f5d-69b6-3162-a687" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="false" id="f170-4932-2966-a237" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b592-1dea-6551-fe36"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="ea6f-4545-474b-099b" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed65-5b86-55e2-b5da"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="de29-7929-a2e6-f6c6" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (25x25)" id="4de8-2e93-54aa-1a12" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+        <infoLink name="Lorenzo Lupo" id="df44-0689-1257-0f72" hidden="false" type="profile" targetId="e73c-1eb8-87bf-bf88"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Marco Colombo" hidden="false" id="1d49-669b-033d-5756" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
+      <costs>
+        <cost name="pts" typeId="points" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="9b98-e754-a5c7-28b7" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="6398-3f96-b6ab-bc65" primary="false" name="Named Characters"/>
+        <categoryLink targetId="5165-d052-cfc2-5887" id="3a8c-a32c-58df-5a0a" primary="false" name="Heavy Cavalry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Leonardo&apos;s Warhorse" hidden="false" id="2cac-23d2-91d8-7452" sortIndex="10" collective="true" subType="mount">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="798c-5911-6986-28ad" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7105-46fa-1a5d-6ae3"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Barding" hidden="false" id="edff-6a2f-8e50-926b" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="216e-9470-6c88-0f7d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8fb-cc08-22ab-a868"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48af-e866-09af-e003"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="5f24-e64d-388f-5ce8" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Mercenary Warhorse" id="1cab-10cd-8cb9-e8cb" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scroll of Araby" hidden="false" id="6dd9-36ee-c851-3a0c" sortIndex="9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40f7-f161-0d8c-4285"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4551-1f83-19d6-3ec1"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Scroll of Araby" id="bdfe-93f5-3227-7b7d" hidden="false" type="profile" targetId="085d-ec8e-d62e-4c95"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gourd of Lustrian Wine" hidden="false" id="9568-086f-bb8a-4977" sortIndex="8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0437-fea9-7c26-232b"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7dd2-f03d-1f37-adf1"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Gourd of Lustrian Wine" id="43b4-cc65-0818-e60b" hidden="false" type="profile" targetId="41f9-9fdf-0a15-81dc"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gem of Lustria" hidden="false" id="04db-6b2f-4ec1-5826" sortIndex="7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f7f-9c55-8fa6-6886"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8653-d0b9-5c31-3610"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Gem of Lustria" id="7e07-c8e2-24b1-d049" hidden="false" type="profile" targetId="05c7-8eaa-582e-acad"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Marco Colombo" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="d2fc-6724-3d28-4ecb">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Light cavalry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="1f17-95b3-c72e-57a2" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="83d2-0364-6348-6e5e" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Mercenaries" id="f160-85b2-97f9-4f57" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Genius" id="9101-9e00-a5f8-5f97" hidden="false" type="profile" targetId="c830-f3f6-916f-4f21"/>
+            <infoLink name="Navigators Telescope" id="c728-7692-c4ba-5580" hidden="false" type="profile" targetId="52b6-e9ae-dd59-6409"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="9417-6a0f-bbcc-3525" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="false" id="94d8-28d1-d1f2-d85b" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5ec-b257-a545-9072"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="10ba-d21a-57f6-320e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62be-3dad-0fce-2c0e"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Crossbow" hidden="false" id="cc7f-9450-419d-4506" type="selectionEntry" targetId="c3af-77b3-b2d5-20db" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ba1-3986-c394-1b96"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lance" hidden="false" id="8bab-76ca-4874-2d21" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8b6-0301-d9d3-0038"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Light Armour" hidden="false" id="09e8-6ddf-0e1d-6f2b" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1866-0c7d-ccd4-a00a"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Shield" hidden="false" id="148c-db38-eb1f-f936" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a947-4a96-e566-f51d"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="160d-892f-670d-1464" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (30x60)" id="0fcd-3219-e391-1c75" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
+        <infoLink name="Marco Colombo" id="6400-dc94-2da8-0ab5" hidden="false" type="profile" targetId="c0a9-6a8f-a26d-a194"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Ogre" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5ccf-bbe6-f153-88b2">
@@ -5467,6 +5671,118 @@ Some adventurer long ago must have acquired this in Lustria, thinking it was wor
         <characteristic name="Description" typeId="9f84-4221-785a-db50">The Paychest counts as a Light Chariot, but does not have the Swiftstride special rule, as this full of gold and mercenary paycheck chariot must be treated with a lot of caution.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Lorenzo Lupo" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="e73c-1eb8-87bf-bf88" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">6</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mighty Athlete" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="631d-da07-9cb6-b96e">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Lorenzo is a well-built, muscular man, much like the colossal bronze statues depicting his ancestor Lucan. He follows the ancient classical Tilean athletic pursuits as practiced in ancient Luccini in the days of his ancestors. This means that he regularly hurls the discus, wrestles or fights hand-to-hand with the strongest opponents, rows on the Tilean sea in the galley races, trains with bronze weights, and runs the great race from one end of his princedom to the other, as messengers did in the distant past. When he trains intensively for one of these pursuits he improves his strength, toughness or agility.
+
+
+To represent this, roll a dice before the battle to see which athletic pursuit Lorenzo has been training for recently. He will benefit from the effect of the training throughout the battle.
+
+
+1-2: Running (+1 Toughness)
+3-4: Wrestling (+1 Attack)
+5-6: Rowing (+1 Strength)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ring of Luccina" typeId="5c1d-13f3-7dd6-e817" typeName="Talismans" hidden="false" id="cf13-d869-fe6f-87c6">
+      <characteristics>
+        <characteristic name="Description" typeId="3fa5-c856-b00a-c9f4">Luccina, sister of Lucan, was said to be a sorceress. Lorenzo wears a ring which bears a cameo gem depicting her, and which may even have been hers. The gem contains a spell known as the Glamour of Luccina, which can be used in any one magic phase, requiring no power to cast.
+
+
+Single Use. When used the Glamour of Luccina will rally all friendly fleeing units within command range automatically. 
+
+
+The ring sings out an inspiring battle-cry exhorting Luccina’s warriors to uphold their ancient honour, which no true soldier of the city can resist.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sword of Lucan" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="aaa7-7ae1-df62-3d38">
+      <characteristics>
+        <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
+        <characteristic name="S" typeId="4f75-25c9-31bd-7074">F</characteristic>
+        <characteristic name="AP" typeId="15e2-fff4-477f-ea26"/>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c"/>
+        <characteristic name="Note" typeId="5e5e-34db-1ee0-86">Lorenzo carries a short sword believed to be the actual sword used by his remote ancestor, Lucan, the founder of Luccini. The sword is magical and will ignore the effects of magical armour. Magic armour therefore counts as normal armour of its type against the sword, with no unusual effects.
+
+This is, no Ward Saves or Regeneration Saves can be used against this Weapon, if such are derived from Magic Armour benefits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shield of Myrmidia" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="5019-ee5a-f373-641b">
+      <characteristics>
+        <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">This old shield was found during the rebuilding of the temple of Myrmidia on Luccini’s acropolis. It dates to the time of the founding of the city, or perhaps even earlier. In a challenge, every turn, the shield bears the sun symbol of the war goddess and has the magical ability to dazzle one hand-to-hand combat opponent so that he loses D3 attacks. If the Attacks profile is reduced to zero, the opponent cannot attack for this turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fights on Foot" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="681e-fe5f-f956-ce94">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Lorenzo is rather an eccentric in that he prefers to fight on foot in the style of his ancestors. He usually takes his place in the front rank of the pikemen and sometimes fights on board ship. This is very inspiring to the soldiers he accompanies, who not only benefit from his outstanding leadership, but will be eager to protect their Prince in hand-to-hand combat. To represent this, any infantry unit accompanied by Lorenzo adds +1 to its combat resolution as long as he is in the front rank.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Marco Colombo" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="c0a9-6a8f-a26d-a194" page="Army Book of Dogs of War in Warhammer Fantasy 5th Edition">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">6</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gem of Lustria" typeId="5c1d-13f3-7dd6-e817" typeName="Talismans" hidden="false" id="05c7-8eaa-582e-acad">
+      <characteristics>
+        <characteristic name="Description" typeId="3fa5-c856-b00a-c9f4">While in Lustria, Marco acquired this strange gem as part of his reward for serving the Slann Mage Priests as a mercenary. The gem is made of a polished green stone and shaped in the form of a snake’s tongue – the mark of the Lizardmen serpent god, Sotek.
+
+
+While wearing this talisman, Marco may re-roll one failed armour save per turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gourd of Lustrian Wine" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="41f9-9fdf-0a15-81dc">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Marco always keeps with him his last remaining gourd of cactus juice, which he calls Lustrían Wine! This was given to him by the Skinks during his expedition to Lustria. Although it is about as potent as orange juice for a Lizardman, for a human being it is prickly stuff indeed!
+
+
+A swig from the gourd at the start of his turn will boost Marco’s Strength by +D6 for the rest of that turn. Marco only has a little of this potent Lustrían brew remaining, so he will only use it once per battle.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scroll of Araby" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="085d-ec8e-d62e-4c95">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">While stopping off in Lashiek, Marco did the usual foray into the bazaar looking for maps. One map, although uninteresting in itself, was written on an old scroll with partly obliterated, arcane writing of ancient Khemri on the reverse.
+
+
+The scroll gives Marco (but not the rest of the unit he is with) a magical save of 2+ against the effect of any spell. However, he will only use it once per turn as part of the ancient scroll crumbles to dust each time it is used.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Navigators Telescope" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="52b6-e9ae-dd59-6409">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Marco has a special high-power telescope which he uses at sea. 
+
+
+It is so powerful that he can use it to spy out hidden enemy troops lurking in cover or in the midst of a regiment. 
+
+
+Any troops or characters which would normally count as hidden or unseen until revealed, such as Goblin Fanatics, Dark Elf Assassins or Wood Elf Waywatchers, can be seen by Marco on a dice score of 4+. Roll a dice per unit with hidden or unrevealed troops.
+
+
+Roll at the start of the battle for each enemy unit as Marco scans the enemy battle line. 
+
+
+On a successful score your opponent must reveal any hidden troops in that unit and deploy them before the start of the first turn.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Badlands Ogre Bulls" hidden="false" id="44c9-e0c9-75ce-1fce" type="selectionEntry" targetId="a4af-ea3a-49ea-d56e">
@@ -5632,6 +5948,7 @@ Some adventurer long ago must have acquired this in Lustria, thinking it was wor
         <categoryLink targetId="5b84-2c3c-869d-3522" id="6aa7-fdcd-b22c-c6fd" primary="true" name="Mercenaries"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Lorenzo Lupo" hidden="false" id="569f-4e01-421b-45a0" targetId="c1e2-e68e-0339-48c4" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
