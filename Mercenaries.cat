@@ -352,6 +352,20 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c997-9d47-72ad-c5f1" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="5e58-9ce8-a93c-272d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="76ce-e6eb-965f-8523" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d03c-d17e-e3f7-d3fd" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Imperial Dwarf Mercenaries" hidden="false" id="5ab0-0b8b-6b08-ce54">
       <categoryLinks>
@@ -618,6 +632,20 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c997-9d47-72ad-c5f1" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="5e58-9ce8-a93c-272d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="76ce-e6eb-965f-8523" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d03c-d17e-e3f7-d3fd" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Prince Ulther&apos;s Dragon Company" hidden="false" id="fb6f-f8fa-f2da-c9b2" collapsible="true">
       <costs>
@@ -1335,6 +1363,20 @@
         <infoLink name="Base (25x50)" id="84cc-dca5-0c02-7ade" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
         <infoLink name="Ghazak Khan" id="93cd-2923-7656-3c54" hidden="false" type="profile" targetId="16bc-bdf7-46cc-2ab3"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a339-984f-3777-c73f" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7bbf-73df-eb6d-d411" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a6d0-e072-75ec-45d8" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-26c6-1d88-2b8c" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Troll Hunter" hidden="true" id="9bd5-e59a-12c3-f6eb" collective="true">
       <infoLinks>
@@ -1622,6 +1664,20 @@
         </infoGroup>
       </infoGroups>
       <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bb5-4152-4695-83a5" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="708f-d597-bd5f-a586" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="be27-8084-f552-1f4" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4545-8340-9988-9ea0" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="false" name="Asarnil, The Dragonlord" hidden="false" id="8c4a-26d2-6368-f867" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
@@ -1771,6 +1827,17 @@
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d9b0-fa44-a251-bfea" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dragon Fire" hidden="false" id="9969-6ea0-4e4a-7f5e" collective="false">
       <constraints>
@@ -1948,6 +2015,19 @@
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6dc7-f698-014b-63e1" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="142f-feb2-1509-865b" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="56fb-835b-a377-6639" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Noxious breath" hidden="false" id="4666-5571-ecfc-0bfe" collective="true">
       <infoLinks>
@@ -2405,6 +2485,9 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c997-9d47-72ad-c5f1" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="5e58-9ce8-a93c-272d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="76ce-e6eb-965f-8523" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d03c-d17e-e3f7-d3fd" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3843,6 +3926,149 @@
         <infoLink name="Lucrezzia Belladona" id="5292-e316-1ce0-8c27" hidden="false" type="profile" targetId="8b92-8199-027b-39d3"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mydas The Mean" hidden="false" id="28d4-1bdb-c4b2-44ee" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" subType="unit-group">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="The Paychest" hidden="false" id="3a94-07b0-8c68-de5d" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mydas The Mean" hidden="false" id="06a5-5a69-927a-512c" sortIndex="1" subType="crew">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="893d-5306-f9a6-1166" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dced-5092-054a-c992"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="a688-ac1e-92aa-7fff" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="035b-affb-ba19-0182"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shield" hidden="false" id="78f9-87d3-eb47-a89d" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="535d-c1d4-c26b-753a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Mydas The Mean" id="c148-68d1-7660-f11f" hidden="false" type="profile" targetId="d4fe-e77b-4294-810f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c41b-002b-96fe-99e5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47ef-e716-29e6-4154"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="The Treasure Map" hidden="false" id="c4be-b668-88c6-3807" sortIndex="4" collective="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86a5-6b9a-94f0-c221"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b381-8817-2230-7e4f"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Treasure Map" id="7384-0810-c2b5-a772" hidden="false" type="profile" targetId="2676-51f8-2920-e6c0"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Sheikh Yadosh" hidden="false" id="2b86-6fb9-9949-7541" sortIndex="2" subType="crew">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="6f68-a30d-25fc-72ab" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c839-0949-6f45-e5ba"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="7f27-d6b8-3058-dfee" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f52-0452-f2a7-1e8b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shield" hidden="false" id="f3ac-3610-2096-5fc6" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59eb-6c18-590c-aae7"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Sheikh Yadosh" id="37f3-bfd3-64ec-c9d8" hidden="false" type="profile" targetId="d0da-8275-96af-f404"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9251-6db5-a044-231b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e87-c4ec-993c-97c0"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Cannon" id="eda3-347a-8e3a-12ee" hidden="false" type="profile" targetId="8ef5-8512-e1c2-6474">
+              <modifiers>
+                <modifier type="set" value="Armour Bane (2), Cannon Fire, Cumbersome, Multiple Wounds (D3)" field="5f83-3633-336b-93b4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="fac7-648f-252e-8ddf" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Base (50x100)" id="6b3c-93a2-a290-688a" hidden="false" type="profile" targetId="d456-e30e-f85d-14d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afb4-b1a9-3ede-0f1c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ad5-1cdb-b475-b363"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="100"/>
+          </costs>
+          <profiles>
+            <profile name="Mydas The Mean and The Paychest" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="0993-c56b-c06f-610b">
+              <characteristics>
+                <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Light Chariot</characteristic>
+                <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoGroups>
+            <infoGroup name="Special Rules" id="efe7-1488-5460-95c8" hidden="false">
+              <infoLinks>
+                <infoLink name="Mercenaries" id="6869-b0ea-be7f-75f4" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+                <infoLink name="Paymaster" id="ed22-8acb-a70e-1d19" hidden="false" type="profile" targetId="064d-1ef7-3991-fe89"/>
+                <infoLink name="Light Chariots" id="25c3-9fd4-4a14-cb07" hidden="false" type="profile" targetId="5a79-fec9-ad02-546d"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Bodyguard" hidden="false" id="9486-3bb2-d5b1-bbc2" collective="true" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="f423-c322-0c16-ebc7"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="f207-76f9-b4dd-cb2f"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Mydas&apos; Bodyguard" id="8aa5-bd50-0b60-281e" hidden="false" type="profile" targetId="99e1-dcc9-457b-5192"/>
+            <infoLink name="Base (25x25)" id="170c-fb8e-4b22-f6a8" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+          </infoLinks>
+          <infoGroups>
+            <infoGroup name="Special Rules" id="10ed-8b11-659f-408d" hidden="false">
+              <infoLinks>
+                <infoLink name="Skirmishers" id="84b3-a35c-3589-bacc" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+                <infoLink name="Mercenaries" id="5761-3d94-a104-71c3" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+                <infoLink name="Detachment" id="3e4c-aa94-3690-d4f7" hidden="false" type="profile" targetId="559-d4c6-b2e8-500f"/>
+                <infoLink name="Close Order" id="e921-c02a-0a7b-d959" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="81c4-b166-33a6-f160" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="cb85-6cc5-7c2e-82ea" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="9fcf-19ad-fe84-9c61" id="04d1-6c78-4312-b87c" primary="false" name="War Machine"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Ogre" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5ccf-bbe6-f153-88b2">
@@ -5016,6 +5242,120 @@ To represent this, after you have nominated the character, if you roll a 1 when 
 
 One amazing effect of Lucrezzia’s stunning beauty is that any friendly fleeing unit within 6&quot; of her at the beginning of her turn will immediately rally, being ashamed to be seen running away from the enemy before such a beautiful and commanding lady.</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Mydas The Mean" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="d4fe-e77b-4294-810f" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sheikh Yadosh" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="d0da-8275-96af-f404" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">2</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mydas&apos; Bodyguard" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="99e1-dcc9-457b-5192" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">2</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Paychest" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="0fe2-622c-5b97-d69d" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">-</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">-</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">-</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Paymaster" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="064d-1ef7-3991-fe89">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Any unit within 12&quot; of The Paychest can re-roll failed Break Tests.
+
+
+If The Paychest is captured or lost, all Mercenaries in the army must take a Panic Test. 
+
+
+These Mercenaries also gain Hatred (The enemy unit which captured the Paychest)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Money Lender" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="af82-5da7-067b-0aef">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Any unit within 12&quot; of The Paychest can re-roll failed Break Tests.
+
+
+If The Paychest is captured or lost, all Mercenaries in the army must take a Panic Test. 
+
+
+These Mercenaries also gain Hatred (The enemy unit which captured the Paychest)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Treasure Map" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="2676-51f8-2920-e6c0">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">The effect of the scroll is that any mercenaries, including the general, will believe whatever Mydas promises at the start of the battle. Their trust in Mydas will be complete. Needless to say, Mydas and the generals who employ him attribute this miraculous effect to Mydas’s inspiring qualities of leadership!
+
+
+
+After deployment, but before the first turn of the game, roll a dice to see what Mydas promises the army:
+
+
+1-2 ‘A bonus for all my loyal and trusty henchmen!’
+This is a promise which Mydas often makes to his pay chest bodyguards. The bodyguards become even more determined to defend the pay chest and Paymaster to the death and count +1 to hit throughout the battle.
+
+
+3-4 ‘The pay chest is safe with me lads!’
+The mercenaries become confident that Mydas will look after their pay beyond the call of duty. Mercenary units may re-roll Break tests if they are within 18&quot; of the pay chest instead of the usual 12&quot;.
+
+
+5-6 ‘If we win the battle, all mercenaries will receive a bonus!’
+This encourages all mercenary regiments to fight harder and with more determination. All mercenary regiments may add +1 to their combat resolution bonus.</characteristic>
+      </characteristics>
+      <comment>Mydas has a treasure map on which are marked the hiding places of several pay chests which he has heroically rescued from the confusion of battle when defeat seemed inevitable. 
+
+
+He keeps the map stuffed down his leggings. 
+
+
+The map is drawn on an old scroll which he found in Gridi’s treasure chests. 
+
+
+On the reverse of the parchment are a number of strange Lizardman glyphs. 
+
+
+Mydas does not know or care what these are and thinks they are meaningless doodles by some demented wizard. 
+
+
+In reality the scroll is a magical ‘warrant of trust’ carried by Skink interpreters to give them an aura of credibility when dealing with or misleading outsiders. 
+
+
+Some adventurer long ago must have acquired this in Lustria, thinking it was worth something to a wizard, and eventually it found its way into the Dwarf pirate’s chest.</comment>
     </profile>
   </sharedProfiles>
   <entryLinks>
