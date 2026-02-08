@@ -5516,6 +5516,7 @@ Some adventurer long ago must have acquired this in Lustria, thinking it was wor
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="71a9-f175-8580-3306" primary="false" name="Named Characters"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Mydas The Mean" hidden="false" id="881b-c059-934f-ecb2" targetId="28d4-1bdb-c4b2-44ee" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
