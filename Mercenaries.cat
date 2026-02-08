@@ -4009,7 +4009,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ad5-1cdb-b475-b363"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="100"/>
+            <cost name="pts" typeId="points" value="150"/>
           </costs>
           <profiles>
             <profile name="Mydas The Mean and The Paychest" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="0993-c56b-c06f-610b">
@@ -4033,7 +4033,7 @@
             </infoGroup>
           </infoGroups>
         </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Bodyguard" hidden="false" id="9486-3bb2-d5b1-bbc2" collective="true" sortIndex="2">
+        <selectionEntry type="unit" import="true" name="Bodyguard" hidden="false" id="9486-3bb2-d5b1-bbc2" sortIndex="2">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="f423-c322-0c16-ebc7"/>
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="f207-76f9-b4dd-cb2f"/>
@@ -4055,6 +4055,23 @@
           <costs>
             <cost name="pts" typeId="points" value="10"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="258a-abd9-a879-840f" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dd1-2cee-73ec-f8b9"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="5ea2-255f-e377-9c49" type="selectionEntry" targetId="62fb-f89d-afc-1cf1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adcd-7f08-03e5-aad0"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="fa0e-9ea3-568a-b960" type="selectionEntry" targetId="6192-f9f1-5d53-2042">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f50-f800-3b5c-dc78"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -5242,12 +5259,12 @@ One amazing effect of Lucrezzia’s stunning beauty is that any friendly fleeing
     </profile>
     <profile name="Mydas The Mean" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="d4fe-e77b-4294-810f" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War">
       <characteristics>
-        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
-        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">-</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
@@ -5255,15 +5272,15 @@ One amazing effect of Lucrezzia’s stunning beauty is that any friendly fleeing
     </profile>
     <profile name="Sheikh Yadosh" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="d0da-8275-96af-f404" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War">
       <characteristics>
-        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">2</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
-        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">-</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
-        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">6</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
       </characteristics>
     </profile>
     <profile name="Mydas&apos; Bodyguard" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="99e1-dcc9-457b-5192" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War">
@@ -5281,12 +5298,12 @@ One amazing effect of Lucrezzia’s stunning beauty is that any friendly fleeing
     </profile>
     <profile name="The Paychest" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="0fe2-622c-5b97-d69d" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War">
       <characteristics>
-        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">-</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
-        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">5</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">-</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">-</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
