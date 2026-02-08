@@ -4026,7 +4026,7 @@
                 <infoLink name="Paymaster" id="ed22-8acb-a70e-1d19" hidden="false" type="profile" targetId="064d-1ef7-3991-fe89"/>
                 <infoLink name="Impact Hits" id="d672-4951-95cb-30a2" hidden="false" type="profile" targetId="5c2-e9dd-2715-a0c0">
                   <modifiers>
-                    <modifier type="append" value="(D6)" field="name"/>
+                    <modifier type="append" value="(D3)" field="name"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -4045,7 +4045,6 @@
           <infoGroups>
             <infoGroup name="Special Rules" id="10ed-8b11-659f-408d" hidden="false">
               <infoLinks>
-                <infoLink name="Skirmishers" id="84b3-a35c-3589-bacc" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
                 <infoLink name="Mercenaries" id="5761-3d94-a104-71c3" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
                 <infoLink name="Detachment" id="3e4c-aa94-3690-d4f7" hidden="false" type="profile" targetId="559-d4c6-b2e8-500f"/>
                 <infoLink name="Close Order" id="e921-c02a-0a7b-d959" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
