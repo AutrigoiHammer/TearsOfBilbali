@@ -4788,6 +4788,8 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
       </infoGroups>
       <categoryLinks>
         <categoryLink name="Faction: Vampire Counts" hidden="false" id="60a6-6520-dd16-097e" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="6681-3750-a667-10e1" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="f0e3-2e32-8866-ea32" id="fcfe-7705-db52-9105" primary="true" name="Core"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -4801,6 +4803,7 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
         <categoryLink targetId="f3f7-ca43-674e-115f" id="d98b-4cf5-44c0-bd16" primary="false" name="Regular Infantry"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Zombie Pirate Gunners" hidden="false" id="1df0-7e07-2be2-9120" targetId="f77a-a6f6-fee5-6cea" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
