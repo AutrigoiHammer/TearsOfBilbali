@@ -5104,6 +5104,10 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f117-b027-aa17-acdb"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9b5-fca5-166f-d970"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="f0e3-2e32-8866-ea32" id="a347-11d2-3262-0611" primary="true" name="Core"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="64dd-3823-a899-68db" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
