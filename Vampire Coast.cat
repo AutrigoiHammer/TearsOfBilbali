@@ -5147,7 +5147,7 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" name="Depth Guard" id="f7a5-25ad-fdd8-4e54" hidden="false" collective="true" sortIndex="1">
+        <selectionEntry type="model" name="Depth Guard" id="f7a5-25ad-fdd8-4e54" hidden="false" collective="true" sortIndex="2">
           <infoLinks>
             <infoLink name="Depth Guard" hidden="false" type="profile" id="1899-6f11-3d24-009a" targetId="8c30-23e6-b7a0-faaf"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="8f9f-baec-deae-d4ab" targetId="193c-4d0d-de6b-bbb1"/>
@@ -5225,7 +5225,7 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Command" hidden="false" id="6b64-d9da-1e5a-9f1d" sortIndex="2">
+        <selectionEntryGroup name="Command" hidden="false" id="6b64-d9da-1e5a-9f1d" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="model" subType="crew" name="Gerfalcon" id="13fc-e2e0-ddec-edae" hidden="false" collective="true" sortIndex="1">
               <infoLinks>
