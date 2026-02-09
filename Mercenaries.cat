@@ -1255,7 +1255,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="5d23-a058-965c-22dc" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <costs>
-        <cost name="pts" typeId="points" value="200"/>
+        <cost name="pts" typeId="points" value="210"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0c06-a43c-7c4e-b846" primary="true" name="Mercenaries"/>
@@ -1326,6 +1326,7 @@
               </modifiers>
             </infoLink>
             <infoLink name="The Mighty Khan" id="c39d-9b13-c51a-9226" hidden="false" type="profile" targetId="6901-1582-6337-60bc"/>
+            <infoLink name="Warcry of the Steppes" id="eec2-bdfa-ff77-b6c8" hidden="false" type="profile" targetId="7b33-78e2-e3b2-35d9"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1415,7 +1416,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="5b0c-3da2-c226-bb34" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <costs>
-        <cost name="pts" typeId="points" value="200"/>
+        <cost name="pts" typeId="points" value="220"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="f35d-da2e-1c81-32aa" primary="true" name="Mercenaries"/>
@@ -1488,6 +1489,7 @@
             <infoLink name="Beloved General" id="8d31-798c-6b9d-dce4" hidden="false" type="profile" targetId="5e80-5e11-9b26-718a"/>
             <infoLink name="Close Order" id="6585-d058-aded-7d27" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Mercenaries" id="8a04-aa3d-2896-5279" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Borgio&apos;s Magic Banner" id="7c58-bd2c-efbe-14dd" hidden="false" type="profile" targetId="37d1-efa2-707c-fddf"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1499,6 +1501,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cb7-32f2-3cdf-8b93"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Bearer" hidden="false" id="83f6-13ec-2e57-399f" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a6d-7207-f7b5-df55" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="ec87-7700-3868-82ba" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Magic Standards" hidden="false" id="2397-81b6-752d-65a7" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+                  <constraints>
+                    <constraint type="max" value="50" field="points" scope="parent" shared="true" id="2df0-7f64-8657-0288"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2652,7 +2674,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8818-8beb-d6a3-9236" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="bb37-df3a-2ca1-6d19" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
+    <selectionEntry type="unit" import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="bb37-df3a-2ca1-6d19" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="339a-8f3e-c198-6a59" primary="true" name="Mercenaries"/>
         <categoryLink targetId="600c-7d08-5be1-fe0c" id="6998-78ae-5278-042c" primary="false" name="Light Cavalry"/>
@@ -3724,7 +3746,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Leonardo da Miragliano" hidden="false" id="cbf5-ed78-8b78-d3c2" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <costs>
-        <cost name="pts" typeId="points" value="100"/>
+        <cost name="pts" typeId="points" value="150"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="d91e-9f0c-d930-a538" primary="true" name="Mercenaries"/>
@@ -3826,7 +3848,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lucrezzia Belladona" hidden="false" id="4127-0e37-21a9-4569" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <costs>
-        <cost name="pts" typeId="points" value="100"/>
+        <cost name="pts" typeId="points" value="150"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="f8e0-b9cb-0c0b-02fa" primary="true" name="Mercenaries"/>
@@ -4163,7 +4185,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lorenzo Lupo" hidden="false" id="c1e2-e68e-0339-48c4" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <costs>
-        <cost name="pts" typeId="points" value="100"/>
+        <cost name="pts" typeId="points" value="150"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="15c4-fe64-d41e-0f51" primary="true" name="Mercenaries"/>
@@ -4214,6 +4236,7 @@
             <infoLink name="Mercenaries" id="0946-3014-66d6-eb9d" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
             <infoLink name="Mighty Athlete" id="8317-4283-5412-fbd2" hidden="false" type="profile" targetId="631d-da07-9cb6-b96e"/>
             <infoLink name="Lorenzo Lupo" id="b3b0-85ad-1b32-80fd" hidden="false" type="profile" targetId="e73c-1eb8-87bf-bf88"/>
+            <infoLink name="Dogs of War Magic Banner" id="fbfe-2f18-988f-2907" hidden="false" type="profile" targetId="37d1-efa2-707c-fddf"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4244,7 +4267,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Marco Colombo" hidden="false" id="1d49-669b-033d-5756" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <costs>
-        <cost name="pts" typeId="points" value="100"/>
+        <cost name="pts" typeId="points" value="150"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="9b98-e754-a5c7-28b7" primary="true" name="Mercenaries"/>
@@ -4719,7 +4742,7 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
         <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
         <characteristic name="S" typeId="4f75-25c9-31bd-7074">F</characteristic>
         <characteristic name="AP" typeId="15e2-fff4-477f-ea26">-</characteristic>
-        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c"/>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c">Armour Bane (5)</characteristic>
         <characteristic name="Note" typeId="5e5e-34db-1ee0-86">Borgio made this weapon out of a cannon ball that hit him square in the chest, yet did not kill him. From that point on it has become his good luck charm. If Borgio rolls a 6 to hit with this weapon, that hit will be at Strength 10.</characteristic>
       </characteristics>
     </profile>
@@ -5781,6 +5804,19 @@ Roll at the start of the battle for each enemy unit as Marco scans the enemy bat
 
 
 On a successful score your opponent must reveal any hidden troops in that unit and deploy them before the start of the first turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Warcry of the Steppes" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="7b33-78e2-e3b2-35d9">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">When Gazhak Khan charges, he lets out a mighty war cry that freezes the hearts of his enemies. To represent this, any unit that he charges will not be able to stand and fire or flee as a Charge response. This does not affect a unit that is immune to psychology.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dogs of War Magic Banner" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="37d1-efa2-707c-fddf">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">One unit of Pikemen (or any unit carrying pikes) or Heavy Cavalry may carry a 50 point Magic Standard (if they could not in their natural way).
+
+
+Although indicated in Borgio&apos;s profile, consider the banner to be in the unit it will be put. Indicate this to your rival at the beggining of the deployment, when both armies are being presented between opponents. No double magic banner would be allowed in that unit. In the case of duplication, Borgio&apos;s Magic Banner does not apply.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
