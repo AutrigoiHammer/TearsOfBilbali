@@ -4697,7 +4697,7 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="8592-b01b-d4eb-66a6" targetId="193c-4d0d-de6b-bbb1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="4"/>
+            <cost name="pts" typeId="points" value="6"/>
           </costs>
           <entryLinks>
             <entryLink name="Hand Weapon" id="2317-518b-f512-fe61" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" import="true">
@@ -4851,7 +4851,7 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="fa12-7712-d7c1-3d55" targetId="193c-4d0d-de6b-bbb1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="4"/>
+            <cost name="pts" typeId="points" value="6"/>
           </costs>
           <entryLinks>
             <entryLink name="Hand Weapon" id="cdd5-b3da-aea6-da24" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" import="true">
@@ -5130,8 +5130,18 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
         <categoryLink targetId="f3f7-ca43-674e-115f" id="d98b-4cf5-44c0-bd16" primary="false" name="Regular Infantry"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Zombie Pirate Gunners" hidden="false" id="1df0-7e07-2be2-9120" targetId="f77a-a6f6-fee5-6cea" type="selectionEntry"/>
-    <entryLink import="true" name="Zombie Pirate Raiders" hidden="false" id="313b-38fe-2c16-9217" targetId="73c7-461a-7460-9bae" type="selectionEntry"/>
+    <entryLink import="true" name="Zombie Pirate Gunners" hidden="false" id="1df0-7e07-2be2-9120" targetId="f77a-a6f6-fee5-6cea" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="f0e3-2e32-8866-ea32" id="8eae-fc7a-9b17-d516" primary="true" name="Core"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="976f-2d7a-af9b-69a5" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Zombie Pirate Raiders" hidden="false" id="313b-38fe-2c16-9217" targetId="73c7-461a-7460-9bae" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="f0e3-2e32-8866-ea32" id="9e71-3141-4a4a-3f72" primary="true" name="Core"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="a0bd-53b5-855e-382a" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Deck Gunners" hidden="false" id="b291-d138-8509-6f1d" targetId="df4c-5d97-b5bb-1756" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="f164-02cb-0c00-f842" id="b8d3-eb94-4649-6c45" primary="false" name="0-3 Carronades, Morters or Deck Gunners per 2,000 points"/>
@@ -5151,6 +5161,10 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
           </repeats>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f0e3-2e32-8866-ea32" id="925c-ab9f-eeb4-da65" primary="true" name="Core"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="0e5e-e5ed-01fc-a6a7" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
