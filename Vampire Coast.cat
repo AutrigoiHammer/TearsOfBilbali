@@ -1199,6 +1199,14 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">4</characteristic>
       </characteristics>
     </profile>
+    <profile name="Gas Explosion" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="e1f6-38d9-4fdb-b2e6">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">When the Bloated Corpse is eliminated, any enemy or friendly model within 6&quot; of it will suffer one Strength 2 hit that do not allow an Armor Save (Ward Saves can be used normally).
+
+
+Units in contact with a eliminated Bloated Corpse rolls only a single D6 when making a &apos;Overrun&apos; roll (rather than the usual 2D6).</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -4699,7 +4707,7 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="296b-ab4c-e1fb-262c"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="296b-ab4c-e1fb-262c"/>
             <constraint type="max" value="40" field="selections" scope="parent" shared="true" id="c371-ad87-0dd5-beea"/>
           </constraints>
           <categoryLinks>
@@ -4853,8 +4861,8 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="95af-c265-2d04-03ab"/>
-            <constraint type="max" value="40" field="selections" scope="parent" shared="true" id="bf71-fd2f-6592-33cc"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="95af-c265-2d04-03ab"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="bf71-fd2f-6592-33cc"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="4553-bf08-5b3a-a42b" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -5059,7 +5067,44 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
         <categoryLink targetId="633f-f67a-1b6a-d203" id="ffce-e399-2771-b728" primary="true" name="Special"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bloated Corpse" hidden="false" id="3ebc-39be-be51-1525"/>
+    <selectionEntry type="upgrade" import="true" name="Bloated Corpse" hidden="false" id="3ebc-39be-be51-1525">
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="ef07-94d9-6136-331d" type="selectionEntry" targetId="721d-36e3-388a-c0d6"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Bloated Corpse" id="b1a4-12b6-d1ae-edc3" hidden="false" type="profile" targetId="4962-7b8e-f33b-b170"/>
+        <infoLink name="Base (40x40)" id="91e1-e08b-6312-6c63" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Bloated Corpse" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="c90e-929a-df8a-e101">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="8087-2dad-6530-ec09" hidden="false">
+          <infoLinks>
+            <infoLink name="Necromantic Undead" id="f10b-3a77-6a95-2af5" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="1cf4-4656-b52b-6c51" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Aquatic (Vampire Coast)" id="8e1a-d87f-9932-d259" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
+            <infoLink name="Random Movement" id="733d-7136-89df-653b" hidden="false" type="profile" targetId="4924-fc1f-bcd-746a"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f117-b027-aa17-acdb"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9b5-fca5-166f-d970"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Renegades (Square Based)" hidden="false" id="9fd6-2f67-505f-ff4c" type="selectionEntry" targetId="974c-3bf3-af4b-701d">
@@ -5079,6 +5124,19 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
         <categoryLink targetId="633f-f67a-1b6a-d203" id="abd5-b020-1fca-f130" primary="true" name="Special"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="d6d0-7c71-10d4-789e" primary="false" name="Regular Infantry"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Bloated Corpse" hidden="false" id="0fa8-6877-7367-90ea" targetId="3ebc-39be-be51-1525" type="selectionEntry">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="57e0-bbdf-48c6-1c22" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="57e0-bbdf-48c6-1c22">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="1df0-7e07-2be2-9120" shared="true" roundUp="false" id="6b6b-0256-c439-9c98" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="4a61-bf48-f66f-b59f" shared="true" roundUp="false" id="8bb3-29e9-07fa-8417" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
