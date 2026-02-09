@@ -5004,7 +5004,7 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
             <cost name="pts" typeId="points" value="18"/>
           </costs>
           <entryLinks>
-            <entryLink name="Hand Weapon" id="0c6f-e487-7031-f489" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" import="true">
+            <entryLink name="Hand Weapon" id="0c6f-e487-7031-f489" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" import="true" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4485-f8fe-e02b-aadb"/>
               </constraints>
@@ -5016,17 +5016,17 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="beaf-45e8-eb1f-cc55" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Falconets" id="d7cf-9e6f-2716-0ae4" hidden="false" flatten="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Falconets" hidden="false" id="2cdb-ebf3-236f-d49c" sortIndex="2">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="345f-396a-0ed9-844d" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="5819-de34-cafe-2dcd" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="73aa-adeb-b311-149e" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6962-423c-669d-228d" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Falconets" id="3c6d-1d70-3d0d-b231" hidden="false" type="profile" targetId="b166-bc43-2898-d776"/>
+                <infoLink name="Falconets" id="b08e-b148-17ae-6603" hidden="false" type="profile" targetId="b166-bc43-2898-d776"/>
               </infoLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoGroups>
