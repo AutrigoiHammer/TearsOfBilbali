@@ -5202,7 +5202,7 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Full Plate Armour" hidden="true" id="30d0-1bb7-fdce-1104" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3">
+                <entryLink import="true" name="Full Plate Armour" hidden="false" id="30d0-1bb7-fdce-1104" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3">
                   <costs>
                     <cost name="pts" typeId="points" value="2"/>
                   </costs>
