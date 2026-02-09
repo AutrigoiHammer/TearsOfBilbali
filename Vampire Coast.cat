@@ -5068,21 +5068,9 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bloated Corpse" hidden="false" id="3ebc-39be-be51-1525">
-      <entryLinks>
-        <entryLink import="true" name="Hand Weapon" hidden="false" id="ef07-94d9-6136-331d" type="selectionEntry" targetId="721d-36e3-388a-c0d6"/>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Bloated Corpse" id="b1a4-12b6-d1ae-edc3" hidden="false" type="profile" targetId="4962-7b8e-f33b-b170"/>
-        <infoLink name="Base (40x40)" id="91e1-e08b-6312-6c63" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
       </infoLinks>
-      <profiles>
-        <profile name="Bloated Corpse" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="c90e-929a-df8a-e101">
-          <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous infantry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoGroups>
         <infoGroup name="Special Rules" id="8087-2dad-6530-ec09" hidden="false">
           <infoLinks>
@@ -5100,14 +5088,36 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
       <costs>
         <cost name="pts" typeId="points" value="25"/>
       </costs>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f117-b027-aa17-acdb"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9b5-fca5-166f-d970"/>
-      </constraints>
       <categoryLinks>
         <categoryLink targetId="f0e3-2e32-8866-ea32" id="a347-11d2-3262-0611" primary="true" name="Core"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="64dd-3823-a899-68db" primary="false" name="Regular Infantry"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bloated Corpse" hidden="false" id="0b29-1528-0205-6a26">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="ef07-94d9-6136-331d" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="294d-831d-46e5-0526"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f117-b027-aa17-acdb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9b5-fca5-166f-d970"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (40x40)" id="91e1-e08b-6312-6c63" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Bloated Corpse" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="c90e-929a-df8a-e101">
+              <characteristics>
+                <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous infantry</characteristic>
+                <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
