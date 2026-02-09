@@ -5338,6 +5338,9 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
       </infoGroups>
       <categoryLinks>
         <categoryLink name="Faction: Vampire Counts" hidden="false" id="3ce7-4747-593b-594a" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="ccdc-3a1e-f84c-ac7e" primary="true" name="Special"/>
+        <categoryLink targetId="ca7e-d004-ccde-caf3" id="abc1-1520-05c2-2e56" primary="false" name="Heavy Infantry"/>
+        <categoryLink targetId="0c7a-2d2d-f007-ad74" id="81b5-d93a-e5b3-b576" primary="false" name="0-1 unit of Depth Guard per 1,000 points may have the Drilled special rule"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="0c7a-2d2d-f007-ad74" field="category">
@@ -5394,7 +5397,13 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
         <categoryLink targetId="f3f7-ca43-674e-115f" id="0e5e-e5ed-01fc-a6a7" primary="false" name="Regular Infantry"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Depth Guard" hidden="false" id="1187-312d-5ad1-656e" targetId="d151-9daf-2017-68ae" type="selectionEntry"/>
+    <entryLink import="true" name="Depth Guard" hidden="false" id="1187-312d-5ad1-656e" targetId="d151-9daf-2017-68ae" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="fb1d-37a5-fe53-b479" primary="true" name="Special"/>
+        <categoryLink targetId="ca7e-d004-ccde-caf3" id="ce82-c463-d0cb-64f3" primary="false" name="Heavy Infantry"/>
+        <categoryLink targetId="0c7a-2d2d-f007-ad74" id="f982-7071-10e5-9fe0" primary="false" name="0-1 unit of Depth Guard per 1,000 points may have the Drilled special rule"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
