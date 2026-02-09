@@ -1207,6 +1207,24 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
 Units in contact with a eliminated Bloated Corpse rolls only a single D6 when making a &apos;Overrun&apos; roll (rather than the usual 2D6).</characteristic>
       </characteristics>
     </profile>
+    <profile name="Depth Guard" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="8c30-23e6-b7a0-faaf">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cursed Weapons" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="0875-b296-0fab-9a30">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">A hand weapon carried by a model with this special rule has the Magic Attacks special rule and an Armor Piercing attribute of -1.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -5119,6 +5137,216 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Depth Guard" hidden="false" id="d151-9daf-2017-68ae" collective="false">
+      <profiles>
+        <profile name="Depth Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="e053-8283-2ec3-0da6">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" name="Depth Guard" id="f7a5-25ad-fdd8-4e54" hidden="false" collective="true" sortIndex="1">
+          <infoLinks>
+            <infoLink name="Depth Guard" hidden="false" type="profile" id="1899-6f11-3d24-009a" targetId="8c30-23e6-b7a0-faaf"/>
+            <infoLink name="Base (25x25)" hidden="false" type="profile" id="8f9f-baec-deae-d4ab" targetId="193c-4d0d-de6b-bbb1"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="16"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Hand Weapon" id="4f46-682b-ffc1-705d" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1" import="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="44c0-dbba-6fa3-bc1d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Equipment" hidden="false" id="8f4b-1a6e-4c8d-d6eb" collective="false" defaultSelectionEntryId="91ef8170-120d53a" sortIndex="3" flatten="true">
+              <entryLinks>
+                <entryLink name="Additional Hand Weapon" id="12dd-87b8-7d9f-e435" hidden="false" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" collective="true" sortIndex="1" import="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="1"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Halberd" id="40ec-02cf-10f6-3fc5" hidden="false" type="selectionEntry" targetId="f0a5-1b2e-3d2b-d540" collective="true" sortIndex="2">
+                  <costs>
+                    <cost name="pts" typeId="points" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4a5c-e5d2-591c-dd80"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a02d-3ef0-b630-996b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Special Rules" id="dd8c-a418-5949-90f1" hidden="false" flatten="true" sortIndex="4">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Drilled" hidden="false" id="58e8-a3fa-ac58-6020" sortIndex="1" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Drilled" id="0473-6571-a2c1-e1f8" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d968-8828-3dd9-cb0c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Armour" id="65c7-250f-ecda-b136" hidden="false" flatten="true" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="0266-940b-3abd-25e7" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Full Plate Armour" hidden="true" id="30d0-1bb7-fdce-1104" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3">
+                  <costs>
+                    <cost name="pts" typeId="points" value="2"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <comment>Renegades</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="974c-3bf3-af4b-701d" shared="true" includeChildSelections="true">
+                          <comment>Renegades</comment>
+                        </condition>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="285c-38a6-a48d-f9d2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7c85-66af-2d36-83cb"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ade5-9a55-f31d-c72f"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Heavy Infantry" hidden="false" id="eb14-eebd-b144-66c7" targetId="ca7e-d004-ccde-caf3" primary="false"/>
+            <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="3aae-f9c7-dce0-a804" targetId="may-have-armour"/>
+            <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="b45e-6fda-7357-8444" targetId="may-have-shield"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" hidden="false" id="6b64-d9da-1e5a-9f1d" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" subType="crew" name="Gerfalcon" id="13fc-e2e0-ddec-edae" hidden="false" collective="true" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Depth Guard" hidden="false" type="profile" id="6655-c65d-b9a9-cdcb" targetId="8c30-23e6-b7a0-faaf">
+                  <modifiers>
+                    <modifier type="set" value="Gerfalcon" field="name"/>
+                    <modifier type="increment" value="1" field="dddc-9fbd-b0fd-a480"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Base (25x25)" hidden="false" type="profile" id="a118-d03c-a611-06be" targetId="193c-4d0d-de6b-bbb1"/>
+                <infoLink name="Champion" hidden="false" type="profile" id="7402-8b5b-da9f-50fc" targetId="5f1c-fd04-b0d5-d5e"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="6"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Magic Items" hidden="false" id="60ce-3f88-962e-5387" type="selectionEntryGroup" targetId="1539-fd78-88f-badd">
+                  <constraints>
+                    <constraint type="max" value="25" field="points" scope="parent" shared="false" id="d36e-d858-5d2f-5a25"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="53df-0872-d142-3920" includeChildSelections="false"/>
+              </constraints>
+              <comment>upgrades: d2a99e2c-6e12bd76</comment>
+              <categoryLinks>
+                <categoryLink name="Heavy Infantry" hidden="false" id="8ba9-c391-bf25-ed67" targetId="ca7e-d004-ccde-caf3" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="308f-2215-dc69-40cb" targetId="may-have-armour"/>
+                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="8d55-e353-f67c-05e1" targetId="may-have-shield"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Standard Bearer" id="a790-c643-5104-b44f" type="model" import="true" hidden="false" subType="crew" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="6"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Standard Bearer" hidden="false" type="profile" id="a6c9-b9af-56e9-8928" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Magic Standards" hidden="false" id="c127-4295-7938-0c76" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+                  <constraints>
+                    <constraint type="max" value="50" field="points" scope="parent" shared="false" id="3028-a95f-bfdc-ce94"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <comment>upgrades: d2a99e2c-6e12bd76</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b7c7-7667-9306-9352" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Heavy Infantry" hidden="false" id="3085-9813-117e-28e4" targetId="ca7e-d004-ccde-caf3" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="8d43-e497-f821-a1a1" targetId="may-have-armour"/>
+                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="d61c-ca61-a1e4-6859" targetId="may-have-shield"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry name="Musician" id="7023-31f7-8aa8-6d2d" type="model" import="true" hidden="false" subType="crew" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="points" value="6"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Musician" hidden="false" type="profile" id="f8f2-7189-2ded-01fc" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <comment>upgrades: d2a99e2c-6e12bd76</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="78e8-ce19-b1d4-0757" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Heavy Infantry" hidden="false" id="5807-6509-7c69-98ba" targetId="ca7e-d004-ccde-caf3" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="4624-f35c-f742-f791" targetId="may-have-armour"/>
+                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="23f8-9102-a61e-4dd9" targetId="may-have-shield"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Special Rules" hidden="false" id="837f-1986-5e75-d535">
+          <infoLinks>
+            <infoLink name="Close Order" hidden="false" id="22d2-5d83-2dda-76f9" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Indomitable" hidden="false" id="d610-f311-d35f-b2d8" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Necromantic Undead" hidden="false" id="fe8e-34d2-586e-8716" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" hidden="false" id="fba8-bacb-bd58-16fb" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Flammable" id="b6a7-1305-83c2-8ad2" hidden="false" type="profile" targetId="8f64-6d4c-466b-1b94"/>
+            <infoLink name="Dark Vitality" id="8a28-807e-2884-6ad3" hidden="false" type="profile" targetId="4190-a061-b7dc-3712"/>
+            <infoLink name="Counter Charge" id="ed02-f40a-7f62-4367" hidden="false" type="profile" targetId="5186-798d-69d-6545"/>
+            <infoLink name="Aquatic (Vampire Coast)" id="f281-70ca-ed5e-f92a" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
+            <infoLink name="Cursed Weapons" id="aab5-9373-91e5-d327" hidden="false" type="profile" targetId="0875-b296-0fab-9a30"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Faction: Vampire Counts" hidden="false" id="3ce7-4747-593b-594a" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="0c7a-2d2d-f007-ad74" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="58e8-a3fa-ac58-6020" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Renegades (Square Based)" hidden="false" id="9fd6-2f67-505f-ff4c" type="selectionEntry" targetId="974c-3bf3-af4b-701d">
@@ -5166,6 +5394,7 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
         <categoryLink targetId="f3f7-ca43-674e-115f" id="0e5e-e5ed-01fc-a6a7" primary="false" name="Regular Infantry"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Depth Guard" hidden="false" id="1187-312d-5ad1-656e" targetId="d151-9daf-2017-68ae" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
@@ -5379,6 +5608,29 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
         <modifier type="increment" value="3" field="b6dd-1b83-fb4e-79fd">
           <repeats>
             <repeat value="2000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="fd6d-ff03-3ab3-2f56" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="0-1 unit of Depth Guard per 1,000 points may have the Drilled special rule" id="0c7a-2d2d-f007-ad74" hidden="true">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="b7ff-9028-13a6-13a1" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="b7ff-9028-13a6-13a1">
+          <repeats>
+            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="7569-0455-84d9-76d6"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="b7ff-9028-13a6-13a1">
+          <repeats>
+            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="498b-1a5e-b313-1886" includeChildSelections="true"/>
           </repeats>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
