@@ -1164,6 +1164,41 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">Note: A model armed with a Hailshot blunderbuss suffers no negative modifiers for firing at long range, for using the Multiple Shots (D3) special rule, or whilst making a Stand &amp; Shoot charge reaction.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Deck Gunner" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="ac3c-21a9-5da3-37d6">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">1</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Falconets" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="b166-bc43-2898-d776">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">36&quot;</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">5</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Armor Bane (2), Move or Shoot</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
+      </characteristics>
+    </profile>
+    <profile name="Bloated Corpse" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="4962-7b8e-f33b-b170">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">2D6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">1</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">4</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -4640,7 +4675,7 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Zombie Pirate Gunners" hidden="false" id="f77a-a6f6-fee5-6cea" collective="false">
       <profiles>
-        <profile name="Zombie Pirates" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="4556-83ff-4c38-e208">
+        <profile name="Zombie Pirate Gunners" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="4556-83ff-4c38-e208">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry</characteristic>
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">20-40</characteristic>
@@ -4792,6 +4827,239 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
         <categoryLink targetId="f0e3-2e32-8866-ea32" id="fcfe-7705-db52-9105" primary="true" name="Core"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Zombie Pirate Raiders" hidden="false" id="73c7-461a-7460-9bae" collective="false">
+      <profiles>
+        <profile name="Zombie Pirate Raiders" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="4bbb-de48-ced6-bccd">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">20-40</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" name="Zombie Pirate Raider" id="a67a-9fb8-3383-e418" hidden="false" sortIndex="1">
+          <infoLinks>
+            <infoLink name="Zombie" hidden="false" type="profile" id="4732-7314-b612-df3f" targetId="8cc9-bd5d-e6e4-4126"/>
+            <infoLink name="Base (25x25)" hidden="false" type="profile" id="fa12-7712-d7c1-3d55" targetId="193c-4d0d-de6b-bbb1"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="4"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Hand Weapon" id="cdd5-b3da-aea6-da24" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" import="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="b765-adb6-cc6e-749f"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="95af-c265-2d04-03ab"/>
+            <constraint type="max" value="40" field="selections" scope="parent" shared="true" id="bf71-fd2f-6592-33cc"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Regular Infantry" hidden="false" id="4553-bf08-5b3a-a42b" targetId="f3f7-ca43-674e-115f" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="87a3-ef05-5e5a-7730" hidden="false" flatten="true">
+              <entryLinks>
+                <entryLink import="true" name="Handgun" hidden="false" id="ff17-8ebd-7ffd-10ff" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="1">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="81f9-d61b-e23c-05f1" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="be4f-ec0b-7b44-81f1" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="f2fe-c2a3-cd84-f41d" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Brace of Pistols" id="4da3-8690-1b91-44f7" hidden="false" type="profile" targetId="3f0e-1dc6-b425-bf59"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0843-fbe9-5428-80e5"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" hidden="false" id="5452-5e9d-aaf5-dcdc" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry name="Musician" id="c387-d211-9bb1-b5eb" type="model" import="true" hidden="false" subType="crew" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Musician" hidden="false" type="profile" id="187e-4faf-c2dd-98fb" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <comment>upgrades: 2cf94a97-957186e5</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bc49-550d-c052-4790" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Regular Infantry" hidden="false" id="b1ad-f0ac-2f15-3ea0" targetId="f3f7-ca43-674e-115f" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Zombie Buccanner" hidden="false" id="3b3c-8bae-d5dc-4cb2" subType="crew" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Zombie Pirate" id="40e1-b4dd-4316-bb35" hidden="false" type="profile" targetId="9c91-c09d-e8c4-b393">
+                  <modifiers>
+                    <modifier type="set" value="Zombie Buccaneer" field="name"/>
+                    <modifier type="increment" value="1" field="dddc-9fbd-b0fd-a480"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Base (25x25)" id="8387-f747-94b9-0e33" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+                <infoLink name="Champion" id="0c93-664d-e817-d9a4" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ba19-5ade-4150-45b5" includeChildSelections="false"/>
+              </constraints>
+              <comment>upgrades: 9d13908b-c13ac459</comment>
+              <categoryLinks>
+                <categoryLink name="Regular Infantry" hidden="false" id="39f1-58a3-75bc-612b" targetId="f3f7-ca43-674e-115f" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="bb6e-4cb9-1e94-93af" targetId="may-have-armour"/>
+                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="fd84-0572-52b9-02ee" targetId="may-have-shield"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="c3c5-8f7f-fae6-9c1e" subType="crew" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="71ea-d7ce-7db0-8e7c" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Magic Standards" hidden="false" id="2972-98b6-bfdc-7f7f" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+                  <constraints>
+                    <constraint type="max" value="25" field="points" scope="parent" shared="false" id="9db2-e3a0-0d7d-15e2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <comment>upgrades: d2a99e2c-6e12bd76</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="994a-bb0a-6386-6ce3" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Heavy Infantry" hidden="false" id="54cb-9900-1100-07ba" targetId="ca7e-d004-ccde-caf3" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="01b7-9866-f2e0-eb18" targetId="may-have-armour"/>
+                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="919a-f87a-f9ad-f909" targetId="may-have-shield"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Special Rules" hidden="false" id="8c7b-a674-101a-79c0">
+          <infoLinks>
+            <infoLink name="Necromantic Undead" hidden="false" id="feae-554e-c48e-4588" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" hidden="false" id="c5e0-9e29-948c-a884" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Crew" id="08ae-8757-25a6-1625" hidden="false" type="profile" targetId="f518-70e5-57ba-de92"/>
+            <infoLink name="Wet Powder" id="b860-0231-ee67-54f5" hidden="false" type="profile" targetId="d358-920a-d368-7363">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Skirmishers" id="61dd-4c72-2e80-ada9" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Move Through Cover" id="b060-7415-dfce-7585" hidden="false" type="profile" targetId="e83e-f127-1904-3858"/>
+            <infoLink name="Reserve Move" id="90d5-f648-06ee-7e05" hidden="false" type="profile" targetId="1f10-d7d-be19-7e8f"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Faction: Vampire Counts" hidden="false" id="2041-7ec0-f0d2-cd31" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="8f6c-28f0-6c31-6de3" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="f0e3-2e32-8866-ea32" id="51a6-a158-0089-90b2" primary="true" name="Core"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Deck Gunners" hidden="false" id="df4c-5d97-b5bb-1756" collective="false">
+      <profiles>
+        <profile name="Deck Gunners" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="3987-deab-b252-1904">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" name="Deck Gunners" id="adfe-9971-1e4d-d16c" hidden="false" sortIndex="1">
+          <infoLinks>
+            <infoLink name="Zombie" hidden="false" type="profile" id="4ca0-ee62-8b9c-6294" targetId="8cc9-bd5d-e6e4-4126"/>
+            <infoLink name="Base (25x50)" hidden="false" type="profile" id="df64-cdea-d0b7-ffee" targetId="2d9f-e535-9b2e-ca11"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="18"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Hand Weapon" id="0c6f-e487-7031-f489" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" import="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4485-f8fe-e02b-aadb"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2aa7-ed19-cfd4-fcf2"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Regular Infantry" hidden="false" id="beaf-45e8-eb1f-cc55" targetId="f3f7-ca43-674e-115f" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Falconets" id="d7cf-9e6f-2716-0ae4" hidden="false" flatten="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="345f-396a-0ed9-844d" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="5819-de34-cafe-2dcd" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Falconets" id="3c6d-1d70-3d0d-b231" hidden="false" type="profile" targetId="b166-bc43-2898-d776"/>
+              </infoLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Special Rules" hidden="false" id="0d98-f758-bc00-5c91">
+          <infoLinks>
+            <infoLink name="Necromantic Undead" hidden="false" id="885c-6719-d62e-5b7a" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" hidden="false" id="c2c0-0701-8e1b-a3f1" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Crew" id="94cf-84fd-9cbc-f3a4" hidden="false" type="profile" targetId="f518-70e5-57ba-de92"/>
+            <infoLink name="Wet Powder" id="6060-5197-882c-630f" hidden="false" type="profile" targetId="d358-920a-d368-7363">
+              <modifiers>
+                <modifier type="append" value="(5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Open Order" id="af18-6353-7c8d-297c" hidden="false" type="profile" targetId="5b67-8535-146c-7cea"/>
+            <infoLink name="Indomitable" id="a7c7-d134-4873-a275" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Faction: Vampire Counts" hidden="false" id="ff08-8358-b3e7-a8c6" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="7ec3-ee5f-2909-35a0" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="ffce-e399-2771-b728" primary="true" name="Special"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bloated Corpse" hidden="false" id="3ebc-39be-be51-1525"/>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Renegades (Square Based)" hidden="false" id="9fd6-2f67-505f-ff4c" type="selectionEntry" targetId="974c-3bf3-af4b-701d">
@@ -4804,6 +5072,14 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Zombie Pirate Gunners" hidden="false" id="1df0-7e07-2be2-9120" targetId="f77a-a6f6-fee5-6cea" type="selectionEntry"/>
+    <entryLink import="true" name="Zombie Pirate Raiders" hidden="false" id="313b-38fe-2c16-9217" targetId="73c7-461a-7460-9bae" type="selectionEntry"/>
+    <entryLink import="true" name="Deck Gunners" hidden="false" id="b291-d138-8509-6f1d" targetId="df4c-5d97-b5bb-1756" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="f164-02cb-0c00-f842" id="b8d3-eb94-4649-6c45" primary="false" name="0-3 Carronades, Morters or Deck Gunners per 2,000 points"/>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="abd5-b020-1fca-f130" primary="true" name="Special"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="d6d0-7c71-10d4-789e" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
@@ -4994,6 +5270,29 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
         <modifier type="increment" value="1" field="5175-a4a0-2e21-a256">
           <repeats>
             <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="5ab6-94bf-b05c-2107" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="0-3 Carronades, Morters or Deck Gunners per 2,000 points" hidden="true" id="f164-02cb-0c00-f842">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="b6dd-1b83-fb4e-79fd" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="3" field="b6dd-1b83-fb4e-79fd">
+          <repeats>
+            <repeat value="2000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="5965-b242-06f2-f11f"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="3" field="b6dd-1b83-fb4e-79fd">
+          <repeats>
+            <repeat value="2000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="fd6d-ff03-3ab3-2f56" includeChildSelections="true"/>
           </repeats>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
