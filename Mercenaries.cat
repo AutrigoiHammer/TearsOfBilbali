@@ -1127,14 +1127,14 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (25x25)" id="2307-2503-2568-eded" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
-            <infoLink name="Bronzino" id="6a86-7370-2794-0d0b" hidden="false" type="profile" targetId="daf4-7b1a-8058-4a51"/>
+            <infoLink name="Fernando Pirazzo" id="6a86-7370-2794-0d0b" hidden="false" type="profile" targetId="91c8-e586-5501-2162"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44e4-f06f-3656-905e"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="950f-d1a3-a523-a17c"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="55"/>
+            <cost name="pts" typeId="points" value="20"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Pirazzo&apos;s Legion Crossbow" hidden="false" id="ccfb-2f9b-3a0c-d6b3" sortIndex="3" collective="true">
@@ -1193,7 +1193,7 @@
             <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="ecd5-63f7-ce8e-b3a3"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="9"/>
+            <cost name="pts" typeId="points" value="7"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Pirazzo&apos;s Crossbowmen" hidden="false" id="3e35-01f4-3cbc-fcff" sortIndex="2">
@@ -1229,7 +1229,7 @@
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="acc3-8996-0250-2a9c"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="11"/>
+            <cost name="pts" typeId="points" value="8"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1489,7 +1489,7 @@
             <infoLink name="Beloved General" id="8d31-798c-6b9d-dce4" hidden="false" type="profile" targetId="5e80-5e11-9b26-718a"/>
             <infoLink name="Close Order" id="6585-d058-aded-7d27" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Mercenaries" id="8a04-aa3d-2896-5279" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
-            <infoLink name="Borgio&apos;s Magic Banner" id="7c58-bd2c-efbe-14dd" hidden="false" type="profile" targetId="37d1-efa2-707c-fddf"/>
+            <infoLink name="Dogs of War Magic Banner" id="7c58-bd2c-efbe-14dd" hidden="false" type="profile" targetId="37d1-efa2-707c-fddf"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -2091,7 +2091,7 @@
             <infoLink name="Daddallo" id="f4c5-73c1-b20a-3ce0" hidden="false" type="profile" targetId="d889-97f2-d73d-cd22"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="50"/>
+            <cost name="pts" typeId="points" value="60"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Birdmen" hidden="false" id="0511-a96e-e7f0-a917" sortIndex="2">
@@ -2121,7 +2121,7 @@
             <infoLink name="Birdmen" id="6246-3fb5-2bad-5798" hidden="false" type="profile" targetId="b3fc-db99-178b-09d0"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="10"/>
+            <cost name="pts" typeId="points" value="15"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2344,7 +2344,7 @@
             <infoLink name="Braganza" id="c090-baec-534c-2deb" hidden="false" type="profile" targetId="964b-09c1-2ccc-9a66"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="45"/>
+            <cost name="pts" typeId="points" value="65"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Besieger Crossbowmen" hidden="false" id="60b2-e273-5ed6-a69e" sortIndex="2">
@@ -2381,7 +2381,7 @@
       <infoGroups>
         <infoGroup name="Special Rules" id="0aff-7604-c3b7-1eb0" hidden="false">
           <infoLinks>
-            <infoLink name="Open Order" id="89c9-7f45-c5c2-a0c7" hidden="false" type="profile" targetId="5b67-8535-146c-7cea"/>
+            <infoLink name="Close Order" id="89c9-7f45-c5c2-a0c7" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Mercenaries" id="eec7-320c-79ed-099d" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
             <infoLink name="The Besieger&apos;s Pavise" id="6fe2-987a-b2c2-27a7" hidden="false" type="profile" targetId="582a-ba75-f257-d391"/>
           </infoLinks>
@@ -2588,7 +2588,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8c4-9380-f176-c245"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="80"/>
+            <cost name="pts" typeId="points" value="55"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Venators" hidden="false" id="d29b-37a3-2905-c279" sortIndex="2">
@@ -2736,7 +2736,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9da9-7b2c-1491-d0e6"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="50"/>
+            <cost name="pts" typeId="points" value="60"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Desert Dogs" hidden="false" id="60c6-e4e9-376d-1608" sortIndex="4">
@@ -2902,7 +2902,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4abf-f18a-db8a-28c5"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="15"/>
+            <cost name="pts" typeId="points" value="25"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2953,7 +2953,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7abb-3640-e5b9-aef4"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="50"/>
+            <cost name="pts" typeId="points" value="55"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Leopold&apos;s Leopards" hidden="false" id="246e-18fe-c3a5-828d" sortIndex="2">
@@ -3001,7 +3001,7 @@
             <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="0c02-45c5-07d8-b44d"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="8"/>
+            <cost name="pts" typeId="points" value="7"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3055,7 +3055,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e2c-f25d-cccc-f932"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="45"/>
+            <cost name="pts" typeId="points" value="55"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Bronzino&apos;s Warhorse" hidden="false" id="bf64-5dd5-c30f-e8e8" collective="true" subType="mount" sortIndex="3">
@@ -3244,7 +3244,7 @@
             <infoLink name="Maximilian" id="3ebc-975e-c80a-142e" hidden="false" type="profile" targetId="2cfa-5359-e484-3993"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="45"/>
+            <cost name="pts" typeId="points" value="55"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Marksmen" hidden="false" id="c1f0-3998-161b-a2f1" sortIndex="2">
@@ -3274,7 +3274,7 @@
             <infoLink name="Marksmen" id="602a-923c-0f12-1f79" hidden="false" type="profile" targetId="eb56-3f92-f9b0-48a1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="9"/>
+            <cost name="pts" typeId="points" value="12"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3316,7 +3316,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfff-9497-c60d-27f3"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="90"/>
+            <cost name="pts" typeId="points" value="110"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Jagged Claws" hidden="false" id="6e32-a1e1-be92-8daa" sortIndex="1" collective="true">
@@ -3372,7 +3372,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebaa-65a5-8f9e-d326"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="25"/>
+            <cost name="pts" typeId="points" value="20"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Bearmen of Urslo" hidden="false" id="423e-a0fc-be06-1b23" sortIndex="3">
@@ -3408,7 +3408,7 @@
             <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="d8b2-9ac1-a7cd-a032"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="11"/>
+            <cost name="pts" typeId="points" value="10"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3475,7 +3475,7 @@
             <infoLink name="Vespero" id="8e23-7c1a-aed3-576c" hidden="false" type="profile" targetId="f9c2-5ee8-cf43-b42c"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="45"/>
+            <cost name="pts" typeId="points" value="60"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Grimacing Mask of Death" hidden="false" id="05a8-fbc6-0f9c-1e29" sortIndex="3" collective="true">
@@ -3510,7 +3510,7 @@
             <infoLink name="Vespero&apos;s Duellists" id="1419-83ea-1c91-677a" hidden="false" type="profile" targetId="a61a-8be8-14b8-e7b5"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="9"/>
+            <cost name="pts" typeId="points" value="8"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3562,7 +3562,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baeb-1bb1-e2b4-d4e9"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="35"/>
+            <cost name="pts" typeId="points" value="20"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Alcatani Pikemen" hidden="false" id="1973-c16a-d557-bd46" sortIndex="2">
@@ -3664,7 +3664,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e91-5602-5741-278b"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="50"/>
+            <cost name="pts" typeId="points" value="60"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Ricco&apos;s Pikemen" hidden="false" id="1c94-31d5-f003-12ec" sortIndex="2">
@@ -4839,7 +4839,7 @@ If any model within the Cursed Company (including Kreugar himself) slays a model
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
-        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">(+2)</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">(+5)</characteristic>
@@ -4851,13 +4851,13 @@ If any model within the Cursed Company (including Kreugar himself) slays a model
     <profile name="Asarnil, The Dragonlord" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="2ebb-3014-2981-e045" page="Regiments of Renown, WHFB 6th Edition (Adapted for ToW:ToB)">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">7</characteristic>
-        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">6</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
-        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">7</characteristic>
-        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
       </characteristics>
     </profile>
@@ -4912,13 +4912,13 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
     <profile name="Rakarth, The Beastlord" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f71c-17f9-ecba-5476" page="WFB 4th Edition (Adapted for ToW:ToB), 0531 Beastlord Rakarth, Dark Elf Dragonrider. [1] &quot;White Dwarf 189&quot;, (Sep. 1995), pgs: 80-81">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">7</characteristic>
-        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">6</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">7</characteristic>
-        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
       </characteristics>
     </profile>
@@ -4926,7 +4926,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
-        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">(+2)</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">(+5)</characteristic>
@@ -4972,7 +4972,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
     </profile>
     <profile name="Shoot on the Wing" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="c2ad-dbfa-36fa-ba72">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">The wings of the Birdmen are flapped by means of stirrups on their feet. This means that they have both hands free to load and shoot their crossbows while flying. This means that the Birdmen suffer no penalty for shooting if they moved by flying (not on foot) during this turn. If the Birdmen of Catrazza moved by flying, and landed on Difficult Terrain, please treat it as Dangerous Terrain, and immediately make a Dangerous Terrain test with each of the models of the unit that landed on such type of terrain.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">The wings of the Birdmen are flapped by means of stirrups on their feet. This means that they have both hands free to load and shoot their crossbows while flying. This means that the Birdmen suffer no penalty for shooting if they moved by flying (not on foot) during this turn.</characteristic>
       </characteristics>
     </profile>
     <profile name="Golgfag" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="88c7-98af-15e8-6151" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
@@ -5042,7 +5042,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
     </profile>
     <profile name="The Besieger&apos;s Pavise" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="582a-ba75-f257-d391">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">This pavise is a large shield which each crossbowman props in front of him. Such pavises save on a roll 3+ against shooting attacks if these are happening through the front of the unit.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">This pavise is a large shield which each crossbowman props in front of him. Such pavises save on a roll 3+ against shooting attacks, and combat attacks if these are happening through the front of the unit, and Braganzas Besieger&apos;s unit has been charged.</characteristic>
       </characteristics>
     </profile>
     <profile name="Drong" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="cfec-f037-602f-487f">
@@ -5115,7 +5115,7 @@ Though the pirates claim not to notice the smell the effect is dire on the enemy
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
-        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
@@ -5216,13 +5216,13 @@ Thanks to his impressive weapon, Sheikh Ahmed Shufti adds +1 Strength to blows h
     <profile name="Fernando Pirazzo" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="91c8-e586-5501-2162" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
-        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
-        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
-        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
-        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
-        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
       </characteristics>
       <alias>Fernando Pirazzo</alias>
@@ -5278,13 +5278,13 @@ To represent this extraordinary mobility, galloper guns may move and fire.</char
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Braganza" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="964b-09c1-2ccc-9a66">
+    <profile name="Luka Braganza" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="964b-09c1-2ccc-9a66">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
-        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
@@ -5295,7 +5295,7 @@ To represent this extraordinary mobility, galloper guns may move and fire.</char
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
-        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
