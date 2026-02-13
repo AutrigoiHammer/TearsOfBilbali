@@ -4557,7 +4557,11 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5286-75df-f4b4-37c3"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shortbow" hidden="false" id="599a-1935-c653-4e7d" type="selectionEntry" targetId="f187-20d4-41f3-63cc" sortIndex="3"/>
+            <entryLink import="true" name="Shortbow" hidden="false" id="599a-1935-c653-4e7d" type="selectionEntry" targetId="f187-20d4-41f3-63cc" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5fe-82ba-17e3-0f4b"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Giant Wolf" hidden="false" id="a2a0-1c33-a6b9-64c5" collective="true" subType="mount" sortIndex="6">
@@ -4597,7 +4601,11 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d83f-de54-c3f2-587d"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shortbow" hidden="false" id="86e0-fd36-fa65-2b1a" type="selectionEntry" targetId="f187-20d4-41f3-63cc" sortIndex="2"/>
+            <entryLink import="true" name="Shortbow" hidden="false" id="86e0-fd36-fa65-2b1a" type="selectionEntry" targetId="f187-20d4-41f3-63cc" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="124f-e493-91e4-a2fa"/>
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Light Armour" hidden="false" id="eead-34c7-096d-a6f1" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d945-629e-a774-1beb"/>
@@ -4760,6 +4768,11 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5986-bb38-7ad1-8bbc"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Cavalry Spear" hidden="false" id="5ec4-689a-cd63-0d96" type="selectionEntry" targetId="a2d0-40e9-83ad-23dc" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f889-1795-eb6c-6516"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Cold One" hidden="false" id="6d86-c2e4-89e0-065d" collective="true" subType="mount" sortIndex="5">
@@ -4775,8 +4788,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c572-d0f8-cccc-3d3a"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Base (25x50)" id="d861-96c9-e6a9-ea57" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-                <infoLink name="Hide Of The Cold Ones" id="a5c5-f9ec-43b8-19a8" hidden="false" type="profile" targetId="2f74-95eb-ce94-5b9e"/>
+                <infoLink name="Base (30x60)" id="d861-96c9-e6a9-ea57" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
+                <infoLink name="Tichi Uichi&apos;s Cold Ones" id="9499-2887-489f-6386" hidden="false" type="profile" targetId="70fe-ed8b-942c-152b"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4842,7 +4855,7 @@
             <categoryLink name="Heavy Cavalry" hidden="false" id="4222-af5b-bcbe-f348" targetId="5165-d052-cfc2-5887" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Oggum Staff" hidden="false" id="921e-8a26-2c48-b6ed" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Oggum Staff" hidden="false" id="921e-8a26-2c48-b6ed" sortIndex="5">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95e7-64dc-5452-72cc"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="512e-68f9-970e-85c7"/>
@@ -4879,20 +4892,20 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Lores of Magic" id="10b5-a69b-255d-abca" hidden="false" sortIndex="4">
               <entryLinks>
-                <entryLink import="true" name="Battle Magic" hidden="false" id="1ded-4ced-ad2f-5ecd" type="selectionEntry" targetId="5b2e-35c6-f987-741e" sortIndex="1"/>
+                <entryLink import="true" name="Battle Magic" hidden="false" id="1ded-4ced-ad2f-5ecd" type="selectionEntry" targetId="5b2e-35c6-f987-741e" sortIndex="">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f93-8ee0-8294-f1eb"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f93-8ee0-8294-f1eb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f40f-3e1d-5069-fc0c"/>
-              </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Wizard Level" id="5992-11c5-93cd-4ad5" hidden="false" defaultSelectionEntryId="dcc8-47c0-9c-7332">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f829-ff4f-29e4-71e0"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5144-4170-c614-e8b5"/>
-              </constraints>
+            <selectionEntryGroup name="Wizard Level" id="5992-11c5-93cd-4ad5" hidden="false" defaultSelectionEntryId="dcc8-47c0-9c-7332" sortIndex="3">
               <entryLinks>
-                <entryLink import="true" name="Wizard Level 1" hidden="false" id="b982-20ee-4f9d-822a" type="selectionEntry" targetId="7d84-39e9-a5f-947e" sortIndex="1"/>
+                <entryLink import="true" name="Wizard Level 1" hidden="false" id="b982-20ee-4f9d-822a" type="selectionEntry" targetId="7d84-39e9-a5f-947e" sortIndex="">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f829-ff4f-29e4-71e0"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -5043,7 +5056,11 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="865f-9a00-2dbd-5375"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Brace of Pistols" hidden="false" id="86a2-6ed2-8802-fab9" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="3"/>
+            <entryLink import="true" name="Brace of Pistols" hidden="false" id="86a2-6ed2-8802-fab9" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65a4-1a95-694b-9d54"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cabe-f916-5f99-23f2"/>
@@ -5085,7 +5102,11 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fea2-16f7-7ef4-d6f9"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Brace of Pistols" hidden="false" id="4e6c-8d01-63be-e62c" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2"/>
+            <entryLink import="true" name="Brace of Pistols" hidden="false" id="4e6c-8d01-63be-e62c" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="703b-98db-e7dc-f13a"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aec1-be0e-da67-7257"/>
