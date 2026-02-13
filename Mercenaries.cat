@@ -2341,7 +2341,7 @@
           </constraints>
           <infoLinks>
             <infoLink name="Base (25x25)" id="417b-8ed3-0b76-374c" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
-            <infoLink name="Braganza" id="c090-baec-534c-2deb" hidden="false" type="profile" targetId="964b-09c1-2ccc-9a66"/>
+            <infoLink name="Luka Braganza" id="c090-baec-534c-2deb" hidden="false" type="profile" targetId="964b-09c1-2ccc-9a66"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="65"/>
@@ -4508,6 +4508,165 @@
         <categoryLink targetId="f3f7-ca43-674e-115f" id="6dec-8c94-8a77-0a73" primary="false" name="Regular Infantry"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Oglah Khan&apos;s Wolfboyz" hidden="false" id="1f8f-5164-29dc-f28d" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="984b-6628-8563-a787" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="5165-d052-cfc2-5887" id="42b4-89a5-d652-f6cd" primary="false" name="Heavy Cavalry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Oglah Khan" hidden="false" id="f54b-a67b-eb7f-4678" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="c0d0-1f09-eff1-399f" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="General" hidden="false" id="3915-c76c-cf1b-aaf2" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0a6-d62c-e4f1-e867"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="cdf7-1b91-44af-3ca1" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a89-115d-cb74-6481"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Cavalry Spear" hidden="false" id="34c3-039c-e4e7-0c6c" type="selectionEntry" targetId="a2d0-40e9-83ad-23dc" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37b0-ca45-52fc-e949"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="d8a2-2b30-1e5d-8d2f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4fd-8569-f7a9-f228"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="8a64-e53e-a6f5-93df" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5286-75df-f4b4-37c3"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shortbow" hidden="false" id="599a-1935-c653-4e7d" type="selectionEntry" targetId="f187-20d4-41f3-63cc" sortIndex="3"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mercenary Warhorse" hidden="false" id="a2a0-1c33-a6b9-64c5" collective="true" subType="mount" sortIndex="6">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="c4ce-7bfc-a3d4-092c" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="191b-bd1e-0f29-5a83"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Barding" hidden="false" id="f35d-6551-c859-f0be" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06a6-f3c6-1c6a-9421"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6cd-1ed1-f74d-528a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bc7-c405-97a3-556a"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (25x50)" id="3990-e353-b0de-e655" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Mercenary Warhorse" id="83ab-aba7-4b58-2294" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (25x50)" id="f102-ec78-20aa-42c4" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+            <infoLink name="Voland" id="0e63-0d45-fbcb-5e26" hidden="false" type="profile" targetId="266b-2178-9fe4-2160"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bde4-ca75-812c-532c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8262-f5c0-81ea-a4be"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="55"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Wolfboyz" hidden="false" id="07d4-111e-2d0b-142d" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="380e-dcf3-eaa3-64e1" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d83f-de54-c3f2-587d"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Lance" hidden="false" id="e0f7-b584-af5e-64e0" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a12-ee34-f92c-ceb9"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="86b2-8443-032b-5df8" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8442-84cb-2c43-9ece"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="d3f4-ecd2-f911-2268" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ea1-2612-b6c1-6c7a"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mercenary Warhorse" hidden="false" id="9048-99c3-8f4f-0dd9" collective="true" subType="mount" sortIndex="6">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="4486-17b4-1ddb-1543" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ca-2b27-9a4d-1f12"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Barding" hidden="false" id="c3e3-9fdc-14fc-6379" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfd3-d6a1-ec37-ab31"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9876-dfd4-34b2-d119"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31c0-b759-9ac6-439a"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (25x50)" id="c96f-31c5-c098-29ea" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Mercenary Warhorse" id="2c0e-9d77-6c9f-d368" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Venator" id="541e-292a-1179-c5fe" hidden="false" type="profile" targetId="56e1-7e6b-d382-5320"/>
+            <infoLink name="Base (25x50)" id="656e-14ff-bee9-0a2f" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8295-4a26-2ce1-100c"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="2ffc-5bb7-0451-8371"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="26"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Voland&apos;s Venators" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="0eb0-e501-c2aa-bf96">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="d7bc-1ca8-5d35-048b" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="f3f5-cea0-4863-f1e4" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Mercenaries" id="a2ce-f489-31e6-1b50" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="First Charge" id="053e-258d-b2b0-4075" hidden="false" type="profile" targetId="785a-2886-af42-dce9"/>
+            <infoLink name="Counter Charge" id="6361-3366-1e0d-8ed8" hidden="false" type="profile" targetId="5186-798d-69d-6545"/>
+            <infoLink name="Swiftstride" id="0d74-5165-3d96-8123" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d778-3a32-7de0-8777" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Ogre" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5ccf-bbe6-f153-88b2">
@@ -5980,10 +6139,49 @@ Although indicated in Borgio&apos;s profile, consider the banner to be in the un
     </profile>
     <profile name="Dodge (1)" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="852c-9cc6-1d2b-140a">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">Enemy models attacking in the front rank of the unit repeat their successful rolls to hit of the lowest (1) successful value. This means, if an enemy would impact at (3+), all 3 dice rolls in the dice must be repeated.
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Enemy models repeat their successful rolls to hit of the lowest (1) successful value. This means, if an enemy would impact at (3+), all 3 dice rolls in the dice must be repeated.
 
 
-This works against Stomp Attacks and Impact Hits, but does not work when the enemy has the Strike First special rule.</characteristic>
+This works against Stomp Attacks and Impact Hits, but does not work when the enemy has the Strike First special rule, or if the unit has been charged from its flank or rear (if the unit is in Skirmisher formation, it has no front, flank or rear).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wolfboyz&apos; Giant Wolf" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f44d-f532-4810-9c00" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">9</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Oglah Khan" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="ab89-7214-ce9c-5f22" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hobgoblin Wolfboy" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="6b5e-d65a-53e5-a6bb" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">6</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
