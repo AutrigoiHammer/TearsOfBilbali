@@ -1253,7 +1253,7 @@
         </infoGroup>
       </infoGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="5d23-a058-965c-22dc" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="5d23-a058-965c-22dc" page="Warhammer Fantasy Battle - 2003 - Warhammer Chronicles - Dogs of War - Regiments of Renown - Extra Material">
       <costs>
         <cost name="pts" typeId="points" value="210"/>
       </costs>
@@ -1685,7 +1685,6 @@
           </profiles>
         </infoGroup>
       </infoGroups>
-      <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -4083,6 +4082,7 @@
                   </modifiers>
                 </infoLink>
                 <infoLink name="The Paychest Chariot" id="d3ad-7a97-ef29-8ddf" hidden="false" type="profile" targetId="1ed6-4b76-0efb-5bb2"/>
+                <infoLink name="Money Lender" id="ab08-f87c-798c-4106" hidden="false" type="profile" targetId="af82-5da7-067b-0aef"/>
               </infoLinks>
             </infoGroup>
           </infoGroups>
@@ -4237,6 +4237,7 @@
             <infoLink name="Mighty Athlete" id="8317-4283-5412-fbd2" hidden="false" type="profile" targetId="631d-da07-9cb6-b96e"/>
             <infoLink name="Lorenzo Lupo" id="b3b0-85ad-1b32-80fd" hidden="false" type="profile" targetId="e73c-1eb8-87bf-bf88"/>
             <infoLink name="Dogs of War Magic Banner" id="fbfe-2f18-988f-2907" hidden="false" type="profile" targetId="37d1-efa2-707c-fddf"/>
+            <infoLink name="Fights on Foot" id="b4db-299b-d82d-742c" hidden="false" type="profile" targetId="681e-fe5f-f956-ce94"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4388,7 +4389,7 @@
         <infoLink name="Marco Colombo" id="6400-dc94-2da8-0ab5" hidden="false" type="profile" targetId="c0a9-6a8f-a26d-a194"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lumpin Croop&apos;s Fighting Cocks" hidden="false" id="d8c6-2cb7-6ada-462c">
+    <selectionEntry type="upgrade" import="true" name="Lumpin Croop&apos;s Fighting Cocks" hidden="false" id="d8c6-2cb7-6ada-462c" page="Warhammer Fantasy Battle - 2003 - Warhammer Chronicles - Dogs of War - Regiments of Renown - Extra Material">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Lumpin Croop" hidden="false" id="6587-6749-58f3-8b3c" sortIndex="1">
           <entryLinks>
@@ -4508,10 +4509,10 @@
         <categoryLink targetId="f3f7-ca43-674e-115f" id="6dec-8c94-8a77-0a73" primary="false" name="Regular Infantry"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Oglah Khan&apos;s Wolfboyz" hidden="false" id="1f8f-5164-29dc-f28d" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Oglah Khan&apos;s Wolfboyz" hidden="false" id="1f8f-5164-29dc-f28d" page="Warhammer Fantasy Battle - 2003 - Warhammer Chronicles - Dogs of War - Regiments of Renown - Extra Material">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="984b-6628-8563-a787" primary="true" name="Mercenaries"/>
-        <categoryLink targetId="5165-d052-cfc2-5887" id="42b4-89a5-d652-f6cd" primary="false" name="Heavy Cavalry"/>
+        <categoryLink targetId="600c-7d08-5be1-fe0c" id="6009-dba1-2c23-5d4b" primary="false" name="Light Cavalry"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Oglah Khan" hidden="false" id="f54b-a67b-eb7f-4678" sortIndex="1">
@@ -4549,16 +4550,11 @@
             <entryLink import="true" name="Shortbow" hidden="false" id="599a-1935-c653-4e7d" type="selectionEntry" targetId="f187-20d4-41f3-63cc" sortIndex="3"/>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Mercenary Warhorse" hidden="false" id="a2a0-1c33-a6b9-64c5" collective="true" subType="mount" sortIndex="6">
+            <selectionEntry type="model" import="true" name="Giant Wolf" hidden="false" id="a2a0-1c33-a6b9-64c5" collective="true" subType="mount" sortIndex="6">
               <entryLinks>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="c4ce-7bfc-a3d4-092c" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="191b-bd1e-0f29-5a83"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Barding" hidden="false" id="f35d-6551-c859-f0be" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06a6-f3c6-1c6a-9421"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -4568,56 +4564,47 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Base (25x50)" id="3990-e353-b0de-e655" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-                <infoLink name="Mercenary Warhorse" id="83ab-aba7-4b58-2294" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+                <infoLink name="Wolfboyz&apos; Giant Wolf" id="83ab-aba7-4b58-2294" hidden="false" type="profile" targetId="f44d-f532-4810-9c00"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
             <infoLink name="Base (25x50)" id="f102-ec78-20aa-42c4" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-            <infoLink name="Voland" id="0e63-0d45-fbcb-5e26" hidden="false" type="profile" targetId="266b-2178-9fe4-2160"/>
+            <infoLink name="Oglah Khan" id="0e63-0d45-fbcb-5e26" hidden="false" type="profile" targetId="ab89-7214-ce9c-5f22"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bde4-ca75-812c-532c"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8262-f5c0-81ea-a4be"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="55"/>
+            <cost name="pts" typeId="points" value="60"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Wolfboyz" hidden="false" id="07d4-111e-2d0b-142d" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="380e-dcf3-eaa3-64e1" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="380e-dcf3-eaa3-64e1" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d83f-de54-c3f2-587d"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Lance" hidden="false" id="e0f7-b584-af5e-64e0" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3">
+            <entryLink import="true" name="Shortbow" hidden="false" id="86e0-fd36-fa65-2b1a" type="selectionEntry" targetId="f187-20d4-41f3-63cc" sortIndex="2"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="eead-34c7-096d-a6f1" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a12-ee34-f92c-ceb9"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d945-629e-a774-1beb"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="86b2-8443-032b-5df8" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+            <entryLink import="true" name="Shield" hidden="false" id="6acb-de6f-11f7-0a8f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="4">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8442-84cb-2c43-9ece"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Full Plate Armour" hidden="false" id="d3f4-ecd2-f911-2268" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="4">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ea1-2612-b6c1-6c7a"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3ec-60e9-3e75-58b3"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Mercenary Warhorse" hidden="false" id="9048-99c3-8f4f-0dd9" collective="true" subType="mount" sortIndex="6">
+            <selectionEntry type="model" import="true" name="Giant Wolf" hidden="false" id="9048-99c3-8f4f-0dd9" collective="true" subType="mount" sortIndex="5">
               <entryLinks>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="4486-17b4-1ddb-1543" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ca-2b27-9a4d-1f12"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Barding" hidden="false" id="c3e3-9fdc-14fc-6379" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfd3-d6a1-ec37-ab31"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -4627,27 +4614,27 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Base (25x50)" id="c96f-31c5-c098-29ea" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-                <infoLink name="Mercenary Warhorse" id="2c0e-9d77-6c9f-d368" hidden="false" type="profile" targetId="4b82-45c2-43d3-5985"/>
+                <infoLink name="Wolfboyz&apos; Giant Wolf" id="2c0e-9d77-6c9f-d368" hidden="false" type="profile" targetId="f44d-f532-4810-9c00"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
-            <infoLink name="Venator" id="541e-292a-1179-c5fe" hidden="false" type="profile" targetId="56e1-7e6b-d382-5320"/>
+            <infoLink name="Hobgoblin Wolfboy" id="541e-292a-1179-c5fe" hidden="false" type="profile" targetId="6b5e-d65a-53e5-a6bb"/>
             <infoLink name="Base (25x50)" id="656e-14ff-bee9-0a2f" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8295-4a26-2ce1-100c"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="2ffc-5bb7-0451-8371"/>
+            <constraint type="max" value="11" field="selections" scope="parent" shared="true" id="2ffc-5bb7-0451-8371"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="26"/>
+            <cost name="pts" typeId="points" value="15"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Voland&apos;s Venators" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="0eb0-e501-c2aa-bf96">
+        <profile name="Oglah Khan and The Wolfboyz" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="0eb0-e501-c2aa-bf96">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry (character)</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Light cavalry (character)</characteristic>
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
           </characteristics>
         </profile>
@@ -4657,14 +4644,469 @@
           <infoLinks>
             <infoLink name="Close Order" id="f3f5-cea0-4863-f1e4" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Mercenaries" id="a2ce-f489-31e6-1b50" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
-            <infoLink name="First Charge" id="053e-258d-b2b0-4075" hidden="false" type="profile" targetId="785a-2886-af42-dce9"/>
             <infoLink name="Counter Charge" id="6361-3366-1e0d-8ed8" hidden="false" type="profile" targetId="5186-798d-69d-6545"/>
             <infoLink name="Swiftstride" id="0d74-5165-3d96-8123" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Fast Cavalry" id="6448-dfdb-ecbf-e95f" hidden="false" type="profile" targetId="df-a39-e62-1c57"/>
+            <infoLink name="Impetuous" id="62e7-485a-c726-fb4a" hidden="false" type="profile" targetId="b664-8530-a988-7ba9"/>
+            <infoLink name="Skirmishers" id="6260-9fe8-8902-74fc" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Feigned Flight" id="5641-950a-8e08-9aa2" hidden="false" type="profile" targetId="eea7-89d9-a996-403c"/>
+            <infoLink name="Fire &amp; Flee" id="9af1-f1d5-a313-1a1e" hidden="false" type="profile" targetId="1a06-31aa-cbfe-1a5"/>
+            <infoLink name="Warband" id="8a5e-8a9d-3d34-59cf" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
+            <infoLink name="Chariot Runners" id="f96b-36c4-f224-ee2d" hidden="false" type="profile" targetId="afa3-a46a-2608-f62c"/>
+            <infoLink name="Treacherous Gits" id="9862-1148-042c-801f" hidden="false" type="profile" targetId="89a9-b930-b134-f4ba"/>
+            <infoLink name="Pelt of Wulfag" id="be05-6289-234a-3d5f" hidden="false" type="profile" targetId="2414-af9b-657e-ee65"/>
+            <infoLink name="Ded Shooty" id="8512-aed9-46d7-f405" hidden="false" type="profile" targetId="4f9a-e42c-62f2-47cf"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d778-3a32-7de0-8777" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tichi-Huichi&apos;s Raiders" hidden="false" id="c5b8-b0fe-0c9d-6824" page="Warhammer Fantasy Battle - 2003 - Warhammer Chronicles - Dogs of War - Regiments of Renown - Extra Material">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="a897-509b-d592-8c97" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="5165-d052-cfc2-5887" id="8dfc-b1f9-0f75-a8ad" primary="false" name="Heavy Cavalry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tichi-Huichi" hidden="false" id="0ac2-cdeb-ce59-cbd8" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="3534-e065-3a09-32b1" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="General" hidden="false" id="f71c-fc68-f5d6-e23a" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7c7-96e1-62f4-2e44"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="1ac4-e3a7-dc42-c795" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6b6-bcd8-9731-ba49"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Cavalry Spear" hidden="false" id="8db5-15a3-de88-1afc" type="selectionEntry" targetId="a2d0-40e9-83ad-23dc" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="694d-1314-12cc-7253"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="d621-be1a-7ced-c487" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bab-c2f3-139f-b45d"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="c252-0d0c-8dd5-a99e" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c7d-5ed9-65a7-c944"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Cold One" hidden="false" id="2d4d-1fc8-b3fd-da5c" collective="true" subType="mount" sortIndex="6">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="7f34-9fbf-d886-7108" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85c9-69cd-c9a8-a5fd"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc6d-c58a-f62e-d730"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5630-e677-edd9-c6c6"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (30x60)" id="9bb9-e23d-4502-2bbc" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
+                <infoLink name="Tichi Uichi&apos;s Cold Ones" id="1959-e044-1092-77b9" hidden="false" type="profile" targetId="70fe-ed8b-942c-152b"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Base (30x60)" id="e9d1-7b57-019e-21ad" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
+            <infoLink name="Tichi-Huichi" id="eec6-8afa-223b-8512" hidden="false" type="profile" targetId="259f-b3c9-f98f-78a1"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e121-bc85-122c-a4fa"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b4d-aff1-eeef-40ee"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="65"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Great Crested Skink Raiders" hidden="false" id="933c-d5cf-8fdd-6db5" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="08a2-fe08-f848-9fbe" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b280-e406-2d94-f1ad"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="7974-5011-e3a8-acfb" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc38-1f8b-ce9d-e63f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="433a-a949-993c-52b7" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5986-bb38-7ad1-8bbc"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Cold One" hidden="false" id="6d86-c2e4-89e0-065d" collective="true" subType="mount" sortIndex="5">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="8425-9fed-15be-94fc" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="409e-2ef8-75c9-7bd0"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b48-c7ba-8fcf-e3c6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c572-d0f8-cccc-3d3a"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (25x50)" id="d861-96c9-e6a9-ea57" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Hide Of The Cold Ones" id="a5c5-f9ec-43b8-19a8" hidden="false" type="profile" targetId="2f74-95eb-ce94-5b9e"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Great Crested Skink" id="6def-cbc7-139f-92a8" hidden="false" type="profile" targetId="a5a8-b7c7-5014-edc3"/>
+            <infoLink name="Base (30x60)" id="8670-56c7-1dcd-1067" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="66ba-14ca-efdb-171a"/>
+            <constraint type="max" value="11" field="selections" scope="parent" shared="true" id="d2be-ea09-6f72-4b74"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Tichi-Huichi&apos;s Raiders" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="8f5a-b436-028d-4dd9">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="f4bf-4ad6-9ed4-6a46" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="5ded-2423-6a05-6b6a" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Mercenaries" id="546c-5dc8-f423-2ba6" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="First Charge" id="2e5b-0ce6-9097-106a" hidden="false" type="profile" targetId="785a-2886-af42-dce9"/>
+            <infoLink name="Swiftstride" id="0d38-704e-fa02-064a" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Impetuous" id="c791-aa29-6d0c-afdd" hidden="false" type="profile" targetId="b664-8530-a988-7ba9"/>
+            <infoLink name="Cold Blooded (Regenegade), (Mercenaries)" id="b9d7-fa00-380f-7ba6" hidden="false" type="profile" targetId="3754-8cbd-6c71-fa5e"/>
+            <infoLink name="Armour Bane" id="3897-f703-b07f-500e" hidden="false" type="profile" targetId="2af0-975f-bb14-8b8f">
+              <modifiers>
+                <modifier type="append" value="(1, Cold One only)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Armoured Hide" id="0c86-82df-0386-0d2e" hidden="false" type="profile" targetId="5450-cbf1-3e74-254a">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fear" id="1a8c-07b5-c6fa-01a3" hidden="false" type="profile" targetId="5ec9-a98-d8c5-e18b"/>
+            <infoLink name="Stupidity" id="2f0a-26f3-f146-007b" hidden="false" type="profile" targetId="f7af-e016-1f9c-54c0"/>
+            <infoLink name="Blessed by The Old Ones" id="fc5f-cc8f-7b16-9f54" hidden="false" type="profile" targetId="ff73-f41e-e1b1-31a7"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5c74-bfe6-d5e7-a653" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hengus the Druid and Giants of Albion" hidden="false" id="1884-d731-8a46-2375" subType="unit-group">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Hengus the Druid" hidden="false" id="9aa9-1c7d-f75e-67ba" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
+          <costs>
+            <cost name="pts" typeId="points" value="70"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Mercenaries" hidden="false" id="ff7f-3815-c06c-9f2b" targetId="5b84-2c3c-869d-3522" primary="true"/>
+            <categoryLink name="Named Characters" hidden="false" id="0f19-8837-13f4-29ed" targetId="3ba8-a41e-b6ae-d4ba" primary="false"/>
+            <categoryLink name="Heavy Cavalry" hidden="false" id="4222-af5b-bcbe-f348" targetId="5165-d052-cfc2-5887" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Oggum Staff" hidden="false" id="921e-8a26-2c48-b6ed" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95e7-64dc-5452-72cc"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="512e-68f9-970e-85c7"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Oggum Staff" id="7221-e1a4-f9d3-86ab" hidden="false" type="profile" targetId="06f5-6d74-895b-ae35"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Hengus the Druid" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="6c67-f17c-be65-8170">
+              <characteristics>
+                <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (character)</characteristic>
+                <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoGroups>
+            <infoGroup name="Special Rules" id="6a81-9c36-5fc7-d67d" hidden="false">
+              <infoLinks>
+                <infoLink name="Skirmishers" id="7111-16b0-c2ab-496b" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+                <infoLink name="Shared Exile" id="6bf2-c648-9a30-d75a" hidden="false" type="profile" targetId="b553-47fe-6c9f-cc9e"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="1de6-6654-2122-ec0d" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="General" hidden="false" id="b616-5a68-3ec8-2acf" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c19e-ce91-cf54-995c"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Lores of Magic" id="10b5-a69b-255d-abca" hidden="false" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Battle Magic" hidden="false" id="1ded-4ced-ad2f-5ecd" type="selectionEntry" targetId="5b2e-35c6-f987-741e" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f93-8ee0-8294-f1eb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f40f-3e1d-5069-fc0c"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Wizard Level" id="5992-11c5-93cd-4ad5" hidden="false" defaultSelectionEntryId="dcc8-47c0-9c-7332">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f829-ff4f-29e4-71e0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5144-4170-c614-e8b5"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Wizard Level 1" hidden="false" id="b982-20ee-4f9d-822a" type="selectionEntry" targetId="7d84-39e9-a5f-947e" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="c2fa-7893-34fb-b879" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="365e-021e-734b-611e"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b62e-313c-1c03-91c2" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="6ab6-e281-6a28-6def" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="d212-2bd4-d9d3-ab58" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Hengus The Druid" id="8e53-6c51-7efb-349a" hidden="false" type="profile" targetId="18c9-1715-a417-aa8e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Faction: Orc and Goblin Tribes" hidden="false" id="78f1-4e48-b409-b2af" primary="false" targetId="96f6-a6de-3328-b74c"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Giants of Albion" id="f373-d7cc-14cf-d4c2" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Bologs" hidden="false" id="63e3-5f14-a79e-64f8">
+              <costs>
+                <cost name="pts" typeId="points" value="200"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a34-f507-5ba9-3ad2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b50-c4a9-bb75-35ab"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Giant" id="dd2c-a1c9-fc84-6803" hidden="false" type="profile" targetId="2bdd-66be-422c-34be"/>
+                <infoLink name="Base (50x50)" id="8468-9f37-c3e8-34fe" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Giant&apos;s Club" hidden="false" id="795a-2a8f-1329-073c" type="selectionEntry" targetId="5074-1862-c540-067a" collective="true" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d3e-1180-fbed-a177"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Calloused Hide" hidden="false" id="d8aa-deef-ead1-43ca" type="selectionEntry" targetId="8177-579d-d1bb-fcbb" collective="true" sortIndex="2">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Behemoth" hidden="false" id="c3d6-d93b-a339-6bd8" targetId="3755-6732-99b2-c713" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="unit" import="true" name="Cachtorr" hidden="false" id="64a9-aef6-3c25-cbe8">
+              <costs>
+                <cost name="pts" typeId="points" value="200"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed0e-47af-e0c0-ecd7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f15-2b3b-fd2a-74d8"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Giant" id="827e-56bf-1b1c-4c3b" hidden="false" type="profile" targetId="2bdd-66be-422c-34be"/>
+                <infoLink name="Base (50x50)" id="c4a6-e802-1cd8-ecee" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Giant&apos;s Club" hidden="false" id="8dcb-4a22-1771-4197" type="selectionEntry" targetId="5074-1862-c540-067a" collective="true" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13b1-4749-3085-337a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Calloused Hide" hidden="false" id="1ebd-b1f9-462a-34b6" type="selectionEntry" targetId="8177-579d-d1bb-fcbb" collective="true" sortIndex="2">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Behemoth" hidden="false" id="bc81-4b81-fddc-5c5a" targetId="3755-6732-99b2-c713" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d497-4160-0dfd-9197"/>
+          </constraints>
+          <infoGroups>
+            <infoGroup name="Special Rules" id="f4e8-fe6d-5c10-4249" hidden="false">
+              <infoLinks>
+                <infoLink name="Immune To Psychology" id="f69d-2bcc-b744-b263" hidden="false" type="profile" targetId="93d9-c75b-f655-30ac"/>
+                <infoLink name="Large Target" id="f9bd-bdc3-d677-e5af" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+                <infoLink name="Pick Up And..." id="fb67-b1f5-f0da-3350" hidden="false" type="profile" targetId="3ede-47cb-81ac-7123"/>
+                <infoLink name="Close Order" id="7f14-170d-de5e-5a30" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+                <infoLink name="Stomp Attacks" id="05c5-4c06-74a0-fc39" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+                  <modifiers>
+                    <modifier type="append" value="(D6)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Terror" id="2109-5dcb-b938-378b" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+                <infoLink name="Timmm-Berrr!" id="9103-b18e-753e-5b2a" hidden="false" type="profile" targetId="4f28-3f86-cf88-6b3a"/>
+                <infoLink name="Unbreakable" id="5769-226c-ffbf-3979" hidden="false" type="profile" targetId="d3eb-1fa0-bb19-f390"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <profiles>
+            <profile name="Giant" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="b3c3-08a4-ab5c-1c92">
+              <characteristics>
+                <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Behemoth</characteristic>
+                <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Giant&apos;s Club" hidden="false" id="5074-1862-c540-067a">
+      <infoLinks>
+        <infoLink name="Giant&apos;s Club" id="462e-67a7-690c-ab5a" hidden="false" type="profile" targetId="6def-a6e7-4366-32c3"/>
+        <infoLink name="Giant Attacks" id="21a8-3bf9-b2f8-4be9" hidden="false" targetId="a2ed-973c-700c-8f8b" type="profile"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a37-28c1-40a2-c2a8"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Calloused Hide" hidden="false" id="8177-579d-d1bb-fcbb">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cb5-39e6-8cbd-9d49"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36bc-b914-4f89-004c"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Light Armour" id="7994-9795-8d4a-5d32" hidden="false" type="profile" targetId="dbb2-4d85-84c2-528c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="The Witch Hunters" hidden="false" id="c677-e343-2366-3408">
+      <categoryLinks>
+        <categoryLink name="Mercenaries" hidden="false" id="4dde-7214-24f0-0595" targetId="5b84-2c3c-869d-3522" primary="true"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="3ea6-ec03-566e-1d78" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Johann Van Haal" hidden="false" id="8b6e-6f87-d37b-c7f3" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="401b-22bb-3201-0953" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="865f-9a00-2dbd-5375"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Brace of Pistols" hidden="false" id="86a2-6ed2-8802-fab9" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cabe-f916-5f99-23f2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="811f-a041-1578-b8ad"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Johann van Hal" id="fa15-ecde-4744-feb6" hidden="false" type="profile" targetId="6c33-2ac1-d9db-5863"/>
+            <infoLink name="Base (25x25)" id="331e-6f54-1c19-2c68" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="80"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Stake of Sigmar" hidden="false" id="aa7c-3069-31d1-f14d" sortIndex="3" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81f7-9daf-fefc-21ac"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30c0-0ebb-f39c-9ac8"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Stake of Sigmar" id="5b79-ab1a-fda6-9c15" hidden="false" type="profile" targetId="7f10-69a3-7586-5cd4"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Wilhelm Hasburg" hidden="false" id="950b-2a6c-4c7f-ea81">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="543c-b381-da07-1fe4" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fea2-16f7-7ef4-d6f9"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Brace of Pistols" hidden="false" id="4e6c-8d01-63be-e62c" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aec1-be0e-da67-7257"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30eb-bc7b-a031-7154"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Wilhelm Hasburg" id="3bea-5775-486d-d0a5" hidden="false" type="profile" targetId="2848-6272-9fdb-f0bf"/>
+            <infoLink name="Base (25x25)" id="133b-5c39-77d2-5b17" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="60"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Holy Staff" hidden="false" id="5f0a-a021-76d0-13b1" sortIndex="3" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b859-5cde-1aec-e179"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f3d-41f5-69b2-619d"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Stake of Sigmar" id="dfc6-2f19-2db0-0f0f" hidden="false" type="profile" targetId="cd12-d4cb-4b20-f6dd"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="6eef-b80e-5e64-4023" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="df90-ee67-f944-febe" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Mercenaries" id="84d0-26a6-512d-4e64" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Magical Attacks" id="1011-9351-a6ce-69da" hidden="false" type="profile" targetId="2125-6aa2-f782-42bf"/>
+            <infoLink name="Fanatical Priest" id="82d4-656e-6ff9-3d37" hidden="false" type="profile" targetId="3b81-b7eb-7225-5143"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <profiles>
+        <profile name="The Witch Hunters" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="78af-ef38-f167-f073">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6791-c37b-6d57-c65f" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5097,7 +5539,6 @@ All these special rules cannot be used against enemy fighting the Pikemen&apos;s
 
 If any model within the Cursed Company (including Kreugar himself) slays a model with only 1 wound on its starting profile, then one skeleton is created in its place. Models created in this way are added to the Cursed Company, and are armed in the same manner as the Company. The Victory points value of the unit is unaffected. This rule counts only for models that are killed in close combat, and not for models killed in other way (for example, running down fleeing troops).</characteristic>
       </characteristics>
-      <comment>https://wfb6thcharacters.blogspot.com/p/blog-page_85.html</comment>
     </profile>
     <profile name="Independent" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="2776-82d3-bfb0-d834">
       <characteristics>
@@ -5365,7 +5806,7 @@ Though the pirates claim not to notice the smell the effect is dire on the enemy
     </profile>
     <profile name="Voland" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="266b-2178-9fe4-2160" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
       <characteristics>
-        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
@@ -5669,10 +6110,7 @@ To represent this extraordinary mobility, galloper guns may move and fire.</char
     </profile>
     <profile name="Grimacing Death Mask" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="7441-662a-5748-0216">
       <characteristics>
-        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Vespero likes to hide his identity behind a mask when he prowls the narrow alleys, pursuing the dubious political ambitions of whatever prince he is serving at the time.
-
-
-The mask, which represents the grimacing face of death, is the last thing his duelling opponents see before they meet their sudden end. To represent this scarifying effect of the mask, Vespero&apos;s hand-to-hand opponents (in direct contact or in a challenge) fumble their attacks, and so they always lose their first attack in any round of combat.</characteristic>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">All enemy models in base contact with Vespero lose one attack in the first round of Close Combat. Yes, models with one attack would have zero attacks in this regard. This has no effect on models with Immunity (Psychology) special rule.</characteristic>
       </characteristics>
     </profile>
     <profile name="Roderigo Delmonte" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="a626-ce53-15d9-4f4b" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
@@ -6184,6 +6622,260 @@ This works against Stomp Attacks and Impact Hits, but does not work when the ene
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">6</characteristic>
       </characteristics>
     </profile>
+    <profile name="Pelt of Wulfag" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="2414-af9b-657e-ee65">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Wulfag was a legendary giant wolf, the steed of Khengai Khan, the founder of the Hobgoblin empire. 
+
+
+Now it is strapped on the shoulders of Oglah Khan. The pelt was a gift from the Great Khan when Oglah still enjoyed the favour of the Lord of the Steppes. 
+
+
+The Pelt carries an ancient blessing of the Hobgoblin Shamans, so that no enemy who turns his back on the Hobgoblins can escape alive. 
+
+
+If the Wolfboyz defeat their enemies in hand-to-hand combat, and elect to pursue, they can add +2 to their pursuit move.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ded Shooty" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="4f9a-e42c-62f2-47cf">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Ded Shooty: Oglah Khan’s Wolfboyz suffer no penalty for range or moving, when shooting with their bows. 
+
+
+Nor do they suffer shooting penalties when declaring ‘stand and shoot’ as a charge reaction.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Treacherous Gits" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="89a9-b930-b134-f4ba">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Treacherous gits: Unlike other Greenskins, Oglah Khan&apos;s Hobgoblins are not subject to Animosity. Instead they test for Treachery at the beginning of each of your turns. Roll a D6. If you roll 2 or more, the unit has passed the test and may fight normally. If the dice roll is 1 then the unit has been affected by Treachery. To determine what the unit does roll a D6 and consult the table below. Note that you do not need to test if the Hobgoblins are already engaged in hand-to-hand combat.
+
+
+1. The Hobgoblins halt and shoot at the nearest regiment in their own army! Turn the Hobgoblins towards the unit and resolve the shooting immediately. Note that shooting due to Treachery is worked out before normal shooting. The Hobgoblins do nothing else this turn. If there are no troops within range, then the Hobgoblins do nothing this turn. They are prevented from moving and shooting while they argue about who to fight for.
+
+
+2-5. The Hobgoblins refuse to shoot or charge the enemy, though otherwise they may act normally.
+
+
+6. The Hobgoblins decide to fight till the bitter end! No further Treachery tests are made, and the unit may act normally this turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tichi-Huichi" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="259f-b3c9-f98f-78a1" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Great Crested Skink" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="a5a8-b7c7-5014-edc3" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">2</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tichi Uichi&apos;s Cold Ones" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="70fe-ed8b-942c-152b" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">8</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">(+1)</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">-</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">1</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cold Blooded (Regenegade), (Mercenaries)" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="3754-8cbd-6c71-fa5e">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">When required to make a Leadership or Break Test, models with this special rule may roll an extra D6 and discard the highest result.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blessed by The Old Ones" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="ff73-f41e-e1b1-31a7">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Tichi-Huichi and his Skink Cold One Riders enjoy the special favor of the Old Ones. 
+
+They belong to a portentous spawning, brought forth for a mission devised untold millenia ago, and consequently a mysterious aura of protection pervades the regiment. 
+
+A strange, tropical fatigue descends on the foe, securing Tichi-Huichi&apos;s chance to get away and live to fight another day.
+
+To represent this, hand-to-hand opponents will never pursue Tichi-Huichi&apos;s Raiders if they beat them in combat, although they can try to reform as usual.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hengus The Druid" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="18c9-1715-a417-aa8e">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bologs" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="99cf-21fc-29e8-622c">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">7</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">6</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">6</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480"/>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72"/>
+      </characteristics>
+    </profile>
+    <profile name="Giant&apos;s Club" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="6def-a6e7-4366-32c3">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">*</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">*</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">*</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">*A Giant’s club may have different characteristics and special rules depending upon what they do with it, as described in the Giant Attacks special rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Giant Attacks" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="a2ed-973c-700c-8f8b" page="108" publicationId="7c89-736c-3139-24a0">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Instead of attacking normally during the Combat phase or making a Pick Up And… attack, a Giant may choose to make a ‘Giant Attack’. To make a Giant Attack, nominate an enemy unit that the Giant is engaged in combat with to be the target of the attack and roll on the Giant Attacks table below to determine what the Giant does:
+
+Giant Attacks Table:
+
+● 1: ’Eadbutt: The Giant singles out a lone enemy and ’eadbutts them. Nominate a single model in the fighting rank of an enemy unit the Giant is engaged with to be the target of this attack. That model is hit and suffers D3+1 wounds with no armour or Regeneration saves permitted (Ward saves can be attempted as normal).
+
+● 2: Belly Flop: The Giant crashes down bodily upon the enemy. Place a small (3&quot;) blast template so that its central hole is directly over the centre of the target unit. Any model (friend or foe, but not including this model) whose base lies underneath the template risks being hit and suffering a single hit, using the Strength characteristic of this model, with an AP of -2.
+
+● 3-4: Mighty Swing: The Giant swings its club through the enemy ranks. For this attack, the Giant is subject to the Random Attacks special rule and has an Attacks characteristic of D6+1, and the Giant’s club has a Strength characteristic of S+1 and an AP of -2.
+
+● 5: Thump With Club: The Giant grasps its club two-handed and cracks its enemy on the head. Nominate a single model in the fighting rank of an enemy unit the Giant is engaged with to be the target of this attack. For this attack, the Giant’s club has a Strength characteristic of S+4, an AP of -4 and the Multiple Wounds (D6) special rule.
+
+● 6: Jump Up &amp; Down: The Giant jumps around, kicking and flattening the enemy. For this attack, the Giant does not use its club. Instead, the target unit suffers D6+1 hits, each using the Strength characteristic of this model, with no armour save permitted (Ward and Regeneration saves can be attempted as normal).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Giant" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="2bdd-66be-422c-34be">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">1</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">6</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">6</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">*</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pick Up And..." typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="3ede-47cb-81ac-7123">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Instead of attacking normaly during the Combat phase or making a Giant Attack, a Giant that is engaged in combat with one or more units whose troop type is &quot;regular infantry&quot; or &quot;heavy infantry&quot; may choose to make a &quot;Pick Up And...&quot; attack, nominate an enemy unit of regular or heavy infantry that Giant is engaged in combat with. The unit must inmediatly make an Initiative test.
+
+
+- If this test is failed, a victim in picked up by the Giant. What happen next does not bear thinking about, but whatever it is, a single model belong to the target unit is inmediatly removed from play as a casualty.
+
+
+- If this test is passed, the warrior manage to duck and dodge away from the Giant´s grasping hands. No one is picked up an the attack has no effect.
+
+
+Next, roll a D6 - On a roll of 1-3, the Giant forget what it is doing and makes no further attacks.
+
+
+- On a roll of 4+, the Giant attempts to pick up another enemy. The target unit must make another Initiative test.
+
+
+This continue until the Giant forget what it is doing and stops making attacks or until the target is destroyed.
+
+
+Enemy models removed from play are considered to have been removed from the fighting rank of the enemy unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Oggum Staff" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="06f5-6d74-895b-ae35">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Hengus has an Oggum Staff, which is a special kind of magic item made by the Druids of Albion. Not only do the Oggum marks on the staff endow the bearer with power over Giants to make them serve him, but they also protect the owner from harm. To represent this, Hengus has a special save of 4+ against wounds caused in any way whatsoever</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shared Exile" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="b553-47fe-6c9f-cc9e">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Hengus, Cachtorr and Bologs are individual models and can move independently, though they may not join regiments. 
+
+
+As long as the Giants are within 6&quot; of Hengus, they may use his Leadership and are immune to Panic tests. 
+
+
+Additionally, as long as Giants are within 6&quot; of Hengus, Hengus cannot be targeted, even if he is closer to any enemy unit, as both Cachtorr and Bologs will be &quot;surprisingly&quot; careful enough to protect him (as they all want to go back their motherhood, Albion).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wilhelm Hasburg" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="2848-6272-9fdb-f0bf" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Johann van Hal" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="6c33-2ac1-d9db-5863" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Holy Staff" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="cd12-d4cb-4b20-f6dd">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Wilhelm may add +2 to his Strength when fighting in hand-to-hand combat. 
+
+
+In addition the staff will automatically wound any Skaven, Daemon or Undead Creature.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stake of Sigmar" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="7f10-69a3-7586-5cd4">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">The Stake of Sigmar fills Johann with the strength and purpose of Sigmar himself. 
+
+
+It doubles Johann&apos;s Strength when he is fighting against any Undead creatures or any Daemons, this gives him an effective Strength of 8. 
+
+
+Johann may also use the stake against Vampires in hand-to-hand combat. 
+
+
+If he does this, a single unsaved wound caused by him automatically slays any Vampire outright.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fanatical Priest" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="3b81-b7eb-7225-5143">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Wilhelm is a fanatical priest of Sigmar, obsessed with the destruction of the forces of Undead and Chaos. 
+
+
+When he reads the litanies of banishment from his holy book called ‘the Hammer of Witches’, he radiates an aura of holiness and utter faith. 
+
+
+Any Daemonology, Dark Magic or Necromantic spell targeted towards him or Johann is dispelled on a D6 roll of 4+.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Badlands Ogre Bulls" hidden="false" id="44c9-e0c9-75ce-1fce" type="selectionEntry" targetId="a4af-ea3a-49ea-d56e">
@@ -6351,6 +7043,9 @@ This works against Stomp Attacks and Impact Hits, but does not work when the ene
     </entryLink>
     <entryLink import="true" name="Lorenzo Lupo" hidden="false" id="569f-4e01-421b-45a0" targetId="c1e2-e68e-0339-48c4" type="selectionEntry"/>
     <entryLink import="true" name="Lumpin Croop&apos;s Fighting Cocks" hidden="false" id="fd31-ec16-702c-7bb4" targetId="d8c6-2cb7-6ada-462c" type="selectionEntry"/>
+    <entryLink import="true" name="Oglah Khan&apos;s Wolfboyz" hidden="false" id="f5c9-b405-fd3f-f918" targetId="1f8f-5164-29dc-f28d" type="selectionEntry"/>
+    <entryLink import="true" name="Tichi-Huichi&apos;s Raiders" hidden="false" id="73dc-758e-e9ee-ad71" targetId="c5b8-b0fe-0c9d-6824" type="selectionEntry"/>
+    <entryLink import="true" name="The Witch Hunters" hidden="false" id="a040-6134-58a2-2d73" targetId="c677-e343-2366-3408" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
