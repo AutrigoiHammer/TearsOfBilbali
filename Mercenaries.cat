@@ -4905,6 +4905,9 @@
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Faction: Orc and Goblin Tribes" hidden="false" id="78f1-4e48-b409-b2af" primary="false" targetId="96f6-a6de-3328-b74c"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="23ac-1369-5120-1e84" primary="false" name="Mercenaries"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="5291-ee48-2c61-baf8" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="3755-6732-99b2-c713" id="de89-e980-1289-922f" primary="false" name="Behemoth"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Giants of Albion" id="f373-d7cc-14cf-d4c2" hidden="false">
@@ -5081,7 +5084,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f3d-41f5-69b2-619d"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Stake of Sigmar" id="dfc6-2f19-2db0-0f0f" hidden="false" type="profile" targetId="cd12-d4cb-4b20-f6dd"/>
+                <infoLink name="Holy Staff" id="dfc6-2f19-2db0-0f0f" hidden="false" type="profile" targetId="cd12-d4cb-4b20-f6dd"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -7046,6 +7049,13 @@ Any Daemonology, Dark Magic or Necromantic spell targeted towards him or Johann 
     <entryLink import="true" name="Oglah Khan&apos;s Wolfboyz" hidden="false" id="f5c9-b405-fd3f-f918" targetId="1f8f-5164-29dc-f28d" type="selectionEntry"/>
     <entryLink import="true" name="Tichi-Huichi&apos;s Raiders" hidden="false" id="73dc-758e-e9ee-ad71" targetId="c5b8-b0fe-0c9d-6824" type="selectionEntry"/>
     <entryLink import="true" name="The Witch Hunters" hidden="false" id="a040-6134-58a2-2d73" targetId="c677-e343-2366-3408" type="selectionEntry"/>
+    <entryLink import="true" name="Hengus the Druid and Giants of Albion" hidden="false" id="fab9-27e8-bd8c-d4c5" targetId="1884-d731-8a46-2375" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="0fd4-2dea-6293-0e85" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="c8f4-dbb8-877f-a292" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="3755-6732-99b2-c713" id="ac0e-f7dd-7333-832f" primary="false" name="Behemoth"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
