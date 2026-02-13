@@ -3455,12 +3455,12 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Vespero" hidden="false" id="4bce-344b-eb09-ab87" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="e5ca-5046-1cd1-4985" type="selectionEntry" targetId="a5bd-e584-3c96-550f" sortIndex="1">
+            <entryLink import="true" name="Two Hand Weapons" hidden="false" id="e5ca-5046-1cd1-4985" type="selectionEntry" targetId="a5bd-e584-3c96-550f" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4779-f290-4957-a1c8"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Light Armour" hidden="false" id="d549-a6be-cab0-4796" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="2">
+            <entryLink import="true" name="Light Armour" hidden="false" id="d549-a6be-cab0-4796" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6c0-a59b-57da-53e0"/>
               </constraints>
@@ -3477,7 +3477,7 @@
             <cost name="pts" typeId="points" value="60"/>
           </costs>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Grimacing Mask of Death" hidden="false" id="05a8-fbc6-0f9c-1e29" sortIndex="3" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Grimacing Mask of Death" hidden="false" id="05a8-fbc6-0f9c-1e29" sortIndex="4" collective="true">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="758d-d572-ae9e-d62d"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81f5-739c-0a47-a224"/>
@@ -3487,6 +3487,16 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="548b-c0e0-d86a-fb10" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="General" hidden="false" id="8e17-eea7-c53a-5dec" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7af5-b436-53db-5d22"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Duellists" hidden="false" id="aecd-5e5e-ee45-5ac3" sortIndex="2">
           <entryLinks>
@@ -4894,8 +4904,8 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b62e-313c-1c03-91c2" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="6ab6-e281-6a28-6def" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20a7-1462-032c-305d"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="314f-025d-b272-4b4b"/>
           </constraints>
           <infoLinks>
             <infoLink name="Base (25x25)" id="d212-2bd4-d9d3-ab58" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
@@ -4917,7 +4927,6 @@
                 <cost name="pts" typeId="points" value="200"/>
               </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a34-f507-5ba9-3ad2"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b50-c4a9-bb75-35ab"/>
               </constraints>
               <infoLinks>
@@ -4945,7 +4954,6 @@
                 <cost name="pts" typeId="points" value="200"/>
               </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed0e-47af-e0c0-ecd7"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f15-2b3b-fd2a-74d8"/>
               </constraints>
               <infoLinks>
@@ -5000,6 +5008,9 @@
           </profiles>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b62e-313c-1c03-91c2" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Giant&apos;s Club" hidden="false" id="5074-1862-c540-067a">
       <infoLinks>
@@ -5027,12 +5038,12 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Johann Van Haal" hidden="false" id="8b6e-6f87-d37b-c7f3" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="401b-22bb-3201-0953" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="401b-22bb-3201-0953" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="865f-9a00-2dbd-5375"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Brace of Pistols" hidden="false" id="86a2-6ed2-8802-fab9" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2"/>
+            <entryLink import="true" name="Brace of Pistols" hidden="false" id="86a2-6ed2-8802-fab9" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="3"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cabe-f916-5f99-23f2"/>
@@ -5046,7 +5057,7 @@
             <cost name="pts" typeId="points" value="80"/>
           </costs>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Stake of Sigmar" hidden="false" id="aa7c-3069-31d1-f14d" sortIndex="3" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Stake of Sigmar" hidden="false" id="aa7c-3069-31d1-f14d" sortIndex="4" collective="true">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81f7-9daf-fefc-21ac"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30c0-0ebb-f39c-9ac8"/>
@@ -5056,8 +5067,18 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="4a07-53e5-1352-4b55" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="General" hidden="false" id="1e89-5ba7-9587-81b6" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e31-5881-3f1a-cfbf"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Wilhelm Hasburg" hidden="false" id="950b-2a6c-4c7f-ea81">
+        <selectionEntry type="model" import="true" name="Wilhelm Hasburg" hidden="false" id="950b-2a6c-4c7f-ea81" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="543c-b381-da07-1fe4" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
