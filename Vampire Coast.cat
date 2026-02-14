@@ -5957,10 +5957,6 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a331-285e-7f25-4ea9"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a46-ba50-6a6d-9a9b"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Base (25x25)" id="1a99-10d0-a78a-7091" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
         <infoLink name="Fleet Admiral" id="9810-a840-22d0-8c78" hidden="false" type="profile" targetId="23d7-3d4c-1c3e-d439"/>
