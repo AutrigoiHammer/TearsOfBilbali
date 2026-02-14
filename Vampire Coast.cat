@@ -5538,17 +5538,6 @@ Additionally, if he suffers a miscast, he must roll twice and choose the lower 
                   <categoryLinks>
                     <categoryLink name="MOUNT" hidden="false" id="18d6-6fdb-f56f-0398" targetId="c96a-608-5de4-b943" primary="false"/>
                   </categoryLinks>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aba2369b-f537e829" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
