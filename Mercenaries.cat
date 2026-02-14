@@ -4645,7 +4645,7 @@
             <constraint type="max" value="11" field="selections" scope="parent" shared="true" id="2ffc-5bb7-0451-8371"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="15"/>
+            <cost name="pts" typeId="points" value="16"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4892,7 +4892,7 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Lores of Magic" id="10b5-a69b-255d-abca" hidden="false" sortIndex="4">
               <entryLinks>
-                <entryLink import="true" name="Battle Magic" hidden="false" id="1ded-4ced-ad2f-5ecd" type="selectionEntry" targetId="5b2e-35c6-f987-741e" sortIndex="">
+                <entryLink import="true" name="Battle Magic" hidden="false" id="1ded-4ced-ad2f-5ecd" type="selectionEntry" targetId="5b2e-35c6-f987-741e">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f93-8ee0-8294-f1eb"/>
                   </constraints>
@@ -4901,7 +4901,7 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Wizard Level" id="5992-11c5-93cd-4ad5" hidden="false" defaultSelectionEntryId="dcc8-47c0-9c-7332" sortIndex="3">
               <entryLinks>
-                <entryLink import="true" name="Wizard Level 1" hidden="false" id="b982-20ee-4f9d-822a" type="selectionEntry" targetId="7d84-39e9-a5f-947e" sortIndex="">
+                <entryLink import="true" name="Wizard Level 1" hidden="false" id="b982-20ee-4f9d-822a" type="selectionEntry" targetId="7d84-39e9-a5f-947e">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f829-ff4f-29e4-71e0"/>
                   </constraints>
