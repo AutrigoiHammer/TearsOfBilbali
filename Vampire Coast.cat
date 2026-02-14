@@ -4098,27 +4098,6 @@ Additionally, if he suffers a miscast, he must roll twice and choose the lower 
         <entryLink import="true" name="Black Coach" hidden="false" id="c836-0d73-9c65-9e8a" type="selectionEntry" targetId="d6a7d14-ce6bc81e"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Terrorgheist" hidden="false" id="fb8a7c6-7dcb6950" collective="false">
-      <entryLinks>
-        <entryLink import="true" name="Terrorgheist" hidden="false" id="7d7e-8011-54af-8285" type="selectionEntry" targetId="450fb3b2-1df3aa7c">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b44b-c763-752f-411a"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <profiles>
-        <profile name="Terrorgheist" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="1679-b9d4-4ed6-8413">
-          <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Behemoth</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink name="Behemoth" hidden="false" id="39a9-e9a7-20d9-1689" targetId="3755-6732-99b2-c713" primary="false"/>
-        <categoryLink name="Faction: Vampire Counts" hidden="false" id="50f7-9bf2-6600-36c0" primary="false" targetId="7345-d692-6f6a-d6f6"/>
-      </categoryLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Varghulf" hidden="false" id="70896e07-29f6d655" collective="false">
       <profiles>
         <profile name="Varghulf" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="fc9e5d1d-14858ad3">
@@ -5533,21 +5512,120 @@ Additionally, if he suffers a miscast, he must roll twice and choose the lower 
               </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Mount" id="0121-13ef-09ae-eb88" hidden="false" sortIndex="8">
-              <entryLinks>
-                <entryLink import="true" name="Terrorgheist" hidden="true" id="ed97-b1a5-2354-8274" type="selectionEntry" targetId="450fb3b2-1df3aa7c">
-                  <categoryLinks>
-                    <categoryLink name="MOUNT" hidden="false" id="18d6-6fdb-f56f-0398" targetId="c96a-608-5de4-b943" primary="false"/>
-                  </categoryLinks>
-                </entryLink>
-              </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f66-2ea4-06df-8103"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Terrorgheist" hidden="false" id="3c7f-e288-e225-8cb0">
+                  <infoLinks>
+                    <infoLink name="Terrorgheist" id="911d-d678-a824-0b0b" hidden="false" type="profile" targetId="20d6-3c33-ed64-2649">
+                      <modifiers>
+                        <modifier type="set" value="(+5)" field="83ed-7b82-bf1f-e558">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="(+1)" field="ab43-8b61-83e7-d090">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="-" field="59f9-ccf5-1155-fb05">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="-" field="c435-6b14-f77e-3c72">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Base (100x150)" id="3e27-1da1-f84e-be65" hidden="false" type="profile" targetId="b56f-7f81-4ba1-ed2c"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="205"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Filth-encrusted Talons" hidden="false" id="0cb0-4031-db97-c866" type="selectionEntry" targetId="88ad-981d-3b69-1c8b" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="9647-77f1-7dc7-1e47"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Rancid Maw" hidden="false" id="9fa2-08f9-e8a4-b4d2" type="selectionEntry" targetId="c15513a3-aa66a3d1" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6a83-e0dc-263d-5423"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Light Armour" hidden="false" id="b3a0-9506-02c4-8525" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ef2a-0b5b-0e57-ac87"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e8f-e358-dff5-4561"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Terrorgheist" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="3932-73ca-eea1-33a0">
+                      <characteristics>
+                        <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Behemoth</characteristic>
+                        <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoGroups>
+                    <infoGroup name="Special Rules" id="216e-bdd2-8462-9f4d" hidden="false">
+                      <infoLinks>
+                        <infoLink name="Close Order" id="36af-c274-9313-7634" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+                        <infoLink name="Fly" id="4ca1-3469-18db-d1aa" hidden="false" type="profile" targetId="c557-6102-9a35-bbcd">
+                          <modifiers>
+                            <modifier type="append" value="(9)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Indomitable" id="9c29-04eb-b6e0-f33c" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
+                          <modifiers>
+                            <modifier type="append" value="(1)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Infested" id="ae46-802b-419b-7e4d" hidden="false" type="profile" targetId="2368-87b7-7d34-5a"/>
+                        <infoLink name="Large Target" id="3f2a-3609-c7a2-e2c0" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+                        <infoLink name="Necromantic Undead" id="cf6b-db9b-ae58-4a51" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+                        <infoLink name="Regeneration" id="ef4f-b23c-8934-3f0d" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+                          <modifiers>
+                            <modifier type="append" value="(5+)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Stomp Attacks" id="706c-02f4-1398-e0b4" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+                          <modifiers>
+                            <modifier type="append" value="(D6)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Swiftstride" id="ae86-5ce4-70e6-4a00" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+                        <infoLink name="Terror" id="2ec3-900f-6b2c-014a" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+                        <infoLink name="Wailing Dirge" id="2b49-434a-9593-bf5b" hidden="false" type="profile" targetId="522d-e0c9-a174-ca95"/>
+                      </infoLinks>
+                    </infoGroup>
+                  </infoGroups>
+                  <categoryLinks>
+                    <categoryLink name="Behemoth" hidden="false" id="2544-a574-2e1b-8aef" targetId="3755-6732-99b2-c713" primary="false"/>
+                    <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="e20c-63d0-ccd9-656d" targetId="may-have-armour"/>
+                  </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="185" field="points">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad02-9368-7d41-c519"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="104a-94df-93db-f113"/>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="ad02-9368-7d41-c519" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="104a-94df-93db-f113" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="8a57-6256-945f-5492" targetId="f3f7-ca43-674e-115f" primary="false"/>
