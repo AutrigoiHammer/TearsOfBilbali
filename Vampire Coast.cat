@@ -5997,7 +5997,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Rotten Promethean" hidden="true" id="8e14-ee64-cb54-41fb" subType="mount">
+    <selectionEntry type="model" import="true" name="Rotten Promethean" hidden="true" id="8e14-ee64-cb54-41fb">
       <infoLinks>
         <infoLink name="Rotten Promethean" id="fbb8-a9c4-0805-8601" hidden="false" type="profile" targetId="11eb-c074-120f-3059"/>
         <infoLink name="Base (50x50)" id="745f-0e7b-f6c4-111c" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
