@@ -5803,7 +5803,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="5c1c-9d82-824b-1fd0"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Vampiric Powers (Vampire Coast)" hidden="false" id="343d-ade1-8ea9-5708" type="selectionEntryGroup" targetId="7777-2277-767c-4f2b" collapsible="true" sortIndex="9">
+        <entryLink import="true" name="Vampiric Powers (Vampire Coast)" hidden="false" id="343d-ade1-8ea9-5708" type="selectionEntryGroup" targetId="7777-2277-767c-4f2b" sortIndex="9">
           <constraints>
             <constraint type="max" value="100" field="points" scope="parent" shared="false" id="8720-45ef-95e5-3de1"/>
           </constraints>
