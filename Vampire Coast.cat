@@ -6102,6 +6102,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Luthor Harkon, Arch-Grand Commodore" hidden="false" id="d79f-ac5f-f89b-6c8f" targetId="d9b6-7813-c586-d3b6" type="selectionEntry"/>
+    <entryLink import="true" name="Fleet Admiral" hidden="false" id="1963-b8aa-aaf3-6d29" targetId="c151-6aa1-07ac-f39c" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
