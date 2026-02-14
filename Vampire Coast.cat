@@ -5794,6 +5794,8 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
       <categoryLinks>
         <categoryLink name="VAMPIRE" hidden="false" id="0f19-77c9-51b8-308f" targetId="4813-a63e-57ed-dc4" primary="false"/>
         <categoryLink name="Faction: Vampire Counts" hidden="false" id="ad8c-2584-7600-d508" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="2c88-82d0-ed17-1ba8" primary="true" name="Characters"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="e724-b492-678a-2972" primary="false" name="Regular Infantry"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Hand Weapon" hidden="false" id="2a1c-8137-9c42-90de" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
