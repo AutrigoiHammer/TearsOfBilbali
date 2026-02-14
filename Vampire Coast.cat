@@ -5604,6 +5604,8 @@ Additionally, if he suffers a miscast, he must roll twice and choose the lower 
       <categoryLinks>
         <categoryLink name="VAMPIRE" hidden="false" id="e4cc-4a43-66a5-56d3" targetId="4813-a63e-57ed-dc4" primary="false"/>
         <categoryLink name="Faction: Vampire Counts" hidden="false" id="fb66-ff26-79d4-8b9f" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="e6d1-9480-06e1-7f47" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="2ddd-5a57-dec8-fb5c" primary="true" name="Named Characters"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5660,6 +5662,7 @@ Additionally, if he suffers a miscast, he must roll twice and choose the lower 
         <categoryLink targetId="0c7a-2d2d-f007-ad74" id="f982-7071-10e5-9fe0" primary="false" name="0-1 unit of Depth Guard per 1,000 points may have the Drilled special rule"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Luthor Harkon, Arch-Grand Commodore" hidden="false" id="d79f-ac5f-f89b-6c8f" targetId="d9b6-7813-c586-d3b6" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
