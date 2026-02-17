@@ -1397,8 +1397,8 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
-        <characteristic name="T" typeId="ab43-8b61-83e7-d090">(+1)</characteristic>
-        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">(+1)</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">-</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">(+2)</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
@@ -1415,6 +1415,42 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gunnery Wight" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="d34b-ca3a-1e96-ec4c">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Back off sir!" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="f205-02b6-69a3-baf1">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">If this model is &apos;infantry&apos; type, it is considered under heavy cover if it is within 3&quot; of a friendly unit whose troop type is &apos;war machine&apos;</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Master gunner" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="3196-edd5-234c-e412">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Except if the model is engaged in combat, once per turn, a friendly Vampire Coast war machine within its command range can reroll a single Artillery Dice.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mourngul Hunter" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="e4b9-5447-7680-1f3e">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">7</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">4</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -6144,27 +6180,6 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7c30-8303-647e-5317" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Command" id="5529-e25a-dd0b-c21a" hidden="false" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="General" hidden="false" id="c291-2572-2daf-a680" type="selectionEntry" targetId="7d76-b1a1-1535-a04c">
-              <modifiers>
-                <modifier type="add" value="The General of a Vampire Counts army must also be a wizard." field="error">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d84-39e9-a5f-947e" shared="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8e47-73e8-f7f9-808" shared="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="59f1-ac46-8123-3f8d" shared="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="50bd-b918-574a-60c3" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7d76-b1a1-1535-a04c" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Wizard Level" id="eb03-65c0-0e30-710d" hidden="false" sortIndex="6">
           <entryLinks>
             <entryLink import="true" name="Wizard Level 1" hidden="false" id="91e9-41ad-7125-2e22" type="selectionEntry" targetId="7d84-39e9-a5f-947e" sortIndex="1">
@@ -6224,6 +6239,42 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3510-397b-300d-35ec" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Command" id="6afc-b90c-8c15-4f16" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="false" id="fb71-fab3-97b3-49e3" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1">
+              <modifiers>
+                <modifier type="add" value="The General of a Vampire Counts army must also be a wizard." field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d84-39e9-a5f-947e" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8e47-73e8-f7f9-808" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="59f1-ac46-8123-3f8d" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="50bd-b918-574a-60c3" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7d76-b1a1-1535-a04c" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="6a32-9bd0-064a-ea9c" type="selectionEntry" targetId="5b87-9cf5-953d-3829" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Magic Standards" hidden="false" id="e9b3-4a15-3b29-c29a" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baa4-f165-0ca2-4b46"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="007f-8b45-67cc-1264" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Base (25x25)" id="c92e-5eb3-74cb-333e" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
@@ -6265,6 +6316,223 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gunnery Wight" hidden="false" id="dbad-3992-3c49-0508" collective="false">
+      <profiles>
+        <profile name="Gunnery Wight" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="8c6c-0325-6953-8a69">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry (character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="VAMPIRE" hidden="false" id="e4a4-ab3c-77d7-112b" targetId="4813-a63e-57ed-dc4" primary="false"/>
+        <categoryLink name="Faction: Vampire Counts" hidden="false" id="6dd3-07f3-9aef-f80a" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="d55a-18a7-2ef4-e5dd" primary="true" name="Characters"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="32c9-5e23-5dc0-813a" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Hand Weapon" hidden="false" id="7fa6-b009-9912-0bab" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="20fb-5057-b472-ce79"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Vampiric Powers (Vampire Coast)" hidden="false" id="e16a-625a-5891-c449" type="selectionEntryGroup" targetId="7777-2277-767c-4f2b" sortIndex="9">
+          <constraints>
+            <constraint type="max" value="50" field="points" scope="parent" shared="false" id="e0a4-eba7-85e9-6b26"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Magic Items" hidden="false" id="900a-0d1a-4486-4e05" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="10">
+          <constraints>
+            <constraint type="max" value="50" field="points" scope="parent" shared="false" id="1614-7f5b-f529-2270"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="9ee3-e00b-54f6-30c5" hidden="false" flatten="true" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="6a45-d901-31f4-81a7" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="points" value="3"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Great Weapon" hidden="false" id="6c00-de88-c917-16de" type="selectionEntry" targetId="2283-26e9-76c3-6048" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="4"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Halberd" hidden="false" id="42ff-49c4-a971-8a63" type="selectionEntry" targetId="f0a5-1b2e-3d2b-d540" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="points" value="4"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ae84-e18c-5ba5-69e4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armour" id="d19b-cb19-dd00-effa" hidden="false" flatten="true" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Light Armour" hidden="false" id="ded3-6dfc-28dc-403e" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="6ebc-1f5b-0f70-0263" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="6"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a921-297f-58eb-1af8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mount" id="31c0-999f-326d-fc81" hidden="false" sortIndex="8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa2-a934-f115-eeb3"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Rotten Promethean" hidden="false" id="d9a1-675e-a23b-e09d" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="c31e-59ee-03d1-2f2f" hidden="false" flatten="true" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Pistol" hidden="false" id="4644-30c4-f183-a0fa" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="points" value="4"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Handgun" hidden="false" id="1b49-45b5-b74f-bbb5" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="4"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4edb-6e6c-d297-d736" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Command" id="872a-fefb-fb1a-0440" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="General" hidden="false" id="f371-5883-241b-b1b1" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1">
+              <modifiers>
+                <modifier type="add" value="The General of a Vampire Counts army must also be a wizard." field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d84-39e9-a5f-947e" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8e47-73e8-f7f9-808" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="59f1-ac46-8123-3f8d" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="50bd-b918-574a-60c3" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7d76-b1a1-1535-a04c" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b802-55f3-cf02-c2c1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Base (25x25)" id="eb92-dad6-d690-ced4" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+        <infoLink name="Gunnery Wight" id="71b3-ee71-77d9-cfe7" hidden="false" type="profile" targetId="d34b-ca3a-1e96-ec4c"/>
+      </infoLinks>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="e4b1-e7a9-9efe-4240" hidden="false">
+          <infoLinks>
+            <infoLink name="Necromantic Undead" id="d405-9ce8-4d71-6544" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="24d8-bbbc-d67f-0632" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Aquatic (Vampire Coast)" id="9abc-4315-5a84-4333" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
+            <infoLink name="Wet Powder" id="170a-2e58-4646-7fe4" hidden="false" type="profile" targetId="d358-920a-d368-7363">
+              <modifiers>
+                <modifier type="append" value="(5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Cleaving Blow" id="4ae8-d688-1dd5-0802" hidden="false" type="profile" targetId="1947-af53-7f07-815f"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <modifiers>
+        <modifier type="remove" value="f3f7-ca43-674e-115f" field="category" id="0054-ec98-bd3a-9a57">
+          <comment>if mounted</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" name="Mourngul Hunter" id="f1b4-241b-a5a7-e778" hidden="false">
+      <infoLinks>
+        <infoLink name="Mourngul Hunter" hidden="false" type="profile" id="17cb-8bda-7f8c-0ddf" targetId="e4b9-5447-7680-1f3e"/>
+        <infoLink name="Base (50x50)" hidden="false" type="profile" id="e9be-0f0a-d5f2-f633" targetId="7813-4d15-143d-1bf1"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="205"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9706-e913-5ace-dfd4"/>
+      </constraints>
+      <profiles>
+        <profile name="Mourngul Hunter" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="104b-1193-a6b3-b7c7">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous Creature</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" hidden="false" id="c307-28d1-a397-ede8">
+          <infoLinks>
+            <infoLink name="Loner" hidden="false" id="a330-deee-1372-db4b" type="profile" targetId="2ecd-c6b3-bd8b-864b"/>
+            <infoLink name="Indomitable" hidden="false" id="f950-f8f7-8e39-568a" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Magic Resistance" hidden="false" id="40f2-90a8-5913-afb2" type="profile" targetId="90ed-c9be-a611-79cc">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Frenzy" hidden="false" id="861f-2586-d478-cd6f" type="profile" targetId="3b0c-a477-8823-3a25"/>
+            <infoLink name="Necromantic Undead" hidden="false" id="6393-5aee-abfb-546b" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" hidden="false" id="aa55-642a-da73-e603" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Stomp Attacks" hidden="false" id="cfb5-4c4c-392a-036d" type="profile" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Swiftstride" hidden="false" id="6bf8-ad44-b9a5-8751" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Terror" hidden="false" id="9e83-8e7a-c1eb-1b32" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+            <infoLink name="Wailing Dirge" hidden="false" id="5f11-0314-ae29-622f" type="profile" targetId="522d-e0c9-a174-ca95"/>
+            <infoLink name="Ethereal" id="a550-c9c0-4b42-d8ae" hidden="false" type="profile" targetId="6561-8029-dac3-162"/>
+            <infoLink name="Vanguard" id="a0a4-2752-3c27-8162" hidden="false" type="profile" targetId="691e-10ec-4f7c-a2c4"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="d061-20f8-560b-ff3e" primary="true" name="Characters"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="5ccf-a4e8-86c3-ac46" primary="false" name="Regular Infantry"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -6323,6 +6591,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
     <entryLink import="true" name="Luthor Harkon, Arch-Grand Commodore" hidden="false" id="d79f-ac5f-f89b-6c8f" targetId="d9b6-7813-c586-d3b6" type="selectionEntry"/>
     <entryLink import="true" name="Fleet Admiral" hidden="false" id="1963-b8aa-aaf3-6d29" targetId="c151-6aa1-07ac-f39c" type="selectionEntry"/>
     <entryLink import="true" name="Fleet Captain" hidden="false" id="3927-31de-b816-86b0" targetId="2d78-ba13-706c-bcb8" type="selectionEntry"/>
+    <entryLink import="true" name="Mourngul Hunter" hidden="false" id="0fe6-95da-35e3-7cf2" targetId="f1b4-241b-a5a7-e778" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
