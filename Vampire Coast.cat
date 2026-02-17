@@ -1453,6 +1453,15 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
       </characteristics>
     </profile>
+    <profile name="Spectral Claws" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="2c3f-3b64-ea89-d141">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-2</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Magical Attacks, Multiple Wounds (D3)</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -6482,7 +6491,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <infoLink name="Base (50x50)" hidden="false" type="profile" id="e9be-0f0a-d5f2-f633" targetId="7813-4d15-143d-1bf1"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="205"/>
+        <cost name="pts" typeId="points" value="210"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9706-e913-5ace-dfd4"/>
@@ -6533,6 +6542,17 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="d061-20f8-560b-ff3e" primary="true" name="Characters"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="5ccf-a4e8-86c3-ac46" primary="false" name="Regular Infantry"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Spectral Claws" hidden="false" id="485e-0170-e6d7-fbec">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="932e-ce4a-090d-fb4d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0d2-7bdb-e786-f72e"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Spectral Claws" id="61b3-1675-d3b3-4068" hidden="false" type="profile" targetId="2c3f-3b64-ea89-d141"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -6592,6 +6612,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
     <entryLink import="true" name="Fleet Admiral" hidden="false" id="1963-b8aa-aaf3-6d29" targetId="c151-6aa1-07ac-f39c" type="selectionEntry"/>
     <entryLink import="true" name="Fleet Captain" hidden="false" id="3927-31de-b816-86b0" targetId="2d78-ba13-706c-bcb8" type="selectionEntry"/>
     <entryLink import="true" name="Mourngul Hunter" hidden="false" id="0fe6-95da-35e3-7cf2" targetId="f1b4-241b-a5a7-e778" type="selectionEntry"/>
+    <entryLink import="true" name="Gunnery Wight" hidden="false" id="3b0e-a7ae-ef93-15a0" targetId="dbad-3992-3c49-0508" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
