@@ -4606,19 +4606,24 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="124f-e493-91e4-a2fa"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Light Armour" hidden="false" id="eead-34c7-096d-a6f1" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3">
+            <entryLink import="true" name="Light Armour" hidden="false" id="eead-34c7-096d-a6f1" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d945-629e-a774-1beb"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="6acb-de6f-11f7-0a8f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="4">
+            <entryLink import="true" name="Shield" hidden="false" id="6acb-de6f-11f7-0a8f" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3ec-60e9-3e75-58b3"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Cavalry Spear" hidden="false" id="6e9d-cca4-fe38-fdaf" type="selectionEntry" targetId="a2d0-40e9-83ad-23dc" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f569-9b8a-852e-9074"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Giant Wolf" hidden="false" id="9048-99c3-8f4f-0dd9" collective="true" subType="mount" sortIndex="5">
+            <selectionEntry type="model" import="true" name="Giant Wolf" hidden="false" id="9048-99c3-8f4f-0dd9" collective="true" subType="mount" sortIndex="6">
               <entryLinks>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="4486-17b4-1ddb-1543" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
                   <constraints>
