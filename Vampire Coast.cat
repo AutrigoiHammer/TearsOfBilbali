@@ -6770,20 +6770,6 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Animated Hulks" hidden="false" id="28e2-623b-3839-0dcf">
-      <entryLinks>
-        <entryLink import="true" name="Claws, anchors and tentacles" hidden="false" id="3d0d-5134-f3b3-8be3" type="selectionEntry" targetId="e64c-45d3-04e5-bfc0" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d27-6913-8ae9-bc5e"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <constraints>
-        <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4649-3c83-5bfc-c46f"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Base (40x40)" id="e83c-905d-b1f2-72fb" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
-        <infoLink name="Animated Hulk" id="1c19-68bf-a7a3-c45a" hidden="false" type="profile" targetId="1e87-f3be-d4cb-45a8"/>
-      </infoLinks>
       <profiles>
         <profile name="Animated Hulks" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="877c-d7fd-bb93-e0f3">
           <characteristics>
@@ -6821,16 +6807,13 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <categoryLink targetId="fec1-537a-bbeb-7926" id="7c93-b790-4dd8-96ae" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Great Hulk" hidden="false" id="8652-852e-ea95-64a6" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Command" hidden="false" id="8652-852e-ea95-64a6" sortIndex="1">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Command" id="c524-25a9-8fed-e8b6" hidden="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="13be-8984-9f05-ed62" includeChildSelections="false"/>
-              </constraints>
+            <selectionEntryGroup name="Great Hulk" id="c524-25a9-8fed-e8b6" hidden="false">
               <infoLinks>
                 <infoLink name="Base (40x40)" id="bbec-ba2b-35cb-b109" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
                 <infoLink name="Champion" id="f44e-9097-3d8b-cae9" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
-                <infoLink name="Crypt Ghoul" id="8eb2-abb1-c81b-a389" hidden="false" type="profile" targetId="b54a-269f-1849-d5f1">
+                <infoLink name="Animated Hulk" id="8eb2-abb1-c81b-a389" hidden="false" type="profile" targetId="1e87-f3be-d4cb-45a8">
                   <modifiers>
                     <modifier type="set" value="Great Hulk" field="name"/>
                     <modifier type="set" value="D6+1" field="dddc-9fbd-b0fd-a480"/>
@@ -6842,6 +6825,25 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
           <costs>
             <cost name="pts" typeId="points" value="7"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="13be-8984-9f05-ed62" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Animated Hulk" hidden="false" id="02e3-da00-ccd6-ba39" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Claws, anchors and tentacles" hidden="false" id="3d0d-5134-f3b3-8be3" type="selectionEntry" targetId="e64c-45d3-04e5-bfc0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d27-6913-8ae9-bc5e"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4649-3c83-5bfc-c46f"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Animated Hulk" id="1c19-68bf-a7a3-c45a" hidden="false" type="profile" targetId="1e87-f3be-d4cb-45a8"/>
+            <infoLink name="Base (40x40)" id="e83c-905d-b1f2-72fb" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
