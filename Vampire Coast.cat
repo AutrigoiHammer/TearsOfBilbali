@@ -982,8 +982,8 @@ Resurrected models are added to the front rank until it reaches the minimum requ
       <characteristics>
         <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
-        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-2</characteristic>
-        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">-</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Armor Bane (1)</characteristic>
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
       </characteristics>
     </profile>
@@ -1504,6 +1504,19 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
     <profile name="Syreen Wailing Dirge" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="0570-8037-3c4c-000a">
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">The unit as a whole has Wailing Dirge special rule, but not each individual model. Measure from any aprt of the unit. Instead of a -2 penalty to Leadership, consider -1 penalty for every five (5) Syreens in the unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Animated Hulk" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="1e87-f3be-d4cb-45a8">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">5</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">D6</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">5</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -6756,6 +6769,93 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <categoryLink targetId="bd13-e9f6-db7d-36eb" id="8b5e-35a3-d332-d341" primary="false" name="0-1 Syreens per 2,000 points"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Animated Hulks" hidden="false" id="28e2-623b-3839-0dcf">
+      <entryLinks>
+        <entryLink import="true" name="Claws, anchors and tentacles" hidden="false" id="3d0d-5134-f3b3-8be3" type="selectionEntry" targetId="e64c-45d3-04e5-bfc0" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d27-6913-8ae9-bc5e"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4649-3c83-5bfc-c46f"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Base (40x40)" id="e83c-905d-b1f2-72fb" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+        <infoLink name="Animated Hulk" id="1c19-68bf-a7a3-c45a" hidden="false" type="profile" targetId="1e87-f3be-d4cb-45a8"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Animated Hulks" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="877c-d7fd-bb93-e0f3">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="2f48-7e4e-0e2e-2103" hidden="false">
+          <infoLinks>
+            <infoLink name="Necromantic Undead" id="29b4-a6ee-ba40-efa9" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="6262-6706-db70-4c20" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Aquatic (Vampire Coast)" id="5068-e5de-a67b-2ba9" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
+            <infoLink name="Random Attacks" id="171a-e612-56fd-edb3" hidden="false" type="profile" targetId="1b08-4621-6379-ff1f"/>
+            <infoLink name="Indomitable" id="5127-4f63-018f-c38c" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1"/>
+            <infoLink name="Close Order" id="cf1b-ae8c-f3d4-46ac" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Stomp Attacks" id="2f68-b6d6-3f29-65c5" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Impact Hits" id="4441-ad8f-c92d-41b4" hidden="false" type="profile" targetId="5c2-e9dd-2715-a0c0"/>
+            <infoLink name="Random Attacks" id="b403-7da0-12e3-c0f9" hidden="false" type="profile" targetId="1b08-4621-6379-ff1f"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="9fdc-c53c-dd3d-f31c" primary="true" name="Special"/>
+        <categoryLink targetId="5c55-f9d6-b181-92f8" id="7fde-df04-15c0-698e" primary="false" name="Monstrous Infantry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="7c93-b790-4dd8-96ae" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Great Hulk" hidden="false" id="8652-852e-ea95-64a6" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="c524-25a9-8fed-e8b6" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="13be-8984-9f05-ed62" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (40x40)" id="bbec-ba2b-35cb-b109" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+                <infoLink name="Champion" id="f44e-9097-3d8b-cae9" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
+                <infoLink name="Crypt Ghoul" id="8eb2-abb1-c81b-a389" hidden="false" type="profile" targetId="b54a-269f-1849-d5f1">
+                  <modifiers>
+                    <modifier type="set" value="Great Hulk" field="name"/>
+                    <modifier type="set" value="D6+1" field="dddc-9fbd-b0fd-a480"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="7"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="48"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Claws, anchors and tentacles" hidden="false" id="e64c-45d3-04e5-bfc0">
+      <infoLinks>
+        <infoLink name="Wicked Claws" hidden="false" id="075b-31be-3e65-11aa" type="profile" targetId="a952-5825-e8b9-bd43"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca1a-9547-b5a0-e95e"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Renegades (Square Based)" hidden="false" id="9fd6-2f67-505f-ff4c" type="selectionEntry" targetId="974c-3bf3-af4b-701d">
@@ -6861,6 +6961,13 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
       <categoryLinks>
         <categoryLink targetId="f0e3-2e32-8866-ea32" id="ab3b-dbac-ddc4-071c" primary="true" name="Core"/>
         <categoryLink targetId="19f9-8dd8-bba4-625b" id="6ecb-af69-6e69-df7f" primary="false" name="War Beast"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Animated Hulks" hidden="false" id="98bd-d352-a5d1-dada" targetId="28e2-623b-3839-0dcf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="0cd1-4454-0b13-90d5" primary="true" name="Special"/>
+        <categoryLink targetId="5c55-f9d6-b181-92f8" id="b7e4-65b3-65a3-6a42" primary="false" name="Monstrous Infantry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="c8eb-112d-d247-d106" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
