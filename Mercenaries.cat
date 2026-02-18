@@ -1327,6 +1327,9 @@
             </infoLink>
             <infoLink name="The Mighty Khan" id="c39d-9b13-c51a-9226" hidden="false" type="profile" targetId="6901-1582-6337-60bc"/>
             <infoLink name="Warcry of the Steppes" id="eec2-bdfa-ff77-b6c8" hidden="false" type="profile" targetId="7b33-78e2-e3b2-35d9"/>
+            <infoLink name="Swiftstride" id="2673-edf5-73fc-1010" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Warband" id="a014-8935-29a1-c546" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
+            <infoLink name="Fear" id="125e-337b-7009-f054" hidden="false" type="profile" targetId="5ec9-a98-d8c5-e18b"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -6636,7 +6639,7 @@ This works against Stomp Attacks and Impact Hits, but does not work when the ene
     <profile name="Wolfboyz&apos; Giant Wolf" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f44d-f532-4810-9c00" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">9</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
