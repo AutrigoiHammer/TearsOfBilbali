@@ -5690,8 +5690,8 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             <entryLink import="true" name="Necromancy" hidden="false" id="1d36-d85a-61b9-c952" type="selectionEntry" targetId="3d31-fd64-e074-700a" sortIndex="3"/>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="b98d-415d-40b1-7f92"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="23d6-6f8b-841b-c123" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b98d-415d-40b1-7f92"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d6-6f8b-841b-c123" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
