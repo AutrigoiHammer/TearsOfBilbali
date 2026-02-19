@@ -6649,7 +6649,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             <constraint type="max" value="20" field="selections" scope="self" shared="true" id="4157-472d-7379-d7ec" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Claws and Fangs" hidden="false" id="e28e-e9f7-8b84-33d0" type="selectionEntry" targetId="abaa-0e8a-4661-740f"/>
+            <entryLink import="true" name="Claws and Fangs" hidden="false" id="e28e-e9f7-8b84-33d0" type="selectionEntry" targetId="abaa-0e8a-4661-740f" collective="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="7"/>
