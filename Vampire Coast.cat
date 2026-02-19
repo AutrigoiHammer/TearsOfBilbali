@@ -1546,6 +1546,33 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Enemy units that enter combat with this model suffer a -1 modifier to their Initiative and Weapon Skill attributes.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Zombie Deck Dropper" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="cf31-5e9b-6a71-1e85">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Second Indiscriminate Bombardment" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="a05b-0936-ae2e-cc94">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">One second time per game, a unit with this special rule can make a &quot;Drop Bomb&quot; Attack against a single enemy that is not engaged in combat. 
+To do this, this unit must move (fly) over the unit it wishes to attack during the Remaining Movements subphase.
+Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength 4 hits, each with an AP of -, for each model of this unit that moved over it.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Indiscriminate Bombardment" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="95e3-e279-9b68-b61b">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Once per game, a unit with this special rule can make a &quot;Drop Bomb&quot; Attack against a single enemy that is not engaged in combat. 
+To do this, this unit must move (fly) over the unit it wishes to attack during the Remaining Movements subphase.
+Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength 4 hits, each with an AP of -, for each model of this unit that moved over it.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -4858,7 +4885,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" name="Zombie Pirate" id="57d0-e868-2921-1294" hidden="false" sortIndex="1">
+        <selectionEntry type="model" name="Zombie Pirate" id="57d0-e868-2921-1294" hidden="false" sortIndex="2">
           <infoLinks>
             <infoLink name="Zombie" hidden="false" type="profile" id="78db-3042-666c-2ba8" targetId="8cc9-bd5d-e6e4-4126"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="db96-107f-769b-6fae" targetId="193c-4d0d-de6b-bbb1"/>
@@ -4913,7 +4940,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Command" hidden="false" id="cdda-fefa-6ded-504a" sortIndex="2">
+        <selectionEntryGroup name="Command" hidden="false" id="cdda-fefa-6ded-504a" sortIndex="1">
           <selectionEntries>
             <selectionEntry name="Musician" id="322a-2548-a12e-6279" type="model" import="true" hidden="false" subType="crew" sortIndex="3">
               <costs>
@@ -7056,6 +7083,9 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79f9-d796-8708-1307"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35ea-be21-f98e-fd47"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Rotten Claws" id="76e9-d4b5-48c1-0a74" hidden="false" type="profile" targetId="555a-420b-01b4-84cc"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="f535-bebf-d318-77a4" subType="crew" sortIndex="2" collective="true">
               <entryLinks>
@@ -7186,6 +7216,137 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deck Droppers" hidden="false" id="6104-679f-5f7a-7573">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Zombie Deck Dropper" hidden="false" id="9f7a-bb9f-bb0a-bb63">
+          <infoLinks>
+            <infoLink name="Zombie Deck Dropper" id="9b27-3a91-0cf3-69df" hidden="false" type="profile" targetId="cf31-5e9b-6a71-1e85"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="3a6f-f48d-b444-398f" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="822c-68a8-485e-edcf"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7706-993e-84c0-2b0f"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Regular Infantry" hidden="false" id="ca66-f641-710a-97fb" targetId="f3f7-ca43-674e-115f" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Fell Bat" hidden="false" id="e891-73dd-04a6-aa46" subType="mount" sortIndex="3" collective="true">
+              <infoLinks>
+                <infoLink name="Fell Bat" id="8ef9-2f76-dab2-e114" hidden="false" type="profile" targetId="2f14-99b3-e1d-1674"/>
+                <infoLink name="Base (40x40)" id="a718-c834-8890-e567" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="f6af-e491-6138-f046" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="e3ec-ae2b-2df0-f3c3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cec8-cbb1-4d18-24ec"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a99-7e8b-9e7d-05d0"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Monstrous Infantry" hidden="false" id="20d7-1a02-9b97-0348" targetId="5c55-f9d6-b181-92f8" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Second Indiscriminate Bombardment" hidden="false" id="7446-3317-2b23-800f" sortIndex="4" collective="true">
+              <infoLinks>
+                <infoLink name="Second Indiscriminate Bombardment" id="98cd-0528-1ccb-97a0" hidden="false" type="profile" targetId="a05b-0936-ae2e-cc94"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6ba6-64ee-6be4-f12d" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="4152-2202-4ab9-5ac8" hidden="false" flatten="true" sortIndex="2" collective="true">
+              <entryLinks>
+                <entryLink import="true" name="Handgun" hidden="false" id="268b-bbe9-99f9-4797" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
+                  <costs>
+                    <cost name="pts" typeId="points" value="1"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Pistol" hidden="false" id="d449-3fb1-29c9-bbbd" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a292-b086-449a-3690" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0b31-87ff-db2a-e941" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Blunderbluss" hidden="false" id="be0d-addf-87fd-438f" sortIndex="3" collective="true">
+                  <infoLinks>
+                    <infoLink name="Pirate Blunderbluss" id="3b5f-caea-4197-1360" hidden="false" type="profile" targetId="eaa8-e08d-73d2-8216"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e3c-809c-df55-7ea7"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Deck Droppers" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5037-8a1e-6bbc-69f9">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous Cavalry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="8969-46bf-9bb2-5534" hidden="false">
+          <infoLinks>
+            <infoLink name="Fly" id="3109-dc63-59e4-bc5f" hidden="false" type="profile" targetId="c557-6102-9a35-bbcd">
+              <modifiers>
+                <modifier type="append" value="(10)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Necromantic Undead" id="2943-aec5-f62e-f1f1" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="a647-5175-b179-34be" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Skirmishers" id="9b30-175d-cc2f-6451" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Swiftstride" id="0aaf-928f-7bd6-d953" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Wet Powder" id="b00e-8be9-f692-4100" hidden="false" type="profile" targetId="d358-920a-d368-7363">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Crew" id="3547-fa23-f402-915a" hidden="false" type="profile" targetId="f518-70e5-57ba-de92">
+              <modifiers>
+                <modifier type="append" value="(Only Zombie Deck Dropper)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Indiscriminate Bombardment" id="a1bd-02b3-2517-e044" hidden="false" type="profile" targetId="95e3-e279-9b68-b61b"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink name="Base (40x40)" id="c640-258e-2d45-fee5" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
