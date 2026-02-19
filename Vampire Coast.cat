@@ -5684,7 +5684,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Lores of Magic" id="5d83-6c16-ff72-79e5" hidden="false" sortIndex="7">
+        <selectionEntryGroup name="Lores of Magic" id="5d83-6c16-ff72-79e5" hidden="false" sortIndex="7" defaultSelectionEntryId="fa94-e429-9d29-be1b">
           <entryLinks>
             <entryLink import="true" name="Dark Magic" hidden="false" id="fa94-e429-9d29-be1b" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="1"/>
             <entryLink import="true" name="Necromancy" hidden="false" id="1d36-d85a-61b9-c952" type="selectionEntry" targetId="3d31-fd64-e074-700a" sortIndex="3"/>
@@ -5841,7 +5841,6 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="ad02-9368-7d41-c519" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="104a-94df-93db-f113" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <infoLinks>
@@ -6665,7 +6664,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <entryLink import="true" name="Claws and Fangs" hidden="false" id="e28e-e9f7-8b84-33d0" type="selectionEntry" targetId="abaa-0e8a-4661-740f" sortIndex="2"/>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="699f-5fad-c1a6-a4e7"/>
+        <constraint type="min" value="5" field="selections" scope="self" shared="true" id="699f-5fad-c1a6-a4e7" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Base (25x50)" id="964e-da7f-01f4-655b" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
