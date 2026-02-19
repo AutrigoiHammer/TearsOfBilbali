@@ -6631,7 +6631,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             <cost name="pts" typeId="points" value="0"/>
           </costs>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Malign Dog" hidden="false" id="f9a2-b007-6500-9baa" subType="crew">
+            <selectionEntry type="model" import="true" name="Malign Dog" hidden="false" id="f9a2-b007-6500-9baa">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="55f5-26ed-efbf-ee96" includeChildSelections="false"/>
               </constraints>
