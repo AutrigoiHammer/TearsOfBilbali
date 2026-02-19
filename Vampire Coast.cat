@@ -7045,7 +7045,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <categoryLink targetId="fec1-537a-bbeb-7926" id="80a5-0a1f-f8dd-e350" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Rotten Prometheans" hidden="false" id="dcdd-2eed-1298-20b6" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Rotten Prometheans" hidden="false" id="dcdd-2eed-1298-20b6" sortIndex="2" collective="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Rotten Claws" hidden="false" id="6912-6bb1-9156-324e" sortIndex="2">
               <constraints>
