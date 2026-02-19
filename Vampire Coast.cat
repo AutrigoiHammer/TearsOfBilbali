@@ -978,7 +978,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <characteristic name="Description" typeId="9f84-4221-785a-db50">At the end of any Combat phase in which this character inflicted one or more unsaved wounds, roll a D6. On a roll of 6, this character recovers a single lost Wound. However, so great is this character’s hunger that, whenever they (and any unit they have joined) make a Pursuit roll, they roll only a single D6 (rather than the usual 2D6).</characteristic>
       </characteristics>
     </profile>
-    <profile name="Wicked Claws" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="a952-5825-e8b9-bd43">
+    <profile name="Claws, Anchors and Tentacles" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="a952-5825-e8b9-bd43">
       <characteristics>
         <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
@@ -1541,6 +1541,11 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
       </characteristics>
     </profile>
+    <profile name="Stink Rot" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="6ea9-28d6-b6a3-8890">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Enemy units that enter combat with this model suffer a -1 modifier to their Initiative and Weapon Skill attributes.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -1599,7 +1604,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aafb-a248-e557-937c"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Wicked Claws" hidden="false" id="6b9f81f0-b84cd1ba">
+    <selectionEntry type="upgrade" import="true" name="Claws, anchors and tentacles" hidden="false" id="6b9f81f0-b84cd1ba">
       <infoLinks>
         <infoLink name="Wicked Claws" hidden="false" id="bffcd781-d51706d7" type="profile" targetId="a952-5825-e8b9-bd43"/>
       </infoLinks>
@@ -6993,6 +6998,198 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <infoLink name="Evil Claws" id="2358-2013-cfdb-cbaf" hidden="false" type="profile" targetId="d0b6-5d12-6f99-4481"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Rotten Prometheans" hidden="false" id="0aa7-345d-ce1d-d377" subType="mount">
+      <infoLinks>
+        <infoLink name="Rotten Promethean" id="6afa-b6f8-e3ef-4bef" hidden="false" type="profile" targetId="11eb-c074-120f-3059"/>
+        <infoLink name="Base (50x50)" id="d374-cf67-8126-ad31" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4941-4c18-9e2f-4011"/>
+        <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="4d97-d4f1-d485-8f10"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="7da4-bf9d-1daf-e84e" hidden="false">
+          <infoLinks>
+            <infoLink name="Necromantic Undead" id="0918-77b4-00f6-3d7b" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="fafa-b857-fe56-e510" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Stomp Attacks" id="2efc-7d5c-1f62-834e" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Armoured Hide" id="31be-9018-a3b9-132d" hidden="false" type="profile" targetId="5450-cbf1-3e74-254a">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Aquatic (Vampire Coast)" id="0c40-382f-23ac-4716" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
+            <infoLink name="Close Order" id="0856-bd23-5df6-54ac" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Indomitable" id="c5f3-9a02-5e4e-54a2" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Wet Powder" id="0a36-042c-091e-d327" hidden="false" type="profile" targetId="d358-920a-d368-7363">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Crew" id="96ce-ebe9-1d1c-f591" hidden="false" type="profile" targetId="f518-70e5-57ba-de92"/>
+            <infoLink name="Stink Rot" id="12cc-77b6-91fe-3494" hidden="false" type="profile" targetId="6ea9-28d6-b6a3-8890"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Heavy Cavalry" hidden="false" id="c096-091c-4736-6b0d" targetId="5165-d052-cfc2-5887" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rotten Prometheans" hidden="false" id="dcdd-2eed-1298-20b6" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rotten Claws" hidden="false" id="6912-6bb1-9156-324e" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79f9-d796-8708-1307"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35ea-be21-f98e-fd47"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Drilled" hidden="false" id="bcb9-ee46-ecb7-be26" collective="true" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Drilled" id="1214-d28c-7f3c-836b" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b8dc-93f2-4bdc-e47a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Zombie Pirates" hidden="false" id="f535-bebf-d318-77a4" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="3ab5-01b9-6901-0ce9" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2c76-e04c-e9c8-a09b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Light Armour" hidden="false" id="2279-1113-20dc-6651" type="selectionEntry" targetId="7cab-40e6-f134-de78">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="cede-21da-d448-330b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="84ff-0934-0b48-aaa6"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9c17-ba82-cc34-29aa"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Zombie" id="d013-f28c-6d7b-ebf3" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons" id="9dc8-7bba-1eed-682f" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Handgun" hidden="false" id="3a8b-a620-d037-e6ea" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="1">
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b719-22c9-2b82-e445" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1167-9178-984e-4232" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Blunderbluss" hidden="false" id="e79d-1674-2cfe-20bc" sortIndex="2">
+                      <infoLinks>
+                        <infoLink name="Pirate Blunderbluss" id="5385-363b-8f52-aca2" hidden="false" type="profile" targetId="eaa8-e08d-73d2-8216"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="271e-1467-fbc8-d751"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="56"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="a621-0a96-0788-fdec" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Abysal Promethean" hidden="false" id="d633-6c87-03ed-e121" subType="crew" collective="true" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Rotten Promethean" id="a809-c050-709c-8db5" hidden="false" type="profile" targetId="11eb-c074-120f-3059">
+                  <modifiers>
+                    <modifier type="set" value="Abyssal Promethean" field="name"/>
+                    <modifier type="increment" value="1" field="dddc-9fbd-b0fd-a480"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Base (50x50)" id="548f-2ffc-c70d-1e0f" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
+                <infoLink name="Champion" id="027f-c5b4-6dc3-5fd1" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="7"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a2c7-2a98-6f7c-5cc0" includeChildSelections="false"/>
+              </constraints>
+              <comment>upgrades: d2a99e2c-6e12bd76</comment>
+              <categoryLinks>
+                <categoryLink name="Heavy Infantry" hidden="false" id="1fa9-372e-a2c2-30b4" targetId="ca7e-d004-ccde-caf3" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="c807-1a15-13b7-b40a" targetId="may-have-armour"/>
+                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="2c39-3fe2-14d1-4569" targetId="may-have-shield"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="a67c-f303-908c-47cf" subType="crew" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="7"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="e271-0d41-8775-d8af" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Magic Standards" hidden="false" id="25e5-d41e-731e-faff" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+                  <constraints>
+                    <constraint type="max" value="50" field="points" scope="parent" shared="false" id="3f69-2b66-1198-0176"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <comment>upgrades: d2a99e2c-6e12bd76</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6f16-59cd-d493-8245" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Heavy Infantry" hidden="false" id="5ca4-8de3-25e0-f35b" targetId="ca7e-d004-ccde-caf3" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="1133-feb5-3c41-3b0e" targetId="may-have-armour"/>
+                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="590c-4d0c-73eb-99ed" targetId="may-have-shield"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Musician" hidden="false" id="c544-8931-24bf-9afa" subType="crew" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="points" value="7"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Musician" id="655e-315d-bcf3-4e21" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <comment>upgrades: d2a99e2c-6e12bd76</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f3b9-d4a6-602e-c75b" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Heavy Infantry" hidden="false" id="5406-e6dd-3019-c789" targetId="ca7e-d004-ccde-caf3" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="ac03-1ec4-361a-8911" targetId="may-have-armour"/>
+                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="7041-5239-cd7e-947b" targetId="may-have-shield"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Renegades (Square Based)" hidden="false" id="9fd6-2f67-505f-ff4c" type="selectionEntry" targetId="974c-3bf3-af4b-701d">
@@ -7800,7 +7997,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             <cost name="pts" typeId="points" value="215"/>
           </costs>
           <entryLinks>
-            <entryLink name="Wicked Claws" id="a4e6ad9-896dc92f" hidden="false" type="selectionEntry" targetId="6b9f81f0-b84cd1ba" sortIndex="1" import="true" collective="true">
+            <entryLink name="Wicked Claws" id="a4e6ad9-896dc92f" hidden="false" type="selectionEntry" targetId="7414-cec3-7cd7-a94b" sortIndex="1" import="true" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="91ab79d6-9fe766a0"/>
               </constraints>
