@@ -6976,6 +6976,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
         <categoryLink targetId="633f-f67a-1b6a-d203" id="bdfa-7ccc-0278-bee7" primary="true" name="Special"/>
         <categoryLink targetId="5c55-f9d6-b181-92f8" id="fcfa-1cdb-40c2-d02b" primary="false" name="Monstrous Infantry"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="2c6d-c18b-0582-f265" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink targetId="ff43-70b9-379d-d8aa" id="8529-29d9-85de-ca2d" primary="false" name="0-1 Mournguls per 2,000 points"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="4ead-c996-d543-3f34" hidden="false">
@@ -7478,6 +7479,14 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
         <categoryLink targetId="fec1-537a-bbeb-7926" id="783d-1258-e2b4-ba95" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Mournguls" hidden="false" id="9577-3b84-eb68-92a4" targetId="11f9-c6dd-a5dd-8746" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="6a35-e2e8-1fcd-9d37" primary="true" name="Special"/>
+        <categoryLink targetId="5c55-f9d6-b181-92f8" id="6977-79cc-e548-a3e6" primary="false" name="Monstrous Infantry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="37c9-737e-9524-2be6" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink targetId="ff43-70b9-379d-d8aa" id="96e2-7448-9b28-7465" primary="false" name="0-1 Mournguls per 2,000 points"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d68-ce18-4468-647b" targetId="6c22-b0e4-7c83-f9ce"/>
@@ -7760,6 +7769,29 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
         <modifier type="increment" value="1" field="5eab-ae1f-c0da-77e3">
           <repeats>
             <repeat value="2000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="2ea6-3a71-5dd0-f87b" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="0-1 Mournguls per 2,000 points" hidden="true" id="ff43-70b9-379d-d8aa">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="f53b-bcc0-b24a-7453" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="f53b-bcc0-b24a-7453">
+          <repeats>
+            <repeat value="2000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="86a5-2dac-dbaa-885b"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="f53b-bcc0-b24a-7453">
+          <repeats>
+            <repeat value="2000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="a6e5-5620-9f2d-c4be" includeChildSelections="true"/>
           </repeats>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
