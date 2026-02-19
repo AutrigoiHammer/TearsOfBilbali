@@ -7227,7 +7227,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
             <cost name="pts" typeId="points" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="3a6f-f48d-b444-398f" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="3a6f-f48d-b444-398f" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="822c-68a8-485e-edcf"/>
               </constraints>
@@ -7240,14 +7240,11 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
             <categoryLink name="Regular Infantry" hidden="false" id="ca66-f641-710a-97fb" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Fell Bat" hidden="false" id="e891-73dd-04a6-aa46" subType="mount" sortIndex="3" collective="true">
+            <selectionEntry type="model" import="true" name="Fell Bat" hidden="false" id="e891-73dd-04a6-aa46" subType="mount" sortIndex="4" collective="true">
               <infoLinks>
                 <infoLink name="Fell Bat" id="8ef9-2f76-dab2-e114" hidden="false" type="profile" targetId="2f14-99b3-e1d-1674"/>
                 <infoLink name="Base (40x40)" id="a718-c834-8890-e567" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
               </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
               <entryLinks>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="f6af-e491-6138-f046" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
                   <constraints>
@@ -7263,7 +7260,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
                 <categoryLink name="Monstrous Infantry" hidden="false" id="20d7-1a02-9b97-0348" targetId="5c55-f9d6-b181-92f8" primary="false"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Second Indiscriminate Bombardment" hidden="false" id="7446-3317-2b23-800f" sortIndex="4" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Second Indiscriminate Bombardment" hidden="false" id="7446-3317-2b23-800f" sortIndex="1" collective="true">
               <infoLinks>
                 <infoLink name="Second Indiscriminate Bombardment" id="98cd-0528-1ccb-97a0" hidden="false" type="profile" targetId="a05b-0936-ae2e-cc94"/>
               </infoLinks>
@@ -7276,7 +7273,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="4152-2202-4ab9-5ac8" hidden="false" flatten="true" sortIndex="2" collective="true">
+            <selectionEntryGroup name="Weapons" id="4152-2202-4ab9-5ac8" hidden="false" flatten="true" sortIndex="3" collective="true">
               <entryLinks>
                 <entryLink import="true" name="Handgun" hidden="false" id="268b-bbe9-99f9-4797" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
                   <costs>
