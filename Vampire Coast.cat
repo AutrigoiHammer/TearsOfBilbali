@@ -1519,6 +1519,28 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">5</characteristic>
       </characteristics>
     </profile>
+    <profile name="Evil Claws" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="d0b6-5d12-6f99-4481">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Magical Attacks</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
+      </characteristics>
+    </profile>
+    <profile name="Mournguls" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="74c2-7adc-6a52-5169">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -6803,7 +6825,11 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             </infoLink>
             <infoLink name="Aquatic (Vampire Coast)" id="5068-e5de-a67b-2ba9" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
             <infoLink name="Random Attacks" id="171a-e612-56fd-edb3" hidden="false" type="profile" targetId="1b08-4621-6379-ff1f"/>
-            <infoLink name="Indomitable" id="5127-4f63-018f-c38c" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1"/>
+            <infoLink name="Indomitable" id="5127-4f63-018f-c38c" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
             <infoLink name="Close Order" id="cf1b-ae8c-f3d4-46ac" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Stomp Attacks" id="2f68-b6d6-3f29-65c5" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
               <modifiers>
@@ -6811,7 +6837,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
               </modifiers>
             </infoLink>
             <infoLink name="Impact Hits" id="4441-ad8f-c92d-41b4" hidden="false" type="profile" targetId="5c2-e9dd-2715-a0c0"/>
-            <infoLink name="Random Attacks" id="b403-7da0-12e3-c0f9" hidden="false" type="profile" targetId="1b08-4621-6379-ff1f"/>
+            <infoLink name="Random Movement" id="b403-7da0-12e3-c0f9" hidden="false" type="profile" targetId="4924-fc1f-bcd-746a"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -6821,28 +6847,6 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <categoryLink targetId="fec1-537a-bbeb-7926" id="7c93-b790-4dd8-96ae" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Command" hidden="false" id="8652-852e-ea95-64a6" sortIndex="1">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Great Hulk" id="c524-25a9-8fed-e8b6" hidden="false">
-              <infoLinks>
-                <infoLink name="Base (40x40)" id="bbec-ba2b-35cb-b109" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
-                <infoLink name="Champion" id="f44e-9097-3d8b-cae9" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
-                <infoLink name="Animated Hulk" id="8eb2-abb1-c81b-a389" hidden="false" type="profile" targetId="1e87-f3be-d4cb-45a8">
-                  <modifiers>
-                    <modifier type="set" value="Great Hulk" field="name"/>
-                    <modifier type="set" value="D6+1" field="dddc-9fbd-b0fd-a480"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="7"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="13be-8984-9f05-ed62" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Animated Hulk" hidden="false" id="02e3-da00-ccd6-ba39" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Claws, anchors and tentacles" hidden="false" id="3d0d-5134-f3b3-8be3" type="selectionEntry" targetId="e64c-45d3-04e5-bfc0">
@@ -6863,6 +6867,30 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
       <costs>
         <cost name="pts" typeId="points" value="48"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="dba1-3fec-78fb-20b3" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Great Hulk" hidden="false" id="cf7c-adef-0701-94c1">
+              <infoLinks>
+                <infoLink name="Animated Hulk" id="8eb2-abb1-c81b-a389" hidden="false" type="profile" targetId="1e87-f3be-d4cb-45a8">
+                  <modifiers>
+                    <modifier type="set" value="Great Hulk" field="name"/>
+                    <modifier type="set" value="D6+1" field="dddc-9fbd-b0fd-a480"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Base (40x40)" id="bbec-ba2b-35cb-b109" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
+                <infoLink name="Champion" id="f44e-9097-3d8b-cae9" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="7"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="13be-8984-9f05-ed62" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Claws, anchors and tentacles" hidden="false" id="e64c-45d3-04e5-bfc0">
       <infoLinks>
@@ -6871,6 +6899,99 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca1a-9547-b5a0-e95e"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mournguls" hidden="false" id="11f9-c6dd-a5dd-8746">
+      <profiles>
+        <profile name="Mournguls" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="58d9-49ff-3e14-20af">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="3eef-e4df-e099-41cf" hidden="false">
+          <infoLinks>
+            <infoLink name="Necromantic Undead" id="efef-28d9-2876-a100" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="dc19-bc59-bb7c-87dd" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Flammable" id="38bf-fcc6-5ec2-3fbb" hidden="false" type="profile" targetId="8f64-6d4c-466b-1b94"/>
+            <infoLink name="Indomitable" id="36cc-1d5c-402c-1fec" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Open Order" id="f5fa-89ad-0d16-c73f" hidden="false" type="profile" targetId="5b67-8535-146c-7cea"/>
+            <infoLink name="Stomp Attacks" id="5b83-a48f-8209-cef9" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Frenzy" id="756c-d7a2-f47b-9e54" hidden="false" type="profile" targetId="3b0c-a477-8823-3a25"/>
+            <infoLink name="Ethereal" id="be92-e3cf-d275-fb5d" hidden="false" type="profile" targetId="6561-8029-dac3-162"/>
+            <infoLink name="Armour Bane" id="0e5e-1251-18fd-2b63" hidden="false" type="profile" targetId="2af0-975f-bb14-8b8f">
+              <modifiers>
+                <modifier type="append" value="(2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="bdfa-7ccc-0278-bee7" primary="true" name="Special"/>
+        <categoryLink targetId="5c55-f9d6-b181-92f8" id="fcfa-1cdb-40c2-d02b" primary="false" name="Monstrous Infantry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="2c6d-c18b-0582-f265" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="4ead-c996-d543-3f34" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Vanguard" hidden="false" id="e7f7-1ed1-c06d-80e3" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Vanguard" id="492d-d505-712b-a656" hidden="false" type="profile" targetId="691e-10ec-4f7c-a2c4"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a8b-6387-f63b-6839"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b432-39f0-ad87-ee85"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ambushers" hidden="false" id="d1dc-d313-d7ce-16d1" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Ambushers" id="988c-143d-aebf-7ba6" hidden="false" type="profile" targetId="8c0b-6fe6-dc06-512"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bd3-d5ba-4711-2b13"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c59-6534-c8c1-855f"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2328-ef8d-6636-0794"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Evil Claws" hidden="false" id="5d39-71cd-d0f2-9a81" type="selectionEntry" targetId="69b6-eba8-f491-9591"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8a4d-49f9-4e72-76ca"/>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8577-1052-16d0-29de"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Mournguls" id="dae8-7b65-0997-49f9" hidden="false" type="profile" targetId="74c2-7adc-6a52-5169"/>
+        <infoLink name="Base (50x50)" id="68f3-2f17-392d-5100" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Evil Claws" hidden="false" id="69b6-eba8-f491-9591">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4115-b555-2c83-fedd"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a855-c402-9bca-ee4d"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Evil Claws" id="2358-2013-cfdb-cbaf" hidden="false" type="profile" targetId="d0b6-5d12-6f99-4481"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
