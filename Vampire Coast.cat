@@ -6998,7 +6998,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <infoLink name="Evil Claws" id="2358-2013-cfdb-cbaf" hidden="false" type="profile" targetId="d0b6-5d12-6f99-4481"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Rotten Prometheans" hidden="false" id="0aa7-345d-ce1d-d377" subType="mount">
+    <selectionEntry type="unit" import="true" name="Rotten Prometheans" hidden="false" id="0aa7-345d-ce1d-d377">
       <infoLinks>
         <infoLink name="Rotten Promethean" id="6afa-b6f8-e3ef-4bef" hidden="false" type="profile" targetId="11eb-c074-120f-3059"/>
         <infoLink name="Base (50x50)" id="d374-cf67-8126-ad31" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
@@ -7044,7 +7044,9 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         </infoGroup>
       </infoGroups>
       <categoryLinks>
-        <categoryLink name="Heavy Cavalry" hidden="false" id="c096-091c-4736-6b0d" targetId="5165-d052-cfc2-5887" primary="false"/>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="bb64-ead8-6bb5-e723" primary="true" name="Special"/>
+        <categoryLink targetId="2c85-5f2b-9288-1257" id="cec9-b8d0-c2c7-5716" primary="false" name="Monstrous Cavalry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="80a5-0a1f-f8dd-e350" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Rotten Prometheans" hidden="false" id="dcdd-2eed-1298-20b6" sortIndex="2">
@@ -7302,6 +7304,13 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <categoryLink targetId="633f-f67a-1b6a-d203" id="0cd1-4454-0b13-90d5" primary="true" name="Special"/>
         <categoryLink targetId="5c55-f9d6-b181-92f8" id="b7e4-65b3-65a3-6a42" primary="false" name="Monstrous Infantry"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="c8eb-112d-d247-d106" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rotten Prometheans" hidden="false" id="b334-bd50-1bca-f7f1" targetId="0aa7-345d-ce1d-d377" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="442d-03a7-9f3a-7560" primary="true" name="Special"/>
+        <categoryLink targetId="2c85-5f2b-9288-1257" id="4d5c-0d9d-7864-876e" primary="false" name="Monstrous Cavalry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="5dee-2460-0ae0-39f6" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
