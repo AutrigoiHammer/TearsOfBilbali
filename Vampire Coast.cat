@@ -7044,6 +7044,82 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <categoryLink targetId="2c85-5f2b-9288-1257" id="cec9-b8d0-c2c7-5716" primary="false" name="Monstrous Cavalry"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="80a5-0a1f-f8dd-e350" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Rotten Prometheans" hidden="false" id="1635-5aa9-7089-4f49" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="4d97-d4f1-d485-8f10"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4941-4c18-9e2f-4011"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rotten Claws" hidden="false" id="6912-6bb1-9156-324e" collective="true" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79f9-d796-8708-1307"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35ea-be21-f98e-fd47"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="f535-bebf-d318-77a4" subType="crew" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="3ab5-01b9-6901-0ce9" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2c76-e04c-e9c8-a09b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Light Armour" hidden="false" id="2279-1113-20dc-6651" type="selectionEntry" targetId="7cab-40e6-f134-de78">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="cede-21da-d448-330b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="84ff-0934-0b48-aaa6"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9c17-ba82-cc34-29aa"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Zombie" id="d013-f28c-6d7b-ebf3" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons" id="9dc8-7bba-1eed-682f" hidden="false" flatten="true" collective="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Handgun" hidden="false" id="3a8b-a620-d037-e6ea" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="1">
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b719-22c9-2b82-e445" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1167-9178-984e-4232" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Blunderbluss" hidden="false" id="e79d-1674-2cfe-20bc" sortIndex="2" collective="true">
+                      <infoLinks>
+                        <infoLink name="Pirate Blunderbluss" id="5385-363b-8f52-aca2" hidden="false" type="profile" targetId="eaa8-e08d-73d2-8216"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="271e-1467-fbc8-d751"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Drilled" hidden="false" id="bcb9-ee46-ecb7-be26" collective="true" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Drilled" id="1214-d28c-7f3c-836b" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b8dc-93f2-4bdc-e47a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="56"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command" id="a621-0a96-0788-fdec" hidden="false" sortIndex="1">
           <selectionEntries>
@@ -7113,77 +7189,6 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Rotten Prometheans" id="7035-718b-f960-c999" hidden="false" sortIndex="2">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="f535-bebf-d318-77a4" sortIndex="2">
-              <entryLinks>
-                <entryLink import="true" name="Hand Weapon" hidden="false" id="3ab5-01b9-6901-0ce9" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2c76-e04c-e9c8-a09b"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Light Armour" hidden="false" id="2279-1113-20dc-6651" type="selectionEntry" targetId="7cab-40e6-f134-de78">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="cede-21da-d448-330b"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="84ff-0934-0b48-aaa6"/>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9c17-ba82-cc34-29aa"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Zombie" id="d013-f28c-6d7b-ebf3" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapons" id="9dc8-7bba-1eed-682f" hidden="false" flatten="true" collective="true">
-                  <entryLinks>
-                    <entryLink import="true" name="Handgun" hidden="false" id="3a8b-a620-d037-e6ea" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="1">
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b719-22c9-2b82-e445" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1167-9178-984e-4232" includeChildSelections="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Blunderbluss" hidden="false" id="e79d-1674-2cfe-20bc" sortIndex="2" collective="true">
-                      <infoLinks>
-                        <infoLink name="Pirate Blunderbluss" id="5385-363b-8f52-aca2" hidden="false" type="profile" targetId="eaa8-e08d-73d2-8216"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="271e-1467-fbc8-d751"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rotten Claws" hidden="false" id="6912-6bb1-9156-324e" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79f9-d796-8708-1307"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35ea-be21-f98e-fd47"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Drilled" hidden="false" id="bcb9-ee46-ecb7-be26" collective="true" sortIndex="3">
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Drilled" id="1214-d28c-7f3c-836b" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b8dc-93f2-4bdc-e47a" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4941-4c18-9e2f-4011"/>
-            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="4d97-d4f1-d485-8f10"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
