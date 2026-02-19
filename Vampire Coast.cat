@@ -7347,6 +7347,11 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
       <infoLinks>
         <infoLink name="Base (40x40)" id="c640-258e-2d45-fee5" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="369c-6843-4463-6755" primary="true" name="Special"/>
+        <categoryLink targetId="2c85-5f2b-9288-1257" id="c0fd-5856-62fb-5c37" primary="false" name="Monstrous Cavalry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="1c08-60de-f1d1-d12f" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -7467,6 +7472,13 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
         <categoryLink targetId="633f-f67a-1b6a-d203" id="442d-03a7-9f3a-7560" primary="true" name="Special"/>
         <categoryLink targetId="2c85-5f2b-9288-1257" id="4d5c-0d9d-7864-876e" primary="false" name="Monstrous Cavalry"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="5dee-2460-0ae0-39f6" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Deck Droppers" hidden="false" id="5e9d-f8a9-9a7c-dc77" targetId="6104-679f-5f7a-7573" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="8d48-0690-874d-7535" primary="true" name="Special"/>
+        <categoryLink targetId="2c85-5f2b-9288-1257" id="55ec-79e9-35ee-9150" primary="false" name="Monstrous Cavalry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="783d-1258-e2b4-ba95" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
