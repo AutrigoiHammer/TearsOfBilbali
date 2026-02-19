@@ -6626,26 +6626,6 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Command" hidden="false" id="22a1-aeb7-d63f-f10d" sortIndex="1">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-          </costs>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Malign Dog" hidden="false" id="f9a2-b007-6500-9baa">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="55f5-26ed-efbf-ee96" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Base (25x50)" id="f093-12e0-46a6-11c8" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
-                <infoLink name="Champion" id="3c85-6142-7486-a411" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
-                <infoLink name="Malign Dog" id="6b41-bf08-b211-d390" hidden="false" type="profile" targetId="92ef-e8a9-bf45-c1d2"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
         <selectionEntry type="model" import="true" name="Scurvy Dogs" hidden="false" id="fd7b-a720-9cd0-9780" sortIndex="2">
           <infoLinks>
             <infoLink name="Scurvy Dog" id="9109-5332-88f2-118c" hidden="false" type="profile" targetId="e5ec-ecd0-f59b-2a98"/>
@@ -6686,6 +6666,25 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <categoryLink targetId="f0e3-2e32-8866-ea32" id="445b-829c-ba4b-db0f" primary="true" name="Core"/>
         <categoryLink targetId="19f9-8dd8-bba4-625b" id="09b4-fc15-501d-3088" primary="false" name="War Beast"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="1f6c-870e-9326-04ff" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Malign Dog" hidden="false" id="f9a2-b007-6500-9baa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="55f5-26ed-efbf-ee96" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Base (25x50)" id="f093-12e0-46a6-11c8" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
+                <infoLink name="Champion" id="3c85-6142-7486-a411" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
+                <infoLink name="Malign Dog" id="6b41-bf08-b211-d390" hidden="false" type="profile" targetId="92ef-e8a9-bf45-c1d2"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="6"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Claws and Fangs" hidden="false" id="abaa-0e8a-4661-740f">
       <constraints>
