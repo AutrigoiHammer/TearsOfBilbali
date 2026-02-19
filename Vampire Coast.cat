@@ -7057,7 +7057,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35ea-be21-f98e-fd47"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="f535-bebf-d318-77a4" subType="crew" sortIndex="2">
+            <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="f535-bebf-d318-77a4" subType="crew" sortIndex="2" collective="true">
               <entryLinks>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="3ab5-01b9-6901-0ce9" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
                   <constraints>
@@ -7141,11 +7141,6 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a2c7-2a98-6f7c-5cc0" includeChildSelections="false"/>
               </constraints>
               <comment>upgrades: d2a99e2c-6e12bd76</comment>
-              <categoryLinks>
-                <categoryLink name="Heavy Infantry" hidden="false" id="1fa9-372e-a2c2-30b4" targetId="ca7e-d004-ccde-caf3" primary="false"/>
-                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="c807-1a15-13b7-b40a" targetId="may-have-armour"/>
-                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="2c39-3fe2-14d1-4569" targetId="may-have-shield"/>
-              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="a67c-f303-908c-47cf" subType="crew" sortIndex="2">
               <costs>
