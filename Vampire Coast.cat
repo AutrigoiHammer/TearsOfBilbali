@@ -5463,7 +5463,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Equipment" hidden="false" id="8f4b-1a6e-4c8d-d6eb" collective="false" defaultSelectionEntryId="91ef8170-120d53a" sortIndex="3" flatten="true">
+            <selectionEntryGroup name="Equipment" hidden="false" id="8f4b-1a6e-4c8d-d6eb" collective="true" defaultSelectionEntryId="91ef8170-120d53a" sortIndex="3" flatten="true">
               <entryLinks>
                 <entryLink name="Additional Hand Weapon" id="12dd-87b8-7d9f-e435" hidden="false" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" collective="true" sortIndex="1" import="true">
                   <costs>
@@ -5480,7 +5480,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a02d-3ef0-b630-996b" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Special Rules" id="dd8c-a418-5949-90f1" hidden="false" flatten="true" sortIndex="4">
+            <selectionEntryGroup name="Special Rules" id="dd8c-a418-5949-90f1" hidden="false" flatten="true" sortIndex="4" collective="true">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Drilled" hidden="false" id="58e8-a3fa-ac58-6020" sortIndex="1" collective="true">
                   <costs>
@@ -5495,7 +5495,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Armour" id="65c7-250f-ecda-b136" hidden="false" flatten="true" sortIndex="2">
+            <selectionEntryGroup name="Armour" id="65c7-250f-ecda-b136" hidden="false" flatten="true" sortIndex="2" collective="true">
               <entryLinks>
                 <entryLink import="true" name="Heavy Armour" hidden="false" id="0266-940b-3abd-25e7" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
                   <costs>
