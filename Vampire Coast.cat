@@ -6627,14 +6627,14 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
       </profiles>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Command" hidden="false" id="22a1-aeb7-d63f-f10d" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="55f5-26ed-efbf-ee96" includeChildSelections="false"/>
+          </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Malign Dog" hidden="false" id="f9a2-b007-6500-9baa" subType="crew">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="55f5-26ed-efbf-ee96" includeChildSelections="false"/>
-              </constraints>
               <infoLinks>
                 <infoLink name="Base (25x50)" id="f093-12e0-46a6-11c8" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
                 <infoLink name="Champion" id="3c85-6142-7486-a411" hidden="false" type="profile" targetId="5f1c-fd04-b0d5-d5e"/>
@@ -6652,8 +6652,8 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
             <infoLink name="Base (25x50)" id="964e-da7f-01f4-655b" hidden="false" type="profile" targetId="2d9f-e535-9b2e-ca11"/>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="self" shared="true" id="699f-5fad-c1a6-a4e7" includeChildSelections="false"/>
-            <constraint type="max" value="20" field="selections" scope="self" shared="true" id="4157-472d-7379-d7ec" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="699f-5fad-c1a6-a4e7" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="4157-472d-7379-d7ec" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Claws and Fangs" hidden="false" id="e28e-e9f7-8b84-33d0" type="selectionEntry" targetId="abaa-0e8a-4661-740f" collective="true"/>
