@@ -6847,9 +6847,9 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <categoryLink targetId="fec1-537a-bbeb-7926" id="7c93-b790-4dd8-96ae" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Animated Hulk" hidden="false" id="02e3-da00-ccd6-ba39" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Animated Hulk" hidden="false" id="02e3-da00-ccd6-ba39" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Claws, anchors and tentacles" hidden="false" id="3d0d-5134-f3b3-8be3" type="selectionEntry" targetId="e64c-45d3-04e5-bfc0">
+            <entryLink import="true" name="Claws, anchors and tentacles" hidden="false" id="3d0d-5134-f3b3-8be3" type="selectionEntry" targetId="e64c-45d3-04e5-bfc0" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d27-6913-8ae9-bc5e"/>
               </constraints>
@@ -6870,7 +6870,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
       <selectionEntryGroups>
         <selectionEntryGroup name="Command" id="dba1-3fec-78fb-20b3" hidden="false" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Great Hulk" hidden="false" id="cf7c-adef-0701-94c1">
+            <selectionEntry type="model" import="true" name="Great Hulk" hidden="false" id="cf7c-adef-0701-94c1" subType="crew">
               <infoLinks>
                 <infoLink name="Animated Hulk" id="8eb2-abb1-c81b-a389" hidden="false" type="profile" targetId="1e87-f3be-d4cb-45a8">
                   <modifiers>
