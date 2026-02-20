@@ -1614,7 +1614,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
     </profile>
     <profile name="Queen Bess Cannon" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="0191-29ab-2dad-5492">
       <characteristics>
-        <characteristic name="R" typeId="2360-c777-5e07-ed58">12-71&quot;</characteristic>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">12-72&quot;</characteristic>
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">4(8)</characteristic>
         <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1(-3)</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Bombardment, Move or Shoot, Multiple Wounds (D3+1), Incendiary Power, Slow Reload</characteristic>
@@ -1641,6 +1641,104 @@ If Queen Bess has an Ogre Charger, you can apply a +1 modifier to this roll.</ch
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">The impact leaves a scorched and burning earth that is difficult to cross. 
 A unit hit by this weapon that moves on its next turn will count as moving on Difficult Terrain.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Carronade" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="a5bd-c49a-e7cd-794d">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">30&quot;</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">7</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-2</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Armor Bane (2), Cumbersome, Multiple Wounds (D3)</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
+      </characteristics>
+    </profile>
+    <profile name="Carronade" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="e23c-a862-d807-3281">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">-</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">-</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">6</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">-</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">-</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mortar" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f24e-4074-99d5-fabc">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">-</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">-</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">6</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">-</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">-</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Necrofex Colossus" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="889b-209a-791d-20f0">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">6</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">6</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">1</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Point Blank Shoot" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="1704-01c9-fdcb-8f9b">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">5</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Armor Bane (2)</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">Instead of attacking normally, the Necrofex Colossus can choose to make a special attack with this weapon. If he does, place the small (3&quot;) area template so that its center hole is directly over the center of the unit that was hit. Any enemy model whose base is below the template risks being hit by it.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hand Cannon" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="a038-316c-7816-5c98">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">30&quot;</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">7</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-2</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Armor Bane (2), Cannon Shot, Multiple Wounds (D3)</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">Use the rules for Cannons in Pag.227 in the Warhammer: The Old World Rulebook, the difference is that it can be fired even if the bearer has moved, but not if he has charged or marched.
+Additionally, a trouble result will cause the Necrofex Colossus to automatically lose a wound with no saving throw chance of any kind, instead of rolling on the table.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rotting Leviathan" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="ac10-0162-fc89-651a">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">6</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">9</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">1</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gigant Rotten Claws" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="5f3e-1299-ce42-bc85">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-2</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Poisoned Attacks</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
+      </characteristics>
+    </profile>
+    <profile name="Colossal Maw" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="eb5b-08f0-73af-08ba">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S+1</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Multiple Wounds (D3)</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">In combat, this model must make one of its attacks each turn with this weapon.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -7463,14 +7561,17 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
           <categoryLinks>
             <categoryLink name="War Machine" hidden="false" id="341b-28e0-e05b-7932" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="91e0-f6d0-c9ba-8db6" type="selectionEntry" targetId="721d-36e3-388a-c0d6"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Zombie Ogre Charger" hidden="false" id="8e6d-9d83-5063-0fa7" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="3">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccf1-70f1-a8b9-0695"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43b1-5a75-2dc0-7c2c"/>
           </constraints>
           <infoLinks>
             <infoLink name="Zombie Ogre Charger" id="9a7d-eea2-f4bf-60cc" hidden="false" type="profile" targetId="d0c4-7965-c78a-2f92"/>
+            <infoLink name="Base (40x40)" id="f26f-879b-3c83-c726" hidden="false" type="profile" targetId="1b54-27fc-b510-61b8"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="War Machine" hidden="false" id="bf0a-74c0-e846-dacf" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
@@ -7478,6 +7579,9 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
           <costs>
             <cost name="pts" typeId="points" value="20"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="43ed-7083-a110-2e93" type="selectionEntry" targetId="721d-36e3-388a-c0d6"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -7508,6 +7612,7 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
             <infoLink name="Move Or Shoot" id="4d45-2ad0-76a0-a07f" hidden="false" type="profile" targetId="f384-89df-fa9b-1d33"/>
             <infoLink name="Incendiary Gunpowder" id="7554-f4af-bd00-84fe" hidden="false" type="profile" targetId="515e-5c15-2831-ab7d"/>
             <infoLink name="Slow Recharge" id="a5f1-0ebe-b1d6-ae52" hidden="false" type="profile" targetId="d7fd-d7d4-fddc-f2e2"/>
+            <infoLink name="Cumbersome" id="28b1-cfc6-2b2b-44d8" hidden="false" type="profile" targetId="9db1-2d1d-b6dd-6ff1"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -7520,6 +7625,419 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <categoryLink targetId="9fcf-19ad-fe84-9c61" id="c843-6040-937a-d45e" primary="false" name="War Machine"/>
         <categoryLink targetId="afce-747a-34a8-cfea" id="2946-e606-e678-6c82" primary="false" name="0-1 Queen Bess per 2,000 points"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Carronades" hidden="false" id="6270-1a6c-852c-885d" collective="false" page="0">
+      <costs>
+        <cost typeId="points" name="pts" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Carronade" hidden="false" id="d627-3901-b1dc-7ced" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="1">
+          <costs>
+            <cost name="pts" typeId="points" value="200"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb53-0176-aa93-8d7b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c82-a488-3d0e-b956"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Carronade" id="2203-6b91-6dcc-96c7" hidden="false" type="profile" targetId="a5bd-c49a-e7cd-794d"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="War Machine" hidden="false" id="5daf-876c-cd9f-92da" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Zombie Pirate Charger Crew" hidden="false" id="1dc9-cd0a-11a7-209d" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="62f1-572c-6f29-d8da"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="57ae-f0bd-d034-a857"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Zombie Pirate Charger" id="4495-3ef6-1b01-5d4d" hidden="false" type="profile" targetId="9814-6f22-4ec0-c4aa"/>
+            <infoLink name="Base (25x25)" id="5c82-7af3-3bd2-4041" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="War Machine" hidden="false" id="cbd1-c79a-b39a-bc56" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="9bab-0ae0-d751-980c" type="selectionEntry" targetId="721d-36e3-388a-c0d6"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Carronade" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="caea-4e2e-c298-b108">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">War Machine</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="c9ba-bcdd-4757-9a7b" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="d62a-0526-56d6-89e5" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Necromantic Undead" id="6fb5-ee8c-5f6b-27e8" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="4b96-a4d7-7302-5881" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Cannon Fire" id="4be7-d7a3-3325-a602" hidden="false" type="profile" targetId="5a5e-6dc6-10eb-742c"/>
+            <infoLink name="Cumbersome" id="b646-4ccf-6e75-2dc1" hidden="false" type="profile" targetId="9db1-2d1d-b6dd-6ff1"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink name="Base (50x75)" id="c0c4-e5eb-01d6-a6bd" hidden="false" type="profile" targetId="2b6f-489f-3c3c-bf7c"/>
+        <infoLink name="Carronade" id="0bee-e190-bdf7-4c40" hidden="false" type="profile" targetId="e23c-a862-d807-3281"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="9fcf-19ad-fe84-9c61" id="574a-8f28-944c-6245" primary="false" name="War Machine"/>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="3f98-8f5c-d3ee-8b22" primary="true" name="Special"/>
+        <categoryLink targetId="f164-02cb-0c00-f842" id="841a-d5f9-0342-a41a" primary="false" name="0-3 Carronades, Morters or Deck Gunners per 2,000 points"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mortars" hidden="false" id="bc15-660b-b328-5591" collective="false" page="0">
+      <costs>
+        <cost typeId="points" name="pts" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Mortar" hidden="false" id="5284-dfb5-fb5d-285b" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="1">
+          <costs>
+            <cost name="pts" typeId="points" value="100"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd32-edc5-da3b-e832"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f5d-65e9-2b70-bdd0"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Mortar" id="9ec9-f6da-4714-14c2" hidden="false" type="profile" targetId="2115-8098-83e9-ead7"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="War Machine" hidden="false" id="d909-3782-de46-1251" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Zombie Pirate Charger Crew" hidden="false" id="2424-6976-a2ba-a83a" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="908f-b5aa-d0de-1595"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="17ad-c90f-2b70-3748"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Zombie Pirate Charger" id="9616-be2f-74f1-1749" hidden="false" type="profile" targetId="9814-6f22-4ec0-c4aa"/>
+            <infoLink name="Base (25x25)" id="9b92-9c77-0b95-9160" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="War Machine" hidden="false" id="eb68-1a5d-908c-1ecb" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="5a61-dab2-2927-676e" type="selectionEntry" targetId="721d-36e3-388a-c0d6"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Carronade" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="0f58-36fb-602d-b337">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">War Machine</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="9941-43f7-78df-5717" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="a589-333e-c3bd-1734" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Necromantic Undead" id="7841-9c50-100b-8bf2" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="6e5a-5644-94ef-a1bd" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Cannon Fire" id="01d8-4160-877c-42e5" hidden="false" type="profile" targetId="5a5e-6dc6-10eb-742c"/>
+            <infoLink name="Cumbersome" id="9a00-66b1-f263-4778" hidden="false" type="profile" targetId="9db1-2d1d-b6dd-6ff1"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink name="Base (50x75)" id="a429-32ca-b638-40ac" hidden="false" type="profile" targetId="2b6f-489f-3c3c-bf7c"/>
+        <infoLink name="Mortar" id="75ce-4499-a209-3971" hidden="false" type="profile" targetId="f24e-4074-99d5-fabc"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="9fcf-19ad-fe84-9c61" id="7bf2-8715-6741-fac5" primary="false" name="War Machine"/>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="f6b3-4a3c-1f8f-8769" primary="true" name="Special"/>
+        <categoryLink targetId="f164-02cb-0c00-f842" id="163b-c5cd-4161-db2d" primary="false" name="0-3 Carronades, Morters or Deck Gunners per 2,000 points"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Necrofex Colossus" hidden="false" id="9c55-a869-fb41-e880">
+      <infoLinks>
+        <infoLink name="Necrofex Colossus" id="bf83-9e3f-2fd9-239c" hidden="false" type="profile" targetId="889b-209a-791d-20f0">
+          <modifiers>
+            <modifier type="set" value="(+5)" field="83ed-7b82-bf1f-e558">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="(+1)" field="ab43-8b61-83e7-d090">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="-" field="59f9-ccf5-1155-fb05">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="-" field="c435-6b14-f77e-3c72">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Base (60x100)" id="2e4c-acc8-d409-569e" hidden="false" type="profile" targetId="5125-89a4-916a-eabd"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="285"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Evil Claws" hidden="false" id="a1ce-9786-da53-598e" type="selectionEntry" targetId="69b6-eba8-f491-9591" sortIndex="1" collective="true"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ba2-66c9-5c01-b00a"/>
+      </constraints>
+      <profiles>
+        <profile name="Necrofex Colossus" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="9d03-0165-d1b7-76b7">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Behemoth</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="e933-2d58-084f-6ff1" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="6d01-bd46-dcd9-d15e" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Indomitable" id="a77d-9dae-6352-a9b1" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Infested" id="f011-fbc5-dad8-90be" hidden="false" type="profile" targetId="2368-87b7-7d34-5a"/>
+            <infoLink name="Large Target" id="5f5a-20c6-9cd3-0e06" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+            <infoLink name="Necromantic Undead" id="c13c-1f76-ac85-2c2e" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="9464-f91c-3338-b81f" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Stomp Attacks" id="6959-0e9b-f268-8489" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(D6)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Swiftstride" id="139b-9bdb-d80b-ea42" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Terror" id="7f2d-9bc1-b919-2db7" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+            <infoLink name="Aquatic (Vampire Coast)" id="3485-78ef-0e1e-7b1a" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
+            <infoLink name="Timmm-Berrr!" id="aa6e-9424-9695-f4b0" hidden="false" type="profile" targetId="4f28-3f86-cf88-6b3a"/>
+            <infoLink name="Magic Resistance" id="0d52-86bd-c54d-f286" hidden="false" type="profile" targetId="90ed-c9be-a611-79cc">
+              <modifiers>
+                <modifier type="append" value="(2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Behemoth" hidden="false" id="3524-3534-4106-78c5" targetId="3755-6732-99b2-c713" primary="false"/>
+        <categoryLink targetId="2bfe-5863-46fe-d284" id="18b1-6435-26a4-ee8c" primary="true" name="Rare"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="e58a-c08b-7f4f-22b3" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink targetId="5993-63a0-6d62-18b3" id="b5af-a315-4d47-c938" primary="false" name="0-1 Necrofex Colossus per 2,000 points"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Wood, Bone and Rock" hidden="false" id="48de-3026-2c13-0883" sortIndex="2" collective="true">
+          <infoLinks>
+            <infoLink name="Full Plate Armour" id="c4a4-c5dd-df3c-51e9" hidden="false" type="profile" targetId="9a1d-38b0-7d7-7552"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="daa4-cccf-ddc3-0bbb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3da-25f9-865b-5bd0"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Point Blank Shoot" hidden="false" id="fddc-1d7e-4bf3-b705" sortIndex="3" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="339b-24fe-0465-946b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaf2-c534-8a17-7471"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Point Blank Shoot" id="8348-75fd-6651-7781" hidden="false" type="profile" targetId="1704-01c9-fdcb-8f9b"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hand Cannon" hidden="false" id="2b65-1802-2a0b-c9cf" sortIndex="4" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef64-f215-84a6-c1c1"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7fd-5fae-1e24-7695"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Hand Cannon" id="3192-a6f7-98ad-82ab" hidden="false" type="profile" targetId="a038-316c-7816-5c98"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Rotting Leviathan" hidden="false" id="64e4-e83b-37c9-d04e">
+      <infoLinks>
+        <infoLink name="Rotting Leviathan" id="7fbd-f881-9630-3802" hidden="false" type="profile" targetId="ac10-0162-fc89-651a">
+          <modifiers>
+            <modifier type="set" value="(+5)" field="83ed-7b82-bf1f-e558">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="(+1)" field="ab43-8b61-83e7-d090">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="-" field="59f9-ccf5-1155-fb05">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="-" field="c435-6b14-f77e-3c72">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Base (100x150)" id="5778-43b1-0aff-cda9" hidden="false" type="profile" targetId="a35e-8f23-b67-1efe"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="285"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Evil Claws" hidden="false" id="0736-62a7-f254-0357" type="selectionEntry" targetId="69b6-eba8-f491-9591" sortIndex="1" collective="true"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="130f-1796-54f9-cd91"/>
+      </constraints>
+      <profiles>
+        <profile name="Rotting Leviathan" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="56b2-c685-7b5b-c515">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Behemoth</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="afdd-abfc-d33f-3a4c" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="0617-7206-c5c3-6b62" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Indomitable" id="9928-f623-12c5-b8b1" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Stink Rot" id="54e2-decf-3396-9243" hidden="false" type="profile" targetId="6ea9-28d6-b6a3-8890"/>
+            <infoLink name="Large Target" id="daa1-2a04-f3ae-a369" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+            <infoLink name="Necromantic Undead" id="652b-3185-3731-f4dd" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="0e3a-6235-a3a9-aa0b" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Stomp Attacks" id="06fe-2ff1-4fd0-3385" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(D6)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Swiftstride" id="0441-d903-e775-0b6d" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Terror" id="4acd-4485-0a7e-4fa9" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+            <infoLink name="Aquatic (Vampire Coast)" id="411d-9904-2664-a767" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
+            <infoLink name="Timmm-Berrr!" id="b0ec-d64c-505a-5791" hidden="false" type="profile" targetId="4f28-3f86-cf88-6b3a"/>
+            <infoLink name="Magic Resistance" id="9013-d052-e9bf-455a" hidden="false" type="profile" targetId="90ed-c9be-a611-79cc">
+              <modifiers>
+                <modifier type="append" value="(2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Howdah" id="1add-6057-8964-4beb" hidden="false" type="profile" targetId="b8f6-1cbc-b19-c7b7"/>
+            <infoLink name="Wet Powder" id="4a94-f91c-594f-a0e1" hidden="false" type="profile" targetId="d358-920a-d368-7363">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Behemoth" hidden="false" id="a5f1-0c40-568a-f005" targetId="3755-6732-99b2-c713" primary="false"/>
+        <categoryLink targetId="2bfe-5863-46fe-d284" id="f38f-2466-920f-d8c2" primary="true" name="Rare"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="76a8-d315-7243-9ab3" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink targetId="5993-63a0-6d62-18b3" id="e829-7d69-fa14-8aa6" primary="false" name="0-1 Necrofex Colossus per 2,000 points"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Wood, Bone and Rock" hidden="false" id="2ae4-e937-2feb-9211" sortIndex="2" collective="true">
+          <infoLinks>
+            <infoLink name="Full Plate Armour" id="9479-8407-495c-048d" hidden="false" type="profile" targetId="9a1d-38b0-7d7-7552"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdd9-ffa7-1ddf-636c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cbf-d903-3831-9a4a"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Point Blank Shoot" hidden="false" id="a8e9-098c-3a97-d62f" sortIndex="3" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d57a-0c4c-f37c-5773"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a66-3939-7479-6979"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Point Blank Shoot" id="dc13-a43a-3f52-957d" hidden="false" type="profile" targetId="1704-01c9-fdcb-8f9b"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hand Cannon" hidden="false" id="8b36-e930-c1ed-d8b7" sortIndex="4" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="500a-6d55-229f-c198"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45e9-be58-7727-2ebd"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Hand Cannon" id="6306-b958-c140-da41" hidden="false" type="profile" targetId="a038-316c-7816-5c98"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew" collective="true" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="dbec-e72c-9aa1-a5ad" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8e47-8b08-886d-2fcc"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="4a6f-1742-ad4d-345b" type="selectionEntry" targetId="7cab-40e6-f134-de78">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8056-1152-8f36-bddf"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a056-29c7-0703-9439"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d84-da6c-4cb2-96fd"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e0da-e3d3-1f21-4741"/>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="192f-d73d-f3f1-4548"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Zombie" id="ad1b-2bd2-486f-c714" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -7662,6 +8180,28 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <categoryLink targetId="2bfe-5863-46fe-d284" id="46d5-a4f6-cd24-f729" primary="true" name="Rare"/>
         <categoryLink targetId="9fcf-19ad-fe84-9c61" id="b884-b87a-0f21-430d" primary="false" name="War Machine"/>
         <categoryLink targetId="afce-747a-34a8-cfea" id="9ea5-25f4-56ed-982b" primary="false" name="0-1 Queen Bess per 2,000 points"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Carronades" hidden="false" id="81ed-6f8a-c01d-6c51" targetId="6270-1a6c-852c-885d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="d82a-999b-b320-80db" primary="false" name="Special"/>
+        <categoryLink targetId="9fcf-19ad-fe84-9c61" id="6491-cab8-32e0-7310" primary="false" name="War Machine"/>
+        <categoryLink targetId="f164-02cb-0c00-f842" id="836d-4ec4-adae-c3f1" primary="false" name="0-3 Carronades, Morters or Deck Gunners per 2,000 points"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mortars" hidden="false" id="7486-95e4-b464-3faa" targetId="bc15-660b-b328-5591" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="633f-f67a-1b6a-d203" id="1861-22d2-528f-ccf1" primary="false" name="Special"/>
+        <categoryLink targetId="9fcf-19ad-fe84-9c61" id="3d87-5b29-143c-ade9" primary="false" name="War Machine"/>
+        <categoryLink targetId="f164-02cb-0c00-f842" id="87c3-6b97-24ad-d953" primary="false" name="0-3 Carronades, Morters or Deck Gunners per 2,000 points"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Necrofex Colossus" hidden="false" id="c52e-d318-42c2-f8a6" targetId="9c55-a869-fb41-e880" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="2bfe-5863-46fe-d284" id="99bd-3bab-830a-ac24" primary="true" name="Rare"/>
+        <categoryLink targetId="3755-6732-99b2-c713" id="6715-1a77-2d4f-7433" primary="false" name="Behemoth"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="2b74-2194-7cb7-6829" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink targetId="5993-63a0-6d62-18b3" id="1442-25ec-8fc2-0aa5" primary="false" name="0-1 Necrofex Colossus per 2,000 points"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -7992,6 +8532,29 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <modifier type="increment" value="1" field="f642-8bfe-3181-4578">
           <repeats>
             <repeat value="2000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="37be-a32e-ba56-9f35" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="0-1 Necrofex Colossus per 2,000 points" hidden="true" id="5993-63a0-6d62-18b3">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="837d-d9fd-7684-67bd" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="837d-d9fd-7684-67bd">
+          <repeats>
+            <repeat value="2000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="56e1-eb34-0207-2b72"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="837d-d9fd-7684-67bd">
+          <repeats>
+            <repeat value="2000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="6368-d959-1864-338b" includeChildSelections="true"/>
           </repeats>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
