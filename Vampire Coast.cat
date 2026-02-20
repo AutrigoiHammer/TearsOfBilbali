@@ -7912,12 +7912,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       <costs>
         <cost name="pts" typeId="points" value="285"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Evil Claws" hidden="false" id="0736-62a7-f254-0357" type="selectionEntry" targetId="69b6-eba8-f491-9591" sortIndex="1" collective="true"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="130f-1796-54f9-cd91"/>
-      </constraints>
       <profiles>
         <profile name="Rotting Leviathan" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="56b2-c685-7b5b-c515">
           <characteristics>
@@ -7973,34 +7967,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <categoryLink targetId="5993-63a0-6d62-18b3" id="e829-7d69-fa14-8aa6" primary="false" name="0-1 Necrofex Colossus per 2,000 points"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Wood, Bone and Rock" hidden="false" id="2ae4-e937-2feb-9211" sortIndex="2" collective="true">
-          <infoLinks>
-            <infoLink name="Full Plate Armour" id="9479-8407-495c-048d" hidden="false" type="profile" targetId="9a1d-38b0-7d7-7552"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdd9-ffa7-1ddf-636c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cbf-d903-3831-9a4a"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Point Blank Shoot" hidden="false" id="a8e9-098c-3a97-d62f" sortIndex="3" collective="true">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d57a-0c4c-f37c-5773"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a66-3939-7479-6979"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Point Blank Shoot" id="dc13-a43a-3f52-957d" hidden="false" type="profile" targetId="1704-01c9-fdcb-8f9b"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hand Cannon" hidden="false" id="8b36-e930-c1ed-d8b7" sortIndex="4" collective="true">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="500a-6d55-229f-c198"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45e9-be58-7727-2ebd"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Hand Cannon" id="6306-b958-c140-da41" hidden="false" type="profile" targetId="a038-316c-7816-5c98"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew" collective="true" sortIndex="5">
+        <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew" collective="true" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="dbec-e72c-9aa1-a5ad" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
@@ -8036,6 +8003,43 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           <infoLinks>
             <infoLink name="Zombie" id="ad1b-2bd2-486f-c714" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rotting Leviathan" hidden="false" id="fe18-a75d-57eb-e62b" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Evil Claws" hidden="false" id="0736-62a7-f254-0357" type="selectionEntry" targetId="69b6-eba8-f491-9591" collective="true"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hand Cannon" hidden="false" id="8b36-e930-c1ed-d8b7" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="500a-6d55-229f-c198"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45e9-be58-7727-2ebd"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Hand Cannon" id="6306-b958-c140-da41" hidden="false" type="profile" targetId="a038-316c-7816-5c98"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wood, Bone and Rock" hidden="false" id="2ae4-e937-2feb-9211" collective="true">
+              <infoLinks>
+                <infoLink name="Full Plate Armour" id="9479-8407-495c-048d" hidden="false" type="profile" targetId="9a1d-38b0-7d7-7552"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdd9-ffa7-1ddf-636c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cbf-d903-3831-9a4a"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Point Blank Shoot" hidden="false" id="a8e9-098c-3a97-d62f" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d57a-0c4c-f37c-5773"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a66-3939-7479-6979"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Point Blank Shoot" id="dc13-a43a-3f52-957d" hidden="false" type="profile" targetId="1704-01c9-fdcb-8f9b"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc5-b940-74cd-5b68"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
