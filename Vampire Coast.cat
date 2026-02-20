@@ -1573,6 +1573,76 @@ To do this, this unit must move (fly) over the unit it wishes to attack during 
 Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength 4 hits, each with an AP of -, for each model of this unit that moved over it.</characteristic>
       </characteristics>
     </profile>
+    <profile name="The Queen Bess" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="0147-58ad-f51c-4eed">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">-</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">-</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">7</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">5</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">-</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">-</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Zombie Pirate Charger" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="9814-6f22-4ec0-c4aa" page="D&apos;Ruiz&apos;s Vampire Coast for Warhammer The Old World">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">1</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Zombie Ogre Charger" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="d0c4-7965-c78a-2f92" page="D&apos;Ruiz&apos;s Vampire Coast for Warhammer The Old World">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">1</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Queen Bess Cannon" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="0191-29ab-2dad-5492">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">12-71&quot;</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">4(8)</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1(-3)</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Bombardment, Move or Shoot, Multiple Wounds (D3+1), Incendiary Power, Slow Reload</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">This weapon fires like a Catapult, using the &apos;Boarding&apos; special rule, a 5&quot; area template, and the Gunpowder Weapon Problems table. 
+The multiple wounds (1D3+1) special rule applies only to a single model whose base It is located below the center hole of the area template.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Slow Recharge" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="d7fd-d7d4-fddc-f2e2">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">If this weapon fired during your previous turn, it may not be able to fire during this turn. 
+
+
+
+Roll 1D6 before firing with this weapon. 
+
+
+On a roll of 1-2, the slow, tedious reloading process has not yet been completed and the weapon does not fire this turn. 
+
+
+If Queen Bess has an Ogre Charger, you can apply a +1 modifier to this roll.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Incendiary Gunpowder" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="515e-5c15-2831-ab7d">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">The impact leaves a scorched and burning earth that is difficult to cross. 
+A unit hit by this weapon that moves on its next turn will count as moving on Difficult Terrain.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -1633,7 +1703,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Claws, anchors and tentacles" hidden="false" id="6b9f81f0-b84cd1ba">
       <infoLinks>
-        <infoLink name="Wicked Claws" hidden="false" id="bffcd781-d51706d7" type="profile" targetId="a952-5825-e8b9-bd43"/>
+        <infoLink name="Claws, Anchors and Tentacles" hidden="false" id="bffcd781-d51706d7" type="profile" targetId="a952-5825-e8b9-bd43"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1ed-e1c4-c43a-0227"/>
@@ -3557,7 +3627,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
             <cost name="pts" typeId="points" value="61"/>
           </costs>
           <entryLinks>
-            <entryLink name="Wicked Claws" id="32cdd0fe-edeae048" hidden="false" type="selectionEntry" targetId="6b9f81f0-b84cd1ba" import="true">
+            <entryLink name="Claws, anchors and tentacles" id="32cdd0fe-edeae048" hidden="false" type="selectionEntry" targetId="6b9f81f0-b84cd1ba" import="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="d8a49735-1826de2b"/>
               </constraints>
@@ -4405,7 +4475,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
             <cost name="pts" typeId="points" value="140"/>
           </costs>
           <entryLinks>
-            <entryLink name="Wicked Claws" id="706e3cc1-7a534217" hidden="false" type="selectionEntry" targetId="6b9f81f0-b84cd1ba" sortIndex="1" import="true">
+            <entryLink name="Claws, anchors and tentacles" id="706e3cc1-7a534217" hidden="false" type="selectionEntry" targetId="6b9f81f0-b84cd1ba" sortIndex="1" import="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c11cd01e-f514e2e8"/>
               </constraints>
@@ -6926,7 +6996,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Claws, anchors and tentacles" hidden="false" id="e64c-45d3-04e5-bfc0">
       <infoLinks>
-        <infoLink name="Wicked Claws" hidden="false" id="075b-31be-3e65-11aa" type="profile" targetId="a952-5825-e8b9-bd43"/>
+        <infoLink name="Claws, Anchors and Tentacles" hidden="false" id="075b-31be-3e65-11aa" type="profile" targetId="a952-5825-e8b9-bd43"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca1a-9547-b5a0-e95e"/>
@@ -7350,6 +7420,90 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
         <categoryLink targetId="2c85-5f2b-9288-1257" id="c0fd-5856-62fb-5c37" primary="false" name="Monstrous Cavalry"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="1c08-60de-f1d1-d12f" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="The Queen Bess" hidden="false" id="ab50-f0a5-27f7-c4a4" collective="false" page="0">
+      <costs>
+        <cost typeId="points" name="pts" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Queen Bess Cannon" hidden="false" id="eae1-2049-a7fb-f12e" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="1">
+          <costs>
+            <cost name="pts" typeId="points" value="200"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4681-357c-bf75-f036"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95ab-7c17-e219-ac28"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Queen Bess Cannon" id="9fcf-d040-e8cb-2054" hidden="false" type="profile" targetId="0191-29ab-2dad-5492"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="War Machine" hidden="false" id="cff7-0591-a8d8-be40" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Zombie Pirate Charger Crew" hidden="false" id="011a-1d58-00f5-6844" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2110-1681-ce2f-3c67"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="fc65-2db2-30d3-20aa"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Zombie Pirate Charger" id="07ba-4272-57eb-4e95" hidden="false" type="profile" targetId="9814-6f22-4ec0-c4aa"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="War Machine" hidden="false" id="341b-28e0-e05b-7932" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Zombie Ogre Charger" hidden="false" id="8e6d-9d83-5063-0fa7" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccf1-70f1-a8b9-0695"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43b1-5a75-2dc0-7c2c"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Zombie Ogre Charger" id="9a7d-eea2-f4bf-60cc" hidden="false" type="profile" targetId="d0c4-7965-c78a-2f92"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="War Machine" hidden="false" id="bf0a-74c0-e846-dacf" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="The Queen Bess" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="4d31-205c-a24f-a73d">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">War Machine</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="91f3-0160-e670-9815" hidden="false">
+          <infoLinks>
+            <infoLink name="Skirmishers" id="c9d0-47fc-fa70-478f" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Large Target" id="9116-4c4b-52d2-f4cd" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+            <infoLink name="Necromantic Undead" id="3246-d4db-588c-e0d7" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="d88d-1b97-8dfe-787a" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Indomitable" id="abfc-3e98-7efb-0ef2" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Bombardment" id="ff4b-f5c6-5cad-f52b" hidden="false" type="profile" targetId="114c-793d-bde1-8a53"/>
+            <infoLink name="Move Or Shoot" id="4d45-2ad0-76a0-a07f" hidden="false" type="profile" targetId="f384-89df-fa9b-1d33"/>
+            <infoLink name="Incendiary Gunpowder" id="7554-f4af-bd00-84fe" hidden="false" type="profile" targetId="515e-5c15-2831-ab7d"/>
+            <infoLink name="Slow Recharge" id="a5f1-0ebe-b1d6-ae52" hidden="false" type="profile" targetId="d7fd-d7d4-fddc-f2e2"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink name="Base (100x150)" id="8867-0405-625b-bd9d" hidden="false" type="profile" targetId="a35e-8f23-b67-1efe"/>
+        <infoLink name="The Queen Bess" id="4062-e232-37b3-70f9" hidden="false" type="profile" targetId="0147-58ad-f51c-4eed"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -8112,7 +8266,7 @@ Once this unit&apos;s movement is completed, the enemy unit suffers 1D3 Strength
             <cost name="pts" typeId="points" value="120"/>
           </costs>
           <entryLinks>
-            <entryLink name="Wicked Claws" id="a39f0955-c2abd4b" hidden="false" type="selectionEntry" targetId="6b9f81f0-b84cd1ba" sortIndex="1" import="true">
+            <entryLink name="Claws, anchors and tentacles" id="a39f0955-c2abd4b" hidden="false" type="selectionEntry" targetId="6b9f81f0-b84cd1ba" sortIndex="1" import="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fc11415a-3a245744"/>
               </constraints>
