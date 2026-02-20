@@ -7002,7 +7002,7 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca1a-9547-b5a0-e95e"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mournguls" hidden="false" id="11f9-c6dd-a5dd-8746">
+    <selectionEntry type="unit" import="true" name="Mournguls" hidden="false" id="11f9-c6dd-a5dd-8746">
       <profiles>
         <profile name="Mournguls" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="58d9-49ff-3e14-20af">
           <characteristics>
@@ -7049,7 +7049,7 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <categoryLink targetId="ff43-70b9-379d-d8aa" id="8529-29d9-85de-ca2d" primary="false" name="0-1 Mournguls per 2,000 points"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="4ead-c996-d543-3f34" hidden="false" defaultSelectionEntryId="none">
+        <selectionEntryGroup name="Options" id="4ead-c996-d543-3f34" hidden="false" defaultSelectionEntryId="none" collective="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Vanguard" hidden="false" id="e7f7-1ed1-c06d-80e3" sortIndex="1">
               <infoLinks>
@@ -7058,6 +7058,9 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b432-39f0-ad87-ee85"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Ambushers" hidden="false" id="d1dc-d313-d7ce-16d1" sortIndex="2">
               <infoLinks>
@@ -7066,6 +7069,9 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c59-6534-c8c1-855f"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -7074,7 +7080,7 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Evil Claws" hidden="false" id="5d39-71cd-d0f2-9a81" type="selectionEntry" targetId="69b6-eba8-f491-9591"/>
+        <entryLink import="true" name="Evil Claws" hidden="false" id="5d39-71cd-d0f2-9a81" type="selectionEntry" targetId="69b6-eba8-f491-9591" collective="true"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="3" field="selections" scope="self" shared="true" id="8a4d-49f9-4e72-76ca"/>
@@ -7084,6 +7090,9 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <infoLink name="Mournguls" id="dae8-7b65-0997-49f9" hidden="false" type="profile" targetId="74c2-7adc-6a52-5169"/>
         <infoLink name="Base (50x50)" id="68f3-2f17-392d-5100" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="65"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Evil Claws" hidden="false" id="69b6-eba8-f491-9591">
       <constraints>
