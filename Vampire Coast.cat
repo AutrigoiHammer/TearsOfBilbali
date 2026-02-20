@@ -7079,8 +7079,8 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <entryLink import="true" name="Evil Claws" hidden="false" id="5d39-71cd-d0f2-9a81" type="selectionEntry" targetId="69b6-eba8-f491-9591"/>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8a4d-49f9-4e72-76ca"/>
-        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8577-1052-16d0-29de"/>
+        <constraint type="min" value="3" field="selections" scope="self" shared="true" id="8a4d-49f9-4e72-76ca"/>
+        <constraint type="max" value="6" field="selections" scope="self" shared="true" id="8577-1052-16d0-29de"/>
       </constraints>
       <infoLinks>
         <infoLink name="Mournguls" id="dae8-7b65-0997-49f9" hidden="false" type="profile" targetId="74c2-7adc-6a52-5169"/>
@@ -7504,6 +7504,11 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <infoLink name="Base (100x150)" id="8867-0405-625b-bd9d" hidden="false" type="profile" targetId="a35e-8f23-b67-1efe"/>
         <infoLink name="The Queen Bess" id="4062-e232-37b3-70f9" hidden="false" type="profile" targetId="0147-58ad-f51c-4eed"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="2bfe-5863-46fe-d284" id="9727-8f38-2766-b91b" primary="true" name="Rare"/>
+        <categoryLink targetId="9fcf-19ad-fe84-9c61" id="c843-6040-937a-d45e" primary="false" name="War Machine"/>
+        <categoryLink targetId="afce-747a-34a8-cfea" id="2946-e606-e678-6c82" primary="false" name="0-1 Queen Bess per 2,000 points"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -7639,6 +7644,13 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <categoryLink targetId="5c55-f9d6-b181-92f8" id="6977-79cc-e548-a3e6" primary="false" name="Monstrous Infantry"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="37c9-737e-9524-2be6" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
         <categoryLink targetId="ff43-70b9-379d-d8aa" id="96e2-7448-9b28-7465" primary="false" name="0-1 Mournguls per 2,000 points"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="The Queen Bess" hidden="false" id="b175-aced-c2dc-b692" targetId="ab50-f0a5-27f7-c4a4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="2bfe-5863-46fe-d284" id="46d5-a4f6-cd24-f729" primary="true" name="Rare"/>
+        <categoryLink targetId="9fcf-19ad-fe84-9c61" id="b884-b87a-0f21-430d" primary="false" name="War Machine"/>
+        <categoryLink targetId="afce-747a-34a8-cfea" id="9ea5-25f4-56ed-982b" primary="false" name="0-1 Queen Bess per 2,000 points"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -7946,6 +7958,29 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <modifier type="increment" value="1" field="f53b-bcc0-b24a-7453">
           <repeats>
             <repeat value="2000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="a6e5-5620-9f2d-c4be" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="0-1 Queen Bess per 2,000 points" hidden="true" id="afce-747a-34a8-cfea">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="f642-8bfe-3181-4578" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="f642-8bfe-3181-4578">
+          <repeats>
+            <repeat value="2000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="b68e-97ed-4aac-6055"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="f642-8bfe-3181-4578">
+          <repeats>
+            <repeat value="2000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="37be-a32e-ba56-9f35" includeChildSelections="true"/>
           </repeats>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
