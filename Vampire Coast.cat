@@ -4671,9 +4671,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </constraints>
         </entryLink>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="137b9165-d7864e5b"/>
-      </constraints>
       <profiles>
         <profile name="Terrorgheist" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f3ecaf74-a14c7e">
           <characteristics>
