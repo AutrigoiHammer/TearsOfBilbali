@@ -7881,7 +7881,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Rotting Leviathan" hidden="false" id="64e4-e83b-37c9-d04e">
+    <selectionEntry type="unit" import="true" name="Rotting Leviathan" hidden="false" id="64e4-e83b-37c9-d04e">
       <infoLinks>
         <infoLink name="Rotting Leviathan" id="7fbd-f881-9630-3802" hidden="false" type="profile" targetId="ac10-0162-fc89-651a">
           <modifiers>
@@ -8202,6 +8202,20 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <categoryLink targetId="3755-6732-99b2-c713" id="6715-1a77-2d4f-7433" primary="false" name="Behemoth"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="2b74-2194-7cb7-6829" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
         <categoryLink targetId="5993-63a0-6d62-18b3" id="1442-25ec-8fc2-0aa5" primary="false" name="0-1 Necrofex Colossus per 2,000 points"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Terrorgheist" hidden="false" id="3368-651f-c195-2c1d" targetId="450fb3b2-1df3aa7c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="2bfe-5863-46fe-d284" id="6e3a-f302-b6be-d5ab" primary="true" name="Rare"/>
+        <categoryLink targetId="d41b-d3fa-a08b-a753" id="f388-9a51-d231-2f42" primary="false" name="0-1 Terrorgheist or Varghulf per 1,000 points"/>
+        <categoryLink targetId="3755-6732-99b2-c713" id="44d4-8c8f-f8b8-de11" primary="false" name="Behemoth"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rotting Leviathan" hidden="false" id="03b9-a4fe-1a10-147e" targetId="64e4-e83b-37c9-d04e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="2bfe-5863-46fe-d284" id="574a-db9f-3096-18c1" primary="true" name="Rare"/>
+        <categoryLink targetId="3755-6732-99b2-c713" id="f1ed-f4ed-cc82-ce3d" primary="false" name="Behemoth"/>
+        <categoryLink targetId="ca99-2467-d632-f733" id="76ee-23d1-6042-b1f8" primary="false" name="0-1 Rotting Leviathan per 2,000 points"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -8546,7 +8560,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       <modifiers>
         <modifier type="increment" value="1" field="837d-d9fd-7684-67bd">
           <repeats>
-            <repeat value="2000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="56e1-eb34-0207-2b72"/>
+            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="56e1-eb34-0207-2b72"/>
           </repeats>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
@@ -8554,7 +8568,30 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </modifier>
         <modifier type="increment" value="1" field="837d-d9fd-7684-67bd">
           <repeats>
-            <repeat value="2000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="6368-d959-1864-338b" includeChildSelections="true"/>
+            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="6368-d959-1864-338b" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="0-1 Rotting Leviathan per 1,000 points" hidden="true" id="ca99-2467-d632-f733">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="f880-b497-5132-f615" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="f880-b497-5132-f615">
+          <repeats>
+            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="0e69-2a8d-2f45-3a23"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="f880-b497-5132-f615">
+          <repeats>
+            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="f2f0-ab54-428a-82ab" includeChildSelections="true"/>
           </repeats>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
