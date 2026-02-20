@@ -7049,14 +7049,13 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
         <categoryLink targetId="ff43-70b9-379d-d8aa" id="8529-29d9-85de-ca2d" primary="false" name="0-1 Mournguls per 2,000 points"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="4ead-c996-d543-3f34" hidden="false">
+        <selectionEntryGroup name="Options" id="4ead-c996-d543-3f34" hidden="false" defaultSelectionEntryId="none">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Vanguard" hidden="false" id="e7f7-1ed1-c06d-80e3" sortIndex="1">
               <infoLinks>
                 <infoLink name="Vanguard" id="492d-d505-712b-a656" hidden="false" type="profile" targetId="691e-10ec-4f7c-a2c4"/>
               </infoLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a8b-6387-f63b-6839"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b432-39f0-ad87-ee85"/>
               </constraints>
             </selectionEntry>
@@ -7065,7 +7064,6 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
                 <infoLink name="Ambushers" id="988c-143d-aebf-7ba6" hidden="false" type="profile" targetId="8c0b-6fe6-dc06-512"/>
               </infoLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bd3-d5ba-4711-2b13"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c59-6534-c8c1-855f"/>
               </constraints>
             </selectionEntry>
