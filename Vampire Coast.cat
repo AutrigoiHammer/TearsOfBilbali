@@ -7550,7 +7550,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <categoryLink name="War Machine" hidden="false" id="cff7-0591-a8d8-be40" targetId="9fcf-19ad-fe84-9c61" primary="false"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Zombie Pirate Charger Crew" hidden="false" id="011a-1d58-00f5-6844" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Zombie Pirate Charger Crew" hidden="false" id="011a-1d58-00f5-6844" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="2" subType="crew">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2110-1681-ce2f-3c67"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="fc65-2db2-30d3-20aa"/>
@@ -7565,7 +7565,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <entryLink import="true" name="Hand Weapon" hidden="false" id="91e0-f6d0-c9ba-8db6" type="selectionEntry" targetId="721d-36e3-388a-c0d6"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Zombie Ogre Charger" hidden="false" id="8e6d-9d83-5063-0fa7" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="3">
+        <selectionEntry type="model" import="true" name="Zombie Ogre Charger" hidden="false" id="8e6d-9d83-5063-0fa7" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="3" subType="crew">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43b1-5a75-2dc0-7c2c"/>
           </constraints>
