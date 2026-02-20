@@ -4623,7 +4623,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <categoryLink name="Faction: Vampire Counts" hidden="false" id="ce7f-e770-be5f-2e06" primary="false" targetId="7345-d692-6f6a-d6f6"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" name="Terrorgheist" id="450fb3b2-1df3aa7c" hidden="false">
+    <selectionEntry type="unit" name="Terrorgheist" id="450fb3b2-1df3aa7c" hidden="false">
       <infoLinks>
         <infoLink name="Terrorgheist" hidden="false" type="profile" id="75ff5c58-cfd9ebc2" targetId="20d6-3c33-ed64-2649">
           <modifiers>
@@ -6769,7 +6769,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="model" name="Mourngul Hunter" id="f1b4-241b-a5a7-e778" hidden="false">
+    <selectionEntry type="unit" name="Mourngul Hunter" id="f1b4-241b-a5a7-e778" hidden="false">
       <infoLinks>
         <infoLink name="Mourngul Hunter" hidden="false" type="profile" id="17cb-8bda-7f8c-0ddf" targetId="e4b9-5447-7680-1f3e"/>
         <infoLink name="Base (50x50)" hidden="false" type="profile" id="e9be-0f0a-d5f2-f633" targetId="7813-4d15-143d-1bf1"/>
@@ -7766,7 +7766,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <categoryLink targetId="f164-02cb-0c00-f842" id="163b-c5cd-4161-db2d" primary="false" name="0-3 Carronades, Morters or Deck Gunners per 2,000 points"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Necrofex Colossus" hidden="false" id="9c55-a869-fb41-e880">
+    <selectionEntry type="unit" import="true" name="Necrofex Colossus" hidden="false" id="9c55-a869-fb41-e880">
       <infoLinks>
         <infoLink name="Necrofex Colossus" id="bf83-9e3f-2fd9-239c" hidden="false" type="profile" targetId="889b-209a-791d-20f0">
           <modifiers>
@@ -7797,12 +7797,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       <costs>
         <cost name="pts" typeId="points" value="285"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Evil Claws" hidden="false" id="a1ce-9786-da53-598e" type="selectionEntry" targetId="69b6-eba8-f491-9591" sortIndex="1" collective="true"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ba2-66c9-5c01-b00a"/>
-      </constraints>
       <profiles>
         <profile name="Necrofex Colossus" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="9d03-0165-d1b7-76b7">
           <characteristics>
@@ -7852,32 +7846,43 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <categoryLink targetId="5993-63a0-6d62-18b3" id="b5af-a315-4d47-c938" primary="false" name="0-1 Necrofex Colossus per 2,000 points"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Wood, Bone and Rock" hidden="false" id="48de-3026-2c13-0883" sortIndex="2" collective="true">
-          <infoLinks>
-            <infoLink name="Full Plate Armour" id="c4a4-c5dd-df3c-51e9" hidden="false" type="profile" targetId="9a1d-38b0-7d7-7552"/>
-          </infoLinks>
+        <selectionEntry type="model" import="true" name="Necrofex Colossus" hidden="false" id="2f8e-0349-976d-3879">
+          <entryLinks>
+            <entryLink import="true" name="Evil Claws" hidden="false" id="a1ce-9786-da53-598e" type="selectionEntry" targetId="69b6-eba8-f491-9591" collective="true"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wood, Bone and Rock" hidden="false" id="48de-3026-2c13-0883" collective="true">
+              <infoLinks>
+                <infoLink name="Full Plate Armour" id="c4a4-c5dd-df3c-51e9" hidden="false" type="profile" targetId="9a1d-38b0-7d7-7552"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="daa4-cccf-ddc3-0bbb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3da-25f9-865b-5bd0"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Point Blank Shoot" hidden="false" id="fddc-1d7e-4bf3-b705" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="339b-24fe-0465-946b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaf2-c534-8a17-7471"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Point Blank Shoot" id="8348-75fd-6651-7781" hidden="false" type="profile" targetId="1704-01c9-fdcb-8f9b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hand Cannon" hidden="false" id="2b65-1802-2a0b-c9cf" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef64-f215-84a6-c1c1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7fd-5fae-1e24-7695"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Hand Cannon" id="3192-a6f7-98ad-82ab" hidden="false" type="profile" targetId="a038-316c-7816-5c98"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="daa4-cccf-ddc3-0bbb"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3da-25f9-865b-5bd0"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52ed-790b-798b-8415"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b27-cbcb-0151-8cc2"/>
           </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Point Blank Shoot" hidden="false" id="fddc-1d7e-4bf3-b705" sortIndex="3" collective="true">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="339b-24fe-0465-946b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaf2-c534-8a17-7471"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Point Blank Shoot" id="8348-75fd-6651-7781" hidden="false" type="profile" targetId="1704-01c9-fdcb-8f9b"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hand Cannon" hidden="false" id="2b65-1802-2a0b-c9cf" sortIndex="4" collective="true">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef64-f215-84a6-c1c1"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7fd-5fae-1e24-7695"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Hand Cannon" id="3192-a6f7-98ad-82ab" hidden="false" type="profile" targetId="a038-316c-7816-5c98"/>
-          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -8039,6 +8044,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc5-b940-74cd-5b68"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52bb-648e-a517-85e9"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
