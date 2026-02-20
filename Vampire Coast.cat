@@ -7079,20 +7079,24 @@ A unit hit by this weapon that moves on its next turn will count as moving on D
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Evil Claws" hidden="false" id="5d39-71cd-d0f2-9a81" type="selectionEntry" targetId="69b6-eba8-f491-9591" collective="true"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="min" value="3" field="selections" scope="self" shared="true" id="8a4d-49f9-4e72-76ca"/>
-        <constraint type="max" value="6" field="selections" scope="self" shared="true" id="8577-1052-16d0-29de"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Mournguls" id="dae8-7b65-0997-49f9" hidden="false" type="profile" targetId="74c2-7adc-6a52-5169"/>
-        <infoLink name="Base (50x50)" id="68f3-2f17-392d-5100" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="65"/>
-      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mourngul" hidden="false" id="3c8c-ab9d-995a-b9df">
+          <entryLinks>
+            <entryLink import="true" name="Evil Claws" hidden="false" id="5d39-71cd-d0f2-9a81" type="selectionEntry" targetId="69b6-eba8-f491-9591" collective="true"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Mournguls" id="dae8-7b65-0997-49f9" hidden="false" type="profile" targetId="74c2-7adc-6a52-5169"/>
+            <infoLink name="Base (50x50)" id="68f3-2f17-392d-5100" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="65"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8a4d-49f9-4e72-76ca"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8577-1052-16d0-29de"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Evil Claws" hidden="false" id="69b6-eba8-f491-9591">
       <constraints>
