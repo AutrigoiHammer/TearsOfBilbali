@@ -6599,11 +6599,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <categoryLink targetId="f3f7-ca43-674e-115f" id="32c9-5e23-5dc0-813a" primary="false" name="Regular Infantry"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Hand Weapon" hidden="false" id="7fa6-b009-9912-0bab" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="20fb-5057-b472-ce79"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Magic Items" hidden="false" id="900a-0d1a-4486-4e05" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="10">
           <constraints>
             <constraint type="max" value="50" field="points" scope="parent" shared="false" id="1614-7f5b-f529-2270"/>
@@ -6611,19 +6606,19 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="9ee3-e00b-54f6-30c5" hidden="false" flatten="true" sortIndex="3">
+        <selectionEntryGroup name="Weapons" id="9ee3-e00b-54f6-30c5" hidden="false" flatten="true" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="6a45-d901-31f4-81a7" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="1">
+            <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="6a45-d901-31f4-81a7" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="points" value="3"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Great Weapon" hidden="false" id="6c00-de88-c917-16de" type="selectionEntry" targetId="2283-26e9-76c3-6048" sortIndex="2">
+            <entryLink import="true" name="Great Weapon" hidden="false" id="6c00-de88-c917-16de" type="selectionEntry" targetId="2283-26e9-76c3-6048" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="points" value="4"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Halberd" hidden="false" id="42ff-49c4-a971-8a63" type="selectionEntry" targetId="f0a5-1b2e-3d2b-d540" sortIndex="3">
+            <entryLink import="true" name="Halberd" hidden="false" id="42ff-49c4-a971-8a63" type="selectionEntry" targetId="f0a5-1b2e-3d2b-d540" sortIndex="4">
               <costs>
                 <cost name="pts" typeId="points" value="4"/>
               </costs>
@@ -6675,7 +6670,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4edb-6e6c-d297-d736" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Command" id="872a-fefb-fb1a-0440" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Command" id="872a-fefb-fb1a-0440" hidden="false" sortIndex="0">
           <entryLinks>
             <entryLink import="true" name="General" hidden="false" id="f371-5883-241b-b1b1" type="selectionEntry" targetId="7d76-b1a1-1535-a04c" sortIndex="1">
               <modifiers>
@@ -6738,6 +6733,17 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Equipment" hidden="false" id="4d40-7ea4-00a7-33b8" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="7fa6-b009-9912-0bab" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="20fb-5057-b472-ce79"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" name="Mourngul Hunter" id="f1b4-241b-a5a7-e778" hidden="false">
       <infoLinks>
