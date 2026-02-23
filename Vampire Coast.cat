@@ -5396,9 +5396,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <categoryLink name="Regular Infantry" hidden="false" id="4553-bf08-5b3a-a42b" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="87a3-ef05-5e5a-7730" hidden="false" flatten="true">
+            <selectionEntryGroup name="Weapons" id="87a3-ef05-5e5a-7730" hidden="false" flatten="true" defaultSelectionEntryId="f2fe-c2a3-cd84-f41d">
               <entryLinks>
-                <entryLink import="true" name="Brace of Pistols" hidden="false" id="ff17-8ebd-7ffd-10ff" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="1">
+                <entryLink import="true" name="Brace of Pistols" hidden="false" id="ff17-8ebd-7ffd-10ff" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2">
                   <costs>
                     <cost name="pts" typeId="points" value="2"/>
                   </costs>
@@ -5409,7 +5409,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="be4f-ec0b-7b44-81f1" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="f2fe-c2a3-cd84-f41d" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="f2fe-c2a3-cd84-f41d" sortIndex="1">
                   <infoLinks>
                     <infoLink name="Brace of Pistols" id="4da3-8690-1b91-44f7" hidden="false" type="profile" targetId="3f0e-1dc6-b425-bf59"/>
                   </infoLinks>
