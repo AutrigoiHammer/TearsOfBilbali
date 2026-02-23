@@ -5492,7 +5492,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       <selectionEntries>
         <selectionEntry type="model" name="Deck Gunners" id="adfe-9971-1e4d-d16c" hidden="false" sortIndex="1">
           <infoLinks>
-            <infoLink name="Zombie" hidden="false" type="profile" id="4ca0-ee62-8b9c-6294" targetId="8cc9-bd5d-e6e4-4126"/>
+            <infoLink name="Deck Gunner" hidden="false" type="profile" id="4ca0-ee62-8b9c-6294" targetId="ac3c-21a9-5da3-37d6"/>
             <infoLink name="Base (25x50)" hidden="false" type="profile" id="df64-cdea-d0b7-ffee" targetId="2d9f-e535-9b2e-ca11"/>
           </infoLinks>
           <costs>
@@ -7378,7 +7378,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Deck Droppers" hidden="false" id="6104-679f-5f7a-7573">
+    <selectionEntry type="unit" import="true" name="Deck Droppers" hidden="false" id="6104-679f-5f7a-7573">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Zombie Deck Dropper" hidden="false" id="9f7a-bb9f-bb0a-bb63">
           <infoLinks>
