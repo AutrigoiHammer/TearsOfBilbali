@@ -7929,21 +7929,16 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <modifier type="append" value="(D6)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Swiftstride" id="0441-d903-e775-0b6d" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
             <infoLink name="Terror" id="4acd-4485-0a7e-4fa9" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
             <infoLink name="Aquatic (Vampire Coast)" id="411d-9904-2664-a767" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
             <infoLink name="Timmm-Berrr!" id="b0ec-d64c-505a-5791" hidden="false" type="profile" targetId="4f28-3f86-cf88-6b3a"/>
-            <infoLink name="Magic Resistance" id="9013-d052-e9bf-455a" hidden="false" type="profile" targetId="90ed-c9be-a611-79cc">
-              <modifiers>
-                <modifier type="append" value="(2)" field="name"/>
-              </modifiers>
-            </infoLink>
             <infoLink name="Howdah" id="1add-6057-8964-4beb" hidden="false" type="profile" targetId="b8f6-1cbc-b19-c7b7"/>
             <infoLink name="Wet Powder" id="4a94-f91c-594f-a0e1" hidden="false" type="profile" targetId="d358-920a-d368-7363">
               <modifiers>
                 <modifier type="append" value="(6+)" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Crew" id="82bd-3460-d2e0-2a2a" hidden="false" type="profile" targetId="f518-70e5-57ba-de92"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
