@@ -1243,7 +1243,8 @@ Units in contact with a eliminated Bloated Corpse rolls only a single D6 when ma
         <characteristic name="Description" typeId="9f84-4221-785a-db50">A Wizard with the ‘Lore of the Deep’ special rule may discard one of their randomly generated spells as normal. When they do so, they may select instead either the signature spell of their chosen Lore of Magic, or one of the spells listed below:
 
 • Fog of the Damned
-• Spiteful Shot</characteristic>
+• Spiteful Shot
+• Kraken Pulls</characteristic>
       </characteristics>
     </profile>
     <profile name="Multiple Personality" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="4aa0-d1d7-e658-4654">
@@ -1289,10 +1290,11 @@ Additionally, if he suffers a miscast, he must roll twice and choose the lower 
     </profile>
     <profile name="Command Orders" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="8078-a46c-2f17-0727">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">During the Command subphase of your turn, the Character can attempt to inspire their allies by making a Leadership test using their own Leadership. If successful, choose one unit with the Crew special rule within 12&quot; and grant it one of the following benefits until the start of your next turn (does not affect characters joined to the unit):
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">During the Command subphase of your turn, the Character can attempt to inspire their allies by making a Leadership test using their own Leadership. If successful, choose one unit with the Crew special rule within 12&quot; and grant it, their mounts and any character joined one of the following benefits until the start of your next turn:
 - The unit improves its Wet Powder (X) skill by +1.
 - The unit gains the special rule Reserve Move.
-- The unit improves its Weapon Skill by +1 (does not affect mounts).</characteristic>
+- The unit improves its Weapon Skill by +1.
+ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+).</characteristic>
       </characteristics>
     </profile>
     <profile name="Fleet Banner" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="843f-471a-e83c-21b4">
@@ -1391,10 +1393,10 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
       </characteristics>
     </profile>
-    <profile name="Rotten Promethean" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="11eb-c074-120f-3059">
+    <profile name="Rotting Promethean" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="11eb-c074-120f-3059">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">7</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">-</characteristic>
@@ -1723,7 +1725,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Gigant Rotten Claws" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="5f3e-1299-ce42-bc85">
+    <profile name="Giant Rotten Claws" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="5f3e-1299-ce42-bc85">
       <characteristics>
         <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
@@ -1739,6 +1741,20 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Multiple Wounds (D3)</characteristic>
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">In combat, this model must make one of its attacks each turn with this weapon.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scaly Skin" typeId="c14f-740-8107-d34b" typeName="Armour" hidden="false" id="0ed3-1a81-ff64-4b71">
+      <characteristics>
+        <characteristic name="Description" typeId="adcd-c649-e6fc-a9f6">Armour Value 4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Spectral Daggers" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="13ad-c241-767a-870a">
+      <characteristics>
+        <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Magical Attacks, Armour Bane (1)</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -5357,7 +5373,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" name="Zombie Pirate Raider" id="a67a-9fb8-3383-e418" hidden="false" sortIndex="1">
+        <selectionEntry type="model" name="Zombie Pirate Raider" id="a67a-9fb8-3383-e418" hidden="false" sortIndex="2">
           <infoLinks>
             <infoLink name="Zombie" hidden="false" type="profile" id="4732-7314-b612-df3f" targetId="8cc9-bd5d-e6e4-4126"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="fa12-7712-d7c1-3d55" targetId="193c-4d0d-de6b-bbb1"/>
@@ -5382,9 +5398,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="87a3-ef05-5e5a-7730" hidden="false" flatten="true">
               <entryLinks>
-                <entryLink import="true" name="Handgun" hidden="false" id="ff17-8ebd-7ffd-10ff" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="1">
+                <entryLink import="true" name="Brace of Pistols" hidden="false" id="ff17-8ebd-7ffd-10ff" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="1">
                   <costs>
-                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="pts" typeId="points" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -5400,9 +5416,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0843-fbe9-5428-80e5"/>
                   </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3"/>
-                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -5410,23 +5423,8 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Command" hidden="false" id="5452-5e9d-aaf5-dcdc" sortIndex="2">
+        <selectionEntryGroup name="Command" hidden="false" id="5452-5e9d-aaf5-dcdc" sortIndex="1">
           <selectionEntries>
-            <selectionEntry name="Musician" id="c387-d211-9bb1-b5eb" type="model" import="true" hidden="false" subType="crew" sortIndex="3">
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Musician" hidden="false" type="profile" id="187e-4faf-c2dd-98fb" targetId="40f2-dd77-f0ca-3663"/>
-              </infoLinks>
-              <comment>upgrades: 2cf94a97-957186e5</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bc49-550d-c052-4790" includeChildSelections="false"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink name="Regular Infantry" hidden="false" id="b1ad-f0ac-2f15-3ea0" targetId="f3f7-ca43-674e-115f" primary="false"/>
-              </categoryLinks>
-            </selectionEntry>
             <selectionEntry type="model" import="true" name="Zombie Buccanner" hidden="false" id="3b3c-8bae-d5dc-4cb2" subType="crew" sortIndex="1">
               <infoLinks>
                 <infoLink name="Zombie Pirate" id="40e1-b4dd-4316-bb35" hidden="false" type="profile" targetId="9c91-c09d-e8c4-b393">
@@ -5449,30 +5447,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <categoryLink name="Regular Infantry" hidden="false" id="39f1-58a3-75bc-612b" targetId="f3f7-ca43-674e-115f" primary="false"/>
                 <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="bb6e-4cb9-1e94-93af" targetId="may-have-armour"/>
                 <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="fd84-0572-52b9-02ee" targetId="may-have-shield"/>
-              </categoryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="c3c5-8f7f-fae6-9c1e" subType="crew" sortIndex="2">
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Standard Bearer" id="71ea-d7ce-7db0-8e7c" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Magic Standards" hidden="false" id="2972-98b6-bfdc-7f7f" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-                  <constraints>
-                    <constraint type="max" value="25" field="points" scope="parent" shared="false" id="9db2-e3a0-0d7d-15e2"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <comment>upgrades: d2a99e2c-6e12bd76</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="994a-bb0a-6386-6ce3" includeChildSelections="false"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink name="Heavy Infantry" hidden="false" id="54cb-9900-1100-07ba" targetId="ca7e-d004-ccde-caf3" primary="false"/>
-                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="01b7-9866-f2e0-eb18" targetId="may-have-armour"/>
-                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="919a-f87a-f9ad-f909" targetId="may-have-shield"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -5596,6 +5570,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             </infoLink>
             <infoLink name="Aquatic (Vampire Coast)" id="8e1a-d87f-9932-d259" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
             <infoLink name="Random Movement" id="733d-7136-89df-653b" hidden="false" type="profile" targetId="4924-fc1f-bcd-746a"/>
+            <infoLink name="Gas Explosion" id="84fa-7c5f-c53e-1454" hidden="false" type="profile" targetId="e1f6-38d9-4fdb-b2e6"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -6101,6 +6076,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             </infoLink>
             <infoLink name="Cursed Weapons" id="ee46-ebfb-6e10-5f05" hidden="false" type="profile" targetId="0875-b296-0fab-9a30"/>
             <infoLink name="Multiple Personality" id="be86-a058-a142-9b65" hidden="false" type="profile" targetId="4aa0-d1d7-e658-4654"/>
+            <infoLink name="Command Orders" id="dac4-a3e6-0d98-0d5e" hidden="false" type="profile" targetId="8078-a46c-2f17-0727"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -6336,7 +6312,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Rotten Promethean" hidden="false" id="8e14-ee64-cb54-41fb" subType="mount">
+    <selectionEntry type="model" import="true" name="Rotting Promethean" hidden="false" id="8e14-ee64-cb54-41fb" subType="mount">
       <infoLinks>
         <infoLink name="Rotten Promethean" id="fbb8-a9c4-0805-8601" hidden="false" type="profile" targetId="11eb-c074-120f-3059"/>
         <infoLink name="Base (50x50)" id="745f-0e7b-f6c4-111c" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
@@ -6628,11 +6604,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="20fb-5057-b472-ce79"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Vampiric Powers (Vampire Coast)" hidden="false" id="e16a-625a-5891-c449" type="selectionEntryGroup" targetId="7777-2277-767c-4f2b" sortIndex="9">
-          <constraints>
-            <constraint type="max" value="50" field="points" scope="parent" shared="false" id="e0a4-eba7-85e9-6b26"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Magic Items" hidden="false" id="900a-0d1a-4486-4e05" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="10">
           <constraints>
             <constraint type="max" value="50" field="points" scope="parent" shared="false" id="1614-7f5b-f529-2270"/>
@@ -6748,7 +6719,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <modifier type="append" value="(5+)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Cleaving Blow" id="4ae8-d688-1dd5-0802" hidden="false" type="profile" targetId="1947-af53-7f07-815f"/>
+            <infoLink name="Killing Blow" id="4ae8-d688-1dd5-0802" hidden="false" type="profile" targetId="860b-e13a-4710-9bf0"/>
+            <infoLink name="Back off sir!" id="f790-9e77-e96e-4954" hidden="false" type="profile" targetId="f205-02b6-69a3-baf1"/>
+            <infoLink name="Master gunner" id="596b-911e-158c-b9a5" hidden="false" type="profile" targetId="3196-edd5-234c-e412"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -6813,7 +6786,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             </infoLink>
             <infoLink name="Swiftstride" hidden="false" id="6bf8-ad44-b9a5-8751" type="profile" targetId="dc91-48b3-3696-217"/>
             <infoLink name="Terror" hidden="false" id="9e83-8e7a-c1eb-1b32" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
-            <infoLink name="Wailing Dirge" hidden="false" id="5f11-0314-ae29-622f" type="profile" targetId="522d-e0c9-a174-ca95"/>
             <infoLink name="Ethereal" id="a550-c9c0-4b42-d8ae" hidden="false" type="profile" targetId="6561-8029-dac3-162"/>
             <infoLink name="Vanguard" id="a0a4-2752-3c27-8162" hidden="false" type="profile" targetId="691e-10ec-4f7c-a2c4"/>
           </infoLinks>
@@ -6933,11 +6905,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <cost name="pts" typeId="points" value="12"/>
           </costs>
           <entryLinks>
-            <entryLink name="Hand Weapon" id="caa8-b53b-eacb-c1a2" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" import="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0be0-ca8a-dbfe-ff4d"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Spectral Daggers" hidden="false" id="7afa-39be-9f1c-a60c" type="selectionEntry" targetId="7f84-21d4-73eb-4f86" collective="true"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="051e-cef6-7538-f5aa"/>
@@ -7033,7 +7001,11 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <modifier type="append" value="(1)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Impact Hits" id="4441-ad8f-c92d-41b4" hidden="false" type="profile" targetId="5c2-e9dd-2715-a0c0"/>
+            <infoLink name="Impact Hits" id="4441-ad8f-c92d-41b4" hidden="false" type="profile" targetId="5c2-e9dd-2715-a0c0">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name"/>
+              </modifiers>
+            </infoLink>
             <infoLink name="Random Movement" id="b403-7da0-12e3-c0f9" hidden="false" type="profile" targetId="4924-fc1f-bcd-746a"/>
           </infoLinks>
         </infoGroup>
@@ -7202,9 +7174,8 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <infoLink name="Evil Claws" id="2358-2013-cfdb-cbaf" hidden="false" type="profile" targetId="d0b6-5d12-6f99-4481"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rotten Prometheans" hidden="false" id="0aa7-345d-ce1d-d377">
+    <selectionEntry type="unit" import="true" name="Rotting Prometheans" hidden="false" id="0aa7-345d-ce1d-d377">
       <infoLinks>
-        <infoLink name="Rotten Promethean" id="6afa-b6f8-e3ef-4bef" hidden="false" type="profile" targetId="11eb-c074-120f-3059"/>
         <infoLink name="Base (50x50)" id="d374-cf67-8126-ad31" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
       </infoLinks>
       <infoGroups>
@@ -7282,7 +7253,12 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9c17-ba82-cc34-29aa"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Zombie" id="d013-f28c-6d7b-ebf3" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
+                <infoLink name="Zombie" id="d013-f28c-6d7b-ebf3" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126">
+                  <modifiers>
+                    <modifier type="set" value="-" field="83ed-7b82-bf1f-e558"/>
+                    <modifier type="set" value="-" field="ab43-8b61-83e7-d090"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="9dc8-7bba-1eed-682f" hidden="false" flatten="true" collective="true">
@@ -7325,6 +7301,14 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           <costs>
             <cost name="pts" typeId="points" value="56"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Rotting Promethean" id="6afa-b6f8-e3ef-4bef" hidden="false" type="profile" targetId="11eb-c074-120f-3059">
+              <modifiers>
+                <modifier type="set" value="4" field="83ed-7b82-bf1f-e558"/>
+                <modifier type="set" value="5" field="ab43-8b61-83e7-d090"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7398,7 +7382,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Zombie Deck Dropper" hidden="false" id="9f7a-bb9f-bb0a-bb63">
           <infoLinks>
-            <infoLink name="Zombie Deck Dropper" id="9b27-3a91-0cf3-69df" hidden="false" type="profile" targetId="cf31-5e9b-6a71-1e85"/>
+            <infoLink name="Zombie" id="9b27-3a91-0cf3-69df" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20"/>
@@ -7833,6 +7817,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <modifier type="append" value="(2)" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Cumbersome" id="5351-a75d-0c7f-8055" hidden="false" type="profile" targetId="9db1-2d1d-b6dd-6ff1"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -7976,11 +7961,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8e47-8b08-886d-2fcc"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Light Armour" hidden="false" id="4a6f-1742-ad4d-345b" type="selectionEntry" targetId="7cab-40e6-f134-de78">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8056-1152-8f36-bddf"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -8007,35 +7987,32 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rotting Leviathan" hidden="false" id="fe18-a75d-57eb-e62b" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Evil Claws" hidden="false" id="0736-62a7-f254-0357" type="selectionEntry" targetId="69b6-eba8-f491-9591" collective="true"/>
-          </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hand Cannon" hidden="false" id="8b36-e930-c1ed-d8b7" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Colossal Maw" hidden="false" id="8b36-e930-c1ed-d8b7" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="500a-6d55-229f-c198"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45e9-be58-7727-2ebd"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Hand Cannon" id="6306-b958-c140-da41" hidden="false" type="profile" targetId="a038-316c-7816-5c98"/>
+                <infoLink name="Colossal Maw" id="6306-b958-c140-da41" hidden="false" type="profile" targetId="eb5b-08f0-73af-08ba"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Wood, Bone and Rock" hidden="false" id="2ae4-e937-2feb-9211" collective="true">
               <infoLinks>
-                <infoLink name="Full Plate Armour" id="9479-8407-495c-048d" hidden="false" type="profile" targetId="9a1d-38b0-7d7-7552"/>
+                <infoLink name="Scaly Skin" id="9479-8407-495c-048d" hidden="false" type="profile" targetId="0ed3-1a81-ff64-4b71"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdd9-ffa7-1ddf-636c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cbf-d903-3831-9a4a"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Point Blank Shoot" hidden="false" id="a8e9-098c-3a97-d62f" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Giant Rotten Claws" hidden="false" id="a8e9-098c-3a97-d62f" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d57a-0c4c-f37c-5773"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a66-3939-7479-6979"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Point Blank Shoot" id="dc13-a43a-3f52-957d" hidden="false" type="profile" targetId="1704-01c9-fdcb-8f9b"/>
+                <infoLink name="Giant Rotten Claws" id="dc13-a43a-3f52-957d" hidden="false" type="profile" targetId="5f3e-1299-ce42-bc85"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -8045,6 +8022,24 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scaly Skin" hidden="false" id="1ca9-8be5-3da6-88cd">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="738f-b8a6-cdaa-1a30"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="639b-c1a2-ba59-6b8d"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Scaly Skin" id="2b7c-dc6c-0f99-8d59" hidden="false" type="profile" targetId="0ed3-1a81-ff64-4b71"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spectral Daggers" hidden="false" id="7f84-21d4-73eb-4f86">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82c1-b018-2053-c112"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0454-dce8-bbe7-9690"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Spectral Daggers" id="cfec-87af-4743-ed28" hidden="false" type="profile" targetId="13ad-c241-767a-870a"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -8222,7 +8217,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       <categoryLinks>
         <categoryLink targetId="2bfe-5863-46fe-d284" id="574a-db9f-3096-18c1" primary="true" name="Rare"/>
         <categoryLink targetId="3755-6732-99b2-c713" id="f1ed-f4ed-cc82-ce3d" primary="false" name="Behemoth"/>
-        <categoryLink targetId="ca99-2467-d632-f733" id="76ee-23d1-6042-b1f8" primary="false" name="0-1 Rotting Leviathan per 2,000 points"/>
+        <categoryLink targetId="ca99-2467-d632-f733" id="76ee-23d1-6042-b1f8" primary="false" name="0-1 Rotting Leviathan per 1,000 points"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9409,6 +9404,17 @@ War machines must roll 1d6 when trying to shoot, with a 4+ they can shoot with 
 
 
 If the roll result is 9 or more, the target unit may re-roll all of its rolls to hit with its projectile weapons.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kraken&apos;s Pull" typeId="8232-ae14-b1f6-b4df" typeName="Spell" hidden="false" id="4559-b8c7-a8fe-d145">
+          <characteristics>
+            <characteristic name="Number" typeId="8a2b-690b-e552-6aa0">3</characteristic>
+            <characteristic name="Type" typeId="c2ca-5fd1-5e9d-bc90">Magical Vortex</characteristic>
+            <characteristic name="Casting Value" typeId="d84d-3b8b-654a-9e1a">9+</characteristic>
+            <characteristic name="Range" typeId="1043-a0ad-2909-dd28">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="64ba-31-acf0-5a">Remains in play. Place the Large Area (5&quot;) template with its center hole up to 12&quot; from the launcher. While in play, the template is treated as dangerous terrain. 
+The template moves 1D6&quot; in a random direction during each Start of Turn subphase.
+Any unit (friendly or enemy) that is touched or moved on the template receives 1D3+3 Strength 4 hits, each with an AP of -1, also, the unit will suffer a -1 to its Movement characteristic until the start of the Vampire Coast player’s turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
