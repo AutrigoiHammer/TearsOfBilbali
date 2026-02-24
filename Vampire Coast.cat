@@ -7955,7 +7955,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <categoryLink targetId="5993-63a0-6d62-18b3" id="e829-7d69-fa14-8aa6" primary="false" name="0-1 Necrofex Colossus per 2,000 points"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Rotting Leviathan" hidden="false" id="fe18-a75d-57eb-e62b" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Rotting Leviathan" hidden="false" id="fe18-a75d-57eb-e62b" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Colossal Maw" hidden="false" id="8b36-e930-c1ed-d8b7" collective="true">
               <constraints>
