@@ -6680,13 +6680,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="6a32-9bd0-064a-ea9c" type="selectionEntry" targetId="82be-be9c-6607-ee98" sortIndex="2">
-              <entryLinks>
-                <entryLink import="true" name="Magic Standards" hidden="false" id="e9b3-4a15-3b29-c29a" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baa4-f165-0ca2-4b46"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="25"/>
               </costs>
@@ -6695,9 +6688,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </constraints>
             </entryLink>
           </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="007f-8b45-67cc-1264" includeChildSelections="false"/>
-          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10">
           <entryLinks>
@@ -8189,6 +8179,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
     <selectionEntry type="upgrade" import="true" name="Battle Standard Bearer" hidden="false" id="82be-be9c-6607-ee98">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="46d0-f368-823c-09ef" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da44-ada6-1038-5fa1"/>
       </constraints>
       <infoLinks>
         <infoLink name="Battle Standard Bearer" id="15f8-5c8e-4692-7af1" hidden="false" type="profile" targetId="da9a-f205-577f-debb"/>
