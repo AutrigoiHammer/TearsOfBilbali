@@ -5363,7 +5363,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" name="Zombie Pirate" id="3ab0-cd79-c762-31e6" hidden="false" sortIndex="">
+        <selectionEntry type="model" name="Zombie Pirate" id="3ab0-cd79-c762-31e6" hidden="false">
           <infoLinks>
             <infoLink name="Zombie" hidden="false" type="profile" id="d337-10ea-fe3b-ec5b" targetId="8cc9-bd5d-e6e4-4126"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="8592-b01b-d4eb-66a6" targetId="193c-4d0d-de6b-bbb1"/>
@@ -6228,6 +6228,8 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         <categoryLink name="VAMPIRE" hidden="false" id="0f19-77c9-51b8-308f" targetId="4813-a63e-57ed-dc4" primary="false"/>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="2c88-82d0-ed17-1ba8" primary="true" name="Characters"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="e724-b492-678a-2972" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="may-have-shield" id="8150-95ec-075b-f1aa" primary="false" name="MAY_HAVE_SHIELD"/>
+        <categoryLink targetId="may-have-armour" id="0204-90ed-0322-3230" primary="false" name="MAY_HAVE_ARMOUR"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Hand Weapon" hidden="false" id="2a1c-8137-9c42-90de" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
@@ -6242,7 +6244,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="cc1c-1214-57ad-1a2d" hidden="false" flatten="true" sortIndex="3">
+        <selectionEntryGroup name="Weapons" id="cc1c-1214-57ad-1a2d" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="1c75-8b5b-cca9-1b0c" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="1">
               <costs>
@@ -6264,7 +6266,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ba13-0be2-2b86-8d4b" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armour" id="f5bd-5f16-7704-a61f" hidden="false" flatten="true" sortIndex="4">
+        <selectionEntryGroup name="Armour" id="f5bd-5f16-7704-a61f" hidden="false" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="7bd2-dd06-5bd3-c753" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="1">
               <costs>
@@ -6367,7 +6369,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <entryLink import="true" name="Terrorgheist" hidden="false" id="ae47-4e65-2f04-18cc" type="selectionEntry" targetId="450fb3b2-1df3aa7c"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Equipment" id="e358-da22-c573-f336" hidden="false" flatten="true" sortIndex="5">
+        <selectionEntryGroup name="Equipment" id="e358-da22-c573-f336" hidden="false" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="5b24-9630-8f70-6eed" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1">
               <costs>
@@ -6496,6 +6498,8 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         <categoryLink name="VAMPIRE" hidden="false" id="d400-7edb-b1d4-79a3" targetId="4813-a63e-57ed-dc4" primary="false"/>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="799f-db35-9722-361d" primary="true" name="Characters"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="7ea7-a7a8-92f9-f572" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="may-have-armour" id="208a-4cc9-0e7b-6b55" primary="false" name="MAY_HAVE_ARMOUR"/>
+        <categoryLink targetId="may-have-shield" id="e6b0-00e6-3fa9-b973" primary="false" name="MAY_HAVE_SHIELD"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Hand Weapon" hidden="false" id="7819-3ea6-a28e-eb45" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
@@ -6510,7 +6514,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="602a-7404-a72f-f512" hidden="false" flatten="true" sortIndex="3">
+        <selectionEntryGroup name="Weapons" id="602a-7404-a72f-f512" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="9882-2cf4-7dce-6101" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="1">
               <costs>
@@ -6532,7 +6536,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8e35-2f35-621e-2a29" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armour" id="c038-9283-4f7a-2dcc" hidden="false" flatten="true" sortIndex="4">
+        <selectionEntryGroup name="Armour" id="c038-9283-4f7a-2dcc" hidden="false" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="6230-0a75-c38f-4999" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="1">
               <costs>
@@ -6607,7 +6611,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <entryLink import="true" name="Rotting Promethean" hidden="false" id="af92-f599-8564-6831" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Equipment" id="a484-4d27-3ee2-62af" hidden="false" flatten="true" sortIndex="5">
+        <selectionEntryGroup name="Equipment" id="a484-4d27-3ee2-62af" hidden="false" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="5c8d-e87a-a39b-ef1d" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1">
               <costs>
@@ -6650,7 +6654,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10">
+        <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10" collapsible="true">
           <entryLinks>
             <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd"/>
             <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="f02c-e9d6-944a-3d50" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
@@ -6717,6 +6721,8 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         <categoryLink name="VAMPIRE" hidden="false" id="e4a4-ab3c-77d7-112b" targetId="4813-a63e-57ed-dc4" primary="false"/>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="d55a-18a7-2ef4-e5dd" primary="true" name="Characters"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="32c9-5e23-5dc0-813a" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="may-have-shield" id="ae22-9d84-5b9e-205f" primary="false" name="MAY_HAVE_SHIELD"/>
+        <categoryLink targetId="may-have-armour" id="0176-c856-b426-f07f" primary="false" name="MAY_HAVE_ARMOUR"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Hand Weapon" hidden="false" id="7fa6-b009-9912-0bab" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -6773,7 +6779,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <entryLink import="true" name="Rotting Promethean" hidden="false" id="d9a1-675e-a23b-e09d" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Fire Weapons" id="c31e-59ee-03d1-2f2f" hidden="false" sortIndex="5">
+        <selectionEntryGroup name="Equipment" id="c31e-59ee-03d1-2f2f" hidden="false" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="4644-30c4-f183-a0fa" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1">
               <costs>
