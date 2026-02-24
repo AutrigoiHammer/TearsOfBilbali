@@ -6681,7 +6681,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         <cost name="pts" typeId="points" value="75"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Magic Items" hidden="false" id="a7a2-38f6-e354-7215" sortIndex="10">
+        <selectionEntry type="upgrade" import="true" name="Magic Items" hidden="false" id="a7a2-38f6-e354-7215" sortIndex="10" collective="true">
           <entryLinks>
             <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" collapsible="true"/>
             <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="f02c-e9d6-944a-3d50" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
