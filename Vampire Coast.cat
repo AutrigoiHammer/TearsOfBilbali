@@ -6636,15 +6636,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <entryLink import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="c5ec-4a09-7211-6a6f" type="selectionEntry" targetId="82be-be9c-6607-ee98"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10" collapsible="true">
-          <entryLinks>
-            <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" collapsible="true"/>
-            <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="f02c-e9d6-944a-3d50" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="50" field="points" scope="parent" shared="false" id="406d-17b2-704f-31d8"/>
-          </constraints>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Base (25x25)" id="c92e-5eb3-74cb-333e" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
@@ -6689,6 +6680,17 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
       <costs>
         <cost name="pts" typeId="points" value="75"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Magic Items" hidden="false" id="a7a2-38f6-e354-7215" sortIndex="10">
+          <entryLinks>
+            <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" collapsible="true"/>
+            <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="f02c-e9d6-944a-3d50" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="50" field="points" scope="parent" shared="false" id="406d-17b2-704f-31d8"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gunnery Wight" hidden="false" id="dbad-3992-3c49-0508" collective="false">
       <profiles>
