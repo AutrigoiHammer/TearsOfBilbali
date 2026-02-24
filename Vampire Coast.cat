@@ -9648,7 +9648,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Arcane Items (Vampire Coast)" id="cbbc-a707-1a61-c0c7" hidden="false" sortIndex="5" collapsible="true">
+        <selectionEntryGroup name="Arcane Items (Vampire Coast)" id="cbbc-a707-1a61-c0c7" hidden="true" sortIndex="5" collapsible="true">
           <selectionEntryGroups>
             <selectionEntryGroup name="Extremely Common Items" id="01b6-0aa9-e1c9-df3c" hidden="false" sortIndex="1">
               <selectionEntries>
