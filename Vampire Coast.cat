@@ -6679,15 +6679,17 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="6a32-9bd0-064a-ea9c" type="selectionEntry" targetId="82be-be9c-6607-ee98" sortIndex="2">
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Battle Standard Bearer" hidden="false" id="a0a9-d276-97e1-c3c8" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="points" value="25"/>
               </costs>
-              <constraints>
-                <constraint type="max" value="100" field="points" scope="parent" shared="false" id="65ff-dd70-cc08-c50d"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="9b41-4a35-8df7-7c77" type="selectionEntryGroup" targetId="1d6d-af5b-160b-1b73"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10">
           <entryLinks>
@@ -8176,7 +8178,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         <infoLink name="Spectral Daggers" id="cfec-87af-4743-ed28" hidden="false" type="profile" targetId="13ad-c241-767a-870a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Battle Standard Bearer" hidden="false" id="82be-be9c-6607-ee98">
+    <selectionEntry type="upgrade" import="true" name="Battle Standard Bearer" hidden="false" id="82be-be9c-6607-ee98" collapsible="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="46d0-f368-823c-09ef" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da44-ada6-1038-5fa1"/>
@@ -9798,6 +9800,23 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Battle Standard Bearer (Vampire Counts)" id="1d6d-af5b-160b-1b73" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Magic Standards" hidden="false" id="429f-0fc5-e3ba-2562" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6"/>
+        <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="c292-f550-62bd-da3a" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74da-ca91-98e8-d5a8"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b0eb-bb22-297a-7f67" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="405b-c5f9-9a7c-5fda"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Battle Standard Bearer" id="425e-3e93-2ceb-1ed7" hidden="false" type="profile" targetId="da9a-f205-577f-debb"/>
+      </infoLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <publications>
