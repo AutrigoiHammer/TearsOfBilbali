@@ -6681,10 +6681,10 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         <cost name="pts" typeId="points" value="75"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Magic Items" hidden="false" id="a7a2-38f6-e354-7215" sortIndex="10" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Magic Items" hidden="false" id="a7a2-38f6-e354-7215" sortIndex="10">
           <entryLinks>
-            <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" collapsible="true"/>
-            <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="f02c-e9d6-944a-3d50" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
+            <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" collapsible="true" collective="true"/>
+            <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="f02c-e9d6-944a-3d50" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33" collective="true"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="50" field="points" scope="parent" shared="false" id="406d-17b2-704f-31d8"/>
