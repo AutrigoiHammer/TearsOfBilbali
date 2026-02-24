@@ -9783,7 +9783,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
       <entryLinks>
         <entryLink import="true" name="Magic Standards" hidden="false" id="7a5e-8455-dd35-1e57" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
           <constraints>
-            <constraint type="min" value="25" field="points" scope="parent" shared="true" id="7df4-4eae-70db-3016"/>
+            <constraint type="max" value="25" field="points" scope="parent" shared="true" id="7df4-4eae-70db-3016"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="6b13-1c65-6ddf-7a5a" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4">
