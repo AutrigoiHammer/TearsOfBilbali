@@ -7876,30 +7876,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rotting Leviathan" hidden="false" id="64e4-e83b-37c9-d04e">
       <infoLinks>
-        <infoLink name="Rotting Leviathan" id="7fbd-f881-9630-3802" hidden="false" type="profile" targetId="ac10-0162-fc89-651a">
-          <modifiers>
-            <modifier type="set" value="(+5)" field="83ed-7b82-bf1f-e558">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="(+1)" field="ab43-8b61-83e7-d090">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="-" field="59f9-ccf5-1155-fb05">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="-" field="c435-6b14-f77e-3c72">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink name="Base (100x150)" id="5778-43b1-0aff-cda9" hidden="false" type="profile" targetId="a35e-8f23-b67-1efe"/>
       </infoLinks>
       <costs>
@@ -8017,6 +7993,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <infoLinks>
+            <infoLink name="Rotting Leviathan" id="7fbd-f881-9630-3802" hidden="false" type="profile" targetId="ac10-0162-fc89-651a"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
