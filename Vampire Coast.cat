@@ -9394,10 +9394,10 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Magic Items (Vampire Coast)" id="755e-0f84-2f67-8e33" hidden="false" collapsible="true">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Magic Weapons (Vampire Coast)" hidden="false" id="90ac-334f-ff41-ab84" sortIndex="1" collapsible="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Magic Weapons (Vampire Coast)" id="4d83-3443-b018-ab83" hidden="false" sortIndex="1" collapsible="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Sword of the Thirteen Seas" hidden="false" id="aa2b-6d68-3149-6df6" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Sword of the Thirteen Seas" hidden="false" id="aa2b-6d68-3149-6df6">
               <infoLinks>
                 <infoLink name="Sword of the Thirteen Seas" id="907d-eba2-1a18-5c77" hidden="false" type="profile" targetId="5a8c-fb7a-0969-110e"/>
               </infoLinks>
@@ -9409,7 +9409,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <cost name="pts" typeId="points" value="65"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Kraken Bane" hidden="false" id="d9d2-1542-4818-512a" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Kraken Bane" hidden="false" id="d9d2-1542-4818-512a">
               <infoLinks>
                 <infoLink name="Kraken Bane" id="bd7e-c5b0-1559-3840" hidden="false" type="profile" targetId="5768-8621-45ed-0a64"/>
               </infoLinks>
@@ -9421,7 +9421,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <cost name="pts" typeId="points" value="55"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="The Hook of Levi &quot;The Lucky One&quot;" hidden="false" id="2221-13b8-7b41-8e12" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="The Hook of Levi &quot;The Lucky One&quot;" hidden="false" id="2221-13b8-7b41-8e12">
               <infoLinks>
                 <infoLink name="The Hook of Levi “the Lucky One”" id="cbe1-b5e7-df83-682d" hidden="false" type="profile" targetId="e0ef-5117-a4ae-912d"/>
               </infoLinks>
@@ -9433,7 +9433,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <cost name="pts" typeId="points" value="45"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="The Cursed Rifle" hidden="false" id="0534-df51-b6d1-a331" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="The Cursed Rifle" hidden="false" id="0534-df51-b6d1-a331">
               <infoLinks>
                 <infoLink name="The Cursed Rifle" id="f6e2-b49d-5aa7-876a" hidden="false" type="profile" targetId="526a-e563-2920-c1f5"/>
               </infoLinks>
@@ -9449,8 +9449,8 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be97-809f-42f6-5cf6"/>
           </constraints>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <publications>
