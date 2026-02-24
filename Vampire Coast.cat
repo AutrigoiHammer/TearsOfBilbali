@@ -9565,9 +9565,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be97-809f-42f6-5cf6"/>
-          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Magic Armour (Vampire Coast)" id="6245-2df5-d81f-19d8" hidden="false" sortIndex="2" collapsible="true">
           <selectionEntries>
@@ -9596,9 +9593,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4453-f390-babb-56e4"/>
-          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Talismans (Vampire Coast)" id="6e4f-4d2a-2769-03d9" hidden="false" sortIndex="3" collapsible="true">
           <selectionEntries>
@@ -9639,9 +9633,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36ea-ef6c-0d4f-5a68"/>
-          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Enchanted Items (Vampire Coast)" id="c738-ef73-0432-7a7d" hidden="false" sortIndex="4" collapsible="true">
           <selectionEntries>
@@ -9694,14 +9685,8 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c66e-73bb-5755-81e0"/>
-          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Arcane Items (Vampire Coast)" id="cbbc-a707-1a61-c0c7" hidden="false" sortIndex="5" collapsible="true">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50e0-584e-896e-4b63"/>
-          </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Extremely Common Items" id="01b6-0aa9-e1c9-df3c" hidden="false" sortIndex="1">
               <selectionEntries>
