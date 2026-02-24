@@ -6636,7 +6636,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <entryLink import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="c5ec-4a09-7211-6a6f" type="selectionEntry" targetId="82be-be9c-6607-ee98"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10" collapsible="true" defaultSelectionEntryId="none">
+        <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10" collapsible="true" defaultSelectionEntryId="none" flatten="true">
           <entryLinks>
             <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd"/>
             <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="f02c-e9d6-944a-3d50" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
