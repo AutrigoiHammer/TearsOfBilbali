@@ -5324,9 +5324,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               <costs>
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
-              <constraints>
-                <constraint type="max" value="25" field="points" scope="parent" shared="true" id="6f93-0382-c012-9abc"/>
-              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9784,10 +9781,15 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
     </selectionEntryGroup>
     <selectionEntryGroup name="Standard Bearer (Vampire Counts)" id="0999-8104-6220-b8c2" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Magic Standards" hidden="false" id="7a5e-8455-dd35-1e57" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6"/>
+        <entryLink import="true" name="Magic Standards" hidden="false" id="7a5e-8455-dd35-1e57" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+          <constraints>
+            <constraint type="min" value="25" field="points" scope="parent" shared="true" id="7df4-4eae-70db-3016"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="6b13-1c65-6ddf-7a5a" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f67d-da83-e165-6a84"/>
+            <constraint type="max" value="25" field="points" scope="parent" shared="true" id="6f93-0382-c012-9abc"/>
           </constraints>
         </entryLink>
       </entryLinks>
