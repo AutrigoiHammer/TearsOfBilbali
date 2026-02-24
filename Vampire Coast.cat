@@ -9395,7 +9395,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
     </selectionEntryGroup>
     <selectionEntryGroup name="Magic Items (Vampire Coast)" id="755e-0f84-2f67-8e33" hidden="false" collapsible="true">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Magic Weapons (Vampire Coast)" hidden="false" id="90ac-334f-ff41-ab84" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Magic Weapons (Vampire Coast)" hidden="false" id="90ac-334f-ff41-ab84" sortIndex="1" collapsible="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Sword of the Thirteen Seas" hidden="false" id="aa2b-6d68-3149-6df6" sortIndex="1">
               <infoLinks>
