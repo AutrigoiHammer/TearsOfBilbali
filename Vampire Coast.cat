@@ -1766,6 +1766,34 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <characteristic name="Note" typeId="5e5e-34db-1ee0-86">Wounds caused by the Sword of the Thirteen Seas prevent the enemy&apos;s Armor Saving Rolls and Regeneration; Ward Saves can be rolled normally.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Kraken Bane" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="5768-8621-45ed-0a64">
+      <characteristics>
+        <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
+        <characteristic name="S" typeId="4f75-25c9-31bd-7074">S+1</characteristic>
+        <characteristic name="AP" typeId="15e2-fff4-477f-ea26">-1</characteristic>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c">Magical Attacks, Multiple Wounds (2)</characteristic>
+        <characteristic name="Note" typeId="5e5e-34db-1ee0-86">The bearer can re-roll wound rolls against behemoths, monsters or monstrous creatures.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Hook of Levi “the Lucky One”" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="e0ef-5117-a4ae-912d">
+      <characteristics>
+        <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
+        <characteristic name="S" typeId="4f75-25c9-31bd-7074">S</characteristic>
+        <characteristic name="AP" typeId="15e2-fff4-477f-ea26">-1</characteristic>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c">Magical Attacks, Extra Attacks (1)</characteristic>
+        <characteristic name="Note" typeId="5e5e-34db-1ee0-86">The enemy must re-roll successful armor saving throws against attacks from this weapon.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Cursed Rifle" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="526a-e563-2920-c1f5" noindex="false">
+      <characteristics>
+        <characteristic name="R" typeId="51c8-c0d6-94db-264c">30&quot;</characteristic>
+        <characteristic name="S" typeId="4f75-25c9-31bd-7074">5</characteristic>
+        <characteristic name="AP" typeId="15e2-fff4-477f-ea26">-1</characteristic>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c">Armor Bane (2), Magical Attacks, Multiple Shots (D3+1), Ponderous</characteristic>
+        <characteristic name="Note" typeId="5e5e-34db-1ee0-86"/>
+      </characteristics>
+      <alias>This ramshackle-looking musket fires with tremendous power.</alias>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -9365,11 +9393,11 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Items (Vampire Coast)" id="755e-0f84-2f67-8e33" hidden="false">
+    <selectionEntryGroup name="Magic Items (Vampire Coast)" id="755e-0f84-2f67-8e33" hidden="false" collapsible="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Magic Weapons (Vampire Coast)" hidden="false" id="90ac-334f-ff41-ab84" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Sword of the Thirteen Seas" hidden="false" id="aa2b-6d68-3149-6df6">
+            <selectionEntry type="upgrade" import="true" name="Sword of the Thirteen Seas" hidden="false" id="aa2b-6d68-3149-6df6" sortIndex="1">
               <infoLinks>
                 <infoLink name="Sword of the Thirteen Seas" id="907d-eba2-1a18-5c77" hidden="false" type="profile" targetId="5a8c-fb7a-0969-110e"/>
               </infoLinks>
@@ -9379,6 +9407,42 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
               </constraints>
               <costs>
                 <cost name="pts" typeId="points" value="65"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Kraken Bane" hidden="false" id="d9d2-1542-4818-512a" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Kraken Bane" id="bd7e-c5b0-1559-3840" hidden="false" type="profile" targetId="5768-8621-45ed-0a64"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18f9-773f-f392-b3f5"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="221f-c3db-8665-eab9" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="55"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Hook of Levi &quot;The Lucky One&quot;" hidden="false" id="2221-13b8-7b41-8e12" sortIndex="3">
+              <infoLinks>
+                <infoLink name="The Hook of Levi “the Lucky One”" id="cbe1-b5e7-df83-682d" hidden="false" type="profile" targetId="e0ef-5117-a4ae-912d"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c579-1c8b-58bb-8903"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="69db-8adb-2fed-3dc5" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="45"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Cursed Rifle" hidden="false" id="0534-df51-b6d1-a331" sortIndex="4">
+              <infoLinks>
+                <infoLink name="The Cursed Rifle" id="f6e2-b49d-5aa7-876a" hidden="false" type="profile" targetId="526a-e563-2920-c1f5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9d7-c17d-44e4-61c5"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="06eb-c696-4e44-38e7" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="45"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
