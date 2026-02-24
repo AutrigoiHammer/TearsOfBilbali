@@ -8176,6 +8176,9 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
       <entryLinks>
         <entryLink import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="2c3d-c7e8-9847-62a1" type="selectionEntryGroup" targetId="1d6d-af5b-160b-1b73"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
