@@ -5360,7 +5360,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" name="Zombie Pirate" id="3ab0-cd79-c762-31e6" hidden="false">
+        <selectionEntry type="model" name="Zombie Pirates" id="3ab0-cd79-c762-31e6" hidden="false" sortIndex="2">
           <infoLinks>
             <infoLink name="Zombie" hidden="false" type="profile" id="d337-10ea-fe3b-ec5b" targetId="8cc9-bd5d-e6e4-4126"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="8592-b01b-d4eb-66a6" targetId="193c-4d0d-de6b-bbb1"/>
@@ -5396,7 +5396,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1b79-1360-eee1-224c" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Blunderbluss" hidden="false" id="78bd-a078-4627-f96a" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Blunderbluss" hidden="false" id="78bd-a078-4627-f96a" sortIndex="2" collective="true">
                   <infoLinks>
                     <infoLink name="Pirate Blunderbluss" id="6131-dd9a-3e2c-48d3" hidden="false" type="profile" targetId="eaa8-e08d-73d2-8216"/>
                   </infoLinks>
@@ -5451,31 +5451,14 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="0efb-e857-4b5c-68ca" targetId="may-have-shield"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="97fd-80bd-1097-68ae" subType="crew" sortIndex="2">
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="893d-d302-db4a-1fb8" type="selectionEntry" targetId="04c5-90bc-b2d5-e77b" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Standard Bearer" id="ec48-e30c-1523-8bfa" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Magic Standards" hidden="false" id="037b-15c5-f567-05b8" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-                  <constraints>
-                    <constraint type="max" value="25" field="points" scope="parent" shared="false" id="f82c-2066-d137-f0b7"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <comment>upgrades: d2a99e2c-6e12bd76</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1039-1c1c-bd62-53ed" includeChildSelections="false"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink name="Heavy Infantry" hidden="false" id="dd1c-7584-e603-1ac4" targetId="ca7e-d004-ccde-caf3" primary="false"/>
-                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="cb2d-75e7-80a6-143d" targetId="may-have-armour"/>
-                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="04f6-8d46-4b95-9be2" targetId="may-have-shield"/>
-              </categoryLinks>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoGroups>
@@ -5895,7 +5878,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <constraints>
-                <constraint type="max" value="50" field="points" scope="parent" shared="false" id="0c39-0188-b3a8-d0e7"/>
+                <constraint type="max" value="50" field="points" scope="self" shared="true" id="cd3b-196f-f3ff-519b"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -9710,7 +9693,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Magic Standards (Vampire Coast)" id="4258-1c10-c2cc-f1e4" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Magic Standards (Vampire Coast)" id="4258-1c10-c2cc-f1e4" hidden="false" collapsible="true" sortIndex="3">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Banner of the Depths" hidden="false" id="6a4c-4957-811d-2410" sortIndex="2">
           <infoLinks>
@@ -9761,8 +9744,12 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5650-f181-ccbf-6b3a"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bb33-c863-05e2-d0a5" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Battle Standard Bearer (Vampire Counts)" id="1d6d-af5b-160b-1b73" hidden="false">
+    <selectionEntryGroup name="Battle Standard Bearer (Vampire Counts)" id="1d6d-af5b-160b-1b73" hidden="false" sortIndex="1">
       <entryLinks>
         <entryLink import="true" name="Magic Standards" hidden="false" id="429f-0fc5-e3ba-2562" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6"/>
         <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="c292-f550-62bd-da3a" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4">
@@ -9779,23 +9766,14 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         <infoLink name="Battle Standard Bearer" id="425e-3e93-2ceb-1ed7" hidden="false" type="profile" targetId="da9a-f205-577f-debb"/>
       </infoLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Standard Bearer (Vampire Counts)" id="0999-8104-6220-b8c2" hidden="false">
+    <selectionEntryGroup name="Standard Bearer (Vampire Counts)" id="0999-8104-6220-b8c2" hidden="false" sortIndex="2">
       <entryLinks>
-        <entryLink import="true" name="Magic Standards" hidden="false" id="7a5e-8455-dd35-1e57" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-          <constraints>
-            <constraint type="max" value="25" field="points" scope="parent" shared="true" id="7df4-4eae-70db-3016"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="6b13-1c65-6ddf-7a5a" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f67d-da83-e165-6a84"/>
-            <constraint type="max" value="25" field="points" scope="parent" shared="true" id="6f93-0382-c012-9abc"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Magic Standards" hidden="false" id="7a5e-8455-dd35-1e57" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6"/>
+        <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="6b13-1c65-6ddf-7a5a" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="05f4-9c58-d957-5530" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28f7-7aa2-1d46-5517"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b4e-d9ab-d3b7-9f62"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="12fc-4f49-5c36-9acb" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="Battle Standard Bearer" id="10a8-4f02-3b4a-1c54" hidden="false" type="profile" targetId="da9a-f205-577f-debb"/>
