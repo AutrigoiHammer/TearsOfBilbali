@@ -5348,7 +5348,9 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         </infoGroup>
       </infoGroups>
       <categoryLinks>
-        <categoryLink name="Faction: Vampire Counts" hidden="false" id="dea2-27fa-afdd-d71a" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+        <categoryLink targetId="f0e3-2e32-8866-ea32" id="3ae1-dbeb-e2d4-990d" primary="true" name="Core"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="db66-47e9-dcf9-4107" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="cd94-028c-78d4-cbad" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Zombie Pirate Gunners" hidden="false" id="f77a-a6f6-fee5-6cea" collective="false">
@@ -5540,7 +5542,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="87a3-ef05-5e5a-7730" hidden="false" flatten="true" defaultSelectionEntryId="f2fe-c2a3-cd84-f41d">
               <entryLinks>
-                <entryLink import="true" name="Brace of Pistols" hidden="false" id="ff17-8ebd-7ffd-10ff" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2">
+                <entryLink import="true" name="Brace of Pistols" hidden="false" id="ff17-8ebd-7ffd-10ff" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2" collective="true">
                   <costs>
                     <cost name="pts" typeId="points" value="2"/>
                   </costs>
@@ -5551,7 +5553,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="be4f-ec0b-7b44-81f1" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="f2fe-c2a3-cd84-f41d" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="f2fe-c2a3-cd84-f41d" sortIndex="1" collective="true">
                   <infoLinks>
                     <infoLink name="Brace of Pistols" id="4da3-8690-1b91-44f7" hidden="false" type="profile" targetId="3f0e-1dc6-b425-bf59"/>
                   </infoLinks>
