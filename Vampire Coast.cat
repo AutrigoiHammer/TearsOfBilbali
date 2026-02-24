@@ -5456,10 +5456,13 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="893d-d302-db4a-1fb8" type="selectionEntry" targetId="04c5-90bc-b2d5-e77b" sortIndex="2">
+            <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="451c-8f9c-daec-6bf8" type="selectionEntry" targetId="04c5-90bc-b2d5-e77b" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="25" field="points" scope="self" shared="true" id="f321-33d1-b005-6275"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6630,11 +6633,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="9c5e-a86b-0d7e-4ee3" type="selectionEntry" targetId="5b87-9cf5-953d-3829" sortIndex="2">
-              <costs>
-                <cost name="pts" typeId="points" value="25"/>
-              </costs>
-            </entryLink>
+            <entryLink import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="c5ec-4a09-7211-6a6f" type="selectionEntry" targetId="82be-be9c-6607-ee98"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10" collapsible="true">
