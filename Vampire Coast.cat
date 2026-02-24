@@ -7875,6 +7875,10 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rotting Leviathan" hidden="false" id="64e4-e83b-37c9-d04e">
+      <infoLinks>
+        <infoLink name="Rotting Leviathan" id="7fbd-f881-9630-3802" hidden="false" type="profile" targetId="ac10-0162-fc89-651a"/>
+        <infoLink name="Base (100x150)" id="5778-43b1-0aff-cda9" hidden="false" type="profile" targetId="a35e-8f23-b67-1efe"/>
+      </infoLinks>
       <profiles>
         <profile name="Rotting Leviathan" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="56b2-c685-7b5b-c515">
           <characteristics>
@@ -7883,11 +7887,46 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </characteristics>
         </profile>
       </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="afdd-abfc-d33f-3a4c" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="0617-7206-c5c3-6b62" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Indomitable" id="9928-f623-12c5-b8b1" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
+              <modifiers>
+                <modifier type="append" value="(2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Stink Rot" id="54e2-decf-3396-9243" hidden="false" type="profile" targetId="6ea9-28d6-b6a3-8890"/>
+            <infoLink name="Large Target" id="daa1-2a04-f3ae-a369" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
+            <infoLink name="Necromantic Undead" id="652b-3185-3731-f4dd" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
+            <infoLink name="Regeneration" id="0e3a-6235-a3a9-aa0b" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
+              <modifiers>
+                <modifier type="append" value="(5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Stomp Attacks" id="06fe-2ff1-4fd0-3385" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(D6)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Terror" id="4acd-4485-0a7e-4fa9" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
+            <infoLink name="Aquatic (Vampire Coast)" id="411d-9904-2664-a767" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
+            <infoLink name="Timmm-Berrr!" id="b0ec-d64c-505a-5791" hidden="false" type="profile" targetId="4f28-3f86-cf88-6b3a"/>
+            <infoLink name="Howdah" id="1add-6057-8964-4beb" hidden="false" type="profile" targetId="b8f6-1cbc-b19-c7b7"/>
+            <infoLink name="Wet Powder" id="4a94-f91c-594f-a0e1" hidden="false" type="profile" targetId="d358-920a-d368-7363">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Crew" id="82bd-3460-d2e0-2a2a" hidden="false" type="profile" targetId="f518-70e5-57ba-de92"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
         <categoryLink name="Behemoth" hidden="false" id="a5f1-0c40-568a-f005" targetId="3755-6732-99b2-c713" primary="false"/>
         <categoryLink targetId="2bfe-5863-46fe-d284" id="f38f-2466-920f-d8c2" primary="true" name="Rare"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="76a8-d315-7243-9ab3" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
-        <categoryLink targetId="5993-63a0-6d62-18b3" id="e829-7d69-fa14-8aa6" primary="false" name="0-1 Necrofex Colossus per 2,000 points"/>
+        <categoryLink targetId="ca99-2467-d632-f733" id="6a12-8582-082a-e726" primary="false" name="0-1 Rotting Leviathan per 1,000 points"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Rotting Leviathan" hidden="false" id="fe18-a75d-57eb-e62b" sortIndex="1">
@@ -7924,50 +7963,11 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc5-b940-74cd-5b68"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52bb-648e-a517-85e9"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="Rotting Leviathan" id="7fbd-f881-9630-3802" hidden="false" type="profile" targetId="ac10-0162-fc89-651a"/>
-            <infoLink name="Base (100x150)" id="5778-43b1-0aff-cda9" hidden="false" type="profile" targetId="a35e-8f23-b67-1efe"/>
-          </infoLinks>
-          <infoGroups>
-            <infoGroup name="Special Rules" id="afdd-abfc-d33f-3a4c" hidden="false">
-              <infoLinks>
-                <infoLink name="Close Order" id="0617-7206-c5c3-6b62" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
-                <infoLink name="Indomitable" id="9928-f623-12c5-b8b1" hidden="false" type="profile" targetId="78b6-d212-caa2-cef1">
-                  <modifiers>
-                    <modifier type="append" value="(2)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Stink Rot" id="54e2-decf-3396-9243" hidden="false" type="profile" targetId="6ea9-28d6-b6a3-8890"/>
-                <infoLink name="Large Target" id="daa1-2a04-f3ae-a369" hidden="false" type="profile" targetId="c822-7ad0-f24a-e4af"/>
-                <infoLink name="Necromantic Undead" id="652b-3185-3731-f4dd" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
-                <infoLink name="Regeneration" id="0e3a-6235-a3a9-aa0b" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
-                  <modifiers>
-                    <modifier type="append" value="(5+)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Stomp Attacks" id="06fe-2ff1-4fd0-3385" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
-                  <modifiers>
-                    <modifier type="append" value="(D6)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Terror" id="4acd-4485-0a7e-4fa9" hidden="false" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
-                <infoLink name="Aquatic (Vampire Coast)" id="411d-9904-2664-a767" hidden="false" type="profile" targetId="fe36-b51c-b523-8520"/>
-                <infoLink name="Timmm-Berrr!" id="b0ec-d64c-505a-5791" hidden="false" type="profile" targetId="4f28-3f86-cf88-6b3a"/>
-                <infoLink name="Howdah" id="1add-6057-8964-4beb" hidden="false" type="profile" targetId="b8f6-1cbc-b19-c7b7"/>
-                <infoLink name="Wet Powder" id="4a94-f91c-594f-a0e1" hidden="false" type="profile" targetId="d358-920a-d368-7363">
-                  <modifiers>
-                    <modifier type="append" value="(6+)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Crew" id="82bd-3460-d2e0-2a2a" hidden="false" type="profile" targetId="f518-70e5-57ba-de92"/>
-              </infoLinks>
-            </infoGroup>
-          </infoGroups>
           <costs>
             <cost name="pts" typeId="points" value="285"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew" collective="true">
+        <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew">
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="dbec-e72c-9aa1-a5ad" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
