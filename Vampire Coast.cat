@@ -1757,6 +1757,15 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
       </characteristics>
     </profile>
+    <profile name="Sword of the Thirteen Seas" typeId="e4d1-790a-ab75-2b57" typeName="Magic Weapons" hidden="false" id="5a8c-fb7a-0969-110e">
+      <characteristics>
+        <characteristic name="R" typeId="51c8-c0d6-94db-264c">Combat</characteristic>
+        <characteristic name="S" typeId="4f75-25c9-31bd-7074">S+1</characteristic>
+        <characteristic name="AP" typeId="15e2-fff4-477f-ea26">*</characteristic>
+        <characteristic name="Special Rules" typeId="57a7-47c0-8d74-d54c">Magical Attacks</characteristic>
+        <characteristic name="Note" typeId="5e5e-34db-1ee0-86">Wounds caused by the Sword of the Thirteen Seas prevent the enemy&apos;s Armor Saving Rolls and Regeneration; Ward Saves can be rolled normally.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Filth-Encrusted Claws" hidden="false" id="5faa-b301-3a54-e02f">
@@ -6123,11 +6132,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="max" value="100" field="points" scope="parent" shared="false" id="8720-45ef-95e5-3de1"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Magic Items" hidden="false" id="2fcc-dc9d-c41e-04bb" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="10">
-          <constraints>
-            <constraint type="max" value="100" field="points" scope="parent" shared="false" id="4eb2-7ca2-4d51-c186"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="cc1c-1214-57ad-1a2d" hidden="false" flatten="true" sortIndex="3">
@@ -6269,6 +6273,15 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c2e7-9e10-a906-2494" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Items" id="7341-e440-5bae-233a" hidden="false" sortIndex="10">
+          <entryLinks>
+            <entryLink import="true" name="Magic Items" hidden="false" id="2fcc-dc9d-c41e-04bb" type="selectionEntryGroup" targetId="1539-fd78-88f-badd"/>
+            <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="05d8-6fff-463a-5346" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="100" field="points" scope="parent" shared="false" id="4eb2-7ca2-4d51-c186"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -9349,6 +9362,22 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           <infoLinks>
             <infoLink name="Curse of the Risen One" hidden="false" id="cb55-1a87-916e-0a22" type="profile" targetId="33a9-e003-e70e-48ad"/>
           </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magic Items (Vampire Coast)" id="755e-0f84-2f67-8e33" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Magic Weapons (Vampire Coast)" hidden="false" id="90ac-334f-ff41-ab84">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sword of the Thirteen Seas" hidden="false" id="aa2b-6d68-3149-6df6">
+              <infoLinks>
+                <infoLink name="Sword of the Thirteen Seas" id="907d-eba2-1a18-5c77" hidden="false" type="profile" targetId="5a8c-fb7a-0969-110e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42a1-0234-ae5e-7fb5"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
