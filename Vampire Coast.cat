@@ -9746,7 +9746,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5650-f181-ccbf-6b3a"/>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bb33-c863-05e2-d0a5" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Battle Standard Bearer (Vampire Counts)" id="1d6d-af5b-160b-1b73" hidden="false" sortIndex="1">
