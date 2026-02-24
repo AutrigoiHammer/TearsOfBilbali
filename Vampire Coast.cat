@@ -7993,15 +7993,15 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc5-b940-74cd-5b68"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52bb-648e-a517-85e9"/>
+          </constraints>
           <infoLinks>
             <infoLink name="Rotting Leviathan" id="7fbd-f881-9630-3802" hidden="false" type="profile" targetId="ac10-0162-fc89-651a"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc5-b940-74cd-5b68"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52bb-648e-a517-85e9"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scaly Skin" hidden="false" id="1ca9-8be5-3da6-88cd">
       <constraints>
