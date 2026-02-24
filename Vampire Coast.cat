@@ -9376,6 +9376,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42a1-0234-ae5e-7fb5"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="65"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
