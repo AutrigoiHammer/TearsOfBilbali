@@ -6250,7 +6250,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99f6-a7ce-ba4f-324b"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Rotten Promethean" hidden="false" id="56d5-4d0d-46c2-9f29" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
+            <entryLink import="true" name="Rotting Promethean" hidden="false" id="56d5-4d0d-46c2-9f29" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
             <entryLink import="true" name="Terrorgheist" hidden="false" id="ae47-4e65-2f04-18cc" type="selectionEntry" targetId="450fb3b2-1df3aa7c"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -6311,10 +6311,13 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </conditionGroups>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="points" value="160"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rotting Promethean" hidden="false" id="8e14-ee64-cb54-41fb" subType="mount">
       <infoLinks>
-        <infoLink name="Rotten Promethean" id="fbb8-a9c4-0805-8601" hidden="false" type="profile" targetId="11eb-c074-120f-3059"/>
+        <infoLink name="Rotting Promethean" id="fbb8-a9c4-0805-8601" hidden="false" type="profile" targetId="11eb-c074-120f-3059"/>
         <infoLink name="Base (50x50)" id="745f-0e7b-f6c4-111c" hidden="false" type="profile" targetId="7813-4d15-143d-1bf1"/>
       </infoLinks>
       <costs>
@@ -6485,7 +6488,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="658e-a716-dd8f-8f69"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Rotten Promethean" hidden="false" id="af92-f599-8564-6831" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
+            <entryLink import="true" name="Rotting Promethean" hidden="false" id="af92-f599-8564-6831" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="a484-4d27-3ee2-62af" hidden="false" flatten="true" sortIndex="5">
@@ -6582,6 +6585,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </conditionGroups>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="points" value="75"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gunnery Wight" hidden="false" id="dbad-3992-3c49-0508" collective="false">
       <profiles>
@@ -6655,7 +6661,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa2-a934-f115-eeb3"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Rotten Promethean" hidden="false" id="d9a1-675e-a23b-e09d" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
+            <entryLink import="true" name="Rotting Promethean" hidden="false" id="d9a1-675e-a23b-e09d" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Fire Weapons" id="c31e-59ee-03d1-2f2f" hidden="false" sortIndex="5">
@@ -6735,6 +6741,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           </conditionGroups>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="points" value="45"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" name="Mourngul Hunter" id="f1b4-241b-a5a7-e778" hidden="false">
       <infoLinks>
@@ -7313,7 +7322,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Abysal Promethean" hidden="false" id="d633-6c87-03ed-e121" subType="crew" collective="true" sortIndex="1">
               <infoLinks>
-                <infoLink name="Rotten Promethean" id="a809-c050-709c-8db5" hidden="false" type="profile" targetId="11eb-c074-120f-3059">
+                <infoLink name="Rotting Promethean" id="a809-c050-709c-8db5" hidden="false" type="profile" targetId="11eb-c074-120f-3059">
                   <modifiers>
                     <modifier type="set" value="Abyssal Promethean" field="name"/>
                     <modifier type="increment" value="1" field="dddc-9fbd-b0fd-a480"/>
@@ -7946,38 +7955,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <categoryLink targetId="5993-63a0-6d62-18b3" id="e829-7d69-fa14-8aa6" primary="false" name="0-1 Necrofex Colossus per 2,000 points"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew" collective="true" sortIndex="2">
-          <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="dbec-e72c-9aa1-a5ad" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8e47-8b08-886d-2fcc"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a056-29c7-0703-9439"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d84-da6c-4cb2-96fd"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e0da-e3d3-1f21-4741"/>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="192f-d73d-f3f1-4548"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Zombie" id="ad1b-2bd2-486f-c714" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rotting Leviathan" hidden="false" id="fe18-a75d-57eb-e62b" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Colossal Maw" hidden="false" id="8b36-e930-c1ed-d8b7" collective="true">
@@ -8005,6 +7982,38 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
               </constraints>
               <infoLinks>
                 <infoLink name="Giant Rotten Claws" id="dc13-a43a-3f52-957d" hidden="false" type="profile" targetId="5f3e-1299-ce42-bc85"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew" collective="true">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="dbec-e72c-9aa1-a5ad" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8e47-8b08-886d-2fcc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a056-29c7-0703-9439"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d84-da6c-4cb2-96fd"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e0da-e3d3-1f21-4741"/>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="192f-d73d-f3f1-4548"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Zombie" id="ad1b-2bd2-486f-c714" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -8147,7 +8156,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <categoryLink targetId="fec1-537a-bbeb-7926" id="c8eb-112d-d247-d106" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Rotten Prometheans" hidden="false" id="b334-bd50-1bca-f7f1" targetId="0aa7-345d-ce1d-d377" type="selectionEntry">
+    <entryLink import="true" name="Rotting Prometheans" hidden="false" id="b334-bd50-1bca-f7f1" targetId="0aa7-345d-ce1d-d377" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="633f-f67a-1b6a-d203" id="442d-03a7-9f3a-7560" primary="true" name="Special"/>
         <categoryLink targetId="2c85-5f2b-9288-1257" id="4d5c-0d9d-7864-876e" primary="false" name="Monstrous Cavalry"/>
