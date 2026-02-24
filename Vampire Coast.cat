@@ -8188,19 +8188,18 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Battle Standard Bearer" hidden="false" id="82be-be9c-6607-ee98">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c6e-119b-3705-1547"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="46d0-f368-823c-09ef" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="Battle Standard Bearer" id="15f8-5c8e-4692-7af1" hidden="false" type="profile" targetId="da9a-f205-577f-debb"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Magic Standards" hidden="false" id="cee9-df9a-a67d-0f3c" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+        <entryLink import="true" name="Magic Standards" hidden="false" id="cee9-df9a-a67d-0f3c" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6"/>
+        <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="e6bf-99a1-c7f4-4586" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f82-8d6c-f9eb-64d9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c6e-119b-3705-1547"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="e6bf-99a1-c7f4-4586" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4"/>
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
