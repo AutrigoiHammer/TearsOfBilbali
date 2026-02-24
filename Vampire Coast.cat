@@ -8135,9 +8135,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="04c5-90bc-b2d5-e77b" collapsible="true">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6b5-7f42-262f-f073"/>
-      </constraints>
       <entryLinks>
         <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="f83c-97d7-ad5e-73b0" type="selectionEntryGroup" targetId="0999-8104-6220-b8c2"/>
       </entryLinks>
