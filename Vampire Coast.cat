@@ -6386,7 +6386,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c2e7-9e10-a906-2494" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="7341-e440-5bae-233a" hidden="false" sortIndex="10">
+        <selectionEntryGroup name="Magic Items" id="7341-e440-5bae-233a" hidden="false" sortIndex="10" collapsible="true">
           <entryLinks>
             <entryLink import="true" name="Magic Items" hidden="false" id="2fcc-dc9d-c41e-04bb" type="selectionEntryGroup" targetId="1539-fd78-88f-badd"/>
             <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="05d8-6fff-463a-5346" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
@@ -6656,7 +6656,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         </selectionEntryGroup>
         <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10" collapsible="true">
           <entryLinks>
-            <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd"/>
+            <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" collapsible="true"/>
             <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="f02c-e9d6-944a-3d50" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
           </entryLinks>
           <constraints>
@@ -6817,10 +6817,10 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="207d-dcbd-2336-1ac0" hidden="false" sortIndex="9">
+        <selectionEntryGroup name="Magic Items" id="207d-dcbd-2336-1ac0" hidden="false" sortIndex="9" collapsible="true">
           <entryLinks>
-            <entryLink import="true" name="Magic Items" hidden="false" id="210f-4578-2c93-9cac" type="selectionEntryGroup" targetId="1539-fd78-88f-badd"/>
-            <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="d244-318f-0e2a-cb99" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
+            <entryLink import="true" name="Magic Items" hidden="false" id="210f-4578-2c93-9cac" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" collapsible="true"/>
+            <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="d244-318f-0e2a-cb99" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33" collapsible="true"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="50" field="points" scope="parent" shared="false" id="ff90-5127-bfbd-5863"/>
