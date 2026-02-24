@@ -6009,24 +6009,13 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         </selectionEntryGroup>
         <selectionEntryGroup name="Lores of Magic" id="5d83-6c16-ff72-79e5" hidden="false" sortIndex="7" defaultSelectionEntryId="fa94-e429-9d29-be1b">
           <entryLinks>
-            <entryLink import="true" name="Dark Magic" hidden="false" id="fa94-e429-9d29-be1b" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="1"/>
-            <entryLink import="true" name="Necromancy" hidden="false" id="1d36-d85a-61b9-c952" type="selectionEntry" targetId="3d31-fd64-e074-700a" sortIndex="3"/>
+            <entryLink import="true" name="Dark Magic" hidden="false" id="fa94-e429-9d29-be1b" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="1" collective="true"/>
+            <entryLink import="true" name="Necromancy" hidden="false" id="1d36-d85a-61b9-c952" type="selectionEntry" targetId="3d31-fd64-e074-700a" sortIndex="3" collective="true"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b98d-415d-40b1-7f92"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d6-6f8b-841b-c123" includeChildSelections="false"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <comment>Hide if not a wizard</comment>
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="7d84-39e9-a5f-947e" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="8e47-73e8-f7f9-808" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="59f1-ac46-8123-3f8d" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="50bd-b918-574a-60c3" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Mount" id="0121-13ef-09ae-eb88" hidden="false" sortIndex="8">
           <constraints>
@@ -8169,9 +8158,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Renegades (Square Based)" hidden="false" id="9fd6-2f67-505f-ff4c" type="selectionEntry" targetId="974c-3bf3-af4b-701d">
-      <comment>No Warhall</comment>
-    </entryLink>
     <entryLink import="true" name="Zombie Pirates" hidden="false" id="4a61-bf48-f66f-b59f" targetId="0bbf-c8d8-6beb-3425" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="f0e3-2e32-8866-ea32" id="fc17-2728-94e6-2dfc" primary="true" name="Core"/>
