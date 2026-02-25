@@ -2151,7 +2151,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="857e-a885-39c5-de87" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
+    <selectionEntry type="unit" import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="857e-a885-39c5-de87" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" sortIndex="1">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Golgfag Maneater" hidden="false" id="89f6-d29e-137a-4db7" sortIndex="1">
           <entryLinks>
@@ -2313,8 +2313,20 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e010-a3dd-df28-7294" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f8cb-e518-1881-292" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c637-f6be-935d-faae" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
+    <selectionEntry type="unit" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" sortIndex="2">
       <categoryLinks>
         <categoryLink name="Mercenaries" hidden="false" id="69ad-4f9e-858c-b56f" targetId="5b84-2c3c-869d-3522" primary="true"/>
       </categoryLinks>
@@ -2401,7 +2413,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e422-3f53-8054-65fb" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="e9c6-8a9f-8f08-b36a" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
+    <selectionEntry type="unit" import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="e9c6-8a9f-8f08-b36a" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" sortIndex="3">
       <categoryLinks>
         <categoryLink name="Faction: Dwarfen Mountain Holds" hidden="false" id="ef78-415a-0f5c-5400" targetId="f4fd-aa79-6ff3-1ea9" primary="false"/>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="7daa-6d1b-467b-e2bf" primary="true" name="Mercenaries"/>
@@ -2518,7 +2530,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Voland&apos;s Venators" hidden="false" id="f019-bfd6-099a-0d30" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
+    <selectionEntry type="unit" import="true" name="Voland&apos;s Venators" hidden="false" id="f019-bfd6-099a-0d30" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="7dbc-4a43-4e09-cafc" primary="true" name="Mercenaries"/>
         <categoryLink targetId="5165-d052-cfc2-5887" id="0a19-4cd7-ff37-a828" primary="false" name="Heavy Cavalry"/>
@@ -5815,7 +5827,9 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
     </profile>
     <profile name="The Besieger&apos;s Pavise" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="582a-ba75-f257-d391">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">This pavise is a large shield which each crossbowman props in front of him. Such pavises save on a roll 3+ against shooting attacks, and combat attacks if these are happening through the front of the unit, and Braganzas Besieger&apos;s unit has been charged.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">A pavise is a large shield which each Crossbowman can prop up in front of him. To represent this, Crossbowmen equippedwith pavises have an additional +2 Armour save versus normal and magical missile attacks.
+They do not get this bonus in close combat. So a Crossbowman in heavy armour gets an Armour Save of 3+ versus missile attacks, but only Armour Save 5+ in close combat.
+</characteristic>
       </characteristics>
     </profile>
     <profile name="Drong" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="cfec-f037-602f-487f">
@@ -5854,7 +5868,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
         <characteristic name="Description" typeId="9f84-4221-785a-db50">When unable to get ale, the Dwarf pirates brew their own drink. This dangerous stuff is a sort of rum mixed with gunpowder and iron filings, and each bottle has a skull and crossbones on it as a warning. The pirates swig so much of this concoction that they are now immune to drunkenness, though it wreaks havoc with their insides. Before a battle the Dwarfs will knock back a few bottles each, and the resultant intestinal rumblings and gurglings leave an odious mist hanging around the regiment. 
 
 
-Though the pirates claim not to notice the smell the effect is dire on the enemy who suffer -1 to hit in hand-to-hand combat. The great disadvantage to the pirates is that no other troops will stand near them. As a result, any allied unit closer than 3&quot; to Long Drong&apos;s Slayer Pirates will also suffer -1 to hit on hand-to-hand combat. Obviously, Undead troops, Daemons and followers of Nurgle won’t notice the stench either, so these Armies are excluded.</characteristic>
+Though the pirates claim not to notice the smell the effect is dire on the enemy who suffer -1 to hit in hand-to-hand combat. The great disadvantage to the pirates is that no other troops will stand near them. As a result, the regiment may not be deployed closer than 3&quot; to any other unit in the army at the start of the battle.</characteristic>
       </characteristics>
     </profile>
     <profile name="Voland" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="266b-2178-9fe4-2160" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
