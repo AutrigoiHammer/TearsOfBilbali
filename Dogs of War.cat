@@ -135,11 +135,48 @@
         <categoryLink targetId="633f-f67a-1b6a-d203" id="a951-3023-7bba-cce4" primary="true" name="Special"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tichi-Huichi&apos;s Raiders" hidden="false" id="2d20-a31a-cdfa-710a" type="selectionEntry" targetId="c5b8-b0fe-0c9d-6824">
+    <entryLink import="true" name="The Witch Hunters" hidden="false" id="2d20-a31a-cdfa-710a" type="selectionEntry" targetId="c677-e343-2366-3408">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="e8a7-da35-fee3-cb3e" primary="false" name="Mercenaries"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="6ae9-04d1-27dd-38ed" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
         <categoryLink targetId="2bfe-5863-46fe-d284" id="e1f8-42b4-6507-7c0e" primary="true" name="Rare"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="50ea-5341-3ec9-1c25" type="selectionEntry" targetId="5b0c-3da2-c226-bb34">
+      <categoryLinks>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="4371-4561-56bb-9290" primary="true" name="Named Characters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Leonardo da Miragliano" hidden="false" id="0999-7079-4870-27ee" type="selectionEntry" targetId="cbf5-ed78-8b78-d3c2">
+      <categoryLinks>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="441d-293c-ad9d-f4bd" primary="true" name="Named Characters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="d09a-a0b1-07f0-c05b" type="selectionEntry" targetId="5d23-a058-965c-22dc">
+      <categoryLinks>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="572a-c7dd-63d4-f993" primary="true" name="Named Characters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lorenzo Lupo" hidden="false" id="aed5-02fb-23bf-f98c" type="selectionEntry" targetId="c1e2-e68e-0339-48c4">
+      <categoryLinks>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="a538-f595-3a90-458f" primary="true" name="Named Characters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lucrezzia Belladona" hidden="false" id="8ddd-20dd-6c4f-9101" type="selectionEntry" targetId="4127-0e37-21a9-4569">
+      <categoryLinks>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="6052-2885-95d7-d88b" primary="true" name="Named Characters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mydas The Mean" hidden="false" id="c9e9-9349-0726-706a" type="selectionEntry" targetId="28d4-1bdb-c4b2-44ee">
+      <categoryLinks>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="1eab-fd3e-f296-4e21" primary="true" name="Named Characters"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tichi-Huichi&apos;s Raiders" hidden="false" id="7325-081d-fe2d-e66b" type="selectionEntry" targetId="c5b8-b0fe-0c9d-6824">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="66f1-fff1-3ecf-c298" primary="false" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="8185-a464-4921-bdd3" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink targetId="2bfe-5863-46fe-d284" id="515f-e179-209a-30f7" primary="true" name="Rare"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
