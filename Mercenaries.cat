@@ -6600,7 +6600,7 @@ On a successful score your opponent must reveal any hidden troops in that unit a
         <characteristic name="Description" typeId="9f84-4221-785a-db50">One unit of Pikemen (or any unit carrying pikes) or Heavy Cavalry may carry a 50 point Magic Standard (if they could not in their natural way).
 
 
-Although indicated in the Named Character&apos;s profile, consider the banner to be in the unit it will be put. Indicate this to your rival at the beggining of the deployment, when both armies are being presented between opponents. No double magic banner would be allowed in that unit. In the case of duplication, Borgio&apos;s Magic Banner does not apply.</characteristic>
+Although indicated in the Named Character&apos;s profile, consider the banner to be in the unit it will be put. Indicate this to your rival at the beggining of the deployment, when both armies are being presented between opponents. No double magic banner would be allowed in that unit. In the case of duplication, Named Character&apos;s Magic Banner does not apply.</characteristic>
       </characteristics>
     </profile>
     <profile name="Lumpin Croop" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="93ce-dbed-8079-28e3" page="Warhammer Regiments of Renown (2003) - Additional Mercenary Units">
