@@ -2043,13 +2043,11 @@
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6dc7-f698-014b-63e1" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="142f-feb2-1509-865b" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="56fb-835b-a377-6639" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d9b0-fa44-a251-bfea" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6602,7 +6600,7 @@ On a successful score your opponent must reveal any hidden troops in that unit a
         <characteristic name="Description" typeId="9f84-4221-785a-db50">One unit of Pikemen (or any unit carrying pikes) or Heavy Cavalry may carry a 50 point Magic Standard (if they could not in their natural way).
 
 
-Although indicated in Borgio&apos;s profile, consider the banner to be in the unit it will be put. Indicate this to your rival at the beggining of the deployment, when both armies are being presented between opponents. No double magic banner would be allowed in that unit. In the case of duplication, Borgio&apos;s Magic Banner does not apply.</characteristic>
+Although indicated in the Named Character&apos;s profile, consider the banner to be in the unit it will be put. Indicate this to your rival at the beggining of the deployment, when both armies are being presented between opponents. No double magic banner would be allowed in that unit. In the case of duplication, Borgio&apos;s Magic Banner does not apply.</characteristic>
       </characteristics>
     </profile>
     <profile name="Lumpin Croop" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="93ce-dbed-8079-28e3" page="Warhammer Regiments of Renown (2003) - Additional Mercenary Units">
@@ -7038,8 +7036,7 @@ Any Daemonology, Dark Magic or Necromantic spell targeted towards him or Johann 
     </entryLink>
     <entryLink import="true" name="Rakarth, The Beastlord" hidden="false" id="13e1-b48e-ad58-0689" type="selectionEntry" targetId="9c28-85eb-3544-b0a4">
       <categoryLinks>
-        <categoryLink name="Mercenaries" hidden="false" id="dc4f-7d07-805e-3ee9" targetId="5b84-2c3c-869d-3522" primary="true"/>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="318c-d2a4-266f-e9c9" primary="false" name="Named Characters"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="318c-d2a4-266f-e9c9" primary="true" name="Named Characters"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="95c7-5534-8465-8ec2" type="selectionEntry" targetId="8c4a-26d2-6368-f867">
