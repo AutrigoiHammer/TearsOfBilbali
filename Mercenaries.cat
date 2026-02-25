@@ -1252,6 +1252,9 @@
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8f74-f1ec-ac20-0651" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="5d23-a058-965c-22dc" page="Warhammer Fantasy Battle - 2003 - Warhammer Chronicles - Dogs of War - Regiments of Renown - Extra Material">
       <costs>
@@ -5828,8 +5831,7 @@ If the victim fails the Leadership Test, they are overcome with pain and may not
     <profile name="The Besieger&apos;s Pavise" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="582a-ba75-f257-d391">
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">A pavise is a large shield which each Crossbowman can prop up in front of him. To represent this, Crossbowmen equippedwith pavises have an additional +2 Armour save versus normal and magical missile attacks.
-They do not get this bonus in close combat. So a Crossbowman in heavy armour gets an Armour Save of 3+ versus missile attacks, but only Armour Save 5+ in close combat.
-</characteristic>
+They do not get this bonus in close combat. So a Crossbowman in heavy armour gets an Armour Save of 3+ versus missile attacks, but only Armour Save 5+ in close combat.</characteristic>
       </characteristics>
     </profile>
     <profile name="Drong" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="cfec-f037-602f-487f">
