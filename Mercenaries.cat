@@ -2287,7 +2287,7 @@
           </characteristics>
         </profile>
         <profile name="Adapted from Warhammer Fantasy Battle - Fifth Edition - Dogs of War - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="2458-1afb-6a4d-a739"/>
-        <profile name="https://drive.google.com/file/d/1N_HXqogfTdd1dueMboUSXyaDD-tj448U/view?usp=drive_link" typeId="1348-0c55-ec95-2e28" typeName="Archive" hidden="false" id="1ddc-4646-7059-f95f"/>
+        <profile name="https://drive.google.com/file/d/1N_HXqogfTdd1dueMboUSXyaDD-tj448U/view?usp=drive_link" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="1ddc-4646-7059-f95f"/>
       </profiles>
       <infoGroups>
         <infoGroup name="Special Rules" id="84dd-8a5d-a001-8068" hidden="false">
@@ -7128,6 +7128,5 @@ Any Daemonology, Dark Magic or Necromantic spell targeted towards him or Johann 
   </catalogueLinks>
   <profileTypes>
     <profileType name="Source" id="6f0a-b6a2-0c31-510a" hidden="false"/>
-    <profileType name="Archive" id="1348-0c55-ec95-2e28" hidden="false"/>
   </profileTypes>
 </catalogue>
