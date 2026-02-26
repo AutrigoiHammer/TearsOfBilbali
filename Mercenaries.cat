@@ -2286,8 +2286,9 @@
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
           </characteristics>
         </profile>
-        <profile name="Adapted from Warhammer Fantasy Battle - Fifth Edition - Dogs of War - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="2458-1afb-6a4d-a739"/>
-        <profile name="https://drive.google.com/file/d/1N_HXqogfTdd1dueMboUSXyaDD-tj448U/view?usp=drive_link" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="1ddc-4646-7059-f95f"/>
+        <profile name="3. Visit tearsofbilbali.games for more information" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="1ddc-4646-7059-f95f"/>
+        <profile name="1. Dogs of War - Fifth Edition - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="e401-e06d-cdcb-c49a"/>
+        <profile name="2. Adapted for Warhammer: The Old World" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="f380-2092-1f4c-916d"/>
       </profiles>
       <infoGroups>
         <infoGroup name="Special Rules" id="84dd-8a5d-a001-8068" hidden="false">
