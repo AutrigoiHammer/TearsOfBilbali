@@ -2286,6 +2286,13 @@
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Golgfag&apos;s Mercenary Ogres" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="2458-1afb-6a4d-a739">
+          <attributes>
+            <attribute name="Archive" typeId="9dd1-c3dd-640a-3ec2">https://drive.google.com/file/d/1N_HXqogfTdd1dueMboUSXyaDD-tj448U/view?usp=sharing</attribute>
+            <attribute name="Edition" typeId="800d-7885-876c-bfce">Fifth Edition</attribute>
+            <attribute name="Miniature" typeId="8973-93e6-6a96-5e3a">http://www.solegends.com/citrr/1rr08golgfags/index.htm</attribute>
+          </attributes>
+        </profile>
       </profiles>
       <infoGroups>
         <infoGroup name="Special Rules" id="84dd-8a5d-a001-8068" hidden="false">
@@ -7124,4 +7131,13 @@ Any Daemonology, Dark Magic or Necromantic spell targeted towards him or Johann 
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
     <catalogueLink type="catalogue" name="Runic Items" id="04d3-592b-d051-4995" targetId="7aa2-db17-4956-5c36"/>
   </catalogueLinks>
+  <profileTypes>
+    <profileType name="Source" id="6f0a-b6a2-0c31-510a" hidden="false" kind="tag">
+      <attributeTypes>
+        <attributeType name="Archive" id="9dd1-c3dd-640a-3ec2" kind="longText"/>
+        <attributeType name="Edition" id="800d-7885-876c-bfce" kind="longText"/>
+        <attributeType name="Miniature" id="8973-93e6-6a96-5e3a" kind="longText"/>
+      </attributeTypes>
+    </profileType>
+  </profileTypes>
 </catalogue>
