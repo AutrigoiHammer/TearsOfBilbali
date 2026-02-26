@@ -2286,13 +2286,8 @@
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
           </characteristics>
         </profile>
-        <profile name="Golgfag&apos;s Mercenary Ogres" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="2458-1afb-6a4d-a739">
-          <characteristics>
-            <characteristic name="Archive" typeId="d5ba-f71f-bd79-e5bd">https://drive.google.com/file/d/1N_HXqogfTdd1dueMboUSXyaDD-tj448U/view?usp=sharing</characteristic>
-            <characteristic name="Edition" typeId="3d46-4c39-71ec-4d80">Fifth Edition</characteristic>
-            <characteristic name="Miniature" typeId="55bd-3d87-46a7-90a7">http://www.solegends.com/citrr/1rr08golgfags/index.htm</characteristic>
-          </characteristics>
-        </profile>
+        <profile name="Adapted from Warhammer Fantasy Battle - Fifth Edition - Dogs of War - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="2458-1afb-6a4d-a739"/>
+        <profile name="https://drive.google.com/file/d/1N_HXqogfTdd1dueMboUSXyaDD-tj448U/view?usp=drive_link" typeId="1348-0c55-ec95-2e28" typeName="Archive" hidden="false" id="1ddc-4646-7059-f95f"/>
       </profiles>
       <infoGroups>
         <infoGroup name="Special Rules" id="84dd-8a5d-a001-8068" hidden="false">
@@ -7132,12 +7127,7 @@ Any Daemonology, Dark Magic or Necromantic spell targeted towards him or Johann 
     <catalogueLink type="catalogue" name="Runic Items" id="04d3-592b-d051-4995" targetId="7aa2-db17-4956-5c36"/>
   </catalogueLinks>
   <profileTypes>
-    <profileType name="Source" id="6f0a-b6a2-0c31-510a" hidden="false">
-      <characteristicTypes>
-        <characteristicType name="Archive" id="d5ba-f71f-bd79-e5bd" kind="longText"/>
-        <characteristicType name="Edition" id="3d46-4c39-71ec-4d80" kind="longText"/>
-        <characteristicType name="Miniature" id="55bd-3d87-46a7-90a7" kind="longText"/>
-      </characteristicTypes>
-    </profileType>
+    <profileType name="Source" id="6f0a-b6a2-0c31-510a" hidden="false"/>
+    <profileType name="Archive" id="1348-0c55-ec95-2e28" hidden="false"/>
   </profileTypes>
 </catalogue>
