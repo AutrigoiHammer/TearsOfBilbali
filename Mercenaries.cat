@@ -7132,7 +7132,7 @@ Any Daemonology, Dark Magic or Necromantic spell targeted towards him or Johann 
     <catalogueLink type="catalogue" name="Runic Items" id="04d3-592b-d051-4995" targetId="7aa2-db17-4956-5c36"/>
   </catalogueLinks>
   <profileTypes>
-    <profileType name="Source" id="6f0a-b6a2-0c31-510a" hidden="false" kind="tag">
+    <profileType name="Source" id="6f0a-b6a2-0c31-510a" hidden="false">
       <characteristicTypes>
         <characteristicType name="Archive" id="d5ba-f71f-bd79-e5bd" kind="longText"/>
         <characteristicType name="Edition" id="3d46-4c39-71ec-4d80" kind="longText"/>
