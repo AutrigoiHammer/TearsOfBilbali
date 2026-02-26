@@ -2412,6 +2412,9 @@
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
+        <profile name="1. Dogs of War - Fifth Edition - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="408f-47f3-82bc-f00b"/>
+        <profile name="2. Adapted for Warhammer: The Old World" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="af8c-f7d8-baba-8528"/>
+        <profile name="3. Visit tearsofbilbali.games for more information" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="ebb3-8fb1-bca9-c4f3"/>
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e422-3f53-8054-65fb" includeChildSelections="true" includeChildForces="true"/>
