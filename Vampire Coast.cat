@@ -8101,7 +8101,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
                   <modifiers>
-                    <modifier type="increment" value="10" field="points" scope="force"/>
+                    <modifier type="increment" value="10" field="points" scope="64e4-e83b-37c9-d04e"/>
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
