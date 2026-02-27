@@ -6538,7 +6538,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="" hidden="false" id="83cb-b6a3-f3f4-c3e0" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3">
+            <entryLink import="true" hidden="false" id="83cb-b6a3-f3f4-c3e0" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3" name="Full Plate Armour">
               <costs>
                 <cost name="pts" typeId="points" value="9"/>
               </costs>
@@ -8078,56 +8078,59 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <cost name="pts" typeId="points" value="260"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew" sortIndex="2">
-          <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="dbec-e72c-9aa1-a5ad" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8e47-8b08-886d-2fcc"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e0da-e3d3-1f21-4741"/>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="192f-d73d-f3f1-4548"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Zombie" id="ad1b-2bd2-486f-c714" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="22c0-18b0-986b-230c" hidden="false">
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Zombie Pirate Crew" id="6038-5d3c-4970-85e4" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="e3bf-2947-0e21-0fb5" subType="crew" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                  </costs>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="abba-727f-c9c2-dab7" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="3051-1a83-d5cd-1aca"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="d1e2-8e36-51cf-67c5"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4471-ff02-d472-28a4"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Zombie" id="bf70-f01a-5b82-da5c" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Additional Zombie Pirates" hidden="false" id="4682-3cdc-b9a2-b9ae" subType="crew" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Hand Weapon" hidden="false" id="d771-713d-8402-1fca" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c093-394c-2da0-8406"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1c5d-cddc-118f-dce9"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Zombie" id="90e7-9d42-350d-fe5b" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="6"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="5602-ec3b-9f55-68a3" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Pistols" hidden="false" id="5b85-f53a-adb3-f00e" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1"/>
+                <entryLink import="true" name="Handguns" hidden="false" id="086c-acdf-eba1-9286" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
                   <modifiers>
                     <modifier type="increment" value="10" field="points" scope="64e4-e83b-37c9-d04e"/>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                  </costs>
-                </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="969d-2b18-ff41-4c1a"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Additional Zombie Pirates" hidden="false" id="e3bf-2947-0e21-0fb5" subType="crew" sortIndex="3">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d1e2-8e36-51cf-67c5"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Zombie" id="bf70-f01a-5b82-da5c" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="6"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scaly Skin" hidden="false" id="1ca9-8be5-3da6-88cd">
       <constraints>
