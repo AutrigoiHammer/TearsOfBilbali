@@ -8032,9 +8032,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
+                  <modifiers>
+                    <modifier type="increment" value="10" field="points" scope="03b9-a4fe-1a10-147e"/>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -8065,11 +8065,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Handgun" hidden="false" id="b630-7cb0-b907-0c21" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </entryLink>
+                <entryLink import="true" name="Handgun" hidden="false" id="b630-7cb0-b907-0c21" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c0c-9b49-019e-3e32"/>
