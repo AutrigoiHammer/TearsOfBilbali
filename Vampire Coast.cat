@@ -6327,8 +6327,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         <selectionEntryGroup name="Lores of Magic" id="ae3b-a7d9-d694-1dde" hidden="false" sortIndex="7">
           <entryLinks>
             <entryLink import="true" name="Dark Magic" hidden="false" id="3d0b-84a3-6381-0dc9" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="1"/>
-            <entryLink import="true" name="Illusion" hidden="false" id="6dd8-cac1-9476-cdf4" type="selectionEntry" targetId="af66-671f-5a42-a118" sortIndex="2"/>
-            <entryLink import="true" name="Necromancy" hidden="false" id="fec3-251d-54af-53b0" type="selectionEntry" targetId="3d31-fd64-e074-700a" sortIndex="3"/>
+            <entryLink import="true" name="Necromancy" hidden="false" id="fec3-251d-54af-53b0" type="selectionEntry" targetId="3d31-fd64-e074-700a" sortIndex="2"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="41a6-e931-c58e-2316"/>
@@ -6570,7 +6569,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         <selectionEntryGroup name="Lores of Magic" id="ac4b-8869-35e5-0446" hidden="false" sortIndex="7">
           <entryLinks>
             <entryLink import="true" name="Dark Magic" hidden="false" id="6423-bd10-fe53-a3bf" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="1"/>
-            <entryLink import="true" name="Illusion" hidden="false" id="7429-fcf3-210c-9540" type="selectionEntry" targetId="af66-671f-5a42-a118" sortIndex="2"/>
             <entryLink import="true" name="Necromancy" hidden="false" id="3a92-db6b-b837-5e47" type="selectionEntry" targetId="3d31-fd64-e074-700a" sortIndex="3"/>
           </entryLinks>
           <constraints>
@@ -7726,7 +7724,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Carronade" hidden="false" id="d627-3901-b1dc-7ced" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="1">
           <costs>
-            <cost name="pts" typeId="points" value="200"/>
+            <cost name="pts" typeId="points" value="90"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb53-0176-aa93-8d7b"/>
@@ -7741,8 +7739,8 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Zombie Pirate Charger Crew" hidden="false" id="1dc9-cd0a-11a7-209d" collective="false" publicationId="3a81ff07--pubd1e638" sortIndex="2">
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="62f1-572c-6f29-d8da"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="57ae-f0bd-d034-a857"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="62f1-572c-6f29-d8da"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="57ae-f0bd-d034-a857"/>
           </constraints>
           <infoLinks>
             <infoLink name="Zombie Pirate Charger" id="4495-3ef6-1b01-5d4d" hidden="false" type="profile" targetId="9814-6f22-4ec0-c4aa"/>
