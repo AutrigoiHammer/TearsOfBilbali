@@ -5365,6 +5365,21 @@ When required to make a Fear, Panic or Terror test, models with this special rul
           </profiles>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Tears of Bilbali Informative Summary" hidden="false" id="bb70-4d00-8ae1-d2e7" type="selectionEntry" targetId="dd67-976a-d2db-50f3">
+          <profiles>
+            <profile name="Miniatures: Check The Stuff of Legends Website for more Information" typeId="da36-1598-6be3-19c0" typeName="Information" hidden="false" id="7e6d-d236-ddd4-1050"/>
+            <profile name="Miniatures: RR11 - Karnac&apos;s Lizardmen Raiders " typeId="da36-1598-6be3-19c0" typeName="Information" hidden="false" id="d533-083b-e224-ce6d"/>
+            <profile name="Source: Citadel Journal Nº 001 - 1985 - Regiments of Renown" typeId="da36-1598-6be3-19c0" typeName="Information" hidden="false" id="0a36-854c-73e3-9ba4"/>
+          </profiles>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tears of Bilbali Informative Summary" hidden="false" id="dd67-976a-d2db-50f3">
+      <profiles>
+        <profile name="Adapted for The Old World: Tears of Bilbali Edition" typeId="da36-1598-6be3-19c0" typeName="Information" hidden="false" id="eedf-b4f4-b262-5de3"/>
+        <profile name="Check Tears of Bibali Website for more information" typeId="da36-1598-6be3-19c0" typeName="Information" hidden="false" id="835d-a622-5dcc-5121"/>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -7373,4 +7388,7 @@ Models with this special rule do not suffer any modifiers to their Movement char
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
     <catalogueLink type="catalogue" name="Runic Items" id="04d3-592b-d051-4995" targetId="7aa2-db17-4956-5c36"/>
   </catalogueLinks>
+  <profileTypes>
+    <profileType name="Information" id="da36-1598-6be3-19c0" hidden="false"/>
+  </profileTypes>
 </catalogue>
