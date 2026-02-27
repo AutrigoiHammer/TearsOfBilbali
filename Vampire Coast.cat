@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4545-8340-9988-0ToB" name="Vampire Coast" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="49" revision="62" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="Giloushaker#2496">
+<catalogue library="false" id="4545-8340-9988-0ToB" name="Vampire Coast" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="49" revision="62" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="AutrigoiHammer &amp; D&apos;Ruiz">
   <sharedProfiles>
     <profile name="Vampire Count" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="57d7-6e34-d546-4b92">
       <characteristics>
@@ -1793,6 +1793,125 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <characteristic name="Note" typeId="5e5e-34db-1ee0-86"/>
       </characteristics>
       <alias>This ramshackle-looking musket fires with tremendous power.</alias>
+    </profile>
+    <profile name="Breastplate of the Seas" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="53c8-2506-a4af-f6d4">
+      <characteristics>
+        <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">The Breastplate of the Seas is Full Plate Armor. 
+
+
+For each successful armor save its wearer makes, the inflicting unit suffers a Strength 3 hit that prevents Armor Save, 
+
+
+Regeneration, and Ward Save can be used normally.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Eel Skin" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="33f6-3564-d51c-5c54">
+      <characteristics>
+        <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">The Eel Skin is a Light Armor that provides a Special Saving Roll of 6+ and can re-roll failed armor or ward saves. 
+
+
+Allows its wielder to cast spells without penalty. Note: With Renegade Legacy pack the cost is 25 points</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Driftwood Crown" typeId="5c1d-13f3-7dd6-e817" typeName="Talismans" hidden="false" id="48b9-ac7f-6e76-04a5">
+      <characteristics>
+        <characteristic name="Description" typeId="3fa5-c856-b00a-c9f4">At the beginning of each turn the bearer can use the &apos;Invocation of Nehek&apos; ability, as if he were a level 1 Wizard, on an allied infantry unit within 6&quot; of Zombie Pirates or Zombie Pirate Gunners, being able to exceed the initial size of miniatures.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Coin of Eight" typeId="5c1d-13f3-7dd6-e817" typeName="Talismans" hidden="false" id="4eb0-b82c-e26d-ed9a">
+      <characteristics>
+        <characteristic name="Description" typeId="3fa5-c856-b00a-c9f4">Roll D3+1 at the beginning of the game, the bearer can do that number of repetitions throughout the game for any dice they wish in their rolls</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Captain&apos;s Hat" typeId="5c1d-13f3-7dd6-e817" typeName="Talismans" hidden="false" id="a1cf-fd9f-6f6b-4909">
+      <characteristics>
+        <characteristic name="Description" typeId="3fa5-c856-b00a-c9f4">The character has a Ward Save of 6+. 
+
+
+In addition, they extend the range of their ‘Command Orders’ special rule by 8&quot;, or gain that rule if they did not already have it.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Boarding Flag" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards" hidden="false" id="4bb8-61f8-ba93-a6c4">
+      <characteristics>
+        <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">The unit gains the Hate (all Enemies) and Frenzy special rule and cannot lose this special rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Volley Banner" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards" hidden="false" id="72e9-6622-f16d-55d7">
+      <characteristics>
+        <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">The unit can re-roll hit rolls of 1 for its ranged attacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Banner of the Depths" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards" hidden="false" id="6897-a9d3-813e-0568">
+      <characteristics>
+        <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">Depth Guard units only. At the end of a combat round in which this unit has eliminated an enemy model, recover a model that was previously eliminated from this unit. It is not possible to recover characters that have been added in this way.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lost Skull" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards" hidden="false" id="13f6-f9fe-2405-7c65">
+      <characteristics>
+        <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">Only Zombie Pirate or Zombie Pirate Gunner units. 
+
+
+Each time a friendly or enemy sorcerer successfully casts a spell within 18&quot; of the unit, roll 1d6, on a 4+ add an additional model to the unit, potentially exceeding the initial size of models. 
+
+
+This ability can&apos;t recover miniatures from the Command Group.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Crazy Mullet&apos;s Spyglass" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="f027-45a7-877d-31a1">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">At the start of your Shooting Phase, if this character is not engaged in close combate, a unit within this character&apos;s command range may re-roll Wound rolls of 1 with their projectile weapons against a unit in line of sight of the bearer until the begining of your next turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Orb of the Depths" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="3868-58d4-f14a-2d8c">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Single use. Can be used at the end of any of your Movement phases: designate a point within 8” of the caster. 
+
+
+At that point a unit of Zombie Pirates appears consisting of 2D3+8 members equipped with Hand Weapon. 
+
+
+They cannot appear locked in melee combat and the unit summoned by the Orb does not award victory points.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vortex Pearl" typeId="65d6-7512-2a53-bd6c" typeName="Arcane Items" hidden="false" id="b732-ed7e-50cb-d994">
+      <characteristics>
+        <characteristic name="Description" typeId="fdd8-b367-1d68-c9cd">The sorcerer will know an additional spell, which will always be an Signature spell from the Lore of the Deep (he may also change another spell for a Signature as normal). 
+
+
+Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Cursed Medallion" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="d691-dc6b-9553-dc5e">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">The wearer improves their Regeneration special rule by +1 but the bearer can&apos;t roll any armor save or ward save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Skeleton Monkey" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="d8cf-d087-1b11-3ccf">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">The wearer has Magic Resistance (-2) special rule. However, each time the wearer suffers a wound roll 1d6, on a 5+ the Skeleton Monkey is destroyed and the wound is avoided.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dream Chant Pendant" typeId="65d6-7512-2a53-bd6c" typeName="Arcane Items" hidden="false" id="ac18-9ef5-6cbc-9adb">
+      <characteristics>
+        <characteristic name="Description" typeId="fdd8-b367-1d68-c9cd">The sorcerer will know an additional spell, which will always be an Signature spell from the Lore of the Deep (he may also change another spell for a Signature as normal). 
+
+
+Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dream Chant Pendant" typeId="8232-ae14-b1f6-b4df" typeName="Spell" hidden="false" id="879d-a34c-ff1f-b0d3">
+      <characteristics>
+        <characteristic name="Number" typeId="8a2b-690b-e552-6aa0">-</characteristic>
+        <characteristic name="Type" typeId="c2ca-5fd1-5e9d-bc90">Hex</characteristic>
+        <characteristic name="Casting Value" typeId="d84d-3b8b-654a-9e1a">7+</characteristic>
+        <characteristic name="Range" typeId="1043-a0ad-2909-dd28">21&quot;</characteristic>
+        <characteristic name="Effect" typeId="64ba-31-acf0-5a">Until your next Start of Turn subphase, the target unit takes a -1 penalty to its WS and BS and suffers the Stupidity rule. This spell may target an enemy unit engaged in combat.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Familiar Zombie Parrot" typeId="65d6-7512-2a53-bd6c" typeName="Arcane Items" hidden="false" id="060e-bb47-d377-9559">
+      <characteristics>
+        <characteristic name="Description" typeId="fdd8-b367-1d68-c9cd">0-1 per character. Once per turn the wielder can reroll a dice from a casting or dispell roll</characteristic>
+      </characteristics>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
@@ -5199,31 +5318,17 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="7a3b-320a-aec8-6b0d" targetId="may-have-shield"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="27dc-32fe-f1d8-bde9" subType="crew" sortIndex="2">
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="75fe-ca1b-09c6-086a" type="selectionEntry" targetId="04c5-90bc-b2d5-e77b" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Standard Bearer" id="c6c1-4125-d598-d22c" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Magic Standards" hidden="false" id="cfce-979c-951c-e6d8" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-                  <constraints>
-                    <constraint type="max" value="25" field="points" scope="parent" shared="false" id="fead-a912-214d-22c9"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <comment>upgrades: d2a99e2c-6e12bd76</comment>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e6cc-9230-1077-c1a8" includeChildSelections="false"/>
+                <constraint type="max" value="25" field="points" scope="self" shared="true" id="91fb-07bf-51c7-b1bc"/>
               </constraints>
-              <categoryLinks>
-                <categoryLink name="Heavy Infantry" hidden="false" id="3ba7-d4ea-e8bb-4991" targetId="ca7e-d004-ccde-caf3" primary="false"/>
-                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="79b6-abed-a2c1-b784" targetId="may-have-armour"/>
-                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="517c-0fa4-6896-12fc" targetId="may-have-shield"/>
-              </categoryLinks>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoGroups>
@@ -5243,7 +5348,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </infoGroup>
       </infoGroups>
       <categoryLinks>
-        <categoryLink name="Faction: Vampire Counts" hidden="false" id="dea2-27fa-afdd-d71a" primary="false" targetId="7345-d692-6f6a-d6f6"/>
+        <categoryLink targetId="f0e3-2e32-8866-ea32" id="3ae1-dbeb-e2d4-990d" primary="true" name="Core"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="db66-47e9-dcf9-4107" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="cd94-028c-78d4-cbad" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Zombie Pirate Gunners" hidden="false" id="f77a-a6f6-fee5-6cea" collective="false">
@@ -5256,7 +5363,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" name="Zombie Pirate" id="3ab0-cd79-c762-31e6" hidden="false" sortIndex="1">
+        <selectionEntry type="model" name="Zombie Pirates" id="3ab0-cd79-c762-31e6" hidden="false" sortIndex="2">
           <infoLinks>
             <infoLink name="Zombie" hidden="false" type="profile" id="d337-10ea-fe3b-ec5b" targetId="8cc9-bd5d-e6e4-4126"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="8592-b01b-d4eb-66a6" targetId="193c-4d0d-de6b-bbb1"/>
@@ -5292,7 +5399,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1b79-1360-eee1-224c" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Blunderbluss" hidden="false" id="78bd-a078-4627-f96a" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Blunderbluss" hidden="false" id="78bd-a078-4627-f96a" sortIndex="2" collective="true">
                   <infoLinks>
                     <infoLink name="Pirate Blunderbluss" id="6131-dd9a-3e2c-48d3" hidden="false" type="profile" targetId="eaa8-e08d-73d2-8216"/>
                   </infoLinks>
@@ -5306,7 +5413,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Command" hidden="false" id="7e2a-cc96-72cc-dee9" sortIndex="2">
+        <selectionEntryGroup name="Command" hidden="false" id="7e2a-cc96-72cc-dee9" sortIndex="1">
           <selectionEntries>
             <selectionEntry name="Musician" id="02a1-6ac8-a68f-5f21" type="model" import="true" hidden="false" subType="crew" sortIndex="3">
               <costs>
@@ -5347,31 +5454,17 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="0efb-e857-4b5c-68ca" targetId="may-have-shield"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="97fd-80bd-1097-68ae" subType="crew" sortIndex="2">
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="451c-8f9c-daec-6bf8" type="selectionEntry" targetId="04c5-90bc-b2d5-e77b" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Standard Bearer" id="ec48-e30c-1523-8bfa" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Magic Standards" hidden="false" id="037b-15c5-f567-05b8" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-                  <constraints>
-                    <constraint type="max" value="25" field="points" scope="parent" shared="false" id="f82c-2066-d137-f0b7"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <comment>upgrades: d2a99e2c-6e12bd76</comment>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1039-1c1c-bd62-53ed" includeChildSelections="false"/>
+                <constraint type="max" value="25" field="points" scope="self" shared="true" id="f321-33d1-b005-6275"/>
               </constraints>
-              <categoryLinks>
-                <categoryLink name="Heavy Infantry" hidden="false" id="dd1c-7584-e603-1ac4" targetId="ca7e-d004-ccde-caf3" primary="false"/>
-                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="cb2d-75e7-80a6-143d" targetId="may-have-armour"/>
-                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="04f6-8d46-4b95-9be2" targetId="may-have-shield"/>
-              </categoryLinks>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoGroups>
@@ -5435,7 +5528,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="87a3-ef05-5e5a-7730" hidden="false" flatten="true" defaultSelectionEntryId="f2fe-c2a3-cd84-f41d">
               <entryLinks>
-                <entryLink import="true" name="Brace of Pistols" hidden="false" id="ff17-8ebd-7ffd-10ff" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2">
+                <entryLink import="true" name="Brace of Pistols" hidden="false" id="ff17-8ebd-7ffd-10ff" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="2" collective="true">
                   <costs>
                     <cost name="pts" typeId="points" value="2"/>
                   </costs>
@@ -5446,7 +5539,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="be4f-ec0b-7b44-81f1" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="f2fe-c2a3-cd84-f41d" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="f2fe-c2a3-cd84-f41d" sortIndex="1" collective="true">
                   <infoLinks>
                     <infoLink name="Brace of Pistols" id="4da3-8690-1b91-44f7" hidden="false" type="profile" targetId="3f0e-1dc6-b425-bf59"/>
                   </infoLinks>
@@ -5767,30 +5860,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="8d55-e353-f67c-05e1" targetId="may-have-shield"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry name="Standard Bearer" id="a790-c643-5104-b44f" type="model" import="true" hidden="false" subType="crew" sortIndex="2">
-              <costs>
-                <cost name="pts" typeId="points" value="6"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Standard Bearer" hidden="false" type="profile" id="a6c9-b9af-56e9-8928" targetId="bcf8-d942-102e-b155"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Magic Standards" hidden="false" id="c127-4295-7938-0c76" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-                  <constraints>
-                    <constraint type="max" value="50" field="points" scope="parent" shared="false" id="3028-a95f-bfdc-ce94"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <comment>upgrades: d2a99e2c-6e12bd76</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b7c7-7667-9306-9352" includeChildSelections="false"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink name="Heavy Infantry" hidden="false" id="3085-9813-117e-28e4" targetId="ca7e-d004-ccde-caf3" primary="false"/>
-                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="8d43-e497-f821-a1a1" targetId="may-have-armour"/>
-                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="d61c-ca61-a1e4-6859" targetId="may-have-shield"/>
-              </categoryLinks>
-            </selectionEntry>
             <selectionEntry name="Musician" id="7023-31f7-8aa8-6d2d" type="model" import="true" hidden="false" subType="crew" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="points" value="6"/>
@@ -5809,6 +5878,16 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="0aa4-1f7d-103b-caf6" type="selectionEntry" targetId="04c5-90bc-b2d5-e77b" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="6"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="50" field="points" scope="self" shared="true" id="cd3b-196f-f3ff-519b"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoGroups>
@@ -5880,7 +5959,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="VAMPIRE" hidden="false" id="e4cc-4a43-66a5-56d3" targetId="4813-a63e-57ed-dc4" primary="false"/>
-        <categoryLink name="Faction: Vampire Counts" hidden="false" id="fb66-ff26-79d4-8b9f" primary="false" targetId="7345-d692-6f6a-d6f6"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="e6d1-9480-06e1-7f47" primary="false" name="Regular Infantry"/>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="2ddd-5a57-dec8-fb5c" primary="true" name="Named Characters"/>
       </categoryLinks>
@@ -5917,24 +5995,13 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </selectionEntryGroup>
         <selectionEntryGroup name="Lores of Magic" id="5d83-6c16-ff72-79e5" hidden="false" sortIndex="7" defaultSelectionEntryId="fa94-e429-9d29-be1b">
           <entryLinks>
-            <entryLink import="true" name="Dark Magic" hidden="false" id="fa94-e429-9d29-be1b" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="1"/>
-            <entryLink import="true" name="Necromancy" hidden="false" id="1d36-d85a-61b9-c952" type="selectionEntry" targetId="3d31-fd64-e074-700a" sortIndex="3"/>
+            <entryLink import="true" name="Dark Magic" hidden="false" id="fa94-e429-9d29-be1b" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="1" collective="true"/>
+            <entryLink import="true" name="Necromancy" hidden="false" id="1d36-d85a-61b9-c952" type="selectionEntry" targetId="3d31-fd64-e074-700a" sortIndex="3" collective="true"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b98d-415d-40b1-7f92"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d6-6f8b-841b-c123" includeChildSelections="false"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <comment>Hide if not a wizard</comment>
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="7d84-39e9-a5f-947e" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="8e47-73e8-f7f9-808" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="59f1-ac46-8123-3f8d" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="50bd-b918-574a-60c3" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Mount" id="0121-13ef-09ae-eb88" hidden="false" sortIndex="8">
           <constraints>
@@ -6145,9 +6212,10 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       </profiles>
       <categoryLinks>
         <categoryLink name="VAMPIRE" hidden="false" id="0f19-77c9-51b8-308f" targetId="4813-a63e-57ed-dc4" primary="false"/>
-        <categoryLink name="Faction: Vampire Counts" hidden="false" id="ad8c-2584-7600-d508" primary="false" targetId="7345-d692-6f6a-d6f6"/>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="2c88-82d0-ed17-1ba8" primary="true" name="Characters"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="e724-b492-678a-2972" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="may-have-shield" id="8150-95ec-075b-f1aa" primary="false" name="MAY_HAVE_SHIELD"/>
+        <categoryLink targetId="may-have-armour" id="0204-90ed-0322-3230" primary="false" name="MAY_HAVE_ARMOUR"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Hand Weapon" hidden="false" id="2a1c-8137-9c42-90de" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
@@ -6236,6 +6304,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="2748-217c-5119-8e88" type="selectionEntry" targetId="82be-be9c-6607-ee98"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Wizard Level" id="5c49-ca82-ef04-0333" hidden="false" sortIndex="6">
@@ -6303,7 +6372,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c2e7-9e10-a906-2494" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Magic Items" id="7341-e440-5bae-233a" hidden="false" sortIndex="10">
+        <selectionEntryGroup name="Magic Items" id="7341-e440-5bae-233a" hidden="false" sortIndex="10" collapsible="true">
           <entryLinks>
             <entryLink import="true" name="Magic Items" hidden="false" id="2fcc-dc9d-c41e-04bb" type="selectionEntryGroup" targetId="1539-fd78-88f-badd"/>
             <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="05d8-6fff-463a-5346" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
@@ -6413,9 +6482,10 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       </profiles>
       <categoryLinks>
         <categoryLink name="VAMPIRE" hidden="false" id="d400-7edb-b1d4-79a3" targetId="4813-a63e-57ed-dc4" primary="false"/>
-        <categoryLink name="Faction: Vampire Counts" hidden="false" id="6a68-4b57-f1a0-5a3a" primary="false" targetId="7345-d692-6f6a-d6f6"/>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="799f-db35-9722-361d" primary="true" name="Characters"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="7ea7-a7a8-92f9-f572" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="may-have-armour" id="208a-4cc9-0e7b-6b55" primary="false" name="MAY_HAVE_ARMOUR"/>
+        <categoryLink targetId="may-have-shield" id="e6b0-00e6-3fa9-b973" primary="false" name="MAY_HAVE_SHIELD"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Hand Weapon" hidden="false" id="7819-3ea6-a28e-eb45" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
@@ -6426,11 +6496,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <entryLink import="true" name="Vampiric Powers (Vampire Coast)" hidden="false" id="d52a-1250-041e-2266" type="selectionEntryGroup" targetId="7777-2277-767c-4f2b" sortIndex="9">
           <constraints>
             <constraint type="max" value="50" field="points" scope="parent" shared="false" id="bd36-503c-d27c-a637"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Magic Items" hidden="false" id="ec42-4dff-8d2e-76b1" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="10">
-          <constraints>
-            <constraint type="max" value="50" field="points" scope="parent" shared="false" id="aa4f-3bd6-4510-4808"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -6568,21 +6633,16 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="6a32-9bd0-064a-ea9c" type="selectionEntry" targetId="5b87-9cf5-953d-3829" sortIndex="2">
-              <entryLinks>
-                <entryLink import="true" name="Magic Standards" hidden="false" id="e9b3-4a15-3b29-c29a" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baa4-f165-0ca2-4b46"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25"/>
-              </costs>
-            </entryLink>
+            <entryLink import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="c5ec-4a09-7211-6a6f" type="selectionEntry" targetId="82be-be9c-6607-ee98"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Items" id="3352-9d69-ed9e-0b0d" hidden="false" sortIndex="10" collapsible="true" defaultSelectionEntryId="none">
+          <entryLinks>
+            <entryLink import="true" name="Magic Items" hidden="false" id="2102-9b45-a16a-8ea5" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" collapsible="true"/>
+            <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="f02c-e9d6-944a-3d50" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="007f-8b45-67cc-1264" includeChildSelections="false"/>
+            <constraint type="max" value="50" field="points" scope="parent" shared="false" id="406d-17b2-704f-31d8"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6641,16 +6701,12 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       </profiles>
       <categoryLinks>
         <categoryLink name="VAMPIRE" hidden="false" id="e4a4-ab3c-77d7-112b" targetId="4813-a63e-57ed-dc4" primary="false"/>
-        <categoryLink name="Faction: Vampire Counts" hidden="false" id="6dd3-07f3-9aef-f80a" primary="false" targetId="7345-d692-6f6a-d6f6"/>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="d55a-18a7-2ef4-e5dd" primary="true" name="Characters"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="32c9-5e23-5dc0-813a" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="may-have-shield" id="ae22-9d84-5b9e-205f" primary="false" name="MAY_HAVE_SHIELD"/>
+        <categoryLink targetId="may-have-armour" id="0176-c856-b426-f07f" primary="false" name="MAY_HAVE_ARMOUR"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Magic Items" hidden="false" id="900a-0d1a-4486-4e05" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="10">
-          <constraints>
-            <constraint type="max" value="50" field="points" scope="parent" shared="false" id="1614-7f5b-f529-2270"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Hand Weapon" hidden="false" id="7fa6-b009-9912-0bab" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="20fb-5057-b472-ce79"/>
@@ -6705,7 +6761,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <entryLink import="true" name="Rotting Promethean" hidden="false" id="d9a1-675e-a23b-e09d" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Fire Weapons" id="c31e-59ee-03d1-2f2f" hidden="false" sortIndex="5">
+        <selectionEntryGroup name="Equipment" id="c31e-59ee-03d1-2f2f" hidden="false" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="4644-30c4-f183-a0fa" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1">
               <costs>
@@ -6742,6 +6798,15 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
               </modifiers>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Items" id="207d-dcbd-2336-1ac0" hidden="false" sortIndex="9" collapsible="true">
+          <entryLinks>
+            <entryLink import="true" name="Magic Items" hidden="false" id="210f-4578-2c93-9cac" type="selectionEntryGroup" targetId="1539-fd78-88f-badd"/>
+            <entryLink import="true" name="Magic Items (Vampire Coast)" hidden="false" id="d244-318f-0e2a-cb99" type="selectionEntryGroup" targetId="755e-0f84-2f67-8e33"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="50" field="points" scope="parent" shared="false" id="ff90-5127-bfbd-5863"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -8005,7 +8070,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52bb-648e-a517-85e9"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="260"/>
+            <cost name="pts" typeId="points" value="285"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew">
@@ -8013,6 +8078,22 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <entryLink import="true" name="Hand Weapon" hidden="false" id="dbec-e72c-9aa1-a5ad" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8e47-8b08-886d-2fcc"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a056-29c7-0703-9439"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d84-da6c-4cb2-96fd"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8023,58 +8104,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           <infoLinks>
             <infoLink name="Zombie" id="ad1b-2bd2-486f-c714" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="3973-e969-83bb-3184" hidden="false" defaultSelectionEntryId="a6aa-0847-7c01-ea39">
-              <entryLinks>
-                <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
-                  <modifiers>
-                    <modifier type="increment" value="10" field="points" scope="03b9-a4fe-1a10-147e"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd54-1e40-834c-c460"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="df6f-53eb-2d2a-f73f" subType="crew">
-          <entryLinks>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="316c-2cb5-e20c-9644" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7b96-bf7f-ce70-e932"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="58ab-c46c-fb0a-e7db"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Zombie" id="118b-cb5c-8d11-2015" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="ab54-9ace-9d1c-b843" hidden="false" defaultSelectionEntryId="a6aa-0847-7c01-ea39">
-              <entryLinks>
-                <entryLink import="true" name="Pistol" hidden="false" id="4957-4d49-d665-3199" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
-                  <costs>
-                    <cost name="pts" typeId="points" value="0"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Handgun" hidden="false" id="b630-7cb0-b907-0c21" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c0c-9b49-019e-3e32"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="6"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -8096,11 +8125,27 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         <infoLink name="Spectral Daggers" id="cfec-87af-4743-ed28" hidden="false" type="profile" targetId="13ad-c241-767a-870a"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="82be-be9c-6607-ee98" collapsible="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b84b-b4be-31e7-82c9"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="2c3d-c7e8-9847-62a1" type="selectionEntryGroup" targetId="1d6d-af5b-160b-1b73"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="04c5-90bc-b2d5-e77b" collapsible="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08b6-1590-40a6-81a6"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="f83c-97d7-ad5e-73b0" type="selectionEntryGroup" targetId="0999-8104-6220-b8c2"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Renegades (Square Based)" hidden="false" id="9fd6-2f67-505f-ff4c" type="selectionEntry" targetId="974c-3bf3-af4b-701d">
-      <comment>No Warhall</comment>
-    </entryLink>
     <entryLink import="true" name="Zombie Pirates" hidden="false" id="4a61-bf48-f66f-b59f" targetId="0bbf-c8d8-6beb-3425" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="f0e3-2e32-8866-ea32" id="fc17-2728-94e6-2dfc" primary="true" name="Core"/>
@@ -9433,7 +9478,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
       <selectionEntryGroups>
         <selectionEntryGroup name="Magic Weapons (Vampire Coast)" id="4d83-3443-b018-ab83" hidden="false" sortIndex="1" collapsible="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Sword of the Thirteen Seas" hidden="false" id="aa2b-6d68-3149-6df6">
+            <selectionEntry type="upgrade" import="true" name="Sword of the Thirteen Seas" hidden="false" id="aa2b-6d68-3149-6df6" sortIndex="1">
               <infoLinks>
                 <infoLink name="Sword of the Thirteen Seas" id="907d-eba2-1a18-5c77" hidden="false" type="profile" targetId="5a8c-fb7a-0969-110e"/>
               </infoLinks>
@@ -9445,7 +9490,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <cost name="pts" typeId="points" value="65"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Kraken Bane" hidden="false" id="d9d2-1542-4818-512a">
+            <selectionEntry type="upgrade" import="true" name="Kraken Bane" hidden="false" id="d9d2-1542-4818-512a" sortIndex="2">
               <infoLinks>
                 <infoLink name="Kraken Bane" id="bd7e-c5b0-1559-3840" hidden="false" type="profile" targetId="5768-8621-45ed-0a64"/>
               </infoLinks>
@@ -9457,7 +9502,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <cost name="pts" typeId="points" value="55"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="The Hook of Levi &quot;The Lucky One&quot;" hidden="false" id="2221-13b8-7b41-8e12">
+            <selectionEntry type="upgrade" import="true" name="The Hook of Levi &quot;The Lucky One&quot;" hidden="false" id="2221-13b8-7b41-8e12" sortIndex="3">
               <infoLinks>
                 <infoLink name="The Hook of Levi “the Lucky One”" id="cbe1-b5e7-df83-682d" hidden="false" type="profile" targetId="e0ef-5117-a4ae-912d"/>
               </infoLinks>
@@ -9469,7 +9514,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                 <cost name="pts" typeId="points" value="45"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="The Cursed Rifle" hidden="false" id="0534-df51-b6d1-a331">
+            <selectionEntry type="upgrade" import="true" name="The Cursed Rifle" hidden="false" id="0534-df51-b6d1-a331" sortIndex="4">
               <infoLinks>
                 <infoLink name="The Cursed Rifle" id="f6e2-b49d-5aa7-876a" hidden="false" type="profile" targetId="526a-e563-2920-c1f5"/>
               </infoLinks>
@@ -9482,11 +9527,264 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be97-809f-42f6-5cf6"/>
-          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Magic Armour (Vampire Coast)" id="6245-2df5-d81f-19d8" hidden="false" sortIndex="2" collapsible="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Eel Skin" hidden="false" id="e7b3-fbff-48d2-917f" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Eel Skin" id="43ab-bd1b-3f6f-fae2" hidden="false" type="profile" targetId="33f6-3564-d51c-5c54"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d32-6594-0fce-9c1a"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9fc0-e654-201c-f1f2" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Breastplate of the Seas" hidden="false" id="7781-fdea-baca-4797" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Breastplate of the Seas" id="87f6-f262-1df0-ead3" hidden="false" type="profile" targetId="53c8-2506-a4af-f6d4"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83d7-02df-b8b9-a54c"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8c51-7431-7730-e8ff" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Talismans (Vampire Coast)" id="6e4f-4d2a-2769-03d9" hidden="false" sortIndex="3" collapsible="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Driftwood Crown" hidden="false" id="c13b-ed8a-b4a7-c564" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Driftwood Crown" id="23ba-063b-e005-8b49" hidden="false" type="profile" targetId="48b9-ac7f-6e76-04a5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e2e-a826-2238-495a"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="db9a-fd90-8ee1-5199" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Coin of Eight" hidden="false" id="1d55-4b52-e116-d6dc" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Coin of Eight" id="62f6-5b8a-6474-d9b7" hidden="false" type="profile" targetId="4eb0-b82c-e26d-ed9a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1703-b568-ba02-05cb"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="203a-fd58-a04a-3118" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Captain&apos;s Hat" hidden="false" id="5536-1030-c056-9f63" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Captain&apos;s Hat" id="645e-7738-2f79-8675" hidden="false" type="profile" targetId="a1cf-fd9f-6f6b-4909"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68e8-aa2c-9246-90bb"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9955-54ab-c985-7379" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Enchanted Items (Vampire Coast)" id="c738-ef73-0432-7a7d" hidden="false" sortIndex="4" collapsible="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Crazy Mullet&apos;s Spyglass" hidden="false" id="de6d-f0d7-8ae4-61a8" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Crazy Mullet&apos;s Spyglass" id="9649-43ff-304b-5d68" hidden="false" type="profile" targetId="f027-45a7-877d-31a1"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aaa-6c28-4304-d8a6"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0d64-5039-0292-6fae" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Orb of the Depths" hidden="false" id="672a-54eb-77b0-9b1c" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Orb of the Depths" id="1538-d938-9210-cef8" hidden="false" type="profile" targetId="3868-58d4-f14a-2d8c"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e662-b4a1-4ef3-bac2"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8c08-0ed6-350d-e228" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Cursed Medallion" hidden="false" id="af33-5afd-e263-222b" sortIndex="3">
+              <infoLinks>
+                <infoLink name="The Cursed Medallion" id="c196-9f0d-9d67-53a4" hidden="false" type="profile" targetId="d691-dc6b-9553-dc5e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f24b-d43e-1164-3e90"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a7d4-9ada-da48-2237" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Skeleton Monkey" hidden="false" id="a83c-5047-6821-6b1a" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Skeleton Monkey" id="ef31-6e17-f59d-5c8c" hidden="false" type="profile" targetId="d8cf-d087-1b11-3ccf"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88a1-15bb-fe32-cbb5"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4d0f-638a-466f-2e04" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Arcane Items (Vampire Coast)" id="cbbc-a707-1a61-c0c7" hidden="true" sortIndex="5" collapsible="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Extremely Common Items" id="01b6-0aa9-e1c9-df3c" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Familiar Zombie Parrot" hidden="false" id="0f04-665f-c722-b863">
+                  <infoLinks>
+                    <infoLink name="Familiar Zombie Parrot" id="9b7d-82d9-9354-13ba" hidden="false" type="profile" targetId="060e-bb47-d377-9559"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="20"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Unique Items" id="1025-ce87-a9ed-a1e4" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Vortex Pearl" hidden="false" id="f05f-6cea-9250-2471" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Vortex Pearl" id="eb00-85de-2916-8daa" hidden="false" type="profile" targetId="b732-ed7e-50cb-d994"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d08-75c1-d163-3f5c"/>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9f0e-73d7-9b52-338e" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="40"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Dream Chant Pendant" hidden="false" id="357b-e061-71e7-ab02" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Dream Chant Pendant" id="10be-797c-9a9b-e2d1" hidden="false" type="profile" targetId="ac18-9ef5-6cbc-9adb"/>
+                    <infoLink name="Dream Chant Pendant" id="7ddc-c4c0-b9a5-9e17" hidden="false" type="profile" targetId="879d-a34c-ff1f-b0d3"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af16-ffd7-b08b-e33a"/>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b28a-fbf2-50b6-cf6d" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f954-b4c0-b835-a048" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magic Standards (Vampire Coast)" id="4258-1c10-c2cc-f1e4" hidden="false" collapsible="true" sortIndex="3">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Banner of the Depths" hidden="false" id="6a4c-4957-811d-2410" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Banner of the Depths" id="c48c-1a99-ac02-9685" hidden="false" type="profile" targetId="6897-a9d3-813e-0568"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4156-5b88-743a-3e24"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4c7a-47fe-4ac6-837d" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Boarding Flag" hidden="false" id="5fd6-3979-0690-1655" sortIndex="1">
+          <infoLinks>
+            <infoLink name="Boarding Flag" id="8b17-3e2a-295c-559d" hidden="false" type="profile" targetId="4bb8-61f8-ba93-a6c4"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf76-e089-b153-106f"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f270-4b84-1e76-ac0a" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="70"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lost Skull" hidden="false" id="0145-9900-963c-c0ef" sortIndex="4">
+          <infoLinks>
+            <infoLink name="Lost Skull" id="d2a0-eda5-15ac-b048" hidden="false" type="profile" targetId="13f6-f9fe-2405-7c65"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f736-c052-1e6e-e71a"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a722-7d41-68eb-0cf5" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Volley Banner" hidden="false" id="1f90-4b68-08ce-9d7b" sortIndex="3">
+          <infoLinks>
+            <infoLink name="Volley Banner" id="380c-de75-2197-6e30" hidden="false" type="profile" targetId="72e9-6622-f16d-55d7"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7364-d3ff-10c7-1990"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="26fd-24e8-5a0f-f964" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5650-f181-ccbf-6b3a"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Battle Standard Bearer (Vampire Counts)" id="1d6d-af5b-160b-1b73" hidden="false" sortIndex="1">
+      <entryLinks>
+        <entryLink import="true" name="Magic Standards" hidden="false" id="429f-0fc5-e3ba-2562" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6"/>
+        <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="c292-f550-62bd-da3a" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74da-ca91-98e8-d5a8"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b0eb-bb22-297a-7f67" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="405b-c5f9-9a7c-5fda"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Battle Standard Bearer" id="425e-3e93-2ceb-1ed7" hidden="false" type="profile" targetId="da9a-f205-577f-debb"/>
+      </infoLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Standard Bearer (Vampire Counts)" id="0999-8104-6220-b8c2" hidden="false" sortIndex="2">
+      <entryLinks>
+        <entryLink import="true" name="Magic Standards" hidden="false" id="7a5e-8455-dd35-1e57" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6"/>
+        <entryLink import="true" name="Magic Standards (Vampire Coast)" hidden="false" id="6b13-1c65-6ddf-7a5a" type="selectionEntryGroup" targetId="4258-1c10-c2cc-f1e4"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b4e-d9ab-d3b7-9f62"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Battle Standard Bearer" id="10a8-4f02-3b4a-1c54" hidden="false" type="profile" targetId="da9a-f205-577f-debb"/>
+      </infoLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <publications>
