@@ -7448,30 +7448,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </constraints>
               <comment>upgrades: d2a99e2c-6e12bd76</comment>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="a67c-f303-908c-47cf" subType="crew" sortIndex="2">
-              <costs>
-                <cost name="pts" typeId="points" value="7"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Standard Bearer" id="e271-0d41-8775-d8af" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Magic Standards" hidden="false" id="25e5-d41e-731e-faff" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-                  <constraints>
-                    <constraint type="max" value="50" field="points" scope="parent" shared="false" id="3f69-2b66-1198-0176"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <comment>upgrades: d2a99e2c-6e12bd76</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6f16-59cd-d493-8245" includeChildSelections="false"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink name="Heavy Infantry" hidden="false" id="5ca4-8de3-25e0-f35b" targetId="ca7e-d004-ccde-caf3" primary="false"/>
-                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="1133-feb5-3c41-3b0e" targetId="may-have-armour"/>
-                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="590c-4d0c-73eb-99ed" targetId="may-have-shield"/>
-              </categoryLinks>
-            </selectionEntry>
             <selectionEntry type="model" import="true" name="Musician" hidden="false" id="c544-8931-24bf-9afa" subType="crew" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="points" value="7"/>
@@ -7490,6 +7466,16 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="6a24-bb85-72c7-1851" type="selectionEntry" targetId="04c5-90bc-b2d5-e77b" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="7"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="25" field="points" scope="self" shared="true" id="2781-5694-684b-b4fb"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
