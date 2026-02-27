@@ -8127,6 +8127,10 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                   </modifiers>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="e083-9868-d306-ace4"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="95f2-492f-05b7-c247"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
