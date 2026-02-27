@@ -5317,7 +5317,7 @@
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e319-76ce-94d8-3787" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e319-76ce-94d8-3787" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <profiles>
         <profile name="Karnac&apos;s Lizardmen Raiders" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="e5f1-e5f0-cf05-887c">
@@ -5366,7 +5366,7 @@ When required to make a Fear, Panic or Terror test, models with this special rul
         </infoGroup>
       </infoGroups>
       <entryLinks>
-        <entryLink import="true" name="Tears of Bilbali Informative Summary" hidden="false" id="bb70-4d00-8ae1-d2e7" type="selectionEntry" targetId="dd67-976a-d2db-50f3">
+        <entryLink import="true" name="Tears of Bilbali Informative Summary" hidden="false" id="bb70-4d00-8ae1-d2e7" type="selectionEntry" targetId="dd67-976a-d2db-50f3" sortIndex="4">
           <profiles>
             <profile name="Miniatures: Check The Stuff of Legends Website for more Information" typeId="da36-1598-6be3-19c0" typeName="Information" hidden="false" id="7e6d-d236-ddd4-1050"/>
             <profile name="Miniatures: RR11 - Karnac&apos;s Lizardmen Raiders " typeId="da36-1598-6be3-19c0" typeName="Information" hidden="false" id="d533-083b-e224-ce6d"/>
