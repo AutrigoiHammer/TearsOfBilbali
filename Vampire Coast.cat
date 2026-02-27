@@ -9481,7 +9481,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c881-0a60-8a97-81db" includeChildSelections="true"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="15"/>
+            <cost name="pts" typeId="points" value="25"/>
           </costs>
           <infoLinks>
             <infoLink name="Supernatural Vision" hidden="false" id="07a1-cf6c-f16d-4dff" type="profile" targetId="fda3-51ac-03f1-9e97"/>
