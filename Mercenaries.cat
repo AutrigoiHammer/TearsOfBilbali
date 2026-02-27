@@ -7361,6 +7361,13 @@ Models with this special rule do not suffer any modifiers to their Movement char
         <categoryLink targetId="3755-6732-99b2-c713" id="ac0e-f7dd-7333-832f" primary="false" name="Behemoth"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Karnac&apos;s Lizardmen Raiders" hidden="false" id="66c8-b887-0dbd-af44" targetId="3c25-4ce0-192c-3ec5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="a8fc-961f-0cc1-e1d3" primary="false" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="c210-cbf0-310a-2879" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink targetId="ca7e-d004-ccde-caf3" id="f664-740a-9aa1-3231" primary="false" name="Heavy Infantry"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
