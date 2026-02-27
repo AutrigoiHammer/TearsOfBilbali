@@ -6162,7 +6162,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="cc1c-1214-57ad-1a2d" hidden="false" flatten="true" sortIndex="3">
+        <selectionEntryGroup name="Weapons" id="cc1c-1214-57ad-1a2d" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="1c75-8b5b-cca9-1b0c" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="1">
               <costs>
@@ -6184,7 +6184,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ba13-0be2-2b86-8d4b" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armour" id="f5bd-5f16-7704-a61f" hidden="false" flatten="true" sortIndex="4">
+        <selectionEntryGroup name="Armour" id="f5bd-5f16-7704-a61f" hidden="false" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="7bd2-dd06-5bd3-c753" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="1">
               <costs>
@@ -6286,7 +6286,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <entryLink import="true" name="Terrorgheist" hidden="false" id="ae47-4e65-2f04-18cc" type="selectionEntry" targetId="450fb3b2-1df3aa7c"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Equipment" id="e358-da22-c573-f336" hidden="false" flatten="true" sortIndex="5">
+        <selectionEntryGroup name="Equipment" id="e358-da22-c573-f336" hidden="false" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="5b24-9630-8f70-6eed" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1">
               <costs>
@@ -6435,7 +6435,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="602a-7404-a72f-f512" hidden="false" flatten="true" sortIndex="3">
+        <selectionEntryGroup name="Weapons" id="602a-7404-a72f-f512" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Additional Hand Weapon" hidden="false" id="9882-2cf4-7dce-6101" type="selectionEntry" targetId="8943-3e16-db2a-b7f3" sortIndex="1">
               <costs>
@@ -6457,7 +6457,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8e35-2f35-621e-2a29" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armour" id="c038-9283-4f7a-2dcc" hidden="false" flatten="true" sortIndex="4">
+        <selectionEntryGroup name="Armour" id="c038-9283-4f7a-2dcc" hidden="false" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="6230-0a75-c38f-4999" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="1">
               <costs>
@@ -6532,7 +6532,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <entryLink import="true" name="Rotting Promethean" hidden="false" id="af92-f599-8564-6831" type="selectionEntry" targetId="8e14-ee64-cb54-41fb"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Equipment" id="a484-4d27-3ee2-62af" hidden="false" flatten="true" sortIndex="5">
+        <selectionEntryGroup name="Equipment" id="a484-4d27-3ee2-62af" hidden="false" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="5c8d-e87a-a39b-ef1d" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1">
               <costs>
@@ -8030,17 +8030,11 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d84-da6c-4cb2-96fd"/>
-                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
                   <costs>
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a056-29c7-0703-9439"/>
-                  </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -8070,17 +8064,11 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c80-2d77-2b1f-0a0c"/>
-                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Handgun" hidden="false" id="b630-7cb0-b907-0c21" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
                   <costs>
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c99-ed03-a475-77f9"/>
-                  </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -8088,6 +8076,9 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="6"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
