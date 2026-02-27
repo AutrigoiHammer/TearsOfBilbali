@@ -2286,10 +2286,6 @@
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
           </characteristics>
         </profile>
-        <profile name="1. Dogs of War - Fifth Edition - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="e401-e06d-cdcb-c49a"/>
-        <profile name="2. Collector&apos;s Guide - Monster and Mercenaries - 2004" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="a059-44b3-bdc0-9065"/>
-        <profile name="3. Adapted for Warhammer: The Old World" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="f380-2092-1f4c-916d"/>
-        <profile name="4. Visit tearsofbilbali.games for more information" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="9175-e87a-bec9-ed29"/>
       </profiles>
       <infoGroups>
         <infoGroup name="Special Rules" id="84dd-8a5d-a001-8068" hidden="false">
@@ -2330,6 +2326,9 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Tears of Bilbali Source Information" hidden="false" id="d415-5de4-77fa-8570" type="selectionEntry" targetId="8e6c-b6f1-d7ff-c890"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" sortIndex="2">
       <categoryLinks>
@@ -2413,9 +2412,6 @@
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
-        <profile name="1. Dogs of War - Fifth Edition - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="408f-47f3-82bc-f00b"/>
-        <profile name="2. Adapted for Warhammer: The Old World" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="af8c-f7d8-baba-8528"/>
-        <profile name="3. Visit tearsofbilbali.games for more information" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="ebb3-8fb1-bca9-c4f3"/>
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e422-3f53-8054-65fb" includeChildSelections="true" includeChildForces="true"/>
@@ -2455,9 +2451,6 @@
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
-        <profile name="1. Dogs of War - Fifth Edition - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="b32c-daaf-e177-a413"/>
-        <profile name="2. Adapted for Warhammer: The Old World" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="38df-cbd1-89ca-6cb7"/>
-        <profile name="3. Visit tearsofbilbali.games for more information" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="3a55-26e3-420d-46eb"/>
       </profiles>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Long Drong" hidden="false" id="2a27-adcd-9095-5b96">
@@ -2683,9 +2676,6 @@
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="1. Dogs of War - Fifth Edition - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="77ba-7c0f-4389-d8e9"/>
-        <profile name="2. Adapted for Warhammer: The Old World" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="d563-a41f-0d59-ac8c"/>
-        <profile name="3. Visit tearsofbilbali.games for more information" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="9cec-b235-c655-60cf"/>
       </profiles>
       <infoGroups>
         <infoGroup name="Special Rules" id="4c14-7219-da3f-9375" hidden="false">
@@ -5187,6 +5177,14 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6791-c37b-6d57-c65f" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tears of Bilbali Source Information" hidden="false" id="8e6c-b6f1-d7ff-c890">
+      <profiles>
+        <profile name="1. Dogs of War - Fifth Edition - 1998" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="d951-ebcd-d69b-44c8"/>
+        <profile name="2. Collector&apos;s Guide - Monster and Mercenaries - 2004" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="7940-03e3-280d-0385"/>
+        <profile name="3. Unit adapted to match Warhammer: The Old World" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="69ea-c507-7bc2-b512"/>
+        <profile name="4. Visit tearsofbilbali.games for more information" typeId="6f0a-b6a2-0c31-510a" typeName="Source" hidden="false" id="771e-7ab7-df13-98f0"/>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
