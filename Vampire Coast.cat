@@ -9428,7 +9428,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <infoLink name="Dark Acolyte" hidden="false" id="4d31-c1db-bc67-2867" type="profile" targetId="9349-c828-b9e4-8499"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Master of the Black Magic" hidden="true" id="6e65-6e3e-03cf-0328" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Master of the Black Magic" hidden="false" id="6e65-6e3e-03cf-0328" sortIndex="5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3696-f70c-92ff-ef0e"/>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fc47-d47e-a558-ba1a" includeChildSelections="true"/>
@@ -9439,7 +9439,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
           <infoLinks>
             <infoLink name="Master of Black Magic" hidden="false" id="2440-6301-e856-6c29" type="profile" targetId="583d-c5e6-a157-6368"/>
           </infoLinks>
-          <comment>Extra Spells: 1</comment>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
