@@ -8103,7 +8103,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                     <entryLink import="true" name="Pistol" hidden="false" id="5b85-f53a-adb3-f00e" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1"/>
                     <entryLink import="true" name="Handgun" hidden="false" id="086c-acdf-eba1-9286" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
                       <modifiers>
-                        <modifier type="increment" value="10" field="points" scope="64e4-e83b-37c9-d04e"/>
+                        <modifier type="increment" value="10" field="costs" scope="64e4-e83b-37c9-d04e"/>
                       </modifiers>
                     </entryLink>
                   </entryLinks>
@@ -8128,27 +8128,10 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Weapons" id="1d20-7da1-66b2-cda8" hidden="false">
+                <selectionEntryGroup name="Weapons" id="c7f0-9991-8b8a-7641" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Pistol" hidden="false" id="1efe-574a-56f9-afe6" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="d3c7-5222-61e8-9920" shared="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Handgun" hidden="false" id="44af-af77-2b16-dffb" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
-                      <modifiers>
-                        <modifier type="increment" value="10" field="points" scope="64e4-e83b-37c9-d04e"/>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="e2ed-a3fd-dee5-3e9f" shared="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
+                    <entryLink import="true" name="Pistol" hidden="false" id="23a3-802f-ab9a-a45e" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1"/>
+                    <entryLink import="true" name="Handgun" hidden="false" id="54ef-c04a-2a1a-bac8" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
