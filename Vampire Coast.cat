@@ -8005,7 +8005,7 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52bb-648e-a517-85e9"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="285"/>
+            <cost name="pts" typeId="points" value="260"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="0087-1c14-3027-91e8" subType="crew">
@@ -8013,22 +8013,6 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
             <entryLink import="true" name="Hand Weapon" hidden="false" id="dbec-e72c-9aa1-a5ad" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8e47-8b08-886d-2fcc"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a056-29c7-0703-9439"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d84-da6c-4cb2-96fd"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8039,6 +8023,71 @@ Additionally, a trouble result will cause the Necrofex Colossus to automatically
           <infoLinks>
             <infoLink name="Zombie" id="ad1b-2bd2-486f-c714" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="3973-e969-83bb-3184" hidden="false" defaultSelectionEntryId="a6aa-0847-7c01-ea39">
+              <entryLinks>
+                <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d84-da6c-4cb2-96fd"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Handgun" hidden="false" id="de8f-d341-dda3-4adc" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a056-29c7-0703-9439"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd54-1e40-834c-c460"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Zombie Pirates" hidden="false" id="df6f-53eb-2d2a-f73f" subType="crew">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="316c-2cb5-e20c-9644" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7b96-bf7f-ce70-e932"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="58ab-c46c-fb0a-e7db"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Zombie" id="118b-cb5c-8d11-2015" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="ab54-9ace-9d1c-b843" hidden="false" defaultSelectionEntryId="a6aa-0847-7c01-ea39">
+              <entryLinks>
+                <entryLink import="true" name="Pistol" hidden="false" id="4957-4d49-d665-3199" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c80-2d77-2b1f-0a0c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Handgun" hidden="false" id="b630-7cb0-b907-0c21" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c99-ed03-a475-77f9"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c0c-9b49-019e-3e32"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
