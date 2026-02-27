@@ -6304,7 +6304,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Battle Standard Bearer (Vampire Counts)" hidden="false" id="2748-217c-5119-8e88" type="selectionEntry" targetId="82be-be9c-6607-ee98"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Wizard Level" id="5c49-ca82-ef04-0333" hidden="false" sortIndex="6">
@@ -7552,24 +7551,16 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Pistol" hidden="false" id="d449-3fb1-29c9-bbbd" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1"/>
+                <entryLink import="true" name="Brace of Pistols" hidden="false" id="d04d-9faa-9fca-a3e6" type="selectionEntry" targetId="d8bb-85b0-3575-6029" sortIndex="3">
+                  <costs>
+                    <cost name="pts" typeId="points" value="1"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a292-b086-449a-3690" includeChildSelections="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0b31-87ff-db2a-e941" includeChildSelections="false"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Blunderbluss" hidden="false" id="be0d-addf-87fd-438f" sortIndex="3" collective="true">
-                  <infoLinks>
-                    <infoLink name="Pirate Blunderbluss" id="3b5f-caea-4197-1360" hidden="false" type="profile" targetId="eaa8-e08d-73d2-8216"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e3c-809c-df55-7ea7"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -9395,7 +9386,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <infoLink name="Fleet Commander" hidden="false" id="058d-d5fa-bed2-a2cd" type="profile" targetId="4674-e819-5e4b-39ca"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lord of the Sea" hidden="false" id="8870-2599-3f14-fa74" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Lord of the Sea" hidden="false" id="8870-2599-3f14-fa74" sortIndex="7">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2a0-5190-8440-2770"/>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f884-5b7e-8ef4-d628" includeChildSelections="true"/>
@@ -9440,7 +9431,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <cost name="pts" typeId="points" value="30"/>
           </costs>
           <infoLinks>
-            <infoLink name="Master Of The Black Arts" hidden="false" id="2440-6301-e856-6c29" type="profile" targetId="41cf-e8df-d66e-24d1"/>
+            <infoLink name="Master of Black Magic" hidden="false" id="2440-6301-e856-6c29" type="profile" targetId="583d-c5e6-a157-6368"/>
           </infoLinks>
           <comment>Extra Spells: 1</comment>
           <modifiers>
@@ -9482,6 +9473,18 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
           </costs>
           <infoLinks>
             <infoLink name="Curse of the Risen One" hidden="false" id="cb55-1a87-916e-0a22" type="profile" targetId="33a9-e003-e70e-48ad"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Supernatural Vision" hidden="false" id="455f-2587-c3ce-bfd6" sortIndex="6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bf4-5a85-e630-a4bd"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c881-0a60-8a97-81db" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Supernatural Vision" hidden="false" id="07a1-cf6c-f16d-4dff" type="profile" targetId="fda3-51ac-03f1-9e97"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -9535,7 +9538,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="06eb-c696-4e44-38e7" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="45"/>
+                <cost name="pts" typeId="points" value="40"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
