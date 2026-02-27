@@ -8107,6 +8107,9 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                       </modifiers>
                     </entryLink>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37aa-4fe2-8c1b-a388"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -8133,10 +8136,16 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                     <entryLink import="true" name="Pistol" hidden="false" id="23a3-802f-ab9a-a45e" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1"/>
                     <entryLink import="true" name="Handgun" hidden="false" id="54ef-c04a-2a1a-bac8" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2"/>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1557-2daa-bed4-bca3"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="add" value="Mark same weapons if additional Zombie Pirates are included" field="info"/>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
