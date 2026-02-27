@@ -5927,6 +5927,13 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Vampiric Powers (Vampire Coast)" hidden="false" id="8099-8f48-8d76-f50c" type="selectionEntryGroup" targetId="7777-2277-767c-4f2b" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="25" field="points" scope="parent" shared="false" id="4c31-0ba5-2af9-5f88"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Luthor Harkon, Arch-Grand Commodore" hidden="false" id="d9b6-7813-c586-d3b6" collective="false">
       <profiles>
@@ -6242,7 +6249,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <cost name="pts" typeId="points" value="4"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Lance" hidden="false" id="7008-0a9f-8ef8-6fee" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3">
+            <entryLink import="true" name="Halberd" hidden="false" id="7008-0a9f-8ef8-6fee" type="selectionEntry" targetId="f0a5-1b2e-3d2b-d540" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="points" value="4"/>
               </costs>
@@ -6264,7 +6271,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Full Plate Armour" hidden="true" id="a83e-2e72-3926-e994" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3">
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="a83e-2e72-3926-e994" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="points" value="9"/>
               </costs>
@@ -6278,7 +6285,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                   </conditions>
                 </modifier>
               </modifiers>
-              <comment>Renegades</comment>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -6510,7 +6516,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <cost name="pts" typeId="points" value="4"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Lance" hidden="false" id="9542-e931-d43b-6956" type="selectionEntry" targetId="906a-c09d-9f34-a31f" sortIndex="3">
+            <entryLink import="true" name="Halberd" hidden="false" id="9542-e931-d43b-6956" type="selectionEntry" targetId="f0a5-1b2e-3d2b-d540" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="points" value="4"/>
               </costs>
@@ -6532,7 +6538,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Full Plate Armour" hidden="true" id="83cb-b6a3-f3f4-c3e0" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3">
+            <entryLink import="true" name="" hidden="false" id="83cb-b6a3-f3f4-c3e0" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="points" value="9"/>
               </costs>
