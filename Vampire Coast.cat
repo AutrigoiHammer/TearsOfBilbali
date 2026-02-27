@@ -8103,7 +8103,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                     <entryLink import="true" name="Pistol" hidden="false" id="5b85-f53a-adb3-f00e" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1"/>
                     <entryLink import="true" name="Handgun" hidden="false" id="086c-acdf-eba1-9286" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
                       <modifiers>
-                        <modifier type="increment" value="10" field="costs" scope="64e4-e83b-37c9-d04e"/>
+                        <modifier type="increment" value="10" field="points" scope="64e4-e83b-37c9-d04e"/>
                       </modifiers>
                     </entryLink>
                   </entryLinks>
