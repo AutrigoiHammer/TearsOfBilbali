@@ -7448,6 +7448,30 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </constraints>
               <comment>upgrades: d2a99e2c-6e12bd76</comment>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="a67c-f303-908c-47cf" subType="crew" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="points" value="7"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="e271-0d41-8775-d8af" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Magic Standards" hidden="false" id="25e5-d41e-731e-faff" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+                  <constraints>
+                    <constraint type="max" value="50" field="points" scope="parent" shared="false" id="3f69-2b66-1198-0176"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <comment>upgrades: d2a99e2c-6e12bd76</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6f16-59cd-d493-8245" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Heavy Infantry" hidden="false" id="5ca4-8de3-25e0-f35b" targetId="ca7e-d004-ccde-caf3" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="1133-feb5-3c41-3b0e" targetId="may-have-armour"/>
+                <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="590c-4d0c-73eb-99ed" targetId="may-have-shield"/>
+              </categoryLinks>
+            </selectionEntry>
             <selectionEntry type="model" import="true" name="Musician" hidden="false" id="c544-8931-24bf-9afa" subType="crew" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="points" value="7"/>
@@ -8077,7 +8101,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
                   <modifiers>
-                    <modifier type="increment" value="10" field="points" scope="parent"/>
+                    <modifier type="increment" value="10" field="points"/>
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Pistol" hidden="false" id="a6aa-0847-7c01-ea39" type="selectionEntry" targetId="d3c7-5222-61e8-9920">
@@ -8099,6 +8123,9 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
           <infoLinks>
             <infoLink name="Zombie" id="bf70-f01a-5b82-da5c" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="6"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
