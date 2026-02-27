@@ -5304,7 +5304,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="15"/>
+            <cost name="pts" typeId="points" value="18"/>
           </costs>
           <infoLinks>
             <infoLink name="Base (30x30)" id="d6f7-e215-68f1-798c" hidden="false" type="profile" targetId="7f1f-eba6-b670-ece0"/>
