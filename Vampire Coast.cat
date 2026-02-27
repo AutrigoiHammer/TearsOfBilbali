@@ -8097,42 +8097,65 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               <infoLinks>
                 <infoLink name="Zombie" id="bf70-f01a-5b82-da5c" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
               </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Additional Zombie Pirates" hidden="false" id="4682-3cdc-b9a2-b9ae" subType="crew" sortIndex="2">
-              <entryLinks>
-                <entryLink import="true" name="Hand Weapon" hidden="false" id="d771-713d-8402-1fca" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapons" id="5602-ec3b-9f55-68a3" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Pistol" hidden="false" id="5b85-f53a-adb3-f00e" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1"/>
+                    <entryLink import="true" name="Handgun" hidden="false" id="086c-acdf-eba1-9286" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
+                      <modifiers>
+                        <modifier type="increment" value="10" field="points" scope="64e4-e83b-37c9-d04e"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Additional Zombie Pirates" hidden="false" id="4682-3cdc-b9a2-b9ae" subType="crew">
+                  <entryLinks>
+                    <entryLink import="true" name="Hand Weapon" hidden="false" id="d771-713d-8402-1fca" type="selectionEntry" targetId="721d-36e3-388a-c0d6">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c093-394c-2da0-8406"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c093-394c-2da0-8406"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1c5d-cddc-118f-dce9"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1c5d-cddc-118f-dce9"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Zombie" id="90e7-9d42-350d-fe5b" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="6"/>
-              </costs>
+                  <infoLinks>
+                    <infoLink name="Zombie" id="90e7-9d42-350d-fe5b" hidden="false" type="profile" targetId="8cc9-bd5d-e6e4-4126"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="6"/>
+                  </costs>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapons" id="1d20-7da1-66b2-cda8" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Pistol" hidden="false" id="1efe-574a-56f9-afe6" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1">
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditions>
+                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="d3c7-5222-61e8-9920" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                        <entryLink import="true" name="Handgun" hidden="false" id="44af-af77-2b16-dffb" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
+                          <modifiers>
+                            <modifier type="increment" value="10" field="points" scope="64e4-e83b-37c9-d04e"/>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditions>
+                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e2ed-a3fd-dee5-3e9f" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="5602-ec3b-9f55-68a3" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Pistols" hidden="false" id="5b85-f53a-adb3-f00e" type="selectionEntry" targetId="d3c7-5222-61e8-9920" sortIndex="1"/>
-                <entryLink import="true" name="Handguns" hidden="false" id="086c-acdf-eba1-9286" type="selectionEntry" targetId="e2ed-a3fd-dee5-3e9f" sortIndex="2">
-                  <modifiers>
-                    <modifier type="increment" value="10" field="points" scope="64e4-e83b-37c9-d04e"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="e083-9868-d306-ace4"/>
-                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="95f2-492f-05b7-c247"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
