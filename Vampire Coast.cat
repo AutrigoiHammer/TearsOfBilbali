@@ -8139,13 +8139,13 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1557-2daa-bed4-bca3"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="add" value="Mark same weapons if additional Zombie Pirates are included" field="info"/>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
-          <modifiers>
-            <modifier type="add" value="Mark same weapons if additional Zombie Pirates are included" field="info"/>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
