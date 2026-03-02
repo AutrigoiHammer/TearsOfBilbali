@@ -5353,6 +5353,10 @@
         <profile name="Adapted for The Old World: Tears of Bilbali Edition" typeId="da36-1598-6be3-19c0" typeName="Information" hidden="false" id="eedf-b4f4-b262-5de3"/>
         <profile name="Check Tears of Bibali Website for more information" typeId="da36-1598-6be3-19c0" typeName="Information" hidden="false" id="835d-a622-5dcc-5121"/>
       </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7687-c7f3-bae0-5086"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddd1-7f28-c64c-802e"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
