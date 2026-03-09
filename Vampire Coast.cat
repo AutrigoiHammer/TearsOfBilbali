@@ -1395,7 +1395,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
     </profile>
     <profile name="Rotting Promethean" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="11eb-c074-120f-3059">
       <characteristics>
-        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">7</characteristic>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
@@ -1472,7 +1472,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
-        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">3</characteristic>
       </characteristics>
@@ -1510,7 +1510,7 @@ If this check is passed, a single friendly unit of Deck Droppers, Bat Swarms, o
     </profile>
     <profile name="Animated Hulk" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="1e87-f3be-d4cb-45a8">
       <characteristics>
-        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">5</characteristic>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
@@ -1843,7 +1843,9 @@ In addition, they extend the range of their ‘Command Orders’ special rule by
     </profile>
     <profile name="Banner of the Depths" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards" hidden="false" id="6897-a9d3-813e-0568">
       <characteristics>
-        <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">Depth Guard units only. At the end of a combat round in which this unit has eliminated an enemy model, recover a model that was previously eliminated from this unit. It is not possible to recover characters that have been added in this way.</characteristic>
+        <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">Depth Guard units only. 
+The unit improves its Indomitable rule to D3.
+Also, improves its Weapon Skill in +1</characteristic>
       </characteristics>
     </profile>
     <profile name="Lost Skull" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards" hidden="false" id="13f6-f9fe-2405-7c65">
@@ -1851,7 +1853,7 @@ In addition, they extend the range of their ‘Command Orders’ special rule by
         <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">Only Zombie Pirate or Zombie Pirate Gunner units. 
 
 
-Each time a friendly or enemy sorcerer successfully casts a spell within 18&quot; of the unit, roll 1d6, on a 4+ add an additional model to the unit, potentially exceeding the initial size of models. 
+At the start of each players turn add an additional model to the unit, being able to exceed the initial size of miniatures (but not the maximum).
 
 
 This ability can&apos;t recover miniatures from the Command Group.</characteristic>
@@ -5264,17 +5266,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Throwing Bombs" hidden="false" id="68ab-118a-8446-0aa0" sortIndex="3">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f40c-982d-ff7f-736a"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Throwing Bombs" id="80b7-79e5-a400-1edc" hidden="false" type="profile" targetId="6c69-2099-d730-b0d2"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="20"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command" hidden="false" id="cdda-fefa-6ded-504a" sortIndex="1">
@@ -5626,7 +5617,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             <infoLink name="Base (25x50)" hidden="false" type="profile" id="df64-cdea-d0b7-ffee" targetId="2d9f-e535-9b2e-ca11"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="18"/>
+            <cost name="pts" typeId="points" value="16"/>
           </costs>
           <entryLinks>
             <entryLink name="Hand Weapon" id="0c6f-e487-7031-f489" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" import="true" sortIndex="1">
@@ -7325,7 +7316,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
               </modifiers>
             </infoLink>
             <infoLink name="Crew" id="96ce-ebe9-1d1c-f591" hidden="false" type="profile" targetId="f518-70e5-57ba-de92"/>
-            <infoLink name="Stink Rot" id="12cc-77b6-91fe-3494" hidden="false" type="profile" targetId="6ea9-28d6-b6a3-8890"/>
+            <infoLink name="Swiftstride" id="d2ae-cfd7-a613-a0ad" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -7414,7 +7405,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="56"/>
+            <cost name="pts" typeId="points" value="50"/>
           </costs>
           <infoLinks>
             <infoLink name="Rotting Promethean" id="6afa-b6f8-e3ef-4bef" hidden="false" type="profile" targetId="11eb-c074-120f-3059">
@@ -7615,7 +7606,6 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <modifier type="append" value="(Only Zombie Deck Dropper)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Indiscriminate Bombardment" id="a1bd-02b3-2517-e044" hidden="false" type="profile" targetId="95e3-e279-9b68-b61b"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -8185,6 +8175,17 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
       <entryLinks>
         <entryLink import="true" name="Standard Bearer (Vampire Counts)" hidden="false" id="f83c-97d7-ad5e-73b0" type="selectionEntryGroup" targetId="0999-8104-6220-b8c2"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Throwing Bombs" hidden="false" id="68ab-118a-8446-0aa0">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f40c-982d-ff7f-736a"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Throwing Bombs" id="80b7-79e5-a400-1edc" hidden="false" type="profile" targetId="6c69-2099-d730-b0d2"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="20"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
