@@ -5408,7 +5408,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9982-3373-be21-0b75"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="20"/>
+            <cost name="pts" typeId="points" value="16"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Brother Knight of Origo" hidden="false" id="cbaf-75c7-1604-feeb" sortIndex="3">
@@ -5438,7 +5438,7 @@
             <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="04ca-7caa-8a06-aaf2"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="20"/>
+            <cost name="pts" typeId="points" value="9"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
