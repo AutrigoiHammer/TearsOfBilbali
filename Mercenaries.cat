@@ -2564,7 +2564,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9da2-016b-09ac-ecb9"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Full Plate Armour" hidden="false" id="9655-1d2e-0ee1-f324" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="4">
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="9655-1d2e-0ee1-f324" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cc6-cbb0-ded9-90c2"/>
               </constraints>
@@ -2623,7 +2623,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5aba-6294-79a4-f0b7"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Full Plate Armour" hidden="false" id="772d-e522-6fa3-9a03" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="4">
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="772d-e522-6fa3-9a03" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e0b-caf3-1515-d028"/>
               </constraints>
@@ -2662,7 +2662,7 @@
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="edf9-4e3f-7369-389e"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="26"/>
+            <cost name="pts" typeId="points" value="232"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4843,7 +4843,7 @@
             <infoLink name="First Charge" id="2e5b-0ce6-9097-106a" hidden="false" type="profile" targetId="785a-2886-af42-dce9"/>
             <infoLink name="Swiftstride" id="0d38-704e-fa02-064a" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
             <infoLink name="Impetuous" id="c791-aa29-6d0c-afdd" hidden="false" type="profile" targetId="b664-8530-a988-7ba9"/>
-            <infoLink name="Cold Blooded (Regenegade), (Mercenaries)" id="b9d7-fa00-380f-7ba6" hidden="false" type="profile" targetId="3754-8cbd-6c71-fa5e"/>
+            <infoLink name="Cold Blooded (Renegade)" id="b9d7-fa00-380f-7ba6" hidden="false" type="profile" targetId="3754-8cbd-6c71-fa5e"/>
             <infoLink name="Armour Bane" id="3897-f703-b07f-500e" hidden="false" type="profile" targetId="2af0-975f-bb14-8b8f">
               <modifiers>
                 <modifier type="append" value="(1, Cold One only)" field="name"/>
@@ -6068,7 +6068,7 @@ Though the pirates claim not to notice the smell the effect is dire on the enemy
     </profile>
     <profile name="Venator" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="56e1-7e6b-d382-5320" page="Dogs of War Army List, Warhammer Fantasy 5th Edition, Adapted for ToW">
       <characteristics>
-        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">-</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
