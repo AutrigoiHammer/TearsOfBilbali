@@ -1201,8 +1201,7 @@ For example, a unit with Wet Powder (6+) will have it upgraded to Wet Powder (5+
     </profile>
     <profile name="Gas Explosion" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="e1f6-38d9-4fdb-b2e6">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">When the Bloated Corpse is eliminated, any enemy or friendly model within 6&quot; of it will suffer one Strength 2 hit that do not allow an Armor Save (Ward Saves can be used normally).
-
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">When the Bloated Corpse is eliminated, any enemy or friendly model within 3&quot;+D3 of it will suffer one Strength 2 hit that do not allow an Armor Save (Regeneration and Ward Saves can be used normally).
 
 Units in contact with a eliminated Bloated Corpse rolls only a single D6 when making a &apos;Overrun&apos; roll (rather than the usual 2D6).</characteristic>
       </characteristics>
@@ -6392,7 +6391,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <modifier type="append" value="(2)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Lore Of Undeath" id="0110-9f86-4f3a-f548" hidden="false" type="profile" targetId="790b-ac72-a11e-cdbf"/>
+            <infoLink name="Lore of the Deep" id="0110-9f86-4f3a-f548" hidden="false" type="profile" targetId="316f-a990-f940-70fb"/>
             <infoLink name="Necromantic Undead" id="dff8-1d11-8909-054b" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
             <infoLink name="Regeneration" id="5f03-55d9-c9c4-06d0" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
               <modifiers>
@@ -6655,7 +6654,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <modifier type="append" value="(1)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Lore Of Undeath" id="556f-de65-a741-44c0" hidden="false" type="profile" targetId="790b-ac72-a11e-cdbf"/>
+            <infoLink name="Lore of the Deep" id="556f-de65-a741-44c0" hidden="false" type="profile" targetId="316f-a990-f940-70fb"/>
             <infoLink name="Necromantic Undead" id="76ec-a327-3e74-2bcc" hidden="false" type="profile" targetId="a6ee-a62b-1579-2c37"/>
             <infoLink name="Regeneration" id="5b62-f8d6-0674-f4ac" hidden="false" type="profile" targetId="2eb0-1ec8-8e04-72d4">
               <modifiers>
@@ -7537,7 +7536,7 @@ Additionally, the wearer gains a +1 bonus to their spellcasting rolls.</characte
                 <categoryLink name="Monstrous Infantry" hidden="false" id="20d7-1a02-9b97-0348" targetId="5c55-f9d6-b181-92f8" primary="false"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Second Indiscriminate Bombardment" hidden="false" id="7446-3317-2b23-800f" sortIndex="1" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Second Indiscriminate Bombardment" hidden="true" id="7446-3317-2b23-800f" sortIndex="1" collective="true">
               <infoLinks>
                 <infoLink name="Second Indiscriminate Bombardment" id="98cd-0528-1ccb-97a0" hidden="false" type="profile" targetId="a05b-0936-ae2e-cc94"/>
               </infoLinks>
