@@ -5455,7 +5455,6 @@
           <infoLinks>
             <infoLink name="Close Order" id="4d57-0d79-a3e3-4738" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Mercenaries" id="aedf-18ea-101f-cdb1" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
-            <infoLink name="Pikes" id="bb4d-d114-bba1-b9e4" hidden="false" type="profile" targetId="2e45-16fb-4849-4905"/>
             <infoLink name="Rallying Cry" id="74dc-b94c-7496-993a" hidden="false" type="profile" targetId="23c4-bd19-2422-ad08"/>
             <infoLink name="Veteran" id="0f26-bb8b-71ca-27bb" hidden="false" type="profile" targetId="4022-c403-b083-ba83"/>
             <infoLink name="Warband" id="805a-5694-7749-6ee3" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
