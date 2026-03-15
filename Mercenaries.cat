@@ -2662,7 +2662,7 @@
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="edf9-4e3f-7369-389e"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="232"/>
+            <cost name="pts" typeId="points" value="22"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
