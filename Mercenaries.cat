@@ -2054,14 +2054,6 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Noxious breath" hidden="false" id="4666-5571-ecfc-0bfe" collective="true">
-      <infoLinks>
-        <infoLink name="Noxious breath" id="fb77-8050-a42b-8ff0" hidden="false" type="profile" targetId="8c8b-d7c0-b386-f909"/>
-      </infoLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d87c-4fa6-dd98-317f"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Daddallo and The Birdmen of Catrazza" hidden="false" id="37e4-bdf9-9ddd-38f3" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="252e-ef78-543c-c972" primary="true" name="Mercenaries"/>
@@ -2152,7 +2144,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="857e-a885-39c5-de87" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" sortIndex="1">
+    <selectionEntry type="unit" import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="857e-a885-39c5-de87" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Golgfag Maneater" hidden="false" id="89f6-d29e-137a-4db7" sortIndex="1">
           <entryLinks>
@@ -2327,7 +2319,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" sortIndex="2">
+    <selectionEntry type="unit" import="true" name="Braganza&apos;s Besiegers" hidden="false" id="d529-2376-1520-33a5" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <categoryLinks>
         <categoryLink name="Mercenaries" hidden="false" id="69ad-4f9e-858c-b56f" targetId="5b84-2c3c-869d-3522" primary="true"/>
       </categoryLinks>
@@ -2414,7 +2406,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e422-3f53-8054-65fb" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="e9c6-8a9f-8f08-b36a" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" sortIndex="3">
+    <selectionEntry type="unit" import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="e9c6-8a9f-8f08-b36a" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
       <categoryLinks>
         <categoryLink name="Faction: Dwarfen Mountain Holds" hidden="false" id="ef78-415a-0f5c-5400" targetId="f4fd-aa79-6ff3-1ea9" primary="false"/>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="7daa-6d1b-467b-e2bf" primary="true" name="Mercenaries"/>
@@ -2531,7 +2523,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Voland&apos;s Venators" hidden="false" id="f019-bfd6-099a-0d30" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf" sortIndex="4">
+    <selectionEntry type="unit" import="true" name="Voland&apos;s Venators" hidden="false" id="f019-bfd6-099a-0d30" page="https://zharr-naggrund.poderna.com/wp-content/uploads/2019/01/white-dwarf-47.pdf">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="7dbc-4a43-4e09-cafc" primary="true" name="Mercenaries"/>
         <categoryLink targetId="5165-d052-cfc2-5887" id="0a19-4cd7-ff37-a828" primary="false" name="Heavy Cavalry"/>
@@ -3580,7 +3572,7 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (25x25)" id="e660-855c-dc02-6fec" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
-            <infoLink name="Roderigo Delmonte" id="0c3f-49eb-eb70-4a29" hidden="false" type="profile" targetId="a626-ce53-15d9-4f4b"/>
+            <infoLink name="Roderigo Delmonte" id="0c3f-49eb-eb70-4a29" hidden="false" type="profile" targetId="2286-6f25-edd4-bb21"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="878f-44de-9c2d-16ed"/>
@@ -3640,7 +3632,7 @@
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Leopold&apos;s Leopard Company" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="19f1-800e-851d-f2cb">
+        <profile name="The Alcatani Fellowship" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="19f1-800e-851d-f2cb">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
@@ -5357,6 +5349,133 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddd1-7f28-c64c-802e"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Knights of Origo" hidden="false" id="fc97-a358-7684-a533" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Sir John  Tyreweld" hidden="false" id="4c8e-a84a-34c3-fe32" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="8971-3145-e57b-2055" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62cb-911e-ece5-7859"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="813f-57a5-6b12-5313" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c501-46eb-8321-9dc7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="7287-b286-e4ee-fa4a" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c48-d2aa-0210-d635"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="6a1d-d9f5-3df5-4469" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Roderigo Delmonte" id="36aa-1023-3eea-2c0a" hidden="false" type="profile" targetId="a626-ce53-15d9-4f4b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8274-4742-71e6-8836"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="649c-1d50-8cdd-9ea8"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="100"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Donna Don Domingo" hidden="false" id="ab92-9b67-5751-d16e" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="bf14-d741-c947-853d" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c603-718d-b406-d2e1"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="ea62-5edc-29de-6ca2" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80d9-a83d-baae-3d12"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="0121-a5c6-5766-effb" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="260a-de1a-bd57-bd15"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="32ed-4fa4-1552-e84c" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Donna Don Domingo" id="63d1-9e6f-6d75-3895" hidden="false" type="profile" targetId="bd11-9bfd-fb88-0acf"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2319-1c76-a360-fe07"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9982-3373-be21-0b75"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Brother Knight of Origo" hidden="false" id="cbaf-75c7-1604-feeb" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="f662-6230-4057-47ed" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e424-0035-5464-1b42"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="b374-5beb-e7af-5120" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67d9-f6ad-f752-ae89"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shield" hidden="false" id="09eb-e0da-952b-80bd" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff0b-2369-307f-df2c"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Base (25x25)" id="f2e5-f209-6b9e-5ebf" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
+            <infoLink name="Brother Knight of Origo" id="db46-34a0-56dd-88c1" hidden="false" type="profile" targetId="729f-25b1-ddca-5611"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="cfb2-7ee7-ce04-fed8"/>
+            <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="04ca-7caa-8a06-aaf2"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Knights of Origo" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="8da3-1ad2-892b-cde4">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry (named character)</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10-20</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="f22c-1bf1-c1d0-fc86" hidden="false">
+          <infoLinks>
+            <infoLink name="Close Order" id="4d57-0d79-a3e3-4738" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Mercenaries" id="aedf-18ea-101f-cdb1" hidden="false" type="profile" targetId="4d1b-2617-ebdc-4f4d"/>
+            <infoLink name="Pikes" id="bb4d-d114-bba1-b9e4" hidden="false" type="profile" targetId="2e45-16fb-4849-4905"/>
+            <infoLink name="Rallying Cry" id="74dc-b94c-7496-993a" hidden="false" type="profile" targetId="23c4-bd19-2422-ad08"/>
+            <infoLink name="Veteran" id="0f26-bb8b-71ca-27bb" hidden="false" type="profile" targetId="4022-c403-b083-ba83"/>
+            <infoLink name="Warband" id="805a-5694-7749-6ee3" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
+            <infoLink name="Frenzy" id="9890-65c8-f76f-19c9" hidden="false" type="profile" targetId="3b0c-a477-8823-3a25"/>
+            <infoLink name="Hatred" id="589d-f330-4243-732f" hidden="false" type="profile" targetId="f4b3-18af-16bf-78dd">
+              <modifiers>
+                <modifier type="append" value="(Araby)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Mercenaries" hidden="false" id="eac8-430f-f142-7f15" targetId="5b84-2c3c-869d-3522" primary="true"/>
+        <categoryLink name="Regular Infantry" hidden="false" id="4a72-3d21-9269-f555" targetId="f3f7-ca43-674e-115f" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f2d2-1300-9f26-c8d7" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Ogre" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5ccf-bbe6-f153-88b2">
@@ -6362,17 +6481,17 @@ To represent this extraordinary mobility, galloper guns may move and fire.</char
         <characteristic name="Description" typeId="cea7-7573-475d-cc1d">All enemy models in base contact with Vespero lose one attack in the first round of Close Combat. Yes, models with one attack would have zero attacks in this regard. This has no effect on models with Immunity (Psychology) special rule.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Roderigo Delmonte" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="a626-ce53-15d9-4f4b" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+    <profile name="Sir John Tyreweld" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="a626-ce53-15d9-4f4b" page="The Citadel Journal, Spring 1985 (2nd Edition)">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
-        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
-        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
-        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
-        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
-        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
-        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
-        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">7</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">6</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
       </characteristics>
     </profile>
     <profile name="Ragged Ricco" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="e8b1-8145-fe1d-3f24" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
@@ -7201,6 +7320,45 @@ When required to make a Fear, Panic or Terror test, models with this special rul
 A hand weapon carried by a model with this special rule has an Armour Piercing characteristic of -1.
 
 Note that this special rule only applies to a single, non-magical hand weapon and does not apply to a model’s mount (should it have one). If the model is using two hand weapons or any other sort of weapon, this special rule ceases to apply.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Roderigo Delmonte" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="2286-6f25-edd4-bb21" page="Regiments of Renown, Warhammer Chronicles 2004, p. 62 (Adapted for Warhammer: The Old World - Tears of Bilbali Edition). By Autrigon Tales.">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Brother Knight of Origo" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="729f-25b1-ddca-5611" page="The Citadel Journal, Spring 1985 (2nd Edition)">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Donna Don Domingo" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="bd11-9bfd-fb88-0acf" page="The Citadel Journal, Spring 1985 (2nd Edition)">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
