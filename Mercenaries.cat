@@ -7544,6 +7544,13 @@ Note that this special rule only applies to a single, non-magical hand weapon an
         <categoryLink targetId="ca7e-d004-ccde-caf3" id="f664-740a-9aa1-3231" primary="false" name="Heavy Infantry"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Knights of Origo" hidden="false" id="c5f3-5636-d272-3ec6" targetId="fc97-a358-7684-a533" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="0be8-0c3f-bdc5-4cd2" primary="false" name="Mercenaries"/>
+        <categoryLink targetId="f3f7-ca43-674e-115f" id="0dd4-0d9d-7f26-7c8e" primary="false" name="Regular Infantry"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="e08e-51bf-a29d-875a" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
