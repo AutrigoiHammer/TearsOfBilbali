@@ -1092,7 +1092,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
         <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Armour Bane (1), Fight in Extra Rank, Requires Two Hands</characteristic>
-        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">A Lash &amp; Buckler counts as a handweapon and shield. </characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">A Lash &amp; Buckler counts as a handweapon and shield.</characteristic>
       </characteristics>
     </profile>
     <profile name="Hag" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="1f06-f142-f878-7927">
@@ -1179,19 +1179,19 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
     </profile>
     <profile name="Bloodshield of Khaine" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="c5df-6c77-def5-80f8">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">This model and any unit joined by the Cauldron of Blood has a 5+ Ward save against any wounds suffered. </characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">This model and any unit joined by the Cauldron of Blood has a 5+ Ward save against any wounds suffered.</characteristic>
       </characteristics>
     </profile>
     <profile name="If One Head is Severed… Another Takes Its Place" typeId="d6d5-bc1d-f0d9-ec55" typeName="Special Rule" hidden="false" id="f8bb-c9be-c46f-8c46">
       <characteristics>
-        <characteristic name="Description" typeId="fbf8-7d6-6e1f-79ee">In your Command sub-phase roll a D6 for each wound that the War Hydra has lost. On each roll of a 4+ the War Hydra immediately recovers a wound.  </characteristic>
+        <characteristic name="Description" typeId="fbf8-7d6-6e1f-79ee">In your Command sub-phase roll a D6 for each wound that the War Hydra has lost. On each roll of a 4+ the War Hydra immediately recovers a wound.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Har Ganeth Greatsword" hidden="false" id="acc3-a75e-5ade-2923" collective="true">
       <infoLinks>
-        <infoLink targetId="fc34-9ebc-9285-b708" id="8ea1-7715-e128-d796" type="profile" name="Har Ganeth greatsword" hidden="false"/>
+        <infoLink targetId="fc34-9ebc-9285-b708" id="8ea1-7715-e128-d796" type="profile" name="Har Ganeth Greatsword" hidden="false"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e04b-c443-5d85-00c2"/>
@@ -4009,7 +4009,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="acd11d18-8297a682"/>
               </constraints>
             </entryLink>
-            <entryLink name="Petrifying gaze" id="9897b658-56df75c2" hidden="false" type="selectionEntry" targetId="209c4351-436a3ea7" sortIndex="2" import="true" collective="true">
+            <entryLink name="Petrifying Gaze" id="9897b658-56df75c2" hidden="false" type="selectionEntry" targetId="209c4351-436a3ea7" sortIndex="2" import="true" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8489e907-ec1b7955"/>
               </constraints>
@@ -4081,7 +4081,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <cost name="pts" typeId="points" value="155"/>
           </costs>
           <entryLinks>
-            <entryLink name="Wicked claws" id="e96a847d-2f4abbb3" hidden="false" type="selectionEntry" targetId="b33f618f-8b2b921d" sortIndex="1">
+            <entryLink name="Wicked Claws" id="e96a847d-2f4abbb3" hidden="false" type="selectionEntry" targetId="b33f618f-8b2b921d" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" scope="parent" shared="false" field="selections" id="8e202482-ac86224c"/>
               </constraints>
@@ -4091,7 +4091,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c167136d-96b87523"/>
               </constraints>
             </entryLink>
-            <entryLink name="Fiery breath" id="276e4ee3-fd5c0511" hidden="false" type="selectionEntry" targetId="caf2-132a-fd4-f3b3" sortIndex="3" import="true">
+            <entryLink name="Fiery Breath" id="276e4ee3-fd5c0511" hidden="false" type="selectionEntry" targetId="caf2-132a-fd4-f3b3" sortIndex="3" import="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="b11b59d8-7b29fd42"/>
               </constraints>
@@ -4196,7 +4196,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2d555368-f11a3712"/>
               </constraints>
             </entryLink>
-            <entryLink name="Petrifying gaze" id="5653e092-7f713dc" hidden="false" type="selectionEntry" targetId="209c4351-436a3ea7" sortIndex="2" import="true">
+            <entryLink name="Petrifying Gaze" id="5653e092-7f713dc" hidden="false" type="selectionEntry" targetId="209c4351-436a3ea7" sortIndex="2" import="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ff33c021-c5a359f7"/>
               </constraints>
@@ -4755,7 +4755,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <infoLink name="Lash &amp; Buckler" hidden="false" id="dbb7-4e3c-a7e0-1da" type="profile" targetId="c4d7-c77b-7113-3ae8"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" name="Cold One Chariot" id="b813777-1024bc45" hidden="false" sortIndex="">
+    <selectionEntry type="model" name="Cold One Chariot" id="b813777-1024bc45" hidden="false">
       <infoLinks>
         <infoLink name="Cold One Chariot" hidden="false" type="profile" id="d28e174d-9a18d183" targetId="3387-2565-8ea9-788"/>
         <infoLink name="Base (50x100)" hidden="false" type="profile" id="a6b45aa3-4493b2d1" targetId="d456-e30e-f85d-14d"/>
@@ -4854,7 +4854,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         </infoGroup>
       </infoGroups>
     </selectionEntry>
-    <selectionEntry type="model" name="Scourgerunner Chariot" id="a3e170ad-e5f5e863" hidden="false" sortIndex="">
+    <selectionEntry type="model" name="Scourgerunner Chariot" id="a3e170ad-e5f5e863" hidden="false">
       <infoLinks>
         <infoLink name="Scourgerunner Chariot" hidden="false" type="profile" id="eff1b6eb-c1a8bb39" targetId="b57e-6bb4-3e49-935c"/>
         <infoLink name="Base (50x100)" hidden="false" type="profile" id="153a8791-8e7460e7" targetId="d456-e30e-f85d-14d"/>
@@ -4863,7 +4863,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <cost name="pts" typeId="points" value="85"/>
       </costs>
       <entryLinks>
-        <entryLink name="Ravager harpoon" id="6e5ead2e-ecd0ce38" hidden="false" type="selectionEntry" targetId="75eb-b4a7-ee17-5585" sortIndex="3">
+        <entryLink name="Ravager Harpoon" id="6e5ead2e-ecd0ce38" hidden="false" type="selectionEntry" targetId="75eb-b4a7-ee17-5585" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" scope="parent" shared="false" field="selections" id="b14d0e5-9d5991db"/>
           </constraints>
@@ -5323,9 +5323,6 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
       </modifiers>
       <comment>Beastmaster General</comment>
     </entryLink>
-    <entryLink import="true" name="Renegades (Square Based)" hidden="false" id="3af6-df49-fcca-f5b2" type="selectionEntry" targetId="974c-3bf3-af4b-701d">
-      <comment>No Warhall</comment>
-    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="a8-15c2-bd3d-e97f" targetId="6c22-b0e4-7c83-f9ce"/>
@@ -5460,7 +5457,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <cost name="pts" typeId="points" value="280"/>
           </costs>
           <entryLinks>
-            <entryLink name="Wicked claws" id="fa5d72d7-5bf26d25" hidden="false" type="selectionEntry" targetId="b33f618f-8b2b921d" sortIndex="1">
+            <entryLink name="Wicked Claws" id="fa5d72d7-5bf26d25" hidden="false" type="selectionEntry" targetId="b33f618f-8b2b921d" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" scope="parent" shared="false" field="selections" id="e2836084-d676f24e"/>
               </constraints>
@@ -5470,7 +5467,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a29b2b70-4b1f2f3a"/>
               </constraints>
             </entryLink>
-            <entryLink name="Noxious breath" id="c51e9251-3b6215a7" hidden="false" type="selectionEntry" targetId="c12cd453-d01a6901" sortIndex="3" import="true">
+            <entryLink name="Noxious Breath" id="c51e9251-3b6215a7" hidden="false" type="selectionEntry" targetId="c12cd453-d01a6901" sortIndex="3" import="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f41e176c-9b996cb6"/>
               </constraints>
@@ -5535,7 +5532,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <cost name="pts" typeId="points" value="130"/>
           </costs>
           <entryLinks>
-            <entryLink name="Wicked claws" id="9fa3ca7d-ed89d1b3" hidden="false" type="selectionEntry" targetId="b33f618f-8b2b921d" sortIndex="1">
+            <entryLink name="Wicked Claws" id="9fa3ca7d-ed89d1b3" hidden="false" type="selectionEntry" targetId="b33f618f-8b2b921d" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" scope="parent" shared="false" field="selections" id="c827ca82-9d20984c"/>
               </constraints>
@@ -5546,7 +5543,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" scope="parent" shared="false" field="selections" id="27fc9f06-c3b5a690"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Venomous tail" hidden="false" id="e4232792-871422dc" type="selectionEntry" targetId="3104258c-e72bb5d6" sortIndex="3">
+            <entryLink import="true" name="Venomous Tail" hidden="false" id="e4232792-871422dc" type="selectionEntry" targetId="3104258c-e72bb5d6" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="points" value="15"/>
               </costs>
