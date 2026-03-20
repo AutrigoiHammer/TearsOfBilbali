@@ -253,7 +253,7 @@
     <profile name="Sister of Slaughter" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="857e-fe25-933d-f542">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">5</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
@@ -505,7 +505,7 @@
     </profile>
     <profile name="Bloodwrack Shrine" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="7879-1581-e84-9c03">
       <characteristics>
-        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">2</characteristic>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">7</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">-</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
@@ -562,7 +562,7 @@
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
-        <characteristic name="T" typeId="ab43-8b61-83e7-d090">(+1)</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">(+2)</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">(+4)</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
@@ -618,7 +618,7 @@
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">7</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">5</characteristic>
-        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">5</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">6</characteristic>
       </characteristics>
@@ -687,32 +687,32 @@ If a unit in which a Khainite Assassin is hiding is destroyed or flees the battl
     </profile>
     <profile name="Forbidden Poisons" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="ee7-ced8-22be-f850">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">As described above, a Khainite Assassin may take one of the following</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="forbidden poisons:" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="846-d6a3-661d-220e">
-      <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">• Dark Venom: This character has the Killing Blow special rule.
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">As described above, a Khainite Assassin may take one of the following forbidden poisons:
 
-• Manbane: When this character makes a roll To Wound, a roll of 4+ is always a success, regardless of the target’s Toughness.</characteristic>
+
+Black Lotus: For each unsaved Wound inflicted upon them by this character, enemy characters suffer a -1 modifier to their Leadership characteristic, to a minimum of 1, for the remainder of the game.
+Dark Venom: This character has the Killing Blow special rule.
+Manbane: When this character makes a roll To Wound, a roll of 4+ is always a success, regardless of the target’s Toughness.</characteristic>
       </characteristics>
     </profile>
     <profile name="Dance Of Death" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="410d-4b9e-8e83-6ff3">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">If this unit makes a successful charge move (i.e., if the unit makes contact with the charge target), the charge target suffers a -1 modifier to its Maximum Rank Bonus until the end of the Combat phase of that turn.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Models with this rule have a 6+ Ward save against any wounds suffered. In addition, enemy units engaged in combat with a model with this rule suffer a -1 modifier to its Maximum Rank Bonus.</characteristic>
       </characteristics>
     </profile>
     <profile name="Cursed Coven" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="de9b-915c-95a0-803e">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">A unit of Doomfire Warlocks knows a single spell (chosen by their controlling player before armies are deployed) from either the Dark Magic or Daemonology Lore of Magic. The unit may cast this spell as a Bound spell:
-• If the unit has a Unit Strength of 10 or more and includes a Master, it may cast this Bound spell with a Power Level of 2.
-• If the unit includes a Master, but has a Unit Strength of 9 or less, it may cast this Bound spell with a Power Level of 1.
-• Otherwise, the unit may cast this Bound spell with a Power Level of 0.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">A unit of Doomfire Warlocks knows a single, randomly generated spell from either the Dark Magic or Daemonology Lore of Magic. If you wish, this spell may be discarded and the unit may instead select the signature spell of its chosen Lore of Magic. The unit may cast this spell as a Bound spell:
+
+
+If the unit has a Master, it may cast this Bound spell with a Power Level of 1.
+If the unit includes a Master and has a Unit Strength of 5 or more, it may cast this Bound spell with a Power Level of 2.
+Otherwise, the unit may cast this Bound spell with a Power Level of 0.</characteristic>
       </characteristics>
     </profile>
     <profile name="Dark Runes" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="6f31-6ced-94b8-627e">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">This unit has a 5+ Ward save against any wounds suffered that were caused by a non-magical enemy attack.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Models with this special rule have a 4+ Ward save against any wounds suffered.</characteristic>
       </characteristics>
     </profile>
     <profile name="Blessings Of Khaine" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="db3d-faa3-4355-3a6b">
@@ -876,11 +876,11 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
 *Note that this modifier is not cumulative.*</characteristic>
       </characteristics>
     </profile>
-    <profile name="Har Ganeth greatsword" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="fc34-9ebc-9285-b708">
+    <profile name="Har Ganeth Greatsword" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="fc34-9ebc-9285-b708">
       <characteristics>
         <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S+2</characteristic>
-        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-2</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Cleaving Blow, Requires Two Hands</characteristic>
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
       </characteristics>
@@ -1081,9 +1081,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
       <characteristics>
         <characteristic name="R" typeId="2360-c777-5e07-ed58">Combat</characteristic>
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S+1</characteristic>
-        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1 (-2)</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Armour Bane (1), Fight in Extra Rank, Requires Two Hands</characteristic>
-        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">A model wielding a dread halberd cannot make a supporting attack during a turn in which it charged.</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">A model wielding a dread halberd cannot make a supporting attack during a turn in which it charged. Also, a Dread Halberd has an AP of -2 against enemy models the wielder charged this turn.</characteristic>
       </characteristics>
     </profile>
     <profile name="Lash &amp; Buckler" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="c4d7-c77b-7113-3ae8">
@@ -1092,7 +1092,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
         <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Armour Bane (1), Fight in Extra Rank, Requires Two Hands</characteristic>
-        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">A model equipped with a lash &amp; buckler improves its armour value by 1.</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">A Lash &amp; Buckler counts as a handweapon and shield. </characteristic>
       </characteristics>
     </profile>
     <profile name="Hag" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="1f06-f142-f878-7927">
@@ -1177,9 +1177,19 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Any enemy model that targets this model during the Shooting phase suffers a -2 To Hit modifier for firing at long range, rather than the usual -1.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Bloodshield of Khaine" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="c5df-6c77-def5-80f8">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">This model and any unit joined by the Cauldron of Blood has a 5+ Ward save against any wounds suffered. </characteristic>
+      </characteristics>
+    </profile>
+    <profile name="If One Head is Severed… Another Takes Its Place" typeId="d6d5-bc1d-f0d9-ec55" typeName="Special Rule" hidden="false" id="f8bb-c9be-c46f-8c46">
+      <characteristics>
+        <characteristic name="Description" typeId="fbf8-7d6-6e1f-79ee">In your Command sub-phase roll a D6 for each wound that the War Hydra has lost. On each roll of a 4+ the War Hydra immediately recovers a wound.  </characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Har Ganeth greatsword" hidden="false" id="acc3-a75e-5ade-2923" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Har Ganeth Greatsword" hidden="false" id="acc3-a75e-5ade-2923" collective="true">
       <infoLinks>
         <infoLink targetId="fc34-9ebc-9285-b708" id="8ea1-7715-e128-d796" type="profile" name="Har Ganeth greatsword" hidden="false"/>
       </infoLinks>
@@ -1187,7 +1197,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e04b-c443-5d85-00c2"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ravager harpoon" hidden="false" id="75eb-b4a7-ee17-5585" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Ravager Harpoon" hidden="false" id="75eb-b4a7-ee17-5585" collective="true">
       <profiles>
         <profile name="Ravager harpoon" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="75e9-7e36-d63b-cf9a">
           <characteristics>
@@ -1203,7 +1213,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac89-0809-300d-79cd"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fiery breath" hidden="false" id="caf2-132a-fd4-f3b3" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Fiery Breath" hidden="false" id="caf2-132a-fd4-f3b3" collective="true">
       <profiles>
         <profile name="Fiery breath" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="c2c3-72ce-e66e-b9bc">
           <characteristics>
@@ -1257,7 +1267,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c66-73c2-a11c-5b50"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Noxious breath" hidden="false" id="c12cd453-d01a6901" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Noxious Breath" hidden="false" id="c12cd453-d01a6901" collective="true">
       <infoLinks>
         <infoLink name="Noxious breath" hidden="false" id="5e5e8599-b8a70def" type="profile" targetId="79bb-357e-c31e-d97d"/>
       </infoLinks>
@@ -1265,7 +1275,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0902-9f74-345e-a50d"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Wicked claws" hidden="false" id="b33f618f-8b2b921d" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Wicked Claws" hidden="false" id="b33f618f-8b2b921d" collective="true">
       <infoLinks>
         <infoLink name="Wicked Claws" hidden="false" id="bffcd781-d51706d7" type="profile" targetId="3189-7068-61dc-17ed"/>
       </infoLinks>
@@ -1273,7 +1283,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8b9-b629-08c6-c6d6"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Venomous tail" hidden="false" id="3104258c-e72bb5d6">
+    <selectionEntry type="upgrade" import="true" name="Venomous Tail" hidden="false" id="3104258c-e72bb5d6">
       <infoLinks>
         <infoLink name="Venomous tail" hidden="false" id="fa68cc05-3ebf22fb" type="profile" targetId="6b98-351a-70d3-5a64"/>
       </infoLinks>
@@ -1281,7 +1291,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8040-b848-ccfb-afa5"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Petrifying gaze" hidden="false" id="209c4351-436a3ea7" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Petrifying Gaze" hidden="false" id="209c4351-436a3ea7" collective="true">
       <infoLinks>
         <infoLink name="Petrifying gaze" hidden="false" id="65f9559f-b7b2382d" type="profile" targetId="fca5-fa1d-aff2-e333"/>
       </infoLinks>
@@ -2503,7 +2513,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ac2acf55-f628534b"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ac2acf55-f628534b"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="54da-1721-ae84-ccb4" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -2803,6 +2813,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Immune To Psychology" hidden="false" id="c0ec97c-f4c44a06" type="profile" targetId="93d9-c75b-f655-30ac"/>
             <infoLink name="Martial Prowess" hidden="false" id="4b291396-472a3260" type="profile" targetId="6133-9bd8-8780-23ed"/>
             <infoLink name="Stubborn" hidden="false" id="9210df7c-9e05b006" type="profile" targetId="e351-bbd6-f470-b604"/>
+            <infoLink name="Murderous" id="064a-6ee9-1f52-ecf5" hidden="false" type="profile" targetId="404b-9605-8eb5-e94b"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -2847,7 +2858,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="adca4097-2c0acce5" targetId="193c-4d0d-de6b-bbb1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="15"/>
+            <cost name="pts" typeId="points" value="13"/>
           </costs>
           <entryLinks>
             <entryLink name="Hand Weapon" id="da741103-1e90b431" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1" import="true">
@@ -2855,7 +2866,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f0017978-d7f73962"/>
               </constraints>
             </entryLink>
-            <entryLink name="Har Ganeth greatsword" id="c430033c-488db5c6" hidden="false" type="selectionEntry" targetId="acc3-a75e-5ade-2923" sortIndex="2" import="true">
+            <entryLink name="Har Ganeth Greatsword" id="c430033c-488db5c6" hidden="false" type="selectionEntry" targetId="acc3-a75e-5ade-2923" sortIndex="2" import="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c5d09b03-26b8ee31"/>
               </constraints>
@@ -2876,7 +2887,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Drilled" hidden="false" id="447fe783-e889d6b1" sortIndex="4" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="2"/>
+                <cost name="pts" typeId="points" value="1"/>
               </costs>
               <infoLinks>
                 <infoLink name="Drilled" id="dd4d3aba-4aa6bda4" hidden="false" type="profile" targetId="1f64-3ddc-db58-12fb"/>
@@ -2907,7 +2918,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
               <entryLinks>
                 <entryLink import="true" name="Magic Items" hidden="false" id="11dbbdeb-de0a8a39" type="selectionEntryGroup" targetId="1539-fd78-88f-badd">
                   <constraints>
-                    <constraint type="max" value="25" field="points" scope="parent" shared="false" id="f5e1bb2a-b8a2b9d4"/>
+                    <constraint type="max" value="50" field="points" scope="parent" shared="false" id="f5e1bb2a-b8a2b9d4"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -3012,6 +3023,11 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="efbae22-1fa7e76c"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Light Armour" hidden="false" id="4b45-728a-c1ce-b011" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d58f-d38a-54dc-3237" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="216cd1fd-9dce9d33"/>
@@ -3037,18 +3053,6 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2a595aa3-8310b2d1" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Equipment" id="87bfb161-b5c5c137" hidden="false" flatten="true" sortIndex="4">
-              <entryLinks>
-                <entryLink import="true" name="Light Armour" hidden="false" id="ba4a9bf2-179550bc" type="selectionEntry" targetId="7cab-40e6-f134-de78">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="da4729fa-efd732e4" includeChildSelections="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="1"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup name="Special Rules" id="c9d1e11d-33fceed3" hidden="false" sortIndex="5" flatten="true">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Ambushers" hidden="false" id="c6f9731b-cef140a9" sortIndex="1" collective="true">
@@ -3073,16 +3077,16 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7930c69b-41d1f829" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="4d40e55a-9cb6db44" sortIndex="3" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Feigned Flight" hidden="false" id="e360-7e8f-faa7-a7fe" sortIndex="4">
                   <costs>
                     <cost name="pts" typeId="points" value="1"/>
                   </costs>
-                  <infoLinks>
-                    <infoLink name="Veteran" id="542a7c71-a9b40947" hidden="false" type="profile" targetId="4022-c403-b083-ba83"/>
-                  </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e75421ab-c721cff9" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14ce-fb05-acba-58b8"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink name="Feigned Flight" id="32e4-752c-5b58-45ff" hidden="false" type="profile" targetId="eea7-89d9-a996-403c"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3136,6 +3140,8 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Move Through Cover" hidden="false" id="d70a5e1f-f2f6fcad" type="profile" targetId="e83e-f127-1904-3858"/>
             <infoLink name="Scouts" hidden="false" id="567e0033-1d721fe1" type="profile" targetId="fe5e-8838-7fbd-a7ec"/>
             <infoLink name="Skirmishers" hidden="false" id="3436a6ac-35f381f6" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Fire &amp; Flee" id="8ebe-96d5-91dd-7faa" hidden="false" type="profile" targetId="1a06-31aa-cbfe-1a5"/>
+            <infoLink name="Veteran" id="5eea-2140-936e-f34d" hidden="false" type="profile" targetId="4022-c403-b083-ba83"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -3153,9 +3159,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="5fd264a-65ba9574" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="add" value="d269-14c9-9bf0-57e9" field="category">
+        <modifier type="add" value="84a1-b591-ede4-005a" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="4d40e55a-9cb6db44" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="5fd264a-65ba9574" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3205,11 +3211,13 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <infoLink name="Loner" hidden="false" id="93a4fd7c-608de06" type="profile" targetId="2ecd-c6b3-bd8b-864b"/>
                 <infoLink name="Murderous" hidden="false" id="1f2a675e-c57bc028" type="profile" targetId="404b-9605-8eb5-e94b"/>
                 <infoLink name="Poisoned Attacks" hidden="false" id="4f670e9a-37e1ba84" type="profile" targetId="81f5-4895-4abc-fc39"/>
+                <infoLink name="Strike First" id="1ef6-d6bc-3485-de66" hidden="false" type="profile" targetId="48fd-23c1-c0d5-ae1d"/>
+                <infoLink name="Warband" id="f2b1-8c5a-722e-b329" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
               </infoLinks>
             </infoGroup>
           </infoGroups>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="8cfec315-133ea90b"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8cfec315-133ea90b"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="d36a-eed8-a421-70d3" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -3408,6 +3416,25 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="505cae21-3a14d7f7" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Special Rules" id="82a3-d631-5b3c-468f" hidden="false" collective="true" defaultSelectionEntryId="b5451dac-34d640f6" flatten="true" sortIndex="6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0afe-b547-0f8c-635d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9696-c004-3be3-76ae" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="7773-d41e-f1ae-5fbb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a887-5b08-ccc7-0729" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="2"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Veteran" id="2475-c888-ff10-7f8e" hidden="false" type="profile" targetId="4022-c403-b083-ba83"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="bf3970e4-4be7a02e"/>
@@ -3547,6 +3574,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             </infoLink>
             <infoLink name="Stupidity" hidden="false" id="a74dd774-7fb9347e" type="profile" targetId="f7af-e016-1f9c-54c0"/>
             <infoLink name="Swiftstride" hidden="false" id="ab5d330f-34ced79d" type="profile" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Counter Charge" id="ae00-da32-24d1-3427" hidden="false" type="profile" targetId="5186-798d-69d-6545"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -3936,7 +3964,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Base (60x100)" hidden="false" type="profile" id="1d5488c6-d5804250" targetId="5125-89a4-916a-eabd"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="175"/>
+            <cost name="pts" typeId="points" value="140"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c2f77ed-4b19b5a3"/>
@@ -4000,9 +4028,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <infoGroup name="Special Rules" hidden="false" id="2fa8aac7-5eb62d15">
           <infoLinks>
             <infoLink name="Close Order" hidden="false" id="5e0aced8-92f5ca42" type="profile" targetId="883e-e1b1-4fe9-5912"/>
-            <infoLink name="Dragged Along" hidden="false" id="8a080f43-1b12c071" type="profile" targetId="a042-c2f5-ebcb-2bab"/>
             <infoLink name="Elven Reflexes" hidden="false" id="fbe29a2c-2da3d976" type="profile" targetId="cf6b-ab6d-f5a1-e20c"/>
-            <infoLink name="Frenzy" hidden="false" id="13658232-2a2704fc" type="profile" targetId="3b0c-a477-8823-3a25"/>
             <infoLink name="Hatred" hidden="false" id="190fd964-3ec6c4ae" type="profile" targetId="f4b3-18af-16bf-78dd">
               <modifiers>
                 <modifier type="append" value="(High Elves)" field="name"/>
@@ -4028,6 +4054,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <modifier type="append" value=":  4+" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Impetuous" id="4bfc-8819-e799-5a28" hidden="false" type="profile" targetId="b664-8530-a988-7ba9"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4051,7 +4078,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Base (60x100)" hidden="false" type="profile" id="3c3a2526-5c253230" targetId="5125-89a4-916a-eabd"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="200"/>
+            <cost name="pts" typeId="points" value="155"/>
           </costs>
           <entryLinks>
             <entryLink name="Wicked claws" id="e96a847d-2f4abbb3" hidden="false" type="selectionEntry" targetId="b33f618f-8b2b921d" sortIndex="1">
@@ -4127,15 +4154,16 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             </infoLink>
             <infoLink name="Stomp Attacks" hidden="false" id="448216eb-2eb61b39" type="profile" targetId="72db-24bb-7493-d753">
               <modifiers>
-                <modifier type="append" value="(D3)" field="name"/>
+                <modifier type="append" value="(D3+1)" field="name"/>
               </modifiers>
             </infoLink>
             <infoLink name="Terror" hidden="false" id="494dc6ed-f6cd8ca3" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
             <infoLink name="Armour Value" hidden="false" id="d76bf0b9-4d61580f" type="profile" targetId="e099-1ebb-9e85-34c8">
               <modifiers>
-                <modifier type="append" value=":  5+" field="name"/>
+                <modifier type="append" value=": 4+" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="If One Head is Severed… Another Takes Its Place" id="9f5b-33c4-95ab-88c6" hidden="false" type="profile" targetId="f8bb-c9be-c46f-8c46"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4159,7 +4187,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Base (40x40)" hidden="false" type="profile" id="8682179e-6a13ee68" targetId="1b54-27fc-b510-61b8"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="85"/>
+            <cost name="pts" typeId="points" value="70"/>
           </costs>
           <entryLinks>
             <entryLink name="Hand Weapon" id="2eaa523d-6a9e1b73" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1" import="true">
@@ -4196,7 +4224,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Close Order" hidden="false" id="e27c6466-fddb7770" type="profile" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Elven Reflexes" hidden="false" id="289a8696-4f780d60" type="profile" targetId="cf6b-ab6d-f5a1-e20c"/>
             <infoLink name="Fear" hidden="false" id="f73ad33c-6cc205c6" type="profile" targetId="5ec9-a98-d8c5-e18b"/>
-            <infoLink name="Frenzy" hidden="false" id="58bcc2e8-faca2a92" type="profile" targetId="3b0c-a477-8823-3a25"/>
+            <infoLink name="Impetuous" hidden="false" id="58bcc2e8-faca2a92" type="profile" targetId="b664-8530-a988-7ba9"/>
             <infoLink name="Hatred" hidden="false" id="d2ccf6a6-89577b0" type="profile" targetId="f4b3-18af-16bf-78dd">
               <modifiers>
                 <modifier type="append" value="(High Elves)" field="name"/>
@@ -4233,7 +4261,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Base (60x100)" hidden="false" type="profile" id="4d179734-13b6f63e" targetId="5125-89a4-916a-eabd"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="195"/>
+            <cost name="pts" typeId="points" value="135"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbc43043-33e5d971"/>
@@ -4309,7 +4337,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Terror" hidden="false" id="8bc62a9f-d670652d" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
             <infoLink name="Armour Value" hidden="false" id="3d5429c3-ba2a06f1" type="profile" targetId="e099-1ebb-9e85-34c8">
               <modifiers>
-                <modifier type="append" value=":  5+" field="name"/>
+                <modifier type="append" value=":4+" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -4602,7 +4630,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="a7cb-53bd-a941-cece" targetId="193c-4d0d-de6b-bbb1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="17"/>
+            <cost name="pts" typeId="points" value="14"/>
           </costs>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="69aa-2415-7c29-fa64"/>
@@ -4627,7 +4655,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
       <selectionEntryGroups>
         <selectionEntryGroup name="Command" hidden="false" id="74f1-e6c8-1a07-938b" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="model" subType="crew" name="Hag" id="64f8-9217-5015-7b38" hidden="false" sortIndex="1">
+            <selectionEntry type="model" subType="crew" name="Handmaiden of Shards" id="64f8-9217-5015-7b38" hidden="false" sortIndex="1">
               <infoLinks>
                 <infoLink name="Sister of Slaughter" hidden="false" type="profile" id="c02-aed-53db-2b7c" targetId="857e-fe25-933d-f542">
                   <modifiers>
@@ -4647,6 +4675,13 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
               <categoryLinks>
                 <categoryLink name="Regular Infantry" hidden="false" id="c7d5-d607-3cd1-12be" targetId="f3f7-ca43-674e-115f" primary="false"/>
               </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Magic Items" hidden="false" id="6024-edc3-662b-0617" type="selectionEntryGroup" targetId="1539-fd78-88f-badd">
+                  <constraints>
+                    <constraint type="max" value="25" field="points" scope="parent" shared="false" id="d4f6-7c26-a4f1-0134"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry name="Standard Bearer" id="df7c-c568-aabf-82d9" type="model" import="true" hidden="false" subType="crew" sortIndex="2">
               <costs>
@@ -4705,6 +4740,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Loner" id="2c38-7276-d007-ccbd" hidden="false" type="profile" targetId="2ecd-c6b3-bd8b-864b"/>
             <infoLink name="Murderous" id="2ae1-3659-933d-a117" hidden="false" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Open Order" id="3e30-df39-57d1-38fe" hidden="false" type="profile" targetId="5b67-8535-146c-7cea"/>
+            <infoLink name="Strike First" id="64b8-8aef-a341-23d5" hidden="false" type="profile" targetId="48fd-23c1-c0d5-ae1d"/>
+            <infoLink name="Skirmishers" id="2f91-e41a-7b5f-5001" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
+            <infoLink name="Warband" id="178b-e4ac-f0b8-0b33" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4717,7 +4755,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <infoLink name="Lash &amp; Buckler" hidden="false" id="dbb7-4e3c-a7e0-1da" type="profile" targetId="c4d7-c77b-7113-3ae8"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" name="Cold One Chariot" id="b813777-1024bc45" hidden="false" sortIndex="2">
+    <selectionEntry type="model" name="Cold One Chariot" id="b813777-1024bc45" hidden="false" sortIndex="">
       <infoLinks>
         <infoLink name="Cold One Chariot" hidden="false" type="profile" id="d28e174d-9a18d183" targetId="3387-2565-8ea9-788"/>
         <infoLink name="Base (50x100)" hidden="false" type="profile" id="a6b45aa3-4493b2d1" targetId="d456-e30e-f85d-14d"/>
@@ -4816,7 +4854,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         </infoGroup>
       </infoGroups>
     </selectionEntry>
-    <selectionEntry type="model" name="Scourgerunner Chariot" id="a3e170ad-e5f5e863" hidden="false" sortIndex="1">
+    <selectionEntry type="model" name="Scourgerunner Chariot" id="a3e170ad-e5f5e863" hidden="false" sortIndex="">
       <infoLinks>
         <infoLink name="Scourgerunner Chariot" hidden="false" type="profile" id="eff1b6eb-c1a8bb39" targetId="b57e-6bb4-3e49-935c"/>
         <infoLink name="Base (50x100)" hidden="false" type="profile" id="153a8791-8e7460e7" targetId="d456-e30e-f85d-14d"/>
@@ -5255,7 +5293,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="cf77-9525-e35b-91cb" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="eac2-2227-15dd-4a8f" primary="false" targetId="fec1-537a-bbeb-7926"/>
-        <categoryLink targetId="fb6e-92ea-83c7-55e6" id="8871-5773-d17f-dbd0" primary="false" name="If your General is a High Beastmaster, 0-1 War Hydra or Kharibdyss may be taken as a Special Choice"/>
+        <categoryLink targetId="fb6e-92ea-83c7-55e6" id="8871-5773-d17f-dbd0" primary="false" name="If you include a High Beastmaster, 0-1 War Hydra or Kharibdyss may be taken as a Special Choice"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -5272,7 +5310,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="325-8567-99d2-278d" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="dc86-ddce-f6e5-89af" primary="false" targetId="fec1-537a-bbeb-7926"/>
-        <categoryLink targetId="fb6e-92ea-83c7-55e6" id="88ad-fc5c-3033-1cd4" primary="false" name="If your General is a High Beastmaster, 0-1 War Hydra or Kharibdyss may be taken as a Special Choice"/>
+        <categoryLink targetId="fb6e-92ea-83c7-55e6" id="88ad-fc5c-3033-1cd4" primary="false" name="If you include a High Beastmaster, 0-1 War Hydra or Kharibdyss may be taken as a Special Choice"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -5490,18 +5528,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         </selectionEntry>
         <selectionEntry type="model" name="Manticore" id="263b9db8-b8be3ba2" hidden="true" subType="mount" sortIndex="6">
           <infoLinks>
-            <infoLink name="Manticore" hidden="false" type="profile" id="7c973b3e-4f96f888" targetId="b810-fb32-b31c-c2c1">
-              <modifiers>
-                <modifier type="set" value="(+2)" field="ab43-8b61-83e7-d090">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="974c-3bf3-af4b-701d" shared="true" includeChildSelections="true">
-                      <comment>Renegades</comment>
-                    </condition>
-                  </conditions>
-                  <comment>Renegades</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Manticore" hidden="false" type="profile" id="7c973b3e-4f96f888" targetId="b810-fb32-b31c-c2c1"/>
             <infoLink name="Base (60x100)" hidden="false" type="profile" id="9462fb26-90575830" targetId="5125-89a4-916a-eabd"/>
           </infoLinks>
           <costs>
@@ -5636,7 +5663,6 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink name="Base (60x100)" hidden="false" type="profile" id="fc49731e-b3c46de8" targetId="5125-89a4-916a-eabd"/>
             <infoLink name="Cauldron of Blood" id="0f87-045a-d035-406f" hidden="false" type="infoGroup" targetId="bb96-1acf-9e5d-a071"/>
           </infoLinks>
           <costs>
@@ -5677,7 +5703,11 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoGroup name="Special Rules" hidden="false" id="fb495fb9-b0db4f0f">
               <infoLinks>
                 <infoLink name="Close Order" hidden="false" id="d5445b8e-54a71f98" type="profile" targetId="883e-e1b1-4fe9-5912"/>
-                <infoLink name="Dragged Along" hidden="false" id="e9ab4d65-a6582a5b" type="profile" targetId="a042-c2f5-ebcb-2bab"/>
+                <infoLink name="Dragged Along" hidden="false" id="e9ab4d65-a6582a5b" type="profile" targetId="a042-c2f5-ebcb-2bab">
+                  <modifiers>
+                    <modifier type="set" value="This unit may only use the Dragged Along special rule to join a unit of Witch Elves. " field="description"/>
+                  </modifiers>
+                </infoLink>
                 <infoLink name="Elven Reflexes" hidden="false" id="aa63586e-aad61f78" type="profile" targetId="cf6b-ab6d-f5a1-e20c"/>
                 <infoLink name="Frenzy" hidden="false" id="9c719c50-7169699a" type="profile" targetId="3b0c-a477-8823-3a25"/>
                 <infoLink name="Hatred" hidden="false" id="4dad5cfe-3d6e0c48" type="profile" targetId="f4b3-18af-16bf-78dd">
@@ -5749,6 +5779,16 @@ Blessings of Khaine" field="9f84-4221-785a-db50">
               </conditions>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Base (Min 60x100, Max 75x100)" typeId="1ae4-7f34-4055-fd5f" typeName="Base" hidden="false" id="10c0-ad66-ad6e-12f0">
+              <characteristics>
+                <characteristic name="Base Size" typeId="1adf-d238-57ca-2226">Min 60 x 100 mm, max 75x100</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Base" field="name"/>
+              </modifiers>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5836,23 +5876,53 @@ Blessings of Khaine" field="9f84-4221-785a-db50">
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="80a6-3010-2c51-cc74" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="0-1 unit of Dark Elf Shade may have the Ambusher special rule" id="048d-668b-a425-2622" hidden="true">
+    <categoryEntry name="0-1 unit of Dark Elf Shades per 1000 points may have the Ambushers special rule" id="048d-668b-a425-2622" hidden="true">
       <comment>Dark Elf Shade Ambusher</comment>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7a21-6b3d-25af-c794" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="2895-7319-f3e0-38cd" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="2895-7319-f3e0-38cd">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="9b94-6dfd-502e-9c11"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="2895-7319-f3e0-38cd">
+          <repeats>
+            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="6a13-d56e-ee93-5545" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
-    <categoryEntry name="0-1 unit of Dark Elf Shade may have the Chariot Runners special rule" id="04cb-79c3-4793-ccd3" hidden="true">
+    <categoryEntry name="0-1 unit of Dark Elf Shades per 1000 points may have the Chariot Runners special rule" id="04cb-79c3-4793-ccd3" hidden="true">
       <comment>Dark Elf Shade Chariot Runners</comment>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="430e-f63e-6bf4-2f41" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="430e-f63e-6bf4-2f41" includeChildSelections="true"/>
       </constraints>
-    </categoryEntry>
-    <categoryEntry name="0-1 unit of Dark Elf Shade may have the Veteran special rule" id="d269-14c9-9bf0-57e9" hidden="true">
-      <comment>Dark Elf Shade Veteran</comment>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2405-df1e-5801-db40" includeChildSelections="true"/>
-      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="430e-f63e-6bf4-2f41">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="bdea-220c-dee0-6614"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="430e-f63e-6bf4-2f41">
+          <repeats>
+            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="53c3-5452-2d87-7426" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
     <categoryEntry name="0-1 unit of Dark Elf City Guard per 1,000 may have the Veteran special rule" id="8895-11a1-ec1a-6d5f" hidden="true">
       <comment>Dark Elf City Guard Veteran</comment>
@@ -5991,6 +6061,30 @@ Blessings of Khaine" field="9f84-4221-785a-db50">
         <modifier type="increment" value="1" field="1d09-9ab0-de12-f209">
           <repeats>
             <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="7ed2-0067-4a8c-5a72" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="0-1 unit of Dark Elf Shades per 1000 points may have the Feigned Flight special rule" id="84a1-b591-ede4-005a" hidden="true">
+      <comment>Dark Elf Shade Chariot Runners</comment>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="fd9c-d601-76d9-627f" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="fd9c-d601-76d9-627f">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="05de-bf96-e018-0734"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="fd9c-d601-76d9-627f">
+          <repeats>
+            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="518c-ddb7-5220-79ba" includeChildSelections="true"/>
           </repeats>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
