@@ -1355,7 +1355,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
               </constraints>
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="dafb4845-445bbd3b" type="selectionEntryGroup" targetId="bc31-e0cb-8e0e-6ff5" sortIndex="8" collapsible="false"/>
-            <entryLink import="true" name="Magic Items" hidden="false" id="1be0c3f6-2e901ec0" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="9">
+            <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="1be0c3f6-2e901ec0" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737" sortIndex="9">
               <constraints>
                 <constraint type="max" value="100" field="points" scope="parent" shared="false" id="ad20c2b3-ffeace61"/>
               </constraints>
@@ -1544,7 +1544,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6f6bd215-83cb400b"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Magic Items" hidden="false" id="10ae22c1-5d63f817" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="10">
+            <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="10ae22c1-5d63f817" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737" sortIndex="10">
               <constraints>
                 <constraint type="max" value="50" field="points" scope="parent" shared="false" id="b8e1aabc-4f762146"/>
               </constraints>
@@ -5865,9 +5865,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
     </selectionEntryGroup>
     <selectionEntryGroup name="Magic Items (Renegades 1.5.2.1)" id="9d01-75eb-45ab-3737" hidden="false">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Magic Items (Only Renegades 1.5.2.1)" id="9fad-8012-2a7f-28cf" hidden="false">
+        <selectionEntryGroup name="Magic Items (Only Renegades 1.5.2.1)" id="9fad-8012-2a7f-28cf" hidden="false" collective="true" collapsible="true">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Enchanted Items (Renegades 1.5.2.1)" id="6569-78b1-8a17-0a9e" hidden="false">
+            <selectionEntryGroup name="Enchanted Items (Renegades 1.5.2.1)" id="6569-78b1-8a17-0a9e" hidden="false" collapsible="true">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Unique Items" id="803d-6bb8-550a-b876" hidden="false" flatten="true">
                   <constraints>
@@ -5896,7 +5896,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Magic Armour (Renegades 1.5.2.1)" id="6fb6-c9cb-98cd-c7a5" hidden="false">
+            <selectionEntryGroup name="Magic Armour (Renegades 1.5.2.1)" id="6fb6-c9cb-98cd-c7a5" hidden="false" collapsible="true">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Shields" id="5686-04af-1552-0061" hidden="false" flatten="false">
                   <selectionEntries>
@@ -5930,7 +5930,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Arcane Items (Renegades 1.5.2.1)" id="b90a-11e7-c101-1349" hidden="false">
+            <selectionEntryGroup name="Arcane Items (Renegades 1.5.2.1)" id="b90a-11e7-c101-1349" hidden="false" collapsible="true">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Extremely Common Items" id="a8b9-ffe5-c585-e525" hidden="false" flatten="true">
                   <selectionEntries>
