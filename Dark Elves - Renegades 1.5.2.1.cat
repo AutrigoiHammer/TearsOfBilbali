@@ -717,7 +717,8 @@ Otherwise, the unit may cast this Bound spell with a Power Level of 0.</characte
     </profile>
     <profile name="Blessings Of Khaine" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="db3d-faa3-4355-3a6b">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">Even if engaged in combat, this model can cast the following Bound spell, with a Power Level of 2:
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Even if engaged in combat, this model can cast the following Bound spell, with a Power Level of 3:
+
 
 Blessings of Khaine</characteristic>
       </characteristics>
@@ -753,7 +754,7 @@ Note that if an attack wounds automatically, this special rule cannot be used.</
 Note that this special rule does not apply to this model’s mount (should it have one).</characteristic>
       </characteristics>
     </profile>
-    <profile name="Hekarti’s Blessing" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="909c-157c-ea4c-bb2d">
+    <profile name="Hekarti’s Blessing (Renegades 1.5.2.1)" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="909c-157c-ea4c-bb2d">
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Once per turn, a model with this special rule may re-roll a single failed Dispel roll.</characteristic>
       </characteristics>
@@ -763,7 +764,7 @@ Note that this special rule does not apply to this model’s mount (should it ha
         <characteristic name="Description" typeId="9f84-4221-785a-db50">A unit with this special rule can make supporting attacks to its flank or rear, as well as to its front.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Murderous" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="404b-9605-8eb5-e94b">
+    <profile name="Murderous (Renegades)" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="404b-9605-8eb5-e94b">
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">When engaged in combat, a model with this special rule may re-roll any rolls To Wound of a natural 1.
 Note that this special rule only applies to mundane weapons and does not apply to a model’s mount (should it have one). 
@@ -1182,9 +1183,39 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <characteristic name="Description" typeId="9f84-4221-785a-db50">This model and any unit joined by the Cauldron of Blood has a 5+ Ward save against any wounds suffered.</characteristic>
       </characteristics>
     </profile>
-    <profile name="If One Head is Severed… Another Takes Its Place" typeId="d6d5-bc1d-f0d9-ec55" typeName="Special Rule" hidden="false" id="f8bb-c9be-c46f-8c46">
+    <profile name="If One Head is Severed… Another Takes Its Place (Renegades 1.5.2.1)" typeId="d6d5-bc1d-f0d9-ec55" typeName="Special Rule" hidden="false" id="f8bb-c9be-c46f-8c46">
       <characteristics>
         <characteristic name="Description" typeId="fbf8-7d6-6e1f-79ee">In your Command sub-phase roll a D6 for each wound that the War Hydra has lost. On each roll of a 4+ the War Hydra immediately recovers a wound.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shield of Ghrond (Renegades 1.5.2.1)" typeId="fefe-6a57-a203-edf9" typeName="Magic Armour" hidden="false" id="a742-23d3-867a-5e2e">
+      <characteristics>
+        <characteristic name="Description" typeId="d6b2-9b2a-d88e-eec9">The Shield of Ghrond is a shield. In addition, all attacks directed against its bearer suffer a -1 modifier to their Strength characteristic (to a minimum of 1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Banner Of Nagarythe (Renegades 1.5.2.1)" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards" hidden="false" id="126f-db08-846b-4457">
+      <characteristics>
+        <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">A unit carrying the Banner of Nagarythe gains the Stubborn special rule. In addition, when calculating its combat result, the unit may claim an additional bonus of +1 combat result point.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tome of Furion (Renegades 1.5.2.1)" typeId="65d6-7512-2a53-bd6c" typeName="Arcane Items" hidden="false" id="717f-96ab-1a1e-7935">
+      <characteristics>
+        <characteristic name="Description" typeId="fdd8-b367-1d68-c9cd">The bearer of the Tome of Furion knows one more spell (chosen in the usual way) than is normal for their Level of Wizardry.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Black Dragon Egg (Renegades 1.5.2.1)" typeId="d29c-a3fb-dcdf-29d6" typeName="Enchanted Items" hidden="false" id="c232-f29a-1a7b-7fc4">
+      <characteristics>
+        <characteristic name="Description" typeId="cea7-7573-475d-cc1d">Single use. During the Command sub-phase of their turn, the bearer of a Black Dragon Egg can consume it. Until your next Command sub-phase, the model has a Toughness characteristic of 6 (which cannot be improved further) and gains noxious breath (see page 18).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lore of Naggaroth (Renegades 1.5.2.1)" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="c120-9f78-6292-a031">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">A Wizard with the ‘Lore of Naggaroth’ special rule may discard one of their randomly generated spells as normal. When they do so, they may select instead either the signature spell of their chosen Lore of Magic, or one of the spells listed below:
+
+
+• Cursing Word
+• Black Horror
+• Power of Darkness</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -1467,7 +1498,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <modifier type="append" value="(High Elves)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Murderous" hidden="false" id="bce5e675-6f63b36b/Dark Elf Dreadlord" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="bce5e675-6f63b36b/Dark Elf Dreadlord" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Strike First" hidden="false" id="1bf8354b-7c544319/Dark Elf Dreadlord" type="profile" targetId="48fd-23c1-c0d5-ae1d">
               <modifiers>
                 <modifier type="set" value="does not apply to this model&apos;s mount should it have one" field="annotation">
@@ -1532,6 +1563,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <entryLink import="true" name="Battle Standard Bearer" hidden="false" id="1361-c6ba-295a-41f3" type="selectionEntry" targetId="5b87-9cf5-953d-3829" sortIndex="2">
                   <entryLinks>
                     <entryLink import="true" name="Magic Standards" hidden="false" id="8674-f640-5b12-b8cc" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6"/>
+                    <entryLink import="true" name="Magic Standards (Renegades 1.5.2.1)" hidden="false" id="2f43-42d5-c9fe-d185" type="selectionEntryGroup" targetId="c526-33da-c9da-2792"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="25"/>
@@ -1659,7 +1691,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <modifier type="append" value="(High Elves)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Murderous" hidden="false" id="bce5e675-6f63b36b/Dark Elf Master" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="bce5e675-6f63b36b/Dark Elf Master" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Strike First" hidden="false" id="1bf8354b-7c544319/Dark Elf Master" type="profile" targetId="48fd-23c1-c0d5-ae1d">
               <modifiers>
                 <modifier type="set" value="does not apply to this model&apos;s mount should it have one" field="annotation">
@@ -1695,7 +1727,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
           <infoLinks>
             <infoLink name="Supreme Sorceress" hidden="false" type="profile" id="79d16a02-9813bcc" targetId="4951-ff39-987-51f3"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="b2a2c45e-38493528" targetId="193c-4d0d-de6b-bbb1"/>
-            <infoLink targetId="375e-7fb1-c651-433e" id="51b0-1f3c-244-2cdc" type="infoGroup" name="Lore of Naggaroth" hidden="false"/>
+            <infoLink targetId="7e6e-86cc-bac1-6dc8" id="51b0-1f3c-244-2cdc" type="infoGroup" name="Lore of Naggaroth (Renegades 1.5.2.1)" hidden="false"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="155"/>
@@ -1708,7 +1740,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
               </constraints>
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="4bd282bd-a800c7f3" type="selectionEntryGroup" targetId="bc31-e0cb-8e0e-6ff5" sortIndex="3"/>
-            <entryLink import="true" name="Magic Items" hidden="false" id="ea5fa44e-57222258" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="6">
+            <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="ea5fa44e-57222258" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737" sortIndex="6">
               <constraints>
                 <constraint type="max" value="100" field="points" scope="parent" shared="false" id="984f36fb-7ac58c89"/>
               </constraints>
@@ -1791,9 +1823,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <modifier type="append" value="(High Elves)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Hekarti’s Blessing" hidden="false" id="b87448f4-f52019fe/Supreme Sorceress" type="profile" targetId="909c-157c-ea4c-bb2d"/>
-            <infoLink name="Lore Of Naggaroth" hidden="false" id="1cf7511f-43e457ad/Supreme Sorceress" type="profile" targetId="dea-f874-c70e-2e4a"/>
-            <infoLink name="Murderous" hidden="false" id="b34050a7-704fc475/Supreme Sorceress" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Hekarti’s Blessing (Renegades 1.5.2.1)" hidden="false" id="b87448f4-f52019fe/Supreme Sorceress" type="profile" targetId="909c-157c-ea4c-bb2d"/>
+            <infoLink name="Lore of Naggaroth (Renegades 1.5.2.1)" hidden="false" id="1cf7511f-43e457ad/Supreme Sorceress" type="profile" targetId="c120-9f78-6292-a031"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="b34050a7-704fc475/Supreme Sorceress" type="profile" targetId="404b-9605-8eb5-e94b"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1815,7 +1847,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
           <infoLinks>
             <infoLink name="Sorceress" hidden="false" type="profile" id="33ebc755-88218b4b" targetId="2c0a-d0d2-4741-35b1"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="6a480f67-45a38d35" targetId="193c-4d0d-de6b-bbb1"/>
-            <infoLink targetId="375e-7fb1-c651-433e" id="89f-379f-d8a9-5178" type="infoGroup" name="Lore of Naggaroth" hidden="false"/>
+            <infoLink targetId="7e6e-86cc-bac1-6dc8" id="89f-379f-d8a9-5178" type="infoGroup" name="Lore of Naggaroth (Renegades 1.5.2.1)" hidden="false"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="80"/>
@@ -1827,12 +1859,12 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6fbcefaf-8bdb0bd"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Magic Items" hidden="false" id="bfdf07b5-bd09caab" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="6">
+            <entryLink import="true" name="Mount" hidden="false" id="b9a2-e087-4cff-4770" type="selectionEntryGroup" targetId="bc31-e0cb-8e0e-6ff5" sortIndex="3"/>
+            <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="0517-5cd5-8d60-d2fd" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737" sortIndex="6">
               <constraints>
-                <constraint type="max" value="50" field="points" scope="parent" shared="false" id="c706ed50-d2cc329a"/>
+                <constraint type="max" value="50" field="points" scope="parent" shared="false" id="a877-a4f9-92f3-758e"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Mount" hidden="false" id="b9a2-e087-4cff-4770" type="selectionEntryGroup" targetId="bc31-e0cb-8e0e-6ff5" sortIndex="3"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Wizard Level" hidden="false" id="90ba633f-a6b6354d" defaultSelectionEntryId="beedb7b4-30d812be" sortIndex="4">
@@ -1881,7 +1913,6 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1af7-ec73-81ff-224e"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c39a-2d73-64d1-c4fb-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c39a-2d73-64d1-c4fb-max"/>
           </constraints>
           <categoryLinks>
@@ -1912,9 +1943,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <modifier type="append" value="(High Elves)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Hekarti’s Blessing" hidden="false" id="b87448f4-f52019fe/Sorceress" type="profile" targetId="909c-157c-ea4c-bb2d"/>
-            <infoLink name="Lore Of Naggaroth" hidden="false" id="1cf7511f-43e457ad/Sorceress" type="profile" targetId="dea-f874-c70e-2e4a"/>
-            <infoLink name="Murderous" hidden="false" id="b34050a7-704fc475/Sorceress" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Hekarti’s Blessing (Renegades 1.5.2.1)" hidden="false" id="b87448f4-f52019fe/Sorceress" type="profile" targetId="909c-157c-ea4c-bb2d"/>
+            <infoLink name="Lore of Naggaroth (Renegades 1.5.2.1)" hidden="false" id="1cf7511f-43e457ad/Sorceress" type="profile" targetId="c120-9f78-6292-a031"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="b34050a7-704fc475/Sorceress" type="profile" targetId="404b-9605-8eb5-e94b"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1951,7 +1982,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="716ba1da-9ca7b3c4"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Magic Items" hidden="false" id="e9492259-3fd6c4af" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="8">
+            <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="e9492259-3fd6c4af" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737" sortIndex="8">
               <constraints>
                 <constraint type="max" value="75" field="points" scope="parent" shared="false" id="8f8f2e04-c5b853ce"/>
               </constraints>
@@ -2052,7 +2083,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <modifier type="append" value="(High Elves)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Murderous" hidden="false" id="545349e5-4edc42db/High Beastmaster" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="545349e5-4edc42db/High Beastmaster" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Strike First" hidden="false" id="98e24a1b-4db5fa9/High Beastmaster" type="profile" targetId="48fd-23c1-c0d5-ae1d">
               <modifiers>
                 <modifier type="set" value="does not apply to this model&apos;s mount should it have one" field="annotation">
@@ -2100,7 +2131,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
               </constraints>
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="acd3588a-5cd35b4" type="selectionEntryGroup" targetId="bc31-e0cb-8e0e-6ff5" sortIndex="3"/>
-            <entryLink import="true" name="Magic Items" hidden="false" id="c2e9fa29-b6678cff" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="4">
+            <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="c2e9fa29-b6678cff" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737" sortIndex="4">
               <constraints>
                 <constraint type="max" value="75" field="points" scope="parent" shared="false" id="bfb1ef4-59c03ffe"/>
               </constraints>
@@ -2172,7 +2203,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
               </modifiers>
             </infoLink>
             <infoLink name="Loner" hidden="false" id="d5ef8bde-dff3c0a8/Death Hag" type="profile" targetId="2ecd-c6b3-bd8b-864b"/>
-            <infoLink name="Murderous" hidden="false" id="92d90f44-b292b0e/Death Hag" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="92d90f44-b292b0e/Death Hag" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Poisoned Attacks" hidden="false" id="ebdb7030-60b74dfa/Death Hag" type="profile" targetId="81f5-4895-4abc-fc39"/>
             <infoLink name="Strike First" hidden="false" id="4a3054cc-b4fc6b16/Death Hag" type="profile" targetId="48fd-23c1-c0d5-ae1d"/>
             <infoLink name="Warband" id="ccc5-c1ad-cfca-c1e3" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
@@ -2214,7 +2245,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c6366f9b-bf625929"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Magic Items" hidden="false" id="950d1a65-c6438f5b" type="selectionEntryGroup" targetId="1539-fd78-88f-badd" sortIndex="5">
+            <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="950d1a65-c6438f5b" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737" sortIndex="5">
               <constraints>
                 <constraint type="max" value="50" field="points" scope="parent" shared="false" id="5ab21420-b5bb1cea"/>
               </constraints>
@@ -2290,7 +2321,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             </infoLink>
             <infoLink name="Hidden" hidden="false" id="4cc68f6e-9a679e78/Khainite Assassin" type="profile" targetId="a3c3-954c-5b3a-17f5"/>
             <infoLink name="Immune To Psychology" hidden="false" id="1ac4e3d9-8687a2f/Khainite Assassin" type="profile" targetId="93d9-c75b-f655-30ac"/>
-            <infoLink name="Murderous" hidden="false" id="d4159dae-384c3ab8/Khainite Assassin" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="d4159dae-384c3ab8/Khainite Assassin" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Strike First" hidden="false" id="edf8082a-1b9e9ed4/Khainite Assassin" type="profile" targetId="48fd-23c1-c0d5-ae1d"/>
             <infoLink name="Poisoned Attacks" id="0f41-e483-934f-f82e" hidden="false" type="profile" targetId="81f5-4895-4abc-fc39"/>
           </infoLinks>
@@ -2485,7 +2516,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <profile name="Black Ark Corsairs" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="b572c8cf-9009bf5d">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2538,7 +2569,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e36f145f-b00400ed" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Special Rules" id="e3db-14c7-3bf2-30f2" hidden="false" flatten="true" sortIndex="4">
+            <selectionEntryGroup name="Special Rules" id="e3db-14c7-3bf2-30f2" hidden="false" flatten="true" sortIndex="4" defaultSelectionEntryId="none" collective="true">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="6159-f0d7-d0f6-059f" sortIndex="1" collective="true">
                   <costs>
@@ -2563,6 +2594,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1726-1ec3-fd93-10c9" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -2677,8 +2711,8 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
       <profiles>
         <profile name="Black Guard Of Naggarond" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="fc8b66c-eef713b6">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2709,7 +2743,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="5cc9f231-29d107"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="5cc9f231-29d107"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="fdf7-cdc2-e43-7ae2" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -2813,7 +2847,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Immune To Psychology" hidden="false" id="c0ec97c-f4c44a06" type="profile" targetId="93d9-c75b-f655-30ac"/>
             <infoLink name="Martial Prowess" hidden="false" id="4b291396-472a3260" type="profile" targetId="6133-9bd8-8780-23ed"/>
             <infoLink name="Stubborn" hidden="false" id="9210df7c-9e05b006" type="profile" targetId="e351-bbd6-f470-b604"/>
-            <infoLink name="Murderous" id="064a-6ee9-1f52-ecf5" hidden="false" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" id="064a-6ee9-1f52-ecf5" hidden="false" type="profile" targetId="404b-9605-8eb5-e94b"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -2821,7 +2855,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <categoryLink name="Faction: Dark Elves" hidden="false" id="3bf1-2aef-c1ae-a6c5" primary="false" targetId="f64e-146a-86bd-73da"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="increment" value="1" field="9c56-63dc-32fb-30da">
+        <modifier type="increment" value="1" field="6307-e26f-c810-650a">
           <repeats>
             <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="317a-333c-299b-5eb8"/>
           </repeats>
@@ -2829,7 +2863,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="increment" value="1" field="9c56-63dc-32fb-30da">
+        <modifier type="increment" value="1" field="6307-e26f-c810-650a">
           <repeats>
             <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="6160-5e08-7200-07ac" includeChildSelections="true"/>
           </repeats>
@@ -2846,8 +2880,8 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
       <profiles>
         <profile name="Har Ganeth Executioners" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="24b5b12c-31263876">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2878,7 +2912,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="306727ee-973f72f8"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="306727ee-973f72f8"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="604c-cae3-3ebb-1ab3" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -2916,7 +2950,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Magic Items" hidden="false" id="11dbbdeb-de0a8a39" type="selectionEntryGroup" targetId="1539-fd78-88f-badd">
+                <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="11dbbdeb-de0a8a39" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737">
                   <constraints>
                     <constraint type="max" value="50" field="points" scope="parent" shared="false" id="f5e1bb2a-b8a2b9d4"/>
                   </constraints>
@@ -2983,7 +3017,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <modifier type="append" value="(High Elves)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Murderous" hidden="false" id="504cbcc9-1566149f" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="504cbcc9-1566149f" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Veteran" hidden="false" id="24622a12-a447115c" type="profile" targetId="4022-c403-b083-ba83"/>
           </infoLinks>
         </infoGroup>
@@ -3089,6 +3123,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2be-e766-26ba-2133"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -3110,7 +3147,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Magic Items" hidden="false" id="2ddf6628-e93db3d2" type="selectionEntryGroup" targetId="1539-fd78-88f-badd">
+                <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="2ddf6628-e93db3d2" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737">
                   <constraints>
                     <constraint type="max" value="25" field="points" scope="parent" shared="false" id="40af0e59-f4ad50af"/>
                   </constraints>
@@ -3171,7 +3208,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <profile name="Witch Elves" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="543bb000-3803954a">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3209,7 +3246,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 </infoLink>
                 <infoLink name="Horde" hidden="false" id="4e7e0e54-35d8cf5e" type="profile" targetId="9cba-89a5-1796-5fe4"/>
                 <infoLink name="Loner" hidden="false" id="93a4fd7c-608de06" type="profile" targetId="2ecd-c6b3-bd8b-864b"/>
-                <infoLink name="Murderous" hidden="false" id="1f2a675e-c57bc028" type="profile" targetId="404b-9605-8eb5-e94b"/>
+                <infoLink name="Murderous (Renegades)" hidden="false" id="1f2a675e-c57bc028" type="profile" targetId="404b-9605-8eb5-e94b"/>
                 <infoLink name="Poisoned Attacks" hidden="false" id="4f670e9a-37e1ba84" type="profile" targetId="81f5-4895-4abc-fc39"/>
                 <infoLink name="Strike First" id="1ef6-d6bc-3485-de66" hidden="false" type="profile" targetId="48fd-23c1-c0d5-ae1d"/>
                 <infoLink name="Warband" id="f2b1-8c5a-722e-b329" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
@@ -3301,11 +3338,13 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
               </modifiers>
             </infoLink>
             <infoLink name="Loner" id="5101-019f-8179-d21d" hidden="false" type="profile" targetId="2ecd-c6b3-bd8b-864b"/>
-            <infoLink name="Murderous" id="f9db-390a-e598-7b97" hidden="false" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" id="f9db-390a-e598-7b97" hidden="false" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Close Order" id="8779-f3e7-bcb0-0a34" hidden="false" type="profile" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Frenzy" id="4a4f-9412-a9c6-6af6" hidden="false" type="profile" targetId="3b0c-a477-8823-3a25"/>
             <infoLink name="Horde" id="bebe-0ac0-bc4d-116f" hidden="false" type="profile" targetId="9cba-89a5-1796-5fe4"/>
             <infoLink name="Poisoned Attacks" id="ec0a-ac1c-9561-7273" hidden="false" type="profile" targetId="81f5-4895-4abc-fc39"/>
+            <infoLink name="Strike First" id="5a94-28f9-5086-ccb3" hidden="false" type="profile" targetId="48fd-23c1-c0d5-ae1d"/>
+            <infoLink name="Warband" id="7a21-6bf8-fe21-b311" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4045,7 +4084,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <modifier type="append" value="(-1)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Murderous" hidden="false" id="b549ae60-5043e52a" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="b549ae60-5043e52a" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Poisoned Attacks" hidden="false" id="d29b3f3c-b1bf11c6" type="profile" targetId="81f5-4895-4abc-fc39"/>
             <infoLink name="Stony Stare" hidden="false" id="447c2f52-b6e6ec9c" type="profile" targetId="b8ee-3d5f-7896-c7d8"/>
             <infoLink name="Terror" hidden="false" id="33997d46-34f992d0" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
@@ -4062,7 +4101,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <categoryLink name="Faction: Dark Elves" hidden="false" id="fcc7-3146-c1d8-ad3f" primary="false" targetId="f64e-146a-86bd-73da"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="War Hydra" hidden="false" id="5d5512d2-aedcb41c" collective="false">
+    <selectionEntry type="unit" import="true" name="War Hydra (Renegades 1.5.2.1)" hidden="false" id="5d5512d2-aedcb41c" collective="false">
       <profiles>
         <profile name="War Hydra" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="54aa7cf8-fc3c20e2">
           <characteristics>
@@ -4154,16 +4193,16 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             </infoLink>
             <infoLink name="Stomp Attacks" hidden="false" id="448216eb-2eb61b39" type="profile" targetId="72db-24bb-7493-d753">
               <modifiers>
-                <modifier type="append" value="(D3+1)" field="name"/>
+                <modifier type="append" value="(D3+1) (Renegades 1.5.2.1)" field="name"/>
               </modifiers>
             </infoLink>
             <infoLink name="Terror" hidden="false" id="494dc6ed-f6cd8ca3" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
             <infoLink name="Armour Value" hidden="false" id="d76bf0b9-4d61580f" type="profile" targetId="e099-1ebb-9e85-34c8">
               <modifiers>
-                <modifier type="append" value=": 4+" field="name"/>
+                <modifier type="append" value=": 4+ (Renegades 1.5.2.1)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="If One Head is Severed… Another Takes Its Place" id="9f5b-33c4-95ab-88c6" hidden="false" type="profile" targetId="f8bb-c9be-c46f-8c46"/>
+            <infoLink name="If One Head is Severed… Another Takes Its Place (Renegades 1.5.2.1)" id="9f5b-33c4-95ab-88c6" hidden="false" type="profile" targetId="f8bb-c9be-c46f-8c46"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4171,7 +4210,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <categoryLink name="Faction: Dark Elves" hidden="false" id="46fc-f7ad-6c4c-1dae" primary="false" targetId="f64e-146a-86bd-73da"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Bloodwrack Medusa" hidden="false" id="5c454c8d-ffec5cc3" collective="false">
+    <selectionEntry type="unit" import="true" name="Bloodwrack Medusa (Renegades 1.5.2.1)" hidden="false" id="5c454c8d-ffec5cc3" collective="false">
       <profiles>
         <profile name="Bloodwrack Medusa" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f964a9cb-2db91399">
           <characteristics>
@@ -4196,15 +4235,21 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2d555368-f11a3712"/>
               </constraints>
             </entryLink>
-            <entryLink name="Petrifying Gaze" id="5653e092-7f713dc" hidden="false" type="selectionEntry" targetId="209c4351-436a3ea7" sortIndex="2" import="true">
+            <entryLink name="Petrifying Gaze" id="5653e092-7f713dc" hidden="false" type="selectionEntry" targetId="209c4351-436a3ea7" sortIndex="3" import="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ff33c021-c5a359f7"/>
               </constraints>
             </entryLink>
-            <entryLink name="Light Armour" id="132ba42e-fd7e0d38" hidden="false" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="3" import="true">
+            <entryLink name="Light Armour" id="132ba42e-fd7e0d38" hidden="false" type="selectionEntry" targetId="7cab-40e6-f134-de78" sortIndex="4" import="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="e17a37e5-2f5bc0db"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="eb8dcf5b-2980bae9"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Halberd" id="b906-7351-443c-0287" hidden="false" type="selectionEntry" targetId="f0a5-1b2e-3d2b-d540" sortIndex="2" import="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4d22-1715-d598-c4ce"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a5eb-1ce0-abfa-25e7"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4224,7 +4269,11 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Close Order" hidden="false" id="e27c6466-fddb7770" type="profile" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Elven Reflexes" hidden="false" id="289a8696-4f780d60" type="profile" targetId="cf6b-ab6d-f5a1-e20c"/>
             <infoLink name="Fear" hidden="false" id="f73ad33c-6cc205c6" type="profile" targetId="5ec9-a98-d8c5-e18b"/>
-            <infoLink name="Impetuous" hidden="false" id="58bcc2e8-faca2a92" type="profile" targetId="b664-8530-a988-7ba9"/>
+            <infoLink name="Impetuous" hidden="false" id="58bcc2e8-faca2a92" type="profile" targetId="b664-8530-a988-7ba9">
+              <modifiers>
+                <modifier type="append" value="(Renegades 1.5.2.1)" field="name"/>
+              </modifiers>
+            </infoLink>
             <infoLink name="Hatred" hidden="false" id="d2ccf6a6-89577b0" type="profile" targetId="f4b3-18af-16bf-78dd">
               <modifiers>
                 <modifier type="append" value="(High Elves)" field="name"/>
@@ -4235,7 +4284,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <modifier type="append" value="(-1)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Murderous" hidden="false" id="7c79b97a-20f94664" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" hidden="false" id="7c79b97a-20f94664" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Poisoned Attacks" hidden="false" id="cca6276-8a38c940" type="profile" targetId="81f5-4895-4abc-fc39"/>
             <infoLink name="Stony Stare" hidden="false" id="6178e688-50b83132" type="profile" targetId="b8ee-3d5f-7896-c7d8"/>
           </infoLinks>
@@ -4245,7 +4294,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <categoryLink name="Faction: Dark Elves" hidden="false" id="99c1-a01b-3d19-874c" primary="false" targetId="f64e-146a-86bd-73da"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Kharibdyss" hidden="false" id="48ac8b4-17049bbe" collective="false">
+    <selectionEntry type="unit" import="true" name="Kharibdyss (Renegades 1.5.2.1)" hidden="false" id="48ac8b4-17049bbe" collective="false">
       <profiles>
         <profile name="Kharibdyss" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="a2c98412-30a39b5c">
           <characteristics>
@@ -4337,7 +4386,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <infoLink name="Terror" hidden="false" id="8bc62a9f-d670652d" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
             <infoLink name="Armour Value" hidden="false" id="3d5429c3-ba2a06f1" type="profile" targetId="e099-1ebb-9e85-34c8">
               <modifiers>
-                <modifier type="append" value=":4+" field="name"/>
+                <modifier type="append" value=":4+ (Renegades 1.5.2.1)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -4619,7 +4668,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <profile name="Daughters Of Khaine" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="7cca-860f-760e-15eb">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Regular infantry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">10+</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4633,7 +4682,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             <cost name="pts" typeId="points" value="14"/>
           </costs>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="69aa-2415-7c29-fa64"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="69aa-2415-7c29-fa64"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="739e-d124-5fa4-27fe" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -4676,7 +4725,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <categoryLink name="Regular Infantry" hidden="false" id="c7d5-d607-3cd1-12be" targetId="f3f7-ca43-674e-115f" primary="false"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink import="true" name="Magic Items" hidden="false" id="6024-edc3-662b-0617" type="selectionEntryGroup" targetId="1539-fd78-88f-badd">
+                <entryLink import="true" name="Magic Items (Renegades 1.5.2.1)" hidden="false" id="6024-edc3-662b-0617" type="selectionEntryGroup" targetId="9d01-75eb-45ab-3737">
                   <constraints>
                     <constraint type="max" value="25" field="points" scope="parent" shared="false" id="d4f6-7c26-a4f1-0134"/>
                   </constraints>
@@ -4738,7 +4787,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
             </infoLink>
             <infoLink name="Impetuous" id="a1cb-d9ab-9d21-eedf" hidden="false" type="profile" targetId="b664-8530-a988-7ba9"/>
             <infoLink name="Loner" id="2c38-7276-d007-ccbd" hidden="false" type="profile" targetId="2ecd-c6b3-bd8b-864b"/>
-            <infoLink name="Murderous" id="2ae1-3659-933d-a117" hidden="false" type="profile" targetId="404b-9605-8eb5-e94b"/>
+            <infoLink name="Murderous (Renegades)" id="2ae1-3659-933d-a117" hidden="false" type="profile" targetId="404b-9605-8eb5-e94b"/>
             <infoLink name="Open Order" id="3e30-df39-57d1-38fe" hidden="false" type="profile" targetId="5b67-8535-146c-7cea"/>
             <infoLink name="Strike First" id="64b8-8aef-a341-23d5" hidden="false" type="profile" targetId="48fd-23c1-c0d5-ae1d"/>
             <infoLink name="Skirmishers" id="2f91-e41a-7b5f-5001" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
@@ -5323,6 +5372,13 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
       </modifiers>
       <comment>Beastmaster General</comment>
     </entryLink>
+    <entryLink import="true" name="Merwyrms" hidden="false" id="9d6f-9aa1-9670-13c4" targetId="13a6-955f-ac3f-ec5e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="2bfe-5863-46fe-d284" id="29e1-ed35-c9c6-5e35" primary="true" name="Rare"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="ac17-eaf9-c832-bba6" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink targetId="3755-6732-99b2-c713" id="1565-2bea-1ff6-1d3b" primary="false" name="Behemoth"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="a8-15c2-bd3d-e97f" targetId="6c22-b0e4-7c83-f9ce"/>
@@ -5723,7 +5779,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                     <modifier type="append" value="(-1)" field="name"/>
                   </modifiers>
                 </infoLink>
-                <infoLink name="Murderous" hidden="false" id="6e2371c2-6585058c" type="profile" targetId="404b-9605-8eb5-e94b"/>
+                <infoLink name="Murderous (Renegades)" hidden="false" id="6e2371c2-6585058c" type="profile" targetId="404b-9605-8eb5-e94b"/>
                 <infoLink name="Poisoned Attacks" hidden="false" id="5da1b7e-cd40d6c8" type="profile" targetId="81f5-4895-4abc-fc39"/>
                 <infoLink name="Terror" hidden="false" id="6ab47214-3fbe151e" type="profile" targetId="c7a2-35bf-4313-f4f0"/>
                 <infoLink name="Armour Value" hidden="false" id="330de414-45bbf71e" type="profile" targetId="e099-1ebb-9e85-34c8">
@@ -5731,21 +5787,8 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                     <modifier type="append" value=":  4+" field="name"/>
                   </modifiers>
                 </infoLink>
-                <infoLink name="Blessings Of Khaine" id="89cf-a3e6-75ca-419a" hidden="false" type="profile" targetId="db3d-faa3-4355-3a6b">
-                  <modifiers>
-                    <modifier type="set" value="Even if engaged in combat, this model can cast the following Bound spell, with a Power Level of 3:
-
-
-Blessings of Khaine" field="9f84-4221-785a-db50">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="974c-3bf3-af4b-701d" shared="true" includeChildSelections="true">
-                          <comment>Renegades</comment>
-                        </condition>
-                      </conditions>
-                      <comment>Renegades</comment>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Blessings Of Khaine" id="89cf-a3e6-75ca-419a" hidden="false" type="profile" targetId="db3d-faa3-4355-3a6b"/>
+                <infoLink name="Bloodshield of Khaine" id="f11d-5c55-c041-a96f" hidden="false" type="profile" targetId="c5df-6c77-def5-80f8"/>
               </infoLinks>
             </infoGroup>
           </infoGroups>
@@ -5819,6 +5862,135 @@ Blessings of Khaine" field="9f84-4221-785a-db50">
           </modifiers>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magic Items (Renegades 1.5.2.1)" id="9d01-75eb-45ab-3737" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Magic Items (Only Renegades 1.5.2.1)" id="9fad-8012-2a7f-28cf" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Enchanted Items (Renegades 1.5.2.1)" id="6569-78b1-8a17-0a9e" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Unique Items" id="803d-6bb8-550a-b876" hidden="false" flatten="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e58b-7b9f-a853-f027"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Black Dragon Egg" hidden="true" id="f530-31ec-8db3-079c" sortIndex="32">
+                      <infoLinks>
+                        <infoLink name="Black Dragon Egg (Renegades 1.5.2.1)" id="1b57-9d0a-ef52-5a21" hidden="false" targetId="c232-f29a-1a7b-7fc4" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="35"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f64e-146a-86bd-73da" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="28ad-f02f-5bb6-5278" includeChildSelections="true"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Magic Armour (Renegades 1.5.2.1)" id="6fb6-c9cb-98cd-c7a5" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Shields" id="5686-04af-1552-0061" hidden="false" flatten="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Shield Of Ghrond (Renegades 1.5.2.1)" hidden="true" id="38e3-da15-c131-672f" sortIndex="9">
+                      <infoLinks>
+                        <infoLink name="Shield of Ghrond (Renegades 1.5.2.1)" id="32c2-f442-c7a9-4ee4" hidden="false" targetId="a742-23d3-867a-5e2e" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="40"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f64e-146a-86bd-73da" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="may-have-shield" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c827-13c4-d195-157f"/>
+                        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dacd-4cfc-a759-2de1" includeChildSelections="true"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffcd-0f0e-58bc-911b" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ffcd-0f0e-58bc-911b"/>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Arcane Items (Renegades 1.5.2.1)" id="b90a-11e7-c101-1349" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Extremely Common Items" id="a8b9-ffe5-c585-e525" hidden="false" flatten="true">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Tome Of Furion (Renegades 1.5.2.1)" hidden="true" id="b8e2-a429-fc1e-053d">
+                      <infoLinks>
+                        <infoLink name="Tome of Furion (Renegades 1.5.2.1)" id="46c6-2626-3b9f-4dcd" hidden="false" targetId="717f-96ab-1a1e-7935" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f64e-146a-86bd-73da" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a46a-6757-277e-2bde" includeChildSelections="true"/>
+                      </constraints>
+                      <comment>Extra Spells: 1</comment>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="100" field="points" scope="parent" shared="false" id="b5cc-9515-dcf6-20d4"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Magic Items" hidden="false" id="3c5d-cfa9-7122-9e54" type="selectionEntryGroup" targetId="1539-fd78-88f-badd"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magic Standards (Renegades 1.5.2.1)" id="c526-33da-c9da-2792" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Banner Of Nagarythe" hidden="true" id="70b5-dbf2-2fbe-fd5c">
+          <infoLinks>
+            <infoLink name="Banner Of Nagarythe (Renegades 1.5.2.1)" id="4ef7-39dc-1ad0-712a" hidden="false" targetId="126f-db08-846b-4457" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f64e-146a-86bd-73da" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c0b7-7fc7-1c5a-8c05" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d56-9ef4-e131-9836"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
@@ -6090,4 +6262,38 @@ Blessings of Khaine" field="9f84-4221-785a-db50">
       </modifiers>
     </categoryEntry>
   </categoryEntries>
+  <sharedInfoGroups>
+    <infoGroup name="Lore of Naggaroth (Renegades 1.5.2.1)" id="7e6e-86cc-bac1-6dc8" hidden="false">
+      <profiles>
+        <profile name="Cursing Word" typeId="8232-ae14-b1f6-b4df" typeName="Spell" hidden="false" id="488f-b560-277c-cd72">
+          <characteristics>
+            <characteristic name="Number" typeId="8a2b-690b-e552-6aa0">2</characteristic>
+            <characteristic name="Type" typeId="c2ca-5fd1-5e9d-bc90">Hex</characteristic>
+            <characteristic name="Casting Value" typeId="d84d-3b8b-654a-9e1a">9+</characteristic>
+            <characteristic name="Range" typeId="1043-a0ad-2909-dd28">12&quot;</characteristic>
+            <characteristic name="Effect" typeId="64ba-31-acf0-5a">Remains in play. Whilst this spell is in play, the target enemy unit reduces either its Weapon skill characteristic, or its Ballistic Skill characteristic (chosen by the casting Wizard’s controlling player) to 1. If this spell is cast, the effects of any other Hex previously cast on the target unit immediately expire.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Black Horror" typeId="8232-ae14-b1f6-b4df" typeName="Spell" hidden="false" id="71e1-cbf7-de1d-af5c">
+          <characteristics>
+            <characteristic name="Number" typeId="8a2b-690b-e552-6aa0">1</characteristic>
+            <characteristic name="Type" typeId="c2ca-5fd1-5e9d-bc90">Magical Vortex</characteristic>
+            <characteristic name="Casting Value" typeId="d84d-3b8b-654a-9e1a">9+</characteristic>
+            <characteristic name="Range" typeId="1043-a0ad-2909-dd28">18&quot;</characteristic>
+            <characteristic name="Effect" typeId="64ba-31-acf0-5a">Effect: Remains in play. Place a large (5&quot;) blast template so that its central hole is within 18&quot; of the caster. Whilst in play, the template is treated as difficult terrain. The template scatters 2D6” during every Start of Turn sub-phase (see page 95). Any enemy unit that moves through the template, or that the template moves over must immediately make D6 Strength Tests. For each test that is failed, the unit loses a single Wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Power of Darkness" typeId="8232-ae14-b1f6-b4df" typeName="Spell" hidden="false" id="cada-350c-d957-9366">
+          <characteristics>
+            <characteristic name="Number" typeId="8a2b-690b-e552-6aa0">3</characteristic>
+            <characteristic name="Type" typeId="c2ca-5fd1-5e9d-bc90">Enchantment</characteristic>
+            <characteristic name="Casting Value" typeId="d84d-3b8b-654a-9e1a">7+</characteristic>
+            <characteristic name="Range" typeId="1043-a0ad-2909-dd28">Self</characteristic>
+            <characteristic name="Effect" typeId="64ba-31-acf0-5a">Remains in Play. Whilst this spell is in play, the caster gains a +1 modifier to their Casting rolls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>Lore of Magic</comment>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>
