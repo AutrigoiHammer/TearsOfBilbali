@@ -5948,9 +5948,6 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                           </conditions>
                         </modifier>
                       </modifiers>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a46a-6757-277e-2bde" includeChildSelections="true"/>
-                      </constraints>
                       <comment>Extra Spells: 1</comment>
                     </selectionEntry>
                   </selectionEntries>
