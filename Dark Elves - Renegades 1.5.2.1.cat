@@ -5924,7 +5924,16 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffcd-0f0e-58bc-911b" includeChildSelections="false"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="set" value="0" field="ffcd-0f0e-58bc-911b"/>
+                    <modifier type="set" value="0" field="ffcd-0f0e-58bc-911b">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c42b-fa63-c73f-af5d" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b77d-a8a8-1f30-779c" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5971,7 +5980,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
         <entryLink import="true" name="Magic Standards" hidden="false" id="f61e-1249-fff6-6d27" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6" collective="true"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Magic Standards (Renegades 1.5.2.1)" id="6938-3b61-4d17-a954" hidden="false" collapsible="true" collective="true">
+        <selectionEntryGroup name="Magic Standards (Only Renegades 1.5.2.1)" id="6938-3b61-4d17-a954" hidden="false" collapsible="true" collective="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Banner Of Nagarythe" hidden="true" id="70b5-dbf2-2fbe-fd5c">
               <infoLinks>
