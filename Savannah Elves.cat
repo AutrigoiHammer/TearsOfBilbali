@@ -1077,6 +1077,30 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">8</characteristic>
       </characteristics>
     </profile>
+    <profile name="Sacred Giraffe" hidden="false" id="8e37-ffbd-2d9a-9307" typeId="b070-143a-73f-2772" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">-</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">(+2)</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">(+3)</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ancestral Faith" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="a1e7-df30-bd11-4082">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Any friendly Savannah Elves unit within 6&quot; of one or more units with the Ancestral Faith special rule gains a 6+ Ward Save. 
+This benefit is not stackable and is lost immediately if the unit moves outside this range.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Privemal Faith" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="655c-82aa-f00e-8600">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">This unit has a 5+ Ward save against any wounds suffered.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Wildwood Rangers" hidden="false" id="d37c-a95d-615e-71d9">
@@ -3107,7 +3131,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <categoryLink name="Faction: Wood Elf Realms" hidden="false" id="e6c-48c8-44f6-b805" primary="false" targetId="f9f5-dd21-7903-b9c"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Spellweaver" hidden="false" id="2fbc-5442-c332-f043">
+    <selectionEntry type="unit" import="true" name="Savannah Shaman" hidden="false" id="2fbc-5442-c332-f043">
       <profiles>
         <profile name="Spellweaver" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="12e6-614e-13cb-2684">
           <characteristics>
@@ -3128,24 +3152,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1394-b3b9-953f-97ee"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Forest Sprites" hidden="false" type="selectionEntryGroup" id="6de3-137a-85f1-8eab" targetId="f11a-2790-be85-ac4b" sortIndex="4">
-              <constraints>
-                <constraint type="max" value="50" field="points" scope="parent" shared="false" id="5c98-8f04-d0d1-faf"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Magic Items" hidden="false" type="selectionEntryGroup" id="f0b8-fb4f-a041-e351" targetId="1539-fd78-88f-badd" sortIndex="9">
               <constraints>
                 <constraint type="max" value="100" field="points" scope="parent" shared="true" id="7c3-a54a-1746-1bfc"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Kindreds" hidden="false" id="071d-4202-d232-99fb" type="selectionEntryGroup" targetId="d961-4f91-2b63-4c4b" sortIndex="3"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Spellweaver" hidden="false" type="profile" id="ebae-a927-ac3-e1b7" targetId="313d-9c0f-de0f-8b29"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="eb11-6aa3-8ff-6fd3" targetId="193c-4d0d-de6b-bbb1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="155"/>
+            <cost name="pts" typeId="points" value="150"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Lores of Magic" hidden="false" id="bef-4f5b-2c15-c6be" sortIndex="8">
@@ -3192,14 +3210,9 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
             </selectionEntryGroup>
             <selectionEntryGroup name="Mounts" hidden="false" id="9394-9972-a37e-dcf3" sortIndex="6">
               <entryLinks>
-                <entryLink import="true" name="Elven Steed" hidden="false" type="selectionEntry" id="65ee-8ab7-40eb-e1ed" targetId="8000-e257-f686-6aa7" sortIndex="1">
+                <entryLink import="true" name="Savannah Zebra" hidden="false" type="selectionEntry" id="65ee-8ab7-40eb-e1ed" targetId="4c86-c7f9-12d7-e970" sortIndex="1">
                   <costs>
                     <cost name="pts" typeId="points" value="14"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Warhawk" hidden="false" type="selectionEntry" id="a636-1476-198e-ae7b" targetId="fe35-58e6-8029-22ab" sortIndex="2">
-                  <costs>
-                    <cost name="pts" typeId="points" value="30"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Great Eagle" hidden="false" type="selectionEntry" id="5711-c64-fdf3-7948" targetId="744b-3e45-4b1a-e5c3" collective="true" sortIndex="4">
@@ -3210,9 +3223,9 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                     <categoryLink name="MOUNT" hidden="false" id="1e77-d5b2-449e-dba4" targetId="c96a-608-5de4-b943" primary="false"/>
                   </categoryLinks>
                 </entryLink>
-                <entryLink import="true" name="Unicorn" hidden="false" type="selectionEntry" id="2ef6-320b-f236-626" targetId="281b-bc49-144d-d5e6" sortIndex="3">
+                <entryLink import="true" name="Sacred Giraffe" hidden="false" type="selectionEntry" id="2ef6-320b-f236-626" targetId="56a4-89df-3618-bcc6" sortIndex="2">
                   <costs>
-                    <cost name="pts" typeId="points" value="35"/>
+                    <cost name="pts" typeId="points" value="95"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3259,19 +3272,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Talismanic Tatoos" hidden="false" id="b6ae-68d4-9b0e-7eb9" sortIndex="2">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f71-a763-f83a-6729"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="15"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Talismanic Tattoos" id="ef80-3021-6d6d-c8c2" hidden="false" type="profile" targetId="2607-d20d-bd9a-871f"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoGroups>
@@ -7090,9 +7090,58 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sacred Giraffe" hidden="false" id="56a4-89df-3618-bcc6" collective="true" subType="mount">
+      <infoLinks>
+        <infoLink name="Sacred Giraffe" hidden="false" type="profile" id="fc44-e290-58e9-fed8" targetId="8e37-ffbd-2d9a-9307"/>
+        <infoLink name="Base (50x100)" hidden="false" type="profile" id="c87b-8da0-ccd5-1dc2" targetId="d456-e30e-f85d-14d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Hooves" hidden="false" type="selectionEntry" id="906a-fcbb-9908-a0a3" targetId="2e99-99c1-4692-dca2" sortIndex="1"/>
+        <entryLink import="true" name="Calloused Hide" hidden="false" type="selectionEntry" id="f4ed-5134-11f9-bd10" targetId="b141-6b2f-d61d-2214" sortIndex="2"/>
+      </entryLinks>
+      <infoGroups>
+        <infoGroup name="Special Rules" hidden="false" id="1e9a-f7b7-5f31-cebc">
+          <infoLinks>
+            <infoLink name="Large Target" hidden="false" type="profile" id="8a80-9c63-3109-ec85" targetId="c822-7ad0-f24a-e4af"/>
+            <infoLink name="Close Order" hidden="false" type="profile" id="6802-84f7-f5b3-1cbc" targetId="883e-e1b1-4fe9-5912"/>
+            <infoLink name="Fear" hidden="false" type="profile" id="eff6-b5d0-78c3-33db" targetId="5ec9-a98-d8c5-e18b"/>
+            <infoLink name="Counter Charge" hidden="false" type="profile" id="de0f-b566-87cc-2e80" targetId="5186-798d-69d-6545"/>
+            <infoLink name="Ancestral Faith" hidden="false" type="profile" id="d83a-8aa1-2aba-25e7" targetId="a1e7-df30-bd11-4082"/>
+            <infoLink name="Stomp Attacks" hidden="false" type="profile" id="25b2-b8dc-cca1-d888" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(D3)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Swiftstride" hidden="false" type="profile" id="5ebe-824c-b7f6-ec0d" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Privemal Faith" hidden="false" type="profile" id="c0d0-175d-ef19-14cd" targetId="655c-82aa-f00e-8600"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink name="Monstrous Cavalry" hidden="false" id="39c1-1838-e125-db4d" targetId="2c85-5f2b-9288-1257" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hooves" hidden="false" id="2e99-99c1-4692-dca2">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92cd-3c00-a872-19f2"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4937-5bb6-7cce-f8d6"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Hand Weapon" id="ccd7-2bfc-a190-2a23" hidden="false" type="profile" targetId="6d4a-7733-d725-a267"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Calloused Hide" hidden="false" id="b141-6b2f-d61d-2214">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="301a-619d-d264-9d13"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b9e-d4a0-dc49-9e91"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Light Armour" id="910b-6827-a3d0-a599" hidden="false" type="profile" targetId="dbb2-4d85-84c2-528c"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Eradar, Warden of Larannia" hidden="false" id="5c6e-620b-55da-c2e9" type="selectionEntry" targetId="22da-2e6a-3ff1-d441">
+    <entryLink import="true" name="Eradar, Warden of Larannia" hidden="false" id="5c6e-620b-55da-c2e9" type="selectionEntry" targetId="22da-2e6a-3ff1-d441" sortIndex="0">
       <categoryLinks>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="1481-89d3-3a7d-0b4e" primary="true" name="Named Characters"/>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="a8d5-5b60-2c75-6c16" primary="false" name="Characters"/>
@@ -7109,7 +7158,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="3428-db00-473c-6048" primary="false" targetId="fec1-537a-bbeb-7926"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Savannah Prince" hidden="false" id="b148-0079-e30d-64d3" type="selectionEntry" targetId="0de0-90c8-a0f7-c929">
+    <entryLink import="true" name="Savannah Prince" hidden="false" id="b148-0079-e30d-64d3" type="selectionEntry" targetId="0de0-90c8-a0f7-c929" sortIndex="1">
       <categoryLinks>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="9508-8594-40fb-928b" primary="true" name="Characters"/>
       </categoryLinks>
@@ -7120,7 +7169,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="62dc-5196-b6d4-5536" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Savannah Chieftain" hidden="false" id="aaad-15c9-34b9-67c1" type="selectionEntry" targetId="fe42-b83b-2186-3ec1">
+    <entryLink import="true" name="Savannah Chieftain" hidden="false" id="aaad-15c9-34b9-67c1" type="selectionEntry" targetId="fe42-b83b-2186-3ec1" sortIndex="2">
       <categoryLinks>
         <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="3807-1dc5-73e9-b327" primary="true" name="Characters"/>
       </categoryLinks>

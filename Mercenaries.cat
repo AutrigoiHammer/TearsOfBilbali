@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="12a0-32cd-11d6-f952" name="Mercenaries" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="99" revision="29" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="12a0-32cd-11d6-f952" name="Mercenaries: Tears of Bilbali Edition" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="99" revision="37" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Badlands Ogre Bulls" hidden="false" id="a4af-ea3a-49ea-d56e" collective="false">
       <profiles>
@@ -5371,7 +5371,7 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (25x25)" id="6a1d-d9f5-3df5-4469" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
-            <infoLink name="Roderigo Delmonte" id="36aa-1023-3eea-2c0a" hidden="false" type="profile" targetId="a626-ce53-15d9-4f4b"/>
+            <infoLink name="Sir John Tyreweld" id="36aa-1023-3eea-2c0a" hidden="false" type="profile" targetId="a626-ce53-15d9-4f4b"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8274-4742-71e6-8836"/>
