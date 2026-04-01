@@ -5959,6 +5959,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="add" value="Do not select the same item out of this selection if selected in here" field="info"/>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -5997,6 +6000,9 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="add" value="Do not select the same item out of this selection if selected in here" field="info"/>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
