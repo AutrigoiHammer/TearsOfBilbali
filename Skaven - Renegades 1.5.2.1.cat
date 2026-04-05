@@ -7990,7 +7990,6 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="789c-d981-c305-9bdd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="9a50-2b56-ac9a-203f" includeChildSelections="true"/>
       </constraints>
     </entryLink>
     <entryLink import="true" name="Poisoned Wind Globadiers" hidden="true" id="1621-2180-013f-471f" type="selectionEntry" targetId="b29eb8e5-a95439db">
@@ -8172,7 +8171,6 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="389e-a260-7a69-1d98" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="c8f0-fe2c-1d73-9b26" includeChildSelections="true"/>
       </constraints>
     </entryLink>
     <entryLink import="true" name="Rat Ogres" hidden="false" id="258b-54d2-e048-641c" type="selectionEntry" targetId="cd2d3dc1-4f123b17">
