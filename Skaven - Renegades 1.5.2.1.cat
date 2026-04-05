@@ -5870,7 +5870,7 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Weapon Team" hidden="false" id="d86f-33cb-789d-108b" type="selectionEntry" targetId="26ff5f14-60499a1e">
+    <entryLink import="true" name="Weapon Team" hidden="true" id="d86f-33cb-789d-108b" type="selectionEntry" targetId="26ff5f14-60499a1e">
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8d7a-fd34-ee61-12cb" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
@@ -5993,7 +5993,7 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Packmasters &amp; Master Moulders" hidden="false" id="2271-99e5-a8aa-d35e" type="selectionEntry" targetId="60e0080b-27e77fd9">
+    <entryLink import="true" name="Packmasters &amp; Master Moulders" hidden="true" id="2271-99e5-a8aa-d35e" type="selectionEntry" targetId="60e0080b-27e77fd9">
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8cff-e8cc-2e1e-e08a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
