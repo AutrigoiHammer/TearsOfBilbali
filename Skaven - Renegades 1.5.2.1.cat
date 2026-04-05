@@ -7462,7 +7462,6 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
       <categoryLinks>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="ec03-18ab-6443-c00f" primary="false" targetId="fec1-537a-bbeb-7926"/>
         <categoryLink targetId="633f-f67a-1b6a-d203" id="53b6-c5d4-5042-d29b" primary="true" name="Special"/>
-        <categoryLink targetId="63d5-c8fd-17cc-e207" id="9d68-bb43-98b0-d2e9" primary="false" name="0-1 Stormvermin (if Army includes a Skaven Warlord) or 0-1 Plague Monks (if Army includes a Clan Pestilens Plague Priest) as Core Choice"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="0" field="873d-644a-7038-888a">
