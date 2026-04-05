@@ -6344,165 +6344,21 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
       </categoryLinks>
       <comment>No Warhall</comment>
       <modifiers>
-        <modifier type="increment" value="1" field="2fee-e17c-7589-6ea6">
+        <modifier type="increment" value="1" field="29c3-5102-61b2-f982">
           <repeats>
             <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="6640-3f1e-a6b4-e55f"/>
           </repeats>
           <comment>Renegades</comment>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2fee-e17c-7589-6ea6">
+        <modifier type="increment" value="1" field="29c3-5102-61b2-f982">
           <repeats>
             <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="8353-528d-3f8a-173d" includeChildSelections="true"/>
           </repeats>
           <comment>Renegades</comment>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="0" field="e06d-2f8b-17cc-249a">
-          <comment>Grand melee</comment>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="increment" value="1" field="e06d-2f8b-17cc-249a">
-          <comment>Grand melee</comment>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <repeats>
-            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="e06d-2f8b-17cc-249a">
-          <comment>Grand melee</comment>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <repeats>
-            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="set" value="0" field="140f-6ad2-d786-58a2">
-          <comment>Battle March points</comment>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="increment" value="1" field="140f-6ad2-d786-58a2">
-          <comment>Battle March points</comment>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <repeats>
-            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="140f-6ad2-d786-58a2">
-          <comment>Battle March points</comment>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <repeats>
-            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="floor" value="1" field="2fee-e17c-7589-6ea6">
-          <comment>Battle march</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e06d-2f8b-17cc-249a" includeChildSelections="true" includeChildForces="true" percentValue="false">
-          <comment>Grand melee</comment>
-        </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="140f-6ad2-d786-58a2" includeChildSelections="true" includeChildForces="true" percentValue="false">
-          <comment>Battle March points</comment>
-        </constraint>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="29c3-5102-61b2-f982"/>
       </constraints>
     </entryLink>
     <entryLink import="true" name="Grey Seer" hidden="true" id="951a-4933-14fc-8dd7" type="selectionEntry" targetId="cc8e13bb-3ea78349">
