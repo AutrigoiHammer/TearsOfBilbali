@@ -6497,9 +6497,6 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="2fee-e17c-7589-6ea6" includeChildSelections="true">
-          <comment>Renegades</comment>
-        </constraint>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e06d-2f8b-17cc-249a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
