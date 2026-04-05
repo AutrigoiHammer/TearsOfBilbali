@@ -7155,7 +7155,7 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         </constraint>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Stormvermin" hidden="true" id="4ece-9a21-3a96-d554" type="selectionEntry" targetId="e615449a-cb6e4084">
+    <entryLink import="true" name="Stormvermin" hidden="false" id="4ece-9a21-3a96-d554" type="selectionEntry" targetId="e615449a-cb6e4084">
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="5b75-68d8-0df3-2f56" targetId="f0e3-2e32-8866-ea32" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="4520-638f-5f11-6aba" primary="false" targetId="fec1-537a-bbeb-7926"/>
