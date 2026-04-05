@@ -7811,7 +7811,7 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         </constraint>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Warplock Jezzails" hidden="false" id="da7f-f4ae-fb97-3ca2" type="selectionEntry" targetId="c3a2f71f-1c02cdad">
+    <entryLink import="true" name="Warplock Jezzails" hidden="true" id="da7f-f4ae-fb97-3ca2" type="selectionEntry" targetId="c3a2f71f-1c02cdad">
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="d0b1-0771-f76c-d465" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="e261-8362-583b-138e" primary="false" targetId="fec1-537a-bbeb-7926"/>
@@ -7973,10 +7973,10 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
             <repeat value="3.3333333333333335" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="3" field="9a50-2b56-ac9a-203f">
-          <repeats>
-            <repeat value="1" repeats="3" field="selections" scope="parent" childId="7358f1d1-b9cd7927" shared="true" roundUp="false"/>
-          </repeats>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7358f1d1-b9cd7927" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <comment>No Warhall</comment>
@@ -7993,7 +7993,7 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="9a50-2b56-ac9a-203f" includeChildSelections="true"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Poisoned Wind Globadiers" hidden="false" id="1621-2180-013f-471f" type="selectionEntry" targetId="b29eb8e5-a95439db">
+    <entryLink import="true" name="Poisoned Wind Globadiers" hidden="true" id="1621-2180-013f-471f" type="selectionEntry" targetId="b29eb8e5-a95439db">
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="1f78-54e4-c0e1-72f4" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="0571-b103-7494-acb3" primary="false" targetId="fec1-537a-bbeb-7926"/>
@@ -8155,10 +8155,10 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
             <repeat value="3.3333333333333335" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="3" field="c8f0-fe2c-1d73-9b26">
-          <repeats>
-            <repeat value="1" repeats="3" field="selections" scope="parent" childId="7358f1d1-b9cd7927" shared="true" roundUp="false"/>
-          </repeats>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7358f1d1-b9cd7927" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <comment>No Warhall</comment>
