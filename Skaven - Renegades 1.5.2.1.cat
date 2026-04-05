@@ -8403,7 +8403,7 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
     </categoryEntry>
     <categoryEntry name="0-1 Stormvermin (if Army includes a Skaven Warlord) or 0-1 Plague Monks (if Army includes a Clan Pestilens Plague Priest) as Core Choice" id="63d5-c8fd-17cc-e207" hidden="true">
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="bc64-cc8e-0985-3095" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bc64-cc8e-0985-3095" includeChildSelections="true"/>
       </constraints>
       <comment>Renegades</comment>
     </categoryEntry>
