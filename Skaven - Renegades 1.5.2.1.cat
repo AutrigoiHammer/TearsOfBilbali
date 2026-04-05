@@ -6358,7 +6358,7 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="29c3-5102-61b2-f982"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="29c3-5102-61b2-f982" includeChildSelections="true"/>
       </constraints>
     </entryLink>
     <entryLink import="true" name="Grey Seer" hidden="true" id="951a-4933-14fc-8dd7" type="selectionEntry" targetId="cc8e13bb-3ea78349">
