@@ -16914,7 +16914,10 @@ Any war machine that has its Toughness reduced in this way also loses the Move o
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Renegades (Square Based)" hidden="false" id="974c-3bf3-af4b-701d">
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f31e-4067-047f-fba9">
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f31e-4067-047f-fba9">
+          <comment>Renegades</comment>
+        </constraint>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dcfd-9bc1-ff8b-7bbb">
           <comment>Renegades</comment>
         </constraint>
       </constraints>
