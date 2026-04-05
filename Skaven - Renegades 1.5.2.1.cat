@@ -7973,6 +7973,11 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
             <repeat value="3.3333333333333335" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="3" field="9a50-2b56-ac9a-203f">
+          <repeats>
+            <repeat value="1" repeats="3" field="selections" scope="parent" childId="7358f1d1-b9cd7927" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <comment>No Warhall</comment>
       <constraints>
@@ -7985,6 +7990,7 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="789c-d981-c305-9bdd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="9a50-2b56-ac9a-203f" includeChildSelections="true"/>
       </constraints>
     </entryLink>
     <entryLink import="true" name="Poisoned Wind Globadiers" hidden="false" id="1621-2180-013f-471f" type="selectionEntry" targetId="b29eb8e5-a95439db">
@@ -8149,6 +8155,11 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
             <repeat value="3.3333333333333335" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="3" field="c8f0-fe2c-1d73-9b26">
+          <repeats>
+            <repeat value="1" repeats="3" field="selections" scope="parent" childId="7358f1d1-b9cd7927" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <comment>No Warhall</comment>
       <constraints>
@@ -8161,6 +8172,7 @@ Note: Unless they are the closest model to the cannon, an enemy character that i
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="389e-a260-7a69-1d98" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="c8f0-fe2c-1d73-9b26" includeChildSelections="true"/>
       </constraints>
     </entryLink>
     <entryLink import="true" name="Rat Ogres" hidden="false" id="258b-54d2-e048-641c" type="selectionEntry" targetId="cd2d3dc1-4f123b17">
