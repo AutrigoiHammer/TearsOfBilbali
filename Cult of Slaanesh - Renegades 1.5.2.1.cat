@@ -1823,11 +1823,8 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
             </selectionEntryGroup>
             <selectionEntryGroup name="Lores of Magic" hidden="false" id="88a8e69e-ae8c4568" sortIndex="5">
               <entryLinks>
-                <entryLink import="true" name="Battle Magic" hidden="false" id="8e5e3086-cb7eac10" type="selectionEntry" targetId="5b2e-35c6-f987-741e" sortIndex="1"/>
                 <entryLink import="true" name="Daemonology" hidden="false" id="4b0ae8a5-2760eb9b" type="selectionEntry" targetId="c3ec-be1b-91ce-96ed" sortIndex="2"/>
                 <entryLink import="true" name="Dark Magic" hidden="false" id="cbcf5d68-2773f112" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="3"/>
-                <entryLink import="true" name="Elementalism" hidden="false" id="2ec12b1f-b48f61ad" type="selectionEntry" targetId="2b23-3ae1-f5ad-8e7a" sortIndex="4"/>
-                <entryLink import="true" name="Illusion" hidden="false" id="4a945468-82593012" type="selectionEntry" targetId="af66-671f-5a42-a118" sortIndex="5"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="b9af51d5-4a74c1cb"/>
@@ -1950,11 +1947,8 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
             </selectionEntryGroup>
             <selectionEntryGroup name="Lores of Magic" hidden="false" id="7e76136b-cc2633b9" sortIndex="5">
               <entryLinks>
-                <entryLink import="true" name="Battle Magic" hidden="false" id="d4495513-a6cce3c1" type="selectionEntry" targetId="5b2e-35c6-f987-741e" sortIndex="1"/>
                 <entryLink import="true" name="Daemonology" hidden="false" id="8d70070e-8b196f18" type="selectionEntry" targetId="c3ec-be1b-91ce-96ed" sortIndex="2"/>
                 <entryLink import="true" name="Dark Magic" hidden="false" id="170ca219-ce00466f" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="3"/>
-                <entryLink import="true" name="Elementalism" hidden="false" id="a4a4037a-91814064" type="selectionEntry" targetId="2b23-3ae1-f5ad-8e7a" sortIndex="4"/>
-                <entryLink import="true" name="Illusion" hidden="false" id="2a9394fd-a9a74833" type="selectionEntry" targetId="af66-671f-5a42-a118" sortIndex="5"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6dbdee00-4783e34a"/>
@@ -3099,15 +3093,6 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Command" id="ee0b-6641-9a81-5a26" hidden="false" sortIndex="2">
-              <entryLinks>
-                <entryLink import="true" name="General" hidden="false" id="3ce6-5e74-fd8d-b89b" type="selectionEntry" targetId="7d76-b1a1-1535-a04c">
-                  <categoryLinks>
-                    <categoryLink name="General of Slaanesh" hidden="false" id="f67f-c4f1-cac0-836c" targetId="efb6-f92e-bd02-dd94" primary="false"/>
-                  </categoryLinks>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup name="Wizard Level" id="31a0-8179-2f8b-823f" hidden="false" defaultSelectionEntryId="bd19f910-7268e05a" sortIndex="3">
               <entryLinks>
                 <entryLink import="true" name="Wizard Level 1" hidden="false" id="e654-250d-7251-7bff" type="selectionEntry" targetId="7d84-39e9-a5f-947e" sortIndex="1"/>
@@ -3136,7 +3121,6 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
               <entryLinks>
                 <entryLink import="true" name="Daemonology" hidden="false" id="587b-f74c-89ca-de22" type="selectionEntry" targetId="c3ec-be1b-91ce-96ed" sortIndex="1"/>
                 <entryLink import="true" name="Dark Magic" hidden="false" id="ac6a-787b-4f77-eacc" type="selectionEntry" targetId="e9f-f0fb-d874-4151" sortIndex="2"/>
-                <entryLink import="true" name="Illusion" hidden="false" id="6f4a-05df-62da-b1a3" type="selectionEntry" targetId="af66-671f-5a42-a118" sortIndex="3"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="bfa7-08c1-e8d9-51ee"/>
@@ -5714,7 +5698,7 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
     </selectionEntryGroup>
     <selectionEntryGroup name="Magic Items (Renegades 1.5.2.1 + Cult of Slaanesh)" id="9d01-75eb-45ab-3737" hidden="false">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Magic Items (Only Renegades 1.5.2.1 + Cult of Slaanesh)" id="9fad-8012-2a7f-28cf" hidden="false" collective="true" collapsible="true">
+        <selectionEntryGroup name="Magic Items (Only Renegades 1.5.2.1 + Cult of Slaanesh)" id="9fad-8012-2a7f-28cf" hidden="false" collapsible="true">
           <selectionEntryGroups>
             <selectionEntryGroup name="Enchanted Items (Renegades 1.5.2.1 + Cult of Slaanesh)" id="6569-78b1-8a17-0a9e" hidden="false" collapsible="true" sortIndex="3">
               <selectionEntryGroups>
@@ -5848,7 +5832,7 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Magic Weapons (Renegades 1.5.2.1 + Cult of Slaanesh)" id="a6cb-e02c-4d94-7897" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Magic Weapons (Renegades 1.5.2.1 + Cult of Slaanesh)" id="a6cb-e02c-4d94-7897" hidden="false" sortIndex="1" collapsible="true">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Unique Weapons" id="2de1-7d8f-9980-7e7b" hidden="false">
                   <selectionEntries>
