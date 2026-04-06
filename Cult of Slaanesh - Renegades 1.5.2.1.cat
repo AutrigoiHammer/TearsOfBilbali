@@ -5051,6 +5051,9 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
         <categoryLink targetId="1f7f-18ff-388d-f1f3" id="0218-0e62-0e4b-ede1" primary="false" name="Faction: Daemons of Chaos"/>
         <categoryLink targetId="3755-6732-99b2-c713" id="98db-43ee-78a7-c863" primary="false" name="Behemoth"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d50b-4ad8-9d1d-f4d0"/>
+      </constraints>
     </entryLink>
     <entryLink import="true" name="Dark Elf Warriors" hidden="false" id="0ca7-c762-1206-e797" type="selectionEntry" targetId="d975f8f-a6d3a01d">
       <categoryLinks>
@@ -5064,15 +5067,18 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
         <categoryLink name="Characters" hidden="false" id="7db1-d58c-7f6d-c489" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
         <categoryLink targetId="75a1-ee95-da32-b765" id="c0f5-17b5-95e5-4188" primary="false" name="Faction: Warriors of Chaos"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a87-77e5-d45e-0594"/>
+      </constraints>
     </entryLink>
-    <entryLink import="true" name="Chaos Marauders" hidden="false" id="6876-e2d2-044a-9dfd" type="selectionEntry" targetId="adaf-3591-76d4-ea6c">
+    <entryLink import="true" name="Chaos Marauders (Renegades 1.5.2.1 + Cult of Slaanesh)" hidden="false" id="6876-e2d2-044a-9dfd" type="selectionEntry" targetId="adaf-3591-76d4-ea6c">
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="47f2-da0d-1242-ce94" targetId="f0e3-2e32-8866-ea32" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="25eb-cfe2-7729-55c7" primary="false" targetId="fec1-537a-bbeb-7926"/>
         <categoryLink targetId="75a1-ee95-da32-b765" id="3ec4-2561-bf1a-bc7b" primary="false" name="Faction: Warriors of Chaos"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Daemonettes Of Slaanesh" hidden="false" id="6692-eff1-31a5-0955" type="selectionEntry" targetId="e1b3-b1ca-e879-ead1">
+    <entryLink import="true" name="Daemonettes Of Slaanesh (Renegades 1.5.2.1 + Cult of Slaanesh)" hidden="false" id="6692-eff1-31a5-0955" type="selectionEntry" targetId="e1b3-b1ca-e879-ead1">
       <categoryLinks>
         <categoryLink name="Core" hidden="false" id="6cf1-912f-7fe2-e018" targetId="f0e3-2e32-8866-ea32" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="48ae-8893-3b47-e5c6" primary="false" targetId="fec1-537a-bbeb-7926"/>
@@ -5108,7 +5114,7 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Chaos Warriors" hidden="false" id="b3ee-bfcc-bac4-1b8b" type="selectionEntry" targetId="bc53-6be8-37a4-22ac">
+    <entryLink import="true" name="Chaos Warriors (Renegades 1.5.2.1 + Cult of Slaanesh)" hidden="false" id="b3ee-bfcc-bac4-1b8b" type="selectionEntry" targetId="bc53-6be8-37a4-22ac">
       <categoryLinks>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="d925-7635-077f-afda" primary="false" targetId="fec1-537a-bbeb-7926"/>
         <categoryLink targetId="75a1-ee95-da32-b765" id="4d27-ba36-5e76-6fa3" primary="false" name="Faction: Warriors of Chaos"/>
@@ -5122,26 +5128,8 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
         <categoryLink targetId="1f7f-18ff-388d-f1f3" id="e6c6-dd48-f4a1-2306" primary="false" name="Faction: Daemons of Chaos"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="60a6-f937-832d-6d66" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c3b-72c7-6f9a-ae44"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="60a6-f937-832d-6d66">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="db8f-67f7-8c96-a085"/>
-          </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="60a6-f937-832d-6d66">
-          <repeats>
-            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="fd21-d707-138c-21ae" includeChildSelections="true"/>
-          </repeats>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Gigantic Spawn of Chaos (Renegades 1.5.2.1 + Cult of Slaanesh)" hidden="false" id="51b7-6a61-2bc6-8444" type="selectionEntry" targetId="6e16-141e-5ef5-7dc6">
       <categoryLinks>
@@ -5177,26 +5165,14 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
         <categoryLink targetId="fec1-537a-bbeb-7926" id="03f9-5382-3f58-3d17" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="9230-d947-3637-a073" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="248b-6d16-ff8d-0385"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="2" field="9230-d947-3637-a073">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="c323-6b4a-cd9f-85be"/>
-          </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="2" field="9230-d947-3637-a073">
-          <repeats>
-            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="76b4-80d0-6d48-c22c" includeChildSelections="true"/>
-          </repeats>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Druchii Anointed (Renegades 1.5.2.1 + Cult of Slaanesh)" hidden="false" id="d074-7689-8321-6820" type="selectionEntry" targetId="863a-85b2-b7af-1c6d">
+      <categoryLinks>
+        <categoryLink name="Characters" hidden="false" id="23f4-94f0-9889-05c5" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink targetId="f64e-146a-86bd-73da" id="7407-447a-61f3-a174" primary="false" name="Faction: Dark Elves"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
