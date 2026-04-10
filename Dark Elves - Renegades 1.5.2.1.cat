@@ -2629,7 +2629,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <infoLink name="Standard Bearer" hidden="false" type="profile" id="7b05cecb-7291099" targetId="bcf8-d942-102e-b155"/>
               </infoLinks>
               <entryLinks>
-                <entryLink import="true" name="Magic Standards" hidden="false" id="28670d51-928eb8a7" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+                <entryLink import="true" name="Magic Standards (Renegades 1.5.2.1)" hidden="false" id="28670d51-928eb8a7" type="selectionEntryGroup" targetId="c526-33da-c9da-2792">
                   <constraints>
                     <constraint type="max" value="50" field="points" scope="parent" shared="false" id="88cfdd6c-808d02b6"/>
                   </constraints>
