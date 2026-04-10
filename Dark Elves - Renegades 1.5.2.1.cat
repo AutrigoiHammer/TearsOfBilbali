@@ -2441,24 +2441,13 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="832d-f583-f5dc-d33c" targetId="may-have-armour"/>
                 <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="988b-3a4d-34d2-f9f0" targetId="may-have-shield"/>
               </categoryLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="3111-dbce-2e63-22b9" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Magic Standards (Renegades 1.5.2.1)" hidden="true" id="5e79530f-2e09f79d" type="selectionEntryGroup" targetId="c526-33da-c9da-2792">
-                      <constraints>
-                        <constraint type="max" value="50" field="points" scope="parent" shared="false" id="d9e3d52e-42ecb638"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="3111-dbce-2e63-22b9" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Magic Standards (Renegades 1.5.2.1)" hidden="true" id="d4cb-2b78-9932-a06e" type="selectionEntryGroup" targetId="c526-33da-c9da-2792">
+                  <constraints>
+                    <constraint type="max" value="50" field="points" scope="parent" shared="false" id="2084-5efe-efdc-c42b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry name="Musician" id="de75379a-a3369b84" type="model" import="true" hidden="false" subType="crew" sortIndex="3">
               <costs>
@@ -2500,7 +2489,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
       <modifiers>
         <modifier type="add" value="effd-d94f-485e-154d" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="3111-dbce-2e63-22b9" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="c526-33da-c9da-2792" shared="true" includeChildSelections="true" childName="Magic Standards (Renegades 1.5.2.1)"/>
           </conditions>
         </modifier>
         <modifier type="add" value="8895-11a1-ec1a-6d5f" field="category">
@@ -3454,25 +3443,6 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="505cae21-3a14d7f7" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Special Rules" id="82a3-d631-5b3c-468f" hidden="false" collective="true" defaultSelectionEntryId="b5451dac-34d640f6" flatten="true" sortIndex="6">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0afe-b547-0f8c-635d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9696-c004-3be3-76ae" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="7773-d41e-f1ae-5fbb">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a887-5b08-ccc7-0729" includeChildSelections="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Veteran" id="2475-c888-ff10-7f8e" hidden="false" type="profile" targetId="4022-c403-b083-ba83"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="bf3970e4-4be7a02e"/>
@@ -3507,6 +3477,17 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db31-3e30-ea12-f467-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db31-3e30-ea12-f467-max" includeChildSelections="false"/>
               </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="7773-d41e-f1ae-5fbb" sortIndex="6" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a887-5b08-ccc7-0729" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Veteran" id="2475-c888-ff10-7f8e" hidden="false" type="profile" targetId="4022-c403-b083-ba83"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -4594,7 +4575,7 @@ If the model is using a magic weapon this special rule ceases to apply.</charact
                 <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="ea2-1d03-863c-b16e" targetId="may-have-shield"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink import="true" name="Magic Standards (Renegades 1.5.2.1)" hidden="true" id="03af-41cb-9098-0d7e" type="selectionEntryGroup" targetId="c526-33da-c9da-2792">
+                <entryLink import="true" name="Magic Standards (Renegades 1.5.2.1)" hidden="false" id="03af-41cb-9098-0d7e" type="selectionEntryGroup" targetId="c526-33da-c9da-2792">
                   <constraints>
                     <constraint type="max" value="50" field="points" scope="parent" shared="false" id="ad3d-ed02-7c82-36ca"/>
                   </constraints>

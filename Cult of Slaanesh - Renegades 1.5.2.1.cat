@@ -2125,24 +2125,13 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
                 <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="832d-f583-f5dc-d33c" targetId="may-have-armour"/>
                 <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="988b-3a4d-34d2-f9f0" targetId="may-have-shield"/>
               </categoryLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="3111-dbce-2e63-22b9" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Magic Standards (Renegades 1.5.2.1 + Cult of Slaanesh)" hidden="true" id="5e79530f-2e09f79d" type="selectionEntryGroup" targetId="c526-33da-c9da-2792">
-                      <constraints>
-                        <constraint type="max" value="50" field="points" scope="parent" shared="false" id="d9e3d52e-42ecb638"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="3111-dbce-2e63-22b9" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Magic Standards (Renegades 1.5.2.1 + Cult of Slaanesh)" hidden="true" id="4d1e-9de2-aa05-b8d6" type="selectionEntryGroup" targetId="c526-33da-c9da-2792">
+                  <constraints>
+                    <constraint type="max" value="50" field="points" scope="parent" shared="false" id="2066-2084-cd39-9376"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry name="Musician" id="de75379a-a3369b84" type="model" import="true" hidden="false" subType="crew" sortIndex="3">
               <costs>
@@ -2184,7 +2173,7 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
       <modifiers>
         <modifier type="add" value="effd-d94f-485e-154d" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="3111-dbce-2e63-22b9" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="c526-33da-c9da-2792" shared="true" includeChildSelections="true" childName="Magic Standards (Renegades 1.5.2.1 + Cult of Slaanesh)"/>
           </conditions>
         </modifier>
         <modifier type="add" value="8895-11a1-ec1a-6d5f" field="category">
@@ -2552,7 +2541,7 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" name="Cold One Knight" id="9b62c85-d39d7f7b" hidden="false" collective="true" sortIndex="1">
+        <selectionEntry type="model" name="Cold One Knight" id="9b62c85-d39d7f7b" hidden="false" sortIndex="1">
           <infoLinks>
             <infoLink name="Cold One Knight" hidden="false" type="profile" id="71a8c3a3-5a9cd3d1" targetId="518c-3d48-6278-fabb"/>
             <infoLink name="Base (30x60)" hidden="false" type="profile" id="da0b590d-921e0543" targetId="3a8b-1dd5-77fb-fdc3"/>
@@ -2595,25 +2584,6 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="505cae21-3a14d7f7" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Special Rules" id="82a3-d631-5b3c-468f" hidden="false" collective="true" defaultSelectionEntryId="b5451dac-34d640f6" flatten="true" sortIndex="6">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0afe-b547-0f8c-635d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9696-c004-3be3-76ae" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="7773-d41e-f1ae-5fbb">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a887-5b08-ccc7-0729" includeChildSelections="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="2"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Veteran" id="2475-c888-ff10-7f8e" hidden="false" type="profile" targetId="4022-c403-b083-ba83"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="bf3970e4-4be7a02e"/>
@@ -2648,6 +2618,17 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db31-3e30-ea12-f467-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db31-3e30-ea12-f467-max" includeChildSelections="false"/>
               </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="5f57-4d83-a494-32c1" sortIndex="6" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0ee2-8c38-4aed-2ff1" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Veteran" id="cdef-201d-d9c3-464d" hidden="false" type="profile" targetId="4022-c403-b083-ba83"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
