@@ -2501,5 +2501,6 @@ Bonegrinder Giant Attacks Table
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce"/>
     <catalogueLink type="catalogue" name="Runic Items" id="04d3-592b-d051-4995" targetId="7aa2-db17-4956-5c36"/>
+    <catalogueLink type="catalogue" name="MERCENARIES - TEARS OF BILBALI EDITION" id="cb47-b6ae-7039-f6df" targetId="12a0-32cd-11d6-fToB"/>
   </catalogueLinks>
 </catalogue>

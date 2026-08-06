@@ -6256,6 +6256,7 @@ Note that this special rule only applies to a single, non-magical hand weapon an
     <entryLink import="true" name="Pirazzo&apos;s Lost Legion" hidden="false" id="074c-c7a6-550c-f267" type="selectionEntry" targetId="125d-3e0e-ef82-6a82">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="5052-b1b4-e56e-6c22" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="7a6f-7e1f-9ead-1731" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="acaf-522a-834f-f8bd"/>
@@ -6264,17 +6265,20 @@ Note that this special rule only applies to a single, non-magical hand weapon an
     <entryLink import="true" name="Ghazak Khan, The Terror of the East" hidden="false" id="1795-df50-abb0-935e" type="selectionEntry" targetId="5d23-a058-965c-22dc">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="1f0d-f444-9e22-dd83" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="b470-69c9-984b-3ca2" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Borgio the Besieger, The Beloved General" hidden="false" id="f4f3-8a2c-b679-229e" type="selectionEntry" targetId="5b0c-3da2-c226-bb34">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="084c-3453-dbbd-84ad" primary="true" name="Mercenaries"/>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="1846-263f-2299-6a2b" primary="false" name="Named Characters"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="687e-1859-2a55-84c2" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="The Cursed Company" hidden="false" id="c03b-0f11-9210-e1e2" type="selectionEntry" targetId="22dc-5cbb-1a2c-3cab">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="5b12-e6d1-fc37-95d8" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="1a90-5c8a-2170-4016" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a64-575c-68be-004c"/>
@@ -6282,18 +6286,22 @@ Note that this special rule only applies to a single, non-magical hand weapon an
     </entryLink>
     <entryLink import="true" name="Rakarth, The Beastlord" hidden="false" id="13e1-b48e-ad58-0689" type="selectionEntry" targetId="9c28-85eb-3544-b0a4">
       <categoryLinks>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="318c-d2a4-266f-e9c9" primary="true" name="Named Characters"/>
+        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="318c-d2a4-266f-e9c9" primary="false" name="Named Characters"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="628a-af45-eb37-59e2" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="02b1-0959-5dfe-efec" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Asarnil, The Dragonlord" hidden="false" id="95c7-5534-8465-8ec2" type="selectionEntry" targetId="8c4a-26d2-6368-f867">
       <categoryLinks>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="96cc-0d12-1671-a85d" primary="false" name="Named Characters"/>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="7c28-33ad-fa95-2d10" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="303d-ab41-db81-7345" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Daddallo and The Birdmen of Catrazza" hidden="false" id="49eb-1e31-0775-1808" targetId="37e4-bdf9-9ddd-38f3" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0414-966f-cb92-31c1" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="f1c8-4904-9a9d-3792" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e2fe-8e65-2baa-f1a0"/>
@@ -6302,39 +6310,75 @@ Note that this special rule only applies to a single, non-magical hand weapon an
     <entryLink import="true" name="Golgfag&apos;s Mercenary Ogres" hidden="false" id="eb51-c971-b82c-10c8" targetId="857e-a885-39c5-de87" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="fe2c-474f-613a-8ef8" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="974f-316c-1186-afff" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Braganza&apos;s Besiegers" hidden="false" id="63ce-a131-7d3d-a840" targetId="d529-2376-1520-33a5" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="098a-a600-10a3-f91a" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="ae0c-4bed-e01b-6ab9" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Long Drong&apos;s Slayer Pirates" hidden="false" id="be5f-0f9d-783e-1f9f" targetId="e9c6-8a9f-8f08-b36a" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="5187-ee2e-012a-2695" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="0347-2c78-d6f9-9e7a" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="3d84-2564-7cc2-45d1" targetId="bb37-df3a-2ca1-6d19" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="1ab4-5c57-6df0-cea8" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="3ec6-1b0a-e0ed-f0a0" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Leopold&apos;s Leopard Company" hidden="false" id="3441-8148-d978-1323" targetId="5ed2-be5b-d6a8-a9ae" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="ac08-9e2c-bc17-1e05" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="3e05-889e-fe4f-7c1d" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Bronzino&apos;s Galloper Guns" hidden="false" id="7346-3ba5-dcdd-b62c" targetId="609a-37ee-9489-e6ec" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="e4d2-ebcc-0f95-c80e" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="70eb-6da5-8c63-ca57" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="cfa3-abf9-2647-6fe2" targetId="4f1d-ce45-ac12-a82c" type="selectionEntry"/>
-    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="b2ca-d946-474b-66e0" targetId="f019-bfd6-099a-0d30" type="selectionEntry"/>
-    <entryLink import="true" name="Beorg Bearstruck and Bearmen of Urslo" hidden="false" id="9226-e9a4-5c0e-5ba4" targetId="8d29-bc5d-6ab3-5a8c" type="selectionEntry"/>
-    <entryLink import="true" name="The Alcatani Fellowship" hidden="false" id="11c3-cbdd-684f-1f52" targetId="c1b4-9924-9d11-d847" type="selectionEntry"/>
-    <entryLink import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="6894-2d51-f6ff-cc23" targetId="2848-8023-99aa-5222" type="selectionEntry"/>
-    <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="0d9f-3419-cf06-8de5" targetId="ff26-8420-f44d-aef7" type="selectionEntry"/>
+    <entryLink import="true" name="Marksmen of Miragliano" hidden="false" id="cfa3-abf9-2647-6fe2" targetId="4f1d-ce45-ac12-a82c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="c043-c8ff-d599-bd68" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="77e4-2a8e-5b62-b239" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Voland&apos;s Venators" hidden="false" id="b2ca-d946-474b-66e0" targetId="f019-bfd6-099a-0d30" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="b492-e742-4bf9-a8a4" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="a08c-2c1d-22b7-3fb2" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Beorg Bearstruck and Bearmen of Urslo" hidden="false" id="9226-e9a4-5c0e-5ba4" targetId="8d29-bc5d-6ab3-5a8c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="5e60-31d7-9be0-db53" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="af3d-914a-c353-7464" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="The Alcatani Fellowship" hidden="false" id="11c3-cbdd-684f-1f52" targetId="c1b4-9924-9d11-d847" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="d8ca-849b-9ab7-5ed3" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="1fde-f8d6-c3d2-b3ab" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ricco&apos;s Republican Guard" hidden="false" id="6894-2d51-f6ff-cc23" targetId="2848-8023-99aa-5222" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="0532-18e8-7c71-c83a" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="4a78-0992-cdd7-9ab7" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vespero&apos;s Vendetta" hidden="false" id="0d9f-3419-cf06-8de5" targetId="ff26-8420-f44d-aef7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="1e4d-68af-53db-f354" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="81f1-6cc5-4595-a689" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Leonardo da Miragliano" hidden="false" id="28fe-66e3-0331-d0ca" targetId="cbf5-ed78-8b78-d3c2" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="9511-0488-c5a5-1e43" primary="true" name="Mercenaries"/>
@@ -6345,24 +6389,52 @@ Note that this special rule only applies to a single, non-magical hand weapon an
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="e828-46d7-8c83-2646" primary="true" name="Mercenaries"/>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="71a9-f175-8580-3306" primary="false" name="Named Characters"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="fcbb-68fc-e295-5806" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Mydas The Mean" hidden="false" id="881b-c059-934f-ecb2" targetId="28d4-1bdb-c4b2-44ee" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="7f2f-e36a-2c7c-535d" primary="false" name="Named Characters"/>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="6aa7-fdcd-b22c-c6fd" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="61c4-0e4e-59b5-1cda" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Lorenzo Lupo" hidden="false" id="569f-4e01-421b-45a0" targetId="c1e2-e68e-0339-48c4" type="selectionEntry"/>
-    <entryLink import="true" name="Lumpin Croop&apos;s Fighting Cocks" hidden="false" id="fd31-ec16-702c-7bb4" targetId="d8c6-2cb7-6ada-462c" type="selectionEntry"/>
-    <entryLink import="true" name="Oglah Khan&apos;s Wolfboyz" hidden="false" id="f5c9-b405-fd3f-f918" targetId="1f8f-5164-29dc-f28d" type="selectionEntry"/>
-    <entryLink import="true" name="Tichi-Huichi&apos;s Raiders" hidden="false" id="73dc-758e-e9ee-ad71" targetId="c5b8-b0fe-0c9d-6824" type="selectionEntry"/>
-    <entryLink import="true" name="The Witch Hunters" hidden="false" id="a040-6134-58a2-2d73" targetId="c677-e343-2366-3408" type="selectionEntry"/>
+    <entryLink import="true" name="Lorenzo Lupo" hidden="false" id="569f-4e01-421b-45a0" targetId="c1e2-e68e-0339-48c4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="eae8-7dd7-d61e-5ffd" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="47e7-e6bf-bcdd-0b31" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lumpin Croop&apos;s Fighting Cocks" hidden="false" id="fd31-ec16-702c-7bb4" targetId="d8c6-2cb7-6ada-462c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="0370-0534-97f3-0905" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="b0c1-73f3-9d83-b9de" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Oglah Khan&apos;s Wolfboyz" hidden="false" id="f5c9-b405-fd3f-f918" targetId="1f8f-5164-29dc-f28d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="7532-fa78-1996-b5c0" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="e011-8a4f-d5e3-1c04" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tichi-Huichi&apos;s Raiders" hidden="false" id="73dc-758e-e9ee-ad71" targetId="c5b8-b0fe-0c9d-6824" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="4b85-f807-cfc1-025f" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="c0be-3af3-db21-96f2" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="The Witch Hunters" hidden="false" id="a040-6134-58a2-2d73" targetId="c677-e343-2366-3408" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="319a-39de-1809-bf19" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="3e95-11fc-362f-17e8" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Hengus the Druid and Giants of Albion" hidden="false" id="fab9-27e8-bd8c-d4c5" targetId="1884-d731-8a46-2375" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="5b84-2c3c-869d-3522" id="0fd4-2dea-6293-0e85" primary="true" name="Mercenaries"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="c8f4-dbb8-877f-a292" primary="false" name="Regular Infantry"/>
         <categoryLink targetId="3755-6732-99b2-c713" id="ac0e-f7dd-7333-832f" primary="false" name="Behemoth"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="48fe-91ee-7bcb-6255" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Karnac&apos;s Lizardmen Raiders" hidden="false" id="66c8-b887-0dbd-af44" targetId="3c25-4ce0-192c-3ec5" type="selectionEntry">
@@ -6374,7 +6446,7 @@ Note that this special rule only applies to a single, non-magical hand weapon an
     </entryLink>
     <entryLink import="true" name="Knights of Origo" hidden="false" id="c5f3-5636-d272-3ec6" targetId="fc97-a358-7684-a533" type="selectionEntry">
       <categoryLinks>
-        <categoryLink targetId="5b84-2c3c-869d-3522" id="0be8-0c3f-bdc5-4cd2" primary="false" name="Mercenaries"/>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="0be8-0c3f-bdc5-4cd2" primary="true" name="Mercenaries"/>
         <categoryLink targetId="f3f7-ca43-674e-115f" id="0dd4-0d9d-7f26-7c8e" primary="false" name="Regular Infantry"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="e08e-51bf-a29d-875a" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
