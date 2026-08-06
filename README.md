@@ -11,5 +11,7 @@ A big part of the work is based on https://github.com/vflam/Warhammer-The-Old-Wo
 Please visit https://en.tearsofbilbali.games/ [English] or https://es.tearsofbilbali.games/ [Spanish] for further information.
 
 Thank you for your time,
+
 Best Regards,
+
 Autrigon Gentlemen Club Team
