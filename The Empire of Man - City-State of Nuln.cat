@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7706-6528-7747-65a2" name="The Empire of Man - City-State of Nuln" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="127" revision="12" authorUrl="www.newrecruit.eu" authorContact="Discord: Tidomann" authorName="Tidomann" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7706-6528-7747-65a2" name="The Empire of Man - City-State of Nuln" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="127" revision="16" authorUrl="www.newrecruit.eu" authorContact="Discord: Tidomann" authorName="Tidomann" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="The Empire of Man" id="ff5f-2269-4201-c9a4" targetId="7b8f-602e-29cd-5786"/>
   </catalogueLinks>
@@ -18,7 +18,7 @@
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="0cbb-edee-4457-0c56" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a499-85db-f6cb-3100" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1fb1-0b55-0716-4bef" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -130,7 +130,7 @@
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="a499-85db-f6cb-3100">
+        <modifier type="set" value="0" field="1fb1-0b55-0716-4bef">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -140,7 +140,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a499-85db-f6cb-3100">
+        <modifier type="increment" value="1" field="1fb1-0b55-0716-4bef">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -162,7 +162,7 @@
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a499-85db-f6cb-3100">
+        <modifier type="increment" value="1" field="1fb1-0b55-0716-4bef">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1507,7 +1507,7 @@
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="e4b9-c96e-9b2d-f6f4" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c42a-0ede-e24d-cd93" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d859-f2ca-befc-83c0" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -1614,7 +1614,7 @@
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="c42a-0ede-e24d-cd93">
+        <modifier type="set" value="0" field="d859-f2ca-befc-83c0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1624,7 +1624,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c42a-0ede-e24d-cd93">
+        <modifier type="increment" value="1" field="d859-f2ca-befc-83c0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1646,7 +1646,7 @@
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c42a-0ede-e24d-cd93">
+        <modifier type="increment" value="1" field="d859-f2ca-befc-83c0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1835,7 +1835,6 @@
         <categoryLink targetId="fec1-537a-bbeb-7926" id="e36a-a187-ef36-ac5d" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
         <categoryLink targetId="f0e3-2e32-8866-ea32" id="ad95-461e-f7cd-a5eb" primary="true" name="Core"/>
         <categoryLink targetId="38be-5fe9-9738-fd43" id="d059-2183-2e30-db7c" primary="false" name="Faction: The Empire of Man - City-state of Nuln"/>
-        <categoryLink targetId="71d6-3c4f-f6e3-819d" id="8b6b-e5ba-0591-cee6" primary="false" name="Outrider Non-Ponderous"/>
       </categoryLinks>
       <comment>Core</comment>
     </entryLink>
@@ -2549,7 +2548,6 @@
         <categoryLink targetId="633f-f67a-1b6a-d203" id="0f8d-6cc5-1efa-6b2a" primary="true" name="Special"/>
         <categoryLink targetId="fec1-537a-bbeb-7926" id="adf0-987e-8c72-95d5" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
         <categoryLink targetId="38be-5fe9-9738-fd43" id="7c81-140f-3613-34e0" primary="false" name="Faction: The Empire of Man - City-state of Nuln"/>
-        <categoryLink targetId="71d6-3c4f-f6e3-819d" id="686a-6dff-0fd1-13ff" primary="false" name="Outrider Non-Ponderous"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1408-1381-4702-3a07" includeChildSelections="true" includeChildForces="true" percentValue="false">
@@ -4449,9 +4447,6 @@
         </modifier>
         <modifier type="floor" value="1" field="d79a-7478-122f-c5b2">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="d79a-7478-122f-c5b2">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -4494,9 +4489,6 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="a51f-37e8-6485-2714">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="a51f-37e8-6485-2714">
           <comment>Battle march</comment>

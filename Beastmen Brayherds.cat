@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="eaaf-1e11-a32d-ab11" name="Beastmen Brayherds" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="22" revision="120" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="eaaf-1e11-a32d-ab11" name="Beastmen Brayherds" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="22" revision="126" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
   <sharedProfiles>
     <profile name="Blood Rage" hidden="false" id="8117-de6e-d7df-3eca" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" page="115" publicationId="7c89-736c-3139-24a0">
       <characteristics>
@@ -277,7 +277,7 @@
     <profile name="Jabberslythe" hidden="false" id="3e4e-dc0b-9379-f7cc" typeId="b070-143a-73f-2772" typeName="Model">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">6</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">5</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
@@ -410,7 +410,7 @@
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
-        <characteristic name="T" typeId="ab43-8b61-83e7-d090">6</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">7</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">6</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">4</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">5</characteristic>
@@ -449,7 +449,7 @@
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">1</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
-        <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">6</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">6</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
@@ -659,7 +659,7 @@ When they do so, they may select instead the signature spell of their chose Lore
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">5</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
-        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">5</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">5</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">4</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">6</characteristic>
@@ -937,7 +937,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
                   <categoryLinks>
-                    <categoryLink targetId="3fd7-a934-c82a-4e4d" id="e6f4-faf2-b2c7-bc3c" primary="false" name="0-1 Beastmen Shaman per 1,000 points may have the Ambushers special rule"/>
+                    <categoryLink name="0-1 Beastmen Shaman per 1,000 points may have the Ambushers special rule" hidden="false" id="e6f4-faf2-b2c7-bc3c" targetId="3fd7-a934-c82a-4e4d" primary="false"/>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="bca1-a8e4-f3be-b40f" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -953,8 +956,8 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1383,7 +1386,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
                   <categoryLinks>
-                    <categoryLink targetId="3fd7-a934-c82a-4e4d" id="3421-7e3f-a684-bab1" primary="false" name="0-1 Beastmen Shaman per 1,000 points may have the Ambushers special rule"/>
+                    <categoryLink name="0-1 Beastmen Shaman per 1,000 points may have the Ambushers special rule" hidden="false" id="3421-7e3f-a684-bab1" targetId="3fd7-a934-c82a-4e4d" primary="false"/>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="4522-c165-0f1c-b360" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -1399,8 +1405,8 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1570,27 +1576,54 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
                       <repeats>
                         <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="0aa8-2cea-25d4-87bd"/>
                       </repeats>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="increment" value="1" field="5a1c-49aa-a167-30bb">
                       <repeats>
                         <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="aee8-ae31-79ef-67fe" includeChildSelections="true"/>
                       </repeats>
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a9dd-e192-9fec-b81e" shared="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="floor" value="1" field="5a1c-49aa-a167-30bb">
+                      <comment>Battle march</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <costs>
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
+                  <categoryLinks>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="72b7-6449-5724-bb40" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Roaming Warband" hidden="false" id="2377-1c18-5662-c7bd" collective="true" sortIndex="2">
                   <infoLinks>
@@ -2039,7 +2072,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
                   <categoryLinks>
-                    <categoryLink targetId="ba8c-8dba-ebcd-0847" id="0ffa-c576-f6bf-07a9" primary="false" name="0-1 Beastman Chieftain per 1,000 points may have the Ambushers special rule"/>
+                    <categoryLink name="0-1 Beastman Chieftain per 1,000 points may have the Ambushers special rule" hidden="false" id="0ffa-c576-f6bf-07a9" targetId="ba8c-8dba-ebcd-0847" primary="false"/>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="5b67-2e89-cb7d-75f1" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
                   </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Roaming Warband" hidden="true" id="a07e-218b-b1a1-0083" collective="true" sortIndex="2">
@@ -2076,8 +2112,8 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2260,6 +2296,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <infoLink name="Primal Fury" hidden="false" type="profile" id="de9b-f437-de3b-5a8f" targetId="24a7-8ec2-fca1-21e2"/>
             <infoLink name="Mark of Chaos Undivided" hidden="false" type="profile" id="76ce-da67-1ed2-340d" targetId="595-bbd0-34c7-e601"/>
             <infoLink name="Warband" hidden="false" type="profile" id="fd74-e4d0-9d05-da4b" targetId="505f-e12d-2e36-31d0"/>
+            <infoLink name="Furious Charge" id="b099-81f0-9f0d-647f" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -2545,6 +2582,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
                 </modifier>
               </modifiers>
             </infoLink>
+            <infoLink name="Furious Charge" id="a376-e184-412c-d188" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -3590,7 +3628,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <infoLink name="Base (60x100)" hidden="false" type="profile" id="effb-2a11-d926-3fbe" targetId="5125-89a4-916a-eabd"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="195"/>
+            <cost name="pts" typeId="points" value="185"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Monstrous Creature" hidden="false" id="b32b-a684-872c-700d" targetId="fb36-5275-617-c895" primary="false"/>
@@ -3667,7 +3705,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <infoLink name="Base (50x50)" hidden="false" type="profile" id="27dd-7228-b6b1-8c" targetId="7813-4d15-143d-1bf1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="170"/>
+            <cost name="pts" typeId="points" value="155"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Poisoned Attacks" hidden="false" id="fce6-aeff-7a60-6f37" collective="true" sortIndex="4">
@@ -3750,7 +3788,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <infoLink name="Base (60x100)" hidden="false" type="profile" id="ada9-ba9-6573-9e01" targetId="5125-89a4-916a-eabd"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="215"/>
+            <cost name="pts" typeId="points" value="205"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Behemoth" hidden="false" id="7ec8-b063-fe35-967f" targetId="3755-6732-99b2-c713" primary="false"/>
@@ -4192,7 +4230,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
                     <cost name="pts" typeId="points" value="10"/>
                   </costs>
                   <categoryLinks>
-                    <categoryLink targetId="ba8c-8dba-ebcd-0847" id="2c13-ef04-3b0f-5d6b" primary="false" name="0-1 Beastman Chieftain per 1,000 points may have the Ambushers special rule"/>
+                    <categoryLink name="0-1 Beastman Chieftain per 1,000 points may have the Ambushers special rule" hidden="false" id="2c13-ef04-3b0f-5d6b" targetId="ba8c-8dba-ebcd-0847" primary="false"/>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="ef2f-be45-72f9-f830" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
                   </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Roaming Warband" hidden="true" id="fea1-17af-4aca-15e4" collective="true" sortIndex="2">
@@ -4229,8 +4270,8 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4603,6 +4644,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <infoLink name="Random Attacks" id="2f1d-5d63-29de-9a6f" hidden="false" type="profile" targetId="1b08-4621-6379-ff1f"/>
             <infoLink name="Stubborn" id="f7cb-a4ec-f2b9-a0bb" hidden="false" type="profile" targetId="e351-bbd6-f470-b604"/>
             <infoLink name="Warband" id="dda2-978b-8843-b7f1" hidden="false" type="profile" targetId="505f-e12d-2e36-31d0"/>
+            <infoLink name="Furious Charge" id="3f67-ea30-8f33-061e" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4941,7 +4983,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
           <infoLinks>
             <infoLink name="Bestial Charge" id="554c-865c-9f63-5aa0" hidden="false" type="profile" targetId="4203-7f82-8eaa-bfd3">
               <modifiers>
-                <modifier type="set" value="(Gors only)" field="annotation"/>
+                <modifier type="set" value="Gors only" field="annotation"/>
               </modifiers>
             </infoLink>
             <infoLink name="Primal Fury" id="aab5-7684-3fba-4b2c" hidden="false" type="profile" targetId="24a7-8ec2-fca1-21e2"/>
@@ -4954,6 +4996,11 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <infoLink name="Impetuous" id="621b-529a-ae26-b476" hidden="false" type="profile" targetId="b664-8530-a988-7ba9"/>
             <infoLink name="Mixed Unit" id="d3e5-9c24-3b45-8d86" hidden="false" type="profile" targetId="7d6a-a4f8-24d3-a41f"/>
             <infoLink name="Motley Crew" id="4e5d-dfb0-e439-2e5d" hidden="false" type="profile" targetId="6359-4018-5cd4-3720"/>
+            <infoLink name="Furious Charge" id="3894-0a91-9f71-fd44" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6">
+              <modifiers>
+                <modifier type="set" value="Gors only" field="annotation"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -5166,13 +5213,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
     <entryLink import="true" name="Beastlord" hidden="false" type="selectionEntry" id="4dba-c90b-4718-d53e" targetId="4533-c25f-76b4-5f7b">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="5f76-e3bd-7d59-f000" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="2769-f211-d0d9-0c4b" id="ecb5-dae1-ad00-d237" primary="false" name="0-1 Beastlord, Great Bray-Shaman or Doombull per 1,000 points"/>
+        <categoryLink name="0-1 Beastlord, Great Bray-Shaman or Doombull per 1,000 points" hidden="false" id="ecb5-dae1-ad00-d237" targetId="2769-f211-d0d9-0c4b" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="9c4e-cb0c-6a75-13b7" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e7f4-812d-3dbd-024b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7f23-f451-1406-ba3d" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d289-00bb-76ef-457b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5234,7 +5284,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="7f23-f451-1406-ba3d">
+        <modifier type="set" value="0" field="d289-00bb-76ef-457b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5244,7 +5294,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7f23-f451-1406-ba3d">
+        <modifier type="increment" value="1" field="d289-00bb-76ef-457b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5266,7 +5316,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7f23-f451-1406-ba3d">
+        <modifier type="increment" value="1" field="d289-00bb-76ef-457b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5301,7 +5351,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b1f6-b1b5-9c16-5bfa" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8679-af67-d3ef-9c6c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c0d5-3f83-52dd-2703" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5408,7 +5458,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="8679-af67-d3ef-9c6c">
+        <modifier type="set" value="0" field="c0d5-3f83-52dd-2703">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5418,7 +5468,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="8679-af67-d3ef-9c6c">
+        <modifier type="increment" value="1" field="c0d5-3f83-52dd-2703">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5440,7 +5490,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="8679-af67-d3ef-9c6c">
+        <modifier type="increment" value="1" field="c0d5-3f83-52dd-2703">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5470,7 +5520,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3a52-500b-d968-e143" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1dc1-1e98-fea9-5c42" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="506b-dce3-8d98-d291" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5537,7 +5587,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="1dc1-1e98-fea9-5c42">
+        <modifier type="set" value="0" field="506b-dce3-8d98-d291">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5547,7 +5597,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1dc1-1e98-fea9-5c42">
+        <modifier type="increment" value="1" field="506b-dce3-8d98-d291">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5569,7 +5619,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1dc1-1e98-fea9-5c42">
+        <modifier type="increment" value="1" field="506b-dce3-8d98-d291">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5600,7 +5650,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
       </modifiers>
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="beb7-b038-e1e1-fb2b" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="2769-f211-d0d9-0c4b" id="f678-8093-c9fe-c9de" primary="false" name="0-1 Beastlord, Great Bray-Shaman or Doombull per 1,000 points"/>
+        <categoryLink name="0-1 Beastlord, Great Bray-Shaman or Doombull per 1,000 points" hidden="false" id="f678-8093-c9fe-c9de" targetId="2769-f211-d0d9-0c4b" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="fe61-1307-9971-1652" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Bray-Shaman" hidden="false" type="selectionEntry" id="bc7e-e47a-1385-b769" targetId="e79f-ee3d-1c16-cf8">
@@ -5614,7 +5667,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="ac88-4ffa-d9b2-1bb8" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3e5f-3767-72fc-554a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ae1a-5659-2960-cf0d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5721,7 +5774,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="3e5f-3767-72fc-554a">
+        <modifier type="set" value="0" field="ae1a-5659-2960-cf0d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5731,7 +5784,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3e5f-3767-72fc-554a">
+        <modifier type="increment" value="1" field="ae1a-5659-2960-cf0d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5753,7 +5806,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3e5f-3767-72fc-554a">
+        <modifier type="increment" value="1" field="ae1a-5659-2960-cf0d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5780,13 +5833,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
     <entryLink import="true" name="Doombull" hidden="false" type="selectionEntry" id="9e7d-4a03-605c-6b86" targetId="be56-e411-9bf1-3171">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="be72-56fa-3b5a-b039" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="2769-f211-d0d9-0c4b" id="54ae-2d87-cfd4-a42f" primary="false" name="0-1 Beastlord, Great Bray-Shaman or Doombull per 1,000 points"/>
+        <categoryLink name="0-1 Beastlord, Great Bray-Shaman or Doombull per 1,000 points" hidden="false" id="54ae-2d87-cfd4-a42f" targetId="2769-f211-d0d9-0c4b" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="300b-ca80-1af6-3a01" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3403-7f4d-8963-f9e1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9e99-98c0-629c-ab8e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="26e7-c154-ac8b-3a87" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5848,7 +5904,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="9e99-98c0-629c-ab8e">
+        <modifier type="set" value="0" field="26e7-c154-ac8b-3a87">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5858,7 +5914,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9e99-98c0-629c-ab8e">
+        <modifier type="increment" value="1" field="26e7-c154-ac8b-3a87">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5880,7 +5936,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9e99-98c0-629c-ab8e">
+        <modifier type="increment" value="1" field="26e7-c154-ac8b-3a87">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5915,7 +5971,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="f0a9-822b-e753-216e" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4bdb-abb6-ab45-fc93" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2722-ab92-4a32-f875" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6022,7 +6078,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="4bdb-abb6-ab45-fc93">
+        <modifier type="set" value="0" field="2722-ab92-4a32-f875">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6032,7 +6088,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4bdb-abb6-ab45-fc93">
+        <modifier type="increment" value="1" field="2722-ab92-4a32-f875">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6054,7 +6110,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4bdb-abb6-ab45-fc93">
+        <modifier type="increment" value="1" field="2722-ab92-4a32-f875">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6089,7 +6145,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="3d99-82f1-efbb-9597" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="831a-78ef-9d80-7ddf" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1883-19a3-2d80-403a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6196,7 +6252,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="831a-78ef-9d80-7ddf">
+        <modifier type="set" value="0" field="1883-19a3-2d80-403a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6206,7 +6262,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="831a-78ef-9d80-7ddf">
+        <modifier type="increment" value="1" field="1883-19a3-2d80-403a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6228,7 +6284,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="831a-78ef-9d80-7ddf">
+        <modifier type="increment" value="1" field="1883-19a3-2d80-403a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6264,7 +6320,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="7911-7b98-2e6b-eabe" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d098-9e22-02e6-41cb" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c64e-5bd0-7d2b-795a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6371,7 +6427,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="d098-9e22-02e6-41cb">
+        <modifier type="set" value="0" field="c64e-5bd0-7d2b-795a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6381,7 +6437,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="d098-9e22-02e6-41cb">
+        <modifier type="increment" value="1" field="c64e-5bd0-7d2b-795a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6403,7 +6459,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="d098-9e22-02e6-41cb">
+        <modifier type="increment" value="1" field="c64e-5bd0-7d2b-795a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6436,7 +6492,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="a5bf-97f2-e1b1-b652" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0b56-d9cb-0684-a40f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="bf40-f7c4-5332-dd20" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6547,7 +6603,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="0b56-d9cb-0684-a40f">
+        <modifier type="set" value="0" field="bf40-f7c4-5332-dd20">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6557,7 +6613,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0b56-d9cb-0684-a40f">
+        <modifier type="increment" value="1" field="bf40-f7c4-5332-dd20">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6579,7 +6635,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0b56-d9cb-0684-a40f">
+        <modifier type="increment" value="1" field="bf40-f7c4-5332-dd20">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6615,7 +6671,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="fdf8-c880-9d3e-358d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7ca2-3b92-52d3-0f90" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="609f-9081-0f94-a032" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6722,7 +6778,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="7ca2-3b92-52d3-0f90">
+        <modifier type="set" value="0" field="609f-9081-0f94-a032">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6732,7 +6788,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7ca2-3b92-52d3-0f90">
+        <modifier type="increment" value="1" field="609f-9081-0f94-a032">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6754,7 +6810,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7ca2-3b92-52d3-0f90">
+        <modifier type="increment" value="1" field="609f-9081-0f94-a032">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6790,7 +6846,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="ba72-6374-8e56-32c8" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="03f6-df3d-0a7a-cae5" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6ea2-5acf-5964-f99f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6897,7 +6953,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="03f6-df3d-0a7a-cae5">
+        <modifier type="set" value="0" field="6ea2-5acf-5964-f99f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6907,7 +6963,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="03f6-df3d-0a7a-cae5">
+        <modifier type="increment" value="1" field="6ea2-5acf-5964-f99f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6929,7 +6985,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="03f6-df3d-0a7a-cae5">
+        <modifier type="increment" value="1" field="6ea2-5acf-5964-f99f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6965,7 +7021,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="bd84-f519-a035-f6b2" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4eaa-8d1b-373e-1fd5" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="aa4d-1400-6b70-ba17" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7072,7 +7128,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="4eaa-8d1b-373e-1fd5">
+        <modifier type="set" value="0" field="aa4d-1400-6b70-ba17">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7082,7 +7138,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4eaa-8d1b-373e-1fd5">
+        <modifier type="increment" value="1" field="aa4d-1400-6b70-ba17">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7104,7 +7160,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4eaa-8d1b-373e-1fd5">
+        <modifier type="increment" value="1" field="aa4d-1400-6b70-ba17">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7139,7 +7195,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="8ed8-a50f-ec24-eb61" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5dd6-7b0b-0b22-f696" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="75bd-5c40-940b-499f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7246,7 +7302,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="5dd6-7b0b-0b22-f696">
+        <modifier type="set" value="0" field="75bd-5c40-940b-499f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7256,7 +7312,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5dd6-7b0b-0b22-f696">
+        <modifier type="increment" value="1" field="75bd-5c40-940b-499f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7278,7 +7334,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5dd6-7b0b-0b22-f696">
+        <modifier type="increment" value="1" field="75bd-5c40-940b-499f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7313,7 +7369,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="6dea-f4b9-75be-f1f9" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="377a-60bb-b5fa-a8b1" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9a74-e993-bb84-efaa" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7420,7 +7476,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="377a-60bb-b5fa-a8b1">
+        <modifier type="set" value="0" field="9a74-e993-bb84-efaa">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7430,7 +7486,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="377a-60bb-b5fa-a8b1">
+        <modifier type="increment" value="1" field="9a74-e993-bb84-efaa">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7452,7 +7508,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="377a-60bb-b5fa-a8b1">
+        <modifier type="increment" value="1" field="9a74-e993-bb84-efaa">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7488,7 +7544,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="6356-ee53-f058-c54a" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="863d-94c7-22bd-597f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="bc85-9c01-bb1f-bc5f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7595,7 +7651,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="863d-94c7-22bd-597f">
+        <modifier type="set" value="0" field="bc85-9c01-bb1f-bc5f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7605,7 +7661,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="863d-94c7-22bd-597f">
+        <modifier type="increment" value="1" field="bc85-9c01-bb1f-bc5f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7627,7 +7683,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="863d-94c7-22bd-597f">
+        <modifier type="increment" value="1" field="bc85-9c01-bb1f-bc5f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7663,7 +7719,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="00e6-095f-2956-155e" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="315a-ffdd-41f0-762a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b210-c269-c83c-5491" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7770,7 +7826,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="315a-ffdd-41f0-762a">
+        <modifier type="set" value="0" field="b210-c269-c83c-5491">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7780,7 +7836,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="315a-ffdd-41f0-762a">
+        <modifier type="increment" value="1" field="b210-c269-c83c-5491">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7802,7 +7858,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="315a-ffdd-41f0-762a">
+        <modifier type="increment" value="1" field="b210-c269-c83c-5491">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7838,7 +7894,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="345c-e6e5-25a1-9d5b" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2a67-b74a-4887-7413" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="606e-201d-6d55-00c0" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7945,7 +8001,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="2a67-b74a-4887-7413">
+        <modifier type="set" value="0" field="606e-201d-6d55-00c0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7955,7 +8011,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2a67-b74a-4887-7413">
+        <modifier type="increment" value="1" field="606e-201d-6d55-00c0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7974,10 +8030,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2a67-b74a-4887-7413">
+        <modifier type="increment" value="1" field="606e-201d-6d55-00c0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7996,7 +8052,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -8013,7 +8069,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="30cc-ef54-abe6-d55d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a172-0509-6e03-c1ea" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="233c-27c7-c65e-552d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8120,7 +8176,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="a172-0509-6e03-c1ea">
+        <modifier type="set" value="0" field="233c-27c7-c65e-552d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8130,7 +8186,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a172-0509-6e03-c1ea">
+        <modifier type="increment" value="1" field="233c-27c7-c65e-552d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8152,7 +8208,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a172-0509-6e03-c1ea">
+        <modifier type="increment" value="1" field="233c-27c7-c65e-552d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8188,7 +8244,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="f81d-1ecf-99f0-e1f8" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2750-e481-1dd9-46bc" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="79de-43e4-ed6b-4591" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8295,7 +8351,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="2750-e481-1dd9-46bc">
+        <modifier type="set" value="0" field="79de-43e4-ed6b-4591">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8305,7 +8361,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2750-e481-1dd9-46bc">
+        <modifier type="increment" value="1" field="79de-43e4-ed6b-4591">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8324,10 +8380,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2750-e481-1dd9-46bc">
+        <modifier type="increment" value="1" field="79de-43e4-ed6b-4591">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8346,7 +8402,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -8364,7 +8420,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="960d-3cbd-12d6-af43" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3809-288b-58fe-bcb7" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d95c-9086-5191-e5cf" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8471,7 +8527,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="3809-288b-58fe-bcb7">
+        <modifier type="set" value="0" field="d95c-9086-5191-e5cf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8481,7 +8537,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3809-288b-58fe-bcb7">
+        <modifier type="increment" value="1" field="d95c-9086-5191-e5cf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8500,10 +8556,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3809-288b-58fe-bcb7">
+        <modifier type="increment" value="1" field="d95c-9086-5191-e5cf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8522,7 +8578,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -8539,7 +8595,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="3348-579f-d382-842e" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6f13-284d-7d04-da2e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="851e-cf3e-b0e1-2e8f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8646,7 +8702,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="6f13-284d-7d04-da2e">
+        <modifier type="set" value="0" field="851e-cf3e-b0e1-2e8f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8656,7 +8712,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6f13-284d-7d04-da2e">
+        <modifier type="increment" value="1" field="851e-cf3e-b0e1-2e8f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8675,10 +8731,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6f13-284d-7d04-da2e">
+        <modifier type="increment" value="1" field="851e-cf3e-b0e1-2e8f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8697,7 +8753,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -9005,7 +9061,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="2038-657d-4a06-60ad" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9b6d-a9e5-1917-6875" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8705-09c9-664a-86dc" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9112,7 +9168,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="9b6d-a9e5-1917-6875">
+        <modifier type="set" value="0" field="8705-09c9-664a-86dc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9122,7 +9178,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9b6d-a9e5-1917-6875">
+        <modifier type="increment" value="1" field="8705-09c9-664a-86dc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9144,7 +9200,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9b6d-a9e5-1917-6875">
+        <modifier type="increment" value="1" field="8705-09c9-664a-86dc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9633,7 +9689,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="5529-3c1f-ba3f-79fe" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="38c3-6dcb-2bd8-9d5c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a532-a517-e691-dfc3" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9740,7 +9796,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="38c3-6dcb-2bd8-9d5c">
+        <modifier type="set" value="0" field="a532-a517-e691-dfc3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9750,7 +9806,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="38c3-6dcb-2bd8-9d5c">
+        <modifier type="increment" value="1" field="a532-a517-e691-dfc3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9769,10 +9825,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="38c3-6dcb-2bd8-9d5c">
+        <modifier type="increment" value="1" field="a532-a517-e691-dfc3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9791,7 +9847,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -9808,7 +9864,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="0263-151c-62fd-c8c0" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f53b-97fb-786e-f865" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="dd0c-e244-9d1d-13fb" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9915,7 +9971,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="f53b-97fb-786e-f865">
+        <modifier type="set" value="0" field="dd0c-e244-9d1d-13fb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9925,7 +9981,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f53b-97fb-786e-f865">
+        <modifier type="increment" value="1" field="dd0c-e244-9d1d-13fb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9947,7 +10003,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f53b-97fb-786e-f865">
+        <modifier type="increment" value="1" field="dd0c-e244-9d1d-13fb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9983,7 +10039,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="8d0c-bd49-23fb-6ea7" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2d4f-11f2-48fb-31fc" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e25e-c083-793d-e691" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10090,7 +10146,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="2d4f-11f2-48fb-31fc">
+        <modifier type="set" value="0" field="e25e-c083-793d-e691">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10100,7 +10156,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2d4f-11f2-48fb-31fc">
+        <modifier type="increment" value="1" field="e25e-c083-793d-e691">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10119,10 +10175,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2d4f-11f2-48fb-31fc">
+        <modifier type="increment" value="1" field="e25e-c083-793d-e691">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10141,7 +10197,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -10158,7 +10214,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="c201-d190-bbe2-2aa1" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="47a7-7b27-4bdf-5c14" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e1f1-c585-c09e-82ae" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10265,7 +10321,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="47a7-7b27-4bdf-5c14">
+        <modifier type="set" value="0" field="e1f1-c585-c09e-82ae">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10275,7 +10331,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="47a7-7b27-4bdf-5c14">
+        <modifier type="increment" value="1" field="e1f1-c585-c09e-82ae">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10294,10 +10350,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="47a7-7b27-4bdf-5c14">
+        <modifier type="increment" value="1" field="e1f1-c585-c09e-82ae">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10316,7 +10372,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -10324,7 +10380,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
     <entryLink import="true" name="Gigantic Spawn of Chaos" hidden="false" id="196a-ebd6-dddd-65cf" type="selectionEntry" targetId="375a-3b64-713e-8b34">
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="7980-c041-2559-53c7" targetId="2bfe-5863-46fe-d284" primary="true"/>
-        <categoryLink targetId="fec1-537a-bbeb-7926" id="fbf3-9e19-afaf-5d07" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="fbf3-9e19-afaf-5d07" targetId="fec1-537a-bbeb-7926" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="e96f-c3fb-75da-0abd" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3dd5-2489-6cad-c07c"/>
@@ -10334,7 +10393,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="ad3d-1fa5-fb04-6bc4" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c9a0-62a8-e82a-ed53" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3331-76f0-574b-4d20" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10473,7 +10532,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="c9a0-62a8-e82a-ed53">
+        <modifier type="set" value="0" field="3331-76f0-574b-4d20">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10483,7 +10542,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c9a0-62a8-e82a-ed53">
+        <modifier type="increment" value="1" field="3331-76f0-574b-4d20">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10502,10 +10561,10 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c9a0-62a8-e82a-ed53">
+        <modifier type="increment" value="1" field="3331-76f0-574b-4d20">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10524,7 +10583,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="3dd5-2489-6cad-c07c">
@@ -10547,7 +10606,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="5269-2fc1-6bf5-311b" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5d3b-dab0-3439-dd07" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3caf-96c5-f3bf-9656" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10654,7 +10713,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="5d3b-dab0-3439-dd07">
+        <modifier type="set" value="0" field="3caf-96c5-f3bf-9656">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10664,7 +10723,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5d3b-dab0-3439-dd07">
+        <modifier type="increment" value="1" field="3caf-96c5-f3bf-9656">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10686,7 +10745,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5d3b-dab0-3439-dd07">
+        <modifier type="increment" value="1" field="3caf-96c5-f3bf-9656">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10712,15 +10771,18 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
     </entryLink>
     <entryLink import="true" name="Kralmaw, The Prophet of Ruin" hidden="false" id="023a-33ca-0925-3e74" type="selectionEntry" targetId="231f-7ad1-bf13-ad42">
       <categoryLinks>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="6f23-e029-616c-20df" primary="false" name="Characters"/>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="b652-9f5b-b6de-06e8" primary="true" name="Named Characters"/>
-        <categoryLink targetId="2769-f211-d0d9-0c4b" id="5904-91b7-9446-3a23" primary="false" name="0-1 Beastlord, Great Bray-Shaman or Doombull per 1,000 points"/>
+        <categoryLink name="Characters" hidden="false" id="6f23-e029-616c-20df" targetId="a4cc-15c9-cfae-1b3b" primary="false"/>
+        <categoryLink name="Named Characters" hidden="false" id="b652-9f5b-b6de-06e8" targetId="3ba8-a41e-b6ae-d4ba" primary="true"/>
+        <categoryLink name="0-1 Beastlord, Great Bray-Shaman or Doombull per 1,000 points" hidden="false" id="5904-91b7-9446-3a23" targetId="2769-f211-d0d9-0c4b" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="9b35-8d35-39bc-2d35" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7121-44bf-7937-8ce2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c774-c8a8-7087-dde9" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="adf8-e914-5bc9-85f2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10782,7 +10844,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="c774-c8a8-7087-dde9">
+        <modifier type="set" value="0" field="adf8-e914-5bc9-85f2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10792,7 +10854,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c774-c8a8-7087-dde9">
+        <modifier type="increment" value="1" field="adf8-e914-5bc9-85f2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10814,7 +10876,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c774-c8a8-7087-dde9">
+        <modifier type="increment" value="1" field="adf8-e914-5bc9-85f2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10847,7 +10909,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9759-c43e-bdce-f68b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2201-2be3-428c-605b" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0c6b-6475-0a42-2831" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10909,7 +10971,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="2201-2be3-428c-605b">
+        <modifier type="set" value="0" field="0c6b-6475-0a42-2831">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10919,7 +10981,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2201-2be3-428c-605b">
+        <modifier type="increment" value="1" field="0c6b-6475-0a42-2831">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10941,7 +11003,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2201-2be3-428c-605b">
+        <modifier type="increment" value="1" field="0c6b-6475-0a42-2831">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10977,7 +11039,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="07b8-9a37-d80d-3660" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9301-048c-4e2b-f285" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1972-d2b7-6282-4c68" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11084,7 +11146,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="9301-048c-4e2b-f285">
+        <modifier type="set" value="0" field="1972-d2b7-6282-4c68">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11094,7 +11156,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9301-048c-4e2b-f285">
+        <modifier type="increment" value="1" field="1972-d2b7-6282-4c68">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11116,7 +11178,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9301-048c-4e2b-f285">
+        <modifier type="increment" value="1" field="1972-d2b7-6282-4c68">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11149,7 +11211,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="40e4-b855-9df2-3991" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c08a-ca02-fa2d-d414" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7957-33b2-cea3-4706" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11211,7 +11273,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="c08a-ca02-fa2d-d414">
+        <modifier type="set" value="0" field="7957-33b2-cea3-4706">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11221,7 +11283,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c08a-ca02-fa2d-d414">
+        <modifier type="increment" value="1" field="7957-33b2-cea3-4706">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11243,7 +11305,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c08a-ca02-fa2d-d414">
+        <modifier type="increment" value="1" field="7957-33b2-cea3-4706">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11315,9 +11377,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         </modifier>
         <modifier type="floor" value="1" field="7f2e-910f-6226-d937">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="7f2e-910f-6226-d937">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -11373,9 +11432,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         </modifier>
         <modifier type="floor" value="1" field="f816-229f-f2b0-a2e0">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="f816-229f-f2b0-a2e0">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -11418,9 +11474,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="b308-1c39-08bb-6619">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="b308-1c39-08bb-6619">
           <comment>Battle march</comment>
@@ -11469,9 +11522,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         </modifier>
         <modifier type="floor" value="1" field="e5a7-c2a7-6bd6-c3d3">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="e5a7-c2a7-6bd6-c3d3">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -11514,9 +11564,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="de20-a3dd-af6b-7a48">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="de20-a3dd-af6b-7a48">
           <comment>Battle march</comment>
@@ -11565,9 +11612,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         </modifier>
         <modifier type="floor" value="1" field="7538-0117-da33-9434">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="7538-0117-da33-9434">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -11613,9 +11657,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         </modifier>
         <modifier type="floor" value="1" field="d862-af9a-8cc7-760b">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="d862-af9a-8cc7-760b">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -11658,9 +11699,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="0957-5170-784c-cae3">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="0957-5170-784c-cae3">
           <comment>Battle march</comment>
@@ -11711,9 +11749,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="69df-18a5-c722-d313">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="69df-18a5-c722-d313">
           <comment>Battle march</comment>
@@ -11769,9 +11804,6 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="9799-216b-d37f-aeb5">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="9799-216b-d37f-aeb5">
           <comment>Battle march</comment>

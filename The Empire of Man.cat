@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7b8f-602e-29cd-5786" name="The Empire of Man" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="22" revision="123" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7b8f-602e-29cd-5786" name="The Empire of Man" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="22" revision="130" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
   <sharedProfiles>
     <profile name="Prayers of Ulric" hidden="false" id="d1f4-5e82-b7ed-3ad0" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" page="53" publicationId="8b8d-8fc4-559e-87b1">
       <characteristics>
@@ -246,8 +246,8 @@ This weapon does not have a 360° line of sight, it can only shoot into the Stea
     <profile name="Helstorm Rocket Battery" hidden="false" id="4f4b-796c-5654-e56d" typeId="a378-c633-912d-11ce" typeName="Weapon" page="73" publicationId="8b8d-8fc4-559e-87b1">
       <characteristics>
         <characteristic name="R" typeId="2360-c777-5e07-ed58">12-48&quot;</characteristic>
-        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">3</characteristic>
-        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">4</characteristic>
+        <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-2</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Cumbersome, Helstorm, Move or Shoot</characteristic>
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">This weapon uses a number of 3&quot; blast templates and the Black Powder Misfire table.</characteristic>
       </characteristics>
@@ -974,7 +974,7 @@ During the Shooting phase, each member of the crew equipped with a missile weapo
     </profile>
     <profile name="Skilled Duellist" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="b124-1012-3f99-5a3d">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">Should Harald Gemunsen slay an enemy in a challenge during a turn in which he charged, he may immediately issue a second challenge. If this challenge is accepted, it is fought immediatly, meaning Harald (but not his mount) may fight two challenges during a single round of combat.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Should Harald Gemunsen slay an enemy in a challenge during a turn in which he charged, he may immediately issue a second challenge. If this challenge is accepted, it is fought immediately, meaning Harald (but not his mount) may fight two challenges during a single round of combat.</characteristic>
       </characteristics>
     </profile>
     <profile name="Beast Reaver" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="721c-e17e-347e-7301">
@@ -1064,6 +1064,11 @@ Note that any special rules granted by these upgrades do not apply to the models
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Once per game, each detachment of State Missile troops in a City-state of Nuln army can fire with one additional rank.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Veteran Outriders" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="356b-3746-8c7f-4cd4">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">0-1 unit of Outriders in a City-state of Nuln army may be designated ‘Veteran Outriders’. Missile weapons wielded by Veteran Outriders are not subject to the Ponderous special rule.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Barded Warhorse" hidden="false" id="e0b3-b528-aa3e-dbbb" subType="mount" collective="true">
@@ -1147,9 +1152,21 @@ Note that any special rules granted by these upgrades do not apply to the models
         <infoLink name="Demigryph" hidden="false" type="profile" id="1088-cfca-e749-b117" targetId="9d51-16a2-d87-1001">
           <modifiers>
             <modifier type="set" value="(+1)" field="83ed-7b82-bf1f-e558">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4cc-15c9-cfae-1b3b" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7273-83e0-822f-d49d" shared="true" childName="Captain of the Empire"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9eed-de6c-1c66-e490" shared="true" childName="Grand Cathay - Jade Fleet"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -1221,6 +1238,7 @@ Note that any special rules granted by these upgrades do not apply to the models
               </modifiers>
             </infoLink>
             <infoLink name="Swiftstride" hidden="false" type="profile" id="fb29-b181-f767-b18a" targetId="dc91-48b3-3696-217"/>
+            <infoLink name="Extra Note on Skirmisher but too lazy to make a rule for individual models billion dollar company" id="dae9-f9cf-8706-70f4" hidden="false" type="profile" targetId="9be9-5b4c-8a52-83f0"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1399,8 +1417,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1553,8 +1571,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1737,8 +1755,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1902,8 +1920,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2049,8 +2067,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2194,8 +2212,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2334,8 +2352,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2474,8 +2492,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3125,19 +3143,46 @@ Note that any special rules granted by these upgrades do not apply to the models
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="b6d3-9e54-f8cb-d233" includeChildSelections="true"/>
               </repeats>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="bb42-d3cc-d787-d2bb">
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="a944-ccf4-3862-6ac9" includeChildSelections="true"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="bb42-d3cc-d787-d2bb">
+              <comment>Battle march</comment>
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="dfc9-079c-28ce-2f3b" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3413,6 +3458,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <infoLink name="Levies" hidden="false" type="profile" id="b48f-9a8b-59a9-84dc" targetId="8cc3-d6f5-da17-6600"/>
             <infoLink name="Open Order" hidden="false" type="profile" id="c54-6515-342-d88d" targetId="5b67-8535-146c-7cea"/>
             <infoLink name="Warband" hidden="false" type="profile" id="cca1-8d09-253d-7812" targetId="505f-e12d-2e36-31d0"/>
+            <infoLink name="Furious Charge" id="4f76-6b0d-3796-d647" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -3637,22 +3683,49 @@ Note that any special rules granted by these upgrades do not apply to the models
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="996b-7ce4-e8eb-915c">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="996b-7ce4-e8eb-915c">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="996b-7ce4-e8eb-915c">
+              <comment>Battle march</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="dfe0-d659-e812-4a91" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3744,6 +3817,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <infoLink name="Regimental Unit" hidden="false" type="profile" id="8e52-d428-8f47-2c96" targetId="7424-ec43-7581-965a"/>
             <infoLink name="Close Order" hidden="false" type="profile" id="6c93-87c6-fbf8-ae2d" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Stubborn" hidden="false" type="profile" id="eb3c-1b94-5c47-a620" targetId="e351-bbd6-f470-b604"/>
+            <infoLink name="Furious Charge" id="99d1-9f7c-9877-659e" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -3904,7 +3978,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="1426-d7fd-146-d295" targetId="193c-4d0d-de6b-bbb1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="16"/>
+            <cost name="pts" typeId="points" value="15"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Cavalry" hidden="false" id="798-aa1f-735b-73f6" targetId="600c-7d08-5be1-fe0c" primary="false"/>
@@ -3994,9 +4068,17 @@ Note that any special rules granted by these upgrades do not apply to the models
                   <repeats>
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="9519-d9e7-fd1-31cf" includeChildSelections="true"/>
                   </repeats>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="increment" value="2" field="points">
                   <repeats>
@@ -4007,14 +4089,33 @@ Note that any special rules granted by these upgrades do not apply to the models
                   <repeats>
                     <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="1e51-d589-fc75-4be9" includeChildSelections="true"/>
                   </repeats>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="floor" value="1" field="aa47-d617-5907-ac7d">
+                  <comment>Battle march</comment>
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="f11e-1d66-0f9d-4edd" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4089,6 +4190,23 @@ Note that any special rules granted by these upgrades do not apply to the models
             <categoryLink name="Light Cavalry" hidden="false" id="6efa-d5e3-6ade-524e" targetId="600c-7d08-5be1-fe0c" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="782c-7a83-29b-4260" targetId="may-have-armour"/>
           </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Veteran Outriders" hidden="true" id="173f-107c-785f-5129" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1942-f040-fe1e-137c"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Veteran Outriders" id="3381-59e1-4e7a-f8a2" hidden="false" type="profile" targetId="356b-3746-8c7f-4cd4"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7706-6528-7747-65a2" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4169,6 +4287,13 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="Faction: The Empire of Man" hidden="false" id="8940-bf95-d9b7-acea" primary="false" targetId="e5f1-f9ee-d533-b2dc"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="71d6-3c4f-f6e3-819d" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="173f-107c-785f-5129" shared="true" childName="Veteran Outriders" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Empire Knights" hidden="false" id="1631-bc82-ad96-3c19">
       <profiles>
@@ -4207,7 +4332,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="7e9d-9dec-d053-e9dd" targetId="193c-4d0d-de6b-bbb1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="21"/>
+            <cost name="pts" typeId="points" value="20"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Equipment" id="f239-5060-bd62-f86d" hidden="false" sortIndex="4">
@@ -4310,8 +4435,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4366,19 +4491,46 @@ Note that any special rules granted by these upgrades do not apply to the models
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="c5b6-ad49-c6ff-73c4" includeChildSelections="true"/>
               </repeats>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="869d-c545-905c-65a7">
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="83ac-8fdf-d390-bc18" includeChildSelections="true"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="869d-c545-905c-65a7">
+              <comment>Battle march</comment>
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="3c11-acd1-66ff-2c3e" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4512,7 +4664,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="f26f-cedd-d19-f018" targetId="193c-4d0d-de6b-bbb1"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="29"/>
+            <cost name="pts" typeId="points" value="28"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Stubborn" hidden="false" id="53d7-d3eb-af46-32ac" collective="true" sortIndex="5">
@@ -4628,8 +4780,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4875,8 +5027,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5738,8 +5890,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5879,8 +6031,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -6077,8 +6229,8 @@ Note that any special rules granted by these upgrades do not apply to the models
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7131,16 +7283,38 @@ Note that any special rules granted by these upgrades do not apply to the models
           <repeats>
             <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
           </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" value="1" field="4f34-92cc-ecf1-c186">
           <repeats>
             <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
           </repeats>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="floor" value="1" field="4f34-92cc-ecf1-c186">
+          <comment>Battle march</comment>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7148,6 +7322,11 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fe3-c96f-5ca1-190a"/>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4f34-92cc-ecf1-c186" includeChildSelections="true"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="60ef-85f1-4894-4a72" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Nuln State Troops" hidden="false" id="079c-a63e-1ece-18e2">
       <selectionEntries>
@@ -7393,10 +7572,21 @@ Note that any special rules granted by these upgrades do not apply to the models
                             <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="4c94-302d-f28e-5a4f" includeChildSelections="true"/>
                           </repeats>
                         </modifier>
+                        <modifier type="floor" value="1" field="f0c1-c71a-e8f8-0f39">
+                          <comment>Battle march</comment>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                          </conditions>
+                        </modifier>
                       </modifiers>
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="434b-7499-76dd-6be5" targetId="27c9-52f0-c942-681e" primary="false">
+                          <comment>Battle March Category</comment>
+                        </categoryLink>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -7928,10 +8118,21 @@ Note that any special rules granted by these upgrades do not apply to the models
                             <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="54a4-8a12-ce5b-73c7" includeChildSelections="true"/>
                           </repeats>
                         </modifier>
+                        <modifier type="floor" value="1" field="2e2b-e542-9980-40ee">
+                          <comment>Battle march</comment>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                          </conditions>
+                        </modifier>
                       </modifiers>
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="3f5f-0201-891e-5dc8" targetId="27c9-52f0-c942-681e" primary="false">
+                          <comment>Battle March Category</comment>
+                        </categoryLink>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -7994,7 +8195,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="65f7-55ac-86a4-aff2" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8d75-3d8c-6ab2-bcdd" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="746e-dd79-6c2a-fe84" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8101,7 +8302,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="8d75-3d8c-6ab2-bcdd">
+        <modifier type="set" value="0" field="746e-dd79-6c2a-fe84">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8111,7 +8312,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="8d75-3d8c-6ab2-bcdd">
+        <modifier type="increment" value="1" field="746e-dd79-6c2a-fe84">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8133,7 +8334,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="8d75-3d8c-6ab2-bcdd">
+        <modifier type="increment" value="1" field="746e-dd79-6c2a-fe84">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8168,7 +8369,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="e7dd-a71e-74a7-60f8" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6f24-127a-3779-01d7" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2868-3dd3-48cd-34a9" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8275,7 +8476,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="6f24-127a-3779-01d7">
+        <modifier type="set" value="0" field="2868-3dd3-48cd-34a9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8285,7 +8486,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6f24-127a-3779-01d7">
+        <modifier type="increment" value="1" field="2868-3dd3-48cd-34a9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8307,7 +8508,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6f24-127a-3779-01d7">
+        <modifier type="increment" value="1" field="2868-3dd3-48cd-34a9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8342,7 +8543,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="3f2e-00f1-61a4-8df8" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d4f8-1d30-e686-a1a8" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="76e1-8883-a3ac-36d6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8449,7 +8650,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="d4f8-1d30-e686-a1a8">
+        <modifier type="set" value="0" field="76e1-8883-a3ac-36d6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8459,7 +8660,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="d4f8-1d30-e686-a1a8">
+        <modifier type="increment" value="1" field="76e1-8883-a3ac-36d6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8481,7 +8682,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="d4f8-1d30-e686-a1a8">
+        <modifier type="increment" value="1" field="76e1-8883-a3ac-36d6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8509,12 +8710,15 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="General or Grand Master" hidden="false" id="637-433f-ff93-ec70" targetId="1b32-75ff-27c4-6efb" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="aa9c-398-f5e5-b642" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="4e91-5604-fbb5-16dd" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4d6c-7ee5-350a-1fbd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="25e4-f1d2-0498-dd28" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9214-f941-bd0b-d882" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8576,7 +8780,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="25e4-f1d2-0498-dd28">
+        <modifier type="set" value="0" field="9214-f941-bd0b-d882">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8586,7 +8790,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="25e4-f1d2-0498-dd28">
+        <modifier type="increment" value="1" field="9214-f941-bd0b-d882">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8608,7 +8812,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="25e4-f1d2-0498-dd28">
+        <modifier type="increment" value="1" field="9214-f941-bd0b-d882">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8643,7 +8847,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="067d-e9bc-9960-6d04" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7c8c-2881-58f1-648b" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2bc9-e533-5bb2-8613" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8750,7 +8954,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="7c8c-2881-58f1-648b">
+        <modifier type="set" value="0" field="2bc9-e533-5bb2-8613">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8760,7 +8964,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7c8c-2881-58f1-648b">
+        <modifier type="increment" value="1" field="2bc9-e533-5bb2-8613">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8782,7 +8986,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7c8c-2881-58f1-648b">
+        <modifier type="increment" value="1" field="2bc9-e533-5bb2-8613">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8817,7 +9021,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4d7c-f11e-6a99-97c7" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4e1b-4d90-0f46-d839" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="093c-ba88-15ca-3938" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8924,7 +9128,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="4e1b-4d90-0f46-d839">
+        <modifier type="set" value="0" field="093c-ba88-15ca-3938">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8934,7 +9138,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4e1b-4d90-0f46-d839">
+        <modifier type="increment" value="1" field="093c-ba88-15ca-3938">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8956,7 +9160,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4e1b-4d90-0f46-d839">
+        <modifier type="increment" value="1" field="093c-ba88-15ca-3938">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8984,12 +9188,15 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="General or Grand Master" hidden="false" id="2f5d-4130-365b-f1d3" targetId="1b32-75ff-27c4-6efb" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="8fc5-d4c9-55d2-8dab" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="ad0a-40d8-61dd-9e66" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="87f5-b532-37c3-6e27" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="870c-3a05-45f0-719c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6389-3dcf-d18b-00d8" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9051,7 +9258,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="870c-3a05-45f0-719c">
+        <modifier type="set" value="0" field="6389-3dcf-d18b-00d8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9061,7 +9268,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="870c-3a05-45f0-719c">
+        <modifier type="increment" value="1" field="6389-3dcf-d18b-00d8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9083,7 +9290,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="870c-3a05-45f0-719c">
+        <modifier type="increment" value="1" field="6389-3dcf-d18b-00d8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9111,12 +9318,15 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="Lector or High Priest" hidden="false" id="b4d3-630d-2389-27d9" targetId="d8c1-2943-7e6f-52e1" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="e167-6bfc-a275-a5b9" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="ce55-0f93-a4f7-25f8" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5b43-be0f-5570-68e4" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9613-e783-daf2-4d7e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="55c9-99f3-dc81-f548" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9178,7 +9388,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="9613-e783-daf2-4d7e">
+        <modifier type="set" value="0" field="55c9-99f3-dc81-f548">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9188,7 +9398,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9613-e783-daf2-4d7e">
+        <modifier type="increment" value="1" field="55c9-99f3-dc81-f548">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9210,7 +9420,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9613-e783-daf2-4d7e">
+        <modifier type="increment" value="1" field="55c9-99f3-dc81-f548">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9245,7 +9455,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="da33-29ed-6e92-d3dc" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8275-5da6-ec5a-4943" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="60de-c1fb-a507-04e0" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9352,7 +9562,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="8275-5da6-ec5a-4943">
+        <modifier type="set" value="0" field="60de-c1fb-a507-04e0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9362,7 +9572,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="8275-5da6-ec5a-4943">
+        <modifier type="increment" value="1" field="60de-c1fb-a507-04e0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9384,7 +9594,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="8275-5da6-ec5a-4943">
+        <modifier type="increment" value="1" field="60de-c1fb-a507-04e0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9412,12 +9622,15 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="Lector or High Priest" hidden="false" id="f4fe-187a-3d48-e0d" targetId="d8c1-2943-7e6f-52e1" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="8916-6c08-d69-1706" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="845d-4078-6ca7-8bc6" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f5f4-9509-5e62-30d1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c2b2-ac4b-67c3-d13b" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8f9b-e172-ed40-2b47" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9479,7 +9692,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="c2b2-ac4b-67c3-d13b">
+        <modifier type="set" value="0" field="8f9b-e172-ed40-2b47">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9489,7 +9702,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c2b2-ac4b-67c3-d13b">
+        <modifier type="increment" value="1" field="8f9b-e172-ed40-2b47">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9511,7 +9724,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c2b2-ac4b-67c3-d13b">
+        <modifier type="increment" value="1" field="8f9b-e172-ed40-2b47">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9546,7 +9759,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="cd1b-5ba0-6b97-052d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7fa4-52e5-91d4-4420" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b2d3-d293-be6a-e064" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9653,7 +9866,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="7fa4-52e5-91d4-4420">
+        <modifier type="set" value="0" field="b2d3-d293-be6a-e064">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9663,7 +9876,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7fa4-52e5-91d4-4420">
+        <modifier type="increment" value="1" field="b2d3-d293-be6a-e064">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9685,7 +9898,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7fa4-52e5-91d4-4420">
+        <modifier type="increment" value="1" field="b2d3-d293-be6a-e064">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9720,7 +9933,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="3991-9218-beb3-b31e" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="40f5-4bfb-0d5a-8255" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="03d6-1ed7-3016-d58a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9827,7 +10040,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="40f5-4bfb-0d5a-8255">
+        <modifier type="set" value="0" field="03d6-1ed7-3016-d58a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9837,7 +10050,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="40f5-4bfb-0d5a-8255">
+        <modifier type="increment" value="1" field="03d6-1ed7-3016-d58a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9859,7 +10072,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="40f5-4bfb-0d5a-8255">
+        <modifier type="increment" value="1" field="03d6-1ed7-3016-d58a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9895,7 +10108,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d4ec-d0ea-6815-47c2" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="73b4-cee2-a67d-29ff" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b037-be4b-b785-0b5e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10002,7 +10215,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="73b4-cee2-a67d-29ff">
+        <modifier type="set" value="0" field="b037-be4b-b785-0b5e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10012,7 +10225,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="73b4-cee2-a67d-29ff">
+        <modifier type="increment" value="1" field="b037-be4b-b785-0b5e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10034,7 +10247,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="73b4-cee2-a67d-29ff">
+        <modifier type="increment" value="1" field="b037-be4b-b785-0b5e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10070,7 +10283,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="7260-fe96-5bf2-d5a6" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1eda-9fdf-24c9-f7f1" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2c40-9700-48dc-80d4" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10177,7 +10390,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="1eda-9fdf-24c9-f7f1">
+        <modifier type="set" value="0" field="2c40-9700-48dc-80d4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10187,7 +10400,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1eda-9fdf-24c9-f7f1">
+        <modifier type="increment" value="1" field="2c40-9700-48dc-80d4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10209,7 +10422,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1eda-9fdf-24c9-f7f1">
+        <modifier type="increment" value="1" field="2c40-9700-48dc-80d4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10245,7 +10458,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="e698-334b-5dcb-6724" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="14d7-ee8b-03ff-bc05" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="845d-7a1f-1a94-1784" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10352,7 +10565,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="14d7-ee8b-03ff-bc05">
+        <modifier type="set" value="0" field="845d-7a1f-1a94-1784">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10362,7 +10575,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="14d7-ee8b-03ff-bc05">
+        <modifier type="increment" value="1" field="845d-7a1f-1a94-1784">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10384,7 +10597,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="14d7-ee8b-03ff-bc05">
+        <modifier type="increment" value="1" field="845d-7a1f-1a94-1784">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10420,7 +10633,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="28f6-aefd-9e7e-d0ea" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7e11-55f3-b477-5de9" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9c3f-c46e-f465-ca34" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10527,7 +10740,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="7e11-55f3-b477-5de9">
+        <modifier type="set" value="0" field="9c3f-c46e-f465-ca34">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10537,7 +10750,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7e11-55f3-b477-5de9">
+        <modifier type="increment" value="1" field="9c3f-c46e-f465-ca34">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10559,7 +10772,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7e11-55f3-b477-5de9">
+        <modifier type="increment" value="1" field="9c3f-c46e-f465-ca34">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10595,7 +10808,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="3bc6-dbd3-f86c-03f8" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="07ac-2507-d17d-51b4" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3d7b-a971-d1d3-4c15" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10702,7 +10915,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="07ac-2507-d17d-51b4">
+        <modifier type="set" value="0" field="3d7b-a971-d1d3-4c15">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10712,7 +10925,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="07ac-2507-d17d-51b4">
+        <modifier type="increment" value="1" field="3d7b-a971-d1d3-4c15">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10734,7 +10947,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="07ac-2507-d17d-51b4">
+        <modifier type="increment" value="1" field="3d7b-a971-d1d3-4c15">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10770,7 +10983,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="ab61-93c1-a31c-0032" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="409d-2477-1584-f292" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5297-6d43-be60-b7f6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10877,7 +11090,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="409d-2477-1584-f292">
+        <modifier type="set" value="0" field="5297-6d43-be60-b7f6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10887,7 +11100,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="409d-2477-1584-f292">
+        <modifier type="increment" value="1" field="5297-6d43-be60-b7f6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10909,7 +11122,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="409d-2477-1584-f292">
+        <modifier type="increment" value="1" field="5297-6d43-be60-b7f6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10945,7 +11158,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4554-2229-0909-c53d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b9e8-2dce-67e9-c156" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1973-b3f7-bec1-360f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11052,7 +11265,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="b9e8-2dce-67e9-c156">
+        <modifier type="set" value="0" field="1973-b3f7-bec1-360f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11062,7 +11275,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="b9e8-2dce-67e9-c156">
+        <modifier type="increment" value="1" field="1973-b3f7-bec1-360f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11081,10 +11294,10 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="b9e8-2dce-67e9-c156">
+        <modifier type="increment" value="1" field="1973-b3f7-bec1-360f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11103,7 +11316,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -11120,7 +11333,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="0775-99b5-d541-d01d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ee56-d4c2-2232-643e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cb41-9e3f-c3c6-4418" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11227,7 +11440,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="ee56-d4c2-2232-643e">
+        <modifier type="set" value="0" field="cb41-9e3f-c3c6-4418">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11237,7 +11450,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ee56-d4c2-2232-643e">
+        <modifier type="increment" value="1" field="cb41-9e3f-c3c6-4418">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11259,7 +11472,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ee56-d4c2-2232-643e">
+        <modifier type="increment" value="1" field="cb41-9e3f-c3c6-4418">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11295,7 +11508,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="0c1b-7ad5-bd64-ec6a" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="905b-99f8-7464-4125" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="61f9-bd21-195b-0954" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11402,7 +11615,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="905b-99f8-7464-4125">
+        <modifier type="set" value="0" field="61f9-bd21-195b-0954">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11412,7 +11625,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="905b-99f8-7464-4125">
+        <modifier type="increment" value="1" field="61f9-bd21-195b-0954">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11434,7 +11647,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="905b-99f8-7464-4125">
+        <modifier type="increment" value="1" field="61f9-bd21-195b-0954">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11470,7 +11683,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="f57b-7102-f6fb-a36d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0e66-2670-94e5-bfbc" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c706-51e9-767a-645b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11577,7 +11790,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="0e66-2670-94e5-bfbc">
+        <modifier type="set" value="0" field="c706-51e9-767a-645b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11587,7 +11800,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0e66-2670-94e5-bfbc">
+        <modifier type="increment" value="1" field="c706-51e9-767a-645b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11609,7 +11822,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0e66-2670-94e5-bfbc">
+        <modifier type="increment" value="1" field="c706-51e9-767a-645b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11637,6 +11850,9 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="dd95-650d-1c48-13c0" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="260e-1750-5cca-c297" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="6927-ea82-f7ce-cb36" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="8c6c-ae4b-7cb4-117c">
@@ -11728,7 +11944,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="85ff-d9c8-d140-fb2b">
+        <modifier type="set" value="0" field="4371-e7dd-4c3d-ee65">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11738,7 +11954,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="85ff-d9c8-d140-fb2b">
+        <modifier type="increment" value="1" field="4371-e7dd-4c3d-ee65">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11760,7 +11976,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="85ff-d9c8-d140-fb2b">
+        <modifier type="increment" value="1" field="4371-e7dd-4c3d-ee65">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11794,7 +12010,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c464-8c69-3e15-eb4b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="85ff-d9c8-d140-fb2b" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4371-e7dd-4c3d-ee65" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11811,7 +12027,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="8267-b685-f065-74df" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0681-880b-28b9-9abf" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2e57-19fc-b387-e49a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11918,7 +12134,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="0681-880b-28b9-9abf">
+        <modifier type="set" value="0" field="2e57-19fc-b387-e49a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11928,7 +12144,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0681-880b-28b9-9abf">
+        <modifier type="increment" value="1" field="2e57-19fc-b387-e49a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11950,7 +12166,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0681-880b-28b9-9abf">
+        <modifier type="increment" value="1" field="2e57-19fc-b387-e49a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11980,7 +12196,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3eca-d0cb-4a05-b49f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8238-4b9e-76cb-860c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7bc6-fe6e-90e9-2190" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12047,7 +12263,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="8238-4b9e-76cb-860c">
+        <modifier type="set" value="0" field="7bc6-fe6e-90e9-2190">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12057,7 +12273,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="8238-4b9e-76cb-860c">
+        <modifier type="increment" value="1" field="7bc6-fe6e-90e9-2190">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12076,10 +12292,10 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="8238-4b9e-76cb-860c">
+        <modifier type="increment" value="1" field="7bc6-fe6e-90e9-2190">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12098,7 +12314,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="8d0a-197-95fa-b804">
@@ -12111,18 +12327,24 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="d674-af69-c7a3-ad83" targetId="2bfe-5863-46fe-d284" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="6897-57f0-12d7-ffb5" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="c8e2-1151-e1dc-5be6" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Great Cannon" hidden="false" type="selectionEntry" id="5f61-c8c1-b8b5-b909" targetId="1a5c-f654-806a-a64d">
       <categoryLinks>
         <categoryLink name="Great Cannon or Mortar" hidden="false" id="fe01-be3c-1ba6-f90" targetId="a37-c139-d031-7393" primary="false"/>
         <categoryLink name="Special" hidden="false" id="393e-a861-edee-e226" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="d869-078b-9439-3dfe" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6a68-6158-88f0-90d1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e4c7-3489-0496-3f3c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="bb99-26be-3e1c-5b17" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12184,7 +12406,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="e4c7-3489-0496-3f3c">
+        <modifier type="set" value="0" field="bb99-26be-3e1c-5b17">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12194,7 +12416,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="e4c7-3489-0496-3f3c">
+        <modifier type="increment" value="1" field="bb99-26be-3e1c-5b17">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12216,7 +12438,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="e4c7-3489-0496-3f3c">
+        <modifier type="increment" value="1" field="bb99-26be-3e1c-5b17">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12244,12 +12466,15 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="Volley Gun or Rocket Battery" hidden="false" id="a169-224b-b569-48f5" targetId="4672-fd87-b5c8-1269" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="fd4e-2fb3-7468-6247" targetId="2bfe-5863-46fe-d284" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="8662-276c-c874-6e45" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c0e2-920c-9264-e25a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="34ce-9ea5-229b-558b" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="580a-ef41-95f1-87ef" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12311,7 +12536,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="34ce-9ea5-229b-558b">
+        <modifier type="set" value="0" field="580a-ef41-95f1-87ef">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12321,7 +12546,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="34ce-9ea5-229b-558b">
+        <modifier type="increment" value="1" field="580a-ef41-95f1-87ef">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12340,10 +12565,10 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="34ce-9ea5-229b-558b">
+        <modifier type="increment" value="1" field="580a-ef41-95f1-87ef">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12362,7 +12587,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -12371,12 +12596,15 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="Volley Gun or Rocket Battery" hidden="false" id="8e5b-253f-f7d8-df2" targetId="4672-fd87-b5c8-1269" primary="false"/>
         <categoryLink name="Rare" hidden="false" id="f9f4-84c2-a400-a664" targetId="2bfe-5863-46fe-d284" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="6241-1d33-d764-0477" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2114-2f01-f503-29fd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f0ca-29fb-d062-72b5" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="46ba-6fa6-14aa-6fa1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12438,7 +12666,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="f0ca-29fb-d062-72b5">
+        <modifier type="set" value="0" field="46ba-6fa6-14aa-6fa1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12448,7 +12676,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f0ca-29fb-d062-72b5">
+        <modifier type="increment" value="1" field="46ba-6fa6-14aa-6fa1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12467,10 +12695,10 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f0ca-29fb-d062-72b5">
+        <modifier type="increment" value="1" field="46ba-6fa6-14aa-6fa1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12489,7 +12717,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -12498,12 +12726,15 @@ Note that any special rules granted by these upgrades do not apply to the models
       <categoryLinks>
         <categoryLink name="Great Cannon or Mortar" hidden="false" id="6f1e-4c70-88b1-2a42" targetId="a37-c139-d031-7393" primary="false"/>
         <categoryLink name="Special" hidden="false" id="d15b-b355-79ab-3b3a" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="06f5-2778-1d22-e83b" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="dfb8-5cf2-d063-3270" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1cd1-fc2c-5c90-f968" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8436-ff67-761a-db69" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12565,7 +12796,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="1cd1-fc2c-5c90-f968">
+        <modifier type="set" value="0" field="8436-ff67-761a-db69">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12575,7 +12806,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1cd1-fc2c-5c90-f968">
+        <modifier type="increment" value="1" field="8436-ff67-761a-db69">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12597,7 +12828,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1cd1-fc2c-5c90-f968">
+        <modifier type="increment" value="1" field="8436-ff67-761a-db69">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12623,15 +12854,18 @@ Note that any special rules granted by these upgrades do not apply to the models
     </entryLink>
     <entryLink import="true" name="Empire Road Wardens" hidden="false" id="0ed4-4864-37cf-3f31" type="selectionEntry" targetId="fa7d-66d7-a667-6bfa">
       <categoryLinks>
-        <categoryLink targetId="fec1-537a-bbeb-7926" id="8a9c-a55a-dfa8-9c2a" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
-        <categoryLink targetId="633f-f67a-1b6a-d203" id="7338-ee49-96cc-c8a7" primary="true" name="Special"/>
+        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="8a9c-a55a-dfa8-9c2a" targetId="fec1-537a-bbeb-7926" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="7338-ee49-96cc-c8a7" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="5897-e23d-77ca-56e0" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="bf23-809f-e2f8-0175" includeChildSelections="true"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5309-a603-482b-a763" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3d91-c008-dc4c-0977" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a349-ab3c-cdf5-ad8d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12725,7 +12959,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="3d91-c008-dc4c-0977">
+        <modifier type="set" value="0" field="a349-ab3c-cdf5-ad8d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12735,7 +12969,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3d91-c008-dc4c-0977">
+        <modifier type="increment" value="1" field="a349-ab3c-cdf5-ad8d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12757,7 +12991,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3d91-c008-dc4c-0977">
+        <modifier type="increment" value="1" field="a349-ab3c-cdf5-ad8d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12799,7 +13033,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="730a-4394-4995-8948" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7293-9a5f-8cac-b485" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a01e-a69e-7273-1b79" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12906,7 +13140,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="7293-9a5f-8cac-b485">
+        <modifier type="set" value="0" field="a01e-a69e-7273-1b79">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12916,7 +13150,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7293-9a5f-8cac-b485">
+        <modifier type="increment" value="1" field="a01e-a69e-7273-1b79">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12935,10 +13169,10 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7293-9a5f-8cac-b485">
+        <modifier type="increment" value="1" field="a01e-a69e-7273-1b79">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12957,7 +13191,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -12972,7 +13206,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b887-23a6-eff6-0e97" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1128-51c4-81e0-a0ff" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1257-0d15-4145-df77" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -13040,7 +13274,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="1128-51c4-81e0-a0ff">
+        <modifier type="set" value="0" field="1257-0d15-4145-df77">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13050,7 +13284,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1128-51c4-81e0-a0ff">
+        <modifier type="increment" value="1" field="1257-0d15-4145-df77">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13072,7 +13306,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1128-51c4-81e0-a0ff">
+        <modifier type="increment" value="1" field="1257-0d15-4145-df77">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13105,7 +13339,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9af9-3a35-ba1c-0147" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7a27-1142-9782-a87f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ee18-75b9-3108-526c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -13172,7 +13406,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="7a27-1142-9782-a87f">
+        <modifier type="set" value="0" field="ee18-75b9-3108-526c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13182,7 +13416,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7a27-1142-9782-a87f">
+        <modifier type="increment" value="1" field="ee18-75b9-3108-526c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13204,7 +13438,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7a27-1142-9782-a87f">
+        <modifier type="increment" value="1" field="ee18-75b9-3108-526c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13230,15 +13464,18 @@ Note that any special rules granted by these upgrades do not apply to the models
     </entryLink>
     <entryLink import="true" name="General Hans Von Löwenhacke" hidden="false" id="16b0-9e14-0278-ba6d" type="selectionEntry" targetId="4341-1d04-5c1d-e18c">
       <categoryLinks>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="7b72-d1f4-6608-c621" primary="false" name="Characters"/>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="adce-b470-fbc5-93d2" primary="true" name="Named Characters"/>
-        <categoryLink targetId="1b32-75ff-27c4-6efb" id="aea7-1158-c617-8806" primary="false" name="General or Grand Master"/>
+        <categoryLink name="Characters" hidden="false" id="7b72-d1f4-6608-c621" targetId="a4cc-15c9-cfae-1b3b" primary="false"/>
+        <categoryLink name="Named Characters" hidden="false" id="adce-b470-fbc5-93d2" targetId="3ba8-a41e-b6ae-d4ba" primary="true"/>
+        <categoryLink name="General or Grand Master" hidden="false" id="aea7-1158-c617-8806" targetId="1b32-75ff-27c4-6efb" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="a939-185b-9260-733b" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6b51-6c8e-3290-1983" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8ab5-08d6-ce27-0047" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0fbe-c3e0-0e58-bf58" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -13300,7 +13537,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="8ab5-08d6-ce27-0047">
+        <modifier type="set" value="0" field="0fbe-c3e0-0e58-bf58">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13310,7 +13547,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="8ab5-08d6-ce27-0047">
+        <modifier type="increment" value="1" field="0fbe-c3e0-0e58-bf58">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13332,7 +13569,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="8ab5-08d6-ce27-0047">
+        <modifier type="increment" value="1" field="0fbe-c3e0-0e58-bf58">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13358,15 +13595,18 @@ Note that any special rules granted by these upgrades do not apply to the models
     </entryLink>
     <entryLink import="true" name="Harald Gemunsen, Grand Master of the Knights Panther" hidden="false" id="2cff-b2e1-9442-fb2d" type="selectionEntry" targetId="adab-cb42-9a4f-3ba7">
       <categoryLinks>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="8b07-1b32-a32f-5706" primary="false" name="Characters"/>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="eaa5-1f06-40ac-6235" primary="true" name="Named Characters"/>
-        <categoryLink targetId="1b32-75ff-27c4-6efb" id="166a-c9fc-741a-1e15" primary="false" name="General or Grand Master"/>
+        <categoryLink name="Characters" hidden="false" id="8b07-1b32-a32f-5706" targetId="a4cc-15c9-cfae-1b3b" primary="false"/>
+        <categoryLink name="Named Characters" hidden="false" id="eaa5-1f06-40ac-6235" targetId="3ba8-a41e-b6ae-d4ba" primary="true"/>
+        <categoryLink name="General or Grand Master" hidden="false" id="166a-c9fc-741a-1e15" targetId="1b32-75ff-27c4-6efb" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="9e8e-08e9-e9ad-ceb7" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2017-940c-3eb9-f42b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6891-567d-cc3c-90aa" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="008f-a7ef-831c-f8b2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -13428,7 +13668,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="6891-567d-cc3c-90aa">
+        <modifier type="set" value="0" field="008f-a7ef-831c-f8b2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13438,7 +13678,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6891-567d-cc3c-90aa">
+        <modifier type="increment" value="1" field="008f-a7ef-831c-f8b2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13460,7 +13700,7 @@ Note that any special rules granted by these upgrades do not apply to the models
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6891-567d-cc3c-90aa">
+        <modifier type="increment" value="1" field="008f-a7ef-831c-f8b2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13504,9 +13744,6 @@ Note that any special rules granted by these upgrades do not apply to the models
         </modifier>
         <modifier type="floor" value="1" field="efcb-2e10-bd5c-ef89">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="efcb-2e10-bd5c-ef89">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -13522,9 +13759,6 @@ Note that any special rules granted by these upgrades do not apply to the models
           <repeats>
             <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="be5d-d4f8-a7fa-ecce"/>
           </repeats>
-        </modifier>
-        <modifier type="floor" value="1" field="ca1a-50b6-2043-4382">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="ca1a-50b6-2043-4382">
           <comment>Battle march</comment>
@@ -13573,9 +13807,6 @@ Note that any special rules granted by these upgrades do not apply to the models
         </modifier>
         <modifier type="floor" value="1" field="ba46-5e1e-1db8-2334">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="ba46-5e1e-1db8-2334">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -13618,9 +13849,6 @@ Note that any special rules granted by these upgrades do not apply to the models
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="596c-815-3b99-41f9">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="596c-815-3b99-41f9">
           <comment>Battle march</comment>

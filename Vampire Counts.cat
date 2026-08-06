@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4545-8340-9988-9ea0" name="Vampire Counts" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="49" revision="65" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="Giloushaker#2496">
+<catalogue library="false" id="4545-8340-9988-9ea0" name="Vampire Counts" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="49" revision="69" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="Giloushaker#2496">
   <sharedProfiles>
     <profile name="Vampire Count" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="57d7-6e34-d546-4b92">
       <characteristics>
@@ -789,7 +789,9 @@ Note that a Wailing Dirge attack can target an enemy character, regardless of th
     </profile>
     <profile name="Resurrecting The Fallen" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="c1d3-29e3-b7cd-c9f7" page="154" publicationId="7c89-736c-3139-24a0">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">•	First, any characters that have joined the unit are healed. A character that has been reduced to zero Wounds and removed from play cannot be resurrected.
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">In a Vampire Counts army, it is possible to heal a unit by recovering lost Wounds, and to resurrect fallen warriors. Wounds recovered in this way follow a strict order:
+
+•	First, any characters that have joined the unit are healed. A character that has been reduced to zero Wounds and removed from play cannot be resurrected.
 
 •	Second, models with more than one Wound on their profile are healed.
 
@@ -1388,8 +1390,8 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1612,8 +1614,8 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1716,8 +1718,8 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1843,8 +1845,8 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1989,8 +1991,8 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2185,8 +2187,8 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2309,8 +2311,8 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2697,16 +2699,38 @@ Resurrected models are added to the front rank until it reaches the minimum requ
                       <repeats>
                         <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="f5cb-882e-59d2-f374"/>
                       </repeats>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="increment" value="1" field="f0ad-69a2-8696-c505">
                       <repeats>
                         <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="6222-5b25-d9ed-5a9c" includeChildSelections="true"/>
                       </repeats>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="floor" value="1" field="f0ad-69a2-8696-c505">
+                      <comment>Battle march</comment>
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2724,6 +2748,11 @@ Resurrected models are added to the front rank until it reaches the minimum requ
                       </modifiers>
                     </entryLink>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="c030-83ff-59bb-df2e" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -4443,13 +4472,16 @@ Resurrected models are added to the front rank until it reaches the minimum requ
     <entryLink import="true" name="Vampire Count" hidden="false" id="2524de59-e6f4a0af" type="selectionEntry" targetId="2c543d28-8753d2d2">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="89d3-9734-fa1b-d286" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="cbbb-81fa-cee7-4ce3" id="3d99-d75e-afcb-9939" primary="false" name="0-1 Vampire Count, Master Necromancer, or Strigoi Ghoul King per 1,000 points"/>
+        <categoryLink name="0-1 Vampire Count, Master Necromancer, or Strigoi Ghoul King per 1,000 points" hidden="false" id="3d99-d75e-afcb-9939" targetId="cbbb-81fa-cee7-4ce3" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="7586-6346-db3b-cd5b" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="651e-4268-aea6-7792" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3fd4-4499-efd3-dac4" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5497-890b-2035-86a3" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4511,7 +4543,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="3fd4-4499-efd3-dac4">
+        <modifier type="set" value="0" field="5497-890b-2035-86a3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4521,7 +4553,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3fd4-4499-efd3-dac4">
+        <modifier type="increment" value="1" field="5497-890b-2035-86a3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4543,7 +4575,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3fd4-4499-efd3-dac4">
+        <modifier type="increment" value="1" field="5497-890b-2035-86a3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4578,7 +4610,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="9789-3647-85b8-c2a1" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cd68-4d69-6c08-4734" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c3a8-bcf0-a310-0d1a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4685,7 +4717,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="cd68-4d69-6c08-4734">
+        <modifier type="set" value="0" field="c3a8-bcf0-a310-0d1a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4695,7 +4727,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="cd68-4d69-6c08-4734">
+        <modifier type="increment" value="1" field="c3a8-bcf0-a310-0d1a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4717,7 +4749,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="cd68-4d69-6c08-4734">
+        <modifier type="increment" value="1" field="c3a8-bcf0-a310-0d1a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4744,13 +4776,16 @@ Resurrected models are added to the front rank until it reaches the minimum requ
     <entryLink import="true" name="Master Necromancer" hidden="false" id="1ff9c7b7-31d6ca85" type="selectionEntry" targetId="1ed21202-f13ca3cc">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="4c04-e39d-c061-bf26" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="cbbb-81fa-cee7-4ce3" id="6e3d-7b25-107a-4606" primary="false" name="0-1 Vampire Count, Master Necromancer, or Strigoi Ghoul King per 1,000 points"/>
+        <categoryLink name="0-1 Vampire Count, Master Necromancer, or Strigoi Ghoul King per 1,000 points" hidden="false" id="6e3d-7b25-107a-4606" targetId="cbbb-81fa-cee7-4ce3" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="e816-0202-3741-0099" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e1c4-56bd-7045-7b76" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0b7c-8f6a-3e65-f63a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5afd-a3c9-a7ea-742c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4812,7 +4847,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="0b7c-8f6a-3e65-f63a">
+        <modifier type="set" value="0" field="5afd-a3c9-a7ea-742c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4822,7 +4857,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0b7c-8f6a-3e65-f63a">
+        <modifier type="increment" value="1" field="5afd-a3c9-a7ea-742c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4844,7 +4879,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0b7c-8f6a-3e65-f63a">
+        <modifier type="increment" value="1" field="5afd-a3c9-a7ea-742c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4879,7 +4914,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="920b-1075-dbdd-890b" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c2d7-cf83-8643-0725" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="394a-3fac-44bb-6ce1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4986,7 +5021,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="c2d7-cf83-8643-0725">
+        <modifier type="set" value="0" field="394a-3fac-44bb-6ce1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4996,7 +5031,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c2d7-cf83-8643-0725">
+        <modifier type="increment" value="1" field="394a-3fac-44bb-6ce1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5018,7 +5053,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c2d7-cf83-8643-0725">
+        <modifier type="increment" value="1" field="394a-3fac-44bb-6ce1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5045,13 +5080,16 @@ Resurrected models are added to the front rank until it reaches the minimum requ
     <entryLink import="true" name="Strigoi Ghoul King" hidden="false" id="aba2369b-f537e829" type="selectionEntry" targetId="a2f2f56e-2000d478">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="ad06-7ea9-2699-663a" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="cbbb-81fa-cee7-4ce3" id="4af5-1525-4387-184a" primary="false" name="0-1 Vampire Count, Master Necromancer, or Strigoi Ghoul King per 1,000 points"/>
+        <categoryLink name="0-1 Vampire Count, Master Necromancer, or Strigoi Ghoul King per 1,000 points" hidden="false" id="4af5-1525-4387-184a" targetId="cbbb-81fa-cee7-4ce3" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="d6f3-f519-037e-d0d7" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fdfc-be0c-8eab-aa3b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e350-030c-2923-ca1e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="02c6-a337-fd55-ee4a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5113,7 +5151,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="e350-030c-2923-ca1e">
+        <modifier type="set" value="0" field="02c6-a337-fd55-ee4a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5123,7 +5161,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="e350-030c-2923-ca1e">
+        <modifier type="increment" value="1" field="02c6-a337-fd55-ee4a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5145,7 +5183,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="e350-030c-2923-ca1e">
+        <modifier type="increment" value="1" field="02c6-a337-fd55-ee4a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5180,7 +5218,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="48e2-6afa-9224-2c52" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cc71-ff90-785f-d733" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6086-5ce4-1c98-e2c4" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5287,7 +5325,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="cc71-ff90-785f-d733">
+        <modifier type="set" value="0" field="6086-5ce4-1c98-e2c4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5297,7 +5335,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="cc71-ff90-785f-d733">
+        <modifier type="increment" value="1" field="6086-5ce4-1c98-e2c4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5319,7 +5357,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="cc71-ff90-785f-d733">
+        <modifier type="increment" value="1" field="6086-5ce4-1c98-e2c4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5347,12 +5385,15 @@ Resurrected models are added to the front rank until it reaches the minimum requ
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="a28e-f1d8-a491-3285" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
         <categoryLink name="0-1 Wight King or Banshee per 1,000 points" hidden="false" id="c8ef-c477-8d53-64bc" targetId="87c7-fde5-4261-9b19" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="d193-091c-87d9-5af8" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="010b-af87-de1c-73f5" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d40d-4a65-b04c-1e13" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4022-3ecb-4860-e1dd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5414,7 +5455,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="d40d-4a65-b04c-1e13">
+        <modifier type="set" value="0" field="4022-3ecb-4860-e1dd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5424,7 +5465,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="d40d-4a65-b04c-1e13">
+        <modifier type="increment" value="1" field="4022-3ecb-4860-e1dd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5446,7 +5487,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="d40d-4a65-b04c-1e13">
+        <modifier type="increment" value="1" field="4022-3ecb-4860-e1dd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5481,7 +5522,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="cdec-eff1-b4b4-85a1" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0082-9c6c-e299-3291" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e6b1-086a-0ec1-ae06" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5588,7 +5629,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="0082-9c6c-e299-3291">
+        <modifier type="set" value="0" field="e6b1-086a-0ec1-ae06">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5598,7 +5639,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0082-9c6c-e299-3291">
+        <modifier type="increment" value="1" field="e6b1-086a-0ec1-ae06">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5620,7 +5661,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0082-9c6c-e299-3291">
+        <modifier type="increment" value="1" field="e6b1-086a-0ec1-ae06">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5648,12 +5689,15 @@ Resurrected models are added to the front rank until it reaches the minimum requ
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="ca9-1ae5-678d-b30c" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
         <categoryLink name="0-1 Wight King or Banshee per 1,000 points" hidden="false" id="658c-e6c7-296a-fd41" targetId="87c7-fde5-4261-9b19" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="f198-bec4-f944-b8a4" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="acd4-2a96-de40-ec5f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f1ee-552f-6bb0-d906" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8fdf-f61c-c183-cb84" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5715,7 +5759,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="f1ee-552f-6bb0-d906">
+        <modifier type="set" value="0" field="8fdf-f61c-c183-cb84">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5725,7 +5769,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f1ee-552f-6bb0-d906">
+        <modifier type="increment" value="1" field="8fdf-f61c-c183-cb84">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5747,7 +5791,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f1ee-552f-6bb0-d906">
+        <modifier type="increment" value="1" field="8fdf-f61c-c183-cb84">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5776,13 +5820,16 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <categoryLink name="Special" hidden="false" id="2dad-11a6-e759-8e85" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="0-1 Grave Guard or Black Knight per 1,000 points" hidden="false" id="163d-b232-5823-64ea" targetId="9836-1bed-24-6e3f" primary="false"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="7a7c-dc98-9b8a-f3d5" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="cdb0-8ad3-bb8c-4e8a" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <comment>Special</comment>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9ed5-e3d6-552d-7920" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d8d2-7475-a330-3deb" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0524-a5a5-b61c-403c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5844,7 +5891,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="d8d2-7475-a330-3deb">
+        <modifier type="set" value="0" field="0524-a5a5-b61c-403c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5854,7 +5901,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="d8d2-7475-a330-3deb">
+        <modifier type="increment" value="1" field="0524-a5a5-b61c-403c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5876,7 +5923,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="d8d2-7475-a330-3deb">
+        <modifier type="increment" value="1" field="0524-a5a5-b61c-403c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5912,7 +5959,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="ce22-98e7-0420-2efe" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9446-b7ad-1b3c-d757" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3fa9-6881-65af-640e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6019,7 +6066,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="9446-b7ad-1b3c-d757">
+        <modifier type="set" value="0" field="3fa9-6881-65af-640e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6029,7 +6076,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9446-b7ad-1b3c-d757">
+        <modifier type="increment" value="1" field="3fa9-6881-65af-640e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6051,7 +6098,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9446-b7ad-1b3c-d757">
+        <modifier type="increment" value="1" field="3fa9-6881-65af-640e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6087,7 +6134,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="52a9-807b-c362-bcbe" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4ba8-4920-cc2a-1bf3" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4137-9054-1648-9895" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6194,7 +6241,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="4ba8-4920-cc2a-1bf3">
+        <modifier type="set" value="0" field="4137-9054-1648-9895">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6204,7 +6251,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4ba8-4920-cc2a-1bf3">
+        <modifier type="increment" value="1" field="4137-9054-1648-9895">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6226,7 +6273,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4ba8-4920-cc2a-1bf3">
+        <modifier type="increment" value="1" field="4137-9054-1648-9895">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6262,7 +6309,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d083-d5b8-9928-47df" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5155-e6a0-86de-84d7" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c431-488b-0bb8-d83a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6369,7 +6416,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="5155-e6a0-86de-84d7">
+        <modifier type="set" value="0" field="c431-488b-0bb8-d83a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6379,7 +6426,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5155-e6a0-86de-84d7">
+        <modifier type="increment" value="1" field="c431-488b-0bb8-d83a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6401,7 +6448,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5155-e6a0-86de-84d7">
+        <modifier type="increment" value="1" field="c431-488b-0bb8-d83a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6430,12 +6477,15 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <categoryLink name="0-1 Crypt Horrors or Fell Bats per 1,000 points" hidden="false" id="68d2-e08-63b-14a6" targetId="85c8-1fba-1d5e-bb7c" primary="false"/>
         <categoryLink name="Special" hidden="false" id="f872-896b-6993-a61c" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="cb44-c844-50c6-8cf3" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="7ff3-03bb-0ad4-944c" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3cb6-1e9a-a0fb-83a1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8a24-8fe6-c3cc-2b31" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7dd2-ea34-e918-37bb" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6497,7 +6547,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="8a24-8fe6-c3cc-2b31">
+        <modifier type="set" value="0" field="7dd2-ea34-e918-37bb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6507,7 +6557,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="8a24-8fe6-c3cc-2b31">
+        <modifier type="increment" value="1" field="7dd2-ea34-e918-37bb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6529,7 +6579,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="8a24-8fe6-c3cc-2b31">
+        <modifier type="increment" value="1" field="7dd2-ea34-e918-37bb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6564,7 +6614,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4d57-2a77-5db7-9727" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5580-eb66-67be-c23f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e19a-ad0d-6a87-53ac" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6671,7 +6721,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="5580-eb66-67be-c23f">
+        <modifier type="set" value="0" field="e19a-ad0d-6a87-53ac">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6681,7 +6731,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5580-eb66-67be-c23f">
+        <modifier type="increment" value="1" field="e19a-ad0d-6a87-53ac">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6703,7 +6753,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5580-eb66-67be-c23f">
+        <modifier type="increment" value="1" field="e19a-ad0d-6a87-53ac">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6731,13 +6781,16 @@ Resurrected models are added to the front rank until it reaches the minimum requ
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="19c2-e7ac-4a76-3db8" targetId="2bfe-5863-46fe-d284" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="ce2c-07a3-cd15-8dea" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="746b-4f89-8188-46ed" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="9ed0-7bea-34d7-d647" includeChildSelections="true"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="83b9-e4c3-94c9-47bc" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3b50-8957-4721-2506" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8819-9327-147c-fc89" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6804,7 +6857,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="3b50-8957-4721-2506">
+        <modifier type="set" value="0" field="8819-9327-147c-fc89">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6814,7 +6867,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3b50-8957-4721-2506">
+        <modifier type="increment" value="1" field="8819-9327-147c-fc89">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6833,10 +6886,10 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3b50-8957-4721-2506">
+        <modifier type="increment" value="1" field="8819-9327-147c-fc89">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6855,7 +6908,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="9ed0-7bea-34d7-d647">
@@ -6872,12 +6925,15 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <categoryLink name="Special" hidden="false" id="acc9-534f-3c9e-a9db" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="0-1 Crypt Horrors or Fell Bats per 1,000 points" hidden="false" id="6e3b-4476-8977-4341" targetId="85c8-1fba-1d5e-bb7c" primary="false"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="03e0-e269-d747-8f3f" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="65f0-09af-7b9b-6b06" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1162-58ba-9e9b-69ef" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f07e-0bac-5335-6389" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="974c-6070-803c-f237" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6939,7 +6995,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="f07e-0bac-5335-6389">
+        <modifier type="set" value="0" field="974c-6070-803c-f237">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6949,7 +7005,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f07e-0bac-5335-6389">
+        <modifier type="increment" value="1" field="974c-6070-803c-f237">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6971,7 +7027,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f07e-0bac-5335-6389">
+        <modifier type="increment" value="1" field="974c-6070-803c-f237">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7004,7 +7060,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d749-d012-6f3f-c80c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2a01-a6ce-1fe1-0cdc" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7b8d-7502-ff42-2cf0" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7078,7 +7134,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="2a01-a6ce-1fe1-0cdc">
+        <modifier type="set" value="0" field="7b8d-7502-ff42-2cf0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7088,7 +7144,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2a01-a6ce-1fe1-0cdc">
+        <modifier type="increment" value="1" field="7b8d-7502-ff42-2cf0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7110,7 +7166,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2a01-a6ce-1fe1-0cdc">
+        <modifier type="increment" value="1" field="7b8d-7502-ff42-2cf0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7138,13 +7194,16 @@ Resurrected models are added to the front rank until it reaches the minimum requ
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="7904-d0d9-5a1d-ee1c" targetId="2bfe-5863-46fe-d284" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="c36c-f084-4105-1386" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="3a6f-c21b-07b3-89d5" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="b56c-9c76-be59-f7ee" includeChildSelections="true"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3325-0258-1f52-c4f0" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c5a3-2b71-e4c0-d6e2" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9e86-96dc-263c-27c5" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7211,7 +7270,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="c5a3-2b71-e4c0-d6e2">
+        <modifier type="set" value="0" field="9e86-96dc-263c-27c5">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7221,7 +7280,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c5a3-2b71-e4c0-d6e2">
+        <modifier type="increment" value="1" field="9e86-96dc-263c-27c5">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7240,10 +7299,10 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c5a3-2b71-e4c0-d6e2">
+        <modifier type="increment" value="1" field="9e86-96dc-263c-27c5">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7262,7 +7321,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="b56c-9c76-be59-f7ee">
@@ -7278,13 +7337,16 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <categoryLink name="Special" hidden="false" id="d2ec-e508-da-b4f9" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="0-1 Grave Guard or Black Knight per 1,000 points" hidden="false" id="195d-248a-da39-494b" targetId="9836-1bed-24-6e3f" primary="false"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="97e5-6f7c-f70e-1ffc" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="b6cb-2b61-4040-be5c" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <comment>Special</comment>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="43e5-d4e6-d26b-683e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="879d-cd3d-6945-dec2" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e041-0418-fe8b-7cd7" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7346,7 +7408,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="879d-cd3d-6945-dec2">
+        <modifier type="set" value="0" field="e041-0418-fe8b-7cd7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7356,7 +7418,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="879d-cd3d-6945-dec2">
+        <modifier type="increment" value="1" field="e041-0418-fe8b-7cd7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7378,7 +7440,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="879d-cd3d-6945-dec2">
+        <modifier type="increment" value="1" field="e041-0418-fe8b-7cd7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7413,7 +7475,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="99c0-6981-849a-3920" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9e39-913e-72ad-61c8" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="91de-3583-8539-d86b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7520,7 +7582,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="9e39-913e-72ad-61c8">
+        <modifier type="set" value="0" field="91de-3583-8539-d86b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7530,7 +7592,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9e39-913e-72ad-61c8">
+        <modifier type="increment" value="1" field="91de-3583-8539-d86b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7552,7 +7614,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9e39-913e-72ad-61c8">
+        <modifier type="increment" value="1" field="91de-3583-8539-d86b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7586,7 +7648,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d586-6662-bd59-48c1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="71f6-a8a8-4a47-00d1" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="53e3-8a45-020c-9581" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7654,7 +7716,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="71f6-a8a8-4a47-00d1">
+        <modifier type="set" value="0" field="53e3-8a45-020c-9581">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7664,7 +7726,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="71f6-a8a8-4a47-00d1">
+        <modifier type="increment" value="1" field="53e3-8a45-020c-9581">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7683,10 +7745,10 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="71f6-a8a8-4a47-00d1">
+        <modifier type="increment" value="1" field="53e3-8a45-020c-9581">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7705,7 +7767,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -7720,7 +7782,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="62e2-2a7a-4a51-510a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a3c3-7062-bfd6-80e3" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9817-c97a-63c1-48a6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7782,7 +7844,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="a3c3-7062-bfd6-80e3">
+        <modifier type="set" value="0" field="9817-c97a-63c1-48a6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7792,7 +7854,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a3c3-7062-bfd6-80e3">
+        <modifier type="increment" value="1" field="9817-c97a-63c1-48a6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7814,7 +7876,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a3c3-7062-bfd6-80e3">
+        <modifier type="increment" value="1" field="9817-c97a-63c1-48a6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7848,7 +7910,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c8a1-1ba7-bfd5-523a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="bdce-a545-6d3d-fd2a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="79ca-66d0-92af-955b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7910,7 +7972,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="bdce-a545-6d3d-fd2a">
+        <modifier type="set" value="0" field="79ca-66d0-92af-955b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7920,7 +7982,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="bdce-a545-6d3d-fd2a">
+        <modifier type="increment" value="1" field="79ca-66d0-92af-955b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7939,10 +8001,10 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="bdce-a545-6d3d-fd2a">
+        <modifier type="increment" value="1" field="79ca-66d0-92af-955b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7961,7 +8023,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -7971,13 +8033,16 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <categoryLink name="Rare" hidden="false" id="9b97-6e2c-b34f-daa5" targetId="2bfe-5863-46fe-d284" primary="true"/>
         <categoryLink name="0-1 Terrorgheist or Varghulf per 1,000 points" hidden="false" id="744a-1956-9f22-1d0" targetId="d41b-d3fa-a08b-a753" primary="false"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="bf1b-77fd-0f83-62f9" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="98dd-1c02-39b2-3caa" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <comment>Rare</comment>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fff7-e04a-d483-cf97" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ca25-8290-ff00-0d2e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7eab-1e65-8448-55d2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8039,7 +8104,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="ca25-8290-ff00-0d2e">
+        <modifier type="set" value="0" field="7eab-1e65-8448-55d2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8049,7 +8114,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ca25-8290-ff00-0d2e">
+        <modifier type="increment" value="1" field="7eab-1e65-8448-55d2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8068,10 +8133,10 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ca25-8290-ff00-0d2e">
+        <modifier type="increment" value="1" field="7eab-1e65-8448-55d2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8090,7 +8155,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -8100,13 +8165,16 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         <categoryLink name="Rare" hidden="false" id="e057-242a-9753-ad39" targetId="2bfe-5863-46fe-d284" primary="true"/>
         <categoryLink name="0-1 Terrorgheist or Varghulf per 1,000 points" hidden="false" id="bccc-55f-c3e2-2a68" targetId="d41b-d3fa-a08b-a753" primary="false"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="fc38-2421-09e8-df2a" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="7e36-4923-b510-b4a6" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <comment>Rare</comment>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="38d4-99fd-4e63-8280" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4aa3-4a47-ede4-2786" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6de2-ede2-d53b-af47" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8168,7 +8236,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="4aa3-4a47-ede4-2786">
+        <modifier type="set" value="0" field="6de2-ede2-d53b-af47">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8178,7 +8246,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4aa3-4a47-ede4-2786">
+        <modifier type="increment" value="1" field="6de2-ede2-d53b-af47">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8197,10 +8265,10 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4aa3-4a47-ede4-2786">
+        <modifier type="increment" value="1" field="6de2-ede2-d53b-af47">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8219,7 +8287,7 @@ Resurrected models are added to the front rank until it reaches the minimum requ
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -8941,9 +9009,6 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         </modifier>
         <modifier type="floor" value="1" field="6c92-a37d-6888-7053">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="6c92-a37d-6888-7053">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -8992,9 +9057,6 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         </modifier>
         <modifier type="floor" value="1" field="6766-4bf7-283f-dcae">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="6766-4bf7-283f-dcae">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -9037,9 +9099,6 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="d906-ecb9-a882-be30">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="d906-ecb9-a882-be30">
           <comment>Battle march</comment>
@@ -9088,9 +9147,6 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         </modifier>
         <modifier type="floor" value="1" field="235c-6c21-80c3-ffc9">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="235c-6c21-80c3-ffc9">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -9133,9 +9189,6 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="512b-0c0f-cd2d-b102">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="512b-0c0f-cd2d-b102">
           <comment>Battle march</comment>
@@ -9213,9 +9266,6 @@ Resurrected models are added to the front rank until it reaches the minimum requ
         </modifier>
         <modifier type="floor" value="1" field="a79a-6304-dd15-c629">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="a79a-6304-dd15-c629">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -9258,9 +9308,6 @@ Resurrected models are added to the front rank until it reaches the minimum requ
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="5175-a4a0-2e21-a256">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="5175-a4a0-2e21-a256">
           <comment>Battle march</comment>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="be27-8084-f552-1f4" name="Tomb Kings of Khemri" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="33" revision="114" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="be27-8084-f552-1f4" name="Tomb Kings of Khemri" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="33" revision="118" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
   <sharedProfiles>
     <profile name="Dry as Dust" hidden="false" id="ae9b-6cef-787a-da54" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" page="153" publicationId="7c89-736c-3139-24a0">
       <characteristics>
@@ -337,7 +337,7 @@ A character with this special rule cannot join a unit without this special rule,
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">5</characteristic>
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">4</characteristic>
-        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">3</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">2</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">4</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
@@ -1112,7 +1112,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <characteristic name="Type" typeId="c2ca-5fd1-5e9d-bc90">Enchantment</characteristic>
         <characteristic name="Casting Value" typeId="d84d-3b8b-654a-9e1a">8</characteristic>
         <characteristic name="Range" typeId="1043-a0ad-2909-dd28">21&quot;</characteristic>
-        <characteristic name="Effect" typeId="64ba-31-acf0-5a">The target friendly unit regains D3 lost Wounds and, until your next Start of Turn sub-phase, improved the armour value of its Regeneration save by 1.</characteristic>
+        <characteristic name="Effect" typeId="64ba-31-acf0-5a">The target friendly unit regains D3 lost Wounds and, until your next Start of Turn sub-phase, improves its Regeneration value by 1.</characteristic>
       </characteristics>
     </profile>
     <profile name="Scroll of Awakening" typeId="8232-ae14-b1f6-b4df" typeName="Spell" hidden="false" id="9cca-7738-9f63-ae8f">
@@ -1215,12 +1215,12 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <infoLink name="Nehekharan Undead" hidden="false" type="profile" id="2b3b-49a6-735a-c83c" targetId="cc25-1643-8beb-8c64"/>
             <infoLink name="Armour Value" hidden="false" type="profile" id="8da8-a220-a2ea-aba0" targetId="e099-1ebb-9e85-34c8">
               <modifiers>
-                <modifier type="append" value=": 5+" field="name"/>
+                <modifier type="append" value=": 4+" field="name"/>
               </modifiers>
             </infoLink>
             <infoLink name="Armour Value" hidden="false" type="profile" id="9864-8ae-51d8-94dc" targetId="e099-1ebb-9e85-34c8">
               <modifiers>
-                <modifier type="append" value=": 5+" field="name"/>
+                <modifier type="append" value=": 4+" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -1632,8 +1632,8 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1847,8 +1847,8 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2020,8 +2020,8 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2258,8 +2258,8 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2405,8 +2405,8 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2590,10 +2590,21 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="f79e-b7d8-4bf5-c7c4" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
+                <modifier type="floor" value="1" field="6a21-68a8-a0ee-178e">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="1f21-f690-a4a1-7a6e" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Drilled" hidden="false" id="5d8d-4b52-27b3-8215" sortIndex="1">
               <constraints>
@@ -2614,10 +2625,21 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="c7e-6384-596f-7065" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
+                <modifier type="floor" value="1" field="2167-7ba7-d706-92f7">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="2ff6-57e0-bda5-419a" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2805,14 +2827,28 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="5f0f-b29e-4bce-704" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
+                <modifier type="floor" value="1" field="2b55-465a-cccb-c39f">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="6cfb-72e7-da6c-9ffc" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="bbd4-c1d-f1eb-8fc1" sortIndex="1">
               <categoryLinks>
-                <categoryLink targetId="49a9-ce63-af1a-18f7" id="baf2-2d21-f68f-b9da" primary="false" name="NO EXPORT"/>
+                <categoryLink name="NO EXPORT" hidden="false" id="baf2-2d21-f68f-b9da" targetId="49a9-ce63-af1a-18f7" primary="false"/>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="cbb4-acae-3d6c-b01d" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
               </categoryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d19d-e1f8-95b7-8d7d"/>
@@ -2828,6 +2864,12 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
                   <repeats>
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="41c2-5c93-b110-6800" includeChildSelections="true"/>
                   </repeats>
+                </modifier>
+                <modifier type="floor" value="1" field="c8b1-b31d-4b1c-82c0">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -3115,7 +3157,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="708f-d597-bd5f-a586" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="floor" value="1" field="fab9-86e3-7bc7-cfc2">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="23e9-a927-59ce-c050" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3558,14 +3611,14 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <profile name="Skeleton Horsemen" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5c29-4e8a-13c4-297c">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy cavalry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">4+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Skeleton Horseman" hidden="false" id="21a3-df8e-4fdd-cf00" sortIndex="1">
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8ab3-3695-8d17-2020"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8ab3-3695-8d17-2020"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="e8fb-148c-dbe4-ac23" targetId="721d-36e3-388a-c0d6" sortIndex="2">
@@ -3613,8 +3666,8 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3711,7 +3764,10 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="64c8-586f-b8a4-205c" sortIndex="2">
               <categoryLinks>
-                <categoryLink targetId="49a9-ce63-af1a-18f7" id="5cba-ca98-1b41-788e" primary="false" name="NO EXPORT"/>
+                <categoryLink name="NO EXPORT" hidden="false" id="5cba-ca98-1b41-788e" targetId="49a9-ce63-af1a-18f7" primary="false"/>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="842f-2c89-e860-594c" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
               </categoryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="202-ca12-b5c7-edfc"/>
@@ -3722,6 +3778,12 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
                   <repeats>
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="e208-19b4-96ab-d95f" includeChildSelections="true"/>
                   </repeats>
+                </modifier>
+                <modifier type="floor" value="1" field="f61e-6f3b-7c09-6974">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -3744,10 +3806,21 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
                     <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" id="90f7-8c12-f55-c890" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
+                <modifier type="floor" value="1" field="91b5-4204-2bed-4312">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="eed5-9721-d890-ecdf" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3832,8 +3905,8 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4010,7 +4083,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <infoLink name="Base (50x100)" hidden="false" type="profile" id="4656-371e-734e-f266" targetId="d456-e30e-f85d-14d"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="52"/>
+            <cost name="pts" typeId="points" value="49"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Ambushers" hidden="false" id="227b-f920-d7ef-490c" collective="true" sortIndex="6">
@@ -6188,6 +6261,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <infoLink name="Nehekharan Undead" id="bfa0-9e15-8c19-c74b" hidden="false" type="profile" targetId="cc25-1643-8beb-8c64"/>
             <infoLink name="Swiftstride" id="ee6d-ae62-048d-3d3b" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
             <infoLink name="Vanguard" id="e2f8-2c10-a66a-4b57" hidden="false" type="profile" targetId="691e-10ec-4f7c-a2c4"/>
+            <infoLink name="Counter Charge" id="0090-f89d-25f6-8349" hidden="false" type="profile" targetId="5186-798d-69d-6545"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -6303,7 +6377,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="79bf-5a96-59c3-9d6b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="234f-3465-e600-6ed3" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2a01-dca7-ec9c-870f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6397,7 +6471,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="234f-3465-e600-6ed3">
+        <modifier type="set" value="0" field="2a01-dca7-ec9c-870f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6407,7 +6481,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="234f-3465-e600-6ed3">
+        <modifier type="increment" value="1" field="2a01-dca7-ec9c-870f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6426,10 +6500,10 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="234f-3465-e600-6ed3">
+        <modifier type="increment" value="1" field="2a01-dca7-ec9c-870f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6448,7 +6522,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="ec20-ab91-d7c7-564c">
@@ -6460,6 +6534,9 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </modifiers>
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="b7af-b959-94ac-b181" targetId="2bfe-5863-46fe-d284" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="9a4b-580a-001c-f691" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Screaming Skull Catapult" hidden="false" type="selectionEntry" id="c0cc-c64-62d3-53d1" targetId="832e-7b2d-b5d5-5742">
@@ -6468,7 +6545,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="eb3f-6d67-5838-938b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ddc4-a059-8e04-861d" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="026f-b488-23e2-bd19" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6562,7 +6639,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="ddc4-a059-8e04-861d">
+        <modifier type="set" value="0" field="026f-b488-23e2-bd19">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6572,7 +6649,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ddc4-a059-8e04-861d">
+        <modifier type="increment" value="1" field="026f-b488-23e2-bd19">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6591,10 +6668,10 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ddc4-a059-8e04-861d">
+        <modifier type="increment" value="1" field="026f-b488-23e2-bd19">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6613,7 +6690,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="f4ce-5bdf-8a38-8418">
@@ -6625,6 +6702,9 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </modifiers>
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="4ddf-7f95-eaab-ce91" targetId="2bfe-5863-46fe-d284" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="638c-8946-ffc4-b575" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Necrolith Colossus" hidden="false" type="selectionEntry" id="44c0-3dc0-cb2-ac52" targetId="bb39-7f95-8981-acb8">
@@ -6639,7 +6719,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="2bb9-dc0c-b420-ca76" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4e46-78a1-81aa-6d29" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="abaf-38b0-8ccf-d8bb" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6746,7 +6826,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="4e46-78a1-81aa-6d29">
+        <modifier type="set" value="0" field="abaf-38b0-8ccf-d8bb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6756,7 +6836,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4e46-78a1-81aa-6d29">
+        <modifier type="increment" value="1" field="abaf-38b0-8ccf-d8bb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6775,10 +6855,10 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4e46-78a1-81aa-6d29">
+        <modifier type="increment" value="1" field="abaf-38b0-8ccf-d8bb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6797,7 +6877,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -6808,7 +6888,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="987e-7081-4915-619b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cb0a-27d3-e033-e342" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="226b-ef37-c291-5689" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6902,7 +6982,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="cb0a-27d3-e033-e342">
+        <modifier type="set" value="0" field="226b-ef37-c291-5689">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6912,7 +6992,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="cb0a-27d3-e033-e342">
+        <modifier type="increment" value="1" field="226b-ef37-c291-5689">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6934,7 +7014,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="cb0a-27d3-e033-e342">
+        <modifier type="increment" value="1" field="226b-ef37-c291-5689">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6966,6 +7046,9 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="9e0-c504-1cb2-8ba8" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="a8d4-62e4-48c5-070d" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="54d5-ab80-0f31-1dfe" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Khemrian Warsphinx" hidden="false" type="selectionEntry" id="b23-702c-1655-5d09" targetId="6a79-53e5-86b1-8427">
@@ -6974,7 +7057,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="83df-becc-8d7b-7c02" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="50c0-96bc-d87c-fd45" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5f82-0623-d9ea-a2a2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7068,7 +7151,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="50c0-96bc-d87c-fd45">
+        <modifier type="set" value="0" field="5f82-0623-d9ea-a2a2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7078,7 +7161,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="50c0-96bc-d87c-fd45">
+        <modifier type="increment" value="1" field="5f82-0623-d9ea-a2a2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7100,7 +7183,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="50c0-96bc-d87c-fd45">
+        <modifier type="increment" value="1" field="5f82-0623-d9ea-a2a2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7132,6 +7215,9 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="2aba-f0ff-252c-5c60" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="8d29-5386-0164-c554" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="8f6a-f592-47dd-3482" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Skeleton Chariots" hidden="false" type="selectionEntry" id="4f44-43d9-c0b9-5cae" targetId="bda8-d5bc-866e-92b6">
@@ -7146,7 +7232,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d891-581a-ae6d-abc6" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c022-ed73-9800-5efc" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5429-c8ff-4228-9c4a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7253,7 +7339,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="c022-ed73-9800-5efc">
+        <modifier type="set" value="0" field="5429-c8ff-4228-9c4a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7263,7 +7349,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c022-ed73-9800-5efc">
+        <modifier type="increment" value="1" field="5429-c8ff-4228-9c4a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7285,7 +7371,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c022-ed73-9800-5efc">
+        <modifier type="increment" value="1" field="5429-c8ff-4228-9c4a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7322,7 +7408,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="a301-6823-8d88-f8c1" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0b3b-6bed-9e3f-997d" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ce60-e858-b54c-1d29" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7429,7 +7515,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="0b3b-6bed-9e3f-997d">
+        <modifier type="set" value="0" field="ce60-e858-b54c-1d29">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7439,7 +7525,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0b3b-6bed-9e3f-997d">
+        <modifier type="increment" value="1" field="ce60-e858-b54c-1d29">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7461,7 +7547,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0b3b-6bed-9e3f-997d">
+        <modifier type="increment" value="1" field="ce60-e858-b54c-1d29">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7497,7 +7583,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="110b-553a-2ec5-6155" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="909b-3ea4-7ef8-aea0" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d355-306a-3018-3dd0" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7604,7 +7690,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="909b-3ea4-7ef8-aea0">
+        <modifier type="set" value="0" field="d355-306a-3018-3dd0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7614,7 +7700,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="909b-3ea4-7ef8-aea0">
+        <modifier type="increment" value="1" field="d355-306a-3018-3dd0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7636,7 +7722,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="909b-3ea4-7ef8-aea0">
+        <modifier type="increment" value="1" field="d355-306a-3018-3dd0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7672,7 +7758,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="ebc0-08c5-1389-a60c" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9008-6503-25d5-3fe6" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="18e6-7288-f5b6-87fc" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7779,7 +7865,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="9008-6503-25d5-3fe6">
+        <modifier type="set" value="0" field="18e6-7288-f5b6-87fc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7789,7 +7875,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9008-6503-25d5-3fe6">
+        <modifier type="increment" value="1" field="18e6-7288-f5b6-87fc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7811,7 +7897,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9008-6503-25d5-3fe6">
+        <modifier type="increment" value="1" field="18e6-7288-f5b6-87fc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7847,7 +7933,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d87c-13ee-743f-4267" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2351-8174-10cb-c997" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6de7-748e-38e1-8061" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7954,7 +8040,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="2351-8174-10cb-c997">
+        <modifier type="set" value="0" field="6de7-748e-38e1-8061">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7964,7 +8050,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2351-8174-10cb-c997">
+        <modifier type="increment" value="1" field="6de7-748e-38e1-8061">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7986,7 +8072,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2351-8174-10cb-c997">
+        <modifier type="increment" value="1" field="6de7-748e-38e1-8061">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8023,7 +8109,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="6fb3-da00-beba-5ef6" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="305f-d59e-7b9b-b1fb" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3b2c-8e71-5621-aceb" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8135,7 +8221,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="305f-d59e-7b9b-b1fb">
+        <modifier type="set" value="0" field="3b2c-8e71-5621-aceb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8145,7 +8231,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="305f-d59e-7b9b-b1fb">
+        <modifier type="increment" value="1" field="3b2c-8e71-5621-aceb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8167,7 +8253,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="305f-d59e-7b9b-b1fb">
+        <modifier type="increment" value="1" field="3b2c-8e71-5621-aceb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8194,34 +8280,21 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
     <entryLink import="true" name="Tomb King" hidden="false" type="selectionEntry" id="2972-33ee-cbdb-6137" targetId="b2d7-8c5d-c681-cbeb">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="c38d-7fb0-1694-9dcb" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="0-1 Tomb King or High Priest per 1,000 points" hidden="false" id="c526-465a-b7bb-fb86" targetId="0a2f-6974-f23b-d558" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="2b63-d760-69d1-17af" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="effe-778f-177b-bd8c"/>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4e1e-8b74-819b-b2ce"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ec4d-c1f8-da56-bc42" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="921e-089a-ac42-a430" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="800b-088c-34c6-00e7" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="1" field="4e1e-8b74-819b-b2ce">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" value="1" field="effe-778f-177b-bd8c">
           <conditionGroups>
             <conditionGroup type="and">
@@ -8229,28 +8302,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="700e-e7f5-1ded-4ddc" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="e04b-3d83-a607-aaf" shared="true" includeChildSelections="false"/>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="fb2d-588c-2f49-e25a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="decrement" value="1" field="4e1e-8b74-819b-b2ce">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="e04b-3d83-a607-aaf" shared="true" roundUp="false" includeChildSelections="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="9217-6289-beb1-4238" shared="true" roundUp="false" includeChildSelections="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="4e1e-8b74-819b-b2ce">
-          <repeats>
-            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8312,7 +8363,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="921e-089a-ac42-a430">
+        <modifier type="set" value="0" field="800b-088c-34c6-00e7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8322,7 +8373,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="921e-089a-ac42-a430">
+        <modifier type="increment" value="1" field="800b-088c-34c6-00e7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8344,7 +8395,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="921e-089a-ac42-a430">
+        <modifier type="increment" value="1" field="800b-088c-34c6-00e7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8366,12 +8417,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="floor" value="1" field="4e1e-8b74-819b-b2ce">
-          <comment>Battle march</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Tomb Prince" hidden="false" type="selectionEntry" id="700e-e7f5-1ded-4ddc" targetId="70ec-97fa-8a6a-1443">
@@ -8386,7 +8431,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d7ac-b513-5e6b-8097" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5e34-b635-1b43-5600" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="eba9-f95d-e2cf-b6e6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8504,7 +8549,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="5e34-b635-1b43-5600">
+        <modifier type="set" value="0" field="eba9-f95d-e2cf-b6e6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8514,7 +8559,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5e34-b635-1b43-5600">
+        <modifier type="increment" value="1" field="eba9-f95d-e2cf-b6e6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8536,7 +8581,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5e34-b635-1b43-5600">
+        <modifier type="increment" value="1" field="eba9-f95d-e2cf-b6e6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8571,7 +8616,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="5104-e26f-4783-6a5e" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="87cd-f529-52a8-be2c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2b95-89bb-a96e-a8bf" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8678,7 +8723,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="87cd-f529-52a8-be2c">
+        <modifier type="set" value="0" field="2b95-89bb-a96e-a8bf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8688,7 +8733,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="87cd-f529-52a8-be2c">
+        <modifier type="increment" value="1" field="2b95-89bb-a96e-a8bf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8710,7 +8755,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="87cd-f529-52a8-be2c">
+        <modifier type="increment" value="1" field="2b95-89bb-a96e-a8bf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8746,7 +8791,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="1f0a-9995-a882-3211" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2d74-81c0-bf37-5c79" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c834-f215-da28-31f6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8858,7 +8903,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="2d74-81c0-bf37-5c79">
+        <modifier type="set" value="0" field="c834-f215-da28-31f6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8868,7 +8913,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2d74-81c0-bf37-5c79">
+        <modifier type="increment" value="1" field="c834-f215-da28-31f6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8890,7 +8935,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2d74-81c0-bf37-5c79">
+        <modifier type="increment" value="1" field="c834-f215-da28-31f6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8925,7 +8970,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="e0c4-3f41-a95f-dacd" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cf68-363c-add0-f8b6" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0c84-7036-bfc9-749b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9032,7 +9077,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="cf68-363c-add0-f8b6">
+        <modifier type="set" value="0" field="0c84-7036-bfc9-749b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9042,7 +9087,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="cf68-363c-add0-f8b6">
+        <modifier type="increment" value="1" field="0c84-7036-bfc9-749b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9064,7 +9109,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="cf68-363c-add0-f8b6">
+        <modifier type="increment" value="1" field="0c84-7036-bfc9-749b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9091,14 +9136,17 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
     <entryLink import="true" name="High Priest" hidden="false" type="selectionEntry" id="9217-6289-beb1-4238" targetId="9588-64f-fed8-a491">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="75d5-71ef-e3aa-c919" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="0-1 Tomb King or High Priest per 1,000 points" hidden="false" id="9372-68a4-b539-e4ef" targetId="0a2f-6974-f23b-d558" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="6277-e138-2629-0e19" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="d59a-2547-1a65-6e3f"/>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="5edf-3131-a01a-b525"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a64e-1af7-8779-3f11" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d9ef-42f0-b11c-0749" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e99c-89cc-e8bb-3a3f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9107,44 +9155,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="force" childId="f4e3-6de0-8d92-c339" shared="true"/>
           </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="5edf-3131-a01a-b525">
-          <repeats>
-            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="decrement" value="1" field="5edf-3131-a01a-b525">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="2972-33ee-cbdb-6137" shared="true" roundUp="false" includeChildSelections="true"/>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="e04b-3d83-a607-aaf" shared="true" roundUp="false" includeChildSelections="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="5edf-3131-a01a-b525">
-          <repeats>
-            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
-          </repeats>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
         <modifier type="set" value="0" field="a64e-1af7-8779-3f11">
           <comment>Grand melee</comment>
@@ -9203,7 +9213,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="d9ef-42f0-b11c-0749">
+        <modifier type="set" value="0" field="e99c-89cc-e8bb-3a3f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9213,7 +9223,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="d9ef-42f0-b11c-0749">
+        <modifier type="increment" value="1" field="e99c-89cc-e8bb-3a3f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9235,7 +9245,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="d9ef-42f0-b11c-0749">
+        <modifier type="increment" value="1" field="e99c-89cc-e8bb-3a3f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9257,12 +9267,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="floor" value="1" field="5edf-3131-a01a-b525">
-          <comment>Battle march</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Tomb Guard" hidden="false" type="selectionEntry" id="2089-6260-9ca3-4884" targetId="57fe-aa08-f68-150f">
@@ -9278,7 +9282,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="e4b6-cae3-eaea-b82f" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="37ff-ceaf-eed2-7c73" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9aa6-7f1f-096a-967a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9385,7 +9389,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="37ff-ceaf-eed2-7c73">
+        <modifier type="set" value="0" field="9aa6-7f1f-096a-967a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9395,7 +9399,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="37ff-ceaf-eed2-7c73">
+        <modifier type="increment" value="1" field="9aa6-7f1f-096a-967a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9417,7 +9421,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="37ff-ceaf-eed2-7c73">
+        <modifier type="increment" value="1" field="9aa6-7f1f-096a-967a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9453,7 +9457,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4970-4e76-092f-45ca" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fda4-5694-1650-1ec7" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9d78-637a-f721-a865" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9560,7 +9564,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="fda4-5694-1650-1ec7">
+        <modifier type="set" value="0" field="9d78-637a-f721-a865">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9570,7 +9574,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="fda4-5694-1650-1ec7">
+        <modifier type="increment" value="1" field="9d78-637a-f721-a865">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9592,7 +9596,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="fda4-5694-1650-1ec7">
+        <modifier type="increment" value="1" field="9d78-637a-f721-a865">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9629,7 +9633,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d664-8050-3781-37b7" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f459-8eb1-7d97-1bdd" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4f97-eaa4-9a2c-0398" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9741,7 +9745,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="f459-8eb1-7d97-1bdd">
+        <modifier type="set" value="0" field="4f97-eaa4-9a2c-0398">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9751,7 +9755,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f459-8eb1-7d97-1bdd">
+        <modifier type="increment" value="1" field="4f97-eaa4-9a2c-0398">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9773,7 +9777,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f459-8eb1-7d97-1bdd">
+        <modifier type="increment" value="1" field="4f97-eaa4-9a2c-0398">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9808,7 +9812,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="526c-ebf2-7069-b760" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="860e-fb7d-a479-5bc3" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6ae7-c774-27e1-8860" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9915,7 +9919,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="860e-fb7d-a479-5bc3">
+        <modifier type="set" value="0" field="6ae7-c774-27e1-8860">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9925,7 +9929,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="860e-fb7d-a479-5bc3">
+        <modifier type="increment" value="1" field="6ae7-c774-27e1-8860">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9947,7 +9951,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="860e-fb7d-a479-5bc3">
+        <modifier type="increment" value="1" field="6ae7-c774-27e1-8860">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9983,7 +9987,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="aecb-aec0-405a-ffed" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6dc7-a06e-0ead-30f2" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6d09-ec42-2baa-7693" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10090,7 +10094,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="6dc7-a06e-0ead-30f2">
+        <modifier type="set" value="0" field="6d09-ec42-2baa-7693">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10100,7 +10104,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6dc7-a06e-0ead-30f2">
+        <modifier type="increment" value="1" field="6d09-ec42-2baa-7693">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10122,7 +10126,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6dc7-a06e-0ead-30f2">
+        <modifier type="increment" value="1" field="6d09-ec42-2baa-7693">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10158,7 +10162,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d600-3913-91bb-df57" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="734f-7541-8ae4-362c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6859-e137-e684-93f9" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10265,7 +10269,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="734f-7541-8ae4-362c">
+        <modifier type="set" value="0" field="6859-e137-e684-93f9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10275,7 +10279,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="734f-7541-8ae4-362c">
+        <modifier type="increment" value="1" field="6859-e137-e684-93f9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10297,7 +10301,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="734f-7541-8ae4-362c">
+        <modifier type="increment" value="1" field="6859-e137-e684-93f9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10333,7 +10337,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="9f0d-78f7-aaa7-6261" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4d24-0a34-5a85-4d64" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e4e2-e369-4e55-ad90" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10440,7 +10444,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="4d24-0a34-5a85-4d64">
+        <modifier type="set" value="0" field="e4e2-e369-4e55-ad90">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10450,7 +10454,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4d24-0a34-5a85-4d64">
+        <modifier type="increment" value="1" field="e4e2-e369-4e55-ad90">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10469,10 +10473,10 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4d24-0a34-5a85-4d64">
+        <modifier type="increment" value="1" field="e4e2-e369-4e55-ad90">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10491,7 +10495,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -10774,7 +10778,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a7cd-9e33-f55d-9901" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="08f7-496f-7881-313d" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="eaaa-0845-f024-13d1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10836,7 +10840,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="08f7-496f-7881-313d">
+        <modifier type="set" value="0" field="eaaa-0845-f024-13d1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10846,7 +10850,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="08f7-496f-7881-313d">
+        <modifier type="increment" value="1" field="eaaa-0845-f024-13d1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10868,7 +10872,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="08f7-496f-7881-313d">
+        <modifier type="increment" value="1" field="eaaa-0845-f024-13d1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10896,13 +10900,17 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="dbf4-6ff3-5bf-e589" targetId="a4cc-15c9-cfae-1b3b" primary="false"/>
         <categoryLink name="Named Characters" hidden="false" id="79e7-df91-2bd3-dde1" targetId="3ba8-a41e-b6ae-d4ba" primary="true"/>
+        <categoryLink name="0-1 Tomb King or High Priest per 1,000 points" hidden="false" id="6c83-186e-6984-5abf" targetId="0a2f-6974-f23b-d558" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="54a5-becf-4930-22cc" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="false" id="8df0-fe45-e629-4ace" includeChildSelections="true"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b6a9-efee-74ab-62c7" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5ddc-18a2-2b73-4633" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6776-8733-d7dc-1f50" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10964,7 +10972,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="5ddc-18a2-2b73-4633">
+        <modifier type="set" value="0" field="6776-8733-d7dc-1f50">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10974,7 +10982,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5ddc-18a2-2b73-4633">
+        <modifier type="increment" value="1" field="6776-8733-d7dc-1f50">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10996,7 +11004,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5ddc-18a2-2b73-4633">
+        <modifier type="increment" value="1" field="6776-8733-d7dc-1f50">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11030,7 +11038,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8f76-3098-b037-997c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="90ec-7e13-f890-a893" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9d20-3965-59c2-53bb" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11092,7 +11100,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="90ec-7e13-f890-a893">
+        <modifier type="set" value="0" field="9d20-3965-59c2-53bb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11102,7 +11110,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="90ec-7e13-f890-a893">
+        <modifier type="increment" value="1" field="9d20-3965-59c2-53bb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11124,7 +11132,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="90ec-7e13-f890-a893">
+        <modifier type="increment" value="1" field="9d20-3965-59c2-53bb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11150,15 +11158,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
     </entryLink>
     <entryLink import="true" name="Winged Warsphinx" hidden="false" id="fd26-c167-37e8-1d56" type="selectionEntry" targetId="dce0-c3dc-6fad-3800">
       <categoryLinks>
-        <categoryLink targetId="2bfe-5863-46fe-d284" id="c40d-83bb-f8a6-9d9a" primary="true" name="Rare"/>
-        <categoryLink targetId="fec1-537a-bbeb-7926" id="c0b3-ce89-8597-1455" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink name="Rare" hidden="false" id="c40d-83bb-f8a6-9d9a" targetId="2bfe-5863-46fe-d284" primary="true"/>
+        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="c0b3-ce89-8597-1455" targetId="fec1-537a-bbeb-7926" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="6873-2896-751e-bced" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="fa03-fa3c-c337-034c" includeChildSelections="true"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7b27-69ee-dafa-ff21" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="32c6-866d-6390-d0ca" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="301c-b68f-abc3-7513" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11252,7 +11263,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="32c6-866d-6390-d0ca">
+        <modifier type="set" value="0" field="301c-b68f-abc3-7513">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11262,7 +11273,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="32c6-866d-6390-d0ca">
+        <modifier type="increment" value="1" field="301c-b68f-abc3-7513">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11281,10 +11292,10 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="32c6-866d-6390-d0ca">
+        <modifier type="increment" value="1" field="301c-b68f-abc3-7513">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11303,7 +11314,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="fa03-fa3c-c337-034c">
@@ -11422,7 +11433,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
-    <categoryEntry name="0-1 Skeleton Horse Archers  Unit per 1,000 points may have the Chariot Runner special rule for free" id="6198-b71f-11d8-75c7" hidden="true">
+    <categoryEntry name="0-1 Skeleton Horse Archers Unit per 1,000 points may have the Chariot Runner special rule for free" id="6198-b71f-11d8-75c7" hidden="true">
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="ab1d-bacd-25f5-3e3d" includeChildSelections="true"/>
       </constraints>
@@ -11461,8 +11472,50 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         </modifier>
         <modifier type="floor" value="1" field="ab1d-bacd-25f5-3e3d">
           <comment>Battle march</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
         </modifier>
-        <modifier type="floor" value="1" field="ab1d-bacd-25f5-3e3d">
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="0-1 Tomb King or High Priest per 1,000 points" id="0a2f-6974-f23b-d558" hidden="true">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="f8ef-f836-8829-d09e" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="f8ef-f836-8829-d09e">
+          <repeats>
+            <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="0cd9-46b6-1d3e-29a7"/>
+          </repeats>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="1" field="f8ef-f836-8829-d09e">
+          <repeats>
+            <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="ea18-321e-719f-374b"/>
+          </repeats>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="floor" value="1" field="f8ef-f836-8829-d09e">
           <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>

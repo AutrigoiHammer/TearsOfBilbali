@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="c997-9d47-72ad-c5f1" name="Orc and Goblin Tribes" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="19" revision="179" authorName="Flammy" battleScribeVersion="2.03" type="catalogue" authorContact="Discord: vflam" authorUrl="www.newrecruit.eu">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="c997-9d47-72ad-c5f1" name="Orc and Goblin Tribes" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="19" revision="185" authorName="Flammy" battleScribeVersion="2.03" type="catalogue" authorContact="Discord: vflam" authorUrl="www.newrecruit.eu">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Orc Mobs" hidden="false" id="51e8-1471-ce4c-d5dd">
       <profiles>
@@ -26,6 +26,7 @@
                 </modifier>
               </modifiers>
             </infoLink>
+            <infoLink name="Furious Charge" id="8efe-611b-ef00-e895" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -629,6 +630,9 @@
                 <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="e86d-2ae7-e493-5942">
                   <categoryLinks>
                     <categoryLink name="NO EXPORT" hidden="false" id="5513-3a40-4b15-6865" targetId="49a9-ce63-af1a-18f7" primary="false"/>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="f07d-a5a6-7c32-3eec" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
                   </categoryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6b3-f1e0-a20e-23ac"/>
@@ -653,16 +657,38 @@
                       <repeats>
                         <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="7ac2-def6-cb0b-ee62"/>
                       </repeats>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="increment" value="1" field="fc30-295c-41b3-6feb">
                       <repeats>
                         <repeat value="1000" repeats="1" field="points" scope="roster" childId="any" shared="true" roundUp="false" id="af0b-68de-f06c-dac0"/>
                       </repeats>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="floor" value="1" field="fc30-295c-41b3-6feb">
+                      <comment>Battle march</comment>
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -867,6 +893,9 @@
                 <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="2292-1aed-3585-544a" flatten="false" collective="true">
                   <categoryLinks>
                     <categoryLink name="NO EXPORT" hidden="false" id="b18c-a320-a40c-eb38" targetId="49a9-ce63-af1a-18f7" primary="false"/>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="71d1-1b22-4c38-d282" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
                   </categoryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e905-e892-dc1a-f10d"/>
@@ -877,16 +906,38 @@
                       <repeats>
                         <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="5387-9752-2d03-dec7" includeChildSelections="true"/>
                       </repeats>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="increment" value="1" field="ca55-db65-af07-5342">
                       <repeats>
                         <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="2cde-384f-334e-d9fc" includeChildSelections="true"/>
                       </repeats>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="floor" value="1" field="ca55-db65-af07-5342">
+                      <comment>Battle march</comment>
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1110,7 +1161,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Common Troll" hidden="false" id="746-ce49-cbf9-b506">
           <costs>
-            <cost name="pts" typeId="points" value="41"/>
+            <cost name="pts" typeId="points" value="39"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3117-f512-5f3c-fa29"/>
@@ -1207,7 +1258,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="River Troll" hidden="false" id="1f09-bcd2-8a32-77da">
           <costs>
-            <cost name="pts" typeId="points" value="49"/>
+            <cost name="pts" typeId="points" value="47"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="984e-bcfc-4f91-eaf"/>
@@ -1305,7 +1356,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Stone Troll" hidden="false" id="cefc-8502-9f03-9f41">
           <costs>
-            <cost name="pts" typeId="points" value="45"/>
+            <cost name="pts" typeId="points" value="43"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5be3-a831-63d8-6e0e"/>
@@ -1465,6 +1516,9 @@
                 <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="82da-88c5-74bc-3dbb">
                   <categoryLinks>
                     <categoryLink name="NO EXPORT" hidden="false" id="47ba-fe8-a45c-7a45" targetId="49a9-ce63-af1a-18f7" primary="false"/>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="8714-fbaa-4a22-8f41" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
                   </categoryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="833f-4e41-3952-94a"/>
@@ -1472,20 +1526,42 @@
                   </constraints>
                   <modifiers>
                     <modifier type="increment" value="1" field="59f3-4725-7ae8-fdaf">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                      </conditions>
                       <repeats>
                         <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
                       </repeats>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="increment" value="1" field="59f3-4725-7ae8-fdaf">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                      </conditions>
                       <repeats>
                         <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
                       </repeats>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="floor" value="1" field="59f3-4725-7ae8-fdaf">
+                      <comment>Battle march</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <entryLinks>
@@ -1559,8 +1635,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1725,6 +1801,9 @@
                 <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="d285-1ef0-60a9-f295" sortIndex="1" flatten="true">
                   <categoryLinks>
                     <categoryLink name="NO EXPORT" hidden="false" id="d40a-884a-92e1-b0a4" targetId="49a9-ce63-af1a-18f7" primary="false"/>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="61f1-8780-c78a-cb96" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
                   </categoryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbbf-fc86-48cc-6aa7"/>
@@ -1735,16 +1814,38 @@
                       <repeats>
                         <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="ee11-cb3d-ae6a-a111" includeChildSelections="true"/>
                       </repeats>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="increment" value="1" field="29a9-884-5ca-59dd">
                       <repeats>
                         <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="b1f2-53f1-3d86-2b71" includeChildSelections="true"/>
                       </repeats>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="floor" value="1" field="29a9-884-5ca-59dd">
+                      <comment>Battle march</comment>
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1826,8 +1927,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1962,6 +2063,9 @@
                 <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="de1a-9244-e370-108e">
                   <categoryLinks>
                     <categoryLink name="NO EXPORT" hidden="false" id="5339-f3b7-4714-b498" targetId="49a9-ce63-af1a-18f7" primary="false"/>
+                    <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="3381-6228-b037-575b" targetId="27c9-52f0-c942-681e" primary="false">
+                      <comment>Battle March Category</comment>
+                    </categoryLink>
                   </categoryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfba-fdaf-b92e-cf40"/>
@@ -1972,16 +2076,38 @@
                       <repeats>
                         <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="6a7a-455b-68f2-1410"/>
                       </repeats>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="increment" value="1" field="eab8-68e8-ad9b-915d">
                       <repeats>
                         <repeat value="1000" repeats="1" field="points" scope="roster" childId="any" shared="true" roundUp="false" id="7908-0edb-7829-3aa8"/>
                       </repeats>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="floor" value="1" field="eab8-68e8-ad9b-915d">
+                      <comment>Battle march</comment>
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2172,8 +2298,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2309,8 +2435,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3054,8 +3180,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3257,8 +3383,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3425,8 +3551,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3602,8 +3728,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3753,8 +3879,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3899,8 +4025,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4070,8 +4196,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4252,8 +4378,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4539,8 +4665,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4712,8 +4838,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4963,8 +5089,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5108,8 +5234,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5526,8 +5652,8 @@
             <cost name="pts" typeId="points" value="45"/>
           </costs>
           <constraints>
-            <constraint id="cad3-15ed-13fe-3224" type="min" field="selections" scope="parent" value="1"/>
-            <constraint id="5478-beaa-1892-d909" type="max" field="selections" scope="parent" value="1"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cad3-15ed-13fe-3224"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5478-beaa-1892-d909"/>
           </constraints>
           <infoLinks>
             <infoLink name="Base (50x50)" hidden="false" type="profile" id="9751-f3eb-61a0-b797" targetId="7813-4d15-143d-1bf1"/>
@@ -5853,6 +5979,9 @@
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Frenzy" hidden="false" id="123c-2d45-fa0-45e" collective="false" flatten="true" sortIndex="1">
+      <infoLinks>
+        <infoLink name="Frenzy" id="0a1f-9c2e-7b3d-1001" hidden="false" type="profile" targetId="3b0c-a477-8823-3a25"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
@@ -5865,16 +5994,38 @@
           <repeats>
             <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="43c4-b62-1f9a-ef01" includeChildSelections="true"/>
           </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" value="1" field="b2a4-8303-45e1-a355">
           <repeats>
             <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="ab38-b911-b2e8-4bce" includeChildSelections="true"/>
           </repeats>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="floor" value="1" field="b2a4-8303-45e1-a355">
+          <comment>Battle march</comment>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5892,8 +6043,16 @@
         </selectionEntry>
       </selectionEntries>
       <comment>Shamans</comment>
+      <categoryLinks>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="fe94-c1d5-e61e-e7e5" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Frenzy" hidden="false" id="55c1-2dbc-f143-bfd8" collective="false" flatten="true" sortIndex="2">
+      <infoLinks>
+        <infoLink name="Frenzy" id="0a1f-9c2e-7b3d-1002" hidden="false" type="profile" targetId="3b0c-a477-8823-3a25"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="3"/>
       </costs>
@@ -5905,16 +6064,38 @@
           <repeats>
             <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="d724-b76f-697e-2859" includeChildSelections="true"/>
           </repeats>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" value="1" field="c470-9b24-e4dc-143c">
           <repeats>
             <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="44ff-3cfc-b3cf-4c9e" includeChildSelections="true"/>
           </repeats>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="floor" value="1" field="c470-9b24-e4dc-143c">
+          <comment>Battle march</comment>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5932,6 +6113,11 @@
         </selectionEntry>
       </selectionEntries>
       <comment>Bosses</comment>
+      <categoryLinks>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="7e53-0380-82e5-0446" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Massive Gob" hidden="false" id="7fdc-447-e2b8-2044" collective="true">
       <constraints>
@@ -6782,7 +6968,7 @@ Note that this special rule only applies to attacks made by a War Boar, not to t
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">3</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">3</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
-        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">1</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">5</characteristic>
       </characteristics>
@@ -6876,7 +7062,7 @@ Enemy models removed from play are considered to have been removed from the figh
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
-        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">6</characteristic>
       </characteristics>
     </profile>
     <profile name="River Troll" hidden="false" id="b1ad-d9c1-d52d-c2d" typeId="b070-143a-73f-2772" typeName="Model">
@@ -6889,7 +7075,7 @@ Enemy models removed from play are considered to have been removed from the figh
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">4</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">1</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
-        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">4</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">6</characteristic>
       </characteristics>
     </profile>
     <profile name="Stone Troll" hidden="false" id="447c-5362-f23e-d3d4" typeId="b070-143a-73f-2772" typeName="Model">
@@ -6902,7 +7088,7 @@ Enemy models removed from play are considered to have been removed from the figh
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">3</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">1</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
-        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">5</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">7</characteristic>
       </characteristics>
     </profile>
     <profile name="Boar Boy" hidden="false" id="80ed-9a8a-a23f-39c0" typeId="b070-143a-73f-2772" typeName="Model">
@@ -7049,7 +7235,7 @@ Enemy models removed from play are considered to have been removed from the figh
         <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">1</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
-        <characteristic name="T" typeId="ab43-8b61-83e7-d090">6</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">7</characteristic>
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">6</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">2</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">*</characteristic>
@@ -7473,8 +7659,7 @@ During each and every other Compulsory Moves sub-phase, a Fanatic Moves 2D6&quot
 
 **Fanatic Ball &amp; Chain:** Any unit (friend or foe) that is moved through by a moving Fanatic, or that moves through a Fanatic, suffers D6 Strength 5 hits, each with an AP of -3.
 
-**Death of a Fanatic:** A Fanatic model cannot be charged, targeted or attacked in any way.
-However, the life of a Fanatic is no less dangerous for this. Should a Fanatic find itself lying fully or partially underneath a template (one placed over a nearby unit, for example, or that has scattered), it risks being hit as normal. Additionally, if any natural double is rolled for its movement, or if a Fanatic moves into any difficult, dangerous or impassable terrain, or any type of linear obstacle, it comes to a sudden and terminal stop, and is immediately removed from play as a casualty. Finally, if a concealing unit is destroyed or flees the battlefield before its Fanatics have been released, they are removed as casualties.</characteristic>
+**Death of a Fanatic:** Enemy units cannot charge a Fanatic, or otherwise attempt to engage a Fanatic in combat. However, a Fanatic can be targeted by enemy shooting as if it were a lone character. If a Fanatic finds itself lying fully or partially underneath a template, it risks being hit as normal. Should a Fanatic move into another Fanatic, they become entangled in one another’s chains and both are removed as casualties. If any natural double is rolled for a Fanatic’s movement, or if it moves into contact with any difficult, dangerous or impassable terrain, or any type of linear obstacle, it comes to a terminal stop, and is removed as a casualty. Finally, if a concealing unit is destroyed or flees the battlefield before its Fanatics have been released, they are also removed as casualties.</characteristic>
       </characteristics>
     </profile>
     <profile name="Fanatic" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="5af3-a46d-e0a0-649d">
@@ -7743,7 +7928,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
     <profile name="Troll Hag" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="f193-34d0-8eae-4d82">
       <characteristics>
         <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">5</characteristic>
-        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">2</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">3</characteristic>
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">2</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
@@ -7866,7 +8051,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4a1b-1f95-70eb-f59f" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d352-26c6-1265-e927" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="63ec-41be-e157-e024" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7973,7 +8158,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="d352-26c6-1265-e927">
+        <modifier type="set" value="0" field="63ec-41be-e157-e024">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7983,7 +8168,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="d352-26c6-1265-e927">
+        <modifier type="increment" value="1" field="63ec-41be-e157-e024">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8005,7 +8190,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="d352-26c6-1265-e927">
+        <modifier type="increment" value="1" field="63ec-41be-e157-e024">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8042,7 +8227,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="1b6f-c042-173c-a3fa" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0a3a-e916-bd07-e52d" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a8ca-1393-b157-63ef" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8149,7 +8334,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="0a3a-e916-bd07-e52d">
+        <modifier type="set" value="0" field="a8ca-1393-b157-63ef">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8159,7 +8344,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0a3a-e916-bd07-e52d">
+        <modifier type="increment" value="1" field="a8ca-1393-b157-63ef">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8181,7 +8366,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0a3a-e916-bd07-e52d">
+        <modifier type="increment" value="1" field="a8ca-1393-b157-63ef">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8217,7 +8402,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="1e73-9e39-0c79-4c23" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7e3a-0c88-d8ca-b23e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0908-9fb3-af88-aa74" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8324,7 +8509,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="7e3a-0c88-d8ca-b23e">
+        <modifier type="set" value="0" field="0908-9fb3-af88-aa74">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8334,7 +8519,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7e3a-0c88-d8ca-b23e">
+        <modifier type="increment" value="1" field="0908-9fb3-af88-aa74">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8356,7 +8541,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7e3a-0c88-d8ca-b23e">
+        <modifier type="increment" value="1" field="0908-9fb3-af88-aa74">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8386,7 +8571,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f960-b92f-137d-7eaf" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7bcb-8595-c7ff-8950" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="705f-d073-b9fb-c93d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8456,7 +8641,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="7bcb-8595-c7ff-8950">
+        <modifier type="set" value="0" field="705f-d073-b9fb-c93d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8466,7 +8651,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7bcb-8595-c7ff-8950">
+        <modifier type="increment" value="1" field="705f-d073-b9fb-c93d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8488,7 +8673,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7bcb-8595-c7ff-8950">
+        <modifier type="increment" value="1" field="705f-d073-b9fb-c93d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8527,7 +8712,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="8a90-74db-066a-acb7" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="952e-c7be-2501-159c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9bbc-9263-2b25-9043" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8634,7 +8819,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="952e-c7be-2501-159c">
+        <modifier type="set" value="0" field="9bbc-9263-2b25-9043">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8644,7 +8829,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="952e-c7be-2501-159c">
+        <modifier type="increment" value="1" field="9bbc-9263-2b25-9043">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8666,7 +8851,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="952e-c7be-2501-159c">
+        <modifier type="increment" value="1" field="9bbc-9263-2b25-9043">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8702,7 +8887,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="2c7d-e83d-388a-fb4e" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fa56-fe99-9c30-fa1e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="53af-c721-efd2-7d6c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8809,7 +8994,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="fa56-fe99-9c30-fa1e">
+        <modifier type="set" value="0" field="53af-c721-efd2-7d6c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8819,7 +9004,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="fa56-fe99-9c30-fa1e">
+        <modifier type="increment" value="1" field="53af-c721-efd2-7d6c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8841,7 +9026,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="fa56-fe99-9c30-fa1e">
+        <modifier type="increment" value="1" field="53af-c721-efd2-7d6c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8877,7 +9062,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="80ba-2ace-9ccd-3e69" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0a25-b91b-c45f-f925" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="88e9-651b-c200-26a1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8984,7 +9169,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="0a25-b91b-c45f-f925">
+        <modifier type="set" value="0" field="88e9-651b-c200-26a1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8994,7 +9179,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0a25-b91b-c45f-f925">
+        <modifier type="increment" value="1" field="88e9-651b-c200-26a1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9016,7 +9201,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0a25-b91b-c45f-f925">
+        <modifier type="increment" value="1" field="88e9-651b-c200-26a1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9052,7 +9237,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="c3d0-bc88-a1db-a76d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9659-577e-8489-4d7c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7c3c-ac7e-8927-2fa9" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9159,7 +9344,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="9659-577e-8489-4d7c">
+        <modifier type="set" value="0" field="7c3c-ac7e-8927-2fa9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9169,7 +9354,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9659-577e-8489-4d7c">
+        <modifier type="increment" value="1" field="7c3c-ac7e-8927-2fa9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9191,7 +9376,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9659-577e-8489-4d7c">
+        <modifier type="increment" value="1" field="7c3c-ac7e-8927-2fa9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9227,7 +9412,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d969-de85-f870-45f3" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ad7c-d9ff-7f2c-6e17" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="650f-d862-0452-d3a2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9334,7 +9519,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="ad7c-d9ff-7f2c-6e17">
+        <modifier type="set" value="0" field="650f-d862-0452-d3a2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9344,7 +9529,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ad7c-d9ff-7f2c-6e17">
+        <modifier type="increment" value="1" field="650f-d862-0452-d3a2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9366,7 +9551,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ad7c-d9ff-7f2c-6e17">
+        <modifier type="increment" value="1" field="650f-d862-0452-d3a2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9402,7 +9587,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="0b6b-f2ad-5220-7ae4" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a5fc-179d-8106-139c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5d29-66e8-4483-034f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9509,7 +9694,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="a5fc-179d-8106-139c">
+        <modifier type="set" value="0" field="5d29-66e8-4483-034f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9519,7 +9704,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a5fc-179d-8106-139c">
+        <modifier type="increment" value="1" field="5d29-66e8-4483-034f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9541,7 +9726,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a5fc-179d-8106-139c">
+        <modifier type="increment" value="1" field="5d29-66e8-4483-034f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9577,7 +9762,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="aa86-2cbb-ae70-e875" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="84d2-0855-99b9-0a69" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="91fe-f7f6-c062-fbc3" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9684,7 +9869,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="84d2-0855-99b9-0a69">
+        <modifier type="set" value="0" field="91fe-f7f6-c062-fbc3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9694,7 +9879,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="84d2-0855-99b9-0a69">
+        <modifier type="increment" value="1" field="91fe-f7f6-c062-fbc3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9716,7 +9901,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="84d2-0855-99b9-0a69">
+        <modifier type="increment" value="1" field="91fe-f7f6-c062-fbc3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9746,7 +9931,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ff99-7927-d6d6-1be6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c105-1e56-ffef-fa05" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0f9b-ff9a-3309-a8fd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9816,7 +10001,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="c105-1e56-ffef-fa05">
+        <modifier type="set" value="0" field="0f9b-ff9a-3309-a8fd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9826,7 +10011,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c105-1e56-ffef-fa05">
+        <modifier type="increment" value="1" field="0f9b-ff9a-3309-a8fd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9848,7 +10033,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c105-1e56-ffef-fa05">
+        <modifier type="increment" value="1" field="0f9b-ff9a-3309-a8fd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9888,7 +10073,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="dbd1-2bf1-6ad1-0c68" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1f12-cac8-9d39-ec76" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a72f-1c95-31aa-57d2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9995,7 +10180,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="1f12-cac8-9d39-ec76">
+        <modifier type="set" value="0" field="a72f-1c95-31aa-57d2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10005,7 +10190,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1f12-cac8-9d39-ec76">
+        <modifier type="increment" value="1" field="a72f-1c95-31aa-57d2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10027,7 +10212,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1f12-cac8-9d39-ec76">
+        <modifier type="increment" value="1" field="a72f-1c95-31aa-57d2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10063,7 +10248,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="7b3a-690e-beb1-52cb" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4c23-7ac4-5768-236a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2271-2bac-bc5c-bcd6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10170,7 +10355,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="4c23-7ac4-5768-236a">
+        <modifier type="set" value="0" field="2271-2bac-bc5c-bcd6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10180,7 +10365,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4c23-7ac4-5768-236a">
+        <modifier type="increment" value="1" field="2271-2bac-bc5c-bcd6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10199,10 +10384,10 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4c23-7ac4-5768-236a">
+        <modifier type="increment" value="1" field="2271-2bac-bc5c-bcd6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10221,7 +10406,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -10317,7 +10502,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="4879-f0e8-c956-a31e">
+        <modifier type="set" value="0" field="6b49-ba2e-011e-3f6b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10327,7 +10512,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4879-f0e8-c956-a31e">
+        <modifier type="increment" value="1" field="6b49-ba2e-011e-3f6b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10346,10 +10531,10 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4879-f0e8-c956-a31e">
+        <modifier type="increment" value="1" field="6b49-ba2e-011e-3f6b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10368,7 +10553,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="643-3ec0-8552-41b4">
@@ -10383,12 +10568,15 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7347-3d78-5d19-1896" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4879-f0e8-c956-a31e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6b49-ba2e-011e-3f6b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="6d17-acec-954b-b6d1" targetId="2bfe-5863-46fe-d284" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="4b74-26c9-2e26-ee63" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Doom Diver Catapults" hidden="false" type="selectionEntry" id="ba24-f4c2-236e-9a34" targetId="20d9-d374-f5d5-82bc">
@@ -10397,7 +10585,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b355-9f13-982a-c50e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cd1f-c54e-e581-ee46" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a25a-f580-cd4c-7e25" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10491,7 +10679,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="cd1f-c54e-e581-ee46">
+        <modifier type="set" value="0" field="a25a-f580-cd4c-7e25">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10501,7 +10689,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="cd1f-c54e-e581-ee46">
+        <modifier type="increment" value="1" field="a25a-f580-cd4c-7e25">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10520,10 +10708,10 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="cd1f-c54e-e581-ee46">
+        <modifier type="increment" value="1" field="a25a-f580-cd4c-7e25">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10542,7 +10730,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="b138-8f3b-590f-b148">
@@ -10554,6 +10742,9 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
       </modifiers>
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="7c20-180c-6f7c-ef4c" targetId="2bfe-5863-46fe-d284" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="6212-34f3-025a-b178" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Snotling Pump Wagons" hidden="false" type="selectionEntry" id="bf38-92d0-bd32-3aeb" targetId="2f44-19e3-996-656b">
@@ -10568,7 +10759,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="9fe9-e494-a913-0956" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6cbb-3f5c-e4a7-da43" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="87bc-8cf2-00dd-53ab" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10675,7 +10866,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="6cbb-3f5c-e4a7-da43">
+        <modifier type="set" value="0" field="87bc-8cf2-00dd-53ab">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10685,7 +10876,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6cbb-3f5c-e4a7-da43">
+        <modifier type="increment" value="1" field="87bc-8cf2-00dd-53ab">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10707,7 +10898,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6cbb-3f5c-e4a7-da43">
+        <modifier type="increment" value="1" field="87bc-8cf2-00dd-53ab">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10743,7 +10934,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="5ab2-cccc-238a-2b38" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8f50-e0cb-e7bb-fd6d" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a9ff-895f-5ee0-b685" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10850,7 +11041,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="8f50-e0cb-e7bb-fd6d">
+        <modifier type="set" value="0" field="a9ff-895f-5ee0-b685">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10860,7 +11051,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="8f50-e0cb-e7bb-fd6d">
+        <modifier type="increment" value="1" field="a9ff-895f-5ee0-b685">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10882,7 +11073,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="8f50-e0cb-e7bb-fd6d">
+        <modifier type="increment" value="1" field="a9ff-895f-5ee0-b685">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10915,7 +11106,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="97f6-6cc0-0ddf-955b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a8d2-ac7a-5806-14be" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a561-9eff-1d28-1a9c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -10977,7 +11168,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="a8d2-ac7a-5806-14be">
+        <modifier type="set" value="0" field="a561-9eff-1d28-1a9c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -10987,7 +11178,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a8d2-ac7a-5806-14be">
+        <modifier type="increment" value="1" field="a561-9eff-1d28-1a9c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11009,7 +11200,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a8d2-ac7a-5806-14be">
+        <modifier type="increment" value="1" field="a561-9eff-1d28-1a9c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11037,13 +11228,16 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="659-34d5-e41a-8173" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
         <categoryLink name="Black Orc Boss (Da Boyz Special Rule)" hidden="false" id="d385-ed46-4678-0d58" targetId="0ba6-6cb2-c5f4-904a" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="be45-a85a-607e-9bcf" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="cfdd-321a-7124-e2ea"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8a8b-2787-a6e7-22f1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7158-177e-1022-a5af" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f032-e7b5-d33e-d239" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11144,7 +11338,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="7158-177e-1022-a5af">
+        <modifier type="set" value="0" field="f032-e7b5-d33e-d239">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11154,7 +11348,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7158-177e-1022-a5af">
+        <modifier type="increment" value="1" field="f032-e7b5-d33e-d239">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11176,7 +11370,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7158-177e-1022-a5af">
+        <modifier type="increment" value="1" field="f032-e7b5-d33e-d239">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11208,15 +11402,18 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
     </entryLink>
     <entryLink import="true" name="Orc Warboss" hidden="false" type="selectionEntry" id="56ce-4ddc-12a5-ec66" targetId="92b4-e584-76ef-ab7">
       <categoryLinks>
-        <categoryLink targetId="331e-3a37-38cb-23d2" id="e1a2-dbeb-94b4-eb95" primary="false" name="Lord"/>
+        <categoryLink name="Lord" hidden="false" id="e1a2-dbeb-94b4-eb95" targetId="331e-3a37-38cb-23d2" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="f0fb-51eb-7627-3fd4" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="1641-a498-a993-ba88" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4dba-2186-ec98-d9be"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9413-1c07-884d-5626" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="75db-b4a1-6848-64ce" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cc5a-12d6-0319-0f71" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11317,7 +11514,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="75db-b4a1-6848-64ce">
+        <modifier type="set" value="0" field="cc5a-12d6-0319-0f71">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11327,7 +11524,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="75db-b4a1-6848-64ce">
+        <modifier type="increment" value="1" field="cc5a-12d6-0319-0f71">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11349,7 +11546,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="75db-b4a1-6848-64ce">
+        <modifier type="increment" value="1" field="cc5a-12d6-0319-0f71">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11390,7 +11587,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="874b-87c5-cd28-f558" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e6ab-3c59-0929-67cd" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1f3c-0743-fe84-4f38" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11497,7 +11694,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="e6ab-3c59-0929-67cd">
+        <modifier type="set" value="0" field="1f3c-0743-fe84-4f38">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11507,7 +11704,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="e6ab-3c59-0929-67cd">
+        <modifier type="increment" value="1" field="1f3c-0743-fe84-4f38">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11529,7 +11726,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="e6ab-3c59-0929-67cd">
+        <modifier type="increment" value="1" field="1f3c-0743-fe84-4f38">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11564,7 +11761,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b1a4-49cd-a083-f35e" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5a46-31dd-6ade-bf62" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ca25-7ad1-f820-649c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11671,7 +11868,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="5a46-31dd-6ade-bf62">
+        <modifier type="set" value="0" field="ca25-7ad1-f820-649c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11681,7 +11878,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5a46-31dd-6ade-bf62">
+        <modifier type="increment" value="1" field="ca25-7ad1-f820-649c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11703,7 +11900,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5a46-31dd-6ade-bf62">
+        <modifier type="increment" value="1" field="ca25-7ad1-f820-649c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11738,7 +11935,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="5d35-8ba6-c433-8c3a" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d37a-52c9-9162-d728" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8ea1-c773-be7d-cc44" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -11845,7 +12042,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="d37a-52c9-9162-d728">
+        <modifier type="set" value="0" field="8ea1-c773-be7d-cc44">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11855,7 +12052,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="d37a-52c9-9162-d728">
+        <modifier type="increment" value="1" field="8ea1-c773-be7d-cc44">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11877,7 +12074,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="d37a-52c9-9162-d728">
+        <modifier type="increment" value="1" field="8ea1-c773-be7d-cc44">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -11912,7 +12109,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b6ff-bfd6-f6b4-cda7" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6586-ed0b-8363-f96f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ad3e-2d90-2b40-d4a8" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12019,7 +12216,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="6586-ed0b-8363-f96f">
+        <modifier type="set" value="0" field="ad3e-2d90-2b40-d4a8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12029,7 +12226,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6586-ed0b-8363-f96f">
+        <modifier type="increment" value="1" field="ad3e-2d90-2b40-d4a8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12051,7 +12248,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6586-ed0b-8363-f96f">
+        <modifier type="increment" value="1" field="ad3e-2d90-2b40-d4a8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12078,13 +12275,16 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
     <entryLink import="true" name="Orc Weirdnob" hidden="false" type="selectionEntry" id="7836-506f-79f7-f95a" targetId="4a90-3060-c790-2d98">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="9aa4-7b9d-efe7-1b58" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="d0cb-cedf-ed4c-54b0" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="83e5-863c-76b0-5f3b"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3bb3-e1f4-ef89-ccdd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fadd-26c7-46d9-9b5f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d162-f9a3-64a1-5de7" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12185,7 +12385,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="fadd-26c7-46d9-9b5f">
+        <modifier type="set" value="0" field="d162-f9a3-64a1-5de7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12195,7 +12395,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="fadd-26c7-46d9-9b5f">
+        <modifier type="increment" value="1" field="d162-f9a3-64a1-5de7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12217,7 +12417,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="fadd-26c7-46d9-9b5f">
+        <modifier type="increment" value="1" field="d162-f9a3-64a1-5de7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12258,7 +12458,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="785c-f61a-4d03-a04d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4f9c-86ea-3f86-9be0" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="21e1-e4dc-a9e3-6624" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12365,7 +12565,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="4f9c-86ea-3f86-9be0">
+        <modifier type="set" value="0" field="21e1-e4dc-a9e3-6624">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12375,7 +12575,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4f9c-86ea-3f86-9be0">
+        <modifier type="increment" value="1" field="21e1-e4dc-a9e3-6624">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12397,7 +12597,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4f9c-86ea-3f86-9be0">
+        <modifier type="increment" value="1" field="21e1-e4dc-a9e3-6624">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12432,7 +12632,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="ae5f-391f-9b5c-3910" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="996e-eb16-631f-dbea" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="487f-2750-7fa6-49ea" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12539,7 +12739,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="996e-eb16-631f-dbea">
+        <modifier type="set" value="0" field="487f-2750-7fa6-49ea">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12549,7 +12749,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="996e-eb16-631f-dbea">
+        <modifier type="increment" value="1" field="487f-2750-7fa6-49ea">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12571,7 +12771,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="996e-eb16-631f-dbea">
+        <modifier type="increment" value="1" field="487f-2750-7fa6-49ea">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12606,7 +12806,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4ab9-fdf3-35f0-eab4" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b140-bfa4-bc46-201c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4d25-1199-ecdc-9fa6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12713,7 +12913,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="b140-bfa4-bc46-201c">
+        <modifier type="set" value="0" field="4d25-1199-ecdc-9fa6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12723,7 +12923,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="b140-bfa4-bc46-201c">
+        <modifier type="increment" value="1" field="4d25-1199-ecdc-9fa6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12745,7 +12945,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="b140-bfa4-bc46-201c">
+        <modifier type="increment" value="1" field="4d25-1199-ecdc-9fa6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12780,7 +12980,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="a527-1e1c-5ed8-0eb9" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3e64-116b-90ee-02f1" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a95f-f73a-8b1d-a189" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -12887,7 +13087,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="3e64-116b-90ee-02f1">
+        <modifier type="set" value="0" field="a95f-f73a-8b1d-a189">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12897,7 +13097,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3e64-116b-90ee-02f1">
+        <modifier type="increment" value="1" field="a95f-f73a-8b1d-a189">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12919,7 +13119,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3e64-116b-90ee-02f1">
+        <modifier type="increment" value="1" field="a95f-f73a-8b1d-a189">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -12954,7 +13154,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4f02-b105-6b47-0693" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1446-f828-c8f3-057a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="853f-120b-6938-22c1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -13061,7 +13261,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="1446-f828-c8f3-057a">
+        <modifier type="set" value="0" field="853f-120b-6938-22c1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13071,7 +13271,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1446-f828-c8f3-057a">
+        <modifier type="increment" value="1" field="853f-120b-6938-22c1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13093,7 +13293,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1446-f828-c8f3-057a">
+        <modifier type="increment" value="1" field="853f-120b-6938-22c1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13128,7 +13328,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="da51-08f1-c9cc-3ed3" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fe6e-446a-7b46-1855" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="dc06-bb15-a0a7-1ce9" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -13235,7 +13435,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="fe6e-446a-7b46-1855">
+        <modifier type="set" value="0" field="dc06-bb15-a0a7-1ce9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13245,7 +13445,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="fe6e-446a-7b46-1855">
+        <modifier type="increment" value="1" field="dc06-bb15-a0a7-1ce9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13267,7 +13467,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="fe6e-446a-7b46-1855">
+        <modifier type="increment" value="1" field="dc06-bb15-a0a7-1ce9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13303,7 +13503,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="5e4f-a9f8-af3c-94af" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="436b-105b-6da2-8a7f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2a6d-0be3-df28-2dc7" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -13410,7 +13610,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="436b-105b-6da2-8a7f">
+        <modifier type="set" value="0" field="2a6d-0be3-df28-2dc7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13420,7 +13620,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="436b-105b-6da2-8a7f">
+        <modifier type="increment" value="1" field="2a6d-0be3-df28-2dc7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13439,10 +13639,10 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="436b-105b-6da2-8a7f">
+        <modifier type="increment" value="1" field="2a6d-0be3-df28-2dc7">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13461,7 +13661,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -13472,7 +13672,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="eb7b-0d0e-1590-2c2e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b77c-da8b-7863-2e95" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="18c0-ce0e-5fd4-f2e9" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -13542,7 +13742,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="b77c-da8b-7863-2e95">
+        <modifier type="set" value="0" field="18c0-ce0e-5fd4-f2e9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13552,7 +13752,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="b77c-da8b-7863-2e95">
+        <modifier type="increment" value="1" field="18c0-ce0e-5fd4-f2e9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13574,7 +13774,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="b77c-da8b-7863-2e95">
+        <modifier type="increment" value="1" field="18c0-ce0e-5fd4-f2e9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13608,7 +13808,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c582-ba2e-f9f7-9069" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4d0d-0854-65fc-e05c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3ebb-fb39-0a4c-ffe8" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -13678,7 +13878,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="4d0d-0854-65fc-e05c">
+        <modifier type="set" value="0" field="3ebb-fb39-0a4c-ffe8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13688,7 +13888,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4d0d-0854-65fc-e05c">
+        <modifier type="increment" value="1" field="3ebb-fb39-0a4c-ffe8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13707,10 +13907,10 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4d0d-0854-65fc-e05c">
+        <modifier type="increment" value="1" field="3ebb-fb39-0a4c-ffe8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13729,7 +13929,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -13829,7 +14029,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="a829-19dd-1a62-fbb1">
+        <modifier type="set" value="0" field="5ac8-ed41-bd67-f70b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13839,7 +14039,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a829-19dd-1a62-fbb1">
+        <modifier type="increment" value="1" field="5ac8-ed41-bd67-f70b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13861,7 +14061,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a829-19dd-1a62-fbb1">
+        <modifier type="increment" value="1" field="5ac8-ed41-bd67-f70b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -13895,12 +14095,15 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2063-e961-4f75-675a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a829-19dd-1a62-fbb1" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5ac8-ed41-bd67-f70b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="f9db-465f-c9e1-10af" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="ee71-9ce1-a4bf-e98f" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Black Orc Mobs" hidden="false" type="selectionEntry" id="dfe5-67e3-1f5b-7ba7" targetId="7b25-6b08-b644-f26f">
@@ -14060,7 +14263,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="978a-495e-f8dd-b5bb" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2021-322e-cac2-bb22" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4c7d-4b72-d7dd-14fb" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -14122,7 +14325,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="2021-322e-cac2-bb22">
+        <modifier type="set" value="0" field="4c7d-4b72-d7dd-14fb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -14132,7 +14335,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2021-322e-cac2-bb22">
+        <modifier type="increment" value="1" field="4c7d-4b72-d7dd-14fb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -14154,7 +14357,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2021-322e-cac2-bb22">
+        <modifier type="increment" value="1" field="4c7d-4b72-d7dd-14fb">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -14188,7 +14391,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1e9a-79eb-f5d8-a0d0" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6ec5-0d5e-d204-fd0f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="19b6-daaa-c37c-9676" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -14250,7 +14453,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="6ec5-0d5e-d204-fd0f">
+        <modifier type="set" value="0" field="19b6-daaa-c37c-9676">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -14260,7 +14463,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6ec5-0d5e-d204-fd0f">
+        <modifier type="increment" value="1" field="19b6-daaa-c37c-9676">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -14282,7 +14485,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6ec5-0d5e-d204-fd0f">
+        <modifier type="increment" value="1" field="19b6-daaa-c37c-9676">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -14312,7 +14515,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="20ca-f185-c6cb-ba09" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a017-11c1-643f-dfd1" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c31e-78ad-5d3a-35e4" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -14385,7 +14588,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="a017-11c1-643f-dfd1">
+        <modifier type="set" value="0" field="c31e-78ad-5d3a-35e4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -14395,7 +14598,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a017-11c1-643f-dfd1">
+        <modifier type="increment" value="1" field="c31e-78ad-5d3a-35e4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -14414,10 +14617,10 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a017-11c1-643f-dfd1">
+        <modifier type="increment" value="1" field="c31e-78ad-5d3a-35e4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -14436,7 +14639,7 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -14521,9 +14724,6 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         </modifier>
         <modifier type="floor" value="1" field="7a0d-6be1-34af-2a77">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="7a0d-6be1-34af-2a77">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -14569,9 +14769,6 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         </modifier>
         <modifier type="floor" value="1" field="3628-b2d2-7b0c-679a">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="3628-b2d2-7b0c-679a">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -14614,9 +14811,6 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="49a7-59c3-b012-7ea9">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="49a7-59c3-b012-7ea9">
           <comment>Battle march</comment>
@@ -14675,9 +14869,6 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         </modifier>
         <modifier type="floor" value="1" field="8720-8976-2417-4090">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="8720-8976-2417-4090">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -14728,9 +14919,6 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         </modifier>
         <modifier type="floor" value="1" field="8a51-0cc6-c3a6-497f">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="8a51-0cc6-c3a6-497f">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -14776,9 +14964,6 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
         </modifier>
         <modifier type="floor" value="1" field="f321-1797-0a94-d4c0">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="f321-1797-0a94-d4c0">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -14821,9 +15006,6 @@ Each time an enemy unit loses a Wound as a result of an Indiscriminate Hunger at
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="7ef8-119d-fe19-838d">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="7ef8-119d-fe19-838d">
           <comment>Battle march</comment>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a339-984f-3777-c73f" name="Dwarfen Mountain Holds - Expeditionary Force" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="118" revision="8" authorUrl="www.newrecruit.eu" authorContact="discord: Tidomann" authorName="Tidomann" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a339-984f-3777-c73f" name="Dwarfen Mountain Holds - Expeditionary Force" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="118" revision="10" authorUrl="www.newrecruit.eu" authorContact="discord: Tidomann" authorName="Tidomann" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Runic Items" id="4f37-145a-6b29-4a39" targetId="7aa2-db17-4956-5c36"/>
     <catalogueLink type="catalogue" name="Mercenaries" id="0594-a52a-24e0-62f1" targetId="12a0-32cd-11d6-f952"/>
@@ -200,7 +200,7 @@
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="6216-da2d-363d-3ea2" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b9c6-46b8-60d6-1f42" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e2e1-e3ba-f07c-945b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -317,7 +317,7 @@
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="b9c6-46b8-60d6-1f42">
+        <modifier type="set" value="0" field="e2e1-e3ba-f07c-945b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -327,7 +327,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="b9c6-46b8-60d6-1f42">
+        <modifier type="increment" value="1" field="e2e1-e3ba-f07c-945b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -349,7 +349,7 @@
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="b9c6-46b8-60d6-1f42">
+        <modifier type="increment" value="1" field="e2e1-e3ba-f07c-945b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1810,15 +1810,18 @@
     </entryLink>
     <entryLink import="true" name="Scout Gyrocopters" hidden="false" id="6c58-9e17-c599-d0aa" type="selectionEntry" targetId="b091-b415-c678-b9b9">
       <categoryLinks>
-        <categoryLink targetId="f0e3-2e32-8866-ea32" id="bc4f-82f6-7dd1-3d0d" primary="true" name="Core"/>
-        <categoryLink targetId="fec1-537a-bbeb-7926" id="e869-4dfd-cee7-fb4e" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
+        <categoryLink name="Core" hidden="false" id="bc4f-82f6-7dd1-3d0d" targetId="f0e3-2e32-8866-ea32" primary="true"/>
+        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="e869-4dfd-cee7-fb4e" targetId="fec1-537a-bbeb-7926" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="8949-5fc3-63e4-2152" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="false" id="849a-1e6c-92b6-3d3e"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="23f4-f2ee-30ee-1d57" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7690-b4a0-8a33-6df2" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7de5-d818-a853-28b8" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -1912,7 +1915,7 @@
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="7690-b4a0-8a33-6df2">
+        <modifier type="set" value="0" field="7de5-d818-a853-28b8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1922,7 +1925,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7690-b4a0-8a33-6df2">
+        <modifier type="increment" value="1" field="7de5-d818-a853-28b8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1944,7 +1947,7 @@
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7690-b4a0-8a33-6df2">
+        <modifier type="increment" value="1" field="7de5-d818-a853-28b8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6dc7-f698-014b-63e1" name="High Elf Realms - Chracian Warhost" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="120" revision="11" authorUrl="www.newrecruit.eu" authorContact="Discord: Tidomann" authorName="Tidomann" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6dc7-f698-014b-63e1" name="High Elf Realms - Chracian Warhost" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="120" revision="15" authorUrl="www.newrecruit.eu" authorContact="Discord: Tidomann" authorName="Tidomann" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="High Elf Realms" id="9b0a-00ff-e8bb-1d68" targetId="56fb-835b-a377-6639"/>
   </catalogueLinks>
   <rules>
     <rule name="Warriors of the Wilderness" id="3de4-f00c-9bc1-f5b1" hidden="false">
-      <description>Once players have finished placing terrain, a Chracian Warhost player may place one additional wood measuring no less than 3&quot; at its narrowest and no more than 9&quot; at its widest point. This may be placed anywhere on the battlefield that is not within their opponent&apos;s deployment zone and not within 6&quot; of a special feature (note that, unlike most terrain features, this terrain feature can be placed within 12&quot; of the centre of the battlefield, unless the presence of a special feature precluded this).</description>
+      <description>Once players have finished placing terrain, a Chracian Warhost player may place one additional area of difficult terrain measuring no less than 3&quot; at its narrowest and no more than 9&quot; at its widest point. This may be placed anywhere on the battlefield that is not within their opponent&apos;s deployment zone and not within 6&quot; of a special feature (note that, unlike most terrain features, this terrain feature can be placed within 12&quot; of the centre of the battlefield, unless the presence of a special feature precluded this).</description>
     </rule>
     <rule name="Hidden Trails" id="e02c-b922-86c9-af3e" hidden="false">
       <description>0-1 unit of Elven Spearment or Elven Archer per 1,000 points within a Chracian Warhost Army of Infamy may have the Move through Cover special rule for +1 point per model.
@@ -192,15 +192,18 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
     </entryLink>
     <entryLink import="true" name="Chracian Chieftains" hidden="false" id="b5be-d548-9538-a58a" type="selectionEntry" targetId="e301-4036-7607-d2bd">
       <categoryLinks>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="8538-2963-c820-ad7c" primary="true" name="Characters"/>
-        <categoryLink targetId="79c5-dc15-19d1-9fb1" id="4beb-0ec0-4bda-737c" primary="false" name="Faction: High Elf Realms - Chracian Warhost"/>
-        <categoryLink targetId="0aff-c20f-1d03-5b07" id="ec9f-49be-5e01-344c" primary="false" name="0-1 Chracian Chieftain or Storm Weaver per 1,000 points"/>
+        <categoryLink name="Characters" hidden="false" id="8538-2963-c820-ad7c" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="Faction: High Elf Realms - Chracian Warhost" hidden="false" id="4beb-0ec0-4bda-737c" targetId="79c5-dc15-19d1-9fb1" primary="false"/>
+        <categoryLink name="0-1 Chracian Chieftain or Storm Weaver per 1,000 points" hidden="false" id="ec9f-49be-5e01-344c" targetId="0aff-c20f-1d03-5b07" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="77de-0fa4-d86e-9d76" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e4b1-acc0-8d68-32ab" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="88b5-1ca3-c4c9-a594" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="74f7-1d9a-bb6b-fdc6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -262,7 +265,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="88b5-1ca3-c4c9-a594">
+        <modifier type="set" value="0" field="74f7-1d9a-bb6b-fdc6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -272,7 +275,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="88b5-1ca3-c4c9-a594">
+        <modifier type="increment" value="1" field="74f7-1d9a-bb6b-fdc6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -294,7 +297,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="88b5-1ca3-c4c9-a594">
+        <modifier type="increment" value="1" field="74f7-1d9a-bb6b-fdc6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1067,7 +1070,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b30d-2830-d30d-56c5" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="91b7-032f-a51d-2feb" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7c98-1e57-df53-db3c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -1174,7 +1177,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="91b7-032f-a51d-2feb">
+        <modifier type="set" value="0" field="7c98-1e57-df53-db3c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1184,7 +1187,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="91b7-032f-a51d-2feb">
+        <modifier type="increment" value="1" field="7c98-1e57-df53-db3c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1206,7 +1209,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="91b7-032f-a51d-2feb">
+        <modifier type="increment" value="1" field="7c98-1e57-df53-db3c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1928,7 +1931,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="436e-8bca-d66a-c4bc" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7d5e-be88-4aa7-9c79" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="74ee-749c-162a-a42d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -1990,7 +1993,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="7d5e-be88-4aa7-9c79">
+        <modifier type="set" value="0" field="74ee-749c-162a-a42d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2000,7 +2003,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7d5e-be88-4aa7-9c79">
+        <modifier type="increment" value="1" field="74ee-749c-162a-a42d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2019,10 +2022,10 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7d5e-be88-4aa7-9c79">
+        <modifier type="increment" value="1" field="74ee-749c-162a-a42d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2041,7 +2044,7 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -2730,9 +2733,6 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
         </modifier>
         <modifier type="floor" value="1" field="a060-e688-70c0-a11c">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="a060-e688-70c0-a11c">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -2778,9 +2778,6 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
         </modifier>
         <modifier type="floor" value="1" field="d0be-3b81-a38d-06ed">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="d0be-3b81-a38d-06ed">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -2823,9 +2820,6 @@ In addition, once per game, after rolling to determine if a unit with the Ambush
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="549c-ef18-fc74-f3aa">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="549c-ef18-fc74-f3aa">
           <comment>Battle march</comment>

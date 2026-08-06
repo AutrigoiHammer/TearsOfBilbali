@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="c908-5f26-5bdf-2a48" name="Warriors of Chaos" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="22" revision="109" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="c908-5f26-5bdf-2a48" name="Warriors of Chaos" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="22" revision="114" authorUrl="www.newrecruit.eu" authorContact="Discord: vflam" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
   <sharedProfiles>
     <profile name="Chaos Armour" hidden="false" id="5073-af52-fe26-36ff" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule">
       <characteristics>
@@ -145,7 +145,7 @@
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">5</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
-        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">5</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">7</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">5</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
@@ -379,7 +379,7 @@
         <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">0</characteristic>
         <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">6</characteristic>
         <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
-        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">4</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">5</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">6</characteristic>
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">5</characteristic>
@@ -476,7 +476,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
     </profile>
     <profile name="Steeds of Darkness" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="e714-edf6-c738-3bf0">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">When a unit in this army whos troop type is &apos;cavalry&apos; or &apos;chariot&apos; makes a Charge, Flee, or Pursuit roll, it may re-roll any dice that roll a natural 1, before discarding any dice that are required to be discarded.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">When a unit in this army whose troop type is &apos;cavalry&apos; or &apos;chariot&apos; makes a Charge, Flee, or Pursuit roll, it may re-roll any dice that roll a natural 1, before discarding any dice that are required to be discarded.</characteristic>
       </characteristics>
     </profile>
     <profile name="The Shadow Grows" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="352f-1828-db64-b608">
@@ -536,7 +536,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
     </profile>
     <profile name="Breath of Change" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="66f1-d8b4-c779-4682">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">Once per game, instead of using Dark Fire of Chaos or Fumes of Contagion, Galrauch may instead use the Breath of Change. Place a flame template with its broad end over the intended target and its narrow end touching Galrauch&apos;s base edge anywhere along its front arc. The template must lie entirely within Galrauch&apos;s vision arc. Any models whos base lies underneath the template risks being hit. Any model hit (friend or foe) must immediately make a Toughness test:
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Once per game, instead of using Dark Fire of Chaos or Fumes of Contagion, Galrauch may instead use the Breath of Change. Place a flame template with its broad end over the intended target and its narrow end touching Galrauch&apos;s base edge anywhere along its front arc. The template must lie entirely within Galrauch&apos;s vision arc. Any models whose base lies underneath the template risks being hit. Any model hit (friend or foe) must immediately make a Toughness test:
 - If the test is failed, the model is overwhelmed by the warping power of Chaos and is immediately removed from play as a casualty.
 - If the test is passed, they are able to fend off the onslaught of chaotic energy. The attack has no effect.</characteristic>
       </characteristics>
@@ -772,9 +772,14 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <infoLink name="Base (40x60)" hidden="false" type="profile" id="c9dd-16ea-54e3-6f0b" targetId="edea-5f38-530a-57f1"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="1fcb-4954-830-a3fe" targetId="721d-36e3-388a-c0d6">
+        <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="1fcb-4954-830-a3fe" targetId="721d-36e3-388a-c0d6" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c5c-a5d7-b895-ef42"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Barding" hidden="false" id="20d6-0e8c-dc72-f9fc" type="selectionEntry" targetId="718d-9fe8-f8ad-ad3c" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cb9-96f9-0663-ddf4"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -794,6 +799,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                 <modifier type="append" value="(1)" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Counter Charge" id="d12a-17b0-9b5a-8e98" hidden="false" type="profile" targetId="5186-798d-69d-6545"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1038,8 +1044,8 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1107,7 +1113,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
       <profiles>
         <profile name="Daemon Prince" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="a5c0-69c6-1d0d-45cd">
           <characteristics>
-            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous Infantry</characteristic>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Monstrous Creature</characteristic>
             <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
           </characteristics>
         </profile>
@@ -1268,9 +1274,9 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
-            <categoryLink name="Monstrous Infantry" hidden="false" id="7fd2-3cd7-1d13-5c15" targetId="5c55-f9d6-b181-92f8" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="eb51-abe7-c9e2-ade1" targetId="may-have-armour"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="8d4e-496-6215-8454" targetId="may-have-armour"/>
+            <categoryLink targetId="fb36-5275-617-c895" id="c339-f539-aef7-9be9" primary="false" name="Monstrous Creature"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1295,6 +1301,11 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <infoLink name="Unstable" hidden="false" type="profile" id="c884-e96d-e9d7-7660" targetId="a10e-13b7-e959-ab5"/>
             <infoLink name="Unbreakable" hidden="false" type="profile" id="c2eb-aa53-a97e-8b52" targetId="d3eb-1fa0-bb19-f390"/>
             <infoLink name="Lore of Chaos" hidden="false" type="profile" id="9c69-2ae7-b5dc-6882" targetId="97b3-1cdd-d81b-331a"/>
+            <infoLink name="Stomp Attacks" id="9a57-0395-a73e-7531" hidden="false" type="profile" targetId="72db-24bb-7493-d753">
+              <modifiers>
+                <modifier type="append" value="(D3+1)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -1501,8 +1512,8 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1715,8 +1726,8 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1770,6 +1781,17 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="dcdf-ddea-697f-28a7" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="12fd-1595-1bfe-7ebc" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="500e-a9c5-481c-597c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="68d4-27f4-1ed2-215a">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -1933,8 +1955,8 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2136,8 +2158,8 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2383,6 +2405,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </infoLink>
             <infoLink name="Ensorcelled Weapons" hidden="false" type="profile" id="a6f-f56a-75b-4d5a" targetId="68ed-9275-f95a-a3f5"/>
             <infoLink name="Stubborn" hidden="false" type="profile" id="152-d207-fa85-d229" targetId="e351-bbd6-f470-b604"/>
+            <infoLink name="Furious Charge" id="7edc-c3c6-e4a9-83ae" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -2576,6 +2599,12 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
           <infoLinks>
             <infoLink name="Close Order" hidden="false" type="profile" id="3d51-e9ad-9fbf-ed12" targetId="883e-e1b1-4fe9-5912"/>
             <infoLink name="Ensorcelled Weapons" hidden="false" type="profile" id="6db1-a99d-a41a-c286" targetId="68ed-9275-f95a-a3f5"/>
+            <infoLink name="Furious Charge" id="ac36-93ce-b006-4e0a" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
+            <infoLink name="Chaos Armour" id="1b4d-0643-0d1b-87dc" hidden="false" type="profile" targetId="5073-af52-fe26-36ff">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -2940,7 +2969,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <cost name="pts" typeId="points" value="27"/>
           </costs>
           <constraints>
-            <constraint id="37d1-98c7-2507-5fac" type="min" field="selections" scope="parent" value="4"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="37d1-98c7-2507-5fac"/>
           </constraints>
           <infoLinks>
             <infoLink name="Chaos Knight" hidden="false" type="profile" id="9f1e-be1a-84ca-9de4" targetId="d9c6-84c7-b8dd-d377"/>
@@ -3020,8 +3049,8 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3037,7 +3066,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <constraints>
-                <constraint id="e6e-8eff-fe62-ba2f" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6e-8eff-fe62-ba2f"/>
               </constraints>
               <comment>upgrades: 7dce-a3f2-535-af3</comment>
               <infoLinks>
@@ -3054,7 +3083,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <constraints>
-                <constraint id="7f58-b453-3ac6-a74b" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f58-b453-3ac6-a74b"/>
               </constraints>
               <comment>upgrades: 7dce-a3f2-535-af3</comment>
               <infoLinks>
@@ -3123,6 +3152,11 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <infoLink name="First Charge" hidden="false" type="profile" id="ff01-2d3-5029-e4aa" targetId="785a-2886-af42-dce9"/>
             <infoLink name="Swiftstride" hidden="false" type="profile" id="624-f70e-8e42-a1dd" targetId="dc91-48b3-3696-217"/>
             <infoLink name="Counter Charge" id="89b8-cf84-b466-114e" hidden="false" type="profile" targetId="5186-798d-69d-6545"/>
+            <infoLink name="Chaos Armour" id="15d3-256c-8415-ef61" hidden="false" type="profile" targetId="5073-af52-fe26-36ff">
+              <modifiers>
+                <modifier type="append" value="(6+)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -3140,7 +3174,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <cost name="pts" typeId="points" value="36"/>
           </costs>
           <constraints>
-            <constraint id="8f2-65ce-2328-3731" type="min" field="selections" scope="parent" value="4"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8f2-65ce-2328-3731"/>
           </constraints>
           <infoLinks>
             <infoLink name="Chosen Chaos Knight" hidden="false" type="profile" id="a1c5-88e1-864-2373" targetId="85b9-47da-b3a8-5731"/>
@@ -3250,8 +3284,8 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3267,7 +3301,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="373c-4a58-92d9-e8e2" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="373c-4a58-92d9-e8e2"/>
               </constraints>
               <comment>upgrades: 363c-8a4f-50e1-7adb</comment>
               <infoLinks>
@@ -3284,7 +3318,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="106d-1349-4245-60" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="106d-1349-4245-60"/>
               </constraints>
               <comment>upgrades: 363c-8a4f-50e1-7adb</comment>
               <infoLinks>
@@ -3341,7 +3375,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <profile name="Chosen Chaos Knights" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="9b32-d108-24dd-263">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy Cavalry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">4+</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3398,7 +3432,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <infoLink name="Base (60x100)" hidden="false" type="profile" id="a9fa-8ef1-7997-d626" targetId="5125-89a4-916a-eabd"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="180"/>
+            <cost name="pts" typeId="points" value="170"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" hidden="false" id="e151-30fc-b3ea-403a" sortIndex="2" flatten="true">
@@ -3789,7 +3823,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
     <selectionEntry type="model" import="true" name="Chaos Dragon" hidden="false" id="9f7c-82e5-30ea-5287" subType="mount">
       <infoLinks>
         <infoLink name="Chaos Dragon" hidden="false" type="profile" id="dcad-b83c-d71-694c" targetId="93bd-6d54-5752-a735"/>
-        <infoLink name="Base (60x100)" hidden="false" type="profile" id="5660-7cce-3b4e-eec7" targetId="5125-89a4-916a-eabd"/>
+        <infoLink name="Base (100x150)" hidden="false" type="profile" id="5660-7cce-3b4e-eec7" targetId="a35e-8f23-b67-1efe"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Fumes of Contagion" hidden="false" type="selectionEntry" id="e320-633b-6af9-820b" targetId="f20c-7123-c387-a33d" sortIndex="4">
@@ -3924,6 +3958,35 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc6e-4230-4797-37c5"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Mark of Chaos" hidden="false" id="8f21-0c2a-9d3b-0001" defaultSelectionEntryId="8f21-0c2a-9d3b-0004" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f21-0c2a-9d3b-0002"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f21-0c2a-9d3b-0003"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Mark of Chaos Undivided" hidden="false" type="selectionEntry" id="8f21-0c2a-9d3b-0004" targetId="ad1d-818d-48e-9457" sortIndex="1"/>
+                <entryLink import="true" name="Mark of Khorne" hidden="false" type="selectionEntry" id="8f21-0c2a-9d3b-0005" targetId="dbfd-c8b3-5688-4550" sortIndex="2">
+                  <costs>
+                    <cost name="pts" typeId="points" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Mark of Nurgle" hidden="false" type="selectionEntry" id="8f21-0c2a-9d3b-0006" targetId="f69c-c9ca-68f1-eebf" sortIndex="3">
+                  <costs>
+                    <cost name="pts" typeId="points" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Mark of Slaanesh" hidden="false" type="selectionEntry" id="8f21-0c2a-9d3b-0007" targetId="3a04-dd84-1ba5-187c" sortIndex="4">
+                  <costs>
+                    <cost name="pts" typeId="points" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Mark of Tzeentch" hidden="false" type="selectionEntry" id="8f21-0c2a-9d3b-0008" targetId="5769-43d9-7b87-ed75" sortIndex="5">
+                  <costs>
+                    <cost name="pts" typeId="points" value="2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <infoLinks>
             <infoLink name="Marauder Horsemen" hidden="false" type="profile" id="acc5-95b2-8d14-bf12" targetId="47c6-a730-4d4e-dd28"/>
@@ -4000,7 +4063,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
               <constraints>
-                <constraint id="62f3-1058-2b4b-450f" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62f3-1058-2b4b-450f"/>
               </constraints>
               <comment>upgrades: e0dc-b7e8-e0a-6522</comment>
               <infoLinks>
@@ -4017,7 +4080,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
               <constraints>
-                <constraint id="1972-ea5f-7dd1-79cb" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1972-ea5f-7dd1-79cb"/>
               </constraints>
               <comment>upgrades: e0dc-b7e8-e0a-6522</comment>
               <infoLinks>
@@ -5621,7 +5684,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="a541-b814-bb30-24b4" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8a69-3c6f-d58e-103c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="44ff-5cf8-1686-a296" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5728,7 +5791,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="8a69-3c6f-d58e-103c">
+        <modifier type="set" value="0" field="44ff-5cf8-1686-a296">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5738,7 +5801,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="8a69-3c6f-d58e-103c">
+        <modifier type="increment" value="1" field="44ff-5cf8-1686-a296">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5760,7 +5823,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="8a69-3c6f-d58e-103c">
+        <modifier type="increment" value="1" field="44ff-5cf8-1686-a296">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5796,7 +5859,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="c3a2-ee97-118e-93dd" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a046-da22-3847-c7b5" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="97d8-f68f-2c66-f9f3" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5903,7 +5966,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="a046-da22-3847-c7b5">
+        <modifier type="set" value="0" field="97d8-f68f-2c66-f9f3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5913,7 +5976,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a046-da22-3847-c7b5">
+        <modifier type="increment" value="1" field="97d8-f68f-2c66-f9f3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5932,10 +5995,10 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a046-da22-3847-c7b5">
+        <modifier type="increment" value="1" field="97d8-f68f-2c66-f9f3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5954,7 +6017,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -5971,7 +6034,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="73dc-a73d-9364-2448" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ae44-1e42-6b06-5f4e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8611-1e05-716b-7c1a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6078,7 +6141,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="ae44-1e42-6b06-5f4e">
+        <modifier type="set" value="0" field="8611-1e05-716b-7c1a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6088,7 +6151,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ae44-1e42-6b06-5f4e">
+        <modifier type="increment" value="1" field="8611-1e05-716b-7c1a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6110,7 +6173,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ae44-1e42-6b06-5f4e">
+        <modifier type="increment" value="1" field="8611-1e05-716b-7c1a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6145,7 +6208,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="9044-f821-6be1-82cf" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="52b2-d344-e915-254c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e615-cd68-94f2-da64" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6252,7 +6315,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="52b2-d344-e915-254c">
+        <modifier type="set" value="0" field="e615-cd68-94f2-da64">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6262,7 +6325,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="52b2-d344-e915-254c">
+        <modifier type="increment" value="1" field="e615-cd68-94f2-da64">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6284,7 +6347,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="52b2-d344-e915-254c">
+        <modifier type="increment" value="1" field="e615-cd68-94f2-da64">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6845,7 +6908,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="a100-0e66-ee6a-0641" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fc5f-7521-cfc7-9cbc" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6b17-7416-f5ab-96fa" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6952,7 +7015,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="fc5f-7521-cfc7-9cbc">
+        <modifier type="set" value="0" field="6b17-7416-f5ab-96fa">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6962,7 +7025,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="fc5f-7521-cfc7-9cbc">
+        <modifier type="increment" value="1" field="6b17-7416-f5ab-96fa">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6984,7 +7047,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="fc5f-7521-cfc7-9cbc">
+        <modifier type="increment" value="1" field="6b17-7416-f5ab-96fa">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7014,7 +7077,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="67fc-1d12-d2eb-f741" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7648-4765-612b-641a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="199e-7d38-8439-8c68" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7080,7 +7143,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="7648-4765-612b-641a">
+        <modifier type="set" value="0" field="199e-7d38-8439-8c68">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7090,7 +7153,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7648-4765-612b-641a">
+        <modifier type="increment" value="1" field="199e-7d38-8439-8c68">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7112,7 +7175,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7648-4765-612b-641a">
+        <modifier type="increment" value="1" field="199e-7d38-8439-8c68">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7148,7 +7211,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b4fd-ca0c-dc22-84ef" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ad2b-0fc5-f6e0-58a7" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4d85-157f-c546-c1fe" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7255,7 +7318,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="ad2b-0fc5-f6e0-58a7">
+        <modifier type="set" value="0" field="4d85-157f-c546-c1fe">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7265,7 +7328,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ad2b-0fc5-f6e0-58a7">
+        <modifier type="increment" value="1" field="4d85-157f-c546-c1fe">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7287,7 +7350,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ad2b-0fc5-f6e0-58a7">
+        <modifier type="increment" value="1" field="4d85-157f-c546-c1fe">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7323,7 +7386,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="c75a-3701-0ff2-6703" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="69f9-e8df-c309-fb39" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="69bc-26ce-5074-ce7c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7430,7 +7493,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="69f9-e8df-c309-fb39">
+        <modifier type="set" value="0" field="69bc-26ce-5074-ce7c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7440,7 +7503,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="69f9-e8df-c309-fb39">
+        <modifier type="increment" value="1" field="69bc-26ce-5074-ce7c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7462,7 +7525,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="69f9-e8df-c309-fb39">
+        <modifier type="increment" value="1" field="69bc-26ce-5074-ce7c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7498,7 +7561,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="f1db-29d3-bcf9-5cd1" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="07b9-9185-89b1-c3e2" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="bbb2-91ec-3607-7b40" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7605,7 +7668,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="07b9-9185-89b1-c3e2">
+        <modifier type="set" value="0" field="bbb2-91ec-3607-7b40">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7615,7 +7678,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="07b9-9185-89b1-c3e2">
+        <modifier type="increment" value="1" field="bbb2-91ec-3607-7b40">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7637,7 +7700,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="07b9-9185-89b1-c3e2">
+        <modifier type="increment" value="1" field="bbb2-91ec-3607-7b40">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7667,7 +7730,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="bb67-39e4-ce90-7ac7" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a2d2-7703-300f-179a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="add6-b7be-365b-f577" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7733,7 +7796,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="a2d2-7703-300f-179a">
+        <modifier type="set" value="0" field="add6-b7be-365b-f577">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7743,7 +7806,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a2d2-7703-300f-179a">
+        <modifier type="increment" value="1" field="add6-b7be-365b-f577">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7765,7 +7828,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a2d2-7703-300f-179a">
+        <modifier type="increment" value="1" field="add6-b7be-365b-f577">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7801,7 +7864,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="dea3-0407-51f5-0158" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4cb7-77c4-0bbd-04a9" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6868-7fb9-4783-0d86" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7908,7 +7971,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="4cb7-77c4-0bbd-04a9">
+        <modifier type="set" value="0" field="6868-7fb9-4783-0d86">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7918,7 +7981,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="4cb7-77c4-0bbd-04a9">
+        <modifier type="increment" value="1" field="6868-7fb9-4783-0d86">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7940,7 +8003,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="4cb7-77c4-0bbd-04a9">
+        <modifier type="increment" value="1" field="6868-7fb9-4783-0d86">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7975,7 +8038,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="87dc-0db6-d726-19ec" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b46e-0ada-bd39-5cee" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7d1e-63cb-c4f4-c9ce" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8082,7 +8145,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="b46e-0ada-bd39-5cee">
+        <modifier type="set" value="0" field="7d1e-63cb-c4f4-c9ce">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8092,7 +8155,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="b46e-0ada-bd39-5cee">
+        <modifier type="increment" value="1" field="7d1e-63cb-c4f4-c9ce">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8114,7 +8177,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="b46e-0ada-bd39-5cee">
+        <modifier type="increment" value="1" field="7d1e-63cb-c4f4-c9ce">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8142,12 +8205,15 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
       <categoryLinks>
         <categoryLink name="Exalted Champions or Sorcerer Lords" hidden="false" id="a0f0-447c-b665-4a4b" targetId="698-dd6-5dd4-aed3" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="411c-74ce-bd51-a5a" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="bc78-6808-a421-c6df" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3975-d096-af50-a5dc" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ab43-a29d-2a99-d49b" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2335-1288-931c-fc2e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8209,7 +8275,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="ab43-a29d-2a99-d49b">
+        <modifier type="set" value="0" field="2335-1288-931c-fc2e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8219,7 +8285,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ab43-a29d-2a99-d49b">
+        <modifier type="increment" value="1" field="2335-1288-931c-fc2e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8241,7 +8307,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ab43-a29d-2a99-d49b">
+        <modifier type="increment" value="1" field="2335-1288-931c-fc2e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8274,7 +8340,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e8d8-35a7-84a6-357b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1efe-b0c8-eef0-e50e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="79b2-312b-d2b2-f5da" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8336,7 +8402,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="1efe-b0c8-eef0-e50e">
+        <modifier type="set" value="0" field="79b2-312b-d2b2-f5da">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8346,7 +8412,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1efe-b0c8-eef0-e50e">
+        <modifier type="increment" value="1" field="79b2-312b-d2b2-f5da">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8368,7 +8434,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1efe-b0c8-eef0-e50e">
+        <modifier type="increment" value="1" field="79b2-312b-d2b2-f5da">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8403,7 +8469,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="2fd6-feeb-4cc4-e235" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a669-fed1-439c-ba1c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9310-c071-3727-cfed" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8510,7 +8576,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="a669-fed1-439c-ba1c">
+        <modifier type="set" value="0" field="9310-c071-3727-cfed">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8520,7 +8586,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a669-fed1-439c-ba1c">
+        <modifier type="increment" value="1" field="9310-c071-3727-cfed">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8542,7 +8608,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a669-fed1-439c-ba1c">
+        <modifier type="increment" value="1" field="9310-c071-3727-cfed">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8570,12 +8636,15 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
       <categoryLinks>
         <categoryLink name="Exalted Champions or Sorcerer Lords" hidden="false" id="96f2-c00c-4403-ca54" targetId="698-dd6-5dd4-aed3" primary="false"/>
         <categoryLink name="Characters" hidden="false" id="31c2-113f-ab9f-10f9" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="bba5-bf69-f34f-c6e2" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3303-b466-fbf6-d6a4" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7086-95d4-c8ba-7524" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5171-8457-68ca-dfbc" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8637,7 +8706,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="7086-95d4-c8ba-7524">
+        <modifier type="set" value="0" field="5171-8457-68ca-dfbc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8647,7 +8716,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7086-95d4-c8ba-7524">
+        <modifier type="increment" value="1" field="5171-8457-68ca-dfbc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8669,7 +8738,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7086-95d4-c8ba-7524">
+        <modifier type="increment" value="1" field="5171-8457-68ca-dfbc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8702,7 +8771,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="92ba-8399-af85-93b5" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="43f0-66b7-2cbf-e4fd" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a0d5-238d-12e2-4bf0" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8764,7 +8833,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="43f0-66b7-2cbf-e4fd">
+        <modifier type="set" value="0" field="a0d5-238d-12e2-4bf0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8774,7 +8843,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="43f0-66b7-2cbf-e4fd">
+        <modifier type="increment" value="1" field="a0d5-238d-12e2-4bf0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8796,7 +8865,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="43f0-66b7-2cbf-e4fd">
+        <modifier type="increment" value="1" field="a0d5-238d-12e2-4bf0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9277,7 +9346,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b6a2-254d-2383-f2e7" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fcc2-6f32-8db2-a30d" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8fc8-a0c9-b460-c811" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9339,7 +9408,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="fcc2-6f32-8db2-a30d">
+        <modifier type="set" value="0" field="8fc8-a0c9-b460-c811">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9349,7 +9418,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="fcc2-6f32-8db2-a30d">
+        <modifier type="increment" value="1" field="8fc8-a0c9-b460-c811">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9371,7 +9440,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="fcc2-6f32-8db2-a30d">
+        <modifier type="increment" value="1" field="8fc8-a0c9-b460-c811">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9397,16 +9466,19 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
     </entryLink>
     <entryLink import="true" name="Frydaal the Chainmaker" hidden="false" id="085d-4174-d81f-977d" type="selectionEntry" targetId="c89f-7aa9-b012-20db">
       <categoryLinks>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="ddb3-455b-13ef-3d39" primary="false" name="Characters"/>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="28e5-0d2d-7864-f536" primary="true" name="Named Characters"/>
-        <categoryLink targetId="698-dd6-5dd4-aed3" id="73b1-baf0-0b2f-beac" primary="false" name="Exalted Champions or Sorcerer Lords"/>
+        <categoryLink name="Characters" hidden="false" id="ddb3-455b-13ef-3d39" targetId="a4cc-15c9-cfae-1b3b" primary="false"/>
+        <categoryLink name="Named Characters" hidden="false" id="28e5-0d2d-7864-f536" targetId="3ba8-a41e-b6ae-d4ba" primary="true"/>
+        <categoryLink name="Exalted Champions or Sorcerer Lords" hidden="false" id="73b1-baf0-0b2f-beac" targetId="698-dd6-5dd4-aed3" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="4c2c-5c92-7e36-0b50" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="07bc-93a4-d1ef-fbd5"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ecfe-bcbc-0094-aa59" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b9e8-8727-481d-3ce2" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="985f-8395-0430-02ad" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9468,7 +9540,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="b9e8-8727-481d-3ce2">
+        <modifier type="set" value="0" field="985f-8395-0430-02ad">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9478,7 +9550,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="b9e8-8727-481d-3ce2">
+        <modifier type="increment" value="1" field="985f-8395-0430-02ad">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9500,7 +9572,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="b9e8-8727-481d-3ce2">
+        <modifier type="increment" value="1" field="985f-8395-0430-02ad">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9748,7 +9820,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="13fa-9f16-aa8c-8b3a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0082-296d-380a-e448" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="80a5-aa7b-8ed8-1164" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -9810,7 +9882,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="0082-296d-380a-e448">
+        <modifier type="set" value="0" field="80a5-aa7b-8ed8-1164">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9820,7 +9892,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0082-296d-380a-e448">
+        <modifier type="increment" value="1" field="80a5-aa7b-8ed8-1164">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9839,10 +9911,10 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0082-296d-380a-e448">
+        <modifier type="increment" value="1" field="80a5-aa7b-8ed8-1164">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -9861,7 +9933,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -9919,9 +9991,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         </modifier>
         <modifier type="floor" value="1" field="9bee-c5b3-1fc7-94a7">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="9bee-c5b3-1fc7-94a7">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -9964,9 +10033,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="52ec-b236-2b08-0f4a">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="52ec-b236-2b08-0f4a">
           <comment>Battle march</comment>
@@ -10015,9 +10081,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         </modifier>
         <modifier type="floor" value="1" field="c6c8-e5f9-2020-c794">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="c6c8-e5f9-2020-c794">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -10060,9 +10123,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="85e0-39e6-791c-b059">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="85e0-39e6-791c-b059">
           <comment>Battle march</comment>
@@ -10111,9 +10171,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         </modifier>
         <modifier type="floor" value="1" field="0dfd-5e10-20ce-44a1">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="0dfd-5e10-20ce-44a1">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -10156,9 +10213,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="3363-085f-456d-66ae">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="3363-085f-456d-66ae">
           <comment>Battle march</comment>
@@ -10207,9 +10261,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         </modifier>
         <modifier type="floor" value="1" field="be26-5de5-dfe0-040d">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="be26-5de5-dfe0-040d">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -10255,9 +10306,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         </modifier>
         <modifier type="floor" value="1" field="ae61-e8e5-82a3-0941">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="ae61-e8e5-82a3-0941">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -10300,9 +10348,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="c31d-59ac-9577-7afd">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="c31d-59ac-9577-7afd">
           <comment>Battle march</comment>
@@ -10353,9 +10398,6 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="c5d5-e878-6b2e-952a">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="c5d5-e878-6b2e-952a">
           <comment>Battle march</comment>

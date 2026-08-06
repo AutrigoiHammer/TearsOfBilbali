@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="1ddf-26c6-1d88-2b8c" name="Dwarfen Mountain Holds" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="8" revision="125" battleScribeVersion="2.03" type="catalogue" authorName="Flammy" authorContact="Discord: vflam" authorUrl="www.newrecruit.eu">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="1ddf-26c6-1d88-2b8c" name="Dwarfen Mountain Holds" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="8" revision="130" battleScribeVersion="2.03" type="catalogue" authorName="Flammy" authorContact="Discord: vflam" authorUrl="www.newrecruit.eu">
   <sharedProfiles>
     <profile name="Longbeard" hidden="false" id="fbc8-de41-190b-8903" typeId="b070-143a-73f-2772" typeName="Model">
       <characteristics>
@@ -902,10 +902,11 @@ However if a misfire is rolled on the Artillery dice, no shots are fired and a c
         <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">9</characteristic>
       </characteristics>
     </profile>
-    <profile name="Extended Formation" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="708d-ae6e-2dd6-608b">
+    <profile name="Extended Formation" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="708d-ae6e-2dd6-608b" noindex="true">
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Whilst in Skirmish formation, every model in a unit of Scout Gyrocopters must be within 3&quot; of another model belonging to the same unit, rather than the usual 1&quot;.</characteristic>
       </characteristics>
+      <comment>DEPRECIATED in 1.5.3</comment>
     </profile>
     <profile name="Hit &amp; Run" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="be3e-4c8c-e168-523f">
       <characteristics>
@@ -1096,7 +1097,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="a4c0-ab67-bbb2-2eed">
+        <modifier type="set" value="0" field="1db1-e575-6c0a-bd0e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1106,7 +1107,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a4c0-ab67-bbb2-2eed">
+        <modifier type="increment" value="1" field="1db1-e575-6c0a-bd0e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1125,10 +1126,10 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a4c0-ab67-bbb2-2eed">
+        <modifier type="increment" value="1" field="1db1-e575-6c0a-bd0e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1147,7 +1148,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -1159,7 +1160,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="bfef-1276-2f74-089d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a4c0-ab67-bbb2-2eed" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1db1-e575-6c0a-bd0e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -1305,7 +1306,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="3216-ed95-919a-eeb2" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3fca-1336-5773-75c0" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="931d-b784-c0fe-5fb5" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -1412,7 +1413,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="3fca-1336-5773-75c0">
+        <modifier type="set" value="0" field="931d-b784-c0fe-5fb5">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1422,7 +1423,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3fca-1336-5773-75c0">
+        <modifier type="increment" value="1" field="931d-b784-c0fe-5fb5">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1444,7 +1445,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3fca-1336-5773-75c0">
+        <modifier type="increment" value="1" field="931d-b784-c0fe-5fb5">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1480,7 +1481,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b421-1bb7-1d98-48d1" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7169-dee4-4fdd-077b" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c94f-def2-2760-42a2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -1587,7 +1588,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="7169-dee4-4fdd-077b">
+        <modifier type="set" value="0" field="c94f-def2-2760-42a2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1597,7 +1598,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7169-dee4-4fdd-077b">
+        <modifier type="increment" value="1" field="c94f-def2-2760-42a2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1619,7 +1620,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7169-dee4-4fdd-077b">
+        <modifier type="increment" value="1" field="c94f-def2-2760-42a2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1655,7 +1656,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="da54-82f3-cae4-3f7b" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="abe2-7822-a946-bf3f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9dd5-7351-ff79-7375" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -1762,7 +1763,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="abe2-7822-a946-bf3f">
+        <modifier type="set" value="0" field="9dd5-7351-ff79-7375">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1772,7 +1773,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="abe2-7822-a946-bf3f">
+        <modifier type="increment" value="1" field="9dd5-7351-ff79-7375">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1794,7 +1795,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="abe2-7822-a946-bf3f">
+        <modifier type="increment" value="1" field="9dd5-7351-ff79-7375">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1830,7 +1831,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="119f-4daa-8570-6ffb" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a62c-b15b-aace-b027" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="53a3-d74b-9791-8d03" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -1937,7 +1938,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="a62c-b15b-aace-b027">
+        <modifier type="set" value="0" field="53a3-d74b-9791-8d03">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1947,7 +1948,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a62c-b15b-aace-b027">
+        <modifier type="increment" value="1" field="53a3-d74b-9791-8d03">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -1969,7 +1970,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a62c-b15b-aace-b027">
+        <modifier type="increment" value="1" field="53a3-d74b-9791-8d03">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2005,7 +2006,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="e965-f15d-a1c2-8c5a" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cf9e-5ded-9315-44a2" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="df33-f2de-c6ac-ee94" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -2112,7 +2113,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="cf9e-5ded-9315-44a2">
+        <modifier type="set" value="0" field="df33-f2de-c6ac-ee94">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2122,7 +2123,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="cf9e-5ded-9315-44a2">
+        <modifier type="increment" value="1" field="df33-f2de-c6ac-ee94">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2144,7 +2145,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="cf9e-5ded-9315-44a2">
+        <modifier type="increment" value="1" field="df33-f2de-c6ac-ee94">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2180,7 +2181,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="138a-742a-126c-2301" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="13a1-d7d6-febb-bcac" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cb9e-b053-c167-f1ae" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -2287,7 +2288,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="13a1-d7d6-febb-bcac">
+        <modifier type="set" value="0" field="cb9e-b053-c167-f1ae">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2297,7 +2298,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="13a1-d7d6-febb-bcac">
+        <modifier type="increment" value="1" field="cb9e-b053-c167-f1ae">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2316,10 +2317,10 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="13a1-d7d6-febb-bcac">
+        <modifier type="increment" value="1" field="cb9e-b053-c167-f1ae">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2338,7 +2339,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -2349,7 +2350,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1341-99c0-c3d9-d43c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1ac7-3802-1227-da54" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9d90-49b0-d38f-8112" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -2419,7 +2420,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="1ac7-3802-1227-da54">
+        <modifier type="set" value="0" field="9d90-49b0-d38f-8112">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2429,7 +2430,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1ac7-3802-1227-da54">
+        <modifier type="increment" value="1" field="9d90-49b0-d38f-8112">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2451,7 +2452,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1ac7-3802-1227-da54">
+        <modifier type="increment" value="1" field="9d90-49b0-d38f-8112">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2492,7 +2493,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="df9d-479d-3ab8-abe9" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="787e-5f9e-6f4e-dc23" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="44d3-b386-a549-2d8c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -2599,7 +2600,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="787e-5f9e-6f4e-dc23">
+        <modifier type="set" value="0" field="44d3-b386-a549-2d8c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2609,7 +2610,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="787e-5f9e-6f4e-dc23">
+        <modifier type="increment" value="1" field="44d3-b386-a549-2d8c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2631,7 +2632,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="787e-5f9e-6f4e-dc23">
+        <modifier type="increment" value="1" field="44d3-b386-a549-2d8c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2667,7 +2668,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="ce04-e749-9b13-ab37" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ffca-2e71-f15f-a36b" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c4c9-0379-e627-c60d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -2774,7 +2775,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="ffca-2e71-f15f-a36b">
+        <modifier type="set" value="0" field="c4c9-0379-e627-c60d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2784,7 +2785,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ffca-2e71-f15f-a36b">
+        <modifier type="increment" value="1" field="c4c9-0379-e627-c60d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2806,7 +2807,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ffca-2e71-f15f-a36b">
+        <modifier type="increment" value="1" field="c4c9-0379-e627-c60d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2842,7 +2843,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="fc22-bb24-2931-151a" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e9c8-c0ba-07b7-ed63" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5ac6-b6c9-5c7e-c6c4" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -2949,7 +2950,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="e9c8-c0ba-07b7-ed63">
+        <modifier type="set" value="0" field="5ac6-b6c9-5c7e-c6c4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2959,7 +2960,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="e9c8-c0ba-07b7-ed63">
+        <modifier type="increment" value="1" field="5ac6-b6c9-5c7e-c6c4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -2981,7 +2982,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="e9c8-c0ba-07b7-ed63">
+        <modifier type="increment" value="1" field="5ac6-b6c9-5c7e-c6c4">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3017,7 +3018,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="c37d-1675-ddfa-5836" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2755-efcd-d9e5-b06e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6391-6563-1433-6e4d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3124,7 +3125,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="2755-efcd-d9e5-b06e">
+        <modifier type="set" value="0" field="6391-6563-1433-6e4d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3134,7 +3135,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2755-efcd-d9e5-b06e">
+        <modifier type="increment" value="1" field="6391-6563-1433-6e4d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3153,10 +3154,10 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2755-efcd-d9e5-b06e">
+        <modifier type="increment" value="1" field="6391-6563-1433-6e4d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3175,21 +3176,24 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Bolt Thrower" hidden="false" type="selectionEntry" id="e1cc-73a9-79bc-395b" targetId="2f5-4b61-6d40-247f">
       <categoryLinks>
-        <categoryLink targetId="8ab-fd18-9357-e6aa" id="4a77-58e5-8b38-225e" primary="false" name="Bolt Thrower, Grudge Thrower or Cannon"/>
+        <categoryLink name="Bolt Thrower, Grudge Thrower or Cannon" hidden="false" id="4a77-58e5-8b38-225e" targetId="8ab-fd18-9357-e6aa" primary="false"/>
         <categoryLink name="Special" hidden="false" id="956f-46d2-5e36-df89" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="ebd5-5549-59dc-f55c" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="70d9-95b4-b1f9-ceb6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5e65-e867-cff7-162a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cab7-d832-8aed-4ca3" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3251,7 +3255,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="5e65-e867-cff7-162a">
+        <modifier type="set" value="0" field="cab7-d832-8aed-4ca3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3261,7 +3265,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5e65-e867-cff7-162a">
+        <modifier type="increment" value="1" field="cab7-d832-8aed-4ca3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3283,7 +3287,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5e65-e867-cff7-162a">
+        <modifier type="increment" value="1" field="cab7-d832-8aed-4ca3">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3309,14 +3313,17 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
     </entryLink>
     <entryLink import="true" name="Grudge Thrower" hidden="false" type="selectionEntry" id="29f7-ec3c-d2c0-af79" targetId="ef4e-8164-a4aa-ec3a">
       <categoryLinks>
-        <categoryLink targetId="8ab-fd18-9357-e6aa" id="5924-fbee-6d9d-5336" primary="false" name="Bolt Thrower, Grudge Thrower or Cannon"/>
+        <categoryLink name="Bolt Thrower, Grudge Thrower or Cannon" hidden="false" id="5924-fbee-6d9d-5336" targetId="8ab-fd18-9357-e6aa" primary="false"/>
         <categoryLink name="Special" hidden="false" id="a83c-f8a6-c549-f786" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="fc5e-db37-ce3e-fd16" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3f0d-0b9b-5de5-0b82" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e3e4-302e-a3bd-3555" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="75a9-7684-4336-b260" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3378,7 +3385,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="e3e4-302e-a3bd-3555">
+        <modifier type="set" value="0" field="75a9-7684-4336-b260">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3388,7 +3395,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="e3e4-302e-a3bd-3555">
+        <modifier type="increment" value="1" field="75a9-7684-4336-b260">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3410,7 +3417,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="e3e4-302e-a3bd-3555">
+        <modifier type="increment" value="1" field="75a9-7684-4336-b260">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3436,14 +3443,17 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
     </entryLink>
     <entryLink import="true" name="Cannon" hidden="false" type="selectionEntry" id="3ab2-44a1-1a8f-50cc" targetId="102a-f7f1-f24-1dca">
       <categoryLinks>
-        <categoryLink targetId="8ab-fd18-9357-e6aa" id="152b-5f0b-7abd-df99" primary="false" name="Bolt Thrower, Grudge Thrower or Cannon"/>
+        <categoryLink name="Bolt Thrower, Grudge Thrower or Cannon" hidden="false" id="152b-5f0b-7abd-df99" targetId="8ab-fd18-9357-e6aa" primary="false"/>
         <categoryLink name="Special" hidden="false" id="bc70-668a-4e8d-8592" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="36d7-49d5-3cb5-30a7" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e2aa-8f84-04fa-71c2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cb52-e5f4-3373-b206" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="83f1-7d93-56bd-7441" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3505,7 +3515,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="cb52-e5f4-3373-b206">
+        <modifier type="set" value="0" field="83f1-7d93-56bd-7441">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3515,7 +3525,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="cb52-e5f4-3373-b206">
+        <modifier type="increment" value="1" field="83f1-7d93-56bd-7441">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3537,7 +3547,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="cb52-e5f4-3373-b206">
+        <modifier type="increment" value="1" field="83f1-7d93-56bd-7441">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3572,7 +3582,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="6813-2273-36cf-055d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c45a-73fe-9e02-c528" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ff7b-ce84-e538-ffdf" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3679,7 +3689,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="c45a-73fe-9e02-c528">
+        <modifier type="set" value="0" field="ff7b-ce84-e538-ffdf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3689,7 +3699,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c45a-73fe-9e02-c528">
+        <modifier type="increment" value="1" field="ff7b-ce84-e538-ffdf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3708,10 +3718,10 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c45a-73fe-9e02-c528">
+        <modifier type="increment" value="1" field="ff7b-ce84-e538-ffdf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3730,7 +3740,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -3746,7 +3756,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b085-faab-89ed-e4a9" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ff0a-2c7a-7236-70ab" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ce68-12a9-7bf2-2b7f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3853,7 +3863,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="ff0a-2c7a-7236-70ab">
+        <modifier type="set" value="0" field="ce68-12a9-7bf2-2b7f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3863,7 +3873,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ff0a-2c7a-7236-70ab">
+        <modifier type="increment" value="1" field="ce68-12a9-7bf2-2b7f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3882,10 +3892,10 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ff0a-2c7a-7236-70ab">
+        <modifier type="increment" value="1" field="ce68-12a9-7bf2-2b7f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3904,7 +3914,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -3912,13 +3922,16 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
     <entryLink import="true" name="King" hidden="false" type="selectionEntry" id="eb20-108e-22a0-3d66" targetId="1739-9b05-10db-2f70">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="ed7f-da0a-63ae-2227" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="458f-106f-d73e-b238" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="9adf-73d0-71f8-f378"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c09c-2470-44f9-8fa4" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f1b9-4112-98a2-d5e7" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a542-0956-8f50-a3ab" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4019,7 +4032,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="f1b9-4112-98a2-d5e7">
+        <modifier type="set" value="0" field="a542-0956-8f50-a3ab">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4029,7 +4042,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f1b9-4112-98a2-d5e7">
+        <modifier type="increment" value="1" field="a542-0956-8f50-a3ab">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4051,7 +4064,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f1b9-4112-98a2-d5e7">
+        <modifier type="increment" value="1" field="a542-0956-8f50-a3ab">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4092,7 +4105,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="8185-0baf-b504-c1e8" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1fd8-4483-6ba1-2ce1" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f530-bad5-87ca-e1ca" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4199,7 +4212,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="1fd8-4483-6ba1-2ce1">
+        <modifier type="set" value="0" field="f530-bad5-87ca-e1ca">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4209,7 +4222,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1fd8-4483-6ba1-2ce1">
+        <modifier type="increment" value="1" field="f530-bad5-87ca-e1ca">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4231,7 +4244,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1fd8-4483-6ba1-2ce1">
+        <modifier type="increment" value="1" field="f530-bad5-87ca-e1ca">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4258,6 +4271,9 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
     <entryLink import="true" name="Runelord" hidden="false" type="selectionEntry" id="b7b-d6d6-f86b-796b" targetId="452a-cd9b-a28c-e4e">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="5fa6-a2ad-1cff-1235" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="249f-3311-9687-1107" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cda6-509c-9f33-a222"/>
@@ -4267,7 +4283,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="cbfa-8fa3-1fa8-3469" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7c94-b64b-f944-2f18" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="814a-111c-d845-8216" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4413,7 +4429,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="7c94-b64b-f944-2f18">
+        <modifier type="set" value="0" field="814a-111c-d845-8216">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4423,7 +4439,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7c94-b64b-f944-2f18">
+        <modifier type="increment" value="1" field="814a-111c-d845-8216">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4445,7 +4461,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7c94-b64b-f944-2f18">
+        <modifier type="increment" value="1" field="814a-111c-d845-8216">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4486,7 +4502,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="0683-6cec-c30b-7add" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f2ff-4242-9d15-a962" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fb0d-f6be-580e-43ee" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4593,7 +4609,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="f2ff-4242-9d15-a962">
+        <modifier type="set" value="0" field="fb0d-f6be-580e-43ee">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4603,7 +4619,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f2ff-4242-9d15-a962">
+        <modifier type="increment" value="1" field="fb0d-f6be-580e-43ee">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4625,7 +4641,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f2ff-4242-9d15-a962">
+        <modifier type="increment" value="1" field="fb0d-f6be-580e-43ee">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4660,7 +4676,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="1976-b47e-e85f-5c78" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a1db-6366-e918-ae0d" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1d31-a5dd-2b26-1ec9" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4767,7 +4783,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="a1db-6366-e918-ae0d">
+        <modifier type="set" value="0" field="1d31-a5dd-2b26-1ec9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4777,7 +4793,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a1db-6366-e918-ae0d">
+        <modifier type="increment" value="1" field="1d31-a5dd-2b26-1ec9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4799,7 +4815,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a1db-6366-e918-ae0d">
+        <modifier type="increment" value="1" field="1d31-a5dd-2b26-1ec9">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4834,7 +4850,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="18fa-6490-3572-77d1" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6e48-634e-94df-cba3" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b2ed-d3df-5189-b515" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4941,7 +4957,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="6e48-634e-94df-cba3">
+        <modifier type="set" value="0" field="b2ed-d3df-5189-b515">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4951,7 +4967,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6e48-634e-94df-cba3">
+        <modifier type="increment" value="1" field="b2ed-d3df-5189-b515">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4973,7 +4989,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6e48-634e-94df-cba3">
+        <modifier type="increment" value="1" field="b2ed-d3df-5189-b515">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5000,13 +5016,16 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
     <entryLink import="true" name="Anvil of Doom" hidden="false" type="selectionEntry" id="ed5e-d0fb-3f4-15e" targetId="ffad-ee5c-b4f-b34">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="721a-d328-6746-8c90" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="438a-8ef4-9a6e-76da" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="37c4-2712-fa3c-0d8c"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c4fb-e1ce-3286-eaca" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1459-c5ea-4384-7337" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b720-bf6d-de67-80fe" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5107,7 +5126,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="1459-c5ea-4384-7337">
+        <modifier type="set" value="0" field="b720-bf6d-de67-80fe">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5117,7 +5136,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1459-c5ea-4384-7337">
+        <modifier type="increment" value="1" field="b720-bf6d-de67-80fe">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5139,7 +5158,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1459-c5ea-4384-7337">
+        <modifier type="increment" value="1" field="b720-bf6d-de67-80fe">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5180,7 +5199,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b1d7-4f9f-2441-48d8" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6404-5ea0-79f7-8786" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c73f-da0e-e545-d68c" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5287,7 +5306,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="6404-5ea0-79f7-8786">
+        <modifier type="set" value="0" field="c73f-da0e-e545-d68c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5297,7 +5316,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6404-5ea0-79f7-8786">
+        <modifier type="increment" value="1" field="c73f-da0e-e545-d68c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5319,7 +5338,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6404-5ea0-79f7-8786">
+        <modifier type="increment" value="1" field="c73f-da0e-e545-d68c">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5500,7 +5519,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ddc9-1f33-96cf-4d73" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2aeb-9682-75fb-1e6a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="305c-7fa0-0d89-e5f0" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5566,7 +5585,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="2aeb-9682-75fb-1e6a">
+        <modifier type="set" value="0" field="305c-7fa0-0d89-e5f0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5576,7 +5595,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2aeb-9682-75fb-1e6a">
+        <modifier type="increment" value="1" field="305c-7fa0-0d89-e5f0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5598,7 +5617,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2aeb-9682-75fb-1e6a">
+        <modifier type="increment" value="1" field="305c-7fa0-0d89-e5f0">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5628,7 +5647,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6ce5-c548-73e7-0253" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fdea-8bef-d8f8-f2cd" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5805-ff11-57f3-99cd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5694,7 +5713,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="fdea-8bef-d8f8-f2cd">
+        <modifier type="set" value="0" field="5805-ff11-57f3-99cd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5704,7 +5723,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="fdea-8bef-d8f8-f2cd">
+        <modifier type="increment" value="1" field="5805-ff11-57f3-99cd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5726,7 +5745,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="fdea-8bef-d8f8-f2cd">
+        <modifier type="increment" value="1" field="5805-ff11-57f3-99cd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5756,7 +5775,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d04d-530f-bfa1-952f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2f51-df5a-b041-3c90" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7ede-fc2a-3450-7731" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5822,7 +5841,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="2f51-df5a-b041-3c90">
+        <modifier type="set" value="0" field="7ede-fc2a-3450-7731">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5832,7 +5851,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2f51-df5a-b041-3c90">
+        <modifier type="increment" value="1" field="7ede-fc2a-3450-7731">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5854,7 +5873,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2f51-df5a-b041-3c90">
+        <modifier type="increment" value="1" field="7ede-fc2a-3450-7731">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5888,7 +5907,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9b4d-1d8c-42e2-1aff" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2159-4714-5b94-dcdf" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="599f-b80c-fab0-9bce" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5950,7 +5969,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="2159-4714-5b94-dcdf">
+        <modifier type="set" value="0" field="599f-b80c-fab0-9bce">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5960,7 +5979,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2159-4714-5b94-dcdf">
+        <modifier type="increment" value="1" field="599f-b80c-fab0-9bce">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5979,10 +5998,10 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2159-4714-5b94-dcdf">
+        <modifier type="increment" value="1" field="599f-b80c-fab0-9bce">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6001,7 +6020,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -6012,7 +6031,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4409-b196-4f9f-d6a5" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7914-49fb-e2f9-ecb9" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3d08-913b-27c5-9ebe" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6118,7 +6137,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="7914-49fb-e2f9-ecb9">
+        <modifier type="set" value="0" field="3d08-913b-27c5-9ebe">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6128,7 +6147,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7914-49fb-e2f9-ecb9">
+        <modifier type="increment" value="1" field="3d08-913b-27c5-9ebe">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6147,10 +6166,10 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7914-49fb-e2f9-ecb9">
+        <modifier type="increment" value="1" field="3d08-913b-27c5-9ebe">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6169,7 +6188,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="6c19-9b43-858d-0e2e">
@@ -6180,7 +6199,10 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="2bfe-5863-46fe-d284" id="6cdd-6ca5-3292-0a8d" primary="true" name="Rare"/>
+        <categoryLink name="Rare" hidden="false" id="6cdd-6ca5-3292-0a8d" targetId="2bfe-5863-46fe-d284" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="85ac-773f-c417-d767" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -6195,8 +6217,8 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <cost name="pts" typeId="points" value="11"/>
           </costs>
           <constraints>
-            <constraint id="2e30-ee24-1371-97b8" type="min" field="selections" scope="parent" value="5"/>
-            <constraint id="d491-92ea-c579-82cf" type="max" field="selections" scope="parent" value="20"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2e30-ee24-1371-97b8"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="d491-92ea-c579-82cf"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="8d1e-c7c4-cde1-27a7" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -6267,7 +6289,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <constraints>
-                <constraint id="97c8-107c-9e8e-bf31" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97c8-107c-9e8e-bf31"/>
               </constraints>
               <comment>upgrades: ff65-5ffb-12a2-2f50</comment>
               <infoLinks>
@@ -6514,22 +6536,49 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="f317-7cc6-663b-cbe3">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="f317-7cc6-663b-cbe3">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="f317-7cc6-663b-cbe3">
+              <comment>Battle march</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="9a67-e889-cebf-4dd5" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6906,22 +6955,49 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="3cff-00bc-4a77-ce56">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="3cff-00bc-4a77-ce56">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="3cff-00bc-4a77-ce56">
+              <comment>Battle march</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="583c-b3d0-71a1-9336" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7095,7 +7171,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <cost name="pts" typeId="points" value="12"/>
           </costs>
           <constraints>
-            <constraint id="638b-97fd-47c8-8441" type="min" field="selections" scope="parent" value="5"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="638b-97fd-47c8-8441"/>
           </constraints>
           <infoLinks>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="a17-7a47-7842-9478" targetId="193c-4d0d-de6b-bbb1"/>
@@ -7162,22 +7238,49 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="adc6-6ea2-f871-76ac">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="adc6-6ea2-f871-76ac">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="adc6-6ea2-f871-76ac">
+              <comment>Battle march</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="b982-a20c-6c46-160a" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7228,7 +7331,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <constraints>
-                <constraint id="86be-f5d0-be68-5b58" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86be-f5d0-be68-5b58"/>
               </constraints>
               <comment>upgrades: e60a-105b-669a-f046</comment>
               <infoLinks>
@@ -7244,7 +7347,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <constraints>
-                <constraint id="16e3-7a74-2581-1a4f" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16e3-7a74-2581-1a4f"/>
               </constraints>
               <comment>upgrades: e60a-105b-669a-f046</comment>
               <entryLinks>
@@ -7512,27 +7615,54 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
                   <repeats>
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="f295-aced-7dcd-d8e6" includeChildSelections="true"/>
                   </repeats>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="increment" value="1" field="398d-daed-c2b0-2aab">
                   <repeats>
                     <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="8475-05b2-657d-e508" includeChildSelections="true"/>
                   </repeats>
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a339-984f-3777-c73f" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="floor" value="1" field="398d-daed-c2b0-2aab">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="6c06-ee08-acad-a48d" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7870,22 +8000,49 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="972a-1391-37fd-7533">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="972a-1391-37fd-7533">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="972a-1391-37fd-7533">
+              <comment>Battle march</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="382f-7c1c-e0f0-9a06" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8088,7 +8245,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
               <entryLinks>
                 <entryLink import="true" name="Blasting Charges" hidden="false" type="selectionEntry" id="c970-e457-d1b-f06e" targetId="edff-d70-2c83-1bc4" collective="false">
                   <costs>
-                    <cost name="pts" typeId="points" value="2"/>
+                    <cost name="pts" typeId="points" value="1"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -8113,20 +8270,42 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="77e0-c584-c85f-1c69">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="77e0-c584-c85f-1c69">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="77e0-c584-c85f-1c69">
+              <comment>Battle march</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <selectionEntries>
@@ -8162,6 +8341,9 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <selectionEntry type="upgrade" import="true" name="Magic Standard" hidden="false" id="2b1f-b16b-593d-4a42" sortIndex="3">
               <categoryLinks>
                 <categoryLink name="NO EXPORT" hidden="false" id="8cce-5336-19f9-597e" targetId="49a9-ce63-af1a-18f7" primary="false"/>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="6781-b25d-e2c7-7409" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
               </categoryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e3a-304d-9717-c979"/>
@@ -8178,9 +8360,20 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="f4fe-d5da-3554-b9c3" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
+                <modifier type="floor" value="1" field="56a9-ae38-a90b-3a04">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="161b-ea23-a4f0-e018" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -8382,6 +8575,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
                     <infoLink name="Unbreakable" hidden="false" type="profile" id="ae28-5c83-c77f-c250" targetId="d3eb-1fa0-bb19-f390"/>
                     <infoLink name="Slayer" hidden="false" type="profile" id="cdd1-3a6d-dfc4-b589" targetId="ea84-d53c-ef3b-57e8"/>
                     <infoLink name="&quot;Look Snorri, Trolls!&quot;" id="fe1e-4f3c-fb51-a959" hidden="true" type="profile" targetId="a6f4-c419-22fe-d9c4"/>
+                    <infoLink name="Furious Charge" id="8641-baac-72e8-ccbf" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
                   </infoLinks>
                 </infoGroup>
               </infoGroups>
@@ -8475,6 +8669,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
                         </modifier>
                       </modifiers>
                     </infoLink>
+                    <infoLink name="Furious Charge" id="0be0-10ba-db02-0bd7" hidden="false" type="profile" targetId="eaca-69a2-8b6a-81c6"/>
                   </infoLinks>
                 </infoGroup>
               </infoGroups>
@@ -8797,6 +8992,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
                 <modifier type="append" value="(-1)" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Dispersed Formation" id="de84-e638-4fd4-b085" hidden="false" type="profile" targetId="adc0-7a37-8c2c-c716"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -8834,8 +9030,8 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <cost name="pts" typeId="points" value="55"/>
           </costs>
           <constraints>
-            <constraint id="4981-a469-f264-8913" type="min" field="selections" scope="parent" value="1"/>
-            <constraint id="bad9-5aeb-f7c8-e929" type="max" field="selections" scope="parent" value="1"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4981-a469-f264-8913"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bad9-5aeb-f7c8-e929"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bolt Thrower" hidden="false" type="profile" id="99cd-8c42-d80a-a475" targetId="c08e-1eb6-69e1-f2b0"/>
@@ -8924,8 +9120,8 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <cost name="pts" typeId="points" value="95"/>
           </costs>
           <constraints>
-            <constraint id="b171-a8d9-259b-24d8" type="min" field="selections" scope="parent" value="1"/>
-            <constraint id="50c4-1fb-7d32-c56c" type="max" field="selections" scope="parent" value="1"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b171-a8d9-259b-24d8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50c4-1fb-7d32-c56c"/>
           </constraints>
           <infoLinks>
             <infoLink name="Grudge Thrower" hidden="false" type="profile" id="82fc-d5db-7e0a-a219" targetId="d3e7-8795-df15-ae20"/>
@@ -9011,10 +9207,10 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       <selectionEntries>
         <selectionEntry id="1843-710d-e5f7-ada" name="Cannon" type="model" collective="false" hidden="false" publicationId="3a81ff07--pubd1e638" sortIndex="1">
           <costs>
-            <cost name="pts" typeId="points" value="100"/>
+            <cost name="pts" typeId="points" value="95"/>
           </costs>
           <constraints>
-            <constraint id="e361-2912-6798-67c7" type="min" field="selections" scope="parent" value="1"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e361-2912-6798-67c7"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51e4-2b2-9996-4954"/>
           </constraints>
           <infoLinks>
@@ -9104,11 +9300,11 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       <selectionEntries>
         <selectionEntry id="618f-bb4e-f588-cb97" name="Organ Gun" type="model" collective="false" hidden="false" publicationId="3a81ff07--pubd1e638" sortIndex="1">
           <costs>
-            <cost name="pts" typeId="points" value="120"/>
+            <cost name="pts" typeId="points" value="115"/>
           </costs>
           <constraints>
-            <constraint id="de4-4a19-d46a-bca4" type="min" field="selections" scope="parent" value="1"/>
-            <constraint id="a96f-e331-f221-78ae" type="max" field="selections" scope="parent" value="1"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de4-4a19-d46a-bca4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a96f-e331-f221-78ae"/>
           </constraints>
           <infoLinks>
             <infoLink name="Base (50x50)" hidden="false" type="profile" id="e3c6-9745-85a7-e370" targetId="7813-4d15-143d-1bf1"/>
@@ -9187,11 +9383,11 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       <selectionEntries>
         <selectionEntry id="d2e5-5a34-8aeb-c77a" name="Flame Cannon" type="model" collective="false" hidden="false" publicationId="3a81ff07--pubd1e638" sortIndex="1">
           <costs>
-            <cost name="pts" typeId="points" value="125"/>
+            <cost name="pts" typeId="points" value="120"/>
           </costs>
           <constraints>
-            <constraint id="e5bc-6993-cb3d-c4b0" type="min" field="selections" scope="parent" value="1"/>
-            <constraint id="fda7-68d0-f191-d4bc" type="max" field="selections" scope="parent" value="1"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5bc-6993-cb3d-c4b0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fda7-68d0-f191-d4bc"/>
           </constraints>
           <infoLinks>
             <infoLink name="Flame Cannon" hidden="false" type="profile" id="8aee-f3c9-6fe9-1d45" targetId="7332-98f8-92e9-23c7">
@@ -9329,8 +9525,8 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9722,8 +9918,8 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10520,8 +10716,8 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -11505,22 +11701,49 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="e0e3-bf9e-5112-cbbe">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="e0e3-bf9e-5112-cbbe">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true"/>
-              </conditions>
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="e0e3-bf9e-5112-cbbe">
+              <comment>Battle march</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="2988-7d25-fadb-e2a3" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -11645,7 +11868,6 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       <infoGroups>
         <infoGroup name="Special Rules" id="f924-2a75-13ae-8f24" hidden="false">
           <infoLinks>
-            <infoLink name="Extended Formation" id="9c6d-036f-d1f4-e4c3" hidden="false" type="profile" targetId="708d-ae6e-2dd6-608b"/>
             <infoLink name="Fire &amp; Flee" id="4975-8b8d-3f6f-ed6e" hidden="false" type="profile" targetId="1a06-31aa-cbfe-1a5"/>
             <infoLink name="Fly" id="f3c0-9fcc-bee3-4200" hidden="false" type="profile" targetId="c557-6102-9a35-bbcd">
               <modifiers>
@@ -11671,6 +11893,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
             <infoLink name="Skirmishers" id="3459-e7c2-68db-5d5d" hidden="false" type="profile" targetId="59a5-7eca-ee35-96ac"/>
             <infoLink name="Swiftstride" id="a0ff-93b7-5edd-cb80" hidden="false" type="profile" targetId="dc91-48b3-3696-217"/>
             <infoLink name="Vanguard" id="09e1-32f9-2ff5-3412" hidden="false" type="profile" targetId="691e-10ec-4f7c-a2c4"/>
+            <infoLink name="Dispersed Formation" id="1630-a896-8715-d025" hidden="false" type="profile" targetId="adc0-7a37-8c2c-c716"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -11989,9 +12212,6 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         </modifier>
         <modifier type="floor" value="1" field="e00e-cb28-21c5-8459">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="e00e-cb28-21c5-8459">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -12034,9 +12254,6 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="ffa5-78ee-e9a4-95fe">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="ffa5-78ee-e9a4-95fe">
           <comment>Battle march</comment>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="90ea-cdfe-fbbc-00de" name="Grand Cathay" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="149" revision="23" authorUrl="www.newrecruit.eu" authorContact="Discord: Tidomann" authorName="Tidomann" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="90ea-cdfe-fbbc-00de" name="Grand Cathay" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="149" revision="32" authorUrl="www.newrecruit.eu" authorContact="Discord: Tidomann" authorName="Tidomann" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Mercenaries" id="e9b6-b192-d167-7a28" targetId="12a0-32cd-11d6-f952" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="The Lores of Magic" id="5d2e-edd3-f40d-2c75" targetId="f3c5-af11-649d-5dbb"/>
@@ -210,7 +210,7 @@ A Cathayan Dragon cannot declare a charge during a turn in which it transformed 
     <profile name="Dragon Fire Pistol" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="5b10-ca8b-8bc7-d744">
       <characteristics>
         <characteristic name="R" typeId="2360-c777-5e07-ed58">12&quot;</characteristic>
-        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">S</characteristic>
+        <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">5</characteristic>
         <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-1</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Flaming Attacks, Multiple Shots (2), Quick Shot</characteristic>
         <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71"/>
@@ -222,7 +222,7 @@ A Cathayan Dragon cannot declare a charge during a turn in which it transformed 
         <characteristic name="S" typeId="ac19-f99c-72e9-a1a7">3</characteristic>
         <characteristic name="AP" typeId="9429-ffe7-2ce5-e9a5">-</characteristic>
         <characteristic name="Special Rules" typeId="5f83-3633-336b-93b4">Armour Bane (1), Move &amp; Shoot, Quick Shot</characteristic>
-        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">If the roll To Hit is succesful, a gunpowder bomb causes D3 hits to the target enemy unit, rather than the usual one.</characteristic>
+        <characteristic name="Notes" typeId="772a-a7ff-f6b3-df71">If the roll To Hit is successful, a gunpowder bomb causes D3 hits to the target enemy unit, rather than the usual one.</characteristic>
       </characteristics>
     </profile>
     <profile name="Dragon Fire Bombs" typeId="a378-c633-912d-11ce" typeName="Weapon" hidden="false" id="11c8-57d5-d05e-6af5">
@@ -448,7 +448,7 @@ A Cathayan Dragon cannot declare a charge during a turn in which it transformed 
 |**1**|**Premature Detonation:** The release mechanism jams and a bomb explodes prematurely. This model loses a single Wound.|
 |**2**|**Dud:** A solitary bomb is released but fails to detonate before landing squarely upon the head of an unfortunate enemy. The enemy unit loses a single Wound.|
 |**3-4**|**Direct Hit:** A cluster of bombs lands directly on target. Place a large (5&quot;) blast template so that its central hole is directly over the center of the enemy unit. Once placed, the template will scatter D6&quot;. Any model whose base lies underneath the template&apos;s final position risks being hit and suffering a single Strength 5 hit with an AP of -2.|
-|**5-6**|**Bombs Away!:** A cluster of bombs is released, falling over a wide area. Place two small (3&quot;) blast templates to that their central hole is over the enemy unit. Once placed, each template with scatter D6&quot;. Any model whos base lies underneath a template&apos;s final position risks being hit and suffering a single Strength 5 hit with an AP of -2.|</characteristic>
+|**5-6**|**Bombs Away!:** A cluster of bombs is released, falling over a wide area. Place two small (3&quot;) blast templates to that their central hole is over the enemy unit. Once placed, each template with scatter D6&quot;. Any model whose base lies underneath a template&apos;s final position risks being hit and suffering a single Strength 5 hit with an AP of -2.|</characteristic>
       </characteristics>
     </profile>
     <profile name="Cathayan Sentinel" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="a52d-257a-59ba-b30c">
@@ -762,7 +762,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a64-b719-c632-10c0"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="089c-4e72-37ee-b30a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="3">
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="089c-4e72-37ee-b30a" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9bb-2aa1-5f24-ad1b"/>
               </constraints>
@@ -770,7 +770,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
                 <modifier type="append" value="(Human form)" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Full Plate Armour" hidden="false" id="a7f5-d073-5ccf-a7c8" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="4">
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="a7f5-d073-5ccf-a7c8" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72c6-344c-0cd4-1c27"/>
               </constraints>
@@ -790,7 +790,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <cost name="pts" typeId="points" value="485"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Lores of Magic" id="f4c1-4a9b-bc40-b70c" hidden="false" sortIndex="7">
+            <selectionEntryGroup name="Lores of Magic" id="f4c1-4a9b-bc40-b70c" hidden="false" sortIndex="8">
               <entryLinks>
                 <entryLink import="true" name="Battle Magic" hidden="false" id="64e1-4269-bc43-4157" type="selectionEntry" targetId="5b2e-35c6-f987-741e" sortIndex="1"/>
                 <entryLink import="true" name="High Magic" hidden="false" id="d886-1f1b-7e70-235d" type="selectionEntry" targetId="4cfb-44af-33d9-1b41" sortIndex="3"/>
@@ -801,7 +801,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9acc-f3be-3a1d-062f"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Wizard Level" id="b678-f0ac-86c1-e48d" hidden="false" defaultSelectionEntryId="31fe-493c-8c70-abea" sortIndex="6">
+            <selectionEntryGroup name="Wizard Level" id="b678-f0ac-86c1-e48d" hidden="false" defaultSelectionEntryId="31fe-493c-8c70-abea" sortIndex="7">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="28b0-141b-774b-2109"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="273f-fad4-b47f-1445"/>
@@ -819,7 +819,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Command" id="eb04-041e-4527-e67c" hidden="false" sortIndex="5">
+            <selectionEntryGroup name="Command" id="eb04-041e-4527-e67c" hidden="false" sortIndex="6">
               <entryLinks>
                 <entryLink import="true" name="General" hidden="false" id="befd-93b9-78bd-0711" type="selectionEntry" targetId="7d76-b1a1-1535-a04c">
                   <constraints>
@@ -845,6 +845,18 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bee-f6b7-3f9f-ca07-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bee-f6b7-3f9f-ca07-max"/>
               </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dragon Fire" hidden="false" id="d77c-83de-ad07-a3aa" collective="true" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Dragon fire" id="9959-d90b-4921-4bcc" hidden="false" type="profile" targetId="8f0b-70f7-d778-9883"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7047-2f97-464a-af3d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79da-dee9-0ce7-e6c2"/>
+              </constraints>
+              <modifiers>
+                <modifier type="append" value="(Dragon form)" field="name"/>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -1863,16 +1875,38 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
               <repeats>
                 <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="3707-8c0f-a470-5f0d"/>
               </repeats>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="f9d6-5add-32a5-b412">
               <repeats>
                 <repeat value="1000" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" id="5f6b-be32-361a-5927" includeChildSelections="true"/>
               </repeats>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1ae6-ed95-069e-a390" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cdbe-ecb9-27cb-fd2b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="0750-5d17-d708-f990" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e40a-36c4-0c66-472a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="floor" value="1" field="f9d6-5add-32a5-b412">
+              <comment>Battle march</comment>
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8214-cf48-b1cd-5f5e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1886,6 +1920,11 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
           <infoLinks>
             <infoLink name="Ambushers" id="9b74-9b9a-3a5a-8e09" hidden="false" type="profile" targetId="8c0b-6fe6-dc06-512"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="bc1f-daa6-a58b-f07e" targetId="27c9-52f0-c942-681e" primary="false">
+              <comment>Battle March Category</comment>
+            </categoryLink>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2877,7 +2916,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <entryLink import="true" name="Ogre Loader" hidden="false" id="03de-d2ba-567b-9c86" type="selectionEntry" targetId="9612-d280-c959-ca0c"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Ogre Loader" hidden="false" id="9612-d280-c959-ca0c">
+    <selectionEntry type="model" import="true" name="Ogre Loader" hidden="false" id="9612-d280-c959-ca0c" subType="crew">
       <categoryLinks>
         <categoryLink targetId="5c55-f9d6-b181-92f8" id="a940-8cce-69f4-626d" primary="false" name="Monstrous Infantry"/>
       </categoryLinks>
@@ -3404,7 +3443,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         </modifier>
         <modifier type="add" value="8d04-b54d-2e44-abd2" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="2a3f-ac48-ae3a-314e" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="2489-2405-0601-d07d" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3578,7 +3617,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3998-b101-356b-9c0e" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="5"/>
+                <cost name="pts" typeId="points" value="6"/>
               </costs>
               <infoLinks>
                 <infoLink name="Iron Hail Gunner" id="3880-48c3-6468-75d3" hidden="false" type="profile" targetId="76a6-4703-d3a6-ed7e">
@@ -3615,14 +3654,17 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
   <entryLinks>
     <entryLink import="true" name="Shugengan Lord" hidden="false" id="efdc-ff94-1e86-ba7f" type="selectionEntry" targetId="d794-e54b-cc45-4956">
       <categoryLinks>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="2390-beaf-28d4-84eb" primary="true" name="Characters"/>
-        <categoryLink targetId="d8c9-6b35-ef44-1295" id="315f-e7e9-984f-ea7f" primary="false" name="0-1 Shugengan Lord, Gate Master, Lord Magistrate, or Supreme Astromancer per 1,000 points"/>
+        <categoryLink name="Characters" hidden="false" id="2390-beaf-28d4-84eb" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="0-1 Shugengan Lord, Gate Master, Lord Magistrate, or Supreme Astromancer per 1,000 points" hidden="false" id="315f-e7e9-984f-ea7f" targetId="d8c9-6b35-ef44-1295" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="fcbb-a5d3-30e0-5c1f" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a6f7-ae95-8b7b-d71a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1e2c-f655-b531-d272" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cd55-5f46-3486-08c8" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3684,7 +3726,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="1e2c-f655-b531-d272">
+        <modifier type="set" value="0" field="cd55-5f46-3486-08c8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3694,7 +3736,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1e2c-f655-b531-d272">
+        <modifier type="increment" value="1" field="cd55-5f46-3486-08c8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3716,7 +3758,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1e2c-f655-b531-d272">
+        <modifier type="increment" value="1" field="cd55-5f46-3486-08c8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3751,7 +3793,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="24dc-be64-0062-56df" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6c6b-0c79-fb53-3cac" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0f61-3db8-4a83-4b93" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3858,7 +3900,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="6c6b-0c79-fb53-3cac">
+        <modifier type="set" value="0" field="0f61-3db8-4a83-4b93">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3868,7 +3910,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6c6b-0c79-fb53-3cac">
+        <modifier type="increment" value="1" field="0f61-3db8-4a83-4b93">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3890,7 +3932,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6c6b-0c79-fb53-3cac">
+        <modifier type="increment" value="1" field="0f61-3db8-4a83-4b93">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3916,14 +3958,17 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
     </entryLink>
     <entryLink import="true" name="Gate Master" hidden="false" id="8189-acb7-0155-4279" type="selectionEntry" targetId="3c52-a12d-8aea-de59">
       <categoryLinks>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="6f33-8fe9-80ba-525e" primary="true" name="Characters"/>
-        <categoryLink targetId="d8c9-6b35-ef44-1295" id="6ae1-ac0c-5b9a-189b" primary="false" name="0-1 Shugengan Lord, Gate Master, Lord Magistrate, or Supreme Astromancer per 1,000 points"/>
+        <categoryLink name="Characters" hidden="false" id="6f33-8fe9-80ba-525e" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="0-1 Shugengan Lord, Gate Master, Lord Magistrate, or Supreme Astromancer per 1,000 points" hidden="false" id="6ae1-ac0c-5b9a-189b" targetId="d8c9-6b35-ef44-1295" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="911a-f8dc-d0c7-f645" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7f6d-c07d-4b87-6dfa" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9175-e8f8-5e8f-dedd" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="20d7-dde8-45e7-2187" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3985,7 +4030,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="9175-e8f8-5e8f-dedd">
+        <modifier type="set" value="0" field="20d7-dde8-45e7-2187">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3995,7 +4040,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9175-e8f8-5e8f-dedd">
+        <modifier type="increment" value="1" field="20d7-dde8-45e7-2187">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4017,7 +4062,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9175-e8f8-5e8f-dedd">
+        <modifier type="increment" value="1" field="20d7-dde8-45e7-2187">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4052,7 +4097,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4714-7d35-187d-9592" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3b3c-35d5-a809-32f3" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ffad-1e85-8287-d657" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4159,7 +4204,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="3b3c-35d5-a809-32f3">
+        <modifier type="set" value="0" field="ffad-1e85-8287-d657">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4169,7 +4214,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3b3c-35d5-a809-32f3">
+        <modifier type="increment" value="1" field="ffad-1e85-8287-d657">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4191,7 +4236,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3b3c-35d5-a809-32f3">
+        <modifier type="increment" value="1" field="ffad-1e85-8287-d657">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4217,15 +4262,18 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
     </entryLink>
     <entryLink import="true" name="Miao Ying, The Storm Dragon" hidden="false" id="2f08-bbba-e41d-36b0" type="selectionEntry" targetId="3698-a2e4-0d1a-8579">
       <categoryLinks>
-        <categoryLink targetId="3ba8-a41e-b6ae-d4ba" id="9f47-3473-f259-c705" primary="true" name="Named Characters"/>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="ef8a-d1e3-a6a7-2741" primary="false" name="Characters"/>
-        <categoryLink targetId="f37d-e0bd-8eb7-1094" id="0065-76b7-b5c0-803f" primary="false" name="0-1 Cathayan Dragon per 1,000 points"/>
+        <categoryLink name="Named Characters" hidden="false" id="9f47-3473-f259-c705" targetId="3ba8-a41e-b6ae-d4ba" primary="true"/>
+        <categoryLink name="Characters" hidden="false" id="ef8a-d1e3-a6a7-2741" targetId="a4cc-15c9-cfae-1b3b" primary="false"/>
+        <categoryLink name="0-1 Cathayan Dragon per 1,000 points" hidden="false" id="0065-76b7-b5c0-803f" targetId="f37d-e0bd-8eb7-1094" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="be14-19c8-6b60-d5a3" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8d5d-5d7a-d46e-978e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ff4e-5e78-1564-aade" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8bfb-8323-ee8b-dd76" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4287,7 +4335,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="ff4e-5e78-1564-aade">
+        <modifier type="set" value="0" field="8bfb-8323-ee8b-dd76">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4297,7 +4345,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ff4e-5e78-1564-aade">
+        <modifier type="increment" value="1" field="8bfb-8323-ee8b-dd76">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4319,7 +4367,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ff4e-5e78-1564-aade">
+        <modifier type="increment" value="1" field="8bfb-8323-ee8b-dd76">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4345,14 +4393,17 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
     </entryLink>
     <entryLink import="true" name="Lord Magistrate" hidden="false" id="bf62-115a-da8b-1c62" type="selectionEntry" targetId="b275-d57b-0848-60ad">
       <categoryLinks>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="8c66-4303-2c32-9066" primary="true" name="Characters"/>
-        <categoryLink targetId="d8c9-6b35-ef44-1295" id="4c7c-88c4-8cca-8026" primary="false" name="0-1 Shugengan Lord, Gate Master, Lord Magistrate, or Supreme Astromancer per 1,000 points"/>
+        <categoryLink name="Characters" hidden="false" id="8c66-4303-2c32-9066" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="0-1 Shugengan Lord, Gate Master, Lord Magistrate, or Supreme Astromancer per 1,000 points" hidden="false" id="4c7c-88c4-8cca-8026" targetId="d8c9-6b35-ef44-1295" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="84d4-93de-cf60-0176" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f004-a826-9bea-c962" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1865-cc75-dbb9-5ef9" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8c35-4679-fa8c-3271" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4414,7 +4465,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="1865-cc75-dbb9-5ef9">
+        <modifier type="set" value="0" field="8c35-4679-fa8c-3271">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4424,7 +4475,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1865-cc75-dbb9-5ef9">
+        <modifier type="increment" value="1" field="8c35-4679-fa8c-3271">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4446,7 +4497,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1865-cc75-dbb9-5ef9">
+        <modifier type="increment" value="1" field="8c35-4679-fa8c-3271">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4481,7 +4532,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c9ef-280b-9fa0-061b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6ef4-fc8c-bdfe-258c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="98ce-a17f-ba32-41f2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4572,7 +4623,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="6ef4-fc8c-bdfe-258c">
+        <modifier type="set" value="0" field="98ce-a17f-ba32-41f2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4582,7 +4633,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6ef4-fc8c-bdfe-258c">
+        <modifier type="increment" value="1" field="98ce-a17f-ba32-41f2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4604,7 +4655,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6ef4-fc8c-bdfe-258c">
+        <modifier type="increment" value="1" field="98ce-a17f-ba32-41f2">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4639,7 +4690,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="bbb7-20e7-9fff-52a5" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="17f7-35d0-7659-cc85" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e762-70c6-49bd-3d25" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4746,7 +4797,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="17f7-35d0-7659-cc85">
+        <modifier type="set" value="0" field="e762-70c6-49bd-3d25">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4756,7 +4807,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="17f7-35d0-7659-cc85">
+        <modifier type="increment" value="1" field="e762-70c6-49bd-3d25">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4778,7 +4829,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="17f7-35d0-7659-cc85">
+        <modifier type="increment" value="1" field="e762-70c6-49bd-3d25">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4814,7 +4865,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="a836-e45f-e74b-9ed2" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9d87-0f35-291e-a7df" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="030e-745b-d2d5-0d8f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4921,7 +4972,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="9d87-0f35-291e-a7df">
+        <modifier type="set" value="0" field="030e-745b-d2d5-0d8f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4931,7 +4982,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9d87-0f35-291e-a7df">
+        <modifier type="increment" value="1" field="030e-745b-d2d5-0d8f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4953,7 +5004,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9d87-0f35-291e-a7df">
+        <modifier type="increment" value="1" field="030e-745b-d2d5-0d8f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4984,7 +5035,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3559-a07e-e0bc-dc5b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5034-a2c1-9d9c-ad3a" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6c4f-81e7-3c1f-106b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5075,7 +5126,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="0" field="5034-a2c1-9d9c-ad3a">
+        <modifier type="set" value="0" field="6c4f-81e7-3c1f-106b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5085,7 +5136,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5034-a2c1-9d9c-ad3a">
+        <modifier type="increment" value="1" field="6c4f-81e7-3c1f-106b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5107,7 +5158,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5034-a2c1-9d9c-ad3a">
+        <modifier type="increment" value="1" field="6c4f-81e7-3c1f-106b">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5318,7 +5369,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1da5-1ca7-5778-639a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="26ed-7ec7-17d2-b0de" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2a45-dc98-0fca-145f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5409,7 +5460,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="26ed-7ec7-17d2-b0de">
+        <modifier type="set" value="0" field="2a45-dc98-0fca-145f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5419,7 +5470,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="26ed-7ec7-17d2-b0de">
+        <modifier type="increment" value="1" field="2a45-dc98-0fca-145f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5441,7 +5492,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="26ed-7ec7-17d2-b0de">
+        <modifier type="increment" value="1" field="2a45-dc98-0fca-145f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5823,14 +5874,17 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
     </entryLink>
     <entryLink import="true" name="Cathayan Grand Cannon" hidden="false" id="ecd9-1d63-8e1d-5b64" type="selectionEntry" targetId="0d66-ce16-3768-0611">
       <categoryLinks>
-        <categoryLink targetId="633f-f67a-1b6a-d203" id="37f6-2730-f57a-60b7" primary="true" name="Special"/>
-        <categoryLink targetId="64e9-1a5b-41c7-3967" id="f670-338b-166c-f875" primary="false" name="0-2 Fire Rain Rocket Batteries or Cathayan Grand Cannon per 1,000 points"/>
+        <categoryLink name="Special" hidden="false" id="37f6-2730-f57a-60b7" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="0-2 Fire Rain Rocket Batteries or Cathayan Grand Cannon per 1,000 points" hidden="false" id="f670-338b-166c-f875" targetId="64e9-1a5b-41c7-3967" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="ea37-043c-f71e-49ca" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="26ed-8ec7-1ccb-667e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="adda-9e13-f446-9902" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3635-bae6-34d5-652d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5892,7 +5946,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="adda-9e13-f446-9902">
+        <modifier type="set" value="0" field="3635-bae6-34d5-652d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5902,7 +5956,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="adda-9e13-f446-9902">
+        <modifier type="increment" value="1" field="3635-bae6-34d5-652d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5924,7 +5978,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="adda-9e13-f446-9902">
+        <modifier type="increment" value="1" field="3635-bae6-34d5-652d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5950,14 +6004,17 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
     </entryLink>
     <entryLink import="true" name="Fire Rain Rocket Battery" hidden="false" id="4521-c9e5-a035-0161" type="selectionEntry" targetId="81e7-7528-d4e5-ec71">
       <categoryLinks>
-        <categoryLink targetId="64e9-1a5b-41c7-3967" id="d19f-320d-93b3-e5c8" primary="false" name="0-2 Fire Rain Rocket Batteries or Cathayan Grand Cannon per 1,000 points"/>
-        <categoryLink targetId="633f-f67a-1b6a-d203" id="a780-1995-156d-15e1" primary="true" name="Special"/>
+        <categoryLink name="0-2 Fire Rain Rocket Batteries or Cathayan Grand Cannon per 1,000 points" hidden="false" id="d19f-320d-93b3-e5c8" targetId="64e9-1a5b-41c7-3967" primary="false"/>
+        <categoryLink name="Special" hidden="false" id="a780-1995-156d-15e1" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="61e1-0019-b895-9b6f" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="06ce-c1b2-0d81-5cfd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9211-5a18-bbcb-37ab" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="34b2-f8fb-04f2-c032" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6019,7 +6076,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="9211-5a18-bbcb-37ab">
+        <modifier type="set" value="0" field="34b2-f8fb-04f2-c032">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6029,7 +6086,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="9211-5a18-bbcb-37ab">
+        <modifier type="increment" value="1" field="34b2-f8fb-04f2-c032">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6051,7 +6108,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="9211-5a18-bbcb-37ab">
+        <modifier type="increment" value="1" field="34b2-f8fb-04f2-c032">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6077,14 +6134,17 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
     </entryLink>
     <entryLink import="true" name="Supreme Astromancer" hidden="false" id="2ff5-8d64-f66d-5f33" type="selectionEntry" targetId="02d7-9649-f263-826f">
       <categoryLinks>
-        <categoryLink targetId="a4cc-15c9-cfae-1b3b" id="7d3a-e304-55eb-d946" primary="true" name="Characters"/>
-        <categoryLink targetId="d8c9-6b35-ef44-1295" id="6b6a-2b0c-df35-147d" primary="false" name="0-1 Shugengan Lord, Gate Master, Lord Magistrate, or Supreme Astromancer per 1,000 points"/>
+        <categoryLink name="Characters" hidden="false" id="7d3a-e304-55eb-d946" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="0-1 Shugengan Lord, Gate Master, Lord Magistrate, or Supreme Astromancer per 1,000 points" hidden="false" id="6b6a-2b0c-df35-147d" targetId="d8c9-6b35-ef44-1295" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="d3ae-6ddf-03d8-6a66" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5a13-5913-570d-4018" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="bb06-14b0-abd6-8fc8" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e694-ff6a-a94f-a48a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6146,7 +6206,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="bb06-14b0-abd6-8fc8">
+        <modifier type="set" value="0" field="e694-ff6a-a94f-a48a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6156,7 +6216,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="bb06-14b0-abd6-8fc8">
+        <modifier type="increment" value="1" field="e694-ff6a-a94f-a48a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6178,7 +6238,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="bb06-14b0-abd6-8fc8">
+        <modifier type="increment" value="1" field="e694-ff6a-a94f-a48a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6213,7 +6273,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="48ae-ee91-e977-ba53" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="95da-5432-9bde-e3b4" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1d93-057e-6fe6-a829" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6320,7 +6380,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="95da-5432-9bde-e3b4">
+        <modifier type="set" value="0" field="1d93-057e-6fe6-a829">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6330,7 +6390,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="95da-5432-9bde-e3b4">
+        <modifier type="increment" value="1" field="1d93-057e-6fe6-a829">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6352,7 +6412,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="95da-5432-9bde-e3b4">
+        <modifier type="increment" value="1" field="1d93-057e-6fe6-a829">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6384,7 +6444,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="03ef-73bb-f912-426d" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1543-0932-81a7-1bde" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3644-ed21-5c73-267d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6491,7 +6551,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="1543-0932-81a7-1bde">
+        <modifier type="set" value="0" field="3644-ed21-5c73-267d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6501,7 +6561,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="1543-0932-81a7-1bde">
+        <modifier type="increment" value="1" field="3644-ed21-5c73-267d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6523,7 +6583,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="1543-0932-81a7-1bde">
+        <modifier type="increment" value="1" field="3644-ed21-5c73-267d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6548,11 +6608,13 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="f0e3-2e32-8866-ea32" id="b43b-ebee-414f-3c62" primary="true" name="Core"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="be1b-8cb5-507e-ada4" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Crane Gunner Team" hidden="false" id="f8ee-1c0f-9c13-58a9" type="selectionEntry" targetId="8d5a-b1d5-8c39-5e3d">
       <categoryLinks>
         <categoryLink targetId="633f-f67a-1b6a-d203" id="ef75-7d8d-5a90-c967" primary="true" name="Special"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="429f-1761-1e40-21e8" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f514-4074-5386-bf59" includeChildSelections="true" includeChildForces="true" percentValue="false">
@@ -6561,7 +6623,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="6e0a-1fec-4642-7b0a" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3c8c-a2e0-8d7c-1f91" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6780-9d79-2482-9033" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6668,7 +6730,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="3c8c-a2e0-8d7c-1f91">
+        <modifier type="set" value="0" field="6780-9d79-2482-9033">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6678,7 +6740,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3c8c-a2e0-8d7c-1f91">
+        <modifier type="increment" value="1" field="6780-9d79-2482-9033">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6700,7 +6762,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3c8c-a2e0-8d7c-1f91">
+        <modifier type="increment" value="1" field="6780-9d79-2482-9033">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6727,6 +6789,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
     <entryLink import="true" name="Iron Hail Gunners" hidden="false" id="c60e-4e30-15ff-fef4" type="selectionEntry" targetId="7ec9-6f7f-def1-13aa">
       <categoryLinks>
         <categoryLink targetId="633f-f67a-1b6a-d203" id="7efd-b35e-300d-10a6" primary="true" name="Special"/>
+        <categoryLink targetId="fec1-537a-bbeb-7926" id="a9e1-ae81-b3a7-8e51" primary="false" name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1228-44ac-eb0c-3feb" includeChildSelections="true" includeChildForces="true" percentValue="false">
@@ -6735,7 +6798,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="e5a8-2d6b-66ec-e539" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="bad9-1ef7-46dc-94de" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="aa87-acf5-bd21-0480" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6842,7 +6905,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="bad9-1ef7-46dc-94de">
+        <modifier type="set" value="0" field="aa87-acf5-bd21-0480">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6852,7 +6915,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="bad9-1ef7-46dc-94de">
+        <modifier type="increment" value="1" field="aa87-acf5-bd21-0480">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6874,7 +6937,7 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="bad9-1ef7-46dc-94de">
+        <modifier type="increment" value="1" field="aa87-acf5-bd21-0480">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6951,9 +7014,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         </modifier>
         <modifier type="floor" value="1" field="be8b-746a-2033-b947">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="be8b-746a-2033-b947">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -6996,9 +7056,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="1e57-0f8d-0e2a-9fd2">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="1e57-0f8d-0e2a-9fd2">
           <comment>Battle march</comment>
@@ -7047,9 +7104,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         </modifier>
         <modifier type="floor" value="1" field="24ff-b83e-3061-ffca">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="24ff-b83e-3061-ffca">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -7092,9 +7146,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="f358-7c87-9ba5-fa39">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="f358-7c87-9ba5-fa39">
           <comment>Battle march</comment>
@@ -7143,9 +7194,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         </modifier>
         <modifier type="floor" value="1" field="fff7-b11f-2660-bd31">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="fff7-b11f-2660-bd31">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -7188,9 +7236,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="2397-6b9d-7968-ecfd">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="2397-6b9d-7968-ecfd">
           <comment>Battle march</comment>
@@ -7239,9 +7284,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         </modifier>
         <modifier type="floor" value="1" field="343b-d7c1-b747-33a6">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="343b-d7c1-b747-33a6">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -7287,9 +7329,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         </modifier>
         <modifier type="floor" value="1" field="12f2-f4b8-c6fe-9c3f">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="12f2-f4b8-c6fe-9c3f">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -7332,9 +7371,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="2f75-aba7-bfc4-3f93">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="2f75-aba7-bfc4-3f93">
           <comment>Battle march</comment>
@@ -7388,9 +7424,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         </modifier>
         <modifier type="floor" value="1" field="8ef3-d1e4-6a8a-85f5">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="8ef3-d1e4-6a8a-85f5">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -7433,9 +7466,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="361d-c3ae-7513-0903">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="361d-c3ae-7513-0903">
           <comment>Battle march</comment>
@@ -7484,9 +7514,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         </modifier>
         <modifier type="floor" value="1" field="471e-e849-6884-b25a">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="471e-e849-6884-b25a">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -7529,9 +7556,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="b5a6-fbde-44d9-43f3">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="b5a6-fbde-44d9-43f3">
           <comment>Battle march</comment>
@@ -7580,9 +7604,6 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
         </modifier>
         <modifier type="floor" value="1" field="cc03-7f73-06b5-3513">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="cc03-7f73-06b5-3513">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -7593,8 +7614,9 @@ The crew of any war machine joined by an Ogre Loader gains a +1 modifier to its 
   <rules>
     <rule name="The Elemental Winds" id="7a50-474d-7ecc-ade9" hidden="false">
       <description>During each of their Start of Turn sub-phases, the Grand Cathay player rolls a D6 to determine which of the Elemental Winds blow the strongest:
-- On a roll of 1-3, the Winds of Yin blow strongest.
-- On a roll of 4+, the Winds of Yin blow strongest.
+- On a roll of 1-2, the Winds grow still and nothing happens.
+- On a roll of 3-4, the Winds of Yin blow strongest.
+- On a roll of 5-6, the Winds of Yin blow strongest.
 
 
 

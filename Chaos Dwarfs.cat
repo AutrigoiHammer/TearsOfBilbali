@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6f67-505-5647-4c59" name="Chaos Dwarfs" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="49" revision="62" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="Giloushaker#2496">
+<catalogue library="false" id="6f67-505-5647-4c59" name="Chaos Dwarfs" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="49" revision="66" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="Giloushaker#2496">
   <sharedProfiles>
     <profile name="Sorcerer-Prophet" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="a536-85f7-3f51-7de1">
       <characteristics>
@@ -942,8 +942,8 @@ When rolling To Wound, the target number is the same as the armour value of the
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1100,8 +1100,8 @@ When rolling To Wound, the target number is the same as the armour value of the
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1673,8 +1673,8 @@ When rolling To Wound, the target number is the same as the armour value of the
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3425,13 +3425,16 @@ When rolling To Wound, the target number is the same as the armour value of the
     <entryLink import="true" name="Sorcerer-Prophet" hidden="false" id="a2c35172-ef9c5a3c" type="selectionEntry" targetId="7ca13b79-3b164ccf">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="acc-fdf4-c913-840" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="8508-bf1e-c1ff-eaca" id="f871-4de5-4eba-369e" primary="false" name="0-1 Sorcerer Propher or Infernal Castellan per 1,000 points"/>
+        <categoryLink name="0-1 Sorcerer Propher or Infernal Castellan per 1,000 points" hidden="false" id="f871-4de5-4eba-369e" targetId="8508-bf1e-c1ff-eaca" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="5639-e418-6100-17c5" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c21e-c45a-e912-682d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="aa7a-af1f-be6c-b5b8" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d62c-d3a3-ced3-0cfd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3493,7 +3496,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="aa7a-af1f-be6c-b5b8">
+        <modifier type="set" value="0" field="d62c-d3a3-ced3-0cfd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3503,7 +3506,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="aa7a-af1f-be6c-b5b8">
+        <modifier type="increment" value="1" field="d62c-d3a3-ced3-0cfd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3525,7 +3528,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="aa7a-af1f-be6c-b5b8">
+        <modifier type="increment" value="1" field="d62c-d3a3-ced3-0cfd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3560,7 +3563,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="a1ff-a2e8-22e5-5e99" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="73b4-d708-7c76-9e03" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7ebe-598f-5e52-ffba" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3667,7 +3670,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="73b4-d708-7c76-9e03">
+        <modifier type="set" value="0" field="7ebe-598f-5e52-ffba">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3677,7 +3680,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="73b4-d708-7c76-9e03">
+        <modifier type="increment" value="1" field="7ebe-598f-5e52-ffba">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3699,7 +3702,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="73b4-d708-7c76-9e03">
+        <modifier type="increment" value="1" field="7ebe-598f-5e52-ffba">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3726,13 +3729,16 @@ When rolling To Wound, the target number is the same as the armour value of the
     <entryLink import="true" name="Infernal Castellan" hidden="false" id="7582aa32-21aecfc" type="selectionEntry" targetId="af745d1-d9d92d27">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="cf50-ca4-5d32-a656" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
-        <categoryLink targetId="8508-bf1e-c1ff-eaca" id="5dd5-2516-cb2a-11ce" primary="false" name="0-1 Sorcerer Propher or Infernal Castellan per 1,000 points"/>
+        <categoryLink name="0-1 Sorcerer Propher or Infernal Castellan per 1,000 points" hidden="false" id="5dd5-2516-cb2a-11ce" targetId="8508-bf1e-c1ff-eaca" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="61d2-9642-e68d-a00b" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="632c-bd11-86fb-b282" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="36df-aebb-4af6-41c1" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a359-dccf-f169-fd65" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3794,7 +3800,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="36df-aebb-4af6-41c1">
+        <modifier type="set" value="0" field="a359-dccf-f169-fd65">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3804,7 +3810,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="36df-aebb-4af6-41c1">
+        <modifier type="increment" value="1" field="a359-dccf-f169-fd65">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3826,7 +3832,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="36df-aebb-4af6-41c1">
+        <modifier type="increment" value="1" field="a359-dccf-f169-fd65">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3861,7 +3867,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="9647-f062-0009-28c9" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="57b3-f168-b2f4-ee7f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5baa-f313-a786-4edf" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -3968,7 +3974,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="57b3-f168-b2f4-ee7f">
+        <modifier type="set" value="0" field="5baa-f313-a786-4edf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -3978,7 +3984,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="57b3-f168-b2f4-ee7f">
+        <modifier type="increment" value="1" field="5baa-f313-a786-4edf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4000,7 +4006,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="57b3-f168-b2f4-ee7f">
+        <modifier type="increment" value="1" field="5baa-f313-a786-4edf">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4033,7 +4039,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2629-908f-e1bc-9c3e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="09fe-f09d-24d5-5841" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ffee-8e10-9836-2b61" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4108,7 +4114,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="09fe-f09d-24d5-5841">
+        <modifier type="set" value="0" field="ffee-8e10-9836-2b61">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4118,7 +4124,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="09fe-f09d-24d5-5841">
+        <modifier type="increment" value="1" field="ffee-8e10-9836-2b61">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4140,7 +4146,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="09fe-f09d-24d5-5841">
+        <modifier type="increment" value="1" field="ffee-8e10-9836-2b61">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4175,7 +4181,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="cfd4-081b-f175-8c27" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="003e-d738-be05-bcf9" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="cf9b-0460-0047-228a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4282,7 +4288,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="003e-d738-be05-bcf9">
+        <modifier type="set" value="0" field="cf9b-0460-0047-228a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4292,7 +4298,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="003e-d738-be05-bcf9">
+        <modifier type="increment" value="1" field="cf9b-0460-0047-228a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4314,7 +4320,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="003e-d738-be05-bcf9">
+        <modifier type="increment" value="1" field="cf9b-0460-0047-228a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4350,7 +4356,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="72ce-e4ef-1d8b-63ab" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="aba1-7ea0-83fe-d2f9" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d70a-6200-a47a-1cc1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4457,7 +4463,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="aba1-7ea0-83fe-d2f9">
+        <modifier type="set" value="0" field="d70a-6200-a47a-1cc1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4467,7 +4473,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="aba1-7ea0-83fe-d2f9">
+        <modifier type="increment" value="1" field="d70a-6200-a47a-1cc1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4489,7 +4495,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="aba1-7ea0-83fe-d2f9">
+        <modifier type="increment" value="1" field="d70a-6200-a47a-1cc1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4526,7 +4532,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="478c-4966-07f5-e162" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b80f-9574-e000-885c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0282-f2c3-46f7-a35e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4638,7 +4644,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="b80f-9574-e000-885c">
+        <modifier type="set" value="0" field="0282-f2c3-46f7-a35e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4648,7 +4654,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="b80f-9574-e000-885c">
+        <modifier type="increment" value="1" field="0282-f2c3-46f7-a35e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4670,7 +4676,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="b80f-9574-e000-885c">
+        <modifier type="increment" value="1" field="0282-f2c3-46f7-a35e">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4706,7 +4712,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="51f0-6cca-45fe-9918" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="bc1c-80f4-8896-3c90" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9825-bacc-526e-8cea" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4813,7 +4819,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="bc1c-80f4-8896-3c90">
+        <modifier type="set" value="0" field="9825-bacc-526e-8cea">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4823,7 +4829,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="bc1c-80f4-8896-3c90">
+        <modifier type="increment" value="1" field="9825-bacc-526e-8cea">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4845,7 +4851,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="bc1c-80f4-8896-3c90">
+        <modifier type="increment" value="1" field="9825-bacc-526e-8cea">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4881,7 +4887,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b1be-14c5-528d-b4e0" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ee51-a517-3c59-00b0" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4498-5704-40c1-3835" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -4988,7 +4994,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="ee51-a517-3c59-00b0">
+        <modifier type="set" value="0" field="4498-5704-40c1-3835">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -4998,7 +5004,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ee51-a517-3c59-00b0">
+        <modifier type="increment" value="1" field="4498-5704-40c1-3835">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5020,7 +5026,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ee51-a517-3c59-00b0">
+        <modifier type="increment" value="1" field="4498-5704-40c1-3835">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5056,7 +5062,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="250a-d467-d83f-2773" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7e3d-3619-2908-9f30" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="9787-5342-0232-231f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5163,7 +5169,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="7e3d-3619-2908-9f30">
+        <modifier type="set" value="0" field="9787-5342-0232-231f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5173,7 +5179,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="7e3d-3619-2908-9f30">
+        <modifier type="increment" value="1" field="9787-5342-0232-231f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5195,7 +5201,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="7e3d-3619-2908-9f30">
+        <modifier type="increment" value="1" field="9787-5342-0232-231f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5229,7 +5235,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="be8d-9850-c353-6bc1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3882-7927-7168-2ac8" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c900-89c9-c082-22c1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5296,7 +5302,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="3882-7927-7168-2ac8">
+        <modifier type="set" value="0" field="c900-89c9-c082-22c1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5306,7 +5312,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3882-7927-7168-2ac8">
+        <modifier type="increment" value="1" field="c900-89c9-c082-22c1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5325,10 +5331,10 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3882-7927-7168-2ac8">
+        <modifier type="increment" value="1" field="c900-89c9-c082-22c1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5347,7 +5353,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -5364,7 +5370,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="fc95-7b9e-4f27-9608" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="814d-9bf0-76e9-c211" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6d00-33a0-409a-b831" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5471,7 +5477,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="814d-9bf0-76e9-c211">
+        <modifier type="set" value="0" field="6d00-33a0-409a-b831">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5481,7 +5487,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="814d-9bf0-76e9-c211">
+        <modifier type="increment" value="1" field="6d00-33a0-409a-b831">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5503,7 +5509,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="814d-9bf0-76e9-c211">
+        <modifier type="increment" value="1" field="6d00-33a0-409a-b831">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5531,13 +5537,16 @@ When rolling To Wound, the target number is the same as the armour value of the
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="65e-ed54-3c39-67a5" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="1168-f1c5-9a8c-81c4" primary="false" targetId="fec1-537a-bbeb-7926"/>
-        <categoryLink targetId="afd8-d3bb-0f2a-315a" id="47ab-3077-d88f-1a43" primary="false" name="0-1 Iron Daemon per 1,000 points"/>
+        <categoryLink name="0-1 Iron Daemon per 1,000 points" hidden="false" id="47ab-3077-d88f-1a43" targetId="afd8-d3bb-0f2a-315a" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="7deb-25ab-1156-bef1" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="8bf6-b9c3-7628-e162" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6d7f-f235-9bbf-0425" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3421-2a4a-4b93-7ea8" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5599,7 +5608,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="6d7f-f235-9bbf-0425">
+        <modifier type="set" value="0" field="3421-2a4a-4b93-7ea8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5609,7 +5618,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="6d7f-f235-9bbf-0425">
+        <modifier type="increment" value="1" field="3421-2a4a-4b93-7ea8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5631,7 +5640,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="6d7f-f235-9bbf-0425">
+        <modifier type="increment" value="1" field="3421-2a4a-4b93-7ea8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5659,12 +5668,15 @@ When rolling To Wound, the target number is the same as the armour value of the
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="3c97-44c8-c8f3-ef82" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="0-1 Deathshrieker Rocket Launcher or Magma Cannon per 1,000 points" hidden="false" id="dc77-7095-2b2c-ea7c" targetId="6242-e218-d5ad-7ed6" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="a67c-ac03-56e9-ebfc" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ae5c-1ced-a20b-46a2" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a312-1641-f054-cfff" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5aaa-b6bb-5856-5dab" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5726,7 +5738,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="a312-1641-f054-cfff">
+        <modifier type="set" value="0" field="5aaa-b6bb-5856-5dab">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5736,7 +5748,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a312-1641-f054-cfff">
+        <modifier type="increment" value="1" field="5aaa-b6bb-5856-5dab">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5758,7 +5770,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a312-1641-f054-cfff">
+        <modifier type="increment" value="1" field="5aaa-b6bb-5856-5dab">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5786,12 +5798,15 @@ When rolling To Wound, the target number is the same as the armour value of the
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="b221-ac71-a7fc-9fe" targetId="2bfe-5863-46fe-d284" primary="true"/>
         <categoryLink name="0-1 Dreadquake Mortar or Hellcannon per 1,000 points" hidden="false" id="d6b5-d2fe-5603-9320" targetId="83da-bc6b-19d9-9065" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="2872-b98e-4ea1-e282" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="14c2-070a-0285-8e76" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2f4f-0860-4070-8f67" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2558-b3b8-94dd-89ff" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5853,7 +5868,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="2f4f-0860-4070-8f67">
+        <modifier type="set" value="0" field="2558-b3b8-94dd-89ff">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5863,7 +5878,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2f4f-0860-4070-8f67">
+        <modifier type="increment" value="1" field="2558-b3b8-94dd-89ff">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5882,10 +5897,10 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2f4f-0860-4070-8f67">
+        <modifier type="increment" value="1" field="2558-b3b8-94dd-89ff">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5904,7 +5919,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -5913,12 +5928,15 @@ When rolling To Wound, the target number is the same as the armour value of the
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="d572-b2c3-1111-6470" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="0-1 Deathshrieker Rocket Launcher or Magma Cannon per 1,000 points" hidden="false" id="c4f4-89b1-f1de-bad" targetId="6242-e218-d5ad-7ed6" primary="false"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="b852-0d47-f77c-11be" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3463-78a8-bc36-346d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5296-9384-1a3b-c594" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f41e-7e98-affe-513d" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5980,7 +5998,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="5296-9384-1a3b-c594">
+        <modifier type="set" value="0" field="f41e-7e98-affe-513d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5990,7 +6008,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5296-9384-1a3b-c594">
+        <modifier type="increment" value="1" field="f41e-7e98-affe-513d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6012,7 +6030,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5296-9384-1a3b-c594">
+        <modifier type="increment" value="1" field="f41e-7e98-affe-513d">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6039,13 +6057,16 @@ When rolling To Wound, the target number is the same as the armour value of the
     <entryLink import="true" name="Hobgoblin Bolt Thrower" hidden="false" id="fad71bda-7ae75dc4" type="selectionEntry" targetId="36c1d198-da5eb702">
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="5867-1893-ec07-767e" targetId="633f-f67a-1b6a-d203" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="20b7-d1bc-dccd-54a4" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="b566-c755-6fbc-36b5" includeChildSelections="true"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e605-9ef3-d7c2-f744" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="479d-9610-e1e5-2792" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="faac-ac1d-99b3-1443" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6112,7 +6133,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="479d-9610-e1e5-2792">
+        <modifier type="set" value="0" field="faac-ac1d-99b3-1443">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6122,7 +6143,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="479d-9610-e1e5-2792">
+        <modifier type="increment" value="1" field="faac-ac1d-99b3-1443">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6144,7 +6165,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="479d-9610-e1e5-2792">
+        <modifier type="increment" value="1" field="faac-ac1d-99b3-1443">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6561,14 +6582,17 @@ When rolling To Wound, the target number is the same as the armour value of the
     <entryLink import="true" name="Hellcannon" hidden="false" id="6122-266e-9eee-ceca" type="selectionEntry" targetId="6b92-b342-53c6-d701">
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="d55c-f4bc-a4ae-bfe5" targetId="2bfe-5863-46fe-d284" primary="true"/>
-        <categoryLink targetId="83da-bc6b-19d9-9065" id="26f5-ba7b-79f2-b968" primary="false" name="0-1 Dreadquake Mortar or Hellcannon per 1,000 points"/>
+        <categoryLink name="0-1 Dreadquake Mortar or Hellcannon per 1,000 points" hidden="false" id="26f5-ba7b-79f2-b968" targetId="83da-bc6b-19d9-9065" primary="false"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="4ea5-35fe-da1c-14fe" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="fe8e-557e-a0e7-a3a4" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="dd8b-9e5d-848a-680b" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c18c-7d86-c71a-b54f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c7ad-3395-6c31-6842" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6630,7 +6654,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="c18c-7d86-c71a-b54f">
+        <modifier type="set" value="0" field="c7ad-3395-6c31-6842">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6640,7 +6664,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="c18c-7d86-c71a-b54f">
+        <modifier type="increment" value="1" field="c7ad-3395-6c31-6842">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6659,10 +6683,10 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="c18c-7d86-c71a-b54f">
+        <modifier type="increment" value="1" field="c7ad-3395-6c31-6842">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6681,7 +6705,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -7308,7 +7332,7 @@ When rolling To Wound, the target number is the same as the armour value of the
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="d07c-65bd-1fd6-a0a9" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="59cd-f991-9ba6-cce5" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="96b7-dc2f-6bb6-c008" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7370,7 +7394,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="59cd-f991-9ba6-cce5">
+        <modifier type="set" value="0" field="96b7-dc2f-6bb6-c008">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7380,7 +7404,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="59cd-f991-9ba6-cce5">
+        <modifier type="increment" value="1" field="96b7-dc2f-6bb6-c008">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7402,7 +7426,7 @@ When rolling To Wound, the target number is the same as the armour value of the
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="59cd-f991-9ba6-cce5">
+        <modifier type="increment" value="1" field="96b7-dc2f-6bb6-c008">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7873,12 +7897,6 @@ When rolling To Wound, the target number is the same as the armour value of the
         </modifier>
         <modifier type="floor" value="1" field="40a3-eaeb-ca53-726e">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="40a3-eaeb-ca53-726e">
-          <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="40a3-eaeb-ca53-726e">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -7948,9 +7966,6 @@ When rolling To Wound, the target number is the same as the armour value of the
         </modifier>
         <modifier type="floor" value="1" field="d148-5617-4f5f-fd7c">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="d148-5617-4f5f-fd7c">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -8001,9 +8016,6 @@ When rolling To Wound, the target number is the same as the armour value of the
         </modifier>
         <modifier type="floor" value="1" field="d442-403b-4b47-31d8">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="d442-403b-4b47-31d8">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -8046,9 +8058,6 @@ When rolling To Wound, the target number is the same as the armour value of the
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="e88a-9bb9-ee76-85d2">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="e88a-9bb9-ee76-85d2">
           <comment>Battle march</comment>
@@ -8097,9 +8106,6 @@ When rolling To Wound, the target number is the same as the armour value of the
         </modifier>
         <modifier type="floor" value="1" field="f940-fd62-6e3a-9676">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="f940-fd62-6e3a-9676">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -8142,9 +8148,6 @@ When rolling To Wound, the target number is the same as the armour value of the
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="ca93-2128-db64-7d04">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="ca93-2128-db64-7d04">
           <comment>Battle march</comment>
@@ -8193,9 +8196,6 @@ When rolling To Wound, the target number is the same as the armour value of the
         </modifier>
         <modifier type="floor" value="1" field="b772-c6a8-071b-cd8a">
           <comment>Battle march</comment>
-        </modifier>
-        <modifier type="floor" value="1" field="b772-c6a8-071b-cd8a">
-          <comment>Battle march</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
@@ -8238,9 +8238,6 @@ When rolling To Wound, the target number is the same as the armour value of the
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="floor" value="1" field="0e01-0516-e6ca-0bcb">
-          <comment>Battle march</comment>
         </modifier>
         <modifier type="floor" value="1" field="0e01-0516-e6ca-0bcb">
           <comment>Battle march</comment>

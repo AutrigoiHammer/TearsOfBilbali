@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8cb-e518-1881-292" name="Kingdom of Bretonnia" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="1" revision="158" authorUrl="www.newrecruit.eu" authorContact="newrecruit.eu@gmail.com" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8cb-e518-1881-292" name="Kingdom of Bretonnia" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="1" revision="162" authorUrl="www.newrecruit.eu" authorContact="newrecruit.eu@gmail.com" authorName="Flammy" battleScribeVersion="2.03" type="catalogue">
   <sharedProfiles>
     <profile typeId="b070-143a-73f-2772" id="cd5f-980c-2da9-31b" name="Grail Knight" hidden="false" publicationId="3a81ff07--pubd1e638" typeName="Model">
       <characteristics>
@@ -114,7 +114,7 @@ Note that a Field Trebuchet can still pivot freely at any time during its turn, 
     </profile>
     <profile name="Blessed Triptych" hidden="false" id="dff9-cd97-d1c-ab35" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" page="92" publicationId="8b8d-8fc4-559e-87b1">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">A unit that contains a model equipped with a Blessed Triptych gains the Stubborn special rule.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">A unit that contains a Blessed Triptych gains the Stubborn special rule.</characteristic>
       </characteristics>
     </profile>
     <profile name="Shield of the Lady" hidden="false" id="58ff-56d9-4cba-ccc" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" page="87" publicationId="8b8d-8fc4-559e-87b1">
@@ -153,10 +153,11 @@ The Grail Reliquae counts as both a standard bearer and a musician for its unit.
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Every model in a unit of Grail Knights can issue and accept challenges in the same manner as a character.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Dispersed Formation" hidden="false" id="2a78-f58a-ac7f-87ae" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" page="98" publicationId="8b8d-8fc4-559e-87b1">
+    <profile name="Dispersed Formation" hidden="false" id="2a78-f58a-ac7f-87ae" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" page="98" publicationId="8b8d-8fc4-559e-87b1" noindex="true">
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Whilst in Skirmish formation, every model in a unit of Pegasus Knights must be within 2&quot; of another model belonging to the same unit, rather than the usual 1&quot;.</characteristic>
       </characteristics>
+      <comment>DEPRECATED in FAQ 1.5.3</comment>
     </profile>
     <profile name="Duke" hidden="false" id="91bb-f98c-bfe-2295" typeId="b070-143a-73f-2772" typeName="Model">
       <characteristics>
@@ -605,7 +606,8 @@ However, should the benefits of the Blessing of the Lady special rule be lost du
     </profile>
     <profile name="Aura Of The Fay" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule" hidden="false" id="3922-1014-8e75-a126">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">The Green Knight is a supernatural being of great power. Should he be vanquished by a foe, he disappears into thin air, only to reappear once more and return to the fray. When the Green Knight loses his last Wound, he is removed from play as usual, but is not slain. His controlling player may attempt to awaken him again during any of their Start of Turn sub-phases in which he is not on the battlefield, using the Guardian of the Sacred Sites special rule (as described opposite). However, each time the Green Knight is slain, he is weakened, and suffers a -1 modifier to the dice roll when attempting to awaken him, and a -1 modifier to his Wounds characteristic (to a minimum of 1). Note that the enemy player can only win Victory Points for the Green Knight if he is not on the battlefield at the end of the game.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">The Green Knight is a supernatural being of great power. Should he be vanquished by a foe, he disappears into thin air, only to reappear once more and return to the fray. When the Green Knight loses his last Wound, he is removed from play as usual, but is not slain. His controlling player may attempt to awaken him again during any of their Start of Turn sub-phases in which he is not on the battlefield, using the Guardian of the Sacred Sites special rule (as described opposite). However, each time the Green Knight is slain, he is weakened, and suffers a -1 modifier to the dice roll when attempting to awaken him, and a -1 modifier to his Wounds characteristic (to a minimum of 1).
+*Note that the enemy player only wins Victory Points for destroying the Green Knight the first time he loses his last Wound and is removed from play.*</characteristic>
       </characteristics>
     </profile>
     <profile name="The Green Knight" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="bbda-65c4-a694-5a2c">
@@ -658,12 +660,9 @@ However, should the benefits of the Blessing of the Lady special rule be lost du
       <characteristics>
         <characteristic name="Description" typeId="9f84-4221-785a-db50">The Green Knight is not placed on the battlefield during deployment – he slumbers until he is awakened during the game. During any of your Start of Turn sub-phases in which the Green Knight is not on the battlefield (even if he was removed from play as a casualty during a previous turn), you may attempt to awaken him by rolling a D6. On a roll of 1-2, he continues to slumber until your next turn at least. On a roll of 3+, the Green Knight awakens. If the Green Knight has not yet been awakened by the start of round five, he awakens automatically.
 
-
-When the Green Knight awakens, he may be placed completely within any ‘natural’ terrain feature anywhere on the battlefield. For the purposes of this rule, a ‘natural’ terrain feature includes any woods, or any difficult or dangerous terrain. ‘It does not include magical vortexes, open ground or hills, or any constructions, such as walls or buildings. Before the game starts, the players should agree upon which terrain features are natural and which are not.
-
+During the Compulsory Moves sub-phase of the turn in which he was awakened, the Green Knight may be placed completely within any ‘natural’ terrain feature, anywhere on the battlefield. For the purposes of this rule, a ‘natural’ terrain feature includes any woods, or any difficult or dangerous terrain (as described on page 269 of the *Warhammer: the Old World rulebook*). It does not include magical vortexes, open ground or hills, or any constructions, such as walls or buildings. Before the game starts, the players should agree upon which terrain features are natural and which are not.
 
 In addition, rather than moving normally during the Remaining Moves sub-phase, if the Green Knight is completely within a natural terrain feature and is not engaged in combat, you may remove him from the battlefield and replace him so that he is completely within a different natural terrain feature anywhere on the battlefield. The Green Knight cannot move again during this Movement phase.
-
 
 Note that when the Green Knight appears within a natural terrain feature, he must abide by the 1&quot; rule. In other words, the Green Knight cannot be placed within 1&quot; of an enemy unit.</characteristic>
       </characteristics>
@@ -957,7 +956,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <cost typeId="points" name="pts" value="38"/>
           </costs>
           <constraints>
-            <constraint id="f8a4-8eb9-ab35-cc26" type="min" field="selections" scope="parent" value="3"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f8a4-8eb9-ab35-cc26"/>
           </constraints>
           <infoLinks>
             <infoLink name="Grail Knight" hidden="false" type="profile" id="d84a-8d19-f6e8-9612" targetId="cd5f-980c-2da9-31b"/>
@@ -1001,8 +1000,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1018,7 +1017,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="8195-7d10-f10f-58ff" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8195-7d10-f10f-58ff"/>
               </constraints>
               <comment>upgrades: f348-7c13-b712-a3e1</comment>
               <infoLinks>
@@ -1035,7 +1034,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="116f-322c-13e9-ae4b" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="116f-322c-13e9-ae4b"/>
               </constraints>
               <comment>upgrades: f348-7c13-b712-a3e1</comment>
               <infoLinks>
@@ -1244,6 +1243,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <modifier type="append" value="(10)" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Extra Note on Skirmisher but too lazy to make a rule for individual models billion dollar company" id="103c-6915-c3b0-36c4" hidden="false" type="profile" targetId="9be9-5b4c-8a52-83f0"/>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1466,8 +1466,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1738,8 +1738,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2021,8 +2021,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2158,8 +2158,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2296,8 +2296,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2430,8 +2430,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3286,7 +3286,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <cost name="pts" typeId="points" value="19"/>
           </costs>
           <constraints>
-            <constraint id="286d-68f7-67d5-78ae" type="min" field="selections" scope="parent" value="5"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="286d-68f7-67d5-78ae"/>
           </constraints>
           <infoLinks>
             <infoLink name="Knight Errant" hidden="false" type="profile" id="859f-9239-670-f379" targetId="533a-c6fe-ffd6-47a2"/>
@@ -3330,8 +3330,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3405,7 +3405,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <constraints>
-                <constraint id="a3d8-36d6-caca-7d70" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3d8-36d6-caca-7d70"/>
               </constraints>
               <comment>upgrades: 7dd9-2ca4-a616-29e4</comment>
               <infoLinks>
@@ -3422,7 +3422,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
               <constraints>
-                <constraint id="be00-df59-d6bd-798c" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be00-df59-d6bd-798c"/>
               </constraints>
               <comment>upgrades: 7dd9-2ca4-a616-29e4</comment>
               <infoLinks>
@@ -3472,7 +3472,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <profile name="Knights Errant" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="1078-390e-f009-bd2f">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy Cavalry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3522,7 +3522,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <cost name="pts" typeId="points" value="24"/>
           </costs>
           <constraints>
-            <constraint id="612b-4960-c175-6200" type="min" field="selections" scope="parent" value="5"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="612b-4960-c175-6200"/>
           </constraints>
           <infoLinks>
             <infoLink name="Mounted Knight of the Realm" hidden="false" type="profile" id="91d4-4ea6-8dca-da61" targetId="9271-5b36-a12e-5eaf"/>
@@ -3566,8 +3566,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3641,7 +3641,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="4c8e-4aad-7b81-397d" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c8e-4aad-7b81-397d"/>
               </constraints>
               <comment>upgrades: 54ce-96e7-b7e1-3b4b</comment>
               <infoLinks>
@@ -3658,7 +3658,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="f4a8-24ab-25fb-81b0" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4a8-24ab-25fb-81b0"/>
               </constraints>
               <comment>upgrades: 54ce-96e7-b7e1-3b4b</comment>
               <infoLinks>
@@ -3715,7 +3715,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <profile name="Mounted Knights of the Realm" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="68a6-b1f9-25dc-52ba">
           <characteristics>
             <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy Cavalry</characteristic>
-            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">5+</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3756,7 +3756,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <cost name="pts" typeId="points" value="26"/>
           </costs>
           <constraints>
-            <constraint id="a78f-b3f5-334d-8935" type="min" field="selections" scope="parent" value="3"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a78f-b3f5-334d-8935"/>
           </constraints>
           <infoLinks>
             <infoLink name="Questing Knight" hidden="false" type="profile" id="432b-5914-3a5c-80cd" targetId="c729-d2f5-ca30-731b"/>
@@ -3800,8 +3800,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3817,7 +3817,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="cb06-5e05-ff36-35fa" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb06-5e05-ff36-35fa"/>
               </constraints>
               <comment>upgrades: 8e6a-8024-7f80-4cdd</comment>
               <infoLinks>
@@ -3834,7 +3834,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="2635-29cb-e1eb-8d67" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2635-29cb-e1eb-8d67"/>
               </constraints>
               <comment>upgrades: 8e6a-8024-7f80-4cdd</comment>
               <infoLinks>
@@ -3929,7 +3929,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <cost name="pts" typeId="points" value="59"/>
           </costs>
           <constraints>
-            <constraint id="28d0-d893-bc87-4613" type="min" field="selections" scope="parent" value="3"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="28d0-d893-bc87-4613"/>
           </constraints>
           <infoLinks>
             <infoLink name="Pegasus Knight" hidden="false" type="profile" id="c49-e756-cb11-4e07" targetId="1190-71f1-ee6b-2f33"/>
@@ -3973,8 +3973,8 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" includeChildSelections="true" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" includeChildSelections="true" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="c96a-608-5de4-b943" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="mount" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4048,7 +4048,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="1480-eaaa-66e0-e60f" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1480-eaaa-66e0-e60f"/>
               </constraints>
               <comment>upgrades: f3ae-ef6d-bb9-6ac4</comment>
               <infoLinks>
@@ -4065,7 +4065,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="7"/>
               </costs>
               <constraints>
-                <constraint id="90b7-c9bf-91b2-94a4" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90b7-c9bf-91b2-94a4"/>
               </constraints>
               <comment>upgrades: f3ae-ef6d-bb9-6ac4</comment>
               <infoLinks>
@@ -4128,7 +4128,6 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <modifier type="append" value="(10)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Dispersed Formation" hidden="false" type="profile" id="e417-c72-fe22-1b39" targetId="2a78-f58a-ac7f-87ae"/>
             <infoLink name="First Charge" hidden="false" type="profile" id="ab51-3340-509e-96bb" targetId="785a-2886-af42-dce9"/>
             <infoLink name="Swiftstride" hidden="false" type="profile" id="4049-5573-e6af-d180" targetId="dc91-48b3-3696-217"/>
             <infoLink name="Skirmishers" hidden="false" type="profile" id="c185-bce5-95c2-e3c8" targetId="59a5-7eca-ee35-96ac"/>
@@ -4147,6 +4146,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 </modifier>
               </modifiers>
             </infoLink>
+            <infoLink name="Dispersed Formation" id="d80d-9367-3219-920c" hidden="false" type="profile" targetId="adc0-7a37-8c2c-c716"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -4164,7 +4164,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <cost name="pts" typeId="points" value="13"/>
           </costs>
           <constraints>
-            <constraint id="8c28-d8f9-19e4-6ea1" type="min" field="selections" scope="parent" value="5"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8c28-d8f9-19e4-6ea1"/>
           </constraints>
           <infoLinks>
             <infoLink name="Mounted Yeomen" hidden="false" type="profile" id="cae0-b669-fbe8-440a" targetId="b35b-5c81-31e-bcc"/>
@@ -4236,7 +4236,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
               <constraints>
-                <constraint id="e3f9-3fe6-f45-9a0a" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3f9-3fe6-f45-9a0a"/>
               </constraints>
               <comment>upgrades: 378f-29d-54c1-22fb</comment>
               <infoLinks>
@@ -4253,7 +4253,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
               <constraints>
-                <constraint id="8d93-e8d0-b4a6-6815" type="max" field="selections" scope="parent" value="1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d93-e8d0-b4a6-6815"/>
               </constraints>
               <comment>upgrades: 378f-29d-54c1-22fb</comment>
               <infoLinks>
@@ -4853,7 +4853,18 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="4c7b-b57-7cd9-393e"/>
                   </repeats>
                 </modifier>
+                <modifier type="floor" value="1" field="69a7-c023-6c3f-24f6">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="cb97-3250-9b16-ee58" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Skirmishers" hidden="false" id="129b-d681-175a-8e00" sortIndex="3">
               <infoLinks>
@@ -4869,7 +4880,18 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                     <repeat value="1000" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" id="9c3d-e941-dbe9-cedd"/>
                   </repeats>
                 </modifier>
+                <modifier type="floor" value="1" field="8661-4439-af35-957e">
+                  <comment>Battle march</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="ec39-656f-04a0-91c1" targetId="27c9-52f0-c942-681e" primary="false">
+                  <comment>Battle March Category</comment>
+                </categoryLink>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5524,7 +5546,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="19e2-e1de-4db4-158b" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="84bc-6404-8297-bd87" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6262-5e4c-d4af-05ea" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5631,7 +5653,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="84bc-6404-8297-bd87">
+        <modifier type="set" value="0" field="6262-5e4c-d4af-05ea">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5641,7 +5663,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="84bc-6404-8297-bd87">
+        <modifier type="increment" value="1" field="6262-5e4c-d4af-05ea">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5660,10 +5682,10 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="84bc-6404-8297-bd87">
+        <modifier type="increment" value="1" field="6262-5e4c-d4af-05ea">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5682,7 +5704,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -5693,7 +5715,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="60e5-b7ab-1171-763e" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f744-6d36-e7ca-ad7e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b932-5e04-6650-8bbc" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5758,7 +5780,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="f744-6d36-e7ca-ad7e">
+        <modifier type="set" value="0" field="b932-5e04-6650-8bbc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5768,7 +5790,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f744-6d36-e7ca-ad7e">
+        <modifier type="increment" value="1" field="b932-5e04-6650-8bbc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5790,7 +5812,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f744-6d36-e7ca-ad7e">
+        <modifier type="increment" value="1" field="b932-5e04-6650-8bbc">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5817,13 +5839,16 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
     <entryLink import="true" name="Baron" hidden="false" type="selectionEntry" id="585e-967f-e3b-32fc" targetId="6b9c-516e-c172-370e">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="7856-d661-d443-44a8" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="aecb-5ba3-6d5c-a928" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="7287-5fcc-f10c-3a27" includeChildSelections="true"/>
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0112-255d-1d9d-25bf" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3d74-ca9d-4ccf-799b" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0040-bc1c-bb8c-6638" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -5925,7 +5950,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="3d74-ca9d-4ccf-799b">
+        <modifier type="set" value="0" field="0040-bc1c-bb8c-6638">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5935,7 +5960,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3d74-ca9d-4ccf-799b">
+        <modifier type="increment" value="1" field="0040-bc1c-bb8c-6638">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5957,7 +5982,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3d74-ca9d-4ccf-799b">
+        <modifier type="increment" value="1" field="0040-bc1c-bb8c-6638">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -5998,7 +6023,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="500e-85ef-78f3-d3d1" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="253a-1071-f3d5-c998" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="fc1f-b57b-24f2-60e1" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6105,7 +6130,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="253a-1071-f3d5-c998">
+        <modifier type="set" value="0" field="fc1f-b57b-24f2-60e1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6115,7 +6140,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="253a-1071-f3d5-c998">
+        <modifier type="increment" value="1" field="fc1f-b57b-24f2-60e1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6137,7 +6162,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="253a-1071-f3d5-c998">
+        <modifier type="increment" value="1" field="fc1f-b57b-24f2-60e1">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6164,6 +6189,9 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
     <entryLink import="true" name="Prophetess" hidden="false" type="selectionEntry" id="bc3e-5a29-5e1b-323" targetId="4f9a-7d13-6a17-72dd">
       <categoryLinks>
         <categoryLink name="Characters" hidden="false" id="ee0-5d0b-970b-ba6d" targetId="a4cc-15c9-cfae-1b3b" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="fec4-1089-9d78-f28b" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="1ff9-3420-9c3a-91d2">
@@ -6263,7 +6291,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="f61b-b264-22ef-f430">
+        <modifier type="set" value="0" field="95c4-86b1-fa10-a36f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6273,7 +6301,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f61b-b264-22ef-f430">
+        <modifier type="increment" value="1" field="95c4-86b1-fa10-a36f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6295,7 +6323,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f61b-b264-22ef-f430">
+        <modifier type="increment" value="1" field="95c4-86b1-fa10-a36f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6329,7 +6357,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f593-3949-4b66-8415" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f61b-b264-22ef-f430" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="95c4-86b1-fa10-a36f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6345,7 +6373,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="ed12-4a65-d9fd-3dcd" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="e611-61af-f15b-69c4" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f80c-2fbb-7e2b-1ec8" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6452,7 +6480,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="e611-61af-f15b-69c4">
+        <modifier type="set" value="0" field="f80c-2fbb-7e2b-1ec8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6462,7 +6490,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="e611-61af-f15b-69c4">
+        <modifier type="increment" value="1" field="f80c-2fbb-7e2b-1ec8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6484,7 +6512,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="e611-61af-f15b-69c4">
+        <modifier type="increment" value="1" field="f80c-2fbb-7e2b-1ec8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6519,7 +6547,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="462d-9b78-46a5-b606" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="80c4-0f4d-2ed2-4a0f" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a2e7-4c10-8af0-bc4f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6626,7 +6654,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="80c4-0f4d-2ed2-4a0f">
+        <modifier type="set" value="0" field="a2e7-4c10-8af0-bc4f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6636,7 +6664,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="80c4-0f4d-2ed2-4a0f">
+        <modifier type="increment" value="1" field="a2e7-4c10-8af0-bc4f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6658,7 +6686,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="80c4-0f4d-2ed2-4a0f">
+        <modifier type="increment" value="1" field="a2e7-4c10-8af0-bc4f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6691,7 +6719,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d7e2-cf03-ec02-e6c6" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="43e7-7072-b3aa-3f8e" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="31e6-3ada-a150-8cfd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6803,7 +6831,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="43e7-7072-b3aa-3f8e">
+        <modifier type="set" value="0" field="31e6-3ada-a150-8cfd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6813,7 +6841,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="43e7-7072-b3aa-3f8e">
+        <modifier type="increment" value="1" field="31e6-3ada-a150-8cfd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6835,7 +6863,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="43e7-7072-b3aa-3f8e">
+        <modifier type="increment" value="1" field="31e6-3ada-a150-8cfd">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6876,7 +6904,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="b7b2-1e27-2a46-09c7" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="2ee3-d454-ec65-6ce5" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="233b-72c4-9ebc-7632" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -6988,7 +7016,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="2ee3-d454-ec65-6ce5">
+        <modifier type="set" value="0" field="233b-72c4-9ebc-7632">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -6998,7 +7026,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="2ee3-d454-ec65-6ce5">
+        <modifier type="increment" value="1" field="233b-72c4-9ebc-7632">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7020,7 +7048,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="2ee3-d454-ec65-6ce5">
+        <modifier type="increment" value="1" field="233b-72c4-9ebc-7632">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7057,7 +7085,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="f89d-ad94-0fab-aaa0" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="de53-70d9-df77-c0ab" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="7549-396c-e6a3-a411" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7169,7 +7197,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="de53-70d9-df77-c0ab">
+        <modifier type="set" value="0" field="7549-396c-e6a3-a411">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7179,7 +7207,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="de53-70d9-df77-c0ab">
+        <modifier type="increment" value="1" field="7549-396c-e6a3-a411">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7201,7 +7229,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="de53-70d9-df77-c0ab">
+        <modifier type="increment" value="1" field="7549-396c-e6a3-a411">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7235,7 +7263,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b0e1-9168-bd12-1d98" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b9aa-ef75-0eed-1c77" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="021d-8e2d-b5a8-8867" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7303,7 +7331,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="b9aa-ef75-0eed-1c77">
+        <modifier type="set" value="0" field="021d-8e2d-b5a8-8867">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7313,7 +7341,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="b9aa-ef75-0eed-1c77">
+        <modifier type="increment" value="1" field="021d-8e2d-b5a8-8867">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7335,7 +7363,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="b9aa-ef75-0eed-1c77">
+        <modifier type="increment" value="1" field="021d-8e2d-b5a8-8867">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7365,7 +7393,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0b5d-a9f8-637f-fdcd" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="ef22-80bd-9311-9f6c" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="1b6d-2de4-d67a-fdd8" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7459,7 +7487,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="ef22-80bd-9311-9f6c">
+        <modifier type="set" value="0" field="1b6d-2de4-d67a-fdd8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7469,7 +7497,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="ef22-80bd-9311-9f6c">
+        <modifier type="increment" value="1" field="1b6d-2de4-d67a-fdd8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7491,7 +7519,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="ef22-80bd-9311-9f6c">
+        <modifier type="increment" value="1" field="1b6d-2de4-d67a-fdd8">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7523,6 +7551,9 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
       <categoryLinks>
         <categoryLink name="Special" hidden="false" id="e748-1c59-5177-df6f" targetId="633f-f67a-1b6a-d203" primary="true"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" hidden="false" id="b5e2-d019-44f4-5d38" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="4433-6802-68c8-2633" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Mounted Knights of the Realm" hidden="false" type="selectionEntry" id="b596-a708-ebce-8bd2" targetId="7fe1-69ab-7c6b-20d0">
@@ -7534,7 +7565,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="9a95-8953-0ea5-bd66" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5371-6234-9b57-9b8d" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="b75b-c0a7-799b-1b9a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7646,7 +7677,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="5371-6234-9b57-9b8d">
+        <modifier type="set" value="0" field="b75b-c0a7-799b-1b9a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7656,7 +7687,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5371-6234-9b57-9b8d">
+        <modifier type="increment" value="1" field="b75b-c0a7-799b-1b9a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7678,7 +7709,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="2.857142857142857" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5371-6234-9b57-9b8d">
+        <modifier type="increment" value="1" field="b75b-c0a7-799b-1b9a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7718,7 +7749,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="7301-867c-9e18-36f3" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="0b27-d515-56bc-dd48" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="760e-8a70-31d4-1283" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -7825,7 +7856,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="0b27-d515-56bc-dd48">
+        <modifier type="set" value="0" field="760e-8a70-31d4-1283">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7835,7 +7866,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="0b27-d515-56bc-dd48">
+        <modifier type="increment" value="1" field="760e-8a70-31d4-1283">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7857,7 +7888,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="0b27-d515-56bc-dd48">
+        <modifier type="increment" value="1" field="760e-8a70-31d4-1283">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -7893,7 +7924,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="3dfd-ab6f-2cb0-0e86" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="5670-f4f9-28b3-e016" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="125a-fc16-d96b-017f" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8000,7 +8031,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="5670-f4f9-28b3-e016">
+        <modifier type="set" value="0" field="125a-fc16-d96b-017f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8010,7 +8041,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="5670-f4f9-28b3-e016">
+        <modifier type="increment" value="1" field="125a-fc16-d96b-017f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8032,7 +8063,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="5670-f4f9-28b3-e016">
+        <modifier type="increment" value="1" field="125a-fc16-d96b-017f">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8068,7 +8099,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="54c8-df03-2083-05f9" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="f6e6-16bb-7d29-0c61" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6a15-fb50-461f-83c6" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8175,7 +8206,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="f6e6-16bb-7d29-0c61">
+        <modifier type="set" value="0" field="6a15-fb50-461f-83c6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8185,7 +8216,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="f6e6-16bb-7d29-0c61">
+        <modifier type="increment" value="1" field="6a15-fb50-461f-83c6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8207,7 +8238,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="f6e6-16bb-7d29-0c61">
+        <modifier type="increment" value="1" field="6a15-fb50-461f-83c6">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8237,7 +8268,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c5f6-3aef-e00c-d599" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a96a-130f-798d-ebc1" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="039e-e8aa-16ce-4436" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8331,7 +8362,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="a96a-130f-798d-ebc1">
+        <modifier type="set" value="0" field="039e-e8aa-16ce-4436">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8341,7 +8372,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a96a-130f-798d-ebc1">
+        <modifier type="increment" value="1" field="039e-e8aa-16ce-4436">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8360,10 +8391,10 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a96a-130f-798d-ebc1">
+        <modifier type="increment" value="1" field="039e-e8aa-16ce-4436">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8382,7 +8413,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
           <repeats>
-            <repeat value="0.04" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="floor" value="1" field="7048-b3b6-e11f-2046">
@@ -8394,6 +8425,9 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
       </modifiers>
       <categoryLinks>
         <categoryLink name="Rare" hidden="false" id="7365-c2fe-7b29-b218" targetId="2bfe-5863-46fe-d284" primary="true"/>
+        <categoryLink name="1 single &apos;per 1000 points&apos; selection in Battle March" hidden="true" id="e70c-8e1d-011c-a5ea" targetId="27c9-52f0-c942-681e" primary="false">
+          <comment>Battle March Category</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Squires" hidden="false" id="a0eb-408c-6d0f-ab7f" type="selectionEntry" targetId="fe35-2f6a-54fe-68a0">
@@ -8408,7 +8442,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="961e-4364-88b9-4f60" includeChildSelections="true" includeChildForces="true">
           <comment>Combined arms</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="3f40-c6ba-3699-dc06" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="6412-2889-f51f-5c5a" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8515,7 +8549,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <condition type="lessThan" value="2000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="3f40-c6ba-3699-dc06">
+        <modifier type="set" value="0" field="6412-2889-f51f-5c5a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8525,7 +8559,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="3f40-c6ba-3699-dc06">
+        <modifier type="increment" value="1" field="6412-2889-f51f-5c5a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8547,7 +8581,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="3.3333333333333335" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="3f40-c6ba-3699-dc06">
+        <modifier type="increment" value="1" field="6412-2889-f51f-5c5a">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8581,7 +8615,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="dd1b-d34a-dbce-bc63" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="90bf-3549-2921-1366" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="c22f-ada5-eb7a-8e55" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8648,7 +8682,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="90bf-3549-2921-1366">
+        <modifier type="set" value="0" field="c22f-ada5-eb7a-8e55">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8658,7 +8692,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="90bf-3549-2921-1366">
+        <modifier type="increment" value="1" field="c22f-ada5-eb7a-8e55">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8680,7 +8714,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="90bf-3549-2921-1366">
+        <modifier type="increment" value="1" field="c22f-ada5-eb7a-8e55">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8714,7 +8748,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="290b-eff5-79b7-ff22" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="64c3-a594-c23e-b241" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4f0b-53ae-7ac4-7c93" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8781,7 +8815,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="64c3-a594-c23e-b241">
+        <modifier type="set" value="0" field="4f0b-53ae-7ac4-7c93">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8791,7 +8825,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="64c3-a594-c23e-b241">
+        <modifier type="increment" value="1" field="4f0b-53ae-7ac4-7c93">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8813,7 +8847,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="64c3-a594-c23e-b241">
+        <modifier type="increment" value="1" field="4f0b-53ae-7ac4-7c93">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8847,7 +8881,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <constraint type="max" value="-1" field="points" scope="self" shared="true" id="aa9b-442e-a75f-38bb" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Grand melee</comment>
         </constraint>
-        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="a9aa-35f9-25ce-2d93" includeChildSelections="true" includeChildForces="true" percentValue="false">
+        <constraint type="max" value="-1" field="points" scope="self" shared="true" id="4326-9860-eaf1-5117" includeChildSelections="true" includeChildForces="true" percentValue="false">
           <comment>Battle March points</comment>
         </constraint>
       </constraints>
@@ -8909,7 +8943,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="points" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="set" value="0" field="a9aa-35f9-25ce-2d93">
+        <modifier type="set" value="0" field="4326-9860-eaf1-5117">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8919,7 +8953,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="1" field="a9aa-35f9-25ce-2d93">
+        <modifier type="increment" value="1" field="4326-9860-eaf1-5117">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
@@ -8941,7 +8975,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
             <repeat value="4" repeats="1" field="limit::points" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="a9aa-35f9-25ce-2d93">
+        <modifier type="increment" value="1" field="4326-9860-eaf1-5117">
           <comment>Battle March points</comment>
           <conditionGroups>
             <conditionGroup type="and">
