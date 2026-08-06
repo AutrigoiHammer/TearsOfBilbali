@@ -1,6 +1,6 @@
 Hi there you massive general,
 
-Welcome to this project, called Tears of Bilbali (based in Bilbao xD), a fanmade, unofficial league working as an expansion and union project for Warhammer Fantasy Battles.
+Welcome to this project, called Tears of Bilbali (based in Bilbao xD), a fanmade, unofficial league for Warhammer: The Old World, mainly played in Bilbohammer Club (but also in association with other clubs in Bilba), which works as an expansion and union project for Warhammer Fantasy Battles.
 
 The idea is to integrate prior armies and units inside Warhammer: The Old World platform
 
