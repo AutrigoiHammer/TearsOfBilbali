@@ -3,6 +3,7 @@
   <catalogueLinks>
     <catalogueLink type="catalogue" name="MERCENARIES - TEARS OF BILBALI EDITION" id="6c55-2d99-275c-f131" targetId="12a0-32cd-11d6-fToB"/>
     <catalogueLink type="catalogue" name="Mercenaries" id="0c47-7dbb-b26c-cfac" targetId="12a0-32cd-11d6-f952"/>
+    <catalogueLink type="catalogue" name="Magic Items" id="b5c6-d64b-9556-ee04" targetId="6c22-b0e4-7c83-f9ce"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="f3e2-70d5-a247-cdf7" type="selectionEntry" targetId="bb37-df3a-2ca1-6d19">
