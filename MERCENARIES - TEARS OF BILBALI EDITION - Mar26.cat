@@ -4240,7 +4240,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddd1-7f28-c64c-802e"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Knights of Origo" hidden="false" id="fc97-a358-7684-a533" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998">
+    <selectionEntry type="unit" import="true" name="Knights of Origo" hidden="false" id="fc97-a358-7684-a533" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" sortIndex="">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Sir John  Tyreweld" hidden="false" id="4c8e-a84a-34c3-fe32" sortIndex="1">
           <entryLinks>
@@ -4331,51 +4331,6 @@
           <costs>
             <cost name="pts" typeId="points" value="9"/>
           </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Command" id="2d14-c1cc-b83e-2350" hidden="false" sortIndex="1" collective="true">
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="63d8-d04b-3fb1-32d1" subType="crew" flatten="true" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15a9-033e-70a4-a0c6"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
-                  <comment>upgrades: 3e11-1ae1-1c1a-6094</comment>
-                  <infoLinks>
-                    <infoLink name="Standard Bearer" id="9d1f-199c-93cf-e990" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Magic Standards" hidden="true" id="bd34-e3a2-8979-9c3a" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
-                      <constraints>
-                        <constraint type="max" value="50" field="points" scope="parent" shared="true" id="f65b-34ec-e38a-a6f7"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <categoryLinks>
-                    <categoryLink name="Regular Infantry" hidden="false" id="8f2c-686e-8de1-75d4" targetId="f3f7-ca43-674e-115f" primary="false"/>
-                    <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="52b0-fb93-ae55-5c18" targetId="may-have-armour"/>
-                  </categoryLinks>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Musician" hidden="false" id="a980-b597-489e-0680" subType="crew" sortIndex="3">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb18-0104-c859-fd2d"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5"/>
-                  </costs>
-                  <comment>upgrades: 3e11-1ae1-1c1a-6094</comment>
-                  <infoLinks>
-                    <infoLink name="Musician" id="4762-68bd-d6ec-29dd" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink name="Regular Infantry" hidden="false" id="4d17-8225-f1f5-0d29" targetId="f3f7-ca43-674e-115f" primary="false"/>
-                    <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="5d80-6d10-3b7e-8f27" targetId="may-have-armour"/>
-                  </categoryLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -4410,6 +4365,51 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f2d2-1300-9f26-c8d7" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Command" id="2d14-c1cc-b83e-2350" hidden="false" collective="true" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="63d8-d04b-3fb1-32d1" subType="crew" flatten="true" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15a9-033e-70a4-a0c6"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <comment>upgrades: 3e11-1ae1-1c1a-6094</comment>
+              <infoLinks>
+                <infoLink name="Standard Bearer" id="9d1f-199c-93cf-e990" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Magic Standards" hidden="true" id="bd34-e3a2-8979-9c3a" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+                  <constraints>
+                    <constraint type="max" value="50" field="points" scope="parent" shared="true" id="f65b-34ec-e38a-a6f7"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Regular Infantry" hidden="false" id="8f2c-686e-8de1-75d4" targetId="f3f7-ca43-674e-115f" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="52b0-fb93-ae55-5c18" targetId="may-have-armour"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Musician" hidden="false" id="a980-b597-489e-0680" subType="crew" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb18-0104-c859-fd2d"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <comment>upgrades: 3e11-1ae1-1c1a-6094</comment>
+              <infoLinks>
+                <infoLink name="Musician" id="4762-68bd-d6ec-29dd" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Regular Infantry" hidden="false" id="4d17-8225-f1f5-0d29" targetId="f3f7-ca43-674e-115f" primary="false"/>
+                <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="5d80-6d10-3b7e-8f27" targetId="may-have-armour"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
