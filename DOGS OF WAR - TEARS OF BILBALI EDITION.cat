@@ -182,5 +182,11 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Knights of Origo" hidden="false" id="1bd7-00bd-a94b-3ee3" type="selectionEntry" targetId="fc97-a358-7684-a533"/>
+    <entryLink import="true" name="Karnac&apos;s Lizardmen Raiders" hidden="false" id="e2a3-b509-84de-14b4" type="selectionEntry" targetId="3c25-4ce0-192c-3ec5">
+      <categoryLinks>
+        <categoryLink targetId="5b84-2c3c-869d-3522" id="b2c0-5257-04b1-60d4" primary="true" name="Mercenaries"/>
+        <categoryLink targetId="ca7e-d004-ccde-caf3" id="b698-fae0-0d7e-b1bc" primary="false" name="Heavy Infantry"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>

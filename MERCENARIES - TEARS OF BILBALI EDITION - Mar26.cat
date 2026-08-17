@@ -4058,7 +4058,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6791-c37b-6d57-c65f" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Karnac&apos;s Lizardmen Raiders" hidden="false" id="3c25-4ce0-192c-3ec5">
+    <selectionEntry type="unit" import="true" name="Karnac&apos;s Lizardmen Raiders" hidden="false" id="3c25-4ce0-192c-3ec5">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Karnac" hidden="false" id="8871-e0af-7bf1-047a" sortIndex="1">
           <entryLinks>
