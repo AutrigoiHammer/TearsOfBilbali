@@ -2,6 +2,7 @@
 <catalogue library="false" id="1790-1120-a06b-0f8f" name="DOGS OF WAR - TEARS OF BILBALI EDITION" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="161" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="MERCENARIES - TEARS OF BILBALI EDITION" id="6c55-2d99-275c-f131" targetId="12a0-32cd-11d6-fToB"/>
+    <catalogueLink type="catalogue" name="Mercenaries" id="0c47-7dbb-b26c-cfac" targetId="12a0-32cd-11d6-f952"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Al Muktar&apos;s Desert Dogs" hidden="false" id="f3e2-70d5-a247-cdf7" type="selectionEntry" targetId="bb37-df3a-2ca1-6d19">
@@ -179,5 +180,6 @@
         <categoryLink targetId="2bfe-5863-46fe-d284" id="515f-e179-209a-30f7" primary="true" name="Rare"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Knights of Origo" hidden="false" id="1bd7-00bd-a94b-3ee3" type="selectionEntry" targetId="fc97-a358-7684-a533"/>
   </entryLinks>
 </catalogue>

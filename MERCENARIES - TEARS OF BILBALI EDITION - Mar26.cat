@@ -4304,17 +4304,17 @@
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Brother Knight of Origo" hidden="false" id="cbaf-75c7-1604-feeb" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="f662-6230-4057-47ed" type="selectionEntry" targetId="62fb-f89d-afc-1cf1" sortIndex="2">
+            <entryLink import="true" name="Full Plate Armour" hidden="false" id="f662-6230-4057-47ed" type="selectionEntry" targetId="2505-873d-1655-3b0b" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e424-0035-5464-1b42"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Hand Weapon" hidden="false" id="b374-5beb-e7af-5120" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="b374-5beb-e7af-5120" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67d9-f6ad-f752-ae89"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="09eb-e0da-952b-80bd" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="3">
+            <entryLink import="true" name="Shield" hidden="false" id="09eb-e0da-952b-80bd" type="selectionEntry" targetId="6192-f9f1-5d53-2042" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff0b-2369-307f-df2c"/>
               </constraints>
@@ -4331,6 +4331,51 @@
           <costs>
             <cost name="pts" typeId="points" value="9"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Command" id="2d14-c1cc-b83e-2350" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="63d8-d04b-3fb1-32d1" subType="crew" flatten="true" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15a9-033e-70a4-a0c6"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                  <comment>upgrades: 3e11-1ae1-1c1a-6094</comment>
+                  <infoLinks>
+                    <infoLink name="Standard Bearer" id="9d1f-199c-93cf-e990" hidden="false" type="profile" targetId="bcf8-d942-102e-b155"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Magic Standards" hidden="true" id="bd34-e3a2-8979-9c3a" type="selectionEntryGroup" targetId="6bbe-8054-19b7-e5d6">
+                      <constraints>
+                        <constraint type="max" value="50" field="points" scope="parent" shared="true" id="f65b-34ec-e38a-a6f7"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Regular Infantry" hidden="false" id="8f2c-686e-8de1-75d4" targetId="f3f7-ca43-674e-115f" primary="false"/>
+                    <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="52b0-fb93-ae55-5c18" targetId="may-have-armour"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Musician" hidden="false" id="a980-b597-489e-0680" subType="crew" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb18-0104-c859-fd2d"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                  <comment>upgrades: 3e11-1ae1-1c1a-6094</comment>
+                  <infoLinks>
+                    <infoLink name="Musician" id="4762-68bd-d6ec-29dd" hidden="false" type="profile" targetId="40f2-dd77-f0ca-3663"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Regular Infantry" hidden="false" id="4d17-8225-f1f5-0d29" targetId="f3f7-ca43-674e-115f" primary="false"/>
+                    <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="5d80-6d10-3b7e-8f27" targetId="may-have-armour"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -4352,7 +4397,7 @@
             <infoLink name="Frenzy" id="9890-65c8-f76f-19c9" hidden="false" type="profile" targetId="3b0c-a477-8823-3a25"/>
             <infoLink name="Hatred" id="589d-f330-4243-732f" hidden="false" type="profile" targetId="f4b3-18af-16bf-78dd">
               <modifiers>
-                <modifier type="append" value="(Araby)" field="name"/>
+                <modifier type="append" value="(All non-humans, except Empire, Bretonnia and Mercenaries)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
