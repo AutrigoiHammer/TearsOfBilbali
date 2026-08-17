@@ -4332,7 +4332,7 @@
             <cost name="pts" typeId="points" value="9"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Command" id="2d14-c1cc-b83e-2350" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Command" id="2d14-c1cc-b83e-2350" hidden="false" sortIndex="1" collective="true">
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="63d8-d04b-3fb1-32d1" subType="crew" flatten="true" sortIndex="2">
                   <constraints>
