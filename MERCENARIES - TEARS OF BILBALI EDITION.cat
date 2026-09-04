@@ -6574,6 +6574,11 @@ Note that this special rule only applies to a single, non-magical hand weapon an
             <infoLink name="Gromril Armour" id="d777-9ba8-3c50-3744" hidden="false" targetId="241f-51fc-3735-4add" type="profile"/>
             <infoLink name="Gromril Weapons" id="5623-7c11-f01f-7ec7" hidden="false" targetId="2e16-e293-353e-6881" type="profile"/>
             <infoLink name="Merchant&apos;s Fate" id="b406-3338-b356-e59e" hidden="false" targetId="6a9b-c9db-a743-7b84" type="profile"/>
+            <infoLink name="Magic Resistance" id="22a9-1526-d87a-c2b2" hidden="false" targetId="90ed-c9be-a611-79cc" type="profile">
+              <modifiers>
+                <modifier field="name" type="append" value="(-1)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -6596,7 +6601,7 @@ Note that this special rule only applies to a single, non-magical hand weapon an
             <constraint id="f7ce-6665-0cee-662c" field="selections" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="50"/>
+            <cost name="pts" typeId="points" value="60"/>
           </costs>
           <entryLinks>
             <entryLink name="Light Armour" id="1552-4bbe-e99f-af51" hidden="false" import="true" sortIndex="2" targetId="7cab-40e6-f134-de78" type="selectionEntry">
@@ -6609,30 +6614,16 @@ Note that this special rule only applies to a single, non-magical hand weapon an
                 <constraint id="26f4-ea86-ec95-c6b3" field="selections" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
             </entryLink>
+            <entryLink name="Pistol" id="8504-952c-f3a6-bef6" hidden="false" import="true" sortIndex="3" targetId="d3c7-5222-61e8-9920" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Gorim Baldor" id="5660-b29e-8f28-cb96" hidden="false" targetId="b5e7-7cc1-b3ec-5bf1" type="profile"/>
             <infoLink name="Base (25x25)" id="d294-b88b-53cf-c4c3" hidden="false" targetId="193c-4d0d-de6b-bbb1" type="profile"/>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Pistol" id="8b53-3366-b688-23af" hidden="false" sortIndex="3">
-              <constraints>
-                <constraint id="89e4-b5dd-96f1-0a93" field="selections" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Pistol" id="8504-952c-f3a6-bef6" hidden="false" import="true" sortIndex="1" targetId="d3c7-5222-61e8-9920" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="6"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Brace of Pistols" id="d485-c902-d173-db3a" hidden="false" import="true" sortIndex="2" targetId="d8bb-85b0-3575-6029" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -6646,7 +6637,6 @@ Note that this special rule only applies to a single, non-magical hand weapon an
             <infoLink name="Dwarf Crafted" id="ab05-24e7-7b7c-c74e" hidden="false" targetId="3768-e231-572b-f96f" type="profile"/>
             <infoLink name="Gromril Armour" id="7a6e-16fd-fca1-a86e" hidden="false" targetId="241f-51fc-3735-4add" type="profile"/>
             <infoLink name="Gromril Weapons" id="e669-0def-e2a5-cc10" hidden="false" targetId="2e16-e293-353e-6881" type="profile"/>
-            <infoLink name="Merchant&apos;s Fate" id="2f6b-6133-5ddc-1bc9" hidden="false" targetId="6a9b-c9db-a743-7b84" type="profile"/>
             <infoLink name="The One and Only" id="5f36-fb31-36a9-ab17" hidden="false" targetId="7fc4-3fc1-d064-c053" type="profile"/>
             <infoLink name="Magic Resistance" id="3eae-faae-473d-64b7" hidden="false" targetId="90ed-c9be-a611-79cc" type="profile">
               <modifiers>
@@ -6695,23 +6685,6 @@ Note that this special rule only applies to a single, non-magical hand weapon an
             <infoLink name="Base (25x25)" id="06fe-b538-6b4c-aadb" hidden="false" targetId="193c-4d0d-de6b-bbb1" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pistol" id="8267-f6a6-bc79-83fa" hidden="false" sortIndex="3">
-              <constraints>
-                <constraint id="17be-05ca-b698-fc62" field="selections" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Pistol" id="d4fd-c6d7-8400-3603" hidden="false" import="true" sortIndex="1" targetId="d3c7-5222-61e8-9920" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="6"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Brace of Pistols" id="a879-9742-145c-5674" hidden="false" import="true" sortIndex="2" targetId="d8bb-85b0-3575-6029" type="selectionEntry">
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup name="Lores of Magic" id="be45-1e9b-5ce9-0d73" hidden="false">
               <constraints>
                 <constraint id="1259-59df-6c18-0879" field="selections" scope="parent" shared="true" type="min" value="1"/>
