@@ -193,5 +193,10 @@
         <categoryLink name="Mercenaries" id="f3d2-0157-da63-9335" hidden="false" primary="true" targetId="5b84-2c3c-869d-3522"/>
       </categoryLinks>
     </entryLink>
+    <entryLink name="Harrig, the Dwarf Wizard" id="ee2b-55d8-ac9f-1e47" hidden="false" import="true" targetId="d47a-7028-85f3-4c2e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Mercenaries" id="f701-f201-94e6-d7c9" hidden="false" primary="true" targetId="5b84-2c3c-869d-3522"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
