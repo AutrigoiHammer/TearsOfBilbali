@@ -6678,7 +6678,11 @@ Note that this special rule only applies to a single, non-magical hand weapon an
                 <constraint id="c691-748b-8513-b97f" field="selections" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Wizard Level 2" id="38d3-7bb5-b82b-57c9" collective="true" hidden="false" import="true" sortIndex="3" targetId="8e47-73e8-f7f9-808" type="selectionEntry"/>
+            <entryLink name="Wizard Level 2" id="38d3-7bb5-b82b-57c9" collective="true" hidden="false" import="true" sortIndex="3" targetId="8e47-73e8-f7f9-808" type="selectionEntry">
+              <constraints>
+                <constraint id="c420-3999-9cae-2bc5" field="selections" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Harrig, the Dwarf Wizard" id="82c0-bf71-3fd8-3b7f" hidden="false" targetId="7457-f465-71d1-7e64" type="profile"/>
@@ -6691,7 +6695,11 @@ Note that this special rule only applies to a single, non-magical hand weapon an
                 <constraint id="bce1-5448-5821-e851" field="selections" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Battle Magic" id="766e-e303-8be5-9d89" hidden="false" import="true" sortIndex="1" targetId="5b2e-35c6-f987-741e" type="selectionEntry"/>
+                <entryLink name="Battle Magic" id="766e-e303-8be5-9d89" hidden="false" import="true" sortIndex="1" targetId="5b2e-35c6-f987-741e" type="selectionEntry">
+                  <constraints>
+                    <constraint id="0574-fb39-3cab-4324" field="selections" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
