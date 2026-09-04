@@ -2148,7 +2148,7 @@ Note that this special rule only applies to a single, non-magical hand weapon an
     </profile>
     <profile name="The One and Only" id="7fc4-3fc1-d064-c053" hidden="false" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">Harrig is the only dwarf that can act as a true wizard. Consider Harrig a Level 2 Wizard that has access to Battle Magic, High Magic, Elementalism or Illusion Lores of Magic.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Harrig is the only dwarf that can act as a true wizard. Consider Harrig a Level 2 Wizard that has access to Battle Magic.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -6678,23 +6678,20 @@ Note that this special rule only applies to a single, non-magical hand weapon an
                 <constraint id="c691-748b-8513-b97f" field="selections" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Wizard Level 2" id="38d3-7bb5-b82b-57c9" hidden="false" import="true" sortIndex="4" targetId="8e47-73e8-f7f9-808" type="selectionEntry"/>
+            <entryLink name="Wizard Level 2" id="38d3-7bb5-b82b-57c9" collective="true" hidden="false" import="true" sortIndex="3" targetId="8e47-73e8-f7f9-808" type="selectionEntry"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Harrig, the Dwarf Wizard" id="82c0-bf71-3fd8-3b7f" hidden="false" targetId="7457-f465-71d1-7e64" type="profile"/>
             <infoLink name="Base (25x25)" id="06fe-b538-6b4c-aadb" hidden="false" targetId="193c-4d0d-de6b-bbb1" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Lores of Magic" id="be45-1e9b-5ce9-0d73" hidden="false">
+            <selectionEntryGroup name="Lores of Magic" id="be45-1e9b-5ce9-0d73" hidden="false" sortIndex="4">
               <constraints>
                 <constraint id="1259-59df-6c18-0879" field="selections" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="bce1-5448-5821-e851" field="selections" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
                 <entryLink name="Battle Magic" id="766e-e303-8be5-9d89" hidden="false" import="true" sortIndex="1" targetId="5b2e-35c6-f987-741e" type="selectionEntry"/>
-                <entryLink name="Elementalism" id="02f7-d901-94cc-15bd" hidden="false" import="true" sortIndex="3" targetId="2b23-3ae1-f5ad-8e7a" type="selectionEntry"/>
-                <entryLink name="Illusion" id="60eb-3818-94ce-0394" hidden="false" import="true" sortIndex="4" targetId="af66-671f-5a42-a118" type="selectionEntry"/>
-                <entryLink name="High Magic" id="5e11-bcaa-3097-036f" hidden="false" import="true" sortIndex="2" targetId="4cfb-44af-33d9-1b41" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
