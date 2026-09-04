@@ -6615,6 +6615,9 @@ Note that this special rule only applies to a single, non-magical hand weapon an
               </constraints>
             </entryLink>
             <entryLink name="Pistol" id="8504-952c-f3a6-bef6" hidden="false" import="true" sortIndex="3" targetId="d3c7-5222-61e8-9920" type="selectionEntry">
+              <constraints>
+                <constraint id="7023-9de4-a705-1c9d" field="selections" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
