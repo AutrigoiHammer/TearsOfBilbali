@@ -233,6 +233,7 @@
         <characteristic name="W" typeId="83ed-7b82-bf1f-e558">1</characteristic>
         <characteristic name="I" typeId="73b1-abe5-72f8-41e2">6</characteristic>
         <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">2</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72"/>
       </characteristics>
     </profile>
     <profile name="Hag" typeId="b070-143a-73f-2772" typeName="Model" hidden="false" id="bb16-5700-8966-e233">
@@ -5144,7 +5145,7 @@ Each time it is used, roll a dice: on 1 its power is exhausted, and it cannot be
     <catalogueLink type="catalogue" name="Magic Items" id="a8-15c2-bd3d-e97f" targetId="6c22-b0e4-7c83-f9ce"/>
     <catalogueLink type="catalogue" name="The Lores of Magic" id="ddbe-7c18-67db-c603" targetId="f3c5-af11-649d-5dbb"/>
     <catalogueLink type="catalogue" name="Mercenaries" id="e3bb-4207-7429-badb" targetId="12a0-32cd-11d6-f952" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="New Catalogue (link)" id="444c-b200-331b-5d6b" targetId="ec01-a361-b3bf-78ac"/>
+    <catalogueLink type="catalogue" name="Daemons of Chaos" id="444c-b200-331b-5d6b" targetId="ec01-a361-b3bf-78ac"/>
     <catalogueLink type="catalogue" name="Warriors of Chaos" id="d9f9-5a9d-fec3-214c" targetId="c908-5f26-5bdf-2a48"/>
     <catalogueLink type="catalogue" name="Chaos Library" id="74ff-0fb1-93fd-7c8f" targetId="a4ff-b11e-14a0-4bcf"/>
   </catalogueLinks>
