@@ -14,7 +14,8 @@
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
       {"name": "Magic Items", "id": "d5a5-f7ae-f835-f1c5", "targetId": "6c22-b0e4-7c83-f9ce", "type": "catalogue"},
-      {"name": "Runic Items", "id": "04d3-592b-d051-4995", "targetId": "7aa2-db17-4956-5c36", "type": "catalogue"}
+      {"name": "Runic Items", "id": "04d3-592b-d051-4995", "targetId": "7aa2-db17-4956-5c36", "type": "catalogue"},
+      {"name": "MERCENARIES - TEARS OF BILBALI EDITION", "id": "e447-2492-0e77-1adf", "targetId": "12a0-32cd-11d6-fToB", "type": "catalogue"}
     ],
     "entryLinks": [
       {
@@ -1896,6 +1897,145 @@
             ]
           }
         ]
+      },
+      {"name": "Al Muktar's Desert Dogs", "id": "84a6-2d3c-f652-e8c1", "hidden": false, "import": true, "targetId": "bb37-df3a-2ca1-6d19", "type": "selectionEntry"},
+      {"name": "Asarnil, The Dragonlord", "id": "8598-6661-f93f-9915", "hidden": false, "import": true, "targetId": "8c4a-26d2-6368-f867", "type": "selectionEntry"},
+      {
+        "name": "Beorg Bearstruck and Bearmen of Urslo",
+        "id": "cda4-fbca-54ce-9de8",
+        "hidden": false,
+        "import": true,
+        "targetId": "8d29-bc5d-6ab3-5a8c",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Borgio the Besieger, The Beloved General",
+        "id": "3033-6bc1-c1ba-b44f",
+        "hidden": false,
+        "import": true,
+        "targetId": "5b0c-3da2-c226-bb34",
+        "type": "selectionEntry"
+      },
+      {"name": "Braganza's Besiegers", "id": "7623-00dc-e6ff-3c06", "hidden": false, "import": true, "targetId": "d529-2376-1520-33a5", "type": "selectionEntry"},
+      {"name": "Bronzino's Galloper Guns", "id": "6193-7f34-1470-eedd", "hidden": false, "import": true, "targetId": "609a-37ee-9489-e6ec", "type": "selectionEntry"},
+      {
+        "name": "Daddallo and The Birdmen of Catrazza",
+        "id": "46a7-45e5-925d-08c1",
+        "hidden": false,
+        "import": true,
+        "targetId": "37e4-bdf9-9ddd-38f3",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Ghazak Khan, The Terror of the East",
+        "id": "96f2-f738-0bdf-ed7c",
+        "hidden": false,
+        "import": true,
+        "targetId": "5d23-a058-965c-22dc",
+        "type": "selectionEntry"
+      },
+      {"name": "Golgfag's Mercenary Ogres", "id": "37a6-37b3-4b86-5a74", "hidden": false, "import": true, "targetId": "857e-a885-39c5-de87", "type": "selectionEntry"},
+      {
+        "name": "Gorim Baldor",
+        "id": "5519-e26a-5e40-f571",
+        "hidden": false,
+        "import": true,
+        "targetId": "2da8-26c7-38d4-55fa",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Mercenaries", "id": "c752-b12e-2fdd-2393", "hidden": false, "primary": true, "targetId": "5b84-2c3c-869d-3522"}]
+      },
+      {
+        "name": "Harrig, the Dwarf Wizard",
+        "id": "e513-df05-ea06-6902",
+        "hidden": false,
+        "import": true,
+        "targetId": "d47a-7028-85f3-4c2e",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Mercenaries", "id": "740e-70b2-469a-36b9", "hidden": false, "primary": true, "targetId": "5b84-2c3c-869d-3522"}]
+      },
+      {
+        "name": "Hengus the Druid and Giants of Albion",
+        "id": "7376-1e3f-6962-2ce8",
+        "hidden": false,
+        "import": true,
+        "targetId": "1884-d731-8a46-2375",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Mercenaries", "id": "0857-0180-ac1e-b2ba", "hidden": false, "primary": true, "targetId": "5b84-2c3c-869d-3522"}]
+      },
+      {
+        "name": "Karnac's Lizardmen Raiders",
+        "id": "a166-321e-05d0-c239",
+        "hidden": false,
+        "import": true,
+        "targetId": "3c25-4ce0-192c-3ec5",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Mercenaries", "id": "f893-51d5-9231-bc1a", "hidden": false, "primary": true, "targetId": "5b84-2c3c-869d-3522"}]
+      },
+      {"name": "Knights of Origo", "id": "b6c3-5830-35ed-d7db", "hidden": false, "import": true, "targetId": "fc97-a358-7684-a533", "type": "selectionEntry"},
+      {"name": "Leonardo da Miragliano", "id": "7747-13a1-5937-8667", "hidden": false, "import": true, "targetId": "cbf5-ed78-8b78-d3c2", "type": "selectionEntry"},
+      {"name": "Leopold's Leopard Company", "id": "f16e-339b-4d23-64fe", "hidden": false, "import": true, "targetId": "5ed2-be5b-d6a8-a9ae", "type": "selectionEntry"},
+      {
+        "name": "Long Drong's Slayer Pirates",
+        "id": "dee3-e5cb-afd6-c279",
+        "hidden": false,
+        "import": true,
+        "targetId": "e9c6-8a9f-8f08-b36a",
+        "type": "selectionEntry"
+      },
+      {"name": "Lorenzo Lupo", "id": "5821-0304-67e1-5e23", "hidden": false, "import": true, "targetId": "c1e2-e68e-0339-48c4", "type": "selectionEntry"},
+      {"name": "Lucrezzia Belladona", "id": "34b5-6b67-5d60-eb1b", "hidden": false, "import": true, "targetId": "4127-0e37-21a9-4569", "type": "selectionEntry"},
+      {
+        "name": "Lumpin Croop's Fighting Cocks",
+        "id": "2668-194d-12c9-37e4",
+        "hidden": false,
+        "import": true,
+        "targetId": "d8c6-2cb7-6ada-462c",
+        "type": "selectionEntry"
+      },
+      {"name": "Marksmen of Miragliano", "id": "c559-e74f-4a17-b15d", "hidden": false, "import": true, "targetId": "4f1d-ce45-ac12-a82c", "type": "selectionEntry"},
+      {"name": "Mydas The Mean", "id": "f509-3b6c-fe8b-af57", "hidden": false, "import": true, "targetId": "28d4-1bdb-c4b2-44ee", "type": "selectionEntry"},
+      {"name": "Oglah Khan's Wolfboyz", "id": "04a6-c6ae-d745-f0c5", "hidden": false, "import": true, "targetId": "1f8f-5164-29dc-f28d", "type": "selectionEntry"},
+      {
+        "name": "Pirazzo's Lost Legion",
+        "id": "6ce4-159d-7aa5-21f7",
+        "hidden": false,
+        "import": true,
+        "targetId": "125d-3e0e-ef82-6a82",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Mercenaries", "id": "73f0-47a9-cb26-ca39", "hidden": false, "primary": true, "targetId": "5b84-2c3c-869d-3522"}]
+      },
+      {
+        "name": "Rakarth, The Beastlord",
+        "id": "8ba2-37c0-9f08-f41b",
+        "hidden": false,
+        "import": true,
+        "targetId": "9c28-85eb-3544-b0a4",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Mercenaries", "id": "7bff-ab90-2d92-ed53", "hidden": false, "primary": true, "targetId": "5b84-2c3c-869d-3522"}]
+      },
+      {"name": "Ricco's Republican Guard", "id": "0bc3-a1e8-e746-e262", "hidden": false, "import": true, "targetId": "2848-8023-99aa-5222", "type": "selectionEntry"},
+      {"name": "The Alcatani Fellowship", "id": "1299-8896-d695-7dfc", "hidden": false, "import": true, "targetId": "c1b4-9924-9d11-d847", "type": "selectionEntry"},
+      {
+        "name": "The Cursed Company",
+        "id": "d971-6eef-bb11-9a5d",
+        "hidden": false,
+        "import": true,
+        "targetId": "22dc-5cbb-1a2c-3cab",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Mercenaries", "id": "0c2e-6299-2d3d-80b1", "hidden": false, "primary": true, "targetId": "5b84-2c3c-869d-3522"}]
+      },
+      {"name": "The Witch Hunters", "id": "551e-ab30-987c-dc24", "hidden": false, "import": true, "targetId": "c677-e343-2366-3408", "type": "selectionEntry"},
+      {"name": "Tichi-Huichi's Raiders", "id": "8e36-1dd9-3047-60e5", "hidden": false, "import": true, "targetId": "c5b8-b0fe-0c9d-6824", "type": "selectionEntry"},
+      {"name": "Vespero's Vendetta", "id": "019d-1fdf-dcfb-a6b0", "hidden": false, "import": true, "targetId": "ff26-8420-f44d-aef7", "type": "selectionEntry"},
+      {"name": "Voland's Venators", "id": "f9e8-b0f1-e0d8-835d", "hidden": false, "import": true, "targetId": "f019-bfd6-099a-0d30", "type": "selectionEntry"},
+      {
+        "name": "Osrim Chardz",
+        "id": "220e-5e30-1879-441d",
+        "hidden": false,
+        "import": true,
+        "targetId": "9d6b-955d-c695-1ca6",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Mercenaries", "id": "0706-53a3-2928-dbb8", "hidden": false, "primary": true, "targetId": "5b84-2c3c-869d-3522"}]
       }
     ],
     "sharedProfiles": [
