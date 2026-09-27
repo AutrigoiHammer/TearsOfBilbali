@@ -2151,6 +2151,29 @@ Note that this special rule only applies to a single, non-magical hand weapon an
         <characteristic name="Description" typeId="9f84-4221-785a-db50">Harrig is the only dwarf that can act as a true wizard. Consider Harrig a Level 2 Wizard that has access to Battle Magic.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Osrim Chardz" id="6af8-9277-0fb0-0dff" hidden="false" typeId="b070-143a-73f-2772" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="cd3b-a5a4-e185-5a9d">3</characteristic>
+        <characteristic name="WS" typeId="b007-7d58-4f14-1e01">6</characteristic>
+        <characteristic name="BS" typeId="59f9-ccf5-1155-fb05">4</characteristic>
+        <characteristic name="S" typeId="5b6b-1427-2a45-dd0c">4</characteristic>
+        <characteristic name="T" typeId="ab43-8b61-83e7-d090">5</characteristic>
+        <characteristic name="W" typeId="83ed-7b82-bf1f-e558">2</characteristic>
+        <characteristic name="I" typeId="73b1-abe5-72f8-41e2">3</characteristic>
+        <characteristic name="A" typeId="dddc-9fbd-b0fd-a480">3</characteristic>
+        <characteristic name="Ld" typeId="c435-6b14-f77e-3c72">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ancestral Grudge" id="a6e2-a81a-3b3d-7397" hidden="false" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">A model with this special rule has the Hatred (enemy characters) special rule, meaning it hates all characters in the opposing army. If this character joins a unit of Longbeards or Hammerers, that unit will also gain this special rule. Should this character leave a unit of Longbeards or Hammerers they have joined for any reason, that unit loses this special rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Last Dwarf Standing" id="c080-2f00-022b-54ff" hidden="false" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule">
+      <characteristics>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">If, at the start of the Combat phase, the enemy unit engaged in combat with Osrim Chardz&apos;s unit has more than twice its Unit Strength, Osrim Chardz gains +D3 Attacks and a 4+ Ward save until the end of that turn. </characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry name="Pirazzo&apos;s Lost Legion" id="125d-3e0e-ef82-6a82" hidden="false" import="true" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" type="unit">
@@ -6706,6 +6729,83 @@ Note that this special rule only applies to a single, non-magical hand weapon an
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Osrim Chardz" id="9d6b-955d-c695-1ca6" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Faction: Dwarfen Mountain Holds" id="910e-a6e4-ec71-75c2" hidden="false" primary="false" targetId="f4fd-aa79-6ff3-1ea9"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Special Rules" id="1c71-f82a-36c8-1f53" hidden="false">
+          <infoLinks>
+            <infoLink name="Ancestral Grudge" id="717b-072d-1d06-3624" hidden="false" targetId="a6e2-a81a-3b3d-7397" type="profile"/>
+            <infoLink name="Gromril Armour" id="22fd-65a6-c074-a1cc" hidden="false" targetId="241f-51fc-3735-4add" type="profile"/>
+            <infoLink name="Gromril Weapons" id="c15f-5bda-153d-8fac" hidden="false" targetId="2e16-e293-353e-6881" type="profile"/>
+            <infoLink name="Stubborn" id="9b59-ffa5-54c5-f5fa" hidden="false" targetId="e351-bbd6-f470-b604" type="profile"/>
+            <infoLink name="Magic Resistance" id="e34e-8959-4f0a-ecec" hidden="false" targetId="90ed-c9be-a611-79cc" type="profile">
+              <modifiers>
+                <modifier field="name" type="append" value="(-1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Dwarf Crafted" id="8df4-2ad8-abb8-c5a0" hidden="false" targetId="3768-e231-572b-f96f" type="profile"/>
+            <infoLink name="Hatred" id="71de-aa41-8dcd-30ae" hidden="false" targetId="f4b3-18af-16bf-78dd" type="profile">
+              <modifiers>
+                <modifier field="name" type="append" value="(Orcs &amp; Goblins)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Resolute" id="20a0-f445-c504-c39f" hidden="false" targetId="a230-c540-6a65-4974" type="profile"/>
+            <infoLink name="Rallying Cry" id="10e3-214f-8093-9bc6" hidden="false" targetId="23c4-bd19-2422-ad08" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <profiles>
+        <profile name="Osrim Chardz" id="956d-6d5a-fcbf-9bae" hidden="false" typeId="2878-9a1f-dd74-48e3" typeName="Unit">
+          <characteristics>
+            <characteristic name="Troop Type" typeId="5d94-6b94-bd89-1944">Heavy infantry</characteristic>
+            <characteristic name="Unit Size" typeId="80a1-bb6f-66e4-4a5b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Osrim" id="43fe-d8f9-8cee-f045" flatten="true" hidden="false" import="true" type="model">
+          <categoryLinks>
+            <categoryLink name="Heavy Infantry" id="09d8-e52f-f247-8356" hidden="false" primary="false" targetId="ca7e-d004-ccde-caf3"/>
+            <categoryLink name="MAY_HAVE_ARMOUR" id="0df4-2a89-a68f-5dfe" hidden="false" targetId="may-have-armour"/>
+          </categoryLinks>
+          <constraints>
+            <constraint id="1b63-a19b-a966-8de0" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="5371-6214-41e5-b6ee" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="80"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Full Plate Armour" id="5af1-8a85-d64b-cfc0" hidden="false" import="true" sortIndex="2" targetId="2505-873d-1655-3b0b" type="selectionEntry">
+              <constraints>
+                <constraint id="c8c3-188d-2afb-77e9" field="selections" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Hand Weapon" id="8e88-b627-864b-8f4c" hidden="false" import="true" sortIndex="1" targetId="721d-36e3-388a-c0d6" type="selectionEntry">
+              <constraints>
+                <constraint id="8cb5-caff-1032-41ca" field="selections" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Great Weapon" id="fe96-3780-5b7b-ec95" collective="true" hidden="false" import="true" sortIndex="3" targetId="2283-26e9-76c3-6048" type="selectionEntry">
+              <constraints>
+                <constraint id="a2f3-47bc-b95b-5672" field="selections" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Pistol" id="0b27-2462-0922-a7fb" collective="true" hidden="false" import="true" sortIndex="3" targetId="d3c7-5222-61e8-9920" type="selectionEntry">
+              <constraints>
+                <constraint id="5787-3e62-dea9-fc3e" field="selections" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Osrim Chardz" id="edbc-6cf7-cd54-569f" hidden="false" targetId="6af8-9277-0fb0-0dff" type="profile"/>
+            <infoLink name="Base (25x25)" id="dd35-064d-e14b-46cc" hidden="false" targetId="193c-4d0d-de6b-bbb1" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
