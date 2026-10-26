@@ -1921,24 +1921,6 @@
             ]
           }
         ]
-      },
-      {
-        "name": "Voland's Venators",
-        "id": "8b91-fea7-1b37-6b15",
-        "hidden": false,
-        "import": true,
-        "targetId": "f019-bfd6-099a-0d30",
-        "type": "selectionEntry",
-        "categoryLinks": [
-          {"name": "Mercenaries", "id": "3bcc-0918-5360-a0e8", "hidden": false, "primary": true, "targetId": "5b84-2c3c-869d-3522"},
-          {
-            "name": "Units (not including units whose troop type is 'swarms', 'war beasts' or 'war machines')",
-            "id": "1b52-b2a5-e209-381d",
-            "hidden": false,
-            "primary": false,
-            "targetId": "fec1-537a-bbeb-7926"
-          }
-        ]
       }
     ],
     "sharedProfiles": [
