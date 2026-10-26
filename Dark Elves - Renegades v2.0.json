@@ -11,7 +11,8 @@
     "type": "catalogue",
     "catalogueLinks": [
       {"name": "Magic Items", "id": "b45f-b703-873c-3172", "targetId": "6c22-b0e4-7c83-f9ce", "type": "catalogue"},
-      {"name": "The Lores of Magic", "id": "fc42-c4e5-202e-b8a6", "targetId": "f3c5-af11-649d-5dbb", "type": "catalogue"}
+      {"name": "The Lores of Magic", "id": "fc42-c4e5-202e-b8a6", "targetId": "f3c5-af11-649d-5dbb", "type": "catalogue"},
+      {"name": "Mercenaries", "id": "a10c-ae6d-44bf-30ba", "targetId": "12a0-32cd-11d6-f952", "type": "catalogue"}
     ],
     "categoryEntries": [
       {

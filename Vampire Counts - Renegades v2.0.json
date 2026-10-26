@@ -12,7 +12,8 @@
     "catalogueLinks": [
       {"name": "Magic Items", "id": "5b70-1235-725c-a4fd", "targetId": "6c22-b0e4-7c83-f9ce", "type": "catalogue"},
       {"name": "The Lores of Magic", "id": "67b9-07af-872c-f531", "targetId": "f3c5-af11-649d-5dbb", "type": "catalogue"},
-      {"name": "The Empire of Man", "id": "73e8-06db-f249-976f", "targetId": "7b8f-602e-29cd-5786", "type": "catalogue"}
+      {"name": "The Empire of Man", "id": "73e8-06db-f249-976f", "targetId": "7b8f-602e-29cd-5786", "type": "catalogue"},
+      {"name": "Mercenaries", "id": "4465-e68b-8573-57b7", "targetId": "12a0-32cd-11d6-f952", "type": "catalogue"}
     ],
     "categoryEntries": [
       {

@@ -14,7 +14,8 @@
     "catalogueLinks": [
       {"name": "Magic Items", "id": "e487-61a1-7510-dd4a", "targetId": "6c22-b0e4-7c83-f9ce", "type": "catalogue"},
       {"name": "The Lores of Magic", "id": "cbde-74f2-eb56-27f3", "targetId": "f3c5-af11-649d-5dbb", "type": "catalogue"},
-      {"name": "New Catalogue (link)", "id": "386e-9e63-fade-313b", "targetId": "4013-4240-7515-27e0", "type": "catalogue"}
+      {"name": "Giant Library", "id": "386e-9e63-fade-313b", "targetId": "4013-4240-7515-27e0", "type": "catalogue"},
+      {"name": "Mercenaries", "id": "19d8-13fb-9f5a-970c", "targetId": "12a0-32cd-11d6-f952", "type": "catalogue"}
     ],
     "categoryEntries": [
       {"name": "Hunter", "id": "e771-c6b9-2e3c-acce", "hidden": false},
