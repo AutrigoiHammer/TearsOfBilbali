@@ -1,17 +1,34 @@
-Hi there, you massive general,
+Warhammer - The Old World
+==================
 
-Welcome to this project, called Tears of Bilbali, a fanmade, unofficial league for Warhammer: The Old World, mainly played in Bilbohammer Club (but also in association with other clubs in Bilbao), which works as an expansion and union project for Warhammer Fantasy Battles.
+[![Latest release](https://img.shields.io/github/release/BSData/warhammer-the-old-world.svg?style=flat-square)](https://github.com/BSData/warhammer-the-old-world/releases/latest)
+[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/warhammer-the-old-world/latest.svg?style=flat-square)](https://github.com/BSData/warhammer-the-old-world/releases)
+[![Open bugs](https://img.shields.io/github/issues/BSData/warhammer-the-old-world/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/warhammer-the-old-world/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+[![Contributors](https://img.shields.io/github/contributors/BSData/warhammer-the-old-world.svg?style=flat-square)](https://github.com/BSData/warhammer-the-old-world/graphs/contributors)
+[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/warhammer-the-old-world.svg?style=flat-square)](https://github.com/BSData/warhammer-the-old-world/pulse/monthly)
 
-The idea is to integrate prior armies and units inside Warhammer: The Old World platform
+[![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
 
-In example, we are recovering (and forsure adapting), units from Second Edition (i.e., Karnac's Lizardmen Raiders), in order for them to be playable in the current updated system, from a non-competitive perspective.
+## Overview ##
 
-A big part of the work is based on https://github.com/vflam/Warhammer-The-Old-World project, to which we are adding different factions and units, so we thank them directly, as without them this work would not be possible.
+__What's this?__
 
-Please visit https://en.tearsofbilbali.games/ [English] or https://es.tearsofbilbali.games/ [Spanish] for further information.
+BSData organisation created this project. It's a GitHub repository of datafiles.
+Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
+to develop - cool! We need you! Take a look at [our homepage][BSData.net]
 
-Thank you for your time,
+__Okay, nice project. Is it actually working?__ _I just want those files..._
 
-Best Regards,
+Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
 
-Autrigon Gentlemen Club Team
+__I found a bug!__ / *I have another request*
+
+Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
+
+## Links ##
+
+* [BSData organization homepage][BSData.net]
+* [BattleScribe app homepage](https://www.battlescribe.net/)
+
+[BSData.net]: https://www.bsdata.net/
+[bug report]: https://github.com/BSData/warhammer-the-old-world/issues/new/choose

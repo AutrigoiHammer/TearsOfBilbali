@@ -1,10 +1,10 @@
 {
   "gameSystem": {
-    "name": "Warhammer: Tears of Bilbali Unofficial Project",
+    "name": "Warhammer: The Old World - Tears of Bilbali Edition",
     "id": "sys-31d1-bf57-53ea-ad55",
-    "authorContact": "tearsofbilbali.com",
+    "authorContact": "Tears of Bilbali Website",
     "authorName": "Aitor Dragones",
-    "authorUrl": "tearsofbilbali.com",
+    "authorUrl": "tearsofbilbali.games",
     "battleScribeVersion": 2.03,
     "library": true,
     "publicationId": "768b-3da1-a182-a1d8",
@@ -206,7 +206,10 @@
       {"name": "Faction: Ogre Kingdoms - Renegades v2.0", "id": "8503-016e-c0bf-77a1", "hidden": true},
       {"name": "Faction: Dark Elves - Renegades v2.0", "id": "172e-9d83-eae4-aa8a", "hidden": false},
       {"name": "Faction: Vampire Counts - Renegades v2.0", "id": "e1ab-4bbb-b4d1-c0ce", "hidden": true},
-      {"name": "High Beastmaster", "id": "788f-45a5-f57c-b7ba", "hidden": false}
+      {"name": "High Beastmaster", "id": "788f-45a5-f57c-b7ba", "hidden": false},
+      {"name": "Wild Rider Kindred", "id": "0c77-3e8f-fb8f-ede7", "hidden": false},
+      {"name": "Faction: Wood Elf Realms - Spirits of the Forest", "id": "836c-60fc-ddbe-b202", "hidden": true},
+      {"name": "Faction: Tomb Kings of Khemri - Barrow Kingdom", "id": "c18d-0043-4c86-1f99", "hidden": true}
     ],
     "costTypes": [{"name": "pts", "id": "points", "defaultCostLimit": 2000}, {"name": "Unit Strength", "id": "73ea-910d-c188-35d0", "defaultCostLimit": -1, "hidden": true}],
     "forceEntries": [
@@ -980,7 +983,7 @@
                         ],
                         "conditions": [{"childId": "20b-6412-2ac1-d146", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
                       },
-                                            {
+                      {
                         "type": "and",
                         "conditionGroups": [
                           {
@@ -1821,7 +1824,7 @@
                         ],
                         "conditions": [{"childId": "20b-6412-2ac1-d146", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
                       },
-                                            {
+                      {
                         "type": "and",
                         "conditionGroups": [
                           {
@@ -1988,7 +1991,7 @@
                         ],
                         "conditions": [{"childId": "20b-6412-2ac1-d146", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
                       },
-                                            {
+                      {
                         "type": "and",
                         "conditionGroups": [
                           {
@@ -2829,7 +2832,7 @@
                         ],
                         "conditions": [{"childId": "20b-6412-2ac1-d146", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
                       },
-                                            {
+                      {
                         "type": "and",
                         "conditionGroups": [
                           {
@@ -2996,7 +2999,7 @@
                         ],
                         "conditions": [{"childId": "20b-6412-2ac1-d146", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
                       },
-                                            {
+                      {
                         "type": "and",
                         "conditionGroups": [
                           {
@@ -3381,7 +3384,16 @@
                       {"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "86da-6653-7618-1f76", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "a9dd-e192-9fec-b81e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
-                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "1795-303c-eb46-1e30",
+                        "childName": "Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
                     ]
                   }
                 ]
@@ -3837,7 +3849,7 @@
                         ],
                         "conditions": [{"childId": "20b-6412-2ac1-d146", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
                       },
-                                            {
+                      {
                         "type": "and",
                         "conditionGroups": [
                           {
@@ -4004,7 +4016,7 @@
                         ],
                         "conditions": [{"childId": "20b-6412-2ac1-d146", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
                       },
-                                            {
+                      {
                         "type": "and",
                         "conditionGroups": [
                           {
@@ -4855,7 +4867,7 @@
                         ],
                         "conditions": [{"childId": "20b-6412-2ac1-d146", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
                       },
-                                            {
+                      {
                         "type": "and",
                         "conditionGroups": [
                           {
@@ -5022,7 +5034,7 @@
                         ],
                         "conditions": [{"childId": "20b-6412-2ac1-d146", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
                       },
-                                            {
+                      {
                         "type": "and",
                         "conditionGroups": [
                           {

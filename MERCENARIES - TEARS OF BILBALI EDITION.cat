@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="MERCENARIES - TEARS OF BILBALI EDITION" id="12a0-32cd-11d6-fToB" authorContact="Discord: vflam" authorName="Flammy" authorUrl="www.newrecruit.eu" battleScribeVersion="2.03" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="99" library="true" revision="37" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Mercenaries: Tears of Bilbali Edition" id="12a0-32cd-11d6-fToB" authorContact="tearsofbilbali.games" authorName="AutrigoiHammer" authorUrl="tearsofbilbali.games" battleScribeVersion="2.03" gameSystemId="sys-31d1-bf57-53ea-ad55" gameSystemRevision="99" library="true" revision="37" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>tearsofbilbali.games</readme>
   <catalogueLinks>
     <catalogueLink name="Magic Items" id="d5a5-f7ae-f835-f1c5" targetId="6c22-b0e4-7c83-f9ce" type="catalogue"/>
     <catalogueLink name="Runic Items" id="04d3-592b-d051-4995" targetId="7aa2-db17-4956-5c36" type="catalogue"/>
@@ -2171,7 +2172,7 @@ Note that this special rule only applies to a single, non-magical hand weapon an
     </profile>
     <profile name="Last Dwarf Standing" id="c080-2f00-022b-54ff" hidden="false" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">If, at the start of the Combat phase, the enemy unit engaged in combat with Osrim Chardz&apos;s unit has more than twice its Unit Strength, Osrim Chardz gains +D3 Attacks and a 4+ Ward save until the end of that turn. </characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">If, at the start of the Combat phase, the enemy unit engaged in combat with Osrim Chardz&apos;s unit has more than twice its Unit Strength, Osrim Chardz gains +D3 Attacks and a 4+ Ward save until the end of that turn.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -6590,6 +6591,9 @@ Note that this special rule only applies to a single, non-magical hand weapon an
       <categoryLinks>
         <categoryLink name="Faction: Dwarfen Mountain Holds" id="081f-176a-409a-56cc" hidden="false" primary="false" targetId="f4fd-aa79-6ff3-1ea9"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="46b5-c58c-13cb-13b5" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
       <infoGroups>
         <infoGroup name="Special Rules" id="5c0b-c6a4-24ee-914d" hidden="false">
           <infoLinks>
@@ -6657,6 +6661,9 @@ Note that this special rule only applies to a single, non-magical hand weapon an
       <categoryLinks>
         <categoryLink name="Faction: Dwarfen Mountain Holds" id="453c-3e64-395a-00b9" hidden="false" primary="false" targetId="f4fd-aa79-6ff3-1ea9"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="2d5c-a688-f1a1-6db6" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
       <infoGroups>
         <infoGroup name="Special Rules" id="a722-344b-636d-d3b1" hidden="false">
           <infoLinks>
@@ -6736,6 +6743,9 @@ Note that this special rule only applies to a single, non-magical hand weapon an
       <categoryLinks>
         <categoryLink name="Faction: Dwarfen Mountain Holds" id="910e-a6e4-ec71-75c2" hidden="false" primary="false" targetId="f4fd-aa79-6ff3-1ea9"/>
       </categoryLinks>
+      <constraints>
+        <constraint id="0774-12e9-9c1b-58d4" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+      </constraints>
       <infoGroups>
         <infoGroup name="Special Rules" id="1c71-f82a-36c8-1f53" hidden="false">
           <infoLinks>
