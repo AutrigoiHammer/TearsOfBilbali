@@ -78,7 +78,7 @@
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="0347-2c78-d6f9-9e7a" primary="false" targetId="fec1-537a-bbeb-7926"/>
       </categoryLinks>
     </entryLink>
-    <entryLink name="Al Muktar&apos;s Desert Dogs" id="3d84-2564-7cc2-45d1" hidden="false" import="true" targetId="bb37-df3a-2ca1-6d19" type="selectionEntry">
+    <entryLink name="Al Muktar&apos;s Desert Dogs" id="3d84-2564-7cc2-45d1" hidden="false" targetId="bb37-df3a-2ca1-6d19" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Mercenaries" id="1ab4-5c57-6df0-cea8" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="3ec6-1b0a-e0ed-f0a0" primary="false" targetId="fec1-537a-bbeb-7926"/>
