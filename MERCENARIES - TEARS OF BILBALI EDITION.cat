@@ -232,7 +232,6 @@
       <categoryLinks>
         <categoryLink name="Mercenaries" id="2145-79aa-a7ae-439f" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="f5af-363e-ba7b-761c" primary="false" targetId="fec1-537a-bbeb-7926"/>
-        <categoryLink name="Heavy Infantry" id="b0eb-0d27-2653-0d9e" primary="false" targetId="ca7e-d004-ccde-caf3"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -6852,6 +6851,8 @@ This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</cha
     <selectionEntry name="Gargoyles of Barda" id="c8c3-feeb-3a8b-4388" hidden="false" import="true" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War - 1998" type="unit">
       <categoryLinks>
         <categoryLink name="Mercenaries" id="b0a9-dfe7-4608-15cc" primary="true" targetId="5b84-2c3c-869d-3522"/>
+        <categoryLink name="Monstrous Cavalry" id="46e9-f17a-b1bc-e823" hidden="false" primary="false" targetId="2c85-5f2b-9288-1257"/>
+        <categoryLink name="MOUNT" id="104a-af8c-00cf-db35" hidden="false" primary="false" targetId="c96a-608-5de4-b943"/>
       </categoryLinks>
       <infoGroups>
         <infoGroup name="Special Rules" id="bdb1-163f-91db-5ac9" hidden="false">
@@ -6902,7 +6903,11 @@ This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</cha
                 <constraint id="751a-a36c-15e2-7ac6" field="selections" scope="parent" shared="true" type="min" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Light Armour" id="c164-ee0e-4df0-81de" hidden="false" import="true" sortIndex="4" targetId="7cab-40e6-f134-de78" type="selectionEntry"/>
+            <entryLink name="Light Armour" id="c164-ee0e-4df0-81de" hidden="false" import="true" sortIndex="4" targetId="7cab-40e6-f134-de78" type="selectionEntry">
+              <constraints>
+                <constraint id="e347-53d9-5007-44e2" field="selections" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Base (40x40)" id="a60a-6f4d-db5a-9e82" hidden="false" targetId="1b54-27fc-b510-61b8" type="profile"/>
@@ -6919,7 +6924,7 @@ This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</cha
           <selectionEntryGroups>
             <selectionEntryGroup name="Command" id="8717-c309-9871-79be" hidden="false" sortIndex="1">
               <selectionEntries>
-                <selectionEntry name="Bloodreaper" id="70aa-cea1-0a98-d2d5" hidden="false" import="true" sortIndex="1" type="upgrade">
+                <selectionEntry name="Champion" id="70aa-cea1-0a98-d2d5" hidden="false" import="true" sortIndex="1" type="upgrade">
                   <comment>upgrades: 6a56d133-1fc68e1</comment>
                   <categoryLinks>
                     <categoryLink name="Heavy Infantry" id="0123-59f9-9c65-d85d" hidden="false" primary="false" targetId="ca7e-d004-ccde-caf3"/>
@@ -6951,9 +6956,6 @@ This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</cha
                 </selectionEntry>
                 <selectionEntry name="Musician" id="4846-fc7f-d2f4-5f94" hidden="false" import="true" sortIndex="3" type="upgrade">
                   <comment>upgrades: 6a56d133-1fc68e1</comment>
-                  <associations>
-                    <association name="Musician" id="efb1-c3f9-2892-5426" childId="6a56d133-1fc68e1" childName="Bloodletter" max="1" min="1" scope="parent"/>
-                  </associations>
                   <categoryLinks>
                     <categoryLink name="Heavy Infantry" id="813f-3256-44bb-f2d8" hidden="false" primary="false" targetId="ca7e-d004-ccde-caf3"/>
                     <categoryLink name="MAY_HAVE_ARMOUR" id="12ec-058d-e496-6e17" hidden="false" targetId="may-have-armour"/>
@@ -6970,7 +6972,6 @@ This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</cha
                   <selectionEntries>
                     <selectionEntry name="The Foul Double Horn" id="997f-5089-60b3-5ac4" hidden="false" import="true" type="upgrade">
                       <constraints>
-                        <constraint id="f160-f11a-1a9c-de08" field="selections" scope="parent" shared="true" type="min" value="1"/>
                         <constraint id="9561-dc8e-0027-6cce" field="selections" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <costs>
@@ -6997,7 +6998,6 @@ This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</cha
                   <selectionEntries>
                     <selectionEntry name="The Great Gargoyle Standard" id="6dd1-ade1-7cf6-8841" hidden="false" import="true" type="upgrade">
                       <constraints>
-                        <constraint id="47b2-c3aa-8873-ed3d" field="selections" scope="parent" shared="true" type="min" value="1"/>
                         <constraint id="c4e1-300b-2fa9-9c90" field="selections" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <costs>
