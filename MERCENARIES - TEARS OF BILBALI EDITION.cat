@@ -2219,7 +2219,7 @@ Note that this special rule only applies to a single, non-magical hand weapon an
     </profile>
     <profile name="Aerial Charge" id="97a6-1d04-bcea-eccc" hidden="false" typeId="c1ac-c1c8-f9d5-9673" typeName="Special Rule">
       <characteristics>
-        <characteristic name="Description" typeId="9f84-4221-785a-db50">Whenever this unit is charging whilst chosing Fly (X) Special Rule, it can use Cavalry Spears or Lances as if it was appropiately mounted.</characteristic>
+        <characteristic name="Description" typeId="9f84-4221-785a-db50">Whenever this unit is charging whilst chosing Fly (X) Special Rule, it can use Cavalry Spear or Lance as if it was appropiately mounted.</characteristic>
       </characteristics>
     </profile>
     <profile name="The Great Gargoyle Standard" id="4030-0e06-af7d-d435" hidden="false" typeId="e3be-1b80-f570-96a1" typeName="Magic Standards">
@@ -2227,7 +2227,7 @@ Note that this special rule only applies to a single, non-magical hand weapon an
         <characteristic name="Description" typeId="a34c-cc25-6cb9-95e1">The Great Standard carried by these demons appears to carry the device of some unknown, but undoubtably powerful God. 
 
 
-So long as the Barda Gargoyles carry this standard no other demonic troops will dare to attack them. 
+So long as the Gargoyles of Barda carry this standard no other demonic troops will dare to attack them. 
 
 
 This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</characteristic>
