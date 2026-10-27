@@ -10,6 +10,7 @@
       <categoryLinks>
         <categoryLink name="Mercenaries" id="5052-b1b4-e56e-6c22" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="7a6f-7e1f-9ead-1731" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Regular Infantry" id="76a1-7bc4-519c-7a30" hidden="false" primary="false" targetId="f3f7-ca43-674e-115f"/>
       </categoryLinks>
       <constraints>
         <constraint id="acaf-522a-834f-f8bd" field="selections" scope="roster" shared="true" type="max" value="1"/>
@@ -32,6 +33,7 @@
       <categoryLinks>
         <categoryLink name="Mercenaries" id="5b12-e6d1-fc37-95d8" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="1a90-5c8a-2170-4016" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Regular Infantry" id="9871-21df-02b5-5535" hidden="false" primary="false" targetId="f3f7-ca43-674e-115f"/>
       </categoryLinks>
       <constraints>
         <constraint id="4a64-575c-68be-004c" field="selections" scope="roster" shared="true" type="max" value="1"/>
@@ -42,6 +44,7 @@
         <categoryLink name="Named Characters" id="318c-d2a4-266f-e9c9" primary="false" targetId="3ba8-a41e-b6ae-d4ba"/>
         <categoryLink name="Mercenaries" id="628a-af45-eb37-59e2" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="02b1-0959-5dfe-efec" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Behemoth" id="6807-2cfd-064d-f783" hidden="false" primary="false" targetId="3755-6732-99b2-c713"/>
       </categoryLinks>
     </entryLink>
     <entryLink name="Asarnil, The Dragonlord" id="95c7-5534-8465-8ec2" hidden="false" import="true" targetId="8c4a-26d2-6368-f867" type="selectionEntry">
@@ -55,6 +58,7 @@
       <categoryLinks>
         <categoryLink name="Mercenaries" id="0414-966f-cb92-31c1" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="f1c8-4904-9a9d-3792" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Regular Infantry" id="094c-e3b1-6d9f-cc6a" hidden="false" primary="false" targetId="f3f7-ca43-674e-115f"/>
       </categoryLinks>
       <constraints>
         <constraint id="e2fe-8e65-2baa-f1a0" field="selections" scope="roster" shared="true" type="max" value="1"/>
@@ -70,6 +74,7 @@
       <categoryLinks>
         <categoryLink name="Mercenaries" id="098a-a600-10a3-f91a" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="ae0c-4bed-e01b-6ab9" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Regular Infantry" id="85a5-01d9-dd97-f6b1" hidden="false" primary="false" targetId="f3f7-ca43-674e-115f"/>
       </categoryLinks>
     </entryLink>
     <entryLink name="Long Drong&apos;s Slayer Pirates" id="be5f-0f9d-783e-1f9f" hidden="false" import="true" targetId="e9c6-8a9f-8f08-b36a" type="selectionEntry">
@@ -100,6 +105,7 @@
       <categoryLinks>
         <categoryLink name="Mercenaries" id="c043-c8ff-d599-bd68" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="77e4-2a8e-5b62-b239" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Regular Infantry" id="f8db-01d1-4571-4ba7" hidden="false" primary="false" targetId="f3f7-ca43-674e-115f"/>
       </categoryLinks>
     </entryLink>
     <entryLink name="Voland&apos;s Venators" id="b2ca-d946-474b-66e0" hidden="false" import="true" targetId="f019-bfd6-099a-0d30" type="selectionEntry">
@@ -124,6 +130,7 @@
       <categoryLinks>
         <categoryLink name="Mercenaries" id="0532-18e8-7c71-c83a" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="4a78-0992-cdd7-9ab7" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Regular Infantry" id="0dce-e7d0-bea0-fb67" hidden="false" primary="false" targetId="f3f7-ca43-674e-115f"/>
       </categoryLinks>
     </entryLink>
     <entryLink name="Vespero&apos;s Vendetta" id="0d9f-3419-cf06-8de5" hidden="false" import="true" targetId="ff26-8420-f44d-aef7" type="selectionEntry">
@@ -143,6 +150,7 @@
         <categoryLink name="Mercenaries" id="e828-46d7-8c83-2646" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Named Characters" id="71a9-f175-8580-3306" primary="false" targetId="3ba8-a41e-b6ae-d4ba"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="fcbb-68fc-e295-5806" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Light Cavalry" id="6a79-569a-bc3a-ee41" hidden="false" primary="false" targetId="600c-7d08-5be1-fe0c"/>
       </categoryLinks>
     </entryLink>
     <entryLink name="Mydas The Mean" id="881b-c059-934f-ecb2" hidden="false" import="true" targetId="28d4-1bdb-c4b2-44ee" type="selectionEntry">
@@ -150,12 +158,14 @@
         <categoryLink name="Named Characters" id="7f2f-e36a-2c7c-535d" primary="false" targetId="3ba8-a41e-b6ae-d4ba"/>
         <categoryLink name="Mercenaries" id="6aa7-fdcd-b22c-c6fd" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="61c4-0e4e-59b5-1cda" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Light Chariot" id="037b-17e1-87b6-8340" hidden="false" primary="false" targetId="7dce-b0f0-2217-2820"/>
       </categoryLinks>
     </entryLink>
     <entryLink name="Lorenzo Lupo" id="569f-4e01-421b-45a0" hidden="false" import="true" targetId="c1e2-e68e-0339-48c4" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Mercenaries" id="eae8-7dd7-d61e-5ffd" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="47e7-e6bf-bcdd-0b31" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Light Cavalry" id="d1b0-51e1-0f6e-80c2" hidden="false" primary="false" targetId="600c-7d08-5be1-fe0c"/>
       </categoryLinks>
     </entryLink>
     <entryLink name="Lumpin Croop&apos;s Fighting Cocks" id="fd31-ec16-702c-7bb4" hidden="false" import="true" targetId="d8c6-2cb7-6ada-462c" type="selectionEntry">
@@ -216,6 +226,13 @@
         <categoryLink name="Mercenaries" id="620c-0fd7-4640-b4a2" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Regular Infantry" id="e168-324f-a604-55a1" primary="false" targetId="f3f7-ca43-674e-115f"/>
         <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="0912-03f1-bc09-d3fd" primary="false" targetId="fec1-537a-bbeb-7926"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink name="Gargoyles of Barda" id="340e-8697-b532-8d1b" hidden="false" import="true" targetId="c8c3-feeb-3a8b-4388" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Mercenaries" id="2145-79aa-a7ae-439f" primary="true" targetId="5b84-2c3c-869d-3522"/>
+        <categoryLink name="Units (not including units whose troop type is &apos;swarms&apos;, &apos;war beasts&apos; or &apos;war machines&apos;)" id="f5af-363e-ba7b-761c" primary="false" targetId="fec1-537a-bbeb-7926"/>
+        <categoryLink name="Heavy Infantry" id="b0eb-0d27-2653-0d9e" primary="false" targetId="ca7e-d004-ccde-caf3"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4950,7 +4967,6 @@ This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</cha
       <categoryLinks>
         <categoryLink name="Mercenaries" id="f8e0-b9cb-0c0b-02fa" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Named Characters" id="5808-8208-a5ac-5e2a" primary="false" targetId="3ba8-a41e-b6ae-d4ba"/>
-        <categoryLink name="Heavy Cavalry" id="bac8-3083-de26-5fea" primary="false" targetId="5165-d052-cfc2-5887"/>
       </categoryLinks>
       <constraints>
         <constraint id="8fc2-6d22-70c7-c3fa" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
@@ -5051,7 +5067,6 @@ This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</cha
     <selectionEntry name="Mydas The Mean" id="28d4-1bdb-c4b2-44ee" hidden="false" import="true" page="Warhammer Fantasy Battle - 1998 - 5th Edition - Dogs of War" subType="unit-group" type="unit">
       <categoryLinks>
         <categoryLink name="Mercenaries" id="cb85-6cc5-7c2e-82ea" primary="true" targetId="5b84-2c3c-869d-3522"/>
-        <categoryLink name="War Machine" id="04d1-6c78-4312-b87c" primary="false" targetId="9fcf-19ad-fe84-9c61"/>
         <categoryLink name="Named Characters" id="7b1f-14d3-8030-62b6" primary="false" targetId="3ba8-a41e-b6ae-d4ba"/>
       </categoryLinks>
       <constraints>
@@ -5288,7 +5303,6 @@ This is, Daemonic troops cannot declare charges against Gargoyles of Barda.</cha
       <categoryLinks>
         <categoryLink name="Mercenaries" id="15c4-fe64-d41e-0f51" primary="true" targetId="5b84-2c3c-869d-3522"/>
         <categoryLink name="Named Characters" id="40c2-3109-a7ad-0515" primary="false" targetId="3ba8-a41e-b6ae-d4ba"/>
-        <categoryLink name="Heavy Cavalry" id="5955-dba1-61a2-9ac0" primary="false" targetId="5165-d052-cfc2-5887"/>
       </categoryLinks>
       <constraints>
         <constraint id="de29-7929-a2e6-f6c6" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
